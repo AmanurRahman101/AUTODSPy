@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+*.pt
+*.pyc
+.ipynb_checkpoints/
+baseline_metrics.json
