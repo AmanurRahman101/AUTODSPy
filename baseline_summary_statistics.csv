@@ -1,0 +1,22 @@
+Metric,Value
+Total Episodes,30
+Group Size K,4
+Total LLM Pipeline Calls,120
+Average Reward,0.4895
+Median Reward,0.5625
+Final Mean Reward (Last 5 Episodes),0.9622
+Active Episodes,14
+Active Episode Rate,46.67%
+Dead Episodes,16
+Dead Episode Rate,53.33%
+All-Fail Episodes,11
+All-Fail Rate,36.67%
+All-Success Episodes,5
+All-Success Rate,16.67%
+Reported Total Wall-Clock Time,802.69 s
+Average Episode Duration,26.75 s
+Median Episode Duration,16.56 s
+Minimum Episode Duration,5.73 s
+Maximum Episode Duration,285.71 s
+Wasted LLM Calls,64
+Wasted LLM Call Rate,53.33%
