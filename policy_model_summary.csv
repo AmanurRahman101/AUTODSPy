@@ -1,0 +1,2 @@
+Policy Model,Training Episodes,K,Average Reward,Final Episode Reward,Dead Episode Rate,Training Time (s),GSM8K Accuracy,GSM8K Time/Example (s),HotPotQA Accuracy,HotPotQA Time/Example (s)
+GPT2-127M,30,4,0.31025,1.0,73.33%,505.35,53.33%,6.26,46.67%,7.28
