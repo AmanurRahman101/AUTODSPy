@@ -14,7 +14,7 @@ for _stream in (sys.stdout, sys.stderr):
 NOTEBOOK = Path(__file__).with_name("DSPy_GRPO_statistics.ipynb")
 LAST_CELL_INDEX = 30
 EVAL_ONLY = "--eval-only" in sys.argv
-CHECKPOINT = NOTEBOOK.parent / "checkpoints" / "grpo_smoke_log_both_K4_ep30.pt"
+LEGACY_GPT2_CHECKPOINT = NOTEBOOK.parent / "checkpoints" / "grpo_smoke_log_both_K4_ep30.pt"
 
 
 def _cli_value(flag):
@@ -24,8 +24,18 @@ def _cli_value(flag):
     if index + 1 >= len(sys.argv):
         raise SystemExit(f"{flag} requires a value")
     return sys.argv[index + 1]
+
+
+def _checkpoint_for(short_name):
+    if short_name == "gpt2" and LEGACY_GPT2_CHECKPOINT.is_file():
+        return LEGACY_GPT2_CHECKPOINT
+    return NOTEBOOK.parent / "checkpoints" / f"grpo_smoke_log_{short_name}_both_K4_ep30.pt"
+
+
+POLICY_MODEL = _cli_value("--policy-model") or "gpt2"
+CHECKPOINT = _checkpoint_for(POLICY_MODEL)
 OVERRIDE = {
-    "policy_model_name": "gpt2",
+    "policy_model": POLICY_MODEL,
     "train_dataset": "both",
     "num_episodes": 30,
     "K": 4,
@@ -78,7 +88,15 @@ try:
         exec(compile(src, f"cell_{i}", "exec"), globs)
         if "EXPERIMENT_CONFIG = {" in src and "run_training" in src:
             globs["EXPERIMENT_CONFIG"].update(OVERRIDE)
+            short = globs["EXPERIMENT_CONFIG"].get("policy_model", "gpt2")
+            mapping = globs.get("MODEL_CONFIG") or {}
+            if short not in mapping:
+                known = ", ".join(mapping) or "(MODEL_CONFIG missing)"
+                raise SystemExit(f"Unknown --policy-model {short!r}. Choose one of: {known}")
+            globs["EXPERIMENT_CONFIG"]["policy_model"] = short
+            globs["EXPERIMENT_CONFIG"]["policy_model_name"] = mapping[short]
             print("Applied overrides:", OVERRIDE, flush=True)
+            print(f"Policy model: {short} -> {mapping[short]}", flush=True)
         if EVAL_ONLY and "trained_model, training_metrics, active_config = run_single_grpo_experiment" in src:
             if not CHECKPOINT.is_file():
                 raise FileNotFoundError(CHECKPOINT)
