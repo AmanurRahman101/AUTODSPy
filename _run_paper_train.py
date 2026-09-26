@@ -14,7 +14,8 @@ for _stream in (sys.stdout, sys.stderr):
 NOTEBOOK = Path(__file__).with_name("DSPy_GRPO_statistics.ipynb")
 LAST_CELL_INDEX = 30
 EVAL_ONLY = "--eval-only" in sys.argv
-LEGACY_GPT2_CHECKPOINT = NOTEBOOK.parent / "checkpoints" / "grpo_smoke_log_both_K4_ep30.pt"
+EXPERIMENT_NAME = "grpo_static_k16"
+K_VALUE = 16
 
 
 def _cli_value(flag):
@@ -27,18 +28,21 @@ def _cli_value(flag):
 
 
 def _checkpoint_for(short_name):
-    if short_name == "gpt2" and LEGACY_GPT2_CHECKPOINT.is_file():
-        return LEGACY_GPT2_CHECKPOINT
-    return NOTEBOOK.parent / "checkpoints" / f"grpo_smoke_log_{short_name}_both_K4_ep30.pt"
+    return (
+        NOTEBOOK.parent
+        / "checkpoints"
+        / f"{EXPERIMENT_NAME}_{short_name}_both_K{K_VALUE}_ep30.pt"
+    )
 
 
 POLICY_MODEL = _cli_value("--policy-model") or "gpt2"
 CHECKPOINT = _checkpoint_for(POLICY_MODEL)
 OVERRIDE = {
     "policy_model": POLICY_MODEL,
+    "experiment_name": EXPERIMENT_NAME,
     "train_dataset": "both",
     "num_episodes": 30,
-    "K": 4,
+    "K": K_VALUE,
     "run_training": True,
     "run_eval": True,
     "eval_sample_count": 30,
