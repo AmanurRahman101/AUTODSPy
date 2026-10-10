@@ -4,3 +4,6 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 baseline_metrics.json
+runs/reproduction*/
+runs/engineering-policy-smoke/
+.venv-reproduction/

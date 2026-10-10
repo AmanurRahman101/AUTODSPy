@@ -1,0 +1,33 @@
+# Published model/budget; released-code objective. See docs/REPRODUCTION_AUDIT.md.
+seed: 42  # Assumption: paper does not report seeds.
+policy_model: gpt2
+policy_revision: 607a30d783dfa663caf39e06633721c8d4cfcd7e
+dataset_revision: 740312add88f781978c0658806c59bc2815b9866
+device: cuda
+episodes: 200
+samples_per_episode: 200
+group_size: 5
+learning_rate: 0.0001
+objective: notebook  # Figure 2 and released GRPO: sum of -log(pi)*centered reward.
+advantage_mode: centered
+entropy_coefficient: 0.0  # Released GRPO has no entropy term.
+clip_epsilon: 0.2  # INACTIVE unless objective=clipped (sensitivity study).
+paper_gamma: 0.99  # INACTIVE: no GAE/discounted return in released GRPO.
+paper_lambda: 0.95  # INACTIVE.
+paper_entropy_coefficient: 0.01  # Table 3, not active in released GRPO.
+train_pool_size: null  # Assumption: resample full train split, no 200-unique-example cap.
+max_policy_tokens: 1024
+gradient_checkpointing: false
+cpu_threads: 4
+checkpoint_every: 10  # Hardware/storage choice; final episode always saved.
+execution_model: llama3.1:8b
+execution_endpoint: http://localhost:11434
+execution_num_gpu: 0  # CPU Llama or point endpoint at another machine.
+execution_temperature: 0.0  # Explicit assumptions; historical defaults unknown.
+execution_max_tokens: 4096
+execution_context: 8192
+execution_timeout: 300
+execution_keep_alive: 5m
+semantic_fallback: true
+evaluation_limit: null  # All 1,319 official test examples, separately from paper's 1,300.
+output_root: runs/reproduction

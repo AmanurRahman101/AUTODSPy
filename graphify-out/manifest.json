@@ -1,0 +1,218 @@
+{
+  ".codex/hooks.json": {
+    "mtime": 1791132273.1964233,
+    "seen": 1791622589.4264674,
+    "ast_hash": "5ebef3dd159986e465ab65e4014107ec",
+    "semantic_hash": ""
+  },
+  "autodspy_reproduction/__init__.py": {
+    "mtime": 1791621483.8688414,
+    "seen": 1791622589.4264834,
+    "ast_hash": "82e0e7e941d1eee405cf3a21135738ed",
+    "semantic_hash": ""
+  },
+  "autodspy_reproduction/__main__.py": {
+    "mtime": 1791622170.2748873,
+    "seen": 1791622589.4264889,
+    "ast_hash": "c3eb66bfa939ea8c4c5aef99fa232bb0",
+    "semantic_hash": ""
+  },
+  "autodspy_reproduction/config.py": {
+    "mtime": 1791621890.1733046,
+    "seen": 1791622589.4264932,
+    "ast_hash": "000a432ab480d7ae3450be4ecf53c0f5",
+    "semantic_hash": ""
+  },
+  "autodspy_reproduction/data.py": {
+    "mtime": 1791621677.0076091,
+    "seen": 1791622589.4264977,
+    "ast_hash": "2c4534c429392200195653db66eb7b7f",
+    "semantic_hash": ""
+  },
+  "autodspy_reproduction/evaluation.py": {
+    "mtime": 1791622833.3939137,
+    "seen": 1791623413.5511754,
+    "ast_hash": "0b366ceaadc17144d267bcb5ab49ea04",
+    "semantic_hash": ""
+  },
+  "autodspy_reproduction/execution.py": {
+    "mtime": 1791622550.239893,
+    "seen": 1791622589.4265037,
+    "ast_hash": "b3957d86b5f0ad9e349fb162a240b0bc",
+    "semantic_hash": ""
+  },
+  "autodspy_reproduction/loss.py": {
+    "mtime": 1791621677.005559,
+    "seen": 1791622589.426506,
+    "ast_hash": "760dcbdb8246f5e2f83f462389dceaf9",
+    "semantic_hash": ""
+  },
+  "autodspy_reproduction/policy.py": {
+    "mtime": 1791621677.005559,
+    "seen": 1791622589.4265091,
+    "ast_hash": "6132242108c2ebce7aac9ff57171fba2",
+    "semantic_hash": ""
+  },
+  "autodspy_reproduction/reward.py": {
+    "mtime": 1791623311.4892612,
+    "seen": 1791623413.5511847,
+    "ast_hash": "5905fb8ed2ee68ba039de7b7ee1a2f0a",
+    "semantic_hash": ""
+  },
+  "autodspy_reproduction/runtime.py": {
+    "mtime": 1791623311.485507,
+    "seen": 1791623413.5511863,
+    "ast_hash": "8e2eb6170e069c6203070650edb08457",
+    "semantic_hash": ""
+  },
+  "autodspy_reproduction/training.py": {
+    "mtime": 1791622833.3939137,
+    "seen": 1791623413.551188,
+    "ast_hash": "7c11b468930fbcfa0530a54bab1a96b2",
+    "semantic_hash": ""
+  },
+  "run_grpo_baseline.py": {
+    "mtime": 1790122394.360686,
+    "seen": 1791622589.4265234,
+    "ast_hash": "acc2391eb066bb28d5b08f4d417469ee",
+    "semantic_hash": ""
+  },
+  "tests/policy_smoke.py": {
+    "mtime": 1791623311.488266,
+    "seen": 1791623413.5511913,
+    "ast_hash": "f2742c3099998dfe2200033c4a379e11",
+    "semantic_hash": ""
+  },
+  "tests/test_reproduction.py": {
+    "mtime": 1791622650.3832915,
+    "seen": 1791623413.5511925,
+    "ast_hash": "4a83899c0432b5b5a67ebf1580386f69",
+    "semantic_hash": ""
+  },
+  ".codex/skills/graphify/SKILL.md": {
+    "mtime": 1791132273.1944263,
+    "seen": 1791622589.4265356,
+    "ast_hash": "0f57b61141afe7b743273aec47c49dcc",
+    "semantic_hash": ""
+  },
+  ".codex/skills/graphify/references/add-watch.md": {
+    "mtime": 1791130314.2934058,
+    "seen": 1791622589.4265387,
+    "ast_hash": "c1f65eb4102ad515149303c7f296b718",
+    "semantic_hash": ""
+  },
+  ".codex/skills/graphify/references/exports.md": {
+    "mtime": 1791130314.2944036,
+    "seen": 1791622589.426542,
+    "ast_hash": "9da2a2152e60a22f07f05fed5158f287",
+    "semantic_hash": ""
+  },
+  ".codex/skills/graphify/references/extraction-spec.md": {
+    "mtime": 1791130314.2944036,
+    "seen": 1791622589.426546,
+    "ast_hash": "bf895ec4d4e40f5f66f7d31c2a9bd4a7",
+    "semantic_hash": ""
+  },
+  ".codex/skills/graphify/references/github-and-merge.md": {
+    "mtime": 1791130314.2954066,
+    "seen": 1791622589.4265494,
+    "ast_hash": "cde13df085e4c492aeb7ba298a996d0d",
+    "semantic_hash": ""
+  },
+  ".codex/skills/graphify/references/hooks.md": {
+    "mtime": 1791130314.2954066,
+    "seen": 1791622589.4265542,
+    "ast_hash": "3f545db6ce646650bb9de588f5512a27",
+    "semantic_hash": ""
+  },
+  ".codex/skills/graphify/references/query.md": {
+    "mtime": 1791130314.3013992,
+    "seen": 1791622589.4265573,
+    "ast_hash": "3c46f8ad006874260614ed8657d02307",
+    "semantic_hash": ""
+  },
+  ".codex/skills/graphify/references/transcribe.md": {
+    "mtime": 1791130314.3024037,
+    "seen": 1791622589.426565,
+    "ast_hash": "67b6a5fa6c0974e18f60db9f8932fbd8",
+    "semantic_hash": ""
+  },
+  ".codex/skills/graphify/references/update.md": {
+    "mtime": 1791130314.3024037,
+    "seen": 1791622589.4265695,
+    "ast_hash": "9378bd03d56baaf78bd738ab3848f142",
+    "semantic_hash": ""
+  },
+  "AGENTS.md": {
+    "mtime": 1791132273.1964233,
+    "seen": 1791622589.4265718,
+    "ast_hash": "21ceb6533048be51308e69e7b74a35cf",
+    "semantic_hash": ""
+  },
+  "BASELINE_RESULTS.md": {
+    "mtime": 1790122394.360686,
+    "seen": 1791622589.4265764,
+    "ast_hash": "96dbe098d69b3b30accde91059a7fbff",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1790122262.5616097,
+    "seen": 1791622589.42658,
+    "ast_hash": "f8aabc9b0f76f200dd4ead13652d740a",
+    "semantic_hash": ""
+  },
+  "configs/grpo_gsm8k.yaml": {
+    "mtime": 1791621890.1772153,
+    "seen": 1791622589.426584,
+    "ast_hash": "fb921ce6bc8fb46100e179ad98743b58",
+    "semantic_hash": ""
+  },
+  "configs/grpo_smoke_test.yaml": {
+    "mtime": 1791621890.1772153,
+    "seen": 1791622589.4265895,
+    "ast_hash": "8774606be27531685f280e2221c03092",
+    "semantic_hash": ""
+  },
+  "docs/DEVIATIONS_FROM_PAPER.md": {
+    "mtime": 1791623311.4892612,
+    "seen": 1791623413.5512187,
+    "ast_hash": "7575fe08d80d4fad8f3ef0ce73d2f4aa",
+    "semantic_hash": ""
+  },
+  "docs/REPRODUCTION_AUDIT.md": {
+    "mtime": 1791621451.9453025,
+    "seen": 1791622589.426596,
+    "ast_hash": "95425a7957b7bf5d4a568799375b4fb7",
+    "semantic_hash": ""
+  },
+  "docs/REPRODUCTION_GUIDE.md": {
+    "mtime": 1791623311.4902632,
+    "seen": 1791623413.5512223,
+    "ast_hash": "35f5e0d812ffcac45081520704d34028",
+    "semantic_hash": ""
+  },
+  "requirements-reproduction.txt": {
+    "mtime": 1791621890.1772153,
+    "seen": 1791622589.426602,
+    "ast_hash": "bb8a867063998acb0521f7b5d0b89c0f",
+    "semantic_hash": ""
+  },
+  "AutoDSPy.pdf": {
+    "mtime": 1791115898.6050823,
+    "seen": 1791622589.426605,
+    "ast_hash": "2d4f7aa0c27ecaea34efb186a63ee2ef",
+    "semantic_hash": ""
+  },
+  "assets/Figure_1 (F)-1.png": {
+    "mtime": 1790122262.5616097,
+    "seen": 1791622589.4266078,
+    "ast_hash": "f8995d8e68dc34aefaf5741f78512aa4",
+    "semantic_hash": ""
+  },
+  "assets/Figure_2 (F)-1.png": {
+    "mtime": 1790122262.5658686,
+    "seen": 1791622589.4266107,
+    "ast_hash": "8baa8e809b771f9a3fb19a7ae0cee267",
+    "semantic_hash": ""
+  }
+}
