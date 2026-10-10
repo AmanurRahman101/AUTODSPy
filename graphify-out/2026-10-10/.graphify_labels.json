@@ -1,12 +1,12 @@
 {
-  "0": "test_reproduction.py",
+  "0": "reward.py",
   "1": "runtime.py",
   "2": "Findings and proposed corrections",
   "3": "DSPy Pipeline Optimization with Reinforcement Learning",
   "4": "What You Must Do When Invoked",
-  "5": "Config",
-  "6": "execution.py",
-  "7": "policy.py",
+  "5": "test_reproduction.py",
+  "6": "Execution",
+  "7": "Policy",
   "8": "📊 CSE 498R Thesis: Baseline Execution & Empirical Analysis Report",
   "9": "run_grpo_baseline.py",
   "10": "graphify reference: extra exports and benchmark",
@@ -18,5 +18,6 @@
   "16": "graphify reference: transcribe video and audio",
   "17": "AGENTS.md",
   "18": "__init__.py",
-  "19": "extraction-spec.md"
+  "19": "extraction-spec.md",
+  "20": "__main__.py"
 }

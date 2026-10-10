@@ -10,11 +10,24 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "reward.py",
+      "community_name": "test_reproduction.py",
       "file_type": "code",
       "norm_label": "reward",
       "source_file": "autodspy_reproduction/reward.py",
       "source_location": "L59"
+    },
+    {
+      "id": "tests_test_reproduction_notebook_notebooktests",
+      "label": "NotebookTests",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "test_reproduction.py",
+      "file_type": "code",
+      "norm_label": "notebooktests",
+      "source_file": "tests/test_reproduction_notebook.py",
+      "source_location": "L33"
     },
     {
       "id": "tests_test_reproduction_numericaltests",
@@ -23,24 +36,37 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "reward.py",
+      "community_name": "test_reproduction.py",
       "file_type": "code",
       "norm_label": "numericaltests",
       "source_file": "tests/test_reproduction.py",
       "source_location": "L63"
     },
     {
-      "id": "autodspy_reproduction_execution_dspyexecutor",
-      "label": "DSPyExecutor",
+      "id": "autodspy_reproduction_data_example",
+      "label": "Example",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 20,
       "community_name": "__main__.py",
       "file_type": "code",
-      "norm_label": "dspyexecutor",
-      "source_file": "autodspy_reproduction/execution.py",
-      "source_location": "L63"
+      "norm_label": "example",
+      "source_file": "autodspy_reproduction/data.py",
+      "source_location": "L10"
+    },
+    {
+      "id": "tests_test_reproduction_losstests",
+      "label": "LossTests",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "torch",
+      "file_type": "code",
+      "norm_label": "losstests",
+      "source_file": "tests/test_reproduction.py",
+      "source_location": "L104"
     },
     {
       "id": "autodspy_reproduction_config_config",
@@ -49,24 +75,24 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 5,
-      "community_name": "test_reproduction.py",
+      "community_name": "Config",
       "file_type": "code",
       "norm_label": "config",
       "source_file": "autodspy_reproduction/config.py",
       "source_location": "L9"
     },
     {
-      "id": "autodspy_reproduction_data_example",
-      "label": "Example",
+      "id": "autodspy_reproduction_execution_dspyexecutor",
+      "label": "DSPyExecutor",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 5,
-      "community_name": "test_reproduction.py",
+      "community_name": "Config",
       "file_type": "code",
-      "norm_label": "example",
-      "source_file": "autodspy_reproduction/data.py",
-      "source_location": "L10"
+      "norm_label": "dspyexecutor",
+      "source_file": "autodspy_reproduction/execution.py",
+      "source_location": "L63"
     },
     {
       "id": "tests_test_reproduction_fixturemodel",
@@ -75,7 +101,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 5,
-      "community_name": "test_reproduction.py",
+      "community_name": "Config",
       "file_type": "code",
       "norm_label": "fixturemodel",
       "source_file": "tests/test_reproduction.py",
@@ -88,7 +114,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 5,
-      "community_name": "test_reproduction.py",
+      "community_name": "Config",
       "file_type": "code",
       "norm_label": "fixturetokenizer",
       "source_file": "tests/test_reproduction.py",
@@ -101,24 +127,11 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 5,
-      "community_name": "test_reproduction.py",
+      "community_name": "Config",
       "file_type": "code",
       "norm_label": "inputs",
       "source_file": "tests/test_reproduction.py",
       "source_location": "L25"
-    },
-    {
-      "id": "tests_test_reproduction_losstests",
-      "label": "LossTests",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "test_reproduction.py",
-      "file_type": "code",
-      "norm_label": "losstests",
-      "source_file": "tests/test_reproduction.py",
-      "source_location": "L104"
     },
     {
       "id": "tests_test_reproduction_policytests",
@@ -127,7 +140,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 5,
-      "community_name": "test_reproduction.py",
+      "community_name": "Config",
       "file_type": "code",
       "norm_label": "policytests",
       "source_file": "tests/test_reproduction.py",
@@ -140,7 +153,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 5,
-      "community_name": "test_reproduction.py",
+      "community_name": "Config",
       "file_type": "code",
       "norm_label": "runtests",
       "source_file": "tests/test_reproduction.py",
@@ -230,11 +243,23 @@
       "_callable": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "reward.py",
+      "community_name": "test_reproduction.py",
       "file_type": "code",
       "norm_label": "canonical_answer()",
       "source_file": "autodspy_reproduction/reward.py",
       "source_location": "L11"
+    },
+    {
+      "id": "autodspy_reproduction_reward_compute_reward",
+      "label": "compute_reward()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "test_reproduction.py",
+      "file_type": "code",
+      "norm_label": "compute_reward()",
+      "source_file": "autodspy_reproduction/reward.py",
+      "source_location": "L70"
     },
     {
       "id": "autodspy_reproduction_reward_exact_match",
@@ -242,7 +267,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "reward.py",
+      "community_name": "test_reproduction.py",
       "file_type": "code",
       "norm_label": "exact_match()",
       "source_file": "autodspy_reproduction/reward.py",
@@ -254,7 +279,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "reward.py",
+      "community_name": "test_reproduction.py",
       "file_type": "code",
       "norm_label": "normalize_number()",
       "source_file": "autodspy_reproduction/reward.py",
@@ -266,7 +291,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "reward.py",
+      "community_name": "test_reproduction.py",
       "file_type": "code",
       "norm_label": "parse_judge_score()",
       "source_file": "autodspy_reproduction/reward.py",
@@ -278,11 +303,71 @@
       "_callable": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "reward.py",
+      "community_name": "test_reproduction.py",
       "file_type": "code",
       "norm_label": ".to_dict()",
       "source_file": "autodspy_reproduction/reward.py",
       "source_location": "L66"
+    },
+    {
+      "id": "tests_test_reproduction_notebook_notebook_namespace",
+      "label": "notebook_namespace()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "test_reproduction.py",
+      "file_type": "code",
+      "norm_label": "notebook_namespace()",
+      "source_file": "tests/test_reproduction_notebook.py",
+      "source_location": "L15"
+    },
+    {
+      "id": "tests_test_reproduction_notebook_notebooktests_setupclass",
+      "label": ".setUpClass()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "test_reproduction.py",
+      "file_type": "code",
+      "norm_label": ".setupclass()",
+      "source_file": "tests/test_reproduction_notebook.py",
+      "source_location": "L35"
+    },
+    {
+      "id": "tests_test_reproduction_notebook_notebooktests_test_manual_episode_iteration_matches_validated_module",
+      "label": ".test_manual_episode_iteration_matches_validated_module()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "test_reproduction.py",
+      "file_type": "code",
+      "norm_label": ".test_manual_episode_iteration_matches_validated_module()",
+      "source_file": "tests/test_reproduction_notebook.py",
+      "source_location": "L54"
+    },
+    {
+      "id": "tests_test_reproduction_notebook_notebooktests_test_provenance_uses_notebook_code_without_output_or_flag_changes",
+      "label": ".test_provenance_uses_notebook_code_without_output_or_flag_changes()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "test_reproduction.py",
+      "file_type": "code",
+      "norm_label": ".test_provenance_uses_notebook_code_without_output_or_flag_changes()",
+      "source_file": "tests/test_reproduction_notebook.py",
+      "source_location": "L86"
+    },
+    {
+      "id": "tests_test_reproduction_notebook_notebooktests_test_self_contained_cells_and_offline_suite",
+      "label": ".test_self_contained_cells_and_offline_suite()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "test_reproduction.py",
+      "file_type": "code",
+      "norm_label": ".test_self_contained_cells_and_offline_suite()",
+      "source_file": "tests/test_reproduction_notebook.py",
+      "source_location": "L38"
     },
     {
       "id": "tests_test_reproduction_numericaltests_test_binary_judge_rejects_substring_false_positive",
@@ -290,7 +375,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "reward.py",
+      "community_name": "test_reproduction.py",
       "file_type": "code",
       "norm_label": ".test_binary_judge_rejects_substring_false_positive()",
       "source_file": "tests/test_reproduction.py",
@@ -302,7 +387,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "reward.py",
+      "community_name": "test_reproduction.py",
       "file_type": "code",
       "norm_label": ".test_canonical_preserves_value()",
       "source_file": "tests/test_reproduction.py",
@@ -314,7 +399,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "reward.py",
+      "community_name": "test_reproduction.py",
       "file_type": "code",
       "norm_label": ".test_infrastructure_errors_propagate()",
       "source_file": "tests/test_reproduction.py",
@@ -326,7 +411,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "reward.py",
+      "community_name": "test_reproduction.py",
       "file_type": "code",
       "norm_label": "broken()",
       "source_file": "tests/test_reproduction.py",
@@ -338,7 +423,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "reward.py",
+      "community_name": "test_reproduction.py",
       "file_type": "code",
       "norm_label": ".test_reward_exact_and_fallback()",
       "source_file": "tests/test_reproduction.py",
@@ -350,7 +435,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 0,
-      "community_name": "reward.py",
+      "community_name": "test_reproduction.py",
       "file_type": "code",
       "norm_label": ".test_signed_commas_decimals()",
       "source_file": "tests/test_reproduction.py",
@@ -367,18 +452,6 @@
       "norm_label": "evaluate()",
       "source_file": "autodspy_reproduction/evaluation.py",
       "source_location": "L10"
-    },
-    {
-      "id": "autodspy_reproduction_reward_compute_reward",
-      "label": "compute_reward()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "runtime.py",
-      "file_type": "code",
-      "norm_label": "compute_reward()",
-      "source_file": "autodspy_reproduction/reward.py",
-      "source_location": "L70"
     },
     {
       "id": "autodspy_reproduction_runtime_append_json",
@@ -465,6 +538,18 @@
       "source_location": "L90"
     },
     {
+      "id": "autodspy_reproduction_runtime_seed_everything",
+      "label": "seed_everything()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "runtime.py",
+      "file_type": "code",
+      "norm_label": "seed_everything()",
+      "source_file": "autodspy_reproduction/runtime.py",
+      "source_location": "L16"
+    },
+    {
       "id": "autodspy_reproduction_runtime_shell_output",
       "label": "shell_output()",
       "_callable": true,
@@ -487,6 +572,30 @@
       "norm_label": "train()",
       "source_file": "autodspy_reproduction/training.py",
       "source_location": "L47"
+    },
+    {
+      "id": "tests_test_reproduction_runtests_test_checkpoint_refuses_overwrite_and_restores_rng",
+      "label": ".test_checkpoint_refuses_overwrite_and_restores_rng()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "runtime.py",
+      "file_type": "code",
+      "norm_label": ".test_checkpoint_refuses_overwrite_and_restores_rng()",
+      "source_file": "tests/test_reproduction.py",
+      "source_location": "L239"
+    },
+    {
+      "id": "tests_test_reproduction_runtests_test_training_checkpoint_resume_and_four_way_evaluation",
+      "label": ".test_training_checkpoint_resume_and_four_way_evaluation()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "runtime.py",
+      "file_type": "code",
+      "norm_label": ".test_training_checkpoint_resume_and_four_way_evaluation()",
+      "source_file": "tests/test_reproduction.py",
+      "source_location": "L252"
     },
     {
       "id": "autodspy_reproduction_config_load_config",
@@ -513,6 +622,18 @@
       "source_location": "L45"
     },
     {
+      "id": "autodspy_reproduction_data_example_to_dict",
+      "label": ".to_dict()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "__main__.py",
+      "file_type": "code",
+      "norm_label": ".to_dict()",
+      "source_file": "autodspy_reproduction/data.py",
+      "source_location": "L17"
+    },
+    {
       "id": "autodspy_reproduction_data_load_examples",
       "label": "load_examples()",
       "_callable": true,
@@ -523,42 +644,6 @@
       "norm_label": "load_examples()",
       "source_file": "autodspy_reproduction/data.py",
       "source_location": "L21"
-    },
-    {
-      "id": "autodspy_reproduction_execution_dspyexecutor_init",
-      "label": ".__init__()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 20,
-      "community_name": "__main__.py",
-      "file_type": "code",
-      "norm_label": ".__init__()",
-      "source_file": "autodspy_reproduction/execution.py",
-      "source_location": "L64"
-    },
-    {
-      "id": "autodspy_reproduction_execution_dspyexecutor_judge",
-      "label": ".judge()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 20,
-      "community_name": "__main__.py",
-      "file_type": "code",
-      "norm_label": ".judge()",
-      "source_file": "autodspy_reproduction/execution.py",
-      "source_location": "L99"
-    },
-    {
-      "id": "autodspy_reproduction_execution_dspyexecutor_runtime",
-      "label": ".runtime()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 20,
-      "community_name": "__main__.py",
-      "file_type": "code",
-      "norm_label": ".runtime()",
-      "source_file": "autodspy_reproduction/execution.py",
-      "source_location": "L74"
     },
     {
       "id": "autodspy_reproduction_execution_ollama_json",
@@ -645,12 +730,144 @@
       "source_location": "L34"
     },
     {
+      "id": "tests_test_reproduction_runtests_test_configs_and_dataset_split_guard",
+      "label": ".test_configs_and_dataset_split_guard()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "__main__.py",
+      "file_type": "code",
+      "norm_label": ".test_configs_and_dataset_split_guard()",
+      "source_file": "tests/test_reproduction.py",
+      "source_location": "L226"
+    },
+    {
+      "id": "autodspy_reproduction_loss_action_loss",
+      "label": "action_loss()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "torch",
+      "file_type": "code",
+      "norm_label": "action_loss()",
+      "source_file": "autodspy_reproduction/loss.py",
+      "source_location": "L19"
+    },
+    {
+      "id": "autodspy_reproduction_loss_group_advantages",
+      "label": "group_advantages()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "torch",
+      "file_type": "code",
+      "norm_label": "group_advantages()",
+      "source_file": "autodspy_reproduction/loss.py",
+      "source_location": "L5"
+    },
+    {
+      "id": "autodspy_reproduction_loss_group_loss",
+      "label": "group_loss()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "torch",
+      "file_type": "code",
+      "norm_label": "group_loss()",
+      "source_file": "autodspy_reproduction/loss.py",
+      "source_location": "L34"
+    },
+    {
+      "id": "autodspy_reproduction_training_update_episode",
+      "label": "update_episode()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "torch",
+      "file_type": "code",
+      "norm_label": "update_episode()",
+      "source_file": "autodspy_reproduction/training.py",
+      "source_location": "L11"
+    },
+    {
+      "id": "tests_test_reproduction_losstests_test_centered_and_population_normalization",
+      "label": ".test_centered_and_population_normalization()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "torch",
+      "file_type": "code",
+      "norm_label": ".test_centered_and_population_normalization()",
+      "source_file": "tests/test_reproduction.py",
+      "source_location": "L105"
+    },
+    {
+      "id": "tests_test_reproduction_losstests_test_clipped_entropy_and_behavior_detachment",
+      "label": ".test_clipped_entropy_and_behavior_detachment()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "torch",
+      "file_type": "code",
+      "norm_label": ".test_clipped_entropy_and_behavior_detachment()",
+      "source_file": "tests/test_reproduction.py",
+      "source_location": "L131"
+    },
+    {
+      "id": "tests_test_reproduction_losstests_test_clipping_both_advantage_signs",
+      "label": ".test_clipping_both_advantage_signs()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "torch",
+      "file_type": "code",
+      "norm_label": ".test_clipping_both_advantage_signs()",
+      "source_file": "tests/test_reproduction.py",
+      "source_location": "L126"
+    },
+    {
+      "id": "tests_test_reproduction_losstests_test_equal_rewards_zero_gradient",
+      "label": ".test_equal_rewards_zero_gradient()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "torch",
+      "file_type": "code",
+      "norm_label": ".test_equal_rewards_zero_gradient()",
+      "source_file": "tests/test_reproduction.py",
+      "source_location": "L142"
+    },
+    {
+      "id": "tests_test_reproduction_losstests_test_notebook_loss_matches_released_formula",
+      "label": ".test_notebook_loss_matches_released_formula()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "torch",
+      "file_type": "code",
+      "norm_label": ".test_notebook_loss_matches_released_formula()",
+      "source_file": "tests/test_reproduction.py",
+      "source_location": "L115"
+    },
+    {
+      "id": "tests_test_reproduction_policytests_test_accumulated_replay_matches_full_graph_gradient",
+      "label": ".test_accumulated_replay_matches_full_graph_gradient()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "torch",
+      "file_type": "code",
+      "norm_label": ".test_accumulated_replay_matches_full_graph_gradient()",
+      "source_file": "tests/test_reproduction.py",
+      "source_location": "L185"
+    },
+    {
       "id": "autodspy_reproduction_config_config_to_dict",
       "label": ".to_dict()",
       "_callable": true,
       "_origin": "ast",
       "community": 5,
-      "community_name": "test_reproduction.py",
+      "community_name": "Config",
       "file_type": "code",
       "norm_label": ".to_dict()",
       "source_file": "autodspy_reproduction/config.py",
@@ -662,83 +879,71 @@
       "_callable": true,
       "_origin": "ast",
       "community": 5,
-      "community_name": "test_reproduction.py",
+      "community_name": "Config",
       "file_type": "code",
       "norm_label": ".validate()",
       "source_file": "autodspy_reproduction/config.py",
       "source_location": "L43"
     },
     {
-      "id": "autodspy_reproduction_data_example_to_dict",
-      "label": ".to_dict()",
+      "id": "autodspy_reproduction_execution_dspyexecutor_execute",
+      "label": ".execute()",
       "_callable": true,
       "_origin": "ast",
       "community": 5,
-      "community_name": "test_reproduction.py",
+      "community_name": "Config",
       "file_type": "code",
-      "norm_label": ".to_dict()",
-      "source_file": "autodspy_reproduction/data.py",
-      "source_location": "L17"
+      "norm_label": ".execute()",
+      "source_file": "autodspy_reproduction/execution.py",
+      "source_location": "L77"
     },
     {
-      "id": "autodspy_reproduction_loss_action_loss",
-      "label": "action_loss()",
+      "id": "autodspy_reproduction_execution_dspyexecutor_init",
+      "label": ".__init__()",
       "_callable": true,
       "_origin": "ast",
       "community": 5,
-      "community_name": "test_reproduction.py",
+      "community_name": "Config",
       "file_type": "code",
-      "norm_label": "action_loss()",
-      "source_file": "autodspy_reproduction/loss.py",
-      "source_location": "L19"
+      "norm_label": ".__init__()",
+      "source_file": "autodspy_reproduction/execution.py",
+      "source_location": "L64"
     },
     {
-      "id": "autodspy_reproduction_loss_group_advantages",
-      "label": "group_advantages()",
+      "id": "autodspy_reproduction_execution_dspyexecutor_judge",
+      "label": ".judge()",
       "_callable": true,
       "_origin": "ast",
       "community": 5,
-      "community_name": "test_reproduction.py",
+      "community_name": "Config",
       "file_type": "code",
-      "norm_label": "group_advantages()",
-      "source_file": "autodspy_reproduction/loss.py",
-      "source_location": "L5"
+      "norm_label": ".judge()",
+      "source_file": "autodspy_reproduction/execution.py",
+      "source_location": "L99"
     },
     {
-      "id": "autodspy_reproduction_loss_group_loss",
-      "label": "group_loss()",
+      "id": "autodspy_reproduction_execution_dspyexecutor_runtime",
+      "label": ".runtime()",
       "_callable": true,
       "_origin": "ast",
       "community": 5,
-      "community_name": "test_reproduction.py",
+      "community_name": "Config",
       "file_type": "code",
-      "norm_label": "group_loss()",
-      "source_file": "autodspy_reproduction/loss.py",
-      "source_location": "L34"
+      "norm_label": ".runtime()",
+      "source_file": "autodspy_reproduction/execution.py",
+      "source_location": "L74"
     },
     {
-      "id": "autodspy_reproduction_runtime_seed_everything",
-      "label": "seed_everything()",
+      "id": "autodspy_reproduction_execution_pipeline_pair",
+      "label": "pipeline_pair()",
       "_callable": true,
       "_origin": "ast",
       "community": 5,
-      "community_name": "test_reproduction.py",
+      "community_name": "Config",
       "file_type": "code",
-      "norm_label": "seed_everything()",
-      "source_file": "autodspy_reproduction/runtime.py",
-      "source_location": "L16"
-    },
-    {
-      "id": "autodspy_reproduction_training_update_episode",
-      "label": "update_episode()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "test_reproduction.py",
-      "file_type": "code",
-      "norm_label": "update_episode()",
-      "source_file": "autodspy_reproduction/training.py",
-      "source_location": "L11"
+      "norm_label": "pipeline_pair()",
+      "source_file": "autodspy_reproduction/execution.py",
+      "source_location": "L54"
     },
     {
       "id": "tests_test_reproduction_fixture_policy",
@@ -746,7 +951,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 5,
-      "community_name": "test_reproduction.py",
+      "community_name": "Config",
       "file_type": "code",
       "norm_label": "fixture_policy()",
       "source_file": "tests/test_reproduction.py",
@@ -758,7 +963,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 5,
-      "community_name": "test_reproduction.py",
+      "community_name": "Config",
       "file_type": "code",
       "norm_label": ".forward()",
       "source_file": "tests/test_reproduction.py",
@@ -770,7 +975,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 5,
-      "community_name": "test_reproduction.py",
+      "community_name": "Config",
       "file_type": "code",
       "norm_label": ".__init__()",
       "source_file": "tests/test_reproduction.py",
@@ -782,7 +987,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 5,
-      "community_name": "test_reproduction.py",
+      "community_name": "Config",
       "file_type": "code",
       "norm_label": ".__call__()",
       "source_file": "tests/test_reproduction.py",
@@ -794,7 +999,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 5,
-      "community_name": "test_reproduction.py",
+      "community_name": "Config",
       "file_type": "code",
       "norm_label": ".encode()",
       "source_file": "tests/test_reproduction.py",
@@ -806,83 +1011,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 5,
-      "community_name": "test_reproduction.py",
+      "community_name": "Config",
       "file_type": "code",
       "norm_label": ".to()",
       "source_file": "tests/test_reproduction.py",
       "source_location": "L26"
-    },
-    {
-      "id": "tests_test_reproduction_losstests_test_centered_and_population_normalization",
-      "label": ".test_centered_and_population_normalization()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "test_reproduction.py",
-      "file_type": "code",
-      "norm_label": ".test_centered_and_population_normalization()",
-      "source_file": "tests/test_reproduction.py",
-      "source_location": "L105"
-    },
-    {
-      "id": "tests_test_reproduction_losstests_test_clipped_entropy_and_behavior_detachment",
-      "label": ".test_clipped_entropy_and_behavior_detachment()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "test_reproduction.py",
-      "file_type": "code",
-      "norm_label": ".test_clipped_entropy_and_behavior_detachment()",
-      "source_file": "tests/test_reproduction.py",
-      "source_location": "L131"
-    },
-    {
-      "id": "tests_test_reproduction_losstests_test_clipping_both_advantage_signs",
-      "label": ".test_clipping_both_advantage_signs()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "test_reproduction.py",
-      "file_type": "code",
-      "norm_label": ".test_clipping_both_advantage_signs()",
-      "source_file": "tests/test_reproduction.py",
-      "source_location": "L126"
-    },
-    {
-      "id": "tests_test_reproduction_losstests_test_equal_rewards_zero_gradient",
-      "label": ".test_equal_rewards_zero_gradient()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "test_reproduction.py",
-      "file_type": "code",
-      "norm_label": ".test_equal_rewards_zero_gradient()",
-      "source_file": "tests/test_reproduction.py",
-      "source_location": "L142"
-    },
-    {
-      "id": "tests_test_reproduction_losstests_test_notebook_loss_matches_released_formula",
-      "label": ".test_notebook_loss_matches_released_formula()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "test_reproduction.py",
-      "file_type": "code",
-      "norm_label": ".test_notebook_loss_matches_released_formula()",
-      "source_file": "tests/test_reproduction.py",
-      "source_location": "L115"
-    },
-    {
-      "id": "tests_test_reproduction_policytests_test_accumulated_replay_matches_full_graph_gradient",
-      "label": ".test_accumulated_replay_matches_full_graph_gradient()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "test_reproduction.py",
-      "file_type": "code",
-      "norm_label": ".test_accumulated_replay_matches_full_graph_gradient()",
-      "source_file": "tests/test_reproduction.py",
-      "source_location": "L185"
     },
     {
       "id": "tests_test_reproduction_policytests_test_duplicate_tokens_are_separate_action_slots",
@@ -890,7 +1023,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 5,
-      "community_name": "test_reproduction.py",
+      "community_name": "Config",
       "file_type": "code",
       "norm_label": ".test_duplicate_tokens_are_separate_action_slots()",
       "source_file": "tests/test_reproduction.py",
@@ -902,7 +1035,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 5,
-      "community_name": "test_reproduction.py",
+      "community_name": "Config",
       "file_type": "code",
       "norm_label": ".test_generation_stop_and_replay_probability()",
       "source_file": "tests/test_reproduction.py",
@@ -914,35 +1047,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 5,
-      "community_name": "test_reproduction.py",
+      "community_name": "Config",
       "file_type": "code",
       "norm_label": ".test_replay_updates_parameters()",
       "source_file": "tests/test_reproduction.py",
       "source_location": "L176"
-    },
-    {
-      "id": "tests_test_reproduction_runtests_test_checkpoint_refuses_overwrite_and_restores_rng",
-      "label": ".test_checkpoint_refuses_overwrite_and_restores_rng()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "test_reproduction.py",
-      "file_type": "code",
-      "norm_label": ".test_checkpoint_refuses_overwrite_and_restores_rng()",
-      "source_file": "tests/test_reproduction.py",
-      "source_location": "L239"
-    },
-    {
-      "id": "tests_test_reproduction_runtests_test_configs_and_dataset_split_guard",
-      "label": ".test_configs_and_dataset_split_guard()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "test_reproduction.py",
-      "file_type": "code",
-      "norm_label": ".test_configs_and_dataset_split_guard()",
-      "source_file": "tests/test_reproduction.py",
-      "source_location": "L226"
     },
     {
       "id": "tests_test_reproduction_runtests_test_dspy_execution_fields_and_adapter_failure",
@@ -950,35 +1059,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 5,
-      "community_name": "test_reproduction.py",
+      "community_name": "Config",
       "file_type": "code",
       "norm_label": ".test_dspy_execution_fields_and_adapter_failure()",
       "source_file": "tests/test_reproduction.py",
       "source_location": "L207"
-    },
-    {
-      "id": "tests_test_reproduction_runtests_test_training_checkpoint_resume_and_four_way_evaluation",
-      "label": ".test_training_checkpoint_resume_and_four_way_evaluation()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "test_reproduction.py",
-      "file_type": "code",
-      "norm_label": ".test_training_checkpoint_resume_and_four_way_evaluation()",
-      "source_file": "tests/test_reproduction.py",
-      "source_location": "L252"
-    },
-    {
-      "id": "autodspy_reproduction_execution_dspyexecutor_execute",
-      "label": ".execute()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "Execution",
-      "file_type": "code",
-      "norm_label": ".execute()",
-      "source_file": "autodspy_reproduction/execution.py",
-      "source_location": "L77"
     },
     {
       "id": "autodspy_reproduction_execution_execution_to_dict",
@@ -991,18 +1076,6 @@
       "norm_label": ".to_dict()",
       "source_file": "autodspy_reproduction/execution.py",
       "source_location": "L50"
-    },
-    {
-      "id": "autodspy_reproduction_execution_pipeline_pair",
-      "label": "pipeline_pair()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "Execution",
-      "file_type": "code",
-      "norm_label": "pipeline_pair()",
-      "source_file": "autodspy_reproduction/execution.py",
-      "source_location": "L54"
     },
     {
       "id": "tests_policy_smoke_scriptedexecutionfixture_execute",
@@ -1237,10 +1310,32 @@
       "label": "reward.py",
       "_origin": "ast",
       "community": 0,
-      "community_name": "reward.py",
+      "community_name": "test_reproduction.py",
       "file_type": "code",
       "norm_label": "reward.py",
       "source_file": "autodspy_reproduction/reward.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "tests_test_reproduction",
+      "label": "test_reproduction.py",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "test_reproduction.py",
+      "file_type": "code",
+      "norm_label": "test_reproduction.py",
+      "source_file": "tests/test_reproduction.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "tests_test_reproduction_notebook",
+      "label": "test_reproduction_notebook.py",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "test_reproduction.py",
+      "file_type": "code",
+      "norm_label": "test_reproduction_notebook.py",
+      "source_file": "tests/test_reproduction_notebook.py",
       "source_location": "L1"
     },
     {
@@ -1248,10 +1343,32 @@
       "label": "Canonical GSM8K numeric exact match and released LLM reward fallback.",
       "_origin": "ast",
       "community": 0,
-      "community_name": "reward.py",
+      "community_name": "test_reproduction.py",
       "file_type": "rationale",
       "norm_label": "canonical gsm8k numeric exact match and released llm reward fallback.",
       "source_file": "autodspy_reproduction/reward.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "tests_test_reproduction_notebook_rationale_1",
+      "label": "Validate the notebook's own code and interactive episode execution offline.",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "test_reproduction.py",
+      "file_type": "rationale",
+      "norm_label": "validate the notebook's own code and interactive episode execution offline.",
+      "source_file": "tests/test_reproduction_notebook.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "tests_test_reproduction_rationale_1",
+      "label": "Offline engineering tests; fixtures never represent Llama benchmark results.",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "test_reproduction.py",
+      "file_type": "rationale",
+      "norm_label": "offline engineering tests; fixtures never represent llama benchmark results.",
+      "source_file": "tests/test_reproduction.py",
       "source_location": "L1"
     },
     {
@@ -1835,6 +1952,18 @@
       "source_location": "L12"
     },
     {
+      "id": "docs_deviations_from_paper_notebook_presentation",
+      "label": "Notebook presentation",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Findings and proposed corrections",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "notebook presentation",
+      "source_file": "docs/DEVIATIONS_FROM_PAPER.md",
+      "source_location": "L30"
+    },
+    {
       "id": "docs_deviations_from_paper_readiness_criterion",
       "label": "Readiness criterion",
       "_origin": "ast",
@@ -1844,7 +1973,7 @@
       "node_kind": "heading",
       "norm_label": "readiness criterion",
       "source_file": "docs/DEVIATIONS_FROM_PAPER.md",
-      "source_location": "L34"
+      "source_location": "L38"
     },
     {
       "id": "docs_deviations_from_paper_sensitivity_modes_not_reproduction_defaults",
@@ -1856,7 +1985,7 @@
       "node_kind": "heading",
       "norm_label": "sensitivity modes, not reproduction defaults",
       "source_file": "docs/DEVIATIONS_FROM_PAPER.md",
-      "source_location": "L30"
+      "source_location": "L34"
     },
     {
       "id": "docs_deviations_from_paper_verified_choices",
@@ -1892,7 +2021,19 @@
       "node_kind": "heading",
       "norm_label": "actions and pipeline termination",
       "source_file": "docs/REPRODUCTION_AUDIT.md",
-      "source_location": "L16"
+      "source_location": "L18"
+    },
+    {
+      "id": "docs_reproduction_audit_audit_follow_up_evidence",
+      "label": "Audit follow-up evidence",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Findings and proposed corrections",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "audit follow-up evidence",
+      "source_file": "docs/REPRODUCTION_AUDIT.md",
+      "source_location": "L49"
     },
     {
       "id": "docs_reproduction_audit_checkpointing_and_reproducibility",
@@ -1904,7 +2045,7 @@
       "node_kind": "heading",
       "norm_label": "checkpointing and reproducibility",
       "source_file": "docs/REPRODUCTION_AUDIT.md",
-      "source_location": "L38"
+      "source_location": "L40"
     },
     {
       "id": "docs_reproduction_audit_dataset_and_sampling",
@@ -1916,7 +2057,7 @@
       "node_kind": "heading",
       "norm_label": "dataset and sampling",
       "source_file": "docs/REPRODUCTION_AUDIT.md",
-      "source_location": "L26"
+      "source_location": "L28"
     },
     {
       "id": "docs_reproduction_audit_decision",
@@ -1928,7 +2069,7 @@
       "node_kind": "heading",
       "norm_label": "decision",
       "source_file": "docs/REPRODUCTION_AUDIT.md",
-      "source_location": "L44"
+      "source_location": "L46"
     },
     {
       "id": "docs_reproduction_audit_evaluation_and_latency",
@@ -1940,7 +2081,7 @@
       "node_kind": "heading",
       "norm_label": "evaluation and latency",
       "source_file": "docs/REPRODUCTION_AUDIT.md",
-      "source_location": "L35"
+      "source_location": "L37"
     },
     {
       "id": "docs_reproduction_audit_evidence_hierarchy",
@@ -1952,7 +2093,7 @@
       "node_kind": "heading",
       "norm_label": "evidence hierarchy",
       "source_file": "docs/REPRODUCTION_AUDIT.md",
-      "source_location": "L8"
+      "source_location": "L10"
     },
     {
       "id": "docs_reproduction_audit_execution_llm",
@@ -1964,7 +2105,7 @@
       "node_kind": "heading",
       "norm_label": "execution llm",
       "source_file": "docs/REPRODUCTION_AUDIT.md",
-      "source_location": "L29"
+      "source_location": "L31"
     },
     {
       "id": "docs_reproduction_audit_findings_and_proposed_corrections",
@@ -1976,7 +2117,7 @@
       "node_kind": "heading",
       "norm_label": "findings and proposed corrections",
       "source_file": "docs/REPRODUCTION_AUDIT.md",
-      "source_location": "L11"
+      "source_location": "L13"
     },
     {
       "id": "docs_reproduction_audit_grpo_objective_advantages_clipping_entropy",
@@ -1988,7 +2129,7 @@
       "node_kind": "heading",
       "norm_label": "grpo objective, advantages, clipping, entropy",
       "source_file": "docs/REPRODUCTION_AUDIT.md",
-      "source_location": "L19"
+      "source_location": "L21"
     },
     {
       "id": "docs_reproduction_audit_hardware",
@@ -2000,7 +2141,7 @@
       "node_kind": "heading",
       "norm_label": "hardware",
       "source_file": "docs/REPRODUCTION_AUDIT.md",
-      "source_location": "L41"
+      "source_location": "L43"
     },
     {
       "id": "docs_reproduction_audit_optimizer_and_learning_rate",
@@ -2012,7 +2153,7 @@
       "node_kind": "heading",
       "norm_label": "optimizer and learning rate",
       "source_file": "docs/REPRODUCTION_AUDIT.md",
-      "source_location": "L23"
+      "source_location": "L25"
     },
     {
       "id": "docs_reproduction_audit_policy_architecture_and_initialization",
@@ -2024,7 +2165,7 @@
       "node_kind": "heading",
       "norm_label": "policy architecture and initialization",
       "source_file": "docs/REPRODUCTION_AUDIT.md",
-      "source_location": "L13"
+      "source_location": "L15"
     },
     {
       "id": "docs_reproduction_audit_reward_and_metric",
@@ -2036,7 +2177,7 @@
       "node_kind": "heading",
       "norm_label": "reward and metric",
       "source_file": "docs/REPRODUCTION_AUDIT.md",
-      "source_location": "L32"
+      "source_location": "L34"
     },
     {
       "id": "docs_reproduction_audit_scope_and_preservation",
@@ -2063,112 +2204,124 @@
       "source_location": "L1"
     },
     {
-      "id": "docs_reproduction_guide_full_training_explicit_command_only",
-      "label": "Full training (explicit command only)",
+      "id": "docs_validation_results",
+      "label": "VALIDATION_RESULTS.md",
       "_origin": "ast",
       "community": 2,
       "community_name": "Findings and proposed corrections",
       "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "full training (explicit command only)",
-      "source_file": "docs/REPRODUCTION_GUIDE.md",
-      "source_location": "L73"
-    },
-    {
-      "id": "docs_reproduction_guide_gpt_2_gsm8k_llama_3_1_8b_reproduction_guide",
-      "label": "GPT-2 / GSM8K / Llama 3.1 8B reproduction guide",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "Findings and proposed corrections",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "gpt-2 / gsm8k / llama 3.1 8b reproduction guide",
-      "source_file": "docs/REPRODUCTION_GUIDE.md",
+      "node_kind": "page",
+      "norm_label": "validation_results.md",
+      "source_file": "docs/VALIDATION_RESULTS.md",
       "source_location": "L1"
     },
     {
-      "id": "docs_reproduction_guide_gpu_memory_and_troubleshooting",
-      "label": "GPU memory and troubleshooting",
+      "id": "docs_validation_results_additional_real_policy_engineering_smoke_passed",
+      "label": "Additional real-policy engineering smoke - passed",
       "_origin": "ast",
       "community": 2,
       "community_name": "Findings and proposed corrections",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "gpu memory and troubleshooting",
-      "source_file": "docs/REPRODUCTION_GUIDE.md",
-      "source_location": "L119"
+      "norm_label": "additional real-policy engineering smoke - passed",
+      "source_file": "docs/VALIDATION_RESULTS.md",
+      "source_location": "L53"
     },
     {
-      "id": "docs_reproduction_guide_installation",
-      "label": "Installation",
+      "id": "docs_validation_results_environment_and_preservation",
+      "label": "Environment and preservation",
       "_origin": "ast",
       "community": 2,
       "community_name": "Findings and proposed corrections",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "installation",
-      "source_file": "docs/REPRODUCTION_GUIDE.md",
+      "norm_label": "environment and preservation",
+      "source_file": "docs/VALIDATION_RESULTS.md",
       "source_location": "L5"
     },
     {
-      "id": "docs_reproduction_guide_live_probe_and_smoke_training",
-      "label": "Live probe and smoke training",
+      "id": "docs_validation_results_four_way_held_out_smoke_evaluation_passed",
+      "label": "Four-way held-out smoke evaluation - passed",
       "_origin": "ast",
       "community": 2,
       "community_name": "Findings and proposed corrections",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "live probe and smoke training",
-      "source_file": "docs/REPRODUCTION_GUIDE.md",
-      "source_location": "L54"
+      "norm_label": "four-way held-out smoke evaluation - passed",
+      "source_file": "docs/VALIDATION_RESULTS.md",
+      "source_location": "L59"
     },
     {
-      "id": "docs_reproduction_guide_matched_evaluation",
-      "label": "Matched evaluation",
+      "id": "docs_validation_results_stage_1_static_and_notebook_validation_passed",
+      "label": "Stage 1: static and notebook validation - passed",
       "_origin": "ast",
       "community": 2,
       "community_name": "Findings and proposed corrections",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "matched evaluation",
-      "source_file": "docs/REPRODUCTION_GUIDE.md",
-      "source_location": "L105"
+      "norm_label": "stage 1: static and notebook validation - passed",
+      "source_file": "docs/VALIDATION_RESULTS.md",
+      "source_location": "L11"
     },
     {
-      "id": "docs_reproduction_guide_model_and_dataset_setup",
-      "label": "Model and dataset setup",
+      "id": "docs_validation_results_stage_2_unit_tests_passed",
+      "label": "Stage 2: unit tests - passed",
       "_origin": "ast",
       "community": 2,
       "community_name": "Findings and proposed corrections",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "model and dataset setup",
-      "source_file": "docs/REPRODUCTION_GUIDE.md",
+      "norm_label": "stage 2: unit tests - passed",
+      "source_file": "docs/VALIDATION_RESULTS.md",
       "source_location": "L19"
     },
     {
-      "id": "docs_reproduction_guide_resume_and_checkpoint_loading",
-      "label": "Resume and checkpoint loading",
+      "id": "docs_validation_results_stage_3_real_execution_reward_probe_passed",
+      "label": "Stage 3: real execution/reward probe - passed",
       "_origin": "ast",
       "community": 2,
       "community_name": "Findings and proposed corrections",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "resume and checkpoint loading",
-      "source_file": "docs/REPRODUCTION_GUIDE.md",
-      "source_location": "L83"
+      "norm_label": "stage 3: real execution/reward probe - passed",
+      "source_file": "docs/VALIDATION_RESULTS.md",
+      "source_location": "L27"
     },
     {
-      "id": "docs_reproduction_guide_static_validation_and_unit_tests",
-      "label": "Static validation and unit tests",
+      "id": "docs_validation_results_stage_4_real_training_smoke_passed",
+      "label": "Stage 4: real training smoke - passed",
       "_origin": "ast",
       "community": 2,
       "community_name": "Findings and proposed corrections",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "static validation and unit tests",
-      "source_file": "docs/REPRODUCTION_GUIDE.md",
-      "source_location": "L44"
+      "norm_label": "stage 4: real training smoke - passed",
+      "source_file": "docs/VALIDATION_RESULTS.md",
+      "source_location": "L33"
+    },
+    {
+      "id": "docs_validation_results_stage_5_and_practical_limits",
+      "label": "Stage 5 and practical limits",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Findings and proposed corrections",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "stage 5 and practical limits",
+      "source_file": "docs/VALIDATION_RESULTS.md",
+      "source_location": "L72"
+    },
+    {
+      "id": "docs_validation_results_validation_results_2026_10_10",
+      "label": "Validation results - 2026-10-10",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Findings and proposed corrections",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "validation results - 2026-10-10",
+      "source_file": "docs/VALIDATION_RESULTS.md",
+      "source_location": "L1"
     },
     {
       "id": "autodspy_reproduction_config",
@@ -2301,6 +2454,159 @@
       "norm_label": "real pretrained gpt-2/official train split, scripted execution engineering...",
       "source_file": "tests/policy_smoke.py",
       "source_location": "L1"
+    },
+    {
+      "id": "autodspy_reproduction_loss",
+      "label": "loss.py",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "torch",
+      "file_type": "code",
+      "norm_label": "loss.py",
+      "source_file": "autodspy_reproduction/loss.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autodspy_reproduction_loss_rationale_1",
+      "label": "Actual released objective and explicitly labeled clipped sensitivity objective.",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "torch",
+      "file_type": "rationale",
+      "norm_label": "actual released objective and explicitly labeled clipped sensitivity objective.",
+      "source_file": "autodspy_reproduction/loss.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autodspy_reproduction_loss_rationale_36",
+      "label": "[K,T] arrays; sums actions/group exactly as the released notebook.",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "torch",
+      "file_type": "rationale",
+      "norm_label": "[k,t] arrays; sums actions/group exactly as the released notebook.",
+      "source_file": "autodspy_reproduction/loss.py",
+      "source_location": "L36"
+    },
+    {
+      "id": "docs_reproduction_guide_full_training_explicit_command_only",
+      "label": "Full training (explicit command only)",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "GPT-2 / GSM8K / Llama 3.1 8B reproduction guide",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "full training (explicit command only)",
+      "source_file": "docs/REPRODUCTION_GUIDE.md",
+      "source_location": "L86"
+    },
+    {
+      "id": "docs_reproduction_guide_gpt_2_gsm8k_llama_3_1_8b_reproduction_guide",
+      "label": "GPT-2 / GSM8K / Llama 3.1 8B reproduction guide",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "GPT-2 / GSM8K / Llama 3.1 8B reproduction guide",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "gpt-2 / gsm8k / llama 3.1 8b reproduction guide",
+      "source_file": "docs/REPRODUCTION_GUIDE.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_reproduction_guide_gpu_memory_and_troubleshooting",
+      "label": "GPU memory and troubleshooting",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "GPT-2 / GSM8K / Llama 3.1 8B reproduction guide",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "gpu memory and troubleshooting",
+      "source_file": "docs/REPRODUCTION_GUIDE.md",
+      "source_location": "L132"
+    },
+    {
+      "id": "docs_reproduction_guide_installation",
+      "label": "Installation",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "GPT-2 / GSM8K / Llama 3.1 8B reproduction guide",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "installation",
+      "source_file": "docs/REPRODUCTION_GUIDE.md",
+      "source_location": "L18"
+    },
+    {
+      "id": "docs_reproduction_guide_live_probe_and_smoke_training",
+      "label": "Live probe and smoke training",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "GPT-2 / GSM8K / Llama 3.1 8B reproduction guide",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "live probe and smoke training",
+      "source_file": "docs/REPRODUCTION_GUIDE.md",
+      "source_location": "L67"
+    },
+    {
+      "id": "docs_reproduction_guide_matched_evaluation",
+      "label": "Matched evaluation",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "GPT-2 / GSM8K / Llama 3.1 8B reproduction guide",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "matched evaluation",
+      "source_file": "docs/REPRODUCTION_GUIDE.md",
+      "source_location": "L118"
+    },
+    {
+      "id": "docs_reproduction_guide_model_and_dataset_setup",
+      "label": "Model and dataset setup",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "GPT-2 / GSM8K / Llama 3.1 8B reproduction guide",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "model and dataset setup",
+      "source_file": "docs/REPRODUCTION_GUIDE.md",
+      "source_location": "L32"
+    },
+    {
+      "id": "docs_reproduction_guide_resume_and_checkpoint_loading",
+      "label": "Resume and checkpoint loading",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "GPT-2 / GSM8K / Llama 3.1 8B reproduction guide",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "resume and checkpoint loading",
+      "source_file": "docs/REPRODUCTION_GUIDE.md",
+      "source_location": "L96"
+    },
+    {
+      "id": "docs_reproduction_guide_run_everything_from_the_main_notebook",
+      "label": "Run everything from the main notebook",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "GPT-2 / GSM8K / Llama 3.1 8B reproduction guide",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "run everything from the main notebook",
+      "source_file": "docs/REPRODUCTION_GUIDE.md",
+      "source_location": "L5"
+    },
+    {
+      "id": "docs_reproduction_guide_static_validation_and_unit_tests",
+      "label": "Static validation and unit tests",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "GPT-2 / GSM8K / Llama 3.1 8B reproduction guide",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "static validation and unit tests",
+      "source_file": "docs/REPRODUCTION_GUIDE.md",
+      "source_location": "L57"
     },
     {
       "id": "readme",
@@ -2955,70 +3261,15 @@
       "source_location": "L49"
     },
     {
-      "id": "autodspy_reproduction_loss",
-      "label": "loss.py",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "test_reproduction.py",
-      "file_type": "code",
-      "norm_label": "loss.py",
-      "source_file": "autodspy_reproduction/loss.py",
-      "source_location": "L1"
-    },
-    {
       "id": "dict",
       "label": "dict",
       "_origin": "ast",
       "community": 5,
-      "community_name": "test_reproduction.py",
+      "community_name": "Config",
       "file_type": "code",
       "norm_label": "dict",
       "source_file": "",
       "source_location": ""
-    },
-    {
-      "id": "tests_test_reproduction",
-      "label": "test_reproduction.py",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "test_reproduction.py",
-      "file_type": "code",
-      "norm_label": "test_reproduction.py",
-      "source_file": "tests/test_reproduction.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "autodspy_reproduction_loss_rationale_1",
-      "label": "Actual released objective and explicitly labeled clipped sensitivity objective.",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "test_reproduction.py",
-      "file_type": "rationale",
-      "norm_label": "actual released objective and explicitly labeled clipped sensitivity objective.",
-      "source_file": "autodspy_reproduction/loss.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "autodspy_reproduction_loss_rationale_36",
-      "label": "[K,T] arrays; sums actions/group exactly as the released notebook.",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "test_reproduction.py",
-      "file_type": "rationale",
-      "norm_label": "[k,t] arrays; sums actions/group exactly as the released notebook.",
-      "source_file": "autodspy_reproduction/loss.py",
-      "source_location": "L36"
-    },
-    {
-      "id": "tests_test_reproduction_rationale_1",
-      "label": "Offline engineering tests; fixtures never represent Llama benchmark results.",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "test_reproduction.py",
-      "file_type": "rationale",
-      "norm_label": "offline engineering tests; fixtures never represent llama benchmark results.",
-      "source_file": "tests/test_reproduction.py",
-      "source_location": "L1"
     },
     {
       "id": "no_grad",
@@ -3319,14 +3570,38 @@
       "source_location": "L44"
     },
     {
+      "id": "contextlib",
+      "label": "contextlib",
+      "_origin": "semantic",
+      "community": 0,
+      "community_name": "test_reproduction.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "contextlib",
+      "source_file": "",
+      "type": "external"
+    },
+    {
       "id": "decimal",
       "label": "decimal",
       "_origin": "semantic",
       "community": 0,
-      "community_name": "reward.py",
+      "community_name": "test_reproduction.py",
       "external": true,
       "file_type": "concept",
       "norm_label": "decimal",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "io",
+      "label": "io",
+      "_origin": "semantic",
+      "community": 0,
+      "community_name": "test_reproduction.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "io",
       "source_file": "",
       "type": "external"
     },
@@ -3335,7 +3610,7 @@
       "label": "math",
       "_origin": "semantic",
       "community": 0,
-      "community_name": "reward.py",
+      "community_name": "test_reproduction.py",
       "external": true,
       "file_type": "concept",
       "norm_label": "math",
@@ -3343,14 +3618,62 @@
       "type": "external"
     },
     {
-      "id": "re",
-      "label": "re",
+      "id": "sys",
+      "label": "sys",
       "_origin": "semantic",
       "community": 0,
-      "community_name": "reward.py",
+      "community_name": "test_reproduction.py",
       "external": true,
       "file_type": "concept",
-      "norm_label": "re",
+      "norm_label": "sys",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "tempfile",
+      "label": "tempfile",
+      "_origin": "semantic",
+      "community": 0,
+      "community_name": "test_reproduction.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "tempfile",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "types",
+      "label": "types",
+      "_origin": "semantic",
+      "community": 0,
+      "community_name": "test_reproduction.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "types",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "unittest",
+      "label": "unittest",
+      "_origin": "semantic",
+      "community": 0,
+      "community_name": "test_reproduction.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "unittest",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "unittest_mock",
+      "label": "unittest_mock",
+      "_origin": "semantic",
+      "community": 0,
+      "community_name": "test_reproduction.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "unittest_mock",
       "source_file": "",
       "type": "external"
     },
@@ -3379,6 +3702,18 @@
       "type": "external"
     },
     {
+      "id": "hashlib",
+      "label": "hashlib",
+      "_origin": "semantic",
+      "community": 1,
+      "community_name": "runtime.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "hashlib",
+      "source_file": "",
+      "type": "external"
+    },
+    {
       "id": "importlib_metadata",
       "label": "importlib_metadata",
       "_origin": "semantic",
@@ -3387,18 +3722,6 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "importlib_metadata",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "os",
-      "label": "os",
-      "_origin": "semantic",
-      "community": 1,
-      "community_name": "runtime.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "os",
       "source_file": "",
       "type": "external"
     },
@@ -3463,18 +3786,6 @@
       "type": "external"
     },
     {
-      "id": "hashlib",
-      "label": "hashlib",
-      "_origin": "semantic",
-      "community": 20,
-      "community_name": "__main__.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "hashlib",
-      "source_file": "",
-      "type": "external"
-    },
-    {
       "id": "json",
       "label": "json",
       "_origin": "semantic",
@@ -3487,6 +3798,18 @@
       "type": "external"
     },
     {
+      "id": "os",
+      "label": "os",
+      "_origin": "semantic",
+      "community": 20,
+      "community_name": "__main__.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "os",
+      "source_file": "",
+      "type": "external"
+    },
+    {
       "id": "pathlib",
       "label": "pathlib",
       "_origin": "semantic",
@@ -3495,42 +3818,6 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "pathlib",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "random",
-      "label": "random",
-      "_origin": "semantic",
-      "community": 20,
-      "community_name": "__main__.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "random",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "sys",
-      "label": "sys",
-      "_origin": "semantic",
-      "community": 20,
-      "community_name": "__main__.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "sys",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "torch",
-      "label": "torch",
-      "_origin": "semantic",
-      "community": 20,
-      "community_name": "__main__.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "torch",
       "source_file": "",
       "type": "external"
     },
@@ -3571,62 +3858,14 @@
       "type": "external"
     },
     {
-      "id": "contextlib",
-      "label": "contextlib",
+      "id": "torch",
+      "label": "torch",
       "_origin": "semantic",
-      "community": 5,
-      "community_name": "test_reproduction.py",
+      "community": 21,
+      "community_name": "torch",
       "external": true,
       "file_type": "concept",
-      "norm_label": "contextlib",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "io",
-      "label": "io",
-      "_origin": "semantic",
-      "community": 5,
-      "community_name": "test_reproduction.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "io",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "tempfile",
-      "label": "tempfile",
-      "_origin": "semantic",
-      "community": 5,
-      "community_name": "test_reproduction.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "tempfile",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "types",
-      "label": "types",
-      "_origin": "semantic",
-      "community": 5,
-      "community_name": "test_reproduction.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "types",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "unittest",
-      "label": "unittest",
-      "_origin": "semantic",
-      "community": 5,
-      "community_name": "test_reproduction.py",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "unittest",
+      "norm_label": "torch",
       "source_file": "",
       "type": "external"
     },
@@ -3679,6 +3918,30 @@
       "type": "external"
     },
     {
+      "id": "random",
+      "label": "random",
+      "_origin": "semantic",
+      "community": 9,
+      "community_name": "run_grpo_baseline.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "random",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "re",
+      "label": "re",
+      "_origin": "semantic",
+      "community": 9,
+      "community_name": "run_grpo_baseline.py",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "re",
+      "source_file": "",
+      "type": "external"
+    },
+    {
       "id": "transformers",
       "label": "transformers",
       "_origin": "semantic",
@@ -3691,13 +3954,13 @@
       "type": "external"
     },
     {
-      "id": "unittest_mock",
-      "label": "unittest_mock",
-      "community": 5,
+      "id": "ast",
+      "label": "ast",
+      "community": 0,
       "community_name": "test_reproduction.py",
       "external": true,
       "file_type": "concept",
-      "norm_label": "unittest_mock",
+      "norm_label": "ast",
       "source_file": "",
       "type": "external"
     }
@@ -4625,6 +4888,18 @@
       "context": "call",
       "source_file": "tests/test_reproduction.py",
       "source_location": "L118",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_reproduction_notebook_notebooktests_setupclass",
+      "target": "tests_test_reproduction_notebook_notebook_namespace",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "tests/test_reproduction_notebook.py",
+      "source_location": "L36",
       "weight": 1.0
     },
     {
@@ -6416,6 +6691,114 @@
       "weight": 1.0
     },
     {
+      "source": "tests_test_reproduction_notebook",
+      "target": "unittest",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "tests/test_reproduction_notebook.py",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_reproduction_notebook",
+      "target": "torch",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "tests/test_reproduction_notebook.py",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_reproduction_notebook",
+      "target": "ast",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "tests/test_reproduction_notebook.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_reproduction_notebook",
+      "target": "contextlib",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "tests/test_reproduction_notebook.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_reproduction_notebook",
+      "target": "io",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "tests/test_reproduction_notebook.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_reproduction_notebook",
+      "target": "json",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "tests/test_reproduction_notebook.py",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_reproduction_notebook",
+      "target": "autodspy_reproduction_training_train",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "tests/test_reproduction_notebook.py",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_reproduction_notebook",
+      "target": "sys",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "tests/test_reproduction_notebook.py",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_reproduction_notebook",
+      "target": "tempfile",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "tests/test_reproduction_notebook.py",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
       "source": "autodspy_reproduction_config",
       "target": "dataclasses",
       "relation": "imports_from",
@@ -7013,6 +7396,30 @@
       "context": "import",
       "source_file": "tests/test_reproduction.py",
       "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_reproduction_notebook",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "tests/test_reproduction_notebook.py",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_reproduction_notebook",
+      "target": "types",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "tests/test_reproduction_notebook.py",
+      "source_location": "L9",
       "weight": 1.0
     },
     {
@@ -8271,7 +8678,7 @@
     },
     {
       "source": "docs_deviations_from_paper_deviations_assumptions_and_unresolved_evidence",
-      "target": "docs_deviations_from_paper_sensitivity_modes_not_reproduction_defaults",
+      "target": "docs_deviations_from_paper_notebook_presentation",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -8282,13 +8689,24 @@
     },
     {
       "source": "docs_deviations_from_paper_deviations_assumptions_and_unresolved_evidence",
-      "target": "docs_deviations_from_paper_readiness_criterion",
+      "target": "docs_deviations_from_paper_sensitivity_modes_not_reproduction_defaults",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/DEVIATIONS_FROM_PAPER.md",
       "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_deviations_from_paper_deviations_assumptions_and_unresolved_evidence",
+      "target": "docs_deviations_from_paper_readiness_criterion",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/DEVIATIONS_FROM_PAPER.md",
+      "source_location": "L38",
       "weight": 1.0
     },
     {
@@ -8304,13 +8722,24 @@
     },
     {
       "source": "docs_reproduction_audit",
+      "target": "docs_reproduction_audit_evidence_hierarchy",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/REPRODUCTION_AUDIT.md",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_reproduction_audit",
       "target": "docs_reproduction_audit_findings_and_proposed_corrections",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/REPRODUCTION_AUDIT.md",
-      "source_location": "L11",
+      "source_location": "L13",
       "weight": 1.0
     },
     {
@@ -8332,18 +8761,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/REPRODUCTION_AUDIT.md",
-      "source_location": "L44",
+      "source_location": "L46",
       "weight": 1.0
     },
     {
       "source": "docs_reproduction_audit",
-      "target": "docs_reproduction_audit_evidence_hierarchy",
+      "target": "docs_reproduction_audit_audit_follow_up_evidence",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/REPRODUCTION_AUDIT.md",
-      "source_location": "L8",
+      "source_location": "L49",
       "weight": 1.0
     },
     {
@@ -8354,7 +8783,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/REPRODUCTION_AUDIT.md",
-      "source_location": "L13",
+      "source_location": "L15",
       "weight": 1.0
     },
     {
@@ -8365,7 +8794,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/REPRODUCTION_AUDIT.md",
-      "source_location": "L16",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -8376,7 +8805,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/REPRODUCTION_AUDIT.md",
-      "source_location": "L19",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -8387,7 +8816,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/REPRODUCTION_AUDIT.md",
-      "source_location": "L23",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -8398,7 +8827,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/REPRODUCTION_AUDIT.md",
-      "source_location": "L26",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -8409,7 +8838,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/REPRODUCTION_AUDIT.md",
-      "source_location": "L29",
+      "source_location": "L31",
       "weight": 1.0
     },
     {
@@ -8420,7 +8849,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/REPRODUCTION_AUDIT.md",
-      "source_location": "L32",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -8431,7 +8860,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/REPRODUCTION_AUDIT.md",
-      "source_location": "L35",
+      "source_location": "L37",
       "weight": 1.0
     },
     {
@@ -8442,7 +8871,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/REPRODUCTION_AUDIT.md",
-      "source_location": "L38",
+      "source_location": "L40",
       "weight": 1.0
     },
     {
@@ -8453,7 +8882,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/REPRODUCTION_AUDIT.md",
-      "source_location": "L41",
+      "source_location": "L43",
       "weight": 1.0
     },
     {
@@ -8475,7 +8904,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/REPRODUCTION_GUIDE.md",
-      "source_location": "L105",
+      "source_location": "L118",
       "weight": 1.0
     },
     {
@@ -8486,29 +8915,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/REPRODUCTION_GUIDE.md",
-      "source_location": "L119",
-      "weight": 1.0
-    },
-    {
-      "source": "docs_reproduction_guide_gpt_2_gsm8k_llama_3_1_8b_reproduction_guide",
-      "target": "docs_reproduction_guide_model_and_dataset_setup",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/REPRODUCTION_GUIDE.md",
-      "source_location": "L19",
-      "weight": 1.0
-    },
-    {
-      "source": "docs_reproduction_guide_gpt_2_gsm8k_llama_3_1_8b_reproduction_guide",
-      "target": "docs_reproduction_guide_static_validation_and_unit_tests",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/REPRODUCTION_GUIDE.md",
-      "source_location": "L44",
+      "source_location": "L132",
       "weight": 1.0
     },
     {
@@ -8519,7 +8926,40 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/REPRODUCTION_GUIDE.md",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_reproduction_guide_gpt_2_gsm8k_llama_3_1_8b_reproduction_guide",
+      "target": "docs_reproduction_guide_model_and_dataset_setup",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/REPRODUCTION_GUIDE.md",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_reproduction_guide_gpt_2_gsm8k_llama_3_1_8b_reproduction_guide",
+      "target": "docs_reproduction_guide_run_everything_from_the_main_notebook",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/REPRODUCTION_GUIDE.md",
       "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_reproduction_guide_gpt_2_gsm8k_llama_3_1_8b_reproduction_guide",
+      "target": "docs_reproduction_guide_static_validation_and_unit_tests",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/REPRODUCTION_GUIDE.md",
+      "source_location": "L57",
       "weight": 1.0
     },
     {
@@ -8530,7 +8970,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/REPRODUCTION_GUIDE.md",
-      "source_location": "L54",
+      "source_location": "L67",
       "weight": 1.0
     },
     {
@@ -8541,7 +8981,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/REPRODUCTION_GUIDE.md",
-      "source_location": "L73",
+      "source_location": "L86",
       "weight": 1.0
     },
     {
@@ -8552,7 +8992,106 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/REPRODUCTION_GUIDE.md",
-      "source_location": "L83",
+      "source_location": "L96",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_validation_results",
+      "target": "docs_validation_results_validation_results_2026_10_10",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/VALIDATION_RESULTS.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_validation_results_validation_results_2026_10_10",
+      "target": "docs_validation_results_stage_1_static_and_notebook_validation_passed",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/VALIDATION_RESULTS.md",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_validation_results_validation_results_2026_10_10",
+      "target": "docs_validation_results_stage_2_unit_tests_passed",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/VALIDATION_RESULTS.md",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_validation_results_validation_results_2026_10_10",
+      "target": "docs_validation_results_stage_3_real_execution_reward_probe_passed",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/VALIDATION_RESULTS.md",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_validation_results_validation_results_2026_10_10",
+      "target": "docs_validation_results_stage_4_real_training_smoke_passed",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/VALIDATION_RESULTS.md",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_validation_results_validation_results_2026_10_10",
+      "target": "docs_validation_results_environment_and_preservation",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/VALIDATION_RESULTS.md",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_validation_results_validation_results_2026_10_10",
+      "target": "docs_validation_results_additional_real_policy_engineering_smoke_passed",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/VALIDATION_RESULTS.md",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_validation_results_validation_results_2026_10_10",
+      "target": "docs_validation_results_four_way_held_out_smoke_evaluation_passed",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/VALIDATION_RESULTS.md",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_validation_results_validation_results_2026_10_10",
+      "target": "docs_validation_results_stage_5_and_practical_limits",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/VALIDATION_RESULTS.md",
+      "source_location": "L72",
       "weight": 1.0
     },
     {
@@ -9062,6 +9601,28 @@
       "weight": 1.0
     },
     {
+      "source": "tests_test_reproduction_notebook",
+      "target": "tests_test_reproduction_notebook_notebook_namespace",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_reproduction_notebook.py",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_reproduction_notebook",
+      "target": "tests_test_reproduction_notebook_notebooktests",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_reproduction_notebook.py",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
       "source": "tests_test_reproduction_inputs",
       "target": "dict",
       "relation": "inherits",
@@ -9403,6 +9964,50 @@
       "weight": 1.0
     },
     {
+      "source": "tests_test_reproduction_notebook_notebooktests",
+      "target": "tests_test_reproduction_notebook_notebooktests_setupclass",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_reproduction_notebook.py",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_reproduction_notebook_notebooktests",
+      "target": "tests_test_reproduction_notebook_notebooktests_test_self_contained_cells_and_offline_suite",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_reproduction_notebook.py",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_reproduction_notebook_notebooktests",
+      "target": "tests_test_reproduction_notebook_notebooktests_test_manual_episode_iteration_matches_validated_module",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_reproduction_notebook.py",
+      "source_location": "L54",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_reproduction_notebook_notebooktests",
+      "target": "tests_test_reproduction_notebook_notebooktests_test_provenance_uses_notebook_code_without_output_or_flag_changes",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_reproduction_notebook.py",
+      "source_location": "L86",
+      "weight": 1.0
+    },
+    {
       "source": "tests_test_reproduction_numericaltests",
       "target": "tests_test_reproduction_numericaltests_test_signed_commas_decimals",
       "relation": "method",
@@ -9689,6 +10294,17 @@
       "weight": 1.0
     },
     {
+      "source": "tests_test_reproduction_notebook_rationale_1",
+      "target": "tests_test_reproduction_notebook",
+      "relation": "rationale_for",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_reproduction_notebook.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
       "source": "tests_test_reproduction_rationale_1",
       "target": "tests_test_reproduction",
       "relation": "rationale_for",
@@ -9708,6 +10324,28 @@
       "confidence_score": 1.0,
       "source_file": "docs/DEVIATIONS_FROM_PAPER.md",
       "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_reproduction_audit",
+      "target": "docs_validation_results",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/REPRODUCTION_AUDIT.md",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_reproduction_guide",
+      "target": "docs_validation_results",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/REPRODUCTION_GUIDE.md",
+      "source_location": "L138",
       "weight": 1.0
     },
     {
@@ -9789,7 +10427,7 @@
       "confidence_score": 0.95,
       "context": "train",
       "source_file": "docs/REPRODUCTION_GUIDE.md",
-      "source_location": "L33",
+      "source_location": "L46",
       "weight": 1.0
     },
     {
@@ -9860,5 +10498,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "50e572d72f35c2b194e4d56cfeea3c9d33657fff"
+  "built_at_commit": "4ef1e373407fcbd0ec925b22ddd01a95a5e5b044"
 }

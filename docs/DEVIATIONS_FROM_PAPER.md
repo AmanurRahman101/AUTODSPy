@@ -27,6 +27,10 @@ The default is a released-code-faithful **GRPO-inspired** experiment with the pa
 - Optional activation checkpointing with dropout disabled. No lower precision or parameter-efficient fine-tuning is enabled by default.
 - Save initial weights and Adam/RNG checkpoints every ten episodes plus the final episode, instead of retaining 200 roughly 1.5GB checkpoints. Smoke saves after its single episode. New unique directories preserve previous artifacts. Resume starts a new directory from a completed checkpoint and may redo unsaved episodes.
 
+## Notebook presentation
+
+`DSPy_GRPO.ipynb` embeds the validated reproduction logic as ordinary visible cells with inline configuration and tests. Its training iterator yields after each completed episode so the user can inspect metrics and advance manually or run all remaining episodes. The iterator retains the same sampling, loss, gradient accumulation, Adam update and checkpoint cadence as the modular CLI implementation; no methodology change is intended. Actual executed definition-cell hashes replace module-file hashes for notebook resume provenance. Pauses do not deliberately reseed or alter policy weights. The prior notebook is preserved as `DSPy_GRPO_Original.ipynb`. Full training still requires explicit activation and restart after an independent smoke run.
+
 ## Sensitivity modes, not reproduction defaults
 
 Copy the full YAML to a new filename and explicitly select `objective: clipped`, `advantage_mode: standardized`, `entropy_coefficient: 0.01`, `clip_epsilon: 0.2` to investigate normalized clipped optimization. This uses detached behavior probabilities and a tested clipped surrogate. With one on-policy update, pre-update ratios equal one, so clipping does not activate on the first step; no unsupported multiple epochs are added. Gamma/lambda remain inactive. These runs cannot resolve which objective produced the paper's results.

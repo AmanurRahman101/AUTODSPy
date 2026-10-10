@@ -1,7 +1,9 @@
 ﻿# Reproduction audit (2026-10-10)
 
 ## Scope and preservation
-Audit completed before implementation. Git HEAD: 50e572d; existing branch retained. Initial `git status --short`: only untracked AutoDSPy.pdf. Original notebooks, baseline script, results, and checkpoints are retained byte-for-byte. No graphify-out/graph.json or wiki exists despite AGENTS.md describing one; therefore no existing graph query could run.
+Audit completed before implementation. Git HEAD: 50e572d; existing branch retained. Initial `git status --short`: only untracked AutoDSPy.pdf. Original notebooks, baseline script, results, and checkpoints were retained byte-for-byte during the initial reproduction. No graphify-out/graph.json or wiki existed at that audit despite AGENTS.md describing one; therefore no existing graph query could run then.
+
+**Notebook presentation update:** at the user's request, `DSPy_GRPO.ipynb` now contains the complete self-contained reproduction implementation and cell-by-cell episode controls. Its original contents, including outputs, are preserved byte-for-byte in `DSPy_GRPO_Original.ipynb` (SHA256 `a787bc87b6e652d30ef483f6c3ef8525df351c0f5572a3ee5ac4c1455d863f98`). The historical local cell references below refer to that preserved original, not the new main notebook. Existing baseline/results/checkpoints remain untouched. A graph was created during the initial implementation and is now queried/updated for subsequent work.
 
 Inspected all code cells of DSPy_GRPO, DSPy_PPO, DSPy_Reinforce; README, baseline script/report, citation and repository inventory. README names training .py files absent from this checkout. The baseline report is previous research, not evidence of reproducing this target (uses llama3.2:3b, mixed data, K=4).
 

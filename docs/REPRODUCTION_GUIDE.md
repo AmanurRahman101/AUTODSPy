@@ -1,6 +1,19 @@
 # GPT-2 / GSM8K / Llama 3.1 8B reproduction guide
 
-Read [the evidence audit](REPRODUCTION_AUDIT.md) and [deviations](DEVIATIONS_FROM_PAPER.md) first. The original `DSPy_GRPO.ipynb` remains accessible and unchanged. **Do not run its cleanup cell**, which deletes older results. Use `DSPy_GRPO_Reproduction.ipynb` or the commands below from the repository root. No branch change is needed.
+Read [the evidence audit](REPRODUCTION_AUDIT.md) and [deviations](DEVIATIONS_FROM_PAPER.md) first. **`DSPy_GRPO.ipynb` is now the self-contained, cell-by-cell reproduction:** all configuration, policy, reward, loss, training, checkpointing, tests and evaluation code is visible in that notebook. The previous research notebook is preserved byte-for-byte as `DSPy_GRPO_Original.ipynb`; do not run its destructive cleanup cell. `DSPy_GRPO_Reproduction.ipynb` remains an optional CLI wrapper. No branch change is needed.
+
+## Run everything from the main notebook
+
+1. Open `DSPy_GRPO.ipynb` in VS Code/Jupyter, select `venv_gpu/Scripts/python.exe` as the kernel, and keep the working directory at the repository root. Start Ollama in a separate terminal. The notebook does not install packages or start servers implicitly.
+2. In section 2 set `MODE="smoke"` for the first integration check. All model identifiers, revisions, optimizer settings, budgets and endpoint parameters are written directly in that cell; no YAML or repository-module imports are required.
+3. Run sections 1–12 in order to define the entire implementation and run its 18 embedded offline tests. Read each function in place. Run sections 13–15 to verify Llama identity, load official training data and initialize GPT-2/execution. Section 16 optionally runs a real pipeline/reward probe when `RUN_EXECUTION_PROBE=True`.
+4. Run section 17 to initialize the episode iterator. Set `RUN_ONE_EPISODE=True` in section 18 and execute it to advance one episode at a time. Alternatively set `RUN_REMAINING_TRAINING=True` in section 19 to finish all remaining episodes. The iterator preserves one Adam update per episode and unchanged RNG across inspection pauses. Section 20 reads actual losses, rewards, memory and checkpoints from its unique run directory.
+5. Set `RUN_EVALUATION=True` in section 21 to compare Predict, CoT, untrained and trained policy; section 22 displays the actual saved results. Smoke evaluates two held-out questions, not a benchmark. The current session's final checkpoint is selected automatically, or set `EVALUATION_CHECKPOINT` explicitly.
+6. After a successful smoke, **restart the kernel**, choose `MODE="full"`, rerun setup, and enable section 19. This runs 200 episodes, 200 prompt draws per episode and K=5; full held-out evaluation uses all 1,319 official test cases. Restarting ensures smoke-updated weights cannot become the full run's initialization.
+
+To resume notebook training, restart the kernel, restore the exact mode/configuration/endpoint, run definitions and setup, set `RESUME_CHECKPOINT` in section 17 to a completed notebook checkpoint, and run section 19. Notebook resume hashes the actual executed implementation cells, excluding outputs/run flags; changed implementation is rejected. CLI and notebook training must resume through their respective entrypoints because implementation provenance differs. Both keep the same checkpoint format, and compatible checkpoints can be evaluated with either entrypoint. Do not evaluate in the middle of an active training iterator: evaluation changes policy weights/RNG.
+
+Notebook runs save under `runs/reproduction-notebook/` or `runs/reproduction-notebook-smoke/`. CLI commands below remain supported and keep their original output locations. Neither workflow removes previous research artifacts.
 
 ## Installation
 
@@ -132,4 +145,4 @@ Run this in a separate terminal during smoke/training. Metrics report PyTorch **
 - **Config mismatch on evaluation/resume:** use the exact training YAML/endpoint. Use an independent, labeled run for methodological changes. Resume does not silently change settings.
 - **Cache/download errors:** use the pinned revisions; remove offline environment variables when downloading. Authenticate only if your environment requires it; the chosen policy and dataset are public.
 
-The isolated notebook starts with static validation and opt-in controls for execution, smoke, full training and evaluation. Its default top-to-bottom execution never launches the full experiment or deletes artifacts.
+The main notebook includes its full implementation and offline tests, followed by live setup and explicit run controls. Its default top-to-bottom execution contacts the configured execution endpoint and initializes models, but never launches training/evaluation or deletes artifacts. The optional wrapper notebook retains static validation and opt-in CLI controls.

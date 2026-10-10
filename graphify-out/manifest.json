@@ -174,21 +174,21 @@
     "semantic_hash": ""
   },
   "docs/DEVIATIONS_FROM_PAPER.md": {
-    "mtime": 1791623311.4892612,
-    "seen": 1791623413.5512187,
-    "ast_hash": "7575fe08d80d4fad8f3ef0ce73d2f4aa",
+    "mtime": 1791625355.701081,
+    "seen": 1791625594.1529677,
+    "ast_hash": "d08d20e2f1b1cdfe5c96e96103d8c193",
     "semantic_hash": ""
   },
   "docs/REPRODUCTION_AUDIT.md": {
-    "mtime": 1791621451.9453025,
-    "seen": 1791622589.426596,
-    "ast_hash": "95425a7957b7bf5d4a568799375b4fb7",
+    "mtime": 1791625355.697001,
+    "seen": 1791625594.1529691,
+    "ast_hash": "79f7909584450b4eb6845f64134123bd",
     "semantic_hash": ""
   },
   "docs/REPRODUCTION_GUIDE.md": {
-    "mtime": 1791623311.4902632,
-    "seen": 1791623413.5512223,
-    "ast_hash": "35f5e0d812ffcac45081520704d34028",
+    "mtime": 1791625355.697001,
+    "seen": 1791625594.1529708,
+    "ast_hash": "807f2cfed760d7716d35f6f66751743f",
     "semantic_hash": ""
   },
   "requirements-reproduction.txt": {
@@ -213,6 +213,18 @@
     "mtime": 1790122262.5658686,
     "seen": 1791622589.4266107,
     "ast_hash": "8baa8e809b771f9a3fb19a7ae0cee267",
+    "semantic_hash": ""
+  },
+  "tests/test_reproduction_notebook.py": {
+    "mtime": 1791625355.697001,
+    "seen": 1791625594.1529396,
+    "ast_hash": "6439b35cc6e93a8fd2d916aa8c3d6aa6",
+    "semantic_hash": ""
+  },
+  "docs/VALIDATION_RESULTS.md": {
+    "mtime": 1791624052.9427304,
+    "seen": 1791625594.1529722,
+    "ast_hash": "9bf9d540f489ddb514a1c272147eedf4",
     "semantic_hash": ""
   }
 }
