@@ -1,0 +1,19 @@
+# Checkpoints & Weights
+*.pt
+*.pth
+*.bin
+*.onnx
+*.safetensors
+
+# Jupyter & Python
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv/
+env/
+venv/
+
+# Evaluation outputs
+evaluation_results.json
