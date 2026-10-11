@@ -14,3 +14,22 @@ Deletion of temporary audit files was rejected by a tool policy check without a 
 `phase2_clean_kernel.json` records fresh-kernel verification of the final notebook source and its checksum. `phase2_synthetic_checks.json` lists notebook-local checks; these are not benchmark scores. `phase2_full_model_gradient.json` records a synthetic-group update on real pretrained GPT-2 CUDA, separate from research results.
 
 `phase2_live_check.json` is the original reduced-live driver snapshot. The driver completed before the final standalone-validation accounting fix: its snapshot counted 16 logical calls, while the reconciled run summary correctly counts 18 including that extra validation. The final clean-kernel artifact rechecked the actual saved run and all eleven plots. No hidden successful baseline or learning claim is implied. See [PHASE_2_REPORT.md](../PHASE_2_REPORT.md) for truncation failures, controls and limitations.
+
+# Phase 3 verification additions
+
+- `phase3_synthetic_checks.json`: final checksum-matched clean GPU-kernel execution
+  and 96 synthetic assertions (87 distinct labels), without Llama inference.
+- `phase3_official_data.json`: official labeled distractor splits, 200/50/200
+  isolation and persisted cross-K/preset schedule; no model initialization/inference.
+- `phase3_real_gpt2_update.json`: real pretrained GPT-2 CUDA update with a synthetic
+  long-context group and nonzero gradient; not a benchmark run.
+- `phase3_live_check.json`: separately namespaced one-episode live engineering check,
+  explicit smaller sizes and CPU/256-token policy budget, final summary, validation,
+  selected-checkpoint test, twelve plots and verified post-check Ollama unload.
+- `phase3_final_verification.json`: final notebook/evidence checksum agreement,
+  preserved source/master hashes, real plot files, reconciled live summary,
+  documentation checks and AST graph-update scope.
+
+No fabricated result or completed full baseline is present. The live group had
+equal rewards and zero current gradient. See [PHASE_3_REPORT.md](../PHASE_3_REPORT.md)
+for observed metrics, hardware/input deviations, cleanup correction and unrun paths.

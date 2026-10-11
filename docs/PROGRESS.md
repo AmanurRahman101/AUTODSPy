@@ -6,7 +6,7 @@ Primary source: [MASTER_SPEC.md](MASTER_SPEC.md). Plan: [IMPLEMENTATION_PLAN.md]
 
 ## Current milestone
 
-**Phase 2 completed: GSM8K notebook implemented and verified within the reported lightweight scope.** Phase 1 was committed as `c13dab8`; Phase 2 changes are not automatically committed. Clean-kernel checks, synthetic recovery and a real GPT-2 GPU update passed. A reduced live K=5 workflow completed with logged truncation failures and zero rewards; it is not evidence of benchmark learning. Phase 3 remains unstarted. See [PHASE_2_REPORT.md](PHASE_2_REPORT.md).
+**Phase 3 completed: the independent HotpotQA notebook is implemented and verified within the reported lightweight scope.** Phase 1 was committed as `c13dab8`; Phase 2 was committed, at the user's request, as `6893f14`. The user subsequently explicitly requested committing and pushing Phase 3 on `experiment/static-k`; consult Git history and remote status for the final versioning state. GSM8K remains unchanged. HotpotQA clean-kernel checks (96 assertions), official labeled-data checks, a real GPT-2 long-context update and reduced live integration passed. The live group had equal rewards and zero current gradient; it does not demonstrate learning. Phase 4 remains pending. See [PHASE_3_REPORT.md](PHASE_3_REPORT.md).
 
 The initial permission gate came from the user's final instruction: “Ask permission to run Phase 1 after creating your necessary documents.” It was satisfied by the user's subsequent “yes begin phase 1” message on 2026-10-11. The next stop is the explicitly requested phase boundary, not an inferred skill requirement.
 
@@ -94,18 +94,56 @@ Not run: live GPT-2 initialization or full-model backward, Llama/DSPy inference,
 - Noted that the existing separate baseline runner uses a different normalized/clipped/cyclic protocol; preserved it and its report without treating them as this project's results.
 - Created PHASE_1_AUDIT.md and updated plan/decisions with Phase 2 acceptance criteria. MASTER_SPEC.md remains unchanged.
 
+## Completed Phase 3 (2026-10-12)
+
+The user authorized the next phase. Implement the independent HotpotQA notebook,
+adopting the documented provided-context distractor task (D014). Preserve the
+verified GSM8K notebook. Official answer evaluation and input-leakage checks are
+Phase 3 acceptance criteria. Phase 4 remains pending; no baseline run is authorized.
+
+Created `Static_K_GRPO_HotpotQA.ipynb` with all 21 sections and independent local logic.
+The final checksum is `03190623195962152c95f88d49cf9813058673a7fe0ae1fcc8f0c3fa543a7ad7`.
+Schema/AST/fresh-kernel execution and 96 assertions (87 distinct labels) passed,
+including contextual-input leak prevention, EM/F1, all K, gradient equivalence,
+failed candidates, checkpoint compatibility and meaningful interrupted recovery.
+
+Official distractor revision `1908d6afbbead072334abe2965f91bd2709910ab` loaded:
+90,447 training and 7,405 labeled development examples. Disjoint 200/50/200
+subsets and cross-K/preset schedule identity passed. The planned schedule has
+130 unique IDs; no 200-episode run occurred. Optional disjoint train holdout and
+its separate namespace passed synthetic checks.
+
+Real GPT-2 CUDA long-context update passed: norm 86.149981, changed parameters,
+peak allocated 4,626,561,024 bytes and reserved 5,750,390,784 bytes. A separate
+CPU-policy, 256-token, one-episode live K=5 check with pool 2 and one validation/test
+example used Llama 3.1 8B Q4_K_M, 8 GPU layers, context 4096/output 512. All five
+training candidates succeeded with rewards one, hence zero advantages/gradient.
+Checkpoint restoration, standalone validation, explicit selected-checkpoint test,
+comparison and twelve real-data plots passed. Twelve logical calls covered nine
+pipelines; no supporting-fact scores or benchmark learning claims were made.
+See `docs/audit_artifacts/phase3_*.json` and the phase report for exact observations.
+
+Live artifacts: `results/engineering_checks/phase3-live/hotpotqa/k5/seed42/smoke/20261011T183846-7b6a560c/`.
+Checkpoints are ignored by Git. Execution model was explicitly unloaded after the
+driver's cleanup argument error; empty `/api/ps` confirmed. Notebook logic was unaffected.
+AST-only graph update passed (742 nodes/738 edges/63 communities, zero LLM/API use),
+but skipped notebooks/PDFs. Original, paper, GSM8K and MASTER_SPEC remain preserved.
+
 ## Pending work and unresolved questions
 
-Wait for instruction to begin Phase 3, then implement and validate only the independent HotpotQA notebook. Preserve the verified GSM8K milestone and follow MASTER_SPEC.md, the audit, and D014 for the explicitly documented provided-context task choice.
+Wait for instruction to begin Phase 4. Review both verified notebooks against the
+master, consolidate management/statistics/documentation, and use targeted regression
+checks. Preserve Phase 2/3 evidence and follow D023–D025. Do not start expensive runs
+or implement Adaptive-K.
 
 The following remain unresolved or unverified for later phases:
 
 - Published episode/fallback inconsistencies and the exact HotpotQA fullwiki/distractor/context formulation; retain explicit project choices without claiming exact paper reproduction.
-- HotpotQA data/task/metrics integration (Phase 3), then cross-dataset consolidation (Phase 4).
+- Cross-dataset consolidation (Phase 4); HotpotQA integration is now verified within the stated scope.
 - Default CPU-only execution-LM generation, larger decoding budgets, full workloads and live induced recovery. The reduced check used partial GPU loading because host RAM was limited.
 - Exact physical HTTP requests and complete external wall time. Logical calls, returned usage, GPU allocator peaks and Ollama residency are recorded within documented scopes.
 
-No full experiment is authorized to start automatically. The current stop is the user's requested Phase 2 boundary.
+No full experiment is authorized to start automatically. The current stop is the user's requested Phase 3 boundary.
 
 ## Completed Phase 2 work and verification
 
@@ -124,9 +162,9 @@ Not run: full default smoke/pilot/baseline workloads, live K=8/10/15, full offic
 ## Resume instructions
 
 1. Read MASTER_SPEC.md, IMPLEMENTATION_PLAN.md, this tracker and DECISIONS.md; follow AGENTS.md.
-2. Confirm user authorization for Phase 3. Otherwise remain at this completed Phase 2 boundary.
-3. Inspect branch/status without discarding Phase 2 work; recheck original hashes and notebook verification checksum.
-4. Read PHASE_1_AUDIT.md and PHASE_2_REPORT.md, including live failures and unrun checks. The guide explains actual run controls.
+2. Confirm user authorization for Phase 4. Otherwise remain at this completed Phase 3 boundary.
+3. Inspect branch/status without discarding Phase 2/3 work; recheck original hashes and both notebook verification checksums. The user requested a Phase 3 commit and push after completion; check Git history, working-tree status and remote state rather than assuming it remains uncommitted.
+4. Read PHASE_1_AUDIT.md, PHASE_2_REPORT.md and PHASE_3_REPORT.md, including actual failures, deviations and unrun checks. The guide explains actual run controls.
 5. For graph-first navigation, remember the current AST graph does not index notebooks. Query if useful, then inspect the notebook directly when the graph is insufficient.
-6. Implement only the independent HotpotQA notebook. Do not import GSM8K logic, alter validated behavior without a reason, implement Adaptive-K, or launch full experiments.
-7. Verify and update documents/graph, report actual results, then stop at Phase 3's boundary. Phase 4 remains pending.
+6. Consolidate only Phase 4 requirements. Keep notebooks independent and executable logic local; do not alter methodology, implement Adaptive-K, or launch full experiments.
+7. Preserve validated functionality, verify targeted changes, update documents/graph, report actual results, then stop at Phase 4's boundary.

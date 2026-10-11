@@ -194,3 +194,57 @@ API support was checked against the installed source and primary documentation: 
 Status: observed. Retain default research models and budgets in configuration. A separately namespaced live engineering check used pool 2, one episode, K=5, validation/test 1, output 128/context 2048 and 12 Ollama GPU layers because free RAM was limited. Two of five training pipelines returned outputs; three failed after truncation. Rewards and current gradient were zero. Checkpoint/evaluation/plot paths completed, but this run does not demonstrate learning or benchmark performance.
 
 Real full-GPT-2 nonzero-gradient/update correctness was separately verified with a synthetic group. Default CPU-only Llama generation, larger context/output budgets, full presets, live other-K runs and live induced recovery remain unrun. No smaller research model or changed loss was used. The execution model was unloaded afterwards to release resources. Exact results and artifacts are in PHASE_2_REPORT.md.
+
+## D023 — Phase 3 HotpotQA task and labeled evaluation
+
+Status: implemented and verified within the Phase 3 report's scope. The user authorized the next phase.
+Adopt D014's explicitly proposed project task: official
+[HotpotQA distractor](https://huggingface.co/datasets/hotpotqa/hotpot_qa), all provided
+paragraphs in original order, identical input formatting for training and evaluation,
+no retrieval. The released notebook's training omission of context is corrected;
+the exact published fullwiki/distractor formulation remains unknown. This is not
+an exact paper reproduction claim.
+
+Default final held-out examples use labeled development; the authorized optional
+training-split holdout is disjoint from training and validation and changes manifest
+identity. Preserve IDs, context and gold metadata as dataset artifacts. Input formatting
+accepts only question/context, never gold answers or supporting-fact annotations.
+Full evaluation explicitly uses labeled development, without fabricated test labels.
+
+## D024 — HotpotQA answer metrics and context limits
+
+Status: implemented and verified within the Phase 3 report's scope. Use the
+[official answer evaluator](https://github.com/hotpotqa/hotpot/blob/master/hotpot_evaluate_v1.py)
+normalization, multiset token F1 and special yes/no/noanswer mismatch rule. Extract
+the final bracketed answer, otherwise use the whole response. F1/precision/recall
+are evaluation metrics only. Training reward retains exact one or the original
+fractional Llama judge; validation answer EM selects the checkpoint, earliest tie.
+No supporting-fact metrics without predictions.
+
+Keep the original first-token sampler, Figure 2 sum and sequential replay unchanged.
+GPT-2's 1024-token limit can drop early context; question/action suffix is retained
+by left truncation. Expose MAX_POLICY_TOKENS and log per-state token counts/budget/
+truncation flags. Shorter hardware budgets are explicit input deviations. Llama
+receives all formatted context within its server budget; actual server truncation
+is unmeasured. All budgets must match across compared K runs.
+
+## D025 — Separate long-context correctness from reduced live integration
+
+Status: observed and documented. Real GPT-2 CUDA replay/backward at the default
+1024-token budget passed with nonzero gradients and changed parameters, reserving
+about 5.36 GiB. The live joint-model check explicitly used CPU policy training,
+256 policy tokens and eight Llama GPU layers because local GPU/RAM were constrained.
+It retained both research models, the sampler and Figure 2 objective. This input/device
+deviation belongs only to a namespaced engineering run, not the default baseline.
+
+All five live candidates succeeded and received equal rewards one, producing zero
+current gradient. The one-question validation had EM zero/F1 0.4 but semantic
+reward one. This demonstrates why reward and benchmark metrics must remain separate.
+The EM tie selected episode zero as documented. One held-out correct example is
+integration evidence, not benchmark performance or learning.
+
+Checkpoint restoration, final testing and twelve plots passed; full workloads,
+live other K values, default joint GPU/context operation and live induced recovery
+remain unrun. Synthetic interrupted recovery has nonzero updates. The driver-only
+cleanup argument mistake was corrected by a separate unload request; no loaded
+execution model remained. Detailed evidence is in PHASE_3_REPORT.md.

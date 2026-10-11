@@ -1,0 +1,22 @@
+{
+  "kind": "synthetic-group-on-real-GPT2-not-benchmark",
+  "passed": true,
+  "initial_policy_digest": "e563ffe10e2eefeaf9d9a869d4cb43369cdddbe6875789caec4e1abd7c6adfd9",
+  "parameters_changed": true,
+  "group_mean": 0.5,
+  "advantages": [
+    0.5,
+    -0.5,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "loss": -0.12802696228027344,
+  "gradient_norm": 86.14998050397438,
+  "zero_advantage_group": false,
+  "optimizer_step": true,
+  "peak_allocated_gpu_bytes": 4626561024,
+  "peak_reserved_gpu_bytes": 5750390784,
+  "policy_input_budget": 1024,
+  "long_context": true
+}

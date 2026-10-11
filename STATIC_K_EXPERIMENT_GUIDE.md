@@ -1,6 +1,6 @@
 # Static-K experiment guide
 
-Current deliverable: `Static_K_GRPO_GSM8K.ipynb`. HotpotQA belongs to Phase 3 and is not implemented yet. The [master specification](docs/MASTER_SPEC.md), [audit](docs/PHASE_1_AUDIT.md), and [progress](docs/PROGRESS.md) distinguish published methods, released code, project settings and actual verification.
+Independent notebooks: `Static_K_GRPO_GSM8K.ipynb` and `Static_K_GRPO_HotpotQA.ipynb`. Each contains its own complete workflow and tests. The [master specification](docs/MASTER_SPEC.md), [audit](docs/PHASE_1_AUDIT.md), and [progress](docs/PROGRESS.md) distinguish published methods, released code, project settings and actual verification.
 
 ## Environment and initialization
 
@@ -12,7 +12,7 @@ venv_gpu/Scripts/python.exe -m ipykernel install --user --name autodspy-gpu --di
 
 Start Ollama and ensure `ollama pull llama3.1:8b` has installed the requested execution model. Edit `OLLAMA_HOST` for another server. The notebook probes model availability, records its digest/quantization and refuses silent substitutions. `OLLAMA_NUM_GPU=0` explicitly runs Llama on CPU to leave GPU room for GPT-2; automatic or partial GPU loading can be requested explicitly. Use identical settings across K comparisons.
 
-Open the GSM8K notebook and run its definition cells top to bottom with `RUN_OPERATION=False`. Optional dependency installation is controlled by `INSTALL_DEPENDENCIES`; it does not reinstall PyTorch. Run `notebook_self_checks()` to verify synthetic mechanics. No model training or final testing starts from setup.
+Open the chosen notebook and run its definition cells top to bottom with `RUN_OPERATION=False`. Optional dependency installation is controlled by `INSTALL_DEPENDENCIES`; it does not reinstall PyTorch. Run `notebook_self_checks()` to verify synthetic mechanics. No model training or final testing starts from setup.
 
 ## A K=5 smoke run
 
@@ -28,7 +28,7 @@ SESSION = run_operation(CONFIG, "train")
 
 The default smoke uses five episodes, a 200-question training pool, 50 validation questions and the same persisted schedule as pilot/baseline. Episode-zero and final validation may cost more than the five training episodes. For engineering checks only, override the pool, validation/test sizes and episode count explicitly. Keep such runs separate from research results.
 
-An initialization-only call is `SESSION = run_operation(CONFIG, "initialize")`; then explicitly call `train_grpo(SESSION)` when ready. It initializes the immutable GPT-2 revision with fresh Adam state, checks Ollama, loads official GSM8K main and persists split/schedule metadata. It never searches for an existing checkpoint.
+An initialization-only call is `SESSION = run_operation(CONFIG, "initialize")`; then explicitly call `train_grpo(SESSION)` when ready. It initializes the immutable GPT-2 revision with fresh Adam state, checks Ollama, loads the corresponding official dataset and persists split/schedule metadata. It never searches for an existing checkpoint.
 
 ## Other K values and presets
 
@@ -85,3 +85,45 @@ Only compatible completed runs compare. All eleven figures display inside the no
 Sequential rollout/replay bounds activation retention without changing the loss. Finite equal-reward groups still make Adam steps, whose momentum may move weights despite zero current gradients. PyTorch peak allocated/reserved memory and Ollama residency are distinct measurements. Calls mean measured `LM.forward` attempts, including judges/adapter retries; exact physical HTTP requests are unavailable. Token totals require returned usage. Training time excludes validation/checkpoint I/O. Fixed seeds do not guarantee bitwise remote inference across hardware or server versions.
 
 Actual checks and unresolved limitations are reported in [PHASE_2_REPORT.md](docs/PHASE_2_REPORT.md). Clean-kernel checks and a real GPT-2 update passed. A reduced live run completed with truncation failures and zero rewards; it does not demonstrate learning. No expensive baseline result is implied by synthetic tests or reduced live engineering checks.
+
+## HotpotQA configuration and use
+
+Use the same K, preset, mode and checkpoint commands inside the HotpotQA notebook;
+it never imports GSM8K. Results are under `results/hotpotqa/k<K>/seed<seed>/<preset>/<run>/`.
+The default official `distractor` allocation is 200 training examples, 50 additional
+training-split validation examples and 200 labeled development examples for final
+testing. `TEST_SOURCE_SPLIT="train"` explicitly selects a third disjoint training
+slice after both training and validation. This alternative creates a different
+manifest and cannot be compared as the same protocol. Full evaluation explicitly
+uses all labeled development examples, never unlabeled official test questions.
+
+All provided paragraphs enter the model input, in their original order, followed
+by the question. Gold answers/supporting-fact annotations remain metadata. The
+paper's exact task configuration was not verifiable; consistent provided-context
+distractor QA is a documented project choice. There is no search or retrieval.
+
+Answer EM uses official HotpotQA normalization; token F1 follows its answer
+evaluator, including the yes/no/noanswer rule. Training reward remains exact-match
+one followed by the original fractional Llama semantic judge on mismatches.
+F1 never enters the reward or checkpoint selection. Highest validation answer EM
+selects the checkpoint, with the earliest episode winning ties. Testing reports
+both EM and F1, and the notebook displays twelve figures, including their comparison.
+
+GPT-2 left-truncates long inputs to `MAX_POLICY_TOKENS=1024`, retaining the question
+and action suffix while potentially losing earlier context. Trajectories record
+token counts and truncation flags. Lower this control explicitly only when needed
+and record the input deviation; keep it fixed across K. Llama receives the complete
+formatted input subject to `OLLAMA_NUM_CTX`. Server truncation is not directly
+measured. CPU offload requires enough host RAM; a remote Ollama endpoint may be
+more practical on a 6GB laptop. Never silently change the execution model.
+
+For official-data checks without initializing either model:
+
+```python
+CONFIG, DATASETS = load_hotpotqa(build_config())
+DATA = prepare_selection(CONFIG, DATASETS)
+CHECKS = dataset_self_checks(CONFIG, DATASETS, DATA)
+```
+
+Phase 3 checks, actual integration outcomes and unrun workloads are recorded in
+[PHASE_3_REPORT.md](docs/PHASE_3_REPORT.md). Phase 4 consolidation remains pending.

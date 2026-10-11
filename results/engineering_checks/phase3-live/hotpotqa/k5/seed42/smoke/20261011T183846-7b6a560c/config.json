@@ -1,0 +1,146 @@
+{
+  "config": {
+    "dataset": "hotpotqa",
+    "dataset_name": "hotpotqa/hotpot_qa",
+    "dataset_config": "distractor",
+    "test_source_split": "validation",
+    "input_protocol": "all-provided-context-question-last-v1",
+    "dataset_revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+    "policy_model": "gpt2",
+    "policy_revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+    "k": 5,
+    "seed": 42,
+    "preset": "smoke",
+    "num_episodes": 1,
+    "train_pool_size": 2,
+    "validation_size": 1,
+    "test_size": 1,
+    "schedule_episodes": 200,
+    "learning_rate": 0.0001,
+    "checkpoint_interval": 1,
+    "validation_interval": 1,
+    "policy_device": "cpu",
+    "ollama_model": "llama3.1:8b",
+    "ollama_host": "http://localhost:11434",
+    "ollama_num_gpu": 8,
+    "ollama_num_ctx": 4096,
+    "execution_max_tokens": 512,
+    "execution_temperature": 0.0,
+    "request_timeout": 180,
+    "results_root": "results/engineering_checks/phase3-live",
+    "protocol": "hotpotqa-static-figure2-v1",
+    "policy_dropout": false,
+    "policy_sampling": "restricted-first-token-multinomial",
+    "loss": "negative-sum-logprob-times-centered-reward",
+    "optimizer": "Adam",
+    "cache": false,
+    "semantic_fallback": true,
+    "max_policy_tokens": 256,
+    "max_pipeline_steps": 3,
+    "evaluation_sampling": "multinomial-with-fixed-split-seed",
+    "evaluation_seed_offset": 100000,
+    "engineering_cpu_threads": 4
+  },
+  "selection_id": "d7ced1d6e00a5afc1649c9d7d8c45c3ea7adb6ecfa07a464b48e51a6c7f0b2d0",
+  "selection_path": "results\\engineering_checks\\phase3-live\\hotpotqa\\selections\\6819b2c22be40340a5beeedd8db8040fe33db451b3a50a3d8398685cc953c76b.json",
+  "initial_policy_digest": "e563ffe10e2eefeaf9d9a869d4cb43369cdddbe6875789caec4e1abd7c6adfd9",
+  "hardware": {
+    "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+    "packages": {
+      "torch": "2.6.0+cu124",
+      "transformers": "5.14.1",
+      "dspy": "3.3.0",
+      "datasets": "5.0.1",
+      "numpy": "2.4.4",
+      "matplotlib": "3.11.1"
+    },
+    "cuda_available": true,
+    "cuda_version": "12.4",
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_total_bytes": 6441926656
+  },
+  "execution_model": {
+    "version": {
+      "version": "0.33.2"
+    },
+    "model": {
+      "name": "llama3.1:8b",
+      "model": "llama3.1:8b",
+      "modified_at": "2026-09-26T19:49:04.8691701+06:00",
+      "size": 4920753328,
+      "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "llama",
+        "families": [
+          "llama"
+        ],
+        "parameter_size": "8.0B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 131072,
+        "embedding_length": 4096
+      },
+      "capabilities": [
+        "completion",
+        "tools"
+      ]
+    },
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "llama",
+      "families": [
+        "llama"
+      ],
+      "parameter_size": "8.0B",
+      "quantization_level": "Q4_K_M"
+    },
+    "model_info": {
+      "general.architecture": "llama",
+      "general.basename": "Meta-Llama-3.1",
+      "general.file_type": 15,
+      "general.finetune": "Instruct",
+      "general.languages": null,
+      "general.license": "llama3.1",
+      "general.parameter_count": 8030261312,
+      "general.quantization_version": 2,
+      "general.size_label": "8B",
+      "general.tags": null,
+      "general.type": "model",
+      "llama.attention.head_count": 32,
+      "llama.attention.head_count_kv": 8,
+      "llama.attention.layer_norm_rms_epsilon": 1e-05,
+      "llama.block_count": 32,
+      "llama.context_length": 131072,
+      "llama.embedding_length": 4096,
+      "llama.feed_forward_length": 14336,
+      "llama.rope.dimension_count": 128,
+      "llama.rope.freq_base": 500000,
+      "llama.vocab_size": 128256,
+      "tokenizer.ggml.bos_token_id": 128000,
+      "tokenizer.ggml.eos_token_id": 128009,
+      "tokenizer.ggml.merges": null,
+      "tokenizer.ggml.model": "gpt2",
+      "tokenizer.ggml.pre": "llama-bpe",
+      "tokenizer.ggml.token_type": null,
+      "tokenizer.ggml.tokens": null
+    },
+    "options": {
+      "api_base": "http://localhost:11434",
+      "api_key": "",
+      "cache": false,
+      "num_retries": 0,
+      "temperature": 0.0,
+      "max_tokens": 512,
+      "seed": 42,
+      "num_ctx": 4096,
+      "timeout": 180,
+      "keep_alive": "5m",
+      "num_gpu": 8
+    },
+    "ps": {
+      "models": []
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "dataset": "hotpotqa",
+  "k": 5,
+  "seed": 42,
+  "split": "test",
+  "episode": 0,
+  "selected_checkpoint": "results\\engineering_checks\\phase3-live\\hotpotqa\\k5\\seed42\\smoke\\20261011T183846-7b6a560c\\checkpoints\\episode_0000_1b4f97cb.pt",
+  "questions": 1,
+  "question_ids": [
+    "5a72a9145542994cef4bc3c1"
+  ],
+  "exact_match_accuracy": 1.0,
+  "answer_f1": 1.0,
+  "answer_precision": 1.0,
+  "answer_recall": 1.0,
+  "source_split": "validation",
+  "semantic_fallback_count": 0,
+  "semantic_fallback_mean_score": null,
+  "semantic_full_credit_count": 0,
+  "mean_reward": 1.0,
+  "attempted_pipeline_evaluations": 1,
+  "successful_pipeline_evaluations": 1,
+  "failed_pipeline_evaluations": 0,
+  "cumulative_training_pipeline_evaluations": 0,
+  "seconds": 7.0528672999935225,
+  "records": [
+    {
+      "answer_f1": 1.0,
+      "answer_precision": 1.0,
+      "answer_recall": 1.0,
+      "question_id": "5a72a9145542994cef4bc3c1",
+      "target": "Dante",
+      "prediction": "Dante",
+      "trajectory": {
+        "actions": [
+          "Predict",
+          "text -> summary",
+          "stop"
+        ],
+        "log_probs": [
+          -0.7481269836425781,
+          -2.011411666870117,
+          0.0
+        ],
+        "module": "Predict",
+        "signature": "text -> summary",
+        "policy_input_token_counts": [
+          1504,
+          1504,
+          1507
+        ],
+        "policy_input_budget": 256,
+        "policy_input_truncated": [
+          true,
+          true,
+          true
+        ]
+      },
+      "execution": {
+        "output": "Dante",
+        "success": true,
+        "error": null,
+        "seconds": 5.52400650002528
+      },
+      "reward": 1.0,
+      "exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    }
+  ],
+  "execution_llm_calls": 1,
+  "physical_http_requests": null,
+  "prompt_tokens": 1743,
+  "generated_tokens": 14,
+  "llm_seconds": 5.496815500082448,
+  "llm_failed_calls": 0,
+  "call_count_definition": "DSPy LM.forward attempts, including semantic judge and adapter retries",
+  "checkpoint_selection_rule": "maximum validation answer EM; earliest episode on ties"
+}

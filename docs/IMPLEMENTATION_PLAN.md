@@ -90,18 +90,20 @@ Dependencies: validated Phase 2 milestone and instruction to proceed. Deliverabl
 
 Checklist:
 
-- [ ] Re-read requirements/decisions and verify the existing GSM8K milestone before implementation.
-- [ ] Implement the same complete 21-section workflow and controls independently, preserving all cross-K and GRPO constraints.
-- [ ] Select and document official HotpotQA configuration with evidence. Prefer distractor if consistent with verified task formulation.
-- [ ] Persist IDs, contexts, split/source metadata, and available evaluation metadata. Keep gold answers and supporting facts out of model inputs.
-- [ ] Default to disjoint train-pool/train-validation and labeled development held-out test selections; preserve the authorized disjoint training-split alternative as a documented optional protocol with distinct artifacts and no validation overlap.
-- [ ] Preserve verified question/context usage and prohibit unverified external retrieval/search. Document unresolved task formulation choices.
-- [ ] Implement normalized textual exact match and token F1 separately from audited training reward and semantic fallback. Do not report unproduced supporting-fact predictions.
-- [ ] Include and verify standalone data, mathematics, policy, checkpoint, resume, evaluation, logging, and plotting self-checks, including exact-match/F1 comparison.
-- [ ] Check clean-kernel independence and perform only a feasible reduced live smoke test. Record actual results without benchmark claims.
-- [ ] Confirm GSM8K functionality remains intact, update documentation/graph, and verify original-notebook preservation.
+- [x] Re-read requirements/decisions and verify the existing GSM8K milestone before implementation.
+- [x] Implement the same complete 21-section workflow and controls independently, preserving all cross-K and GRPO constraints.
+- [x] Select and document official HotpotQA configuration with evidence. Prefer distractor if consistent with verified task formulation.
+- [x] Persist IDs, contexts, split/source metadata, and available evaluation metadata. Keep gold answers and supporting facts out of model inputs.
+- [x] Default to disjoint train-pool/train-validation and labeled development held-out test selections; preserve the authorized disjoint training-split alternative as a documented optional protocol with distinct artifacts and no validation overlap.
+- [x] Preserve verified question/context usage and prohibit unverified external retrieval/search. Document unresolved task formulation choices.
+- [x] Implement normalized textual exact match and token F1 separately from audited training reward and semantic fallback. Do not report unproduced supporting-fact predictions.
+- [x] Include and verify standalone data, mathematics, policy, checkpoint, resume, evaluation, logging, and plotting self-checks, including exact-match/F1 comparison.
+- [x] Check clean-kernel independence and perform only a feasible reduced live smoke test. Record actual results without benchmark claims.
+- [x] Confirm GSM8K functionality remains intact, update documentation/graph, and verify original-notebook preservation.
 
 Acceptance: standalone HotpotQA workflow verified to the same standard as GSM8K, including textual metrics, leak prevention, and labeled evaluation sources. Report actual results and stop.
+
+Status: **completed** on 2026-10-12 within the documented verification scope. Final fresh-kernel execution, 96 synthetic assertions, official distractor data isolation/schedules, a real long-context GPT-2 update, and a one-episode reduced live checkpoint/validation/test/twelve-plot workflow passed. Source preservation is confirmed. See [PHASE_3_REPORT.md](PHASE_3_REPORT.md) for deviations and unrun workloads. Stop until Phase 4 is authorized.
 
 ## Phase 4 — Finalize management, statistics, plots, and reproducibility
 

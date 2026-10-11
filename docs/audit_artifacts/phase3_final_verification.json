@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "notebook_sha256": "03190623195962152c95f88d49cf9813058673a7fe0ae1fcc8f0c3fa543a7ad7",
+  "phase": "3",
+  "schema_and_ast": true,
+  "clean_kernel_evidence_matches": true,
+  "live_evidence_matches": true,
+  "real_plot_files": 12,
+  "original_hashes_preserved": {
+    "DSPy_GRPO.ipynb": "a787bc87b6e652d30ef483f6c3ef8525df351c0f5572a3ee5ac4c1455d863f98",
+    "AutoDSPy.pdf": "6eb8137f3b610ba569babf4dfa55fb7c61e380ac0282cf2f223572a2595266f2",
+    "Static_K_GRPO_GSM8K.ipynb": "cd4f133d858d28c5326585adf9827c9718574a26a71bbb0ac3b3533176b6ddc2"
+  },
+  "master_spec_preserved": true,
+  "documentation_links_and_whitespace": true,
+  "git_diff_check": true,
+  "graph_update": {
+    "nodes": 742,
+    "edges": 738,
+    "communities": 63,
+    "llm_api_tokens": 0,
+    "notebooks_and_pdf_skipped": true
+  },
+  "full_baselines_run": false
+}

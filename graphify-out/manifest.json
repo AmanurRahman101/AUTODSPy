@@ -30,9 +30,9 @@
     "semantic_hash": ""
   },
   "docs/audit_artifacts/phase2_clean_kernel.json": {
-    "mtime": 1791742127.9349456,
-    "seen": 1791742144.639662,
-    "ast_hash": "bb10ac6831b27343a111313c8e76f8ed",
+    "mtime": 1791742191.509446,
+    "seen": 1791744151.3658612,
+    "ast_hash": "aaac9f2d250a2974f312c98e687414cf",
     "semantic_hash": ""
   },
   "docs/audit_artifacts/phase2_synthetic_checks.json": {
@@ -756,21 +756,21 @@
     "semantic_hash": ""
   },
   "STATIC_K_EXPERIMENT_GUIDE.md": {
-    "mtime": 1791742114.179577,
-    "seen": 1791742144.6398785,
-    "ast_hash": "b11ea3956c63850b33c4163f5e8e2832",
+    "mtime": 1791743624.435506,
+    "seen": 1791744151.3891933,
+    "ast_hash": "4df598ebae63f5e239be943aa1d3b8a5",
     "semantic_hash": ""
   },
   "docs/DECISIONS.md": {
-    "mtime": 1791742114.178577,
-    "seen": 1791742144.63988,
-    "ast_hash": "11c46dd022978814413d556ee4a3e1d6",
+    "mtime": 1791743624.4678125,
+    "seen": 1791744151.3891964,
+    "ast_hash": "eb5dbb9aa0875b72c0214fc9905e336b",
     "semantic_hash": ""
   },
   "docs/IMPLEMENTATION_PLAN.md": {
-    "mtime": 1791741845.7942219,
-    "seen": 1791742144.6398811,
-    "ast_hash": "6c3655dfa8f09f160815f6765e53ee6e",
+    "mtime": 1791743934.1787317,
+    "seen": 1791744151.3891985,
+    "ast_hash": "8986176710c33dffb76d9c93a6aa198c",
     "semantic_hash": ""
   },
   "docs/MASTER_SPEC.md": {
@@ -786,9 +786,9 @@
     "semantic_hash": ""
   },
   "docs/PROGRESS.md": {
-    "mtime": 1791741913.7685812,
-    "seen": 1791742144.6398876,
-    "ast_hash": "05f3532ac6fa20ca9be896b0c461756c",
+    "mtime": 1791743932.5844262,
+    "seen": 1791744151.389552,
+    "ast_hash": "7f5ff5510d21aa2d517c80f695d5dc83",
     "semantic_hash": ""
   },
   "docs/agents/domain.md": {
@@ -810,9 +810,9 @@
     "semantic_hash": ""
   },
   "docs/audit_artifacts/README.md": {
-    "mtime": 1791741912.5512557,
-    "seen": 1791742144.6398945,
-    "ast_hash": "01ef7569efb731b0f9982ff0ab07cd9b",
+    "mtime": 1791742191.5065043,
+    "seen": 1791744151.390067,
+    "ast_hash": "df4eb51a59c5de4d69c581aa17df1853",
     "semantic_hash": ""
   },
   "AutoDSPy.pdf": {
@@ -888,9 +888,9 @@
     "semantic_hash": ""
   },
   "docs/PHASE_2_REPORT.md": {
-    "mtime": 1791742114.178577,
-    "seen": 1791742144.6398861,
-    "ast_hash": "b1d0ff52669bc4d3047cf85df284e7e5",
+    "mtime": 1791742247.595183,
+    "seen": 1791744151.389546,
+    "ast_hash": "8bc0cc7e77eb1f935e8be897d37fd553",
     "semantic_hash": ""
   },
   "results/engineering_checks/phase2-live/gsm8k/k5/seed42/smoke/20261011T175202-3fe9f269/plots/attempted_pipeline_evaluations_9becd1b5.png": {
@@ -957,6 +957,66 @@
     "mtime": 1791741341.4440794,
     "seen": 1791742144.6399214,
     "ast_hash": "5c31147b91578146f7620ce16fed1c11",
+    "semantic_hash": ""
+  },
+  "docs/audit_artifacts/phase3_official_data.json": {
+    "mtime": 1791743747.04883,
+    "seen": 1791744151.366423,
+    "ast_hash": "c369bdaecb00ff3194456417b8c76419",
+    "semantic_hash": ""
+  },
+  "docs/audit_artifacts/phase3_real_gpt2_update.json": {
+    "mtime": 1791743677.475638,
+    "seen": 1791744151.3664255,
+    "ast_hash": "cfb02476542fe3e0c0b242640292b0b4",
+    "semantic_hash": ""
+  },
+  "docs/audit_artifacts/phase3_synthetic_checks.json": {
+    "mtime": 1791743842.5569143,
+    "seen": 1791744151.366428,
+    "ast_hash": "62e1b982ff44595045994aebbe560e2f",
+    "semantic_hash": ""
+  },
+  "results/engineering_checks/phase3-live/hotpotqa/k5/seed42/smoke/20261011T183846-7b6a560c/best.json": {
+    "mtime": 1791743974.8460705,
+    "seen": 1791744151.3679957,
+    "ast_hash": "75aa64b39857113ce7f16d2a089f4db1",
+    "semantic_hash": ""
+  },
+  "results/engineering_checks/phase3-live/hotpotqa/k5/seed42/smoke/20261011T183846-7b6a560c/config.json": {
+    "mtime": 1791743926.0221634,
+    "seen": 1791744151.3679984,
+    "ast_hash": "0a9ab8da5a3306959b8dc0abbdf3f7dc",
+    "semantic_hash": ""
+  },
+  "results/engineering_checks/phase3-live/hotpotqa/k5/seed42/smoke/20261011T183846-7b6a560c/latest.json": {
+    "mtime": 1791743974.84307,
+    "seen": 1791744151.3680007,
+    "ast_hash": "43efadfedebf3329f68ab7f8d80b5b5c",
+    "semantic_hash": ""
+  },
+  "results/engineering_checks/phase3-live/hotpotqa/selections/6819b2c22be40340a5beeedd8db8040fe33db451b3a50a3d8398685cc953c76b.json": {
+    "mtime": 1791743914.637421,
+    "seen": 1791744151.3680031,
+    "ast_hash": "59d5e9a2e3533c35ff8c226d2a9fc337",
+    "semantic_hash": ""
+  },
+  "results/engineering_checks/phase3-live/hotpotqa/selections/d7ced1d6e00a5afc1649c9d7d8c45c3ea7adb6ecfa07a464b48e51a6c7f0b2d0_examples.json": {
+    "mtime": 1791743914.6424215,
+    "seen": 1791744151.3680048,
+    "ast_hash": "f78a8c9b26b61a58b70f0ee634770931",
+    "semantic_hash": ""
+  },
+  "results/hotpotqa/selections/abd47e67eee3238cc904c51d9721aa2796691aa6b9972ef9dbf9a09ce51d90cc.json": {
+    "mtime": 1791743745.0043595,
+    "seen": 1791744151.368191,
+    "ast_hash": "2de734ed0b089bf2a55d0ce3f227926c",
+    "semantic_hash": ""
+  },
+  "docs/PHASE_3_REPORT.md": {
+    "mtime": 1791743803.9636993,
+    "seen": 1791744151.3895488,
+    "ast_hash": "2258128ef75aaeaa366d85ef968b45d6",
     "semantic_hash": ""
   }
 }

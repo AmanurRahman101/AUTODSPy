@@ -1,17 +1,17 @@
 # Graph Report - AUTODSPy  (2026-10-12)
 
 ## Corpus Check
-- 104 files · ~169,901 words
+- 115 files · ~1,045,363 words
 - Verdict: corpus is large enough that graph structure adds value.
-- Unclassified: 12 file(s) not represented in the graph (top: (none) 4, .ipynb 4, .jsonl 3)
+- Unclassified: 16 file(s) not represented in the graph (top: .jsonl 6, .ipynb 5, (none) 4)
 
 ## Summary
-- 732 nodes · 728 edges · 64 communities (48 shown, 16 thin omitted)
+- 742 nodes · 738 edges · 63 communities (47 shown, 16 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 15 edges (avg confidence: 0.94)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `c13dab89`
+- Built from commit: `6893f14c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -19,7 +19,7 @@
 - run_grpo_baseline.py
 - AutoDSPy Static-K Research — Master Specification
 - Issue tracker: GitHub
-- Phased implementation plan
+- Project progress and session handoff
 - Triage
 - teach/SKILL.md
 - DSPy Pipeline Optimization with Reinforcement Learning
@@ -69,15 +69,14 @@
 - CREDITS.md
 - extraction-spec.md
 - agents/triage-labels.md
-- Project progress and session handoff
-- Process
+- Phased implementation plan
 
 ## God Nodes (most connected - your core abstractions)
 1. `AutoDSPy Static-K Research — Master Specification` - 31 edges
-2. `Decisions, assumptions, and open research questions` - 25 edges
+2. `Decisions, assumptions, and open research questions` - 27 edges
 3. `run_wizard()` - 12 edges
 4. `What You Must Do When Invoked` - 12 edges
-5. `Project progress and session handoff` - 11 edges
+5. `Project progress and session handoff` - 12 edges
 6. `/graphify` - 10 edges
 7. `AutoDSPy Research — Agent Instructions` - 10 edges
 8. `📊 CSE 498R Thesis: Baseline Execution & Empirical Analysis Report` - 10 edges
@@ -99,11 +98,11 @@
 ## Import Cycles
 - None detected.
 
-## Communities (64 total, 16 thin omitted)
+## Communities (63 total, 16 thin omitted)
 
 ### Community 0 - "run_grpo_baseline.py"
-Cohesion: 0.06
-Nodes (30): 1. Pin the fixed point, 6. Preserve the Original DSPy Action Space, 1. Scope and evidence conventions, 2. Published methodology, released code, and project protocol, 3. GPT-2 and policy action audit, 4. Verified correctness and operational issues, 5. Dataset and HotpotQA task audit, 6. Environment and hardware observations (+22 more)
+Cohesion: 0.05
+Nodes (36): 1. Pin the fixed point, 2. Identify the spec source, 3. Identify the standards sources, 4. Spawn both sub-agents in parallel, 5. Aggregate, Process, Why two axes, 6. Preserve the Original DSPy Action Space (+28 more)
 
 ### Community 1 - "AutoDSPy Static-K Research — Master Specification"
 Cohesion: 0.05
@@ -113,9 +112,9 @@ Nodes (44): 10. Independent K Experiments, 11. Training Correctness, 12. Checkpo
 Cohesion: 0.06
 Nodes (30): Before exploring, read these, Domain Docs, File structure, Flag ADR conflicts, Use the glossary's vocabulary, Conventions, Issue tracker: GitHub, Pull requests as a triage surface (+22 more)
 
-### Community 3 - "Phased implementation plan"
-Cohesion: 0.08
-Nodes (25): Phase 1 audit artifacts, Phase 2 verification additions, Execution rules and session handoff, Phase 1 — Audit original notebook and research paper, Phase 2 — Implement and validate the complete GSM8K notebook, Phase 3 — Implement and validate the independent HotpotQA notebook, Phase 4 — Finalize management, statistics, plots, and reproducibility, Phased implementation plan (+17 more)
+### Community 3 - "Project progress and session handoff"
+Cohesion: 0.06
+Nodes (35): Phase 1 audit artifacts, Phase 2 verification additions, Corrections and remaining limitations, Deliverables, Phase 2 — GSM8K implementation and verification, Phase boundary, Starting, saving and evaluating, Verification actually performed (+27 more)
 
 ### Community 4 - "Triage"
 Cohesion: 0.06
@@ -158,8 +157,8 @@ Cohesion: 0.22
 Nodes (18): ask(), ask_secret(), banner(), _clear(), _existing(), finish(), note(), open_url() (+10 more)
 
 ### Community 14 - "Decisions, assumptions, and open research questions"
-Cohesion: 0.08
-Nodes (25): D001 — Prepare documents, then request Phase 1 permission, D002 — Store persistent context in docs/, D003 — Preserve the original and existing working-tree changes, D004 — Figure 2 objective and episode protocol are fixed, D005 — Independent notebooks and model initialization, D006 — Configurable defaults and reduced engineering tests, D007 — Benchmark splits and unresolved HotpotQA formulation, D008 — Reward, benchmark metrics, and model failures stay distinct (+17 more)
+Cohesion: 0.07
+Nodes (27): D001 — Prepare documents, then request Phase 1 permission, D002 — Store persistent context in docs/, D003 — Preserve the original and existing working-tree changes, D004 — Figure 2 objective and episode protocol are fixed, D005 — Independent notebooks and model initialization, D006 — Configurable defaults and reduced engineering tests, D007 — Benchmark splits and unresolved HotpotQA formulation, D008 — Reward, benchmark metrics, and model failures stay distinct (+19 more)
 
 ### Community 15 - "Ask Matt"
 Cohesion: 0.12
@@ -285,32 +284,28 @@ Nodes (3): For git commit hook, For native CLAUDE.md integration, graphify refer
 Cohesion: 0.50
 Nodes (3): For --cluster-only, For --update (incremental re-extraction), graphify reference: incremental update and cluster-only
 
-### Community 62 - "Project progress and session handoff"
-Cohesion: 0.18
-Nodes (11): Completed Phase 1 work, Completed Phase 2 work and verification, Completed preparation, Current milestone, Pending work and unresolved questions, Phase status, Project progress and session handoff, Repository state captured before preparation (+3 more)
-
-### Community 63 - "Process"
-Cohesion: 0.29
-Nodes (6): 2. Identify the spec source, 3. Identify the standards sources, 4. Spawn both sub-agents in parallel, 5. Aggregate, Process, Why two axes
+### Community 62 - "Phased implementation plan"
+Cohesion: 0.25
+Nodes (8): Execution rules and session handoff, Phase 1 — Audit original notebook and research paper, Phase 2 — Implement and validate the complete GSM8K notebook, Phase 3 — Implement and validate the independent HotpotQA notebook, Phase 4 — Finalize management, statistics, plots, and reproducibility, Phased implementation plan, Preparation — documentation and approval gate, Requirement coverage and verification approach
 
 ## Knowledge Gaps
-- **480 isolated node(s):** `block-dangerous-git.sh script`, `The five options`, `The tree`, `Primary and secondary sources`, `These are judgement calls` (+475 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 527 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **488 isolated node(s):** `block-dangerous-git.sh script`, `The five options`, `The tree`, `Primary and secondary sources`, `These are judgement calls` (+483 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 535 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **16 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `AutoDSPy Static-K Research — Master Specification` connect `AutoDSPy Static-K Research — Master Specification` to `run_grpo_baseline.py`, `Phased implementation plan`?**
-  _High betweenness centrality (0.042) - this node is a cross-community bridge._
+- **Why does `AutoDSPy Static-K Research — Master Specification` connect `AutoDSPy Static-K Research — Master Specification` to `run_grpo_baseline.py`, `Project progress and session handoff`?**
+  _High betweenness centrality (0.045) - this node is a cross-community bridge._
 - **Why does `6. Preserve the Original DSPy Action Space` connect `run_grpo_baseline.py` to `AutoDSPy Static-K Research — Master Specification`?**
-  _High betweenness centrality (0.020) - this node is a cross-community bridge._
+  _High betweenness centrality (0.021) - this node is a cross-community bridge._
 - **Why does `Core Functions` connect `run_grpo_baseline.py` to `DSPy Pipeline Optimization with Reinforcement Learning`?**
-  _High betweenness centrality (0.019) - this node is a cross-community bridge._
+  _High betweenness centrality (0.020) - this node is a cross-community bridge._
 - **What connects `block-dangerous-git.sh script`, `The five options`, `The tree` to the rest of the system?**
-  _480 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _488 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `run_grpo_baseline.py` be split into smaller, more focused modules?**
-  _Cohesion score 0.06387921022067364 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05272108843537415 - nodes in this community are weakly interconnected._
 - **Should `AutoDSPy Static-K Research — Master Specification` be split into smaller, more focused modules?**
   _Cohesion score 0.045454545454545456 - nodes in this community are weakly interconnected._
 - **Should `Issue tracker: GitHub` be split into smaller, more focused modules?**

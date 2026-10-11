@@ -1,0 +1,430 @@
+{
+  "train": [
+    {
+      "id": "5ae3cfe05542990afbd1e1e3",
+      "split": "train",
+      "index": 50461,
+      "question": "Which airport is located in Maine, Sacramento International Airport or Knox County Regional Airport?",
+      "answer": "Knox County Regional Airport",
+      "input": "Context:\nTitle: Vinalhaven, Maine\nVinalhaven is a town located on the larger of the two Fox Islands in Knox County, Maine, United States. Vinalhaven is also used to refer to the Island itself. The population was 1,165 at the 2010 census. It is home to a thriving lobster fishery and hosts a summer colony. Since there is no bridge to the island, Vinalhaven is accessible from Rockland via an approximately hour-and-fifteen-minute ferry ride across West Penobscot Bay, or by air taxi from Knox County Regional Airport.\n\nTitle: Owls Head, Maine\nOwls Head is a town in Knox County, Maine, United States. The population was 1,580 at the 2010 census. A resort and fishing area, the community is home to the Knox County Regional Airport. It includes the village of Ash Point.\n\nTitle: North Haven, Maine\nNorth Haven is a town in Knox County, Maine, United States, in Penobscot Bay. The town is both a year-round island community and a prominent summer colony. The population was 355 at the 2010 census. North Haven is accessed by three-times daily ferry service from Rockland, or by air taxi from Knox County Regional Airport.\n\nTitle: Downeast Flight 46\nDowneast Airlines Flight 46 was a scheduled airline service in the United States from Boston's Logan International Airport to Rockland, Maine operated by Downeast Airlines. On May 30, 1979 a de Havilland Canada DHC-6 Twin Otter operating the flight crashed during a nonprecision approach to Rockland's Knox County Regional Airport. The cause of the accident was controlled flight into terrain (CFIT) after the failure of the flightcrew to stop the aircraft's descent below the minimum descent altitude for the nonprecision approach at Knox County airport. The investigation into the accident looked into the airline's corporate culture as a contributing factor to the crash; this was the first time an investigation took this approach to an air crash.\n\nTitle: Northern California TRACON\nNorthern California TRACON (NCT) (Terminal Radar Approach Control), or NorCal TRACON for short, is an air traffic control facility that provides safety alerts, separation, and sequencing of air traffic arriving, departing, and transiting the airspace and airports in Northern California. Located in Rancho Cordova near Sacramento, NCT controls airspace over 19000 square miles, and serves Reno International Airport, Sacramento International Airport, San Jose International Airport, Oakland International Airport, and San Francisco International Airport, plus 19 other smaller airports with air traffic control towers. NCT is the 3rd busiest TRACON in America. NorCal TRACON is the step between local control (in an airport's control tower) and Air Route Traffic Control Center (ARTCC), in this case, Oakland Center (ICAO code: ZOA). San Francisco International Airport is the 2nd largest airport in California and the largest airport serving Northern California.\n\nTitle: Sacramento International Airport\nSacramento International Airport (IATA: SMF, ICAO: KSMF, FAA LID: SMF) is 10 mi northwest of downtown Sacramento, in Sacramento County, California. It is run by the Sacramento County Airport System. Southwest Airlines carries about half the airline passengers.\n\nTitle: Knox County Regional Airport\nKnox County Regional Airport (IATA: RKD, ICAO: KRKD, FAA LID: RKD) is a county owned, public use airport in Knox County, Maine, United States. It is located three nautical miles (6 km) south of the central business district of Rockland, Maine. The airport serves the residents of midcoast Maine with commercial and charter aviation services. Scheduled airline service is subsidized by the Essential Air Service program. It is also a major hub of freight and mail service to Maine's island communities including Matinicus, North Haven and Vinalhaven.\n\nTitle: Matinicus Isle, Maine\nMatinicus Isle is an island plantation in Knox County, Maine, United States. The island is located within Penobscot Bay about 20 miles east of the mainland coast and is accessible by ferry from Rockland or by air taxi from Knox County Regional Airport. The plantation is both a year-round island community and a summer colony. The population was 74 at the 2010 census.\n\nTitle: Raleigh Executive Jetport\nRaleigh Exec: The Raleigh Executive Jetport @ Sanford-Lee County or Raleigh Exec Jetport at Sanford-Lee CountyFAA Airport Master Record for TTA (Form 5010 ) (ICAO: KTTA, FAA LID: TTA) is a public use airport located seven nautical miles (8 mi, 13 km) northeast of the central business district of Sanford, a city in Lee County, North Carolina, United States. It is owned by the Sanford-Lee County Regional Airport Authority and was previously known as Sanford-Lee County Regional Airport. This airport is included in the National Plan of Integrated Airport Systems for 2011–2015, which categorized it as a \"reliever airport\" for Raleigh-Durham International Airport.\n\nTitle: Lea County Regional Airport\nLea County Regional Airport (IATA: HOB, ICAO: KHOB) (Lea County-Hobbs Airport) is four miles (6.4 km) west of Hobbs, in Lea County, New Mexico. The airport covers 898 acre and has three runways. It is an FAA certified commercial airport served by United Airlines' affiliate with daily regional flights. Lea County Regional Airport is the largest of the three airports owned and operated by Lea County Government. Lea County also owns and operated two general aviation airports in Lovington and Jal, New Mexico.\n\nQuestion: Which airport is located in Maine, Sacramento International Airport or Knox County Regional Airport?",
+      "context": {
+        "title": [
+          "Vinalhaven, Maine",
+          "Owls Head, Maine",
+          "North Haven, Maine",
+          "Downeast Flight 46",
+          "Northern California TRACON",
+          "Sacramento International Airport",
+          "Knox County Regional Airport",
+          "Matinicus Isle, Maine",
+          "Raleigh Executive Jetport",
+          "Lea County Regional Airport"
+        ],
+        "sentences": [
+          [
+            "Vinalhaven is a town located on the larger of the two Fox Islands in Knox County, Maine, United States.",
+            " Vinalhaven is also used to refer to the Island itself.",
+            " The population was 1,165 at the 2010 census.",
+            " It is home to a thriving lobster fishery and hosts a summer colony.",
+            " Since there is no bridge to the island, Vinalhaven is accessible from Rockland via an approximately hour-and-fifteen-minute ferry ride across West Penobscot Bay, or by air taxi from Knox County Regional Airport."
+          ],
+          [
+            "Owls Head is a town in Knox County, Maine, United States.",
+            " The population was 1,580 at the 2010 census.",
+            " A resort and fishing area, the community is home to the Knox County Regional Airport.",
+            " It includes the village of Ash Point."
+          ],
+          [
+            "North Haven is a town in Knox County, Maine, United States, in Penobscot Bay.",
+            " The town is both a year-round island community and a prominent summer colony.",
+            " The population was 355 at the 2010 census.",
+            " North Haven is accessed by three-times daily ferry service from Rockland, or by air taxi from Knox County Regional Airport."
+          ],
+          [
+            "Downeast Airlines Flight 46 was a scheduled airline service in the United States from Boston's Logan International Airport to Rockland, Maine operated by Downeast Airlines.",
+            " On May 30, 1979 a de Havilland Canada DHC-6 Twin Otter operating the flight crashed during a nonprecision approach to Rockland's Knox County Regional Airport.",
+            " The cause of the accident was controlled flight into terrain (CFIT) after the failure of the flightcrew to stop the aircraft's descent below the minimum descent altitude for the nonprecision approach at Knox County airport.",
+            " The investigation into the accident looked into the airline's corporate culture as a contributing factor to the crash; this was the first time an investigation took this approach to an air crash."
+          ],
+          [
+            "Northern California TRACON (NCT) (Terminal Radar Approach Control), or NorCal TRACON for short, is an air traffic control facility that provides safety alerts, separation, and sequencing of air traffic arriving, departing, and transiting the airspace and airports in Northern California.",
+            " Located in Rancho Cordova near Sacramento, NCT controls airspace over 19000 square miles, and serves Reno International Airport, Sacramento International Airport, San Jose International Airport, Oakland International Airport, and San Francisco International Airport, plus 19 other smaller airports with air traffic control towers.",
+            " NCT is the 3rd busiest TRACON in America.",
+            " NorCal TRACON is the step between local control (in an airport's control tower) and Air Route Traffic Control Center (ARTCC), in this case, Oakland Center (ICAO code: ZOA).",
+            " San Francisco International Airport is the 2nd largest airport in California and the largest airport serving Northern California."
+          ],
+          [
+            "Sacramento International Airport (IATA: SMF, ICAO: KSMF, FAA LID: SMF) is 10 mi northwest of downtown Sacramento, in Sacramento County, California.",
+            " It is run by the Sacramento County Airport System.",
+            " Southwest Airlines carries about half the airline passengers."
+          ],
+          [
+            "Knox County Regional Airport (IATA: RKD, ICAO: KRKD, FAA LID: RKD) is a county owned, public use airport in Knox County, Maine, United States.",
+            " It is located three nautical miles (6 km) south of the central business district of Rockland, Maine.",
+            " The airport serves the residents of midcoast Maine with commercial and charter aviation services.",
+            " Scheduled airline service is subsidized by the Essential Air Service program.",
+            " It is also a major hub of freight and mail service to Maine's island communities including Matinicus, North Haven and Vinalhaven."
+          ],
+          [
+            "Matinicus Isle is an island plantation in Knox County, Maine, United States.",
+            " The island is located within Penobscot Bay about 20 miles east of the mainland coast and is accessible by ferry from Rockland or by air taxi from Knox County Regional Airport.",
+            " The plantation is both a year-round island community and a summer colony.",
+            " The population was 74 at the 2010 census."
+          ],
+          [
+            "Raleigh Exec: The Raleigh Executive Jetport @ Sanford-Lee County or Raleigh Exec Jetport at Sanford-Lee CountyFAA Airport Master Record for TTA (Form 5010 ) (ICAO: KTTA, FAA LID: TTA) is a public use airport located seven nautical miles (8 mi, 13 km) northeast of the central business district of Sanford, a city in Lee County, North Carolina, United States.",
+            " It is owned by the Sanford-Lee County Regional Airport Authority and was previously known as Sanford-Lee County Regional Airport.",
+            " This airport is included in the National Plan of Integrated Airport Systems for 2011–2015, which categorized it as a \"reliever airport\" for Raleigh-Durham International Airport."
+          ],
+          [
+            "Lea County Regional Airport (IATA: HOB, ICAO: KHOB) (Lea County-Hobbs Airport) is four miles (6.4 km) west of Hobbs, in Lea County, New Mexico.",
+            " The airport covers 898 acre and has three runways.",
+            " It is an FAA certified commercial airport served by United Airlines' affiliate with daily regional flights.",
+            " Lea County Regional Airport is the largest of the three airports owned and operated by Lea County Government.",
+            " Lea County also owns and operated two general aviation airports in Lovington and Jal, New Mexico."
+          ]
+        ]
+      },
+      "metadata": {
+        "type": "comparison",
+        "level": "medium",
+        "supporting_facts": {
+          "title": [
+            "Sacramento International Airport",
+            "Knox County Regional Airport"
+          ],
+          "sent_id": [
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "id": "5abc1abf5542993a06baf87f",
+      "split": "train",
+      "index": 30606,
+      "question": "Peter Hobbs founded the company that is based in what town in Manchester?",
+      "answer": "Failsworth",
+      "input": "Context:\nTitle: Cains Brewery\nCains is a brewery in Liverpool, England, founded in 1858 by Robert Cain. The company merged with Peter Walker & Son in 1921 to form Walker Cains. Peter Walker & Son had a large brewery in Warrington so sold its Liverpool brewery to Higsons in 1923. Boddingtons of Manchester took over in 1985. In 1990 Whitbread acquired Boddington's brewing operations and closed the then Higsons Brewery in 1990. It was reopened by GB Breweries, who became part of Bryggerigruppen in 1991, and in 2002 was sold to Gardener-Shaw for £3.4 million.\n\nTitle: Peter Hobbs (engineer)\nPeter Wallace Hobbs (1916–2008) was an English engineer, and businessman, who with Bill Russell formed the well-known electrical appliance company Russell Hobbs.\n\nTitle: Russell Hobbs\nRussell Hobbs is a manufacturer of household appliances based in Failsworth, Greater Manchester, England, United Kingdom.\n\nTitle: Curzon Ashton F.C.\nCurzon Ashton Football Club is a semi-professional football club based in the market town of Ashton-under-Lyne, Greater Manchester, England, that competes in the National League North, the sixth-highest division overall in the English football league system, and are members of the Manchester County Football Association. Nicknamed \"the Nash\", the club was founded in 1963 and moved to its current stadium, Tameside Stadium, in 2005.\n\nTitle: Manchester Liners\nManchester Liners was a cargo and passenger shipping company founded in 1898, based in Manchester, England. The line pioneered the regular passage of ocean-going vessels along the Manchester Ship Canal. Its main sphere of operation was the transatlantic shipping trade, but the company also operated services to the Mediterranean. All of the line's vessels were registered in the Port of Manchester, and many were lost to enemy action during the First and Second World Wars.\n\nTitle: Dobson &amp; Barlow\nDobson and Barlow were manufacturers of textile machinery with works in Bolton, Greater Manchester. Isaac Dobson (1767-1833) founded the company in 1790 and by 1850 Dobson in partnership with Peter Rothwell had premises in Blackhorse Street which produced mules for cotton spinning. The company moved to a larger factory in Kay Street which had 1,600 workers in 1860.\n\nTitle: The Flux Foundation\nThe Flux Foundation is a non-profit group based in the San Francisco Bay Area whose main objective is to build community through the creation of large-scale public art. The group creates both public art and public artists. It was founded on April 1, 2010 and was established as a California corporation on January 6, 2011, by Rebecca Anders, Jessica Hobbs, Peter (PK) Kimelman, Catherine Magee and Colinne Hemrich. As of 2016 the Board of Directors consists of Kimelman, Hobbs, Magee, Paul Belger and Thwen Chaloemtiarana. It is a \"public charity\" 501c(3) non-profit, supported by grants, public donations and the display of its artworks. Its works are notable not only for their scale but interactivity with the audience relying on participation to create atmospheric effects. The group draws upon Situationist and Fluxus ideas of creating spectacle to establish social connections as an effect of the artwork. This \"community creation\" is mirrored in the pieces' creation by a large-number of volunteers who themselves create new social networks. The Foundation also provides mentorship and fiscal sponsorship to other large-scale artists. Flux is administratively based in San Francisco, while its studios are located at American Steel Studios in West Oakland, California.\n\nTitle: Manchester Sport and Leisure Trust\nManchester Sport and Leisure Trust is a non-profit organisation which manages sport and leisure venues in the City of Manchester, United Kingdom. MSLT was founded in 1997 and is a company limited by guarantee with charitable status with a turnover of £12.5m. MSLT is based at the Sportcity site.\n\nTitle: ITV Granada\nITV Granada (formerly Granada Television; informally Granada) is the Channel 3 regional service for North West England. The licence for the region has been held by ITV Broadcasting Limited since November 2008. It is the largest independent television-franchise producing company in the UK, accounting for 25% of the total broadcasting output of the ITV network. It had been held by Granada Television, which was founded by Sidney Bernstein and based at Granada Studios on Quay Street in Manchester since its inception. This was the only surviving company of the original four Independent Television Authority franchisees from 1954; Granada Media Group (parent company of Granada Television) merged with Carlton Communications to form ITV plc in 2004. It covers Cheshire, Greater Manchester, Lancashire, Merseyside, northwestern Derbyshire, part of Cumbria and North Yorkshire. On 15 July 2009, the Isle of Man was transferred to ITV Granada from ITV Border (even though the Isle of Man is a British Crown Dependency and is not part of the United Kingdom).\n\nTitle: Peter Hesketh-Fleetwood\nSir Peter Hesketh-Fleetwood, 1st Baronet, (9 May 1801 – 12 April 1866) was an English landowner, developer and Member of Parliament, who founded the town of Fleetwood, in Lancashire, England. Born Peter Hesketh, he changed his name by Royal assent to Hesketh-Fleetwood, incorporating the name of his ancestors, and was later created Baronet Fleetwood. Predeceased by an older brother, he inherited estates in west Lancashire in 1824. Inspired by the transport developments of the early 19th century, he decided to bring the railway to the Lancashire coast and develop a holiday resort and port. He hired architect Decimus Burton to design his new town, which he named Fleetwood; construction began in 1836. Hesketh-Fleetwood was instrumental in the formation of the Preston and Wyre Railway Company and with his financial support, a railway line was built between Preston and Fleetwood which opened in 1840.\n\nQuestion: Peter Hobbs founded the company that is based in what town in Manchester?",
+      "context": {
+        "title": [
+          "Cains Brewery",
+          "Peter Hobbs (engineer)",
+          "Russell Hobbs",
+          "Curzon Ashton F.C.",
+          "Manchester Liners",
+          "Dobson &amp; Barlow",
+          "The Flux Foundation",
+          "Manchester Sport and Leisure Trust",
+          "ITV Granada",
+          "Peter Hesketh-Fleetwood"
+        ],
+        "sentences": [
+          [
+            "Cains is a brewery in Liverpool, England, founded in 1858 by Robert Cain.",
+            " The company merged with Peter Walker & Son in 1921 to form Walker Cains.",
+            " Peter Walker & Son had a large brewery in Warrington so sold its Liverpool brewery to Higsons in 1923.",
+            " Boddingtons of Manchester took over in 1985.",
+            " In 1990 Whitbread acquired Boddington's brewing operations and closed the then Higsons Brewery in 1990.",
+            " It was reopened by GB Breweries, who became part of Bryggerigruppen in 1991, and in 2002 was sold to Gardener-Shaw for £3.4 million."
+          ],
+          [
+            "Peter Wallace Hobbs (1916–2008) was an English engineer, and businessman, who with Bill Russell formed the well-known electrical appliance company Russell Hobbs."
+          ],
+          [
+            "Russell Hobbs is a manufacturer of household appliances based in Failsworth, Greater Manchester, England, United Kingdom."
+          ],
+          [
+            "Curzon Ashton Football Club is a semi-professional football club based in the market town of Ashton-under-Lyne, Greater Manchester, England, that competes in the National League North, the sixth-highest division overall in the English football league system, and are members of the Manchester County Football Association.",
+            " Nicknamed \"the Nash\", the club was founded in 1963 and moved to its current stadium, Tameside Stadium, in 2005."
+          ],
+          [
+            "Manchester Liners was a cargo and passenger shipping company founded in 1898, based in Manchester, England.",
+            " The line pioneered the regular passage of ocean-going vessels along the Manchester Ship Canal.",
+            " Its main sphere of operation was the transatlantic shipping trade, but the company also operated services to the Mediterranean.",
+            " All of the line's vessels were registered in the Port of Manchester, and many were lost to enemy action during the First and Second World Wars."
+          ],
+          [
+            "Dobson and Barlow were manufacturers of textile machinery with works in Bolton, Greater Manchester.",
+            " Isaac Dobson (1767-1833) founded the company in 1790 and by 1850 Dobson in partnership with Peter Rothwell had premises in Blackhorse Street which produced mules for cotton spinning.",
+            " The company moved to a larger factory in Kay Street which had 1,600 workers in 1860."
+          ],
+          [
+            "The Flux Foundation is a non-profit group based in the San Francisco Bay Area whose main objective is to build community through the creation of large-scale public art.",
+            " The group creates both public art and public artists.",
+            " It was founded on April 1, 2010 and was established as a California corporation on January 6, 2011, by Rebecca Anders, Jessica Hobbs, Peter (PK) Kimelman, Catherine Magee and Colinne Hemrich.",
+            " As of 2016 the Board of Directors consists of Kimelman, Hobbs, Magee, Paul Belger and Thwen Chaloemtiarana.",
+            " It is a \"public charity\" 501c(3) non-profit, supported by grants, public donations and the display of its artworks.",
+            " Its works are notable not only for their scale but interactivity with the audience relying on participation to create atmospheric effects.",
+            " The group draws upon Situationist and Fluxus ideas of creating spectacle to establish social connections as an effect of the artwork.",
+            " This \"community creation\" is mirrored in the pieces' creation by a large-number of volunteers who themselves create new social networks.",
+            " The Foundation also provides mentorship and fiscal sponsorship to other large-scale artists.",
+            " Flux is administratively based in San Francisco, while its studios are located at American Steel Studios in West Oakland, California."
+          ],
+          [
+            "Manchester Sport and Leisure Trust is a non-profit organisation which manages sport and leisure venues in the City of Manchester, United Kingdom.",
+            " MSLT was founded in 1997 and is a company limited by guarantee with charitable status with a turnover of £12.5m. MSLT is based at the Sportcity site."
+          ],
+          [
+            "ITV Granada (formerly Granada Television; informally Granada) is the Channel 3 regional service for North West England.",
+            " The licence for the region has been held by ITV Broadcasting Limited since November 2008.",
+            " It is the largest independent television-franchise producing company in the UK, accounting for 25% of the total broadcasting output of the ITV network.",
+            " It had been held by Granada Television, which was founded by Sidney Bernstein and based at Granada Studios on Quay Street in Manchester since its inception.",
+            " This was the only surviving company of the original four Independent Television Authority franchisees from 1954; Granada Media Group (parent company of Granada Television) merged with Carlton Communications to form ITV plc in 2004.",
+            " It covers Cheshire, Greater Manchester, Lancashire, Merseyside, northwestern Derbyshire, part of Cumbria and North Yorkshire.",
+            " On 15 July 2009, the Isle of Man was transferred to ITV Granada from ITV Border (even though the Isle of Man is a British Crown Dependency and is not part of the United Kingdom)."
+          ],
+          [
+            "Sir Peter Hesketh-Fleetwood, 1st Baronet, (9 May 1801 – 12 April 1866) was an English landowner, developer and Member of Parliament, who founded the town of Fleetwood, in Lancashire, England.",
+            " Born Peter Hesketh, he changed his name by Royal assent to Hesketh-Fleetwood, incorporating the name of his ancestors, and was later created Baronet Fleetwood.",
+            " Predeceased by an older brother, he inherited estates in west Lancashire in 1824.",
+            " Inspired by the transport developments of the early 19th century, he decided to bring the railway to the Lancashire coast and develop a holiday resort and port.",
+            " He hired architect Decimus Burton to design his new town, which he named Fleetwood; construction began in 1836.",
+            " Hesketh-Fleetwood was instrumental in the formation of the Preston and Wyre Railway Company and with his financial support, a railway line was built between Preston and Fleetwood which opened in 1840."
+          ]
+        ]
+      },
+      "metadata": {
+        "type": "bridge",
+        "level": "medium",
+        "supporting_facts": {
+          "title": [
+            "Peter Hobbs (engineer)",
+            "Russell Hobbs"
+          ],
+          "sent_id": [
+            0,
+            0
+          ]
+        }
+      }
+    }
+  ],
+  "validation": [
+    {
+      "id": "5ac250eb5542992f1f2b384f",
+      "split": "train",
+      "index": 31572,
+      "question": "What direction does the river that Austrolebias bellotti are found in flow?",
+      "answer": "north to south",
+      "input": "Context:\nTitle: Cruces River\nThe Cruces River (Spanish: \"Río Cruces\" ) is a river near Valdivia, Chile. Río Cruces originates from hills near the Villarica volcano and flows then in south-west direction. The southern and final part of the river follows the Valdivian Coastal Range. At the latitude of Valdivia it is crossed by Río Cruces Bridge near its outflow into Valdivia River. The small village of Punucapa is the main centre for tourism in Río Cruces. The river flow through (or near) the cities of Loncoche, Lanco, and Mariquina. Some of the wetlands in the river's lower flow are inside Carlos Anwandter Nature Sanctuary, a protected area that in the river that extends roughly from Punucapa in the south to San Luis de Alba Fort in the north.\n\nTitle: Mouth bar\nA mouth bar is a bar in a river that is typically created in the middle of a channel in a river delta. It is created by a positive feedback between mid-channel deposition and flow divergence. As the flow diverges near the ocean, sediment settles out in the channel and creates an incipient mouth bar. As flow is routed around the incipient bar, additional sediment is deposited on the incipient bar. This continued process results in the formation of a full-fledged mouth bar, which causes the channel to bifurcate. This continued process leads to the characteristic fractal tree pattern found in some prograding river-dominated deltas.\n\nTitle: Antidune\nAn antidune is a bedform found in fluvial and other channeled environments. Antidunes occur in supercritical flow, meaning that the Froude number is greater than 1.0 or the flow velocity exceeds the wave velocity; this is also known as upper flow regime. In antidunes, sediment is deposited on the upstream (stoss) side and eroded from the downstream (lee) side, opposite lower flow regime bedforms. As a result, antidunes migrate in an upstream direction, counter to the current flow. Antidunes are called in-phase bedforms, meaning that the water surface elevation mimics the bed elevation; this is due to the supercritical flow regime. Antidune bedforms evolve rapidly, growing in amplitude as they migrate upstream. The resultant wave at the water's surface also increases in amplitude. When that wave becomes unstable, breaks and washes downstream, much of the antidune bedform may be destroyed.\n\nTitle: Austrolebias bellottii\nAustrolebias bellottii is a species of fish that lives in the basins of the Paraná River and Uruguay River, in Argentina and Uruguay.\n\nTitle: Uruguay River\nThe Uruguay River (Spanish: Río Uruguay , ] ; Portuguese: Rio Uruguai , ] ) is a river in South America. It flows from north to south and forms parts of the boundaries of Brazil, Argentina, and Uruguay, separating some of the Argentine provinces of La Mesopotamia from the other two countries. It passes between the states of Santa Catarina and Rio Grande do Sul in Brazil; forms the eastern border of the provinces of Misiones, Corrientes, and Entre Ríos in Argentina; and makes up the western borders of the departments of Artigas, Salto, Paysandú, Río Negro, Soriano, and Colonia in Uruguay.\n\nTitle: Meander cutoff\nA meander cutoff occurs when a meander bend in a river is breached by a channel that connects the two closest parts of the bend. This causes the flow to abandon the meander and to continue downstream. Cutoffs are a natural part of the evolution of a meandering river. Rivers form meandering bends or meanders as they flow laterally downstream. Meandering rivers flow the fastest on the outside bend of a river where the river erodes the surrounding landscape. On the inside bend of a river, water flows slower and sediment builds up creating point bars. Rivers are commonly described and interpreted by their sinuosity. Sinuosity is the ability of a river to curve or meander throughout its entire length. It is calculated from the ratio of the distance between points along a river by the straight distance between those points. Meandering rivers have a sinuosity value of greater than 1.5. A sinuosity value of less than 1.1 is a “straight” river. Between the values of 1.1 and 1.5, a river is described as sinuous which describes rivers that are in a transitory state between a “straight” river and a meandering river. Braided rivers do not follow this same convention. Meandering rivers trend in the direction of increasing sinuosity.\n\nTitle: Foreset bed\nA foreset bed is one of the main parts of a river delta. It is the inclined part of a delta that is found at the end of the stream channel as the delta sediment is deposited along the arcuate delta front. As the sediments are deposited on a sloping surface the resulting bedding is not horizontal, but dips in the direction of current flow toward deeper water. A cross-section of a delta shows the cross bedding in the direction of stream flow into the still water.\n\nTitle: Livenza\nThe Livenza (Latin: \"Liquentia\" , Friulian: \"Livence\" , Venetian: \"Łivensa\" ) is a river in the Italian provinces of Pordenone, Treviso and Venice. Its source is near Polcenigo and Caneva in Pordenone. It flows in a southeasterly direction past Sacile and forms the border between the provinces of Pordenone and Treviso roughly between Brugnera and Motta di Livenza. It continues to flow in a southeasterly direction, forming the border between the provinces of Treviso and Venice before flowing into the province of Venice near Santo Stino di Livenza. It flow near La Salute di Livenza and finally enters the Adriatic Sea near Caorle.\n\nTitle: Big Lost River\nThe Big Lost River is a major river in the U.S. state of Idaho, about 135 mi long. It starts in the Rocky Mountains and flows in a generally southeast direction into the Snake River Plain. True to its name, the Big Lost River's surface flow does not reach any larger river, but vanishes into the Snake River Aquifer at the Big Lost River Sinks, giving the river its name. The river is one of the Lost streams of Idaho, several streams that flow into the plain and disappear into the ground.\n\nTitle: Laurentian Divide\nThe Laurentian Divide or Northern Divide is a continental divide in North America dividing the direction of water flow in eastern and southern Canada from that of the northern Midwestern United States. The Laurentian Divide separates the river systems that flow northwards to the Arctic Ocean and Hudson Bay from those that flow southwards to the Atlantic Ocean, Caribbean Sea and Gulf of Mexico. The Laurentian Divide runs from its junction with the primary Continental Divide at Triple Divide Peak in Glacier National Park in Montana, and terminates at Cape Chidley on the Labrador Sea.\n\nQuestion: What direction does the river that Austrolebias bellotti are found in flow?",
+      "context": {
+        "title": [
+          "Cruces River",
+          "Mouth bar",
+          "Antidune",
+          "Austrolebias bellottii",
+          "Uruguay River",
+          "Meander cutoff",
+          "Foreset bed",
+          "Livenza",
+          "Big Lost River",
+          "Laurentian Divide"
+        ],
+        "sentences": [
+          [
+            "The Cruces River (Spanish: \"Río Cruces\" ) is a river near Valdivia, Chile.",
+            " Río Cruces originates from hills near the Villarica volcano and flows then in south-west direction.",
+            " The southern and final part of the river follows the Valdivian Coastal Range.",
+            " At the latitude of Valdivia it is crossed by Río Cruces Bridge near its outflow into Valdivia River.",
+            " The small village of Punucapa is the main centre for tourism in Río Cruces.",
+            " The river flow through (or near) the cities of Loncoche, Lanco, and Mariquina.",
+            " Some of the wetlands in the river's lower flow are inside Carlos Anwandter Nature Sanctuary, a protected area that in the river that extends roughly from Punucapa in the south to San Luis de Alba Fort in the north."
+          ],
+          [
+            "A mouth bar is a bar in a river that is typically created in the middle of a channel in a river delta.",
+            " It is created by a positive feedback between mid-channel deposition and flow divergence.",
+            " As the flow diverges near the ocean, sediment settles out in the channel and creates an incipient mouth bar.",
+            " As flow is routed around the incipient bar, additional sediment is deposited on the incipient bar.",
+            " This continued process results in the formation of a full-fledged mouth bar, which causes the channel to bifurcate.",
+            " This continued process leads to the characteristic fractal tree pattern found in some prograding river-dominated deltas."
+          ],
+          [
+            "An antidune is a bedform found in fluvial and other channeled environments.",
+            " Antidunes occur in supercritical flow, meaning that the Froude number is greater than 1.0 or the flow velocity exceeds the wave velocity; this is also known as upper flow regime.",
+            " In antidunes, sediment is deposited on the upstream (stoss) side and eroded from the downstream (lee) side, opposite lower flow regime bedforms.",
+            " As a result, antidunes migrate in an upstream direction, counter to the current flow.",
+            " Antidunes are called in-phase bedforms, meaning that the water surface elevation mimics the bed elevation; this is due to the supercritical flow regime.",
+            " Antidune bedforms evolve rapidly, growing in amplitude as they migrate upstream.",
+            " The resultant wave at the water's surface also increases in amplitude.",
+            " When that wave becomes unstable, breaks and washes downstream, much of the antidune bedform may be destroyed."
+          ],
+          [
+            "Austrolebias bellottii is a species of fish that lives in the basins of the Paraná River and Uruguay River, in Argentina and Uruguay."
+          ],
+          [
+            "The Uruguay River (Spanish: Río Uruguay , ] ; Portuguese: Rio Uruguai , ] ) is a river in South America.",
+            " It flows from north to south and forms parts of the boundaries of Brazil, Argentina, and Uruguay, separating some of the Argentine provinces of La Mesopotamia from the other two countries.",
+            " It passes between the states of Santa Catarina and Rio Grande do Sul in Brazil; forms the eastern border of the provinces of Misiones, Corrientes, and Entre Ríos in Argentina; and makes up the western borders of the departments of Artigas, Salto, Paysandú, Río Negro, Soriano, and Colonia in Uruguay."
+          ],
+          [
+            "A meander cutoff occurs when a meander bend in a river is breached by a channel that connects the two closest parts of the bend.",
+            " This causes the flow to abandon the meander and to continue downstream.",
+            " Cutoffs are a natural part of the evolution of a meandering river.",
+            " Rivers form meandering bends or meanders as they flow laterally downstream.",
+            " Meandering rivers flow the fastest on the outside bend of a river where the river erodes the surrounding landscape.",
+            " On the inside bend of a river, water flows slower and sediment builds up creating point bars. Rivers are commonly described and interpreted by their sinuosity.",
+            " Sinuosity is the ability of a river to curve or meander throughout its entire length.",
+            " It is calculated from the ratio of the distance between points along a river by the straight distance between those points.",
+            " Meandering rivers have a sinuosity value of greater than 1.5.",
+            " A sinuosity value of less than 1.1 is a “straight” river.",
+            " Between the values of 1.1 and 1.5, a river is described as sinuous which describes rivers that are in a transitory state between a “straight” river and a meandering river.",
+            " Braided rivers do not follow this same convention.",
+            " Meandering rivers trend in the direction of increasing sinuosity."
+          ],
+          [
+            "A foreset bed is one of the main parts of a river delta.",
+            " It is the inclined part of a delta that is found at the end of the stream channel as the delta sediment is deposited along the arcuate delta front.",
+            " As the sediments are deposited on a sloping surface the resulting bedding is not horizontal, but dips in the direction of current flow toward deeper water.",
+            " A cross-section of a delta shows the cross bedding in the direction of stream flow into the still water."
+          ],
+          [
+            "The Livenza (Latin: \"Liquentia\" , Friulian: \"Livence\" , Venetian: \"Łivensa\" ) is a river in the Italian provinces of Pordenone, Treviso and Venice.",
+            " Its source is near Polcenigo and Caneva in Pordenone.",
+            " It flows in a southeasterly direction past Sacile and forms the border between the provinces of Pordenone and Treviso roughly between Brugnera and Motta di Livenza.",
+            " It continues to flow in a southeasterly direction, forming the border between the provinces of Treviso and Venice before flowing into the province of Venice near Santo Stino di Livenza.",
+            " It flow near La Salute di Livenza and finally enters the Adriatic Sea near Caorle."
+          ],
+          [
+            "The Big Lost River is a major river in the U.S. state of Idaho, about 135 mi long.",
+            " It starts in the Rocky Mountains and flows in a generally southeast direction into the Snake River Plain.",
+            " True to its name, the Big Lost River's surface flow does not reach any larger river, but vanishes into the Snake River Aquifer at the Big Lost River Sinks, giving the river its name.",
+            " The river is one of the Lost streams of Idaho, several streams that flow into the plain and disappear into the ground."
+          ],
+          [
+            "The Laurentian Divide or Northern Divide is a continental divide in North America dividing the direction of water flow in eastern and southern Canada from that of the northern Midwestern United States.",
+            " The Laurentian Divide separates the river systems that flow northwards to the Arctic Ocean and Hudson Bay from those that flow southwards to the Atlantic Ocean, Caribbean Sea and Gulf of Mexico.",
+            " The Laurentian Divide runs from its junction with the primary Continental Divide at Triple Divide Peak in Glacier National Park in Montana, and terminates at Cape Chidley on the Labrador Sea."
+          ]
+        ]
+      },
+      "metadata": {
+        "type": "bridge",
+        "level": "medium",
+        "supporting_facts": {
+          "title": [
+            "Austrolebias bellottii",
+            "Uruguay River"
+          ],
+          "sent_id": [
+            0,
+            1
+          ]
+        }
+      }
+    }
+  ],
+  "test": [
+    {
+      "id": "5a72a9145542994cef4bc3c1",
+      "split": "validation",
+      "index": 2422,
+      "question": "Which player signed to Bayern Munich before the 2012-2013 season was known mostly as a central defender?",
+      "answer": "Dante",
+      "input": "Context:\nTitle: Dante (footballer)\nDante Bonfim Costa Santos (born 18 October 1983), commonly known as Dante (] ), is a Brazilian professional footballer who plays for French Ligue 1 club Nice. Primarily a central defender, he has previously also been used as a defensive midfielder or a left back.\n\nTitle: Herbert Erhardt\nHerbert 'Ertl' Erhard (6 July 1930 – 3 July 2010), also known as Herbert Erhardt, was a German footballer. As a central defender, he played for SpVgg Fürth and Bayern Munich. He was known for his hard tackling, doggedness and captain like performances. The DFB German Football Association (German FA) list him in the top 20 best German defenders of all time, and Bayern Munich included him in their best 16 in a team made up in the 1980s of famous past players.\n\nTitle: FC Bayern Munich II\nBayern Munich II (Bayern Munich Amateure until 2005) are the reserve team of German association football club Bayern Munich. In 2010–11 they played in the 3. Liga, having qualified for its inaugural season in 2008, and have consistently played at the third level of German football (the highest permissible level for reserve teams) — they played in the Regionalliga Süd from its formation in 1994 to 2008, when it was usurped by the 3. Liga. They have generally achieved at least mid-table finishes at this level, and won the Regionalliga Süd title in 2004. In 2010–11 Bayern II finished last in the 3. Liga and was thus relegated to the Regionalliga.\n\nTitle: 2016–17 FC Bayern Munich season\nThe 2016–17 FC Bayern Munich season was the 118th season in the football club's history and 52nd consecutive and overall season in the top flight of German football, the Bundesliga, having won promotion from the Regionalliga in 1965 after winning the Regionalliga Süd. Bayern Munich also participated in this season's edition of the domestic cup, the DFB-Pokal, and the premier continental cup competition, the UEFA Champions League. Bayern were the reigning Bundesliga and DFB-Pokal champions, and therefore also participated in the German super cup, the DFL-Supercup. It was the 12th season for Bayern in the Allianz Arena, located in Munich, Germany. The season covers a period from 11 July 2016 to 30 June 2017.\n\nTitle: 2012–13 FC Bayern Munich season\nThe 2012–13 FC Bayern Munich season was the 114th season in the club's history and the 48th consecutive season in the top flight of German football, the Bundesliga, since the promotion of the team from the Regionalliga Süd in 1965. Before the start of the season, Bayern signed Xherdan Shaqiri, Dante, Claudio Pizarro, Mitchell Weiser, Tom Starke and Mario Mandžukić. Bayern also added holding midfielder Javi Martínez after the first week of the Bundesliga season at the transfer deadline. The club started the season with a nine-match winning streak. The club would end the season claiming the Treble, winning the Bundesliga, the UEFA Champions League and the DFB-Pokal. Bayern are the first German club to achieve the Treble and are the third European Club to complete the Treble in the last five seasons and seventh ever in European Club competition.\n\nTitle: 2012–13 DFB-Pokal\nThe 2012–13 DFB-Pokal was the 70th season of the annual German football cup competition. It began on 17 August 2012 with the first of six rounds and ended on 1 June 2013 with the final at the Olympic Stadium in Berlin. The defending champions were Borussia Dortmund, but they were beaten by Bayern Munich in the quarter-finals. Bayern Munich went on to win the competition, defeating VfB Stuttgart 3–2 in the final. As runners-up, VfB Stuttgart have qualified for the third qualifying round of the 2013–14 UEFA Europa League, since Bayern Munich won the Bundesliga and will be competing in the 2013–14 UEFA Champions League.\n\nTitle: 1984–85 FC Bayern Munich season\nThe 1984–85 FC Bayern Munich season was the 85th season in the club's history. Bayern Munich won its 7th Bundesliga title, reached the semi-final of UEFA Cup Winners' Cup, and finished as runner-up of DFB-Pokal. This season was the second season of Udo Lattek's second stint as manager of the club. The Bundesliga campaign started 25 August 1984 with a 3-1 victory over Arminia Bielefeld. Bayern Munich, 1. FC Köln, and Borussia Monchengladbach were tied for first place after Round 1. From Round 2 through Round 34 of the season, Bayern Munich were the lone team in first place. Qualification for the 1984–85 European Cup Winners' Cup was a result of winning the 1983–84 DFB-Pokal.\n\nTitle: Uli Hoeneß Cup\nThe Uli Hoeneß Cup was a pre-season association football match that took place on 24 July 2013 at the Allianz Arena in Munich, Germany. The competition featured hosts and 2012–13 UEFA Champions League winner Bayern Munich and the 2012–13 Spanish champions Barcelona. The game was the first that Bayern Munich's new manager Pep Guardiola contested against his former club Barcelona and was a late 60th birthday present for Bayern Munich club president Uli Hoeneß. The entire proceeds were donated towards social purposes. The original planned kick-off time (20:30) was changed because of the 2013 UEFA Women's Championship semi-final match between Sweden and Germany.\n\nTitle: 1987–88 FC Bayern Munich season\nThe 1987–88 FC Bayern Munich season was the 88th season in the club's history and 23rd season since promotion from Regionalliga Süd in 1965. Bayern Munich finished as runner-up in the Bundesliga to SV Werder Bremen. The club reached the quarterfinals of both the DFB-Pokal and the European Cup. The inaugural DFB-Supercup was won by Bayern Munich over Hamburger SV. This season was the first season under manager Jupp Heynckes, who replaced Udo Lattek.\n\nTitle: 2017–18 FC Bayern Munich season\nThe 2017–18 FC Bayern Munich season is the 118th season in the football club's history and 53rd consecutive and overall season in the top flight of German football, the Bundesliga, having been promoted from the Regionalliga in 1965. Bayern Munich also are participating in this season's edition of the domestic cup, the DFB-Pokal, and the premier continental cup competition, the UEFA Champions League. Bayern are the reigning Bundesliga champions, and therefore also are participating in the German super cup, the DFL-Supercup. This is the 13th season for Bayern in the Allianz Arena, located in Munich, Bavaria, Germany. The season covers a period from 1 July 2017 to 30 June 2018.\n\nQuestion: Which player signed to Bayern Munich before the 2012-2013 season was known mostly as a central defender?",
+      "context": {
+        "title": [
+          "Dante (footballer)",
+          "Herbert Erhardt",
+          "FC Bayern Munich II",
+          "2016–17 FC Bayern Munich season",
+          "2012–13 FC Bayern Munich season",
+          "2012–13 DFB-Pokal",
+          "1984–85 FC Bayern Munich season",
+          "Uli Hoeneß Cup",
+          "1987–88 FC Bayern Munich season",
+          "2017–18 FC Bayern Munich season"
+        ],
+        "sentences": [
+          [
+            "Dante Bonfim Costa Santos (born 18 October 1983), commonly known as Dante (] ), is a Brazilian professional footballer who plays for French Ligue 1 club Nice.",
+            " Primarily a central defender, he has previously also been used as a defensive midfielder or a left back."
+          ],
+          [
+            "Herbert 'Ertl' Erhard (6 July 1930 – 3 July 2010), also known as Herbert Erhardt, was a German footballer.",
+            " As a central defender, he played for SpVgg Fürth and Bayern Munich.",
+            " He was known for his hard tackling, doggedness and captain like performances.",
+            " The DFB German Football Association (German FA) list him in the top 20 best German defenders of all time, and Bayern Munich included him in their best 16 in a team made up in the 1980s of famous past players."
+          ],
+          [
+            "Bayern Munich II (Bayern Munich Amateure until 2005) are the reserve team of German association football club Bayern Munich.",
+            " In 2010–11 they played in the 3.",
+            " Liga, having qualified for its inaugural season in 2008, and have consistently played at the third level of German football (the highest permissible level for reserve teams) — they played in the Regionalliga Süd from its formation in 1994 to 2008, when it was usurped by the 3.",
+            " Liga.",
+            " They have generally achieved at least mid-table finishes at this level, and won the Regionalliga Süd title in 2004.",
+            " In 2010–11 Bayern II finished last in the 3.",
+            " Liga and was thus relegated to the Regionalliga."
+          ],
+          [
+            "The 2016–17 FC Bayern Munich season was the 118th season in the football club's history and 52nd consecutive and overall season in the top flight of German football, the Bundesliga, having won promotion from the Regionalliga in 1965 after winning the Regionalliga Süd.",
+            " Bayern Munich also participated in this season's edition of the domestic cup, the DFB-Pokal, and the premier continental cup competition, the UEFA Champions League.",
+            " Bayern were the reigning Bundesliga and DFB-Pokal champions, and therefore also participated in the German super cup, the DFL-Supercup.",
+            " It was the 12th season for Bayern in the Allianz Arena, located in Munich, Germany.",
+            " The season covers a period from 11 July 2016 to 30 June 2017."
+          ],
+          [
+            "The 2012–13 FC Bayern Munich season was the 114th season in the club's history and the 48th consecutive season in the top flight of German football, the Bundesliga, since the promotion of the team from the Regionalliga Süd in 1965.",
+            " Before the start of the season, Bayern signed Xherdan Shaqiri, Dante, Claudio Pizarro, Mitchell Weiser, Tom Starke and Mario Mandžukić.",
+            " Bayern also added holding midfielder Javi Martínez after the first week of the Bundesliga season at the transfer deadline.",
+            " The club started the season with a nine-match winning streak.",
+            " The club would end the season claiming the Treble, winning the Bundesliga, the UEFA Champions League and the DFB-Pokal.",
+            " Bayern are the first German club to achieve the Treble and are the third European Club to complete the Treble in the last five seasons and seventh ever in European Club competition."
+          ],
+          [
+            "The 2012–13 DFB-Pokal was the 70th season of the annual German football cup competition.",
+            " It began on 17 August 2012 with the first of six rounds and ended on 1 June 2013 with the final at the Olympic Stadium in Berlin.",
+            " The defending champions were Borussia Dortmund, but they were beaten by Bayern Munich in the quarter-finals.",
+            " Bayern Munich went on to win the competition, defeating VfB Stuttgart 3–2 in the final.",
+            " As runners-up, VfB Stuttgart have qualified for the third qualifying round of the 2013–14 UEFA Europa League, since Bayern Munich won the Bundesliga and will be competing in the 2013–14 UEFA Champions League."
+          ],
+          [
+            "The 1984–85 FC Bayern Munich season was the 85th season in the club's history.",
+            " Bayern Munich won its 7th Bundesliga title, reached the semi-final of UEFA Cup Winners' Cup, and finished as runner-up of DFB-Pokal.",
+            " This season was the second season of Udo Lattek's second stint as manager of the club.",
+            " The Bundesliga campaign started 25 August 1984 with a 3-1 victory over Arminia Bielefeld.",
+            " Bayern Munich, 1.",
+            " FC Köln, and Borussia Monchengladbach were tied for first place after Round 1.",
+            " From Round 2 through Round 34 of the season, Bayern Munich were the lone team in first place.",
+            " Qualification for the 1984–85 European Cup Winners' Cup was a result of winning the 1983–84 DFB-Pokal."
+          ],
+          [
+            "The Uli Hoeneß Cup was a pre-season association football match that took place on 24 July 2013 at the Allianz Arena in Munich, Germany.",
+            " The competition featured hosts and 2012–13 UEFA Champions League winner Bayern Munich and the 2012–13 Spanish champions Barcelona.",
+            " The game was the first that Bayern Munich's new manager Pep Guardiola contested against his former club Barcelona and was a late 60th birthday present for Bayern Munich club president Uli Hoeneß.",
+            " The entire proceeds were donated towards social purposes.",
+            " The original planned kick-off time (20:30) was changed because of the 2013 UEFA Women's Championship semi-final match between Sweden and Germany."
+          ],
+          [
+            "The 1987–88 FC Bayern Munich season was the 88th season in the club's history and 23rd season since promotion from Regionalliga Süd in 1965.",
+            " Bayern Munich finished as runner-up in the Bundesliga to SV Werder Bremen.",
+            " The club reached the quarterfinals of both the DFB-Pokal and the European Cup.",
+            " The inaugural DFB-Supercup was won by Bayern Munich over Hamburger SV.",
+            " This season was the first season under manager Jupp Heynckes, who replaced Udo Lattek."
+          ],
+          [
+            "The 2017–18 FC Bayern Munich season is the 118th season in the football club's history and 53rd consecutive and overall season in the top flight of German football, the Bundesliga, having been promoted from the Regionalliga in 1965.",
+            " Bayern Munich also are participating in this season's edition of the domestic cup, the DFB-Pokal, and the premier continental cup competition, the UEFA Champions League.",
+            " Bayern are the reigning Bundesliga champions, and therefore also are participating in the German super cup, the DFL-Supercup.",
+            " This is the 13th season for Bayern in the Allianz Arena, located in Munich, Bavaria, Germany.",
+            " The season covers a period from 1 July 2017 to 30 June 2018."
+          ]
+        ]
+      },
+      "metadata": {
+        "type": "bridge",
+        "level": "hard",
+        "supporting_facts": {
+          "title": [
+            "2012–13 FC Bayern Munich season",
+            "Dante (footballer)"
+          ],
+          "sent_id": [
+            1,
+            1
+          ]
+        }
+      }
+    }
+  ]
+}
