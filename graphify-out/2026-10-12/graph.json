@@ -99,6 +99,22 @@
       "source_location": "L1"
     },
     {
+      "id": "agents_skills_code_review_skill",
+      "label": "code-review/SKILL.md",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "run_grpo_baseline.py",
+      "file_type": "document",
+      "frontmatter": {
+        "name": "code-review",
+        "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code follow this repo&#x27;s documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \\&quot;review since X\\&quot;."
+      },
+      "node_kind": "page",
+      "norm_label": "code-review/skill.md",
+      "source_file": ".agents/skills/code-review/SKILL.md",
+      "source_location": "L1"
+    },
+    {
       "id": "agents_skills_code_review_skill_1_pin_the_fixed_point",
       "label": "1. Pin the fixed point",
       "_origin": "ast",
@@ -109,6 +125,78 @@
       "norm_label": "1. pin the fixed point",
       "source_file": ".agents/skills/code-review/SKILL.md",
       "source_location": "L17"
+    },
+    {
+      "id": "agents_skills_code_review_skill_2_identify_the_spec_source",
+      "label": "2. Identify the spec source",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "run_grpo_baseline.py",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2. identify the spec source",
+      "source_file": ".agents/skills/code-review/SKILL.md",
+      "source_location": "L25"
+    },
+    {
+      "id": "agents_skills_code_review_skill_3_identify_the_standards_sources",
+      "label": "3. Identify the standards sources",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "run_grpo_baseline.py",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3. identify the standards sources",
+      "source_file": ".agents/skills/code-review/SKILL.md",
+      "source_location": "L34"
+    },
+    {
+      "id": "agents_skills_code_review_skill_4_spawn_both_sub_agents_in_parallel",
+      "label": "4. Spawn both sub-agents in parallel",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "run_grpo_baseline.py",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4. spawn both sub-agents in parallel",
+      "source_file": ".agents/skills/code-review/SKILL.md",
+      "source_location": "L58"
+    },
+    {
+      "id": "agents_skills_code_review_skill_5_aggregate",
+      "label": "5. Aggregate",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "run_grpo_baseline.py",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5. aggregate",
+      "source_file": ".agents/skills/code-review/SKILL.md",
+      "source_location": "L76"
+    },
+    {
+      "id": "agents_skills_code_review_skill_process",
+      "label": "Process",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "run_grpo_baseline.py",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "process",
+      "source_file": ".agents/skills/code-review/SKILL.md",
+      "source_location": "L15"
+    },
+    {
+      "id": "agents_skills_code_review_skill_why_two_axes",
+      "label": "Why two axes",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "run_grpo_baseline.py",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "why two axes",
+      "source_file": ".agents/skills/code-review/SKILL.md",
+      "source_location": "L82"
     },
     {
       "id": "docs_master_spec_6_preserve_the_original_dspy_action_space",
@@ -2254,6 +2342,78 @@
       "norm_label": "d022 \u2014 reduced live check is evidence of integration, not learning",
       "source_file": "docs/DECISIONS.md",
       "source_location": "L192"
+    },
+    {
+      "id": "docs_decisions_d023_phase_3_hotpotqa_task_and_labeled_evaluation",
+      "label": "D023 \u2014 Phase 3 HotpotQA task and labeled evaluation",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "Decisions, assumptions, and open research questions",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "d023 \u2014 phase 3 hotpotqa task and labeled evaluation",
+      "source_file": "docs/DECISIONS.md",
+      "source_location": "L198"
+    },
+    {
+      "id": "docs_decisions_d024_hotpotqa_answer_metrics_and_context_limits",
+      "label": "D024 \u2014 HotpotQA answer metrics and context limits",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "Decisions, assumptions, and open research questions",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "d024 \u2014 hotpotqa answer metrics and context limits",
+      "source_file": "docs/DECISIONS.md",
+      "source_location": "L214"
+    },
+    {
+      "id": "docs_decisions_d025_separate_long_context_correctness_from_reduced_live_integration",
+      "label": "D025 \u2014 Separate long-context correctness from reduced live integration",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "Decisions, assumptions, and open research questions",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "d025 \u2014 separate long-context correctness from reduced live integration",
+      "source_file": "docs/DECISIONS.md",
+      "source_location": "L231"
+    },
+    {
+      "id": "docs_decisions_d026_phase_4_authorization_and_completion_boundary",
+      "label": "D026 ? Phase 4 authorization and completion boundary",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "Decisions, assumptions, and open research questions",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "d026 ? phase 4 authorization and completion boundary",
+      "source_file": "docs/DECISIONS.md",
+      "source_location": "L252"
+    },
+    {
+      "id": "docs_decisions_d027_verify_recorded_artifacts_before_comparison",
+      "label": "D027 ? Verify recorded artifacts before comparison",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "Decisions, assumptions, and open research questions",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "d027 ? verify recorded artifacts before comparison",
+      "source_file": "docs/DECISIONS.md",
+      "source_location": "L259"
+    },
+    {
+      "id": "docs_decisions_d028_aggregate_only_measured_resources_within_explicit_scopes",
+      "label": "D028 ? Aggregate only measured resources within explicit scopes",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "Decisions, assumptions, and open research questions",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "d028 ? aggregate only measured resources within explicit scopes",
+      "source_file": "docs/DECISIONS.md",
+      "source_location": "L272"
     },
     {
       "id": "docs_decisions_decisions_assumptions_and_open_research_questions",
@@ -4903,7 +5063,7 @@
       "label": "audit_artifacts/README.md",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Phased implementation plan",
+      "community_name": "Static-K experiment guide",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "audit_artifacts/readme.md",
@@ -4915,7 +5075,7 @@
       "label": "Phase 1 audit artifacts",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Phased implementation plan",
+      "community_name": "Static-K experiment guide",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "phase 1 audit artifacts",
@@ -4927,7 +5087,7 @@
       "label": "Phase 2 verification additions",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Phased implementation plan",
+      "community_name": "Static-K experiment guide",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "phase 2 verification additions",
@@ -4935,11 +5095,23 @@
       "source_location": "L12"
     },
     {
+      "id": "docs_audit_artifacts_readme_phase_3_verification_additions",
+      "label": "Phase 3 verification additions",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Static-K experiment guide",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "phase 3 verification additions",
+      "source_file": "docs/audit_artifacts/README.md",
+      "source_location": "L18"
+    },
+    {
       "id": "docs_decisions",
       "label": "DECISIONS.md",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Phased implementation plan",
+      "community_name": "Static-K experiment guide",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "decisions.md",
@@ -4951,7 +5123,7 @@
       "label": "IMPLEMENTATION_PLAN.md",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Phased implementation plan",
+      "community_name": "Static-K experiment guide",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "implementation_plan.md",
@@ -4963,7 +5135,7 @@
       "label": "Execution rules and session handoff",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Phased implementation plan",
+      "community_name": "Static-K experiment guide",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "execution rules and session handoff",
@@ -4975,7 +5147,7 @@
       "label": "Phase 1 \u2014 Audit original notebook and research paper",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Phased implementation plan",
+      "community_name": "Static-K experiment guide",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "phase 1 \u2014 audit original notebook and research paper",
@@ -4987,7 +5159,7 @@
       "label": "Phase 2 \u2014 Implement and validate the complete GSM8K notebook",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Phased implementation plan",
+      "community_name": "Static-K experiment guide",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "phase 2 \u2014 implement and validate the complete gsm8k notebook",
@@ -4999,7 +5171,7 @@
       "label": "Phase 3 \u2014 Implement and validate the independent HotpotQA notebook",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Phased implementation plan",
+      "community_name": "Static-K experiment guide",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "phase 3 \u2014 implement and validate the independent hotpotqa notebook",
@@ -5011,19 +5183,19 @@
       "label": "Phase 4 \u2014 Finalize management, statistics, plots, and reproducibility",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Phased implementation plan",
+      "community_name": "Static-K experiment guide",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "phase 4 \u2014 finalize management, statistics, plots, and reproducibility",
       "source_file": "docs/IMPLEMENTATION_PLAN.md",
-      "source_location": "L106"
+      "source_location": "L108"
     },
     {
       "id": "docs_implementation_plan_phased_implementation_plan",
       "label": "Phased implementation plan",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Phased implementation plan",
+      "community_name": "Static-K experiment guide",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "phased implementation plan",
@@ -5035,7 +5207,7 @@
       "label": "Preparation \u2014 documentation and approval gate",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Phased implementation plan",
+      "community_name": "Static-K experiment guide",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "preparation \u2014 documentation and approval gate",
@@ -5047,19 +5219,19 @@
       "label": "Requirement coverage and verification approach",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Phased implementation plan",
+      "community_name": "Static-K experiment guide",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "requirement coverage and verification approach",
       "source_file": "docs/IMPLEMENTATION_PLAN.md",
-      "source_location": "L124"
+      "source_location": "L128"
     },
     {
       "id": "docs_master_spec",
       "label": "MASTER_SPEC.md",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Phased implementation plan",
+      "community_name": "Static-K experiment guide",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "master_spec.md",
@@ -5071,7 +5243,7 @@
       "label": "PHASE_1_AUDIT.md",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Phased implementation plan",
+      "community_name": "Static-K experiment guide",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "phase_1_audit.md",
@@ -5083,7 +5255,7 @@
       "label": "PHASE_2_REPORT.md",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Phased implementation plan",
+      "community_name": "Static-K experiment guide",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "phase_2_report.md",
@@ -5095,7 +5267,7 @@
       "label": "Corrections and remaining limitations",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Phased implementation plan",
+      "community_name": "Static-K experiment guide",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "corrections and remaining limitations",
@@ -5107,7 +5279,7 @@
       "label": "Deliverables",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Phased implementation plan",
+      "community_name": "Static-K experiment guide",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "deliverables",
@@ -5119,7 +5291,7 @@
       "label": "Phase 2 \u2014 GSM8K implementation and verification",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Phased implementation plan",
+      "community_name": "Static-K experiment guide",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "phase 2 \u2014 gsm8k implementation and verification",
@@ -5131,7 +5303,7 @@
       "label": "Phase boundary",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Phased implementation plan",
+      "community_name": "Static-K experiment guide",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "phase boundary",
@@ -5143,7 +5315,7 @@
       "label": "Starting, saving and evaluating",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Phased implementation plan",
+      "community_name": "Static-K experiment guide",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "starting, saving and evaluating",
@@ -5155,7 +5327,7 @@
       "label": "Verification actually performed",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Phased implementation plan",
+      "community_name": "Static-K experiment guide",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "verification actually performed",
@@ -5167,7 +5339,7 @@
       "label": "Workflow and research protocol",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Phased implementation plan",
+      "community_name": "Static-K experiment guide",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "workflow and research protocol",
@@ -5175,11 +5347,155 @@
       "source_location": "L15"
     },
     {
+      "id": "docs_phase_3_report",
+      "label": "PHASE_3_REPORT.md",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Static-K experiment guide",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "phase_3_report.md",
+      "source_file": "docs/PHASE_3_REPORT.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_phase_3_report_deliverable_and_organization",
+      "label": "Deliverable and organization",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Static-K experiment guide",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "deliverable and organization",
+      "source_file": "docs/PHASE_3_REPORT.md",
+      "source_location": "L6"
+    },
+    {
+      "id": "docs_phase_3_report_phase_3_independent_hotpotqa_notebook",
+      "label": "Phase 3 \u2014 Independent HotpotQA notebook",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Static-K experiment guide",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "phase 3 \u2014 independent hotpotqa notebook",
+      "source_file": "docs/PHASE_3_REPORT.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_phase_3_report_resource_and_reproducibility_limits",
+      "label": "Resource and reproducibility limits",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Static-K experiment guide",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "resource and reproducibility limits",
+      "source_file": "docs/PHASE_3_REPORT.md",
+      "source_location": "L43"
+    },
+    {
+      "id": "docs_phase_3_report_scientific_choices",
+      "label": "Scientific choices",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Static-K experiment guide",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "scientific choices",
+      "source_file": "docs/PHASE_3_REPORT.md",
+      "source_location": "L14"
+    },
+    {
+      "id": "docs_phase_3_report_unrun_workloads_and_remaining_issues",
+      "label": "Unrun workloads and remaining issues",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Static-K experiment guide",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "unrun workloads and remaining issues",
+      "source_file": "docs/PHASE_3_REPORT.md",
+      "source_location": "L124"
+    },
+    {
+      "id": "docs_phase_3_report_verification",
+      "label": "Verification",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Static-K experiment guide",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "verification",
+      "source_file": "docs/PHASE_3_REPORT.md",
+      "source_location": "L64"
+    },
+    {
+      "id": "docs_phase_4_report",
+      "label": "PHASE_4_REPORT.md",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Static-K experiment guide",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "phase_4_report.md",
+      "source_file": "docs/PHASE_4_REPORT.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_phase_4_report_changes_and_verification",
+      "label": "Changes and verification",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Static-K experiment guide",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "changes and verification",
+      "source_file": "docs/PHASE_4_REPORT.md",
+      "source_location": "L9"
+    },
+    {
+      "id": "docs_phase_4_report_final_delivery_the_thirteen_requested_points",
+      "label": "Final delivery \u2014 the thirteen requested points",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Static-K experiment guide",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "final delivery \u2014 the thirteen requested points",
+      "source_file": "docs/PHASE_4_REPORT.md",
+      "source_location": "L41"
+    },
+    {
+      "id": "docs_phase_4_report_master_requirement_coverage_and_remaining_work",
+      "label": "Master-requirement coverage and remaining work",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Static-K experiment guide",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "master-requirement coverage and remaining work",
+      "source_file": "docs/PHASE_4_REPORT.md",
+      "source_location": "L101"
+    },
+    {
+      "id": "docs_phase_4_report_phase_4_final_experiment_management_and_reproducibility",
+      "label": "Phase 4 \u2014 Final experiment management and reproducibility",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Static-K experiment guide",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "phase 4 \u2014 final experiment management and reproducibility",
+      "source_file": "docs/PHASE_4_REPORT.md",
+      "source_location": "L1"
+    },
+    {
       "id": "docs_progress",
       "label": "PROGRESS.md",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Phased implementation plan",
+      "community_name": "Static-K experiment guide",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "progress.md",
@@ -5191,7 +5507,7 @@
       "label": "STATIC_K_EXPERIMENT_GUIDE.md",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Phased implementation plan",
+      "community_name": "Static-K experiment guide",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "static_k_experiment_guide.md",
@@ -5203,31 +5519,43 @@
       "label": "A K=5 smoke run",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Phased implementation plan",
+      "community_name": "Static-K experiment guide",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "a k=5 smoke run",
       "source_file": "STATIC_K_EXPERIMENT_GUIDE.md",
-      "source_location": "L17"
+      "source_location": "L23"
+    },
+    {
+      "id": "static_k_experiment_guide_changing_k_budgets_and_presets",
+      "label": "Changing K, budgets and presets",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Static-K experiment guide",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "changing k, budgets and presets",
+      "source_file": "STATIC_K_EXPERIMENT_GUIDE.md",
+      "source_location": "L163"
     },
     {
       "id": "static_k_experiment_guide_comparisons_plots_and_resource_accounting",
       "label": "Comparisons, plots and resource accounting",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Phased implementation plan",
+      "community_name": "Static-K experiment guide",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "comparisons, plots and resource accounting",
       "source_file": "STATIC_K_EXPERIMENT_GUIDE.md",
-      "source_location": "L76"
+      "source_location": "L92"
     },
     {
       "id": "static_k_experiment_guide_environment_and_initialization",
       "label": "Environment and initialization",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Phased implementation plan",
+      "community_name": "Static-K experiment guide",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "environment and initialization",
@@ -5235,47 +5563,71 @@
       "source_location": "L5"
     },
     {
+      "id": "static_k_experiment_guide_hotpotqa_configuration_and_use",
+      "label": "HotpotQA configuration and use",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Static-K experiment guide",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "hotpotqa configuration and use",
+      "source_file": "STATIC_K_EXPERIMENT_GUIDE.md",
+      "source_location": "L120"
+    },
+    {
+      "id": "static_k_experiment_guide_monitoring_gpu_memory_and_interpreting_evidence",
+      "label": "Monitoring GPU memory and interpreting evidence",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "Static-K experiment guide",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "monitoring gpu memory and interpreting evidence",
+      "source_file": "STATIC_K_EXPERIMENT_GUIDE.md",
+      "source_location": "L193"
+    },
+    {
       "id": "static_k_experiment_guide_other_k_values_and_presets",
       "label": "Other K values and presets",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Phased implementation plan",
+      "community_name": "Static-K experiment guide",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "other k values and presets",
       "source_file": "STATIC_K_EXPERIMENT_GUIDE.md",
-      "source_location": "L33"
+      "source_location": "L39"
     },
     {
       "id": "static_k_experiment_guide_questions_episodes_and_results",
       "label": "Questions, episodes and results",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Phased implementation plan",
+      "community_name": "Static-K experiment guide",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "questions, episodes and results",
       "source_file": "STATIC_K_EXPERIMENT_GUIDE.md",
-      "source_location": "L41"
+      "source_location": "L47"
     },
     {
       "id": "static_k_experiment_guide_saving_and_resuming",
       "label": "Saving and resuming",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Phased implementation plan",
+      "community_name": "Static-K experiment guide",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "saving and resuming",
       "source_file": "STATIC_K_EXPERIMENT_GUIDE.md",
-      "source_location": "L47"
+      "source_location": "L53"
     },
     {
       "id": "static_k_experiment_guide_static_k_experiment_guide",
       "label": "Static-K experiment guide",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Phased implementation plan",
+      "community_name": "Static-K experiment guide",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "static-k experiment guide",
@@ -5287,12 +5639,12 @@
       "label": "Validation and final testing",
       "_origin": "ast",
       "community": 3,
-      "community_name": "Phased implementation plan",
+      "community_name": "Static-K experiment guide",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "validation and final testing",
       "source_file": "STATIC_K_EXPERIMENT_GUIDE.md",
-      "source_location": "L62"
+      "source_location": "L78"
     },
     {
       "id": "agents_skills_writing_shape_skill",
@@ -7779,7 +8131,7 @@
       "node_kind": "heading",
       "norm_label": "completed phase 1 work",
       "source_file": "docs/PROGRESS.md",
-      "source_location": "L87"
+      "source_location": "L89"
     },
     {
       "id": "docs_progress_completed_phase_2_work_and_verification",
@@ -7791,7 +8143,31 @@
       "node_kind": "heading",
       "norm_label": "completed phase 2 work and verification",
       "source_file": "docs/PROGRESS.md",
-      "source_location": "L110"
+      "source_location": "L150"
+    },
+    {
+      "id": "docs_progress_completed_phase_3_2026_10_12",
+      "label": "Completed Phase 3 (2026-10-12)",
+      "_origin": "ast",
+      "community": 62,
+      "community_name": "Project progress and session handoff",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "completed phase 3 (2026-10-12)",
+      "source_file": "docs/PROGRESS.md",
+      "source_location": "L99"
+    },
+    {
+      "id": "docs_progress_completed_phase_4_2026_10_12",
+      "label": "Completed Phase 4 (2026-10-12)",
+      "_origin": "ast",
+      "community": 62,
+      "community_name": "Project progress and session handoff",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "completed phase 4 (2026-10-12)",
+      "source_file": "docs/PROGRESS.md",
+      "source_location": "L164"
     },
     {
       "id": "docs_progress_completed_preparation",
@@ -7803,7 +8179,7 @@
       "node_kind": "heading",
       "norm_label": "completed preparation",
       "source_file": "docs/PROGRESS.md",
-      "source_location": "L32"
+      "source_location": "L34"
     },
     {
       "id": "docs_progress_current_milestone",
@@ -7827,7 +8203,7 @@
       "node_kind": "heading",
       "norm_label": "pending work and unresolved questions",
       "source_file": "docs/PROGRESS.md",
-      "source_location": "L97"
+      "source_location": "L134"
     },
     {
       "id": "docs_progress_phase_status",
@@ -7839,7 +8215,7 @@
       "node_kind": "heading",
       "norm_label": "phase status",
       "source_file": "docs/PROGRESS.md",
-      "source_location": "L40"
+      "source_location": "L42"
     },
     {
       "id": "docs_progress_project_progress_and_session_handoff",
@@ -7863,7 +8239,7 @@
       "node_kind": "heading",
       "norm_label": "repository state captured before preparation",
       "source_file": "docs/PROGRESS.md",
-      "source_location": "L13"
+      "source_location": "L15"
     },
     {
       "id": "docs_progress_resume_instructions",
@@ -7875,7 +8251,7 @@
       "node_kind": "heading",
       "norm_label": "resume instructions",
       "source_file": "docs/PROGRESS.md",
-      "source_location": "L124"
+      "source_location": "L173"
     },
     {
       "id": "docs_progress_source_preservation_baseline",
@@ -7887,7 +8263,7 @@
       "node_kind": "heading",
       "norm_label": "source preservation baseline",
       "source_file": "docs/PROGRESS.md",
-      "source_location": "L23"
+      "source_location": "L25"
     },
     {
       "id": "docs_progress_verification_record",
@@ -7899,95 +8275,7 @@
       "node_kind": "heading",
       "norm_label": "verification record",
       "source_file": "docs/PROGRESS.md",
-      "source_location": "L50"
-    },
-    {
-      "id": "agents_skills_code_review_skill",
-      "label": "code-review/SKILL.md",
-      "_origin": "ast",
-      "community": 63,
-      "community_name": "Process",
-      "file_type": "document",
-      "frontmatter": {
-        "name": "code-review",
-        "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code follow this repo&#x27;s documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \\&quot;review since X\\&quot;."
-      },
-      "node_kind": "page",
-      "norm_label": "code-review/skill.md",
-      "source_file": ".agents/skills/code-review/SKILL.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "agents_skills_code_review_skill_2_identify_the_spec_source",
-      "label": "2. Identify the spec source",
-      "_origin": "ast",
-      "community": 63,
-      "community_name": "Process",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "2. identify the spec source",
-      "source_file": ".agents/skills/code-review/SKILL.md",
-      "source_location": "L25"
-    },
-    {
-      "id": "agents_skills_code_review_skill_3_identify_the_standards_sources",
-      "label": "3. Identify the standards sources",
-      "_origin": "ast",
-      "community": 63,
-      "community_name": "Process",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "3. identify the standards sources",
-      "source_file": ".agents/skills/code-review/SKILL.md",
-      "source_location": "L34"
-    },
-    {
-      "id": "agents_skills_code_review_skill_4_spawn_both_sub_agents_in_parallel",
-      "label": "4. Spawn both sub-agents in parallel",
-      "_origin": "ast",
-      "community": 63,
-      "community_name": "Process",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "4. spawn both sub-agents in parallel",
-      "source_file": ".agents/skills/code-review/SKILL.md",
-      "source_location": "L58"
-    },
-    {
-      "id": "agents_skills_code_review_skill_5_aggregate",
-      "label": "5. Aggregate",
-      "_origin": "ast",
-      "community": 63,
-      "community_name": "Process",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "5. aggregate",
-      "source_file": ".agents/skills/code-review/SKILL.md",
-      "source_location": "L76"
-    },
-    {
-      "id": "agents_skills_code_review_skill_process",
-      "label": "Process",
-      "_origin": "ast",
-      "community": 63,
-      "community_name": "Process",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "process",
-      "source_file": ".agents/skills/code-review/SKILL.md",
-      "source_location": "L15"
-    },
-    {
-      "id": "agents_skills_code_review_skill_why_two_axes",
-      "label": "Why two axes",
-      "_origin": "ast",
-      "community": 63,
-      "community_name": "Process",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "why two axes",
-      "source_file": ".agents/skills/code-review/SKILL.md",
-      "source_location": "L82"
+      "source_location": "L52"
     },
     {
       "id": "agents_skills_prototype_skill",
@@ -14477,6 +14765,17 @@
       "weight": 1.0
     },
     {
+      "source": "docs_audit_artifacts_readme",
+      "target": "docs_audit_artifacts_readme_phase_3_verification_additions",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/audit_artifacts/README.md",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
       "source": "docs_decisions",
       "target": "docs_decisions_decisions_assumptions_and_open_research_questions",
       "relation": "contains",
@@ -14654,6 +14953,28 @@
     },
     {
       "source": "docs_decisions_decisions_assumptions_and_open_research_questions",
+      "target": "docs_decisions_d023_phase_3_hotpotqa_task_and_labeled_evaluation",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/DECISIONS.md",
+      "source_location": "L198",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_decisions_decisions_assumptions_and_open_research_questions",
+      "target": "docs_decisions_d024_hotpotqa_answer_metrics_and_context_limits",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/DECISIONS.md",
+      "source_location": "L214",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_decisions_decisions_assumptions_and_open_research_questions",
       "target": "docs_decisions_d003_preserve_the_original_and_existing_working_tree_changes",
       "relation": "contains",
       "_origin": "ast",
@@ -14661,6 +14982,50 @@
       "confidence_score": 1.0,
       "source_file": "docs/DECISIONS.md",
       "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_decisions_decisions_assumptions_and_open_research_questions",
+      "target": "docs_decisions_d025_separate_long_context_correctness_from_reduced_live_integration",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/DECISIONS.md",
+      "source_location": "L231",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_decisions_decisions_assumptions_and_open_research_questions",
+      "target": "docs_decisions_d026_phase_4_authorization_and_completion_boundary",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/DECISIONS.md",
+      "source_location": "L252",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_decisions_decisions_assumptions_and_open_research_questions",
+      "target": "docs_decisions_d027_verify_recorded_artifacts_before_comparison",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/DECISIONS.md",
+      "source_location": "L259",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_decisions_decisions_assumptions_and_open_research_questions",
+      "target": "docs_decisions_d028_aggregate_only_measured_resources_within_explicit_scopes",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/DECISIONS.md",
+      "source_location": "L272",
       "weight": 1.0
     },
     {
@@ -14770,7 +15135,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/IMPLEMENTATION_PLAN.md",
-      "source_location": "L106",
+      "source_location": "L108",
       "weight": 1.0
     },
     {
@@ -14781,7 +15146,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/IMPLEMENTATION_PLAN.md",
-      "source_location": "L124",
+      "source_location": "L128",
       "weight": 1.0
     },
     {
@@ -15643,6 +16008,116 @@
       "weight": 1.0
     },
     {
+      "source": "docs_phase_3_report",
+      "target": "docs_phase_3_report_phase_3_independent_hotpotqa_notebook",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PHASE_3_REPORT.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_phase_3_report_phase_3_independent_hotpotqa_notebook",
+      "target": "docs_phase_3_report_unrun_workloads_and_remaining_issues",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PHASE_3_REPORT.md",
+      "source_location": "L124",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_phase_3_report_phase_3_independent_hotpotqa_notebook",
+      "target": "docs_phase_3_report_scientific_choices",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PHASE_3_REPORT.md",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_phase_3_report_phase_3_independent_hotpotqa_notebook",
+      "target": "docs_phase_3_report_resource_and_reproducibility_limits",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PHASE_3_REPORT.md",
+      "source_location": "L43",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_phase_3_report_phase_3_independent_hotpotqa_notebook",
+      "target": "docs_phase_3_report_deliverable_and_organization",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PHASE_3_REPORT.md",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_phase_3_report_phase_3_independent_hotpotqa_notebook",
+      "target": "docs_phase_3_report_verification",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PHASE_3_REPORT.md",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_phase_4_report",
+      "target": "docs_phase_4_report_phase_4_final_experiment_management_and_reproducibility",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PHASE_4_REPORT.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_phase_4_report_phase_4_final_experiment_management_and_reproducibility",
+      "target": "docs_phase_4_report_master_requirement_coverage_and_remaining_work",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PHASE_4_REPORT.md",
+      "source_location": "L101",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_phase_4_report_phase_4_final_experiment_management_and_reproducibility",
+      "target": "docs_phase_4_report_final_delivery_the_thirteen_requested_points",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PHASE_4_REPORT.md",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_phase_4_report_phase_4_final_experiment_management_and_reproducibility",
+      "target": "docs_phase_4_report_changes_and_verification",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PHASE_4_REPORT.md",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
       "source": "docs_progress",
       "target": "docs_progress_project_progress_and_session_handoff",
       "relation": "contains",
@@ -15655,24 +16130,13 @@
     },
     {
       "source": "docs_progress_project_progress_and_session_handoff",
-      "target": "docs_progress_completed_phase_2_work_and_verification",
+      "target": "docs_progress_pending_work_and_unresolved_questions",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/PROGRESS.md",
-      "source_location": "L110",
-      "weight": 1.0
-    },
-    {
-      "source": "docs_progress_project_progress_and_session_handoff",
-      "target": "docs_progress_resume_instructions",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "docs/PROGRESS.md",
-      "source_location": "L124",
+      "source_location": "L134",
       "weight": 1.0
     },
     {
@@ -15683,7 +16147,40 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/PROGRESS.md",
-      "source_location": "L13",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_progress_project_progress_and_session_handoff",
+      "target": "docs_progress_completed_phase_2_work_and_verification",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PROGRESS.md",
+      "source_location": "L150",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_progress_project_progress_and_session_handoff",
+      "target": "docs_progress_completed_phase_4_2026_10_12",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PROGRESS.md",
+      "source_location": "L164",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_progress_project_progress_and_session_handoff",
+      "target": "docs_progress_resume_instructions",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PROGRESS.md",
+      "source_location": "L173",
       "weight": 1.0
     },
     {
@@ -15694,7 +16191,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/PROGRESS.md",
-      "source_location": "L23",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -15705,7 +16202,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/PROGRESS.md",
-      "source_location": "L32",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -15716,7 +16213,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/PROGRESS.md",
-      "source_location": "L40",
+      "source_location": "L42",
       "weight": 1.0
     },
     {
@@ -15727,7 +16224,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/PROGRESS.md",
-      "source_location": "L50",
+      "source_location": "L52",
       "weight": 1.0
     },
     {
@@ -15749,18 +16246,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/PROGRESS.md",
-      "source_location": "L87",
+      "source_location": "L89",
       "weight": 1.0
     },
     {
       "source": "docs_progress_project_progress_and_session_handoff",
-      "target": "docs_progress_pending_work_and_unresolved_questions",
+      "target": "docs_progress_completed_phase_3_2026_10_12",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/PROGRESS.md",
-      "source_location": "L97",
+      "source_location": "L99",
       "weight": 1.0
     },
     {
@@ -16161,13 +16658,46 @@
     },
     {
       "source": "static_k_experiment_guide_static_k_experiment_guide",
+      "target": "static_k_experiment_guide_hotpotqa_configuration_and_use",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "STATIC_K_EXPERIMENT_GUIDE.md",
+      "source_location": "L120",
+      "weight": 1.0
+    },
+    {
+      "source": "static_k_experiment_guide_static_k_experiment_guide",
+      "target": "static_k_experiment_guide_changing_k_budgets_and_presets",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "STATIC_K_EXPERIMENT_GUIDE.md",
+      "source_location": "L163",
+      "weight": 1.0
+    },
+    {
+      "source": "static_k_experiment_guide_static_k_experiment_guide",
+      "target": "static_k_experiment_guide_monitoring_gpu_memory_and_interpreting_evidence",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "STATIC_K_EXPERIMENT_GUIDE.md",
+      "source_location": "L193",
+      "weight": 1.0
+    },
+    {
+      "source": "static_k_experiment_guide_static_k_experiment_guide",
       "target": "static_k_experiment_guide_a_k_5_smoke_run",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "STATIC_K_EXPERIMENT_GUIDE.md",
-      "source_location": "L17",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
@@ -16178,23 +16708,12 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "STATIC_K_EXPERIMENT_GUIDE.md",
-      "source_location": "L33",
+      "source_location": "L39",
       "weight": 1.0
     },
     {
       "source": "static_k_experiment_guide_static_k_experiment_guide",
       "target": "static_k_experiment_guide_questions_episodes_and_results",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "STATIC_K_EXPERIMENT_GUIDE.md",
-      "source_location": "L41",
-      "weight": 1.0
-    },
-    {
-      "source": "static_k_experiment_guide_static_k_experiment_guide",
-      "target": "static_k_experiment_guide_saving_and_resuming",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -16216,13 +16735,24 @@
     },
     {
       "source": "static_k_experiment_guide_static_k_experiment_guide",
+      "target": "static_k_experiment_guide_saving_and_resuming",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "STATIC_K_EXPERIMENT_GUIDE.md",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "static_k_experiment_guide_static_k_experiment_guide",
       "target": "static_k_experiment_guide_validation_and_final_testing",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "STATIC_K_EXPERIMENT_GUIDE.md",
-      "source_location": "L62",
+      "source_location": "L78",
       "weight": 1.0
     },
     {
@@ -16233,7 +16763,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "STATIC_K_EXPERIMENT_GUIDE.md",
-      "source_location": "L76",
+      "source_location": "L92",
       "weight": 1.0
     },
     {
@@ -16741,6 +17271,17 @@
       "weight": 1.0
     },
     {
+      "source": "docs_audit_artifacts_readme",
+      "target": "docs_phase_3_report",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/audit_artifacts/README.md",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
       "source": "docs_decisions",
       "target": "docs_master_spec",
       "relation": "references",
@@ -16771,6 +17312,28 @@
       "confidence_score": 1.0,
       "source_file": "docs/DECISIONS.md",
       "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_implementation_plan",
+      "target": "docs_phase_3_report",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/IMPLEMENTATION_PLAN.md",
+      "source_location": "L106",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_implementation_plan",
+      "target": "docs_phase_4_report",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/IMPLEMENTATION_PLAN.md",
+      "source_location": "L126",
       "weight": 1.0
     },
     {
@@ -16862,6 +17425,39 @@
       "weight": 1.0
     },
     {
+      "source": "docs_phase_4_report",
+      "target": "static_k_experiment_guide",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PHASE_4_REPORT.md",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_phase_4_report",
+      "target": "docs_phase_2_report",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PHASE_4_REPORT.md",
+      "source_location": "L86",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_phase_4_report",
+      "target": "docs_phase_3_report",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/PHASE_4_REPORT.md",
+      "source_location": "L86",
+      "weight": 1.0
+    },
+    {
       "source": "docs_progress",
       "target": "docs_master_spec",
       "relation": "references",
@@ -16885,13 +17481,24 @@
     },
     {
       "source": "docs_progress",
-      "target": "docs_phase_2_report",
+      "target": "docs_phase_4_report",
       "relation": "references",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/PROGRESS.md",
       "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "static_k_experiment_guide",
+      "target": "docs_phase_3_report",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "STATIC_K_EXPERIMENT_GUIDE.md",
+      "source_location": "L160",
       "weight": 1.0
     },
     {
@@ -17109,5 +17716,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "c13dab89827f50b6b7e4bcd024abae418a5ad20d"
+  "built_at_commit": "1374c402d5e21ebbe7a388867d70ef608545abb5"
 }

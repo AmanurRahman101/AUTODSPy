@@ -2,7 +2,7 @@
   "0": "run_grpo_baseline.py",
   "1": "AutoDSPy Static-K Research — Master Specification",
   "2": "Issue tracker: GitHub",
-  "3": "Phased implementation plan",
+  "3": "Static-K experiment guide",
   "4": "Triage",
   "5": "teach/SKILL.md",
   "6": "DSPy Pipeline Optimization with Reinforcement Learning",
@@ -61,6 +61,5 @@
   "59": "implement/SKILL.md",
   "60": "research/SKILL.md",
   "61": "wait-what/SKILL.md",
-  "62": "Project progress and session handoff",
-  "63": "Process"
+  "62": "Project progress and session handoff"
 }

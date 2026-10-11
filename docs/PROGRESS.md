@@ -6,7 +6,9 @@ Primary source: [MASTER_SPEC.md](MASTER_SPEC.md). Plan: [IMPLEMENTATION_PLAN.md]
 
 ## Current milestone
 
-**Phase 3 completed: the independent HotpotQA notebook is implemented and verified within the reported lightweight scope.** Phase 1 was committed as `c13dab8`; Phase 2 was committed, at the user's request, as `6893f14`. The user subsequently explicitly requested committing and pushing Phase 3 on `experiment/static-k`; consult Git history and remote status for the final versioning state. GSM8K remains unchanged. HotpotQA clean-kernel checks (96 assertions), official labeled-data checks, a real GPT-2 long-context update and reduced live integration passed. The live group had equal rewards and zero current gradient; it does not demonstrate learning. Phase 4 remains pending. See [PHASE_3_REPORT.md](PHASE_3_REPORT.md).
+**Phase 4 completed: final experiment management, statistics, plots and reproducibility checks passed within the reported lightweight scope.** Both independent notebooks are implemented. Final checks passed 111 GSM8K and 135 HotpotQA synthetic assertions in fresh GPU kernels, plus read-only comparison and all 23 required plots from previous live engineering artifacts. No new live inference or full training was performed. See [PHASE_4_REPORT.md](PHASE_4_REPORT.md) and [phase4_verification.json](audit_artifacts/phase4_verification.json).
+
+The user authorized Phase 4 with ?implement the next phase?. The previous Phase 3 work is committed as `1374c40` on `experiment/static-k`. The user subsequently explicitly authorized committing and pushing Phase 4 on the current branch; consult Git history and remote status for the final versioning state.
 
 The initial permission gate came from the user's final instruction: “Ask permission to run Phase 1 after creating your necessary documents.” It was satisfied by the user's subsequent “yes begin phase 1” message on 2026-10-11. The next stop is the explicitly requested phase boundary, not an inferred skill requirement.
 
@@ -41,9 +43,9 @@ Recheck the notebook before/after each implementation phase. A changed hash requ
 
 - Preparation: completed; integrity checks passed and permission was requested/granted.
 - Phase 1, audit: completed; source evidence, targeted checks, and open scientific ambiguities documented.
-- Phase 2, complete GSM8K notebook: not started; requires Phase 1 and instruction to proceed.
-- Phase 3, independent HotpotQA notebook: not started; requires Phase 2 and instruction to proceed.
-- Phase 4, final management/statistics/visualization/reproducibility: not started; requires Phase 3 and instruction to proceed.
+- Phase 2, complete GSM8K notebook: completed within its reported verification scope.
+- Phase 3, independent HotpotQA notebook: completed within its reported verification scope.
+- Phase 4, final management/statistics/visualization/reproducibility: completed within its reported lightweight verification scope.
 
 No phase is marked completed based only on code or documentation being written.
 
@@ -131,19 +133,19 @@ but skipped notebooks/PDFs. Original, paper, GSM8K and MASTER_SPEC remain preser
 
 ## Pending work and unresolved questions
 
-Wait for instruction to begin Phase 4. Review both verified notebooks against the
-master, consolidate management/statistics/documentation, and use targeted regression
-checks. Preserve Phase 2/3 evidence and follow D023–D025. Do not start expensive runs
-or implement Adaptive-K.
+All four implementation phases are complete within the evidence stated in their reports.
+Full static-K research experiments remain user-triggered. Do not launch them or
+implement Adaptive-K without a new instruction. Phase 4 adds comparison provenance
+checks and resource aggregation without changing the validated training protocol.
 
 The following remain unresolved or unverified for later phases:
 
 - Published episode/fallback inconsistencies and the exact HotpotQA fullwiki/distractor/context formulation; retain explicit project choices without claiming exact paper reproduction.
-- Cross-dataset consolidation (Phase 4); HotpotQA integration is now verified within the stated scope.
+- Cross-dataset consolidation is complete; full benchmark workloads remain unrun.
 - Default CPU-only execution-LM generation, larger decoding budgets, full workloads and live induced recovery. The reduced check used partial GPU loading because host RAM was limited.
 - Exact physical HTTP requests and complete external wall time. Logical calls, returned usage, GPU allocator peaks and Ollama residency are recorded within documented scopes.
 
-No full experiment is authorized to start automatically. The current stop is the user's requested Phase 3 boundary.
+No full experiment is authorized to start automatically. The current stop is the completed Phase 4 implementation boundary.
 
 ## Completed Phase 2 work and verification
 
@@ -159,12 +161,21 @@ No full experiment is authorized to start automatically. The current stop is the
 
 Not run: full default smoke/pilot/baseline workloads, live K=8/10/15, full official test evaluation, live CPU-only Llama decoding, or live induced interruption. Default output/context budgets may have different resource behavior than the reduced check. First-token collisions, numerical extraction, external failure rewards and K scaling remain documented limitations.
 
+## Completed Phase 4 (2026-10-12)
+
+- Reviewed both notebooks against all master sections; the report maps every requirement to implementation/evidence or an explicit remaining limitation.
+- Added strict completed-run provenance checks, recorded resource/failure summaries and visible markers for single-episode curves. Both workflows remain independent; core setup/data/policy/GRPO/training/checkpoint/evaluation cells are preserved.
+- Final fresh `autodspy-gpu` kernel execution passed 111 GSM8K and 135 HotpotQA assertions (246 total). New checks include corruption rejection, missing metadata, cross-run protocol mismatch, explicit mode dispatch, all-K sequencing/release and unavailable resources. Existing nonzero-gradient/recovery checks passed again.
+- Read-only comparison passed on both prior live runs. Eleven GSM8K and twelve HotpotQA real-artifact plots and their accuracy/budget coordinates passed. Original live files were not refreshed or overwritten.
+- Expanded the guide and delivered PHASE_4_REPORT.md, phase4_verification.json and clean-kernel evidence. The AST-only graph update outcome is recorded in the final evidence/report. Original notebook, paper, master specification, AGENTS.md and prior runner/report are preserved.
+- No new Llama call, pretrained GPT-2 training or full experiment was run. Earlier Phase 2/3 integration/hardware evidence remains separately scoped. No benchmark/learning claim is made.
+
 ## Resume instructions
 
-1. Read MASTER_SPEC.md, IMPLEMENTATION_PLAN.md, this tracker and DECISIONS.md; follow AGENTS.md.
-2. Confirm user authorization for Phase 4. Otherwise remain at this completed Phase 3 boundary.
-3. Inspect branch/status without discarding Phase 2/3 work; recheck original hashes and both notebook verification checksums. The user requested a Phase 3 commit and push after completion; check Git history, working-tree status and remote state rather than assuming it remains uncommitted.
-4. Read PHASE_1_AUDIT.md, PHASE_2_REPORT.md and PHASE_3_REPORT.md, including actual failures, deviations and unrun checks. The guide explains actual run controls.
-5. For graph-first navigation, remember the current AST graph does not index notebooks. Query if useful, then inspect the notebook directly when the graph is insufficient.
-6. Consolidate only Phase 4 requirements. Keep notebooks independent and executable logic local; do not alter methodology, implement Adaptive-K, or launch full experiments.
-7. Preserve validated functionality, verify targeted changes, update documents/graph, report actual results, then stop at Phase 4's boundary.
+1. Read MASTER_SPEC.md, IMPLEMENTATION_PLAN.md, this tracker, DECISIONS.md and PHASE_4_REPORT.md; follow AGENTS.md.
+2. All four implementation phases are complete. Identify the user's newly authorized task; full experiments and Adaptive-K do not start automatically.
+3. Inspect branch/status and preserve existing work. The user explicitly requested committing and pushing Phase 4 after reviewing its report; use Git state rather than assuming versioning status.
+4. Recheck source/evidence hashes. Current notebook checksums are in audit_artifacts/phase4_verification.json; older phase checksums describe the earlier versions.
+5. Graph-first navigation still applies, but AST graph updates skip notebooks/PDFs. Inspect notebook code and execution evidence directly for their logic.
+6. Use STATIC_K_EXPERIMENT_GUIDE.md for controls and retain original run directories, manifests and checkpoints for comparison. Missing paths or incompatible histories are rejected.
+7. Review unresolved scientific/hardware/measurement limits before any newly requested research run. Update evidence only from actual execution.

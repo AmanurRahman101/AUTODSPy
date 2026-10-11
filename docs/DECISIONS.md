@@ -248,3 +248,36 @@ live other K values, default joint GPU/context operation and live induced recove
 remain unrun. Synthetic interrupted recovery has nonzero updates. The driver-only
 cleanup argument mistake was corrected by a separate unload request; no loaded
 execution model remained. Detailed evidence is in PHASE_3_REPORT.md.
+
+## D026 ? Phase 4 authorization and completion boundary
+
+Status: implemented and verified on 2026-10-12. The user's ?implement the next phase?
+instruction authorizes final management/statistics/plot/reproducibility consolidation.
+Both notebooks remain independent. Core experimental code is preserved; no full
+training, new live inference, or Adaptive-K is implied. Stop after the final report.
+
+## D027 ? Verify recorded artifacts before comparison
+
+Status: verified. Completed summaries alone are insufficient for controlled K
+comparisons. Check configuration/model snapshots, manifest hash/schedule/IDs,
+complete training/validation progression, centered statistics, candidate budgets,
+latest/best checkpoint pointers and held-out checkpoint/question provenance.
+Reject duplicate paths, missing metadata and incompatible protocols. Separate
+repeats remain separate points; no test-score selection is introduced.
+
+Keep original artifact paths/checkpoints accessible; automatic relocation is not
+implemented. Comparison reads evidence without rewriting historical summaries.
+Final plots use prior live engineering artifacts, not fabricated or baseline results.
+
+## D028 ? Aggregate only measured resources within explicit scopes
+
+Status: verified. Summaries add recorded training GPU peaks, failures and LM time,
+evaluation success/failure/time, and observed journal calls/tokens/time including
+rollback. Missing values and incomplete old journals remain unavailable. Journal
+entries cover completed recorded attempts; in-flight interrupted usage may be lost.
+PyTorch allocator peaks, Ollama residency, LM-forward attempts and physical HTTP
+requests retain their separate meanings. No total external wall time is invented.
+
+Fresh-kernel synthetic regression passed 111 GSM8K and 135 HotpotQA assertions.
+Read-only previous-live artifact checks and eleven/twelve real-artifact plots passed.
+No new external-model integration or benchmark learning claim follows from Phase 4.

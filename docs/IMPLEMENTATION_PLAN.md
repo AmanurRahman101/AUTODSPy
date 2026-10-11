@@ -6,7 +6,7 @@ Created 2026-10-11 (Asia/Dhaka). This is a plan, not evidence that research func
 
 ## Execution rules and session handoff
 
-Work on one phase at a time. The user authorized Phase 1 on 2026-10-11 after preparation documents were created. Phase 1 is complete; Phase 2 was authorized and is now complete for its reported verification scope. Phase 3 awaits instruction. After each phase, report actual changes, checks, deviations, and unresolved issues, then stop until instructed to continue. The final phase instructions refine the earlier request to proceed autonomously through all stages.
+Work on one phase at a time. The user authorized each implementation phase in sequence; Phases 1?4 are now complete within their reported verification scopes. The user's ?implement the next phase? instruction authorized Phase 4. Full research experiments remain unrun and require explicit invocation. After reporting this final implementation phase, stop at its boundary.
 
 At every new phase or resumed session:
 
@@ -111,17 +111,19 @@ Dependencies: both notebook milestones and instruction to proceed. Deliverables:
 
 Checklist:
 
-- [ ] Review both complete notebooks against every master section; reconcile protocol drift while preserving validated behavior.
-- [ ] Verify all modes, custom-size controls, preset namespaces/prefixes, independent K starts, explicit all-K sequencing, and selected-checkpoint evaluation.
-- [ ] Verify checkpoint metadata, compatibility rejection, RNG continuation, interruption safety, log consistency, safe overwrites, and completed-run summaries.
-- [ ] Verify every required training/computational/evaluation field and all eleven plots plus HotpotQA exact-match/F1. Keep pipeline attempts distinct from stage/LLM calls and training budgets distinct from evaluation cost.
-- [ ] Check validation progression and accuracy versus cumulative training pipeline evaluations using real artifact provenance; enforce comparison compatibility.
-- [ ] Document endpoint/CPU offloading, seeds, runtime/quantization metadata, GPU peaks, unavailable measurements, failure behavior, and reproducibility limits.
-- [ ] Run targeted regression and clean-kernel checks; perform reduced live tests only when feasible. No automatic baseline training or fabricated results.
-- [ ] Complete usage guide covering every section 22 topic and final report covering all thirteen section 23 points.
-- [ ] Update graph, preserve original source checksum, and finalize progress/decisions with actual evidence and unresolved limitations.
+- [x] Review both complete notebooks against every master section; reconcile protocol drift while preserving validated behavior.
+- [x] Verify all modes, custom-size controls, preset namespaces/prefixes, independent K starts, explicit all-K sequencing, and selected-checkpoint evaluation.
+- [x] Verify checkpoint metadata, compatibility rejection, RNG continuation, interruption safety, log consistency, safe overwrites, and completed-run summaries.
+- [x] Verify every required training/computational/evaluation field and all eleven plots plus HotpotQA exact-match/F1. Keep pipeline attempts distinct from stage/LLM calls and training budgets distinct from evaluation cost.
+- [x] Check validation progression and accuracy versus cumulative training pipeline evaluations using real artifact provenance; enforce comparison compatibility.
+- [x] Document endpoint/CPU offloading, seeds, runtime/quantization metadata, GPU peaks, unavailable measurements, failure behavior, and reproducibility limits.
+- [x] Run targeted regression and clean-kernel checks; perform reduced live tests only when feasible. No automatic baseline training or fabricated results.
+- [x] Complete usage guide covering every section 22 topic and final report covering all thirteen section 23 points.
+- [x] Update graph, preserve original source checksum, and finalize progress/decisions with actual evidence and unresolved limitations.
 
 Acceptance: every master requirement is verified or explicitly identified as unresolved with evidence; both workflows remain independent; documented commands are usable; final artifact/report delivery does not claim unrun benchmarks. Stop after reporting.
+
+Status: **completed** on 2026-10-12 within the lightweight scope. Final fresh-kernel checks passed 111 GSM8K and 135 HotpotQA assertions; read-only historical-artifact comparisons and all 23 plots passed. Core methodology is preserved. No new live inference or expensive training ran. See [PHASE_4_REPORT.md](PHASE_4_REPORT.md) for coverage and unresolved limitations.
 
 ## Requirement coverage and verification approach
 
