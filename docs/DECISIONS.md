@@ -156,3 +156,41 @@ Keep model identity fixed, record digest/quantization, and provide explicit offl
 ## Phase boundary after the audit
 
 Phase 1 was authorized and completed on 2026-10-11. Stop after reporting. Phase 2 remains unstarted until the user instructs it. The original notebook, paper, existing runner/report, and user-modified AGENTS.md remain preserved.
+
+## D017 — Phase 2 authorization and boundary
+
+Status: implemented and verified, 2026-10-12. The user's subsequent instruction authorized Phase 2. Create only the independent GSM8K notebook and its necessary controls/statistics/documentation; stop after its verification. HotpotQA and Adaptive-K remain unimplemented. PHASE_2_REPORT.md records actual evidence and unrun workloads; implementation completion does not imply benchmark learning.
+
+## D018 — Immutable identity and explicit operation controls
+
+Status: implemented. Pin GPT-2 to revision `607a30d783dfa663caf39e06633721c8d4cfcd7e`; resolve GSM8K main to an immutable commit before loading. Persist subset indices/IDs/content hashes and the full replacement schedule independently of K/preset. Use independent deterministic streams derived from SEED: base seed for train permutation, seed+1 for test, seed+2 for episodes. Changes to sizes/revision/schedule length form a different namespace.
+
+Use unique dataset/K/seed/preset/run directories; require explicit checkpoint selection and compatible controls/model/data/dependency/Ollama versions. No implicit warm start or automatic operation runs from setup. Validation uses fixed split-specific multinomial RNG and restores training RNG. Best numeric EM wins; earliest episode breaks ties. Final test is explicit after training and cannot select checkpoints.
+
+## D019 — Memory-bounded equivalent update
+
+Status: verified. Keep pretrained evaluation mode with autograd enabled. Sample without graphs, then sequentially replay/backpropagate each candidate while weights remain unchanged. Assert replay/rollout log probabilities agree; make one Adam step after accumulating the Figure 2 sum. Tests show equivalence to retained-graph gradients at every K. No K scaling correction or clipping is added.
+
+Use Adam foreach=False to reduce temporary optimizer memory while retaining its mathematical update/default betas/epsilon. The real GPT-2 CUDA update check passed with a synthetic group and changed parameters. Clear any selected-checkpoint label after a policy update so later evaluation cannot misleadingly label modified weights as the earlier checkpoint.
+
+## D020 — Durable periodic recovery and resource journal
+
+Status: verified with meaningful nonzero synthetic training. Immutable checkpoint files and atomic latest/best pointers prevent accidental overwrite. Restore policy/optimizer/RNG/schedule/metrics together. Resume only the latest durable checkpoint; reconcile statistical logs and best pointer to restored state. Interrupted recovery matches uninterrupted final weights with no duplicate effective updates/rows.
+
+Periodic checkpointing cannot preserve unsaved optimizer work. Roll it back together with corresponding statistics, while retaining an append-only external-attempt journal. Resume begins at the next durably committed episode. This limitation is explicit; interval 1 minimizes rollback at high disk-I/O cost. Mid-episode interruptions cannot save potentially partial optimizer state. Completed pilot runs cannot silently become baseline runs.
+
+Final review added recovery for interrupted intermediate/final validation: finish that pending evaluation before advancing and require durable final validation for completion. Tests confirm no extra policy updates. Evaluation-only sessions cannot train or save a checkpoint with optimizer state from another episode; continuing training requires explicit resume.
+
+## D021 — Separate metrics, failures and measured call scopes
+
+Status: implemented. Numeric normalization/finite judge parsing correct the audited scoring errors; last-number extraction remains a known limitation. Preserve fractional Llama semantic reward, exact reward 1 and zero execution/judge-failure reward. Failures can bias groups and must be inspected. Strict numeric EM is the selection metric; semantic means/full-credit counts are separate.
+
+Keep the original DSPy LM provider with cache off, fixed seed/temperature, bounded context/output, zero provider retries and configurable Ollama GPU layers. These are explicit project decoding/resource controls; DSPy adapter retries may still occur. Logical LM.forward attempts and returned usage are instrumented; physical HTTP request counts remain unavailable. Standalone validation/full-test costs join recorded evaluation totals. Journal resources include discarded attempts where instrumented; older engineering journals are marked incomplete rather than retrospectively populated with estimates. PyTorch allocator peaks and Ollama residency are separate.
+
+API support was checked against the installed source and primary documentation: [DSPy LM](https://github.com/stanfordnlp/dspy/blob/main/dspy/clients/lm.py), [Ollama API](https://github.com/ollama/ollama/blob/main/docs/api.md). Version/model fingerprints are persisted and compatibility checked.
+
+## D022 — Reduced live check is evidence of integration, not learning
+
+Status: observed. Retain default research models and budgets in configuration. A separately namespaced live engineering check used pool 2, one episode, K=5, validation/test 1, output 128/context 2048 and 12 Ollama GPU layers because free RAM was limited. Two of five training pipelines returned outputs; three failed after truncation. Rewards and current gradient were zero. Checkpoint/evaluation/plot paths completed, but this run does not demonstrate learning or benchmark performance.
+
+Real full-GPT-2 nonzero-gradient/update correctness was separately verified with a synthetic group. Default CPU-only Llama generation, larger context/output budgets, full presets, live other-K runs and live induced recovery remain unrun. No smaller research model or changed loss was used. The execution model was unloaded afterwards to release resources. Exact results and artifacts are in PHASE_2_REPORT.md.

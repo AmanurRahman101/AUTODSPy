@@ -6,7 +6,7 @@ Created 2026-10-11 (Asia/Dhaka). This is a plan, not evidence that research func
 
 ## Execution rules and session handoff
 
-Work on one phase at a time. The user authorized Phase 1 on 2026-10-11 after preparation documents were created. Phase 1 is now complete; Phase 2 awaits instruction. After each phase, report actual changes, checks, deviations, and unresolved issues, then stop until instructed to continue. The final phase instructions refine the earlier request to proceed autonomously through all stages.
+Work on one phase at a time. The user authorized Phase 1 on 2026-10-11 after preparation documents were created. Phase 1 is complete; Phase 2 was authorized and is now complete for its reported verification scope. Phase 3 awaits instruction. After each phase, report actual changes, checks, deviations, and unresolved issues, then stop until instructed to continue. The final phase instructions refine the earlier request to proceed autonomously through all stages.
 
 At every new phase or resumed session:
 
@@ -64,23 +64,25 @@ Dependencies: Phase 1 evidence and instruction to proceed. Deliverable: Static_K
 
 Checklist:
 
-- [ ] Create readable, self-contained dependency/setup, configuration, hardware, dataset, action-space, policy, pipeline, reward, loss, training, checkpoint, evaluation, metrics, comparison, visualization, and reproducibility cells.
-- [ ] Keep editable K, seed, preset, mode, pool/episode/validation/test sizes, execution model/host, and checkpoint interval together. Preserve default GPT-2 127M, Llama 3.1 8B, Adam 1e-4, seed 42, and K in {5,8,10,15}.
-- [ ] Implement official GSM8K main: seeded disjoint train pool and train-split validation, fixed official-test subset, persisted IDs/indices, and access to the full test split.
-- [ ] Persist one replacement-sampling episode schedule shared across K; smoke/pilot use baseline prefixes. Distinguish controlled defaults from separately named smaller engineering checks.
-- [ ] Preserve CoT/Predict, original signature pool, and audited action selection. Apply only documented correctness corrections.
-- [ ] Initialize identical pretrained policy parameters and a fresh optimizer for each K; hold only the necessary model copy. Keep rollout parameters unchanged until the corresponding loss update.
-- [ ] Execute candidates sequentially; attempt exactly K pipelines on one selected example per episode. Preserve reward behavior and separately report canonical numeric exact match and semantic fallback.
-- [ ] Implement the Figure 2 summed loss, centered advantages, at most one valid optimizer update, safe equal-reward groups, gradient norms, failure logging, and bounded graph retention.
-- [ ] Implement initialize/train/resume/validate/test/compare controls and explicit sequential all-K execution. Setup and opening the notebook must not start training.
-- [ ] Implement separate dataset/K/seed/preset/run artifacts, configuration checks, RNG restoration, safe checkpoint writes, next-unfinished-episode resume, and explicit evaluation checkpoint selection.
-- [ ] Validate at baseline episodes 0/50/100/150/200 with one pipeline per question and no policy updates. Document validation-only best-checkpoint selection and tie breaking; final testing is a separate explicit action.
-- [ ] Record all required episode, resource, and evaluation metrics; unavailable values remain unavailable. Generate required Matplotlib plots only from real recorded results.
-- [ ] Include notebook self-checks for math, gradients, scoring, split isolation, schedules/prefixes, all K values, initialization, checkpoint restoration, resuming, model selection, logs, and plots.
-- [ ] Verify clean-kernel setup and synthetic paths where feasible, then attempt only a small live smoke test if available resources allow. Document skipped checks and failures accurately.
-- [ ] Update usage guide, phase report, decisions, tracker, and graph after code changes. Preserve the original checksum.
+- [x] Create readable, self-contained dependency/setup, configuration, hardware, dataset, action-space, policy, pipeline, reward, loss, training, checkpoint, evaluation, metrics, comparison, visualization, and reproducibility cells.
+- [x] Keep editable K, seed, preset, mode, pool/episode/validation/test sizes, execution model/host, and checkpoint interval together. Preserve default GPT-2 127M, Llama 3.1 8B, Adam 1e-4, seed 42, and K in {5,8,10,15}.
+- [x] Implement official GSM8K main: seeded disjoint train pool and train-split validation, fixed official-test subset, persisted IDs/indices, and access to the full test split.
+- [x] Persist one replacement-sampling episode schedule shared across K; smoke/pilot use baseline prefixes. Distinguish controlled defaults from separately named smaller engineering checks.
+- [x] Preserve CoT/Predict, original signature pool, and audited action selection. Apply only documented correctness corrections.
+- [x] Initialize identical pretrained policy parameters and a fresh optimizer for each K; hold only the necessary model copy. Keep rollout parameters unchanged until the corresponding loss update.
+- [x] Execute candidates sequentially; attempt exactly K pipelines on one selected example per episode. Preserve reward behavior and separately report canonical numeric exact match and semantic fallback.
+- [x] Implement the Figure 2 summed loss, centered advantages, at most one valid optimizer update, safe equal-reward groups, gradient norms, failure logging, and bounded graph retention.
+- [x] Implement initialize/train/resume/validate/test/compare controls and explicit sequential all-K execution. Setup and opening the notebook must not start training.
+- [x] Implement separate dataset/K/seed/preset/run artifacts, configuration checks, RNG restoration, safe checkpoint writes, next-unfinished-episode resume, and explicit evaluation checkpoint selection.
+- [x] Validate at baseline episodes 0/50/100/150/200 with one pipeline per question and no policy updates. Document validation-only best-checkpoint selection and tie breaking; final testing is a separate explicit action.
+- [x] Record all required episode, resource, and evaluation metrics; unavailable values remain unavailable. Generate required Matplotlib plots only from real recorded results.
+- [x] Include notebook self-checks for math, gradients, scoring, split isolation, schedules/prefixes, all K values, initialization, checkpoint restoration, resuming, model selection, logs, and plots.
+- [x] Verify clean-kernel setup and synthetic paths where feasible, then attempt only a small live smoke test if available resources allow. Document skipped checks and failures accurately.
+- [x] Update usage guide, phase report, decisions, tracker, and graph after code changes. Preserve the original checksum.
 
 Acceptance: the GSM8K workflow is self-contained and appropriately verified; source integrity, unchanged objective, deterministic schedule, isolation, correct gradients, and safe resume have evidence. External-service-dependent checks are clearly labeled. Report actual results and stop at the boundary.
+
+Status: **completed** on 2026-10-12 for GSM8K implementation and documented verification. See [PHASE_2_REPORT.md](PHASE_2_REPORT.md) for clean-kernel/synthetic checks, a real GPT-2 update check, reduced live integration, truncation failures and unrun workloads. Stop until Phase 3 is authorized.
 
 ## Phase 3 — Implement and validate the independent HotpotQA notebook
 
