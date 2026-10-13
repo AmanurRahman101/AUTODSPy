@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Checkpoints & Weights
 *.pt
 *.pth
@@ -17,3 +18,11 @@ venv/
 
 # Evaluation outputs
 evaluation_results.json
+=======
+venv/
+__pycache__/
+*.pt
+*.pyc
+.ipynb_checkpoints/
+baseline_metrics.json
+>>>>>>> 4432567cc0bd7970cd748b1904295f915152ed9c

@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "kernel": "autodspy-gpu",
+  "cells": 43,
+  "notebook_sha256": "cd4f133d858d28c5326585adf9827c9718574a26a71bbb0ac3b3533176b6ddc2",
+  "outputs": [
+    "X:\\Adaptive GRPO for AutoDSPy\\Code\\AUTODSPy\\venv_gpu\\Lib\\site-packages\\tqdm\\auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html\n  from .autonotebook import tqdm as notebook_tqdm\n",
+    "Python: 3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)] \nPackages: {'torch': '2.6.0+cu124', 'transformers': '5.14.1', 'dspy': '3.3.0', 'datasets': '5.0.1', 'numpy': '2.4.4', 'matplotlib': '3.11.1'} \nCUDA: True\n",
+    "{'dataset': 'gsm8k', 'dataset_name': 'openai/gsm8k', 'dataset_config': 'main', 'dataset_revision': None, 'policy_model': 'gpt2', 'policy_revision': '607a30d783dfa663caf39e06633721c8d4cfcd7e', 'k': 5, 'seed': 42, 'preset': 'smoke', 'num_episodes': 5, 'train_pool_size': 200, 'validation_size': 50, 'test_size': 200, 'schedule_episodes': 200, 'learning_rate': 0.0001, 'checkpoint_interval': 25, 'validation_interval': 5, 'policy_device': 'cuda', 'ollama_model': 'llama3.1:8b', 'ollama_host': 'http://localhost:11434', 'ollama_num_gpu': 0, 'ollama_num_ctx': 4096, 'execution_max_tokens': 512, 'execution_temperature': 0.0, 'request_timeout': 180, 'results_root': 'results', 'protocol': 'gsm8k-static-figure2-v1', 'policy_dropout': False, 'policy_sampling': 'restricted-first-token-multinomial', 'loss': 'negative-sum-logprob-times-centered-reward', 'optimizer': 'Adam', 'cache': False, 'semantic_fallback': True, 'max_policy_tokens': 1024, 'max_pipeline_steps': 3, 'evaluation_sampling': 'multinomial-with-fixed-split-seed', 'evaluation_seed_offset': 100000}\n",
+    "Setup complete. No training/test launched. Run notebook_self_checks() for synthetic checks.\n",
+    "K=5 episode=1/3 reward=0.800 loss=-0.0000 grad=0.9487\nK=5 episode=2/3 reward=0.700 loss=-0.0130 grad=1.0677\nK=5 episode=3/3 reward=0.700 loss=0.0178 grad=1.1747\n",
+    "Held-out numeric EM: 0.0 artifact: C:\\Users\\ahnaf\\AppData\\Local\\Temp\\autodspy-synthetic-dek_oly_\\92e37ba3b4574dbe827d0fce5a573f45\\test_3c84e73e.json\nK=5 episode=1/3 reward=0.700 loss=-0.0168 grad=1.0488\nK=5 episode=2/3 reward=0.700 loss=0.0206 grad=0.8602\n",
+    "K=5 episode=3/3 reward=0.800 loss=0.0269 grad=0.9487\nK=5 episode=1/3 reward=0.700 loss=-0.0168 grad=1.0488\nEpisode interrupted. Resume the latest.json checkpoint; incomplete work was not committed.\n",
+    "K=5 episode=2/3 reward=0.700 loss=0.0206 grad=0.8602\nK=5 episode=3/3 reward=0.800 loss=0.0269 grad=0.9487\n",
+    "K=5 episode=2/3 reward=0.700 loss=0.0206 grad=0.8602\nK=5 episode=3/3 reward=0.800 loss=0.0269 grad=0.9487\nK=5 episode=1/3 reward=0.700 loss=-0.0168 grad=1.0488\n",
+    "K=5 episode=2/3 reward=0.700 loss=0.0206 grad=0.8602\n",
+    "PASS: 72 notebook-local synthetic checks. No Llama/benchmark success implied.\nCLEAN_KERNEL_CHECK_COUNT 72\n",
+    "LIVE_ARTIFACT_RECHECK 1 11 18\n"
+  ],
+  "executed_serialization_sha256": "f5cdf3065c957de08244c4ee8d096e889fa836db7a987143a68ef55d4bc055a0",
+  "line_endings_normalized_after_execution": true
+}

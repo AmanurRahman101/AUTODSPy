@@ -1,0 +1,10 @@
+{
+  "distinct_trajectories_gradient_norm": 1.0583004895067618,
+  "sequential_update_matches_retained_graph": true,
+  "equal_reward_gradient_norm": 0.0,
+  "zero_gradient_adam_parameter_movement": 0.00018056666158424944,
+  "episode_11_identical_trajectory_gradient_norm": 1.737359734827432e-08,
+  "episode_15_identical_trajectory_gradient_norm": 1.737359734827432e-08,
+  "episode_16_identical_trajectory_gradient_norm": 1.737359734827432e-08,
+  "episode_27_identical_trajectory_gradient_norm": 1.737359734827432e-08
+}

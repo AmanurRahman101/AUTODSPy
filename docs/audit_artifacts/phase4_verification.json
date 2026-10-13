@@ -1,0 +1,179 @@
+{
+  "date": "2026-10-12",
+  "kind": "phase4-engineering-verification-not-benchmark",
+  "notebooks": [
+    {
+      "notebook": "Static_K_GRPO_GSM8K.ipynb",
+      "sha256": "51a80c42c19c2aedecac252995f92090aafcab36f1e2515442e87e169ad115d5",
+      "schema_ast_passed": true,
+      "clean_kernel_passed": true,
+      "synthetic_assertions": 111,
+      "unchanged_core_cells": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        40
+      ],
+      "real_artifact_comparison_passed": true,
+      "source_run": "results\\engineering_checks\\phase2-live\\gsm8k\\k5\\seed42\\smoke\\20261011T175202-3fe9f269",
+      "historical_artifacts_preserved": true,
+      "plots_generated": 11,
+      "plot_files": [
+        "results\\engineering_checks\\phase4-plots\\final\\gsm8k\\attempted_pipeline_evaluations_77188f6e.png",
+        "results\\engineering_checks\\phase4-plots\\final\\gsm8k\\average_pipeline_execution_latency_6f406d52.png",
+        "results\\engineering_checks\\phase4-plots\\final\\gsm8k\\final_held_out_accuracy_aa4ed90e.png",
+        "results\\engineering_checks\\phase4-plots\\final\\gsm8k\\gradient_norm_episode_5bc6d6b2.png",
+        "results\\engineering_checks\\phase4-plots\\final\\gsm8k\\mean_group_reward_episode_35eb9bce.png",
+        "results\\engineering_checks\\phase4-plots\\final\\gsm8k\\numeric_exact_match_accuracy_cumulative_training_pipeline_evaluations_a0eea9de.png",
+        "results\\engineering_checks\\phase4-plots\\final\\gsm8k\\numeric_exact_match_accuracy_episode_95a37b43.png",
+        "results\\engineering_checks\\phase4-plots\\final\\gsm8k\\total_llm_calls_in_effective_history_2eceb36b.png",
+        "results\\engineering_checks\\phase4-plots\\final\\gsm8k\\training_time_f249f636.png",
+        "results\\engineering_checks\\phase4-plots\\final\\gsm8k\\validation_accuracy_95b5a6d5.png",
+        "results\\engineering_checks\\phase4-plots\\final\\gsm8k\\zero_advantage_group_percentage_a1ad3d64.png"
+      ],
+      "plot_directory": "results\\engineering_checks\\phase4-plots\\final\\gsm8k",
+      "accuracy_budget_plot_verified": true,
+      "resource_rollup": {
+        "peak_allocated_gpu_bytes": 2512455680,
+        "peak_reserved_gpu_bytes": 2805989376,
+        "training_out_of_memory_failures": 0,
+        "training_judge_failures": 0,
+        "training_llm_failed_calls": 0,
+        "training_llm_seconds": 121.88403770001605,
+        "evaluation_successful_pipeline_evaluations": 4,
+        "evaluation_failed_pipeline_evaluations": 0,
+        "evaluation_llm_failed_calls": 0,
+        "evaluation_llm_seconds": 77.02637900004629,
+        "resource_journal_complete": false,
+        "observed_pipeline_attempts_including_rollback": null,
+        "journal_scope": "completed journal entries; in-flight interrupted calls may be unavailable",
+        "observed_llm_calls_including_rollback": null,
+        "observed_prompt_tokens_including_rollback": null,
+        "observed_generated_tokens_including_rollback": null,
+        "observed_llm_seconds_including_rollback": null,
+        "observed_llm_failed_calls_including_rollback": null
+      }
+    },
+    {
+      "notebook": "Static_K_GRPO_HotpotQA.ipynb",
+      "sha256": "64d44e1e5285a19257d69da4367542a59e5c6458c35fdd01896bf680bfda23f1",
+      "schema_ast_passed": true,
+      "clean_kernel_passed": true,
+      "synthetic_assertions": 135,
+      "unchanged_core_cells": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        40
+      ],
+      "real_artifact_comparison_passed": true,
+      "source_run": "results\\engineering_checks\\phase3-live\\hotpotqa\\k5\\seed42\\smoke\\20261011T183846-7b6a560c",
+      "historical_artifacts_preserved": true,
+      "plots_generated": 12,
+      "plot_files": [
+        "results\\engineering_checks\\phase4-plots\\final\\hotpotqa\\answer_em_vs_f1_51b57092.png",
+        "results\\engineering_checks\\phase4-plots\\final\\hotpotqa\\attempted_pipeline_evaluations_8108e081.png",
+        "results\\engineering_checks\\phase4-plots\\final\\hotpotqa\\average_pipeline_execution_latency_2a1df184.png",
+        "results\\engineering_checks\\phase4-plots\\final\\hotpotqa\\exact_match_accuracy_cumulative_training_pipeline_evaluations_c330879f.png",
+        "results\\engineering_checks\\phase4-plots\\final\\hotpotqa\\exact_match_accuracy_episode_3d1f4a38.png",
+        "results\\engineering_checks\\phase4-plots\\final\\hotpotqa\\final_held_out_accuracy_22483d91.png",
+        "results\\engineering_checks\\phase4-plots\\final\\hotpotqa\\gradient_norm_episode_2f9bbc61.png",
+        "results\\engineering_checks\\phase4-plots\\final\\hotpotqa\\mean_group_reward_episode_1f357f8a.png",
+        "results\\engineering_checks\\phase4-plots\\final\\hotpotqa\\total_llm_calls_in_effective_history_15a1272c.png",
+        "results\\engineering_checks\\phase4-plots\\final\\hotpotqa\\training_time_b82f7037.png",
+        "results\\engineering_checks\\phase4-plots\\final\\hotpotqa\\validation_accuracy_dd80c9e6.png",
+        "results\\engineering_checks\\phase4-plots\\final\\hotpotqa\\zero_advantage_group_percentage_3054e018.png"
+      ],
+      "plot_directory": "results\\engineering_checks\\phase4-plots\\final\\hotpotqa",
+      "accuracy_budget_plot_verified": true,
+      "resource_rollup": {
+        "peak_allocated_gpu_bytes": null,
+        "peak_reserved_gpu_bytes": null,
+        "training_out_of_memory_failures": 0,
+        "training_judge_failures": 0,
+        "training_llm_failed_calls": 0,
+        "training_llm_seconds": 131.82944680005312,
+        "evaluation_successful_pipeline_evaluations": 4,
+        "evaluation_failed_pipeline_evaluations": 0,
+        "evaluation_llm_failed_calls": 0,
+        "evaluation_llm_seconds": 74.6818767999066,
+        "resource_journal_complete": true,
+        "observed_pipeline_attempts_including_rollback": 9,
+        "journal_scope": "completed journal entries; in-flight interrupted calls may be unavailable",
+        "observed_llm_calls_including_rollback": 12,
+        "observed_prompt_tokens_including_rollback": 19279,
+        "observed_generated_tokens_including_rollback": 673,
+        "observed_llm_seconds_including_rollback": 206.51132359995972,
+        "observed_llm_failed_calls_including_rollback": 0
+      }
+    }
+  ],
+  "preserved": {
+    "DSPy_GRPO.ipynb": {
+      "sha256": "a787bc87b6e652d30ef483f6c3ef8525df351c0f5572a3ee5ac4c1455d863f98",
+      "unchanged_from_head": true
+    },
+    "AutoDSPy.pdf": {
+      "sha256": "6eb8137f3b610ba569babf4dfa55fb7c61e380ac0282cf2f223572a2595266f2",
+      "unchanged_from_head": true
+    },
+    "docs/MASTER_SPEC.md": {
+      "sha256": "7f08b1870e04e751258f9a9c1a64713d18d08907a803ef2b39bae8bc938561d3",
+      "unchanged_from_head": true
+    },
+    "run_grpo_baseline.py": {
+      "sha256": "87cd0445f4e3d25e41bdb5bf51551897922aa770de018d0b88b5eb294b59b066",
+      "unchanged_from_head": true
+    },
+    "BASELINE_RESULTS.md": {
+      "sha256": "33dac9e569fbb78438d14bd8b63cefc74a182d306532faa0eb9a22336d121a9f",
+      "unchanged_from_head": true
+    },
+    "AGENTS.md": {
+      "sha256": "f9efe0e6de56e9f15e528e3430ca5f31fa5eee6e8ad52b3c85af0d8f7c38b387",
+      "unchanged_from_head": true
+    }
+  },
+  "graph_update": {
+    "status": "passed",
+    "nodes": 757,
+    "edges": 758,
+    "communities": 64,
+    "llm_api_use": false,
+    "scope": "AST-only; unsupported notebooks/PDFs skipped; no semantic refresh"
+  },
+  "visual_inspection": {
+    "status": "passed",
+    "sample": "GSM8K single-episode gradient plot: recorded point visible, labels legible"
+  },
+  "documentation_checks": {
+    "status": "passed",
+    "relative_links_resolve": true,
+    "trailing_whitespace_absent": true,
+    "guide_and_final_report_cover_master_requirements": true
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "comparison": "saved checkpoints 25 to 30",
+  "changed_tensor_elements": 85167251,
+  "parameter_delta_l2": 0.1520937330721099,
+  "max_absolute_delta": 1.71661376953125e-05,
+  "note": "Aliased tensors counted once; CPU read-only checkpoint comparison."
+}

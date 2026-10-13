@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "kind": "official-data-checks-no-inference",
+  "dataset_revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+  "split_sizes": {
+    "train": 90447,
+    "validation": 7405
+  },
+  "selected_sizes": {
+    "train": 200,
+    "validation": 50,
+    "test": 200
+  },
+  "selection_id": "4fbcc6f1decae6f8286a65ce8d7533d0044bd8ffef4ea53dff2bc86806ac74f5",
+  "selection_path": "results\\hotpotqa\\selections\\abd47e67eee3238cc904c51d9721aa2796691aa6b9972ef9dbf9a09ce51d90cc.json",
+  "schedule_length": 200,
+  "unique_questions_in_planned_schedule": 130,
+  "source_splits": {
+    "train": "train",
+    "validation": "train",
+    "test": "validation"
+  }
+}
