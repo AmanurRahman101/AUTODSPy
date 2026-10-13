@@ -1,0 +1,961 @@
+{
+  "dataset": "gsm8k",
+  "k": 5,
+  "seed": 42,
+  "split": "test",
+  "episode": 30,
+  "selected_checkpoint": "results\\gsm8k\\k5\\seed42\\baseline\\20261013T174921-b1ad8988\\checkpoints\\episode_0030_689ac93f.pt",
+  "questions": 30,
+  "question_ids": [
+    "gsm8k:test:416",
+    "gsm8k:test:573",
+    "gsm8k:test:459",
+    "gsm8k:test:925",
+    "gsm8k:test:55",
+    "gsm8k:test:551",
+    "gsm8k:test:1271",
+    "gsm8k:test:641",
+    "gsm8k:test:286",
+    "gsm8k:test:256",
+    "gsm8k:test:689",
+    "gsm8k:test:156",
+    "gsm8k:test:915",
+    "gsm8k:test:676",
+    "gsm8k:test:501",
+    "gsm8k:test:1216",
+    "gsm8k:test:1034",
+    "gsm8k:test:325",
+    "gsm8k:test:1265",
+    "gsm8k:test:136",
+    "gsm8k:test:697",
+    "gsm8k:test:1043",
+    "gsm8k:test:1311",
+    "gsm8k:test:519",
+    "gsm8k:test:716",
+    "gsm8k:test:51",
+    "gsm8k:test:878",
+    "gsm8k:test:757",
+    "gsm8k:test:1123",
+    "gsm8k:test:63"
+  ],
+  "numeric_exact_match_accuracy": 0.7666666666666667,
+  "semantic_fallback_count": 7,
+  "semantic_fallback_mean_score": 0.0,
+  "semantic_full_credit_count": 0,
+  "mean_reward": 0.7666666666666667,
+  "attempted_pipeline_evaluations": 30,
+  "successful_pipeline_evaluations": 30,
+  "failed_pipeline_evaluations": 0,
+  "cumulative_training_pipeline_evaluations": 150,
+  "seconds": 83.23383879999164,
+  "records": [
+    {
+      "question_id": "gsm8k:test:416",
+      "target": "56",
+      "prediction": "304",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "query -> generated_text",
+          "stop"
+        ],
+        "log_probs": [
+          -0.08518681675195694,
+          -2.10748291015625,
+          0.0
+        ],
+        "module": "CoT",
+        "signature": "query -> generated_text"
+      },
+      "execution": {
+        "output": "To solve for C and D, we can first solve the second equation for C: C = 304 - D\n\nSubstituting this expression for C into the first equation gives us: 2(304 - D) + D = 180\n\nExpanding and simplifying the equation gives us: 608 - 2D + D = 180\n\nCombine like terms: 608 - D = 180\n\nSubtract 608 from both sides: -D = -428\n\nMultiply both sides by -1: D = 428\n\nNow that we have the value of D, we can substitute it back into one of the original equations to solve for C. Using the second equation: C + 428 = 304\n\nSubtract 428 from both sides: C = -124\n\nHowever, the number of camels cannot be negative, so this solution is not valid. Let's re-examine our steps.\n\nUpon re-examination, we realize that we made an error in our previous steps. The correct solution is as follows:\n\nWe can solve the second equation for C: C = 304 - D\n\nSubstituting this expression for C into the first equation gives us: 2(304 - D) + D = 180\n\nExpanding and simplifying the equation gives us: 608 - 2D + D = 180\n\nCombine like terms: 608 - D = 180\n\nSubtract 608 from both sides: -D = -428\n\nMultiply both sides by -1: D = 428\n\nHowever, this solution is also incorrect. Let's try again.\n\nThe correct solution is as follows:\n\nWe can solve the second equation for C: C = 304 - D\n\nSubstituting this expression for C into the first equation gives",
+        "success": true,
+        "error": null,
+        "seconds": 9.806835499941371
+      },
+      "reward": 0.0,
+      "numeric_exact_match": false,
+      "semantic_used": true,
+      "judge_score": 0.0,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:573",
+      "target": "600",
+      "prediction": "600",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "problem -> solution",
+          "stop"
+        ],
+        "log_probs": [
+          -0.049504779279232025,
+          -1.3369975090026855,
+          0.0
+        ],
+        "module": "CoT",
+        "signature": "problem -> solution"
+      },
+      "execution": {
+        "output": "[$600]",
+        "success": true,
+        "error": null,
+        "seconds": 1.5985688000218943
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:459",
+      "target": "2",
+      "prediction": "2",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "query -> response",
+          "stop"
+        ],
+        "log_probs": [
+          -0.04982840269804001,
+          -1.9843206405639648,
+          0.0
+        ],
+        "module": "CoT",
+        "signature": "query -> response"
+      },
+      "execution": {
+        "output": "[2]",
+        "success": true,
+        "error": null,
+        "seconds": 3.0515218999935314
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:925",
+      "target": "2000",
+      "prediction": "2000",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "problem -> solution",
+          "stop"
+        ],
+        "log_probs": [
+          -0.03960608318448067,
+          -1.290844440460205,
+          0.0
+        ],
+        "module": "CoT",
+        "signature": "problem -> solution"
+      },
+      "execution": {
+        "output": "[2000]",
+        "success": true,
+        "error": null,
+        "seconds": 2.1214471000712365
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:55",
+      "target": "14",
+      "prediction": "14",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "query -> generated_text",
+          "stop"
+        ],
+        "log_probs": [
+          -0.08928611129522324,
+          -1.4700477123260498,
+          0.0
+        ],
+        "module": "CoT",
+        "signature": "query -> generated_text"
+      },
+      "execution": {
+        "output": "Jean can fill 28 / 2 = 14 bags with the remaining lollipops.",
+        "success": true,
+        "error": null,
+        "seconds": 1.5112849000142887
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:551",
+      "target": "17",
+      "prediction": "17",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "query -> generated_text",
+          "stop"
+        ],
+        "log_probs": [
+          -0.1058473214507103,
+          -2.2257468700408936,
+          0.0
+        ],
+        "module": "CoT",
+        "signature": "query -> generated_text"
+      },
+      "execution": {
+        "output": "Carly gets $17 back as change.",
+        "success": true,
+        "error": null,
+        "seconds": 1.9024795999284834
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:1271",
+      "target": "43",
+      "prediction": "43",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "word_problem -> solution",
+          "stop"
+        ],
+        "log_probs": [
+          -0.13122785091400146,
+          -2.7436890602111816,
+          0.0
+        ],
+        "module": "CoT",
+        "signature": "word_problem -> solution"
+      },
+      "execution": {
+        "output": "To find the number of pink candies, we need to subtract the total number of red, orange, and yellow candies from the total number of candies in the bag. The total number of red, orange, and yellow candies is 54 + 108 + 27 = 189. Therefore, the number of pink candies is 232 - 189 = 43.",
+        "success": true,
+        "error": null,
+        "seconds": 2.0479765000054613
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:641",
+      "target": "262500",
+      "prediction": "372000",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "problem -> solution",
+          "stop"
+        ],
+        "log_probs": [
+          -0.09224562346935272,
+          -2.0443694591522217,
+          0.0
+        ],
+        "module": "CoT",
+        "signature": "problem -> solution"
+      },
+      "execution": {
+        "output": "$31000 x 12 = $372000",
+        "success": true,
+        "error": null,
+        "seconds": 1.6280186000512913
+      },
+      "reward": 0.0,
+      "numeric_exact_match": false,
+      "semantic_used": true,
+      "judge_score": 0.0,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:286",
+      "target": "90",
+      "prediction": "90",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "math_problem -> answer",
+          "stop"
+        ],
+        "log_probs": [
+          -0.03871585801243782,
+          -2.5520832538604736,
+          0.0
+        ],
+        "module": "CoT",
+        "signature": "math_problem -> answer"
+      },
+      "execution": {
+        "output": "[90]",
+        "success": true,
+        "error": null,
+        "seconds": 1.2990115999709815
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:256",
+      "target": "45",
+      "prediction": "45",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "problem_description -> explanation",
+          "stop"
+        ],
+        "log_probs": [
+          -0.031985845416784286,
+          -2.3574018478393555,
+          0.0
+        ],
+        "module": "CoT",
+        "signature": "problem_description -> explanation"
+      },
+      "execution": {
+        "output": "First, let's calculate the value of the pennies. There are 100 pennies, and each penny is worth $0.01. So, the total value of the pennies is 100 x $0.01 = $1.\nNext, let's calculate the value of the nickels. There are 40 nickels, and each nickel is worth $0.05. So, the total value of the nickels is 40 x $0.05 = $2.\nThen, let's calculate the value of the dimes. There are 20 dimes, and each dime is worth $0.10. So, the total value of the dimes is 20 x $0.10 = $2.\nFinally, let's calculate the value of the dollar bills. There are 40 dollar bills, and each dollar bill is worth $1. So, the total value of the dollar bills is 40 x $1 = $40.\nNow, let's add up the values of all the currencies: $1 + $2 + $2 + $40 = $45.",
+        "success": true,
+        "error": null,
+        "seconds": 3.6737027000635862
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:689",
+      "target": "7",
+      "prediction": "14.8",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "text -> summary",
+          "stop"
+        ],
+        "log_probs": [
+          -0.040428776293992996,
+          -3.8692870140075684,
+          0.0
+        ],
+        "module": "CoT",
+        "signature": "text -> summary"
+      },
+      "execution": {
+        "output": "The total cost of 10 lollipops and 10 candies is $14.80.",
+        "success": true,
+        "error": null,
+        "seconds": 2.0752914000768214
+      },
+      "reward": 0.0,
+      "numeric_exact_match": false,
+      "semantic_used": true,
+      "judge_score": 0.0,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:156",
+      "target": "1400",
+      "prediction": "800",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "query -> response",
+          "stop"
+        ],
+        "log_probs": [
+          -0.0625808835029602,
+          -1.9840543270111084,
+          0.0
+        ],
+        "module": "CoT",
+        "signature": "query -> response"
+      },
+      "execution": {
+        "output": "[800]",
+        "success": true,
+        "error": null,
+        "seconds": 2.696379299974069
+      },
+      "reward": 0.0,
+      "numeric_exact_match": false,
+      "semantic_used": true,
+      "judge_score": 0.0,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:915",
+      "target": "23",
+      "prediction": "23",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "problem_description -> explanation",
+          "stop"
+        ],
+        "log_probs": [
+          -0.058498136699199677,
+          -1.6096385717391968,
+          0.0
+        ],
+        "module": "CoT",
+        "signature": "problem_description -> explanation"
+      },
+      "execution": {
+        "output": "First, we know Bruce works 5 hours on Tuesday. On Wednesday, he works twice the time he works on Tuesday, so he works 2 * 5 = 10 hours. On Thursday, he works 2 hours less than the time he works on Wednesday, so he works 10 - 2 = 8 hours. Now, we add the hours he works each day: 5 (Tuesday) + 10 (Wednesday) + 8 (Thursday) = 23 hours.",
+        "success": true,
+        "error": null,
+        "seconds": 2.0648501999676228
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:676",
+      "target": "240",
+      "prediction": "240",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "word_problem -> solution",
+          "stop"
+        ],
+        "log_probs": [
+          -0.02578883059322834,
+          -2.358563184738159,
+          0.0
+        ],
+        "module": "CoT",
+        "signature": "word_problem -> solution"
+      },
+      "execution": {
+        "output": "[240]",
+        "success": true,
+        "error": null,
+        "seconds": 2.54021299991291
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:501",
+      "target": "273",
+      "prediction": "273",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "question -> hypothesis",
+          "stop"
+        ],
+        "log_probs": [
+          -0.11183533072471619,
+          -5.181323051452637,
+          0.0
+        ],
+        "module": "CoT",
+        "signature": "question -> hypothesis"
+      },
+      "execution": {
+        "output": "Mariah used 1/4 of a skein, which is (1/4) * 364 = 91 yards. Her grandma used 2/4 of a skein, which is (2/4) * 364 = 182 yards. The total yards used is 91 + 182 = 273 yards.",
+        "success": true,
+        "error": null,
+        "seconds": 2.915446399943903
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:1216",
+      "target": "20",
+      "prediction": "20",
+      "trajectory": {
+        "actions": [
+          "Predict",
+          "problem_description -> explanation",
+          "stop"
+        ],
+        "log_probs": [
+          -1.7583622932434082,
+          -0.8145092129707336,
+          0.0
+        ],
+        "module": "Predict",
+        "signature": "problem_description -> explanation"
+      },
+      "execution": {
+        "output": "To solve this problem, we need to calculate the total number of people on the bus after each stop and then determine how many more people are needed to fill the remaining spaces.\n\nInitially, the bus had 20 people. At the first stop, 40 people entered, making the total 20 + 40 = 60 people.\n\nAt the second station, 3/4 of the 40 people who entered at the first stop entered the bus. This means 3/4 * 40 = 30 people entered at the second station. The total number of people on the bus now is 60 + 30 = 90 people.\n\nAt the third station, the number of passengers doubled, meaning the number of people on the bus became 2 * 90 = 180 people.\n\nSince the bus has a capacity of 200 people, the remaining spaces can be calculated by subtracting the current number of people from the capacity: 200 - 180 = 20 people.\n\nTherefore, 20 more people are required to fill the remaining spaces on the bus.",
+        "success": true,
+        "error": null,
+        "seconds": 3.5232876000227407
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:1034",
+      "target": "66",
+      "prediction": "66",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "query -> generated_text",
+          "stop"
+        ],
+        "log_probs": [
+          -0.049466315656900406,
+          -1.8475946187973022,
+          0.0
+        ],
+        "module": "CoT",
+        "signature": "query -> generated_text"
+      },
+      "execution": {
+        "output": "[66]",
+        "success": true,
+        "error": null,
+        "seconds": 1.6083574999356642
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:325",
+      "target": "224000",
+      "prediction": "224000",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "problem_description -> explanation",
+          "stop"
+        ],
+        "log_probs": [
+          -0.10233711451292038,
+          -1.7587800025939941,
+          0.0
+        ],
+        "module": "CoT",
+        "signature": "problem_description -> explanation"
+      },
+      "execution": {
+        "output": "To solve this problem, we need to find the number of Junior programmers and their total monthly payment, and then add the monthly payment of Senior programmers. First, we find the number of Junior programmers: 2/5 of 100 is (2/5) * 100 = 40. Then, we find the total monthly payment of Junior programmers: 40 * $2000 = $80,000. Since Senior programmers are paid $400 more than Junior programmers, their monthly payment is $2000 + $400 = $2400. The total monthly payment of Senior programmers is 60 * $2400 = $144,000. Therefore, the total amount of money the company pays to all the programmers per month is $80,000 + $144,000 = $224,000.",
+        "success": true,
+        "error": null,
+        "seconds": 3.7846937999129295
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:1265",
+      "target": "36",
+      "prediction": "27",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "math_problem -> answer",
+          "stop"
+        ],
+        "log_probs": [
+          -0.048584602773189545,
+          -1.6881942749023438,
+          0.0
+        ],
+        "module": "CoT",
+        "signature": "math_problem -> answer"
+      },
+      "execution": {
+        "output": "[27]",
+        "success": true,
+        "error": null,
+        "seconds": 2.5451847000513226
+      },
+      "reward": 0.0,
+      "numeric_exact_match": false,
+      "semantic_used": true,
+      "judge_score": 0.0,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:136",
+      "target": "6",
+      "prediction": "6",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "word_problem -> solution",
+          "stop"
+        ],
+        "log_probs": [
+          -0.06638635694980621,
+          -2.1974854469299316,
+          0.0
+        ],
+        "module": "CoT",
+        "signature": "word_problem -> solution"
+      },
+      "execution": {
+        "output": "[6]",
+        "success": true,
+        "error": null,
+        "seconds": 2.2144207999808714
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:697",
+      "target": "27",
+      "prediction": "27",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "word_problem -> solution",
+          "stop"
+        ],
+        "log_probs": [
+          -0.06334438920021057,
+          -2.766415596008301,
+          0.0
+        ],
+        "module": "CoT",
+        "signature": "word_problem -> solution"
+      },
+      "execution": {
+        "output": "[27]",
+        "success": true,
+        "error": null,
+        "seconds": 1.610516699962318
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:1043",
+      "target": "130000",
+      "prediction": "130000",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "problem_description -> explanation",
+          "stop"
+        ],
+        "log_probs": [
+          -0.039635416120290756,
+          -1.2612216472625732,
+          0.0
+        ],
+        "module": "CoT",
+        "signature": "problem_description -> explanation"
+      },
+      "execution": {
+        "output": "Since there are 26 countries in South America and each country has 5 cities with a population of 1000 people, we can calculate the total population as follows: \nTotal population = Number of countries * Number of cities per country * Population per city \nTotal population = 26 * 5 * 1000 \nTotal population = 130000 \n\nTherefore, the total population of South America is 130000 people.",
+        "success": true,
+        "error": null,
+        "seconds": 2.1239889999851584
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:1311",
+      "target": "594",
+      "prediction": "6",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "problem_description -> explanation",
+          "stop"
+        ],
+        "log_probs": [
+          -0.02789575420320034,
+          -1.1364294290542603,
+          0.0
+        ],
+        "module": "CoT",
+        "signature": "problem_description -> explanation"
+      },
+      "execution": {
+        "output": "This calculation is based on the ratio of line to dock length, which is 3:1. The caretaker needs 3 times the length of the dock in line, so for 200 feet of dock, he needs 600 feet of line. Since he already has 6 feet of line, we subtract this from the total amount needed to find the amount he needs to buy.",
+        "success": true,
+        "error": null,
+        "seconds": 2.7691143000265583
+      },
+      "reward": 0.0,
+      "numeric_exact_match": false,
+      "semantic_used": true,
+      "judge_score": 0.0,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:519",
+      "target": "280",
+      "prediction": "280",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "problem -> solution",
+          "stop"
+        ],
+        "log_probs": [
+          -0.0490838997066021,
+          -1.6323648691177368,
+          0.0
+        ],
+        "module": "CoT",
+        "signature": "problem -> solution"
+      },
+      "execution": {
+        "output": "240 + 40 = 280 minutes",
+        "success": true,
+        "error": null,
+        "seconds": 1.4571505999192595
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:716",
+      "target": "770",
+      "prediction": "770",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "question -> answer",
+          "stop"
+        ],
+        "log_probs": [
+          -0.1881486177444458,
+          -4.722346305847168,
+          0.0
+        ],
+        "module": "CoT",
+        "signature": "question -> answer"
+      },
+      "execution": {
+        "output": "[770]",
+        "success": true,
+        "error": null,
+        "seconds": 2.0712438999908045
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:51",
+      "target": "5",
+      "prediction": "5",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "math_problem -> answer",
+          "stop"
+        ],
+        "log_probs": [
+          -0.06280481070280075,
+          -1.222914218902588,
+          0.0
+        ],
+        "module": "CoT",
+        "signature": "math_problem -> answer"
+      },
+      "execution": {
+        "output": "[5]",
+        "success": true,
+        "error": null,
+        "seconds": 1.693394299945794
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:878",
+      "target": "5",
+      "prediction": "5",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "math_problem -> answer",
+          "stop"
+        ],
+        "log_probs": [
+          -0.01891515776515007,
+          -2.0475449562072754,
+          0.0
+        ],
+        "module": "CoT",
+        "signature": "math_problem -> answer"
+      },
+      "execution": {
+        "output": "[5]",
+        "success": true,
+        "error": null,
+        "seconds": 1.8615785000147298
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:757",
+      "target": "75",
+      "prediction": "75",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "problem -> solution",
+          "stop"
+        ],
+        "log_probs": [
+          -0.16723105311393738,
+          -1.7163968086242676,
+          0.0
+        ],
+        "module": "CoT",
+        "signature": "problem -> solution"
+      },
+      "execution": {
+        "output": "[75]",
+        "success": true,
+        "error": null,
+        "seconds": 2.671759800054133
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:1123",
+      "target": "105",
+      "prediction": "105",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "problem -> solution",
+          "stop"
+        ],
+        "log_probs": [
+          -0.13053330779075623,
+          -1.6007994413375854,
+          0.0
+        ],
+        "module": "CoT",
+        "signature": "problem -> solution"
+      },
+      "execution": {
+        "output": "Elijah's first dog weighs (1/4) * 60 = 15 pounds. Elijah's second dog weighs (1/2) * 60 = 30 pounds. To find the total weight of both dogs, we add the weights of Elijah's dogs and Kory's dog: 15 + 30 + 60 = 105 pounds.",
+        "success": true,
+        "error": null,
+        "seconds": 3.343031800002791
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:63",
+      "target": "1596",
+      "prediction": null,
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "problem_description -> explanation",
+          "stop"
+        ],
+        "log_probs": [
+          -0.0645337700843811,
+          -2.2798972129821777,
+          0.0
+        ],
+        "module": "CoT",
+        "signature": "problem_description -> explanation"
+      },
+      "execution": {
+        "output": "This problem requires the calculation of the total amount Aleena paid for the streaming service by the end of the year, taking into account the initial amount charged for the first half of the year and the reduced amount charged for the second half of the year.",
+        "success": true,
+        "error": null,
+        "seconds": 3.5345443000551313
+      },
+      "reward": 0.0,
+      "numeric_exact_match": false,
+      "semantic_used": true,
+      "judge_score": 0.0,
+      "judge_error": null
+    }
+  ],
+  "execution_llm_calls": 37,
+  "physical_http_requests": null,
+  "prompt_tokens": 9918,
+  "generated_tokens": 5176,
+  "llm_seconds": 76.37632809998468,
+  "llm_failed_calls": 0,
+  "call_count_definition": "DSPy LM.forward attempts, including semantic judge and adapter retries",
+  "checkpoint_selection_rule": "maximum validation numeric EM; earliest episode on ties"
+}

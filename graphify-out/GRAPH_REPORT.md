@@ -1,17 +1,17 @@
 # Graph Report - AUTODSPy  (2026-10-13)
 
 ## Corpus Check
-- 116 files · ~173,631 words
+- 131 files · ~178,862 words
 - Verdict: corpus is large enough that graph structure adds value.
-- Unclassified: 15 file(s) not represented in the graph (top: .ipynb 6, (none) 4, .jsonl 3)
+- Unclassified: 22 file(s) not represented in the graph (top: .jsonl 9, .ipynb 6, (none) 4)
 
 ## Summary
-- 767 nodes · 767 edges · 65 communities (49 shown, 16 thin omitted)
+- 773 nodes · 772 edges · 66 communities (50 shown, 16 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 15 edges (avg confidence: 0.94)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `f32f3c34`
+- Built from commit: `4432567c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -19,7 +19,7 @@
 - run_grpo_baseline.py
 - AutoDSPy Static-K Research — Master Specification
 - Issue tracker: GitHub
-- Project progress and session handoff
+- IMPLEMENTATION_PLAN.md
 - Triage
 - teach/SKILL.md
 - DSPy Pipeline Optimization with Reinforcement Learning
@@ -71,7 +71,8 @@
 - agents/triage-labels.md
 - Static-K experiment guide
 - Completed K=5 GSM8K run diagnosis
-- Process
+- Project progress and session handoff
+- K=5 controlled stability pilot
 
 ## God Nodes (most connected - your core abstractions)
 1. `Decisions, assumptions, and open research questions` - 31 edges
@@ -86,25 +87,25 @@
 10. `DSPy Pipeline Optimization with Reinforcement Learning` - 10 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `1. Pin the fixed point` --references--> `main()`  [INFERRED]
-  .agents/skills/code-review/SKILL.md → run_grpo_baseline.py
 - `Reward semantics and failure handling` --references--> `compute_reward()`  [INFERRED]
   docs/PHASE_1_AUDIT.md → run_grpo_baseline.py
 - `Evaluation can fail or use the wrong policy` --references--> `generate_pipeline()`  [INFERRED]
   docs/PHASE_1_AUDIT.md → run_grpo_baseline.py
 - `Initialization and gradient ownership` --references--> `generate_pipeline()`  [INFERRED]
   docs/PHASE_1_AUDIT.md → run_grpo_baseline.py
+- `1. Pin the fixed point` --references--> `main()`  [INFERRED]
+  .agents/skills/code-review/SKILL.md → run_grpo_baseline.py
 - `7. Notebook A — GSM8K` --references--> `main()`  [INFERRED]
   docs/MASTER_SPEC.md → run_grpo_baseline.py
 
 ## Import Cycles
 - None detected.
 
-## Communities (65 total, 16 thin omitted)
+## Communities (66 total, 16 thin omitted)
 
 ### Community 0 - "run_grpo_baseline.py"
-Cohesion: 0.07
-Nodes (29): 6. Preserve the Original DSPy Action Space, 1. Scope and evidence conventions, 2. Published methodology, released code, and project protocol, 3. GPT-2 and policy action audit, 4. Verified correctness and operational issues, 5. Dataset and HotpotQA task audit, 6. Environment and hardware observations, 7. Actual checks and outcomes (+21 more)
+Cohesion: 0.05
+Nodes (36): 1. Pin the fixed point, 2. Identify the spec source, 3. Identify the standards sources, 4. Spawn both sub-agents in parallel, 5. Aggregate, Process, Why two axes, 6. Preserve the Original DSPy Action Space (+28 more)
 
 ### Community 1 - "AutoDSPy Static-K Research — Master Specification"
 Cohesion: 0.05
@@ -114,9 +115,9 @@ Nodes (44): 10. Independent K Experiments, 11. Training Correctness, 12. Checkpo
 Cohesion: 0.06
 Nodes (30): Before exploring, read these, Domain Docs, File structure, Flag ADR conflicts, Use the glossary's vocabulary, Conventions, Issue tracker: GitHub, Pull requests as a triage surface (+22 more)
 
-### Community 3 - "Project progress and session handoff"
-Cohesion: 0.05
-Nodes (42): Phase 1 audit artifacts, Phase 2 verification additions, Phase 3 verification additions, Execution rules and session handoff, Phase 1 — Audit original notebook and research paper, Phase 2 — Implement and validate the complete GSM8K notebook, Phase 3 — Implement and validate the independent HotpotQA notebook, Phase 4 — Finalize management, statistics, plots, and reproducibility (+34 more)
+### Community 3 - "IMPLEMENTATION_PLAN.md"
+Cohesion: 0.07
+Nodes (29): Phase 1 audit artifacts, Phase 2 verification additions, Phase 3 verification additions, Execution rules and session handoff, Phase 1 — Audit original notebook and research paper, Phase 2 — Implement and validate the complete GSM8K notebook, Phase 3 — Implement and validate the independent HotpotQA notebook, Phase 4 — Finalize management, statistics, plots, and reproducibility (+21 more)
 
 ### Community 4 - "Triage"
 Cohesion: 0.06
@@ -294,28 +295,32 @@ Nodes (11): A K=5 smoke run, Changing K, budgets and presets, Comparisons, plots
 Cohesion: 0.20
 Nodes (9): All episodes, Completed K=5 GSM8K run diagnosis, Finding, Fractional-mean groups, Gradient and optimizer checks, Other observed issues and limits, Probability and entropy evidence, Reproduction and preservation (+1 more)
 
-### Community 64 - "Process"
-Cohesion: 0.25
-Nodes (7): 1. Pin the fixed point, 2. Identify the spec source, 3. Identify the standards sources, 4. Spawn both sub-agents in parallel, 5. Aggregate, Process, Why two axes
+### Community 64 - "Project progress and session handoff"
+Cohesion: 0.15
+Nodes (13): Completed Phase 1 work, Completed Phase 2 work and verification, Completed Phase 3 (2026-10-12), Completed Phase 4 (2026-10-12), Completed preparation, Current milestone, Pending work and unresolved questions, Phase status (+5 more)
+
+### Community 65 - "K=5 controlled stability pilot"
+Cohesion: 0.33
+Nodes (5): Controls, K=5 controlled stability pilot, Measured stability, Rewards and outcomes, Verification and preservation
 
 ## Knowledge Gaps
-- **509 isolated node(s):** `block-dangerous-git.sh script`, `The five options`, `The tree`, `Primary and secondary sources`, `These are judgement calls` (+504 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 557 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **513 isolated node(s):** `block-dangerous-git.sh script`, `The five options`, `The tree`, `Primary and secondary sources`, `These are judgement calls` (+508 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 562 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **16 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `AutoDSPy Static-K Research — Master Specification` connect `AutoDSPy Static-K Research — Master Specification` to `run_grpo_baseline.py`, `Project progress and session handoff`?**
+- **Why does `AutoDSPy Static-K Research — Master Specification` connect `AutoDSPy Static-K Research — Master Specification` to `run_grpo_baseline.py`, `IMPLEMENTATION_PLAN.md`?**
   _High betweenness centrality (0.046) - this node is a cross-community bridge._
-- **Why does `Decisions, assumptions, and open research questions` connect `Decisions, assumptions, and open research questions` to `Project progress and session handoff`?**
+- **Why does `Decisions, assumptions, and open research questions` connect `Decisions, assumptions, and open research questions` to `IMPLEMENTATION_PLAN.md`?**
   _High betweenness centrality (0.022) - this node is a cross-community bridge._
 - **Why does `6. Preserve the Original DSPy Action Space` connect `run_grpo_baseline.py` to `AutoDSPy Static-K Research — Master Specification`?**
-  _High betweenness centrality (0.022) - this node is a cross-community bridge._
+  _High betweenness centrality (0.021) - this node is a cross-community bridge._
 - **What connects `block-dangerous-git.sh script`, `The five options`, `The tree` to the rest of the system?**
-  _509 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _513 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `run_grpo_baseline.py` be split into smaller, more focused modules?**
-  _Cohesion score 0.06585365853658537 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05272108843537415 - nodes in this community are weakly interconnected._
 - **Should `AutoDSPy Static-K Research — Master Specification` be split into smaller, more focused modules?**
   _Cohesion score 0.045454545454545456 - nodes in this community are weakly interconnected._
 - **Should `Issue tracker: GitHub` be split into smaller, more focused modules?**

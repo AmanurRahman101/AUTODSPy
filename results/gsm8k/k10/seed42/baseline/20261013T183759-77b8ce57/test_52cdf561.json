@@ -1,0 +1,961 @@
+{
+  "dataset": "gsm8k",
+  "k": 10,
+  "seed": 42,
+  "split": "test",
+  "episode": 30,
+  "selected_checkpoint": "results\\gsm8k\\k10\\seed42\\baseline\\20261013T183759-77b8ce57\\checkpoints\\episode_0030_ebdecd4f.pt",
+  "questions": 30,
+  "question_ids": [
+    "gsm8k:test:416",
+    "gsm8k:test:573",
+    "gsm8k:test:459",
+    "gsm8k:test:925",
+    "gsm8k:test:55",
+    "gsm8k:test:551",
+    "gsm8k:test:1271",
+    "gsm8k:test:641",
+    "gsm8k:test:286",
+    "gsm8k:test:256",
+    "gsm8k:test:689",
+    "gsm8k:test:156",
+    "gsm8k:test:915",
+    "gsm8k:test:676",
+    "gsm8k:test:501",
+    "gsm8k:test:1216",
+    "gsm8k:test:1034",
+    "gsm8k:test:325",
+    "gsm8k:test:1265",
+    "gsm8k:test:136",
+    "gsm8k:test:697",
+    "gsm8k:test:1043",
+    "gsm8k:test:1311",
+    "gsm8k:test:519",
+    "gsm8k:test:716",
+    "gsm8k:test:51",
+    "gsm8k:test:878",
+    "gsm8k:test:757",
+    "gsm8k:test:1123",
+    "gsm8k:test:63"
+  ],
+  "numeric_exact_match_accuracy": 0.7666666666666667,
+  "semantic_fallback_count": 7,
+  "semantic_fallback_mean_score": 0.0,
+  "semantic_full_credit_count": 0,
+  "mean_reward": 0.7666666666666667,
+  "attempted_pipeline_evaluations": 30,
+  "successful_pipeline_evaluations": 30,
+  "failed_pipeline_evaluations": 0,
+  "cumulative_training_pipeline_evaluations": 300,
+  "seconds": 61.20164320000913,
+  "records": [
+    {
+      "question_id": "gsm8k:test:416",
+      "target": "56",
+      "prediction": "56",
+      "trajectory": {
+        "actions": [
+          "Predict",
+          "question -> hypothesis",
+          "stop"
+        ],
+        "log_probs": [
+          -0.01652189902961254,
+          -1.3337651491165161,
+          0.0
+        ],
+        "module": "Predict",
+        "signature": "question -> hypothesis"
+      },
+      "execution": {
+        "output": "Let's denote the number of camels as C and the number of dromedaries as D. We are given that camels have 2 humps each and dromedaries have 1 hump each. We can set up the following equations based on the given information:\n\n2C + D = 304 (equation 1, total bumps)\nC + D = 180 (equation 2, total heads)\n\nWe can solve equation 2 for C: C = 180 - D\n\nSubstituting this expression for C into equation 1, we get:\n2(180 - D) + D = 304\n360 - 2D + D = 304\n360 - D = 304\nD = 56\n\nTherefore, there are 56 dromedaries.",
+        "success": true,
+        "error": null,
+        "seconds": 6.045461899950169
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:573",
+      "target": "600",
+      "prediction": "600",
+      "trajectory": {
+        "actions": [
+          "Predict",
+          "question -> answer",
+          "stop"
+        ],
+        "log_probs": [
+          -0.052959077060222626,
+          -1.6389870643615723,
+          0.0
+        ],
+        "module": "Predict",
+        "signature": "question -> answer"
+      },
+      "execution": {
+        "output": "To calculate the remaining balance, we need to subtract the total amount withdrawn from the initial balance. Since Katina removes $100 every month, the total amount withdrawn in a year is $100 * 12 = $1200. In 2 years, the total amount withdrawn is $1200 * 2 = $2400. \n\nNow, subtract the total amount withdrawn from the initial balance: $3000 - $2400 = $600. \n\nSo, the remaining balance after 2 years will be $600.",
+        "success": true,
+        "error": null,
+        "seconds": 1.545183700043708
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:459",
+      "target": "2",
+      "prediction": "2",
+      "trajectory": {
+        "actions": [
+          "Predict",
+          "question -> reasoning",
+          "stop"
+        ],
+        "log_probs": [
+          -0.041166823357343674,
+          -1.6674797534942627,
+          0.0
+        ],
+        "module": "Predict",
+        "signature": "question -> reasoning"
+      },
+      "execution": {
+        "output": "To find the total weight of the feed, we need to calculate the weight of each type of feed and add them together. The weight of the sugar cubes is 2 * 1 = 2 pounds. The weight of the carrots is 4 * 12 = 48 pounds. The weight of the hay is 42 * 75 = 3150 pounds. The weight of the oats is 20 * 65 = 1300 pounds.\n\nThe total weight of the feed is 2 + 48 + 3150 + 1300 = 4400 pounds.\n\nSince the farmer's truck can carry 2250 pounds at a time, we need to divide the total weight of the feed by the truck's capacity to find the number of trips. 4400 / 2250 = 1.96.\n\nSince we can't have a fraction of a trip, we round up to the nearest whole number. Therefore, the farmer needs to make 2 trips to transport all the feed.",
+        "success": true,
+        "error": null,
+        "seconds": 2.551493000006303
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:925",
+      "target": "2000",
+      "prediction": "2000",
+      "trajectory": {
+        "actions": [
+          "Predict",
+          "question -> reasoning",
+          "stop"
+        ],
+        "log_probs": [
+          -0.04778178036212921,
+          -1.473525047302246,
+          0.0
+        ],
+        "module": "Predict",
+        "signature": "question -> reasoning"
+      },
+      "execution": {
+        "output": "To solve this problem, we need to calculate the amount of water in the tank after 6 days. We know that the tank is emptied at a rate of 500 gallons of water per day. So, after 6 days, the tank will be emptied by 500 * 6 = 3000 gallons of water.\n\nWe also know that the tank was filled with half the amount of water in the pool, which is 10000 / 2 = 5000 gallons. Since the tank was filled with 5000 gallons, and 3000 gallons will be emptied, the amount of water remaining in the tank will be 5000 - 3000 = 2000 gallons.\n\nTherefore, the amount of water remaining in the tank after 6 days is 2000 gallons.",
+        "success": true,
+        "error": null,
+        "seconds": 2.1006054000463337
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:55",
+      "target": "14",
+      "prediction": "2",
+      "trajectory": {
+        "actions": [
+          "Predict",
+          "question -> reasoning",
+          "stop"
+        ],
+        "log_probs": [
+          -0.01927116885781288,
+          -1.3335766792297363,
+          0.0
+        ],
+        "module": "Predict",
+        "signature": "question -> reasoning"
+      },
+      "execution": {
+        "output": "To find the number of bags Jean can fill, we need to divide the remaining lollipops by the number of lollipops per bag. Jean has 30 - 2 = 28 lollipops left. Since Jean wants to package 2 lollipops in one bag, we can divide 28 by 2 to get the number of bags.",
+        "success": true,
+        "error": null,
+        "seconds": 1.1413157999049872
+      },
+      "reward": 0.0,
+      "numeric_exact_match": false,
+      "semantic_used": true,
+      "judge_score": 0.0,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:551",
+      "target": "17",
+      "prediction": "17",
+      "trajectory": {
+        "actions": [
+          "Predict",
+          "question -> answer",
+          "stop"
+        ],
+        "log_probs": [
+          -0.010469396598637104,
+          -1.2960240840911865,
+          0.0
+        ],
+        "module": "Predict",
+        "signature": "question -> answer"
+      },
+      "execution": {
+        "output": "Carly's total cost is (5 x $4) + (10 x $0.30) + (5 x $2) = $20 + $3 + $10 = $33.\nShe pays with a $50 bill, so her change is $50 - $33 = $17.",
+        "success": true,
+        "error": null,
+        "seconds": 0.9366537999594584
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:1271",
+      "target": "43",
+      "prediction": "43",
+      "trajectory": {
+        "actions": [
+          "Predict",
+          "question -> hypothesis",
+          "stop"
+        ],
+        "log_probs": [
+          -0.006726597901433706,
+          -1.2208365201950073,
+          0.0
+        ],
+        "module": "Predict",
+        "signature": "question -> hypothesis"
+      },
+      "execution": {
+        "output": "The number of pink candies can be found by subtracting the total number of red, orange, and yellow candies from the total number of candies in the bag. We know there are 54 red candies, twice that amount (108 orange candies), and half as many yellow candies as red candies (27 yellow candies). So, the total number of non-pink candies is 54 + 108 + 27 = 189. Subtracting this from the total number of candies (232) gives us 232 - 189 = 43 pink candies.",
+        "success": true,
+        "error": null,
+        "seconds": 1.53932610002812
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:641",
+      "target": "262500",
+      "prediction": "372000",
+      "trajectory": {
+        "actions": [
+          "Predict",
+          "word_problem -> solution",
+          "stop"
+        ],
+        "log_probs": [
+          -0.00865151360630989,
+          -1.6930809020996094,
+          0.0
+        ],
+        "module": "Predict",
+        "signature": "word_problem -> solution"
+      },
+      "execution": {
+        "output": "First, calculate the monthly salary with the 5% raise: $20000 * 1.05 = $21000\nThen, add the bonus worth half a month's salary: $21000 + ($20000 / 2) = $21000 + $10000 = $31000\nMultiply the monthly salary by 12 to get the yearly salary: $31000 * 12 = $372000\n{completed}",
+        "success": true,
+        "error": null,
+        "seconds": 1.285089899902232
+      },
+      "reward": 0.0,
+      "numeric_exact_match": false,
+      "semantic_used": true,
+      "judge_score": 0.0,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:286",
+      "target": "90",
+      "prediction": "90",
+      "trajectory": {
+        "actions": [
+          "Predict",
+          "question -> reasoning",
+          "stop"
+        ],
+        "log_probs": [
+          -0.05972933769226074,
+          -1.258251428604126,
+          0.0
+        ],
+        "module": "Predict",
+        "signature": "question -> reasoning"
+      },
+      "execution": {
+        "output": "To solve this problem, we need to calculate the total amount of money Kelly has initially and then subtract the cost of the can of pop. Kelly has 5 quarters, which is 5 x 25 = 125 cents, and 2 dimes, which is 2 x 10 = 20 cents. So, the total amount of money Kelly has is 125 + 20 = 145 cents. The can of pop costs 55 cents. To find out how many cents Kelly will have left, we subtract 55 from 145, which gives us 145 - 55 = 90 cents.",
+        "success": true,
+        "error": null,
+        "seconds": 1.777933800010942
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:256",
+      "target": "45",
+      "prediction": "45",
+      "trajectory": {
+        "actions": [
+          "Predict",
+          "question -> reasoning",
+          "stop"
+        ],
+        "log_probs": [
+          -0.04440838843584061,
+          -1.262191653251648,
+          0.0
+        ],
+        "module": "Predict",
+        "signature": "question -> reasoning"
+      },
+      "execution": {
+        "output": "To find the total amount of money in Brady's piggy bank, we need to calculate the value of each type of currency and add them together. We have 100 pennies, 40 nickels, 20 dimes, and 40 pieces of dollar bills.\n\nThe value of the pennies is 100 x $0.01 = $1.\nThe value of the nickels is 40 x $0.05 = $2.\nThe value of the dimes is 20 x $0.10 = $2.\nThe value of the dollar bills is 40 x $1 = $40.\n\nNow, let's add up the values: $1 + $2 + $2 + $40 = $45.\n\nTherefore, Brady has a total of $45 in his piggy bank.",
+        "success": true,
+        "error": null,
+        "seconds": 2.2352258000755683
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:689",
+      "target": "7",
+      "prediction": "36",
+      "trajectory": {
+        "actions": [
+          "Predict",
+          "question -> reasoning",
+          "stop"
+        ],
+        "log_probs": [
+          -0.05126796290278435,
+          -1.2654610872268677,
+          0.0
+        ],
+        "module": "Predict",
+        "signature": "question -> reasoning"
+      },
+      "execution": {
+        "output": "To find the total cost of 10 lollipops and 10 candies, we need to calculate the cost of each separately and then add them together. The cost of 10 lollipops at $0.40 each is 10 x $0.40 = $4.00. The cost of 10 candies at $3.20 each is 10 x $3.20 = $32.00. Adding these two amounts together gives us $4.00 + $32.00 = $36.00.",
+        "success": true,
+        "error": null,
+        "seconds": 1.6101948000723496
+      },
+      "reward": 0.0,
+      "numeric_exact_match": false,
+      "semantic_used": true,
+      "judge_score": 0.0,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:156",
+      "target": "1400",
+      "prediction": "2",
+      "trajectory": {
+        "actions": [
+          "Predict",
+          "question -> hypothesis",
+          "stop"
+        ],
+        "log_probs": [
+          -0.023707959800958633,
+          -1.669418454170227,
+          0.0
+        ],
+        "module": "Predict",
+        "signature": "question -> hypothesis"
+      },
+      "execution": {
+        "output": "The zookeeper needs to order a total of (200 + 400 + 100) * 1.5 = 600 * 1.5 = 900 bananas to last for 2 months.",
+        "success": true,
+        "error": null,
+        "seconds": 0.8692130000563338
+      },
+      "reward": 0.0,
+      "numeric_exact_match": false,
+      "semantic_used": true,
+      "judge_score": 0.0,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:915",
+      "target": "23",
+      "prediction": "23",
+      "trajectory": {
+        "actions": [
+          "Predict",
+          "problem_description -> explanation",
+          "stop"
+        ],
+        "log_probs": [
+          -0.016662128269672394,
+          -2.4794576168060303,
+          0.0
+        ],
+        "module": "Predict",
+        "signature": "problem_description -> explanation"
+      },
+      "execution": {
+        "output": "To find the total hours Bruce works in the three days, we need to calculate the hours he works each day and then add them together. \nOn Tuesday, Bruce works 5 hours. \nOn Wednesday, he works twice the time he works on Tuesday, so he works 2 * 5 = 10 hours. \nOn Thursday, he works 2 hours less than the time he works on Wednesday, so he works 10 - 2 = 8 hours. \nNow, we add the hours he works each day: 5 + 10 + 8 = 23 hours. \nTherefore, Bruce works a total of 23 hours in the three days.",
+        "success": true,
+        "error": null,
+        "seconds": 1.837074000039138
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:676",
+      "target": "240",
+      "prediction": "240",
+      "trajectory": {
+        "actions": [
+          "Predict",
+          "word_problem -> solution",
+          "stop"
+        ],
+        "log_probs": [
+          -0.049696605652570724,
+          -1.6717958450317383,
+          0.0
+        ],
+        "module": "Predict",
+        "signature": "word_problem -> solution"
+      },
+      "execution": {
+        "output": "To find the amount Skyler invested, we first need to find the amount Dylan invested, which is 2/5 of the total amount. \n2/5 of $1200 is (2/5) * 1200 = 480. \nThe remaining amount is $1200 - $480 = $720. \nFrances invested 2/3 of this amount, which is (2/3) * 720 = 480. \nSo, the amount Skyler invested is $720 - $480 = $240. \n[240]",
+        "success": true,
+        "error": null,
+        "seconds": 1.834525499958545
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:501",
+      "target": "273",
+      "prediction": "273",
+      "trajectory": {
+        "actions": [
+          "Predict",
+          "question -> hypothesis",
+          "stop"
+        ],
+        "log_probs": [
+          -0.028571048751473427,
+          -1.3725881576538086,
+          0.0
+        ],
+        "module": "Predict",
+        "signature": "question -> hypothesis"
+      },
+      "execution": {
+        "output": "To find the total yards of yarn used, we need to add the yards used by Mariah and her grandma. Mariah used 1/4 of a skein, which is (1/4) * 364 = 91 yards. Her grandma used 1/2 of a skein, which is (1/2) * 364 = 182 yards. So, the total yards used is 91 + 182 = 273 yards.",
+        "success": true,
+        "error": null,
+        "seconds": 1.4262981999199837
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:1216",
+      "target": "20",
+      "prediction": "20",
+      "trajectory": {
+        "actions": [
+          "Predict",
+          "question -> reasoning",
+          "stop"
+        ],
+        "log_probs": [
+          -0.020522164180874825,
+          -1.9880694150924683,
+          0.0
+        ],
+        "module": "Predict",
+        "signature": "question -> reasoning"
+      },
+      "execution": {
+        "output": "To find the total number of people required to fill the remaining spaces on the bus, we need to calculate the number of people on the bus after each stop and then find the difference between the bus's capacity and the number of people on the bus.\n\n1. Initially, the bus had 20 people.\n2. At the first stop, 40 people entered the bus, making the total number of people 20 + 40 = 60.\n3. At the second station, 3/4 of the 40 people who entered at the first stop entered the bus. This is (3/4) * 40 = 30 people. Now, the total number of people on the bus is 60 + 30 = 90.\n4. At the third station, the number of passengers doubled, making the total number of people 90 * 2 = 180.\n\nNow, we need to find the number of people required to fill the remaining spaces on the bus. The bus has a capacity of 200 people, and there are 180 people on the bus. So, the number of people required to fill the remaining spaces is 200 - 180 = 20.",
+        "success": true,
+        "error": null,
+        "seconds": 3.4455672999611124
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:1034",
+      "target": "66",
+      "prediction": "66",
+      "trajectory": {
+        "actions": [
+          "Predict",
+          "question -> reasoning",
+          "stop"
+        ],
+        "log_probs": [
+          -0.05051387473940849,
+          -1.5056933164596558,
+          0.0
+        ],
+        "module": "Predict",
+        "signature": "question -> reasoning"
+      },
+      "execution": {
+        "output": "Ted starts with $200. He buys 3 books for 16 dollars each, so the total cost of the books is 3 x 16 = 48 dollars. He also buys 3 pencils for 6 dollars each, so the total cost of the pencils is 3 x 6 = 18 dollars. To find the total amount spent, we need to add the cost of the books and the cost of the pencils: 48 + 18 = 66 dollars.",
+        "success": true,
+        "error": null,
+        "seconds": 1.517734399996698
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:325",
+      "target": "224000",
+      "prediction": "224000",
+      "trajectory": {
+        "actions": [
+          "Predict",
+          "word_problem -> solution",
+          "stop"
+        ],
+        "log_probs": [
+          -0.02736801840364933,
+          -0.3995651602745056,
+          0.0
+        ],
+        "module": "Predict",
+        "signature": "word_problem -> solution"
+      },
+      "execution": {
+        "output": "To find the total amount of money the company pays to all the programmers per month, we need to calculate the number of senior programmers and their total monthly payment, and then add it to the total monthly payment of the junior programmers.\n\nFirst, let's find the number of junior programmers:\n2/5 of 100 employees = (2/5) * 100 = 40 junior programmers\n\nSince senior programmers are paid $400 more than junior programmers, the monthly payment for a senior programmer is:\n$2000 + $400 = $2400\n\nNow, let's find the number of senior programmers:\nTotal employees = 100\nJunior programmers = 40\nSenior programmers = Total employees - Junior programmers = 100 - 40 = 60 senior programmers\n\nThe total monthly payment for the senior programmers is:\n60 senior programmers * $2400 = $144,000\n\nThe total monthly payment for the junior programmers is:\n40 junior programmers * $2000 = $80,000\n\nThe total amount of money the company pays to all the programmers per month is:\n$144,000 + $80,000 = $224,000",
+        "success": true,
+        "error": null,
+        "seconds": 3.3697172000538558
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:1265",
+      "target": "36",
+      "prediction": "36",
+      "trajectory": {
+        "actions": [
+          "Predict",
+          "question -> hypothesis",
+          "stop"
+        ],
+        "log_probs": [
+          -0.014838329516351223,
+          -1.4930357933044434,
+          0.0
+        ],
+        "module": "Predict",
+        "signature": "question -> hypothesis"
+      },
+      "execution": {
+        "output": "To find the total number of lemons needed, we first need to calculate the number of lemons required for 4 gallons of lemonade. Since 6 lemons yield 1 cup of juice, we can calculate the number of cups needed for 4 gallons as 4 * 1 cup = 4 cups. Since 6 lemons yield 1 cup, we can calculate the number of lemons needed for 4 cups as 4 * 6 = 24 lemons. For the extra gallon that is twice as tart, we need half the amount of lemons, which is 24 / 2 = 12 lemons. Therefore, the total number of lemons needed is 24 + 12 = 36 lemons.",
+        "success": true,
+        "error": null,
+        "seconds": 2.3784875000128523
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:136",
+      "target": "6",
+      "prediction": "6",
+      "trajectory": {
+        "actions": [
+          "Predict",
+          "question -> reasoning",
+          "stop"
+        ],
+        "log_probs": [
+          -0.009127674624323845,
+          -1.3386435508728027,
+          0.0
+        ],
+        "module": "Predict",
+        "signature": "question -> reasoning"
+      },
+      "execution": {
+        "output": "To find the number of female Scottish unicorns, we need to calculate two thirds of the total number of Scottish unicorns. Since one third of the unicorns are in the Scottish Highlands, we can first find the total number of Scottish unicorns by dividing the total number of unicorns by 3. \n\nTotal unicorns = 27\nScottish unicorns = Total unicorns / 3 = 27 / 3 = 9\n\nNow, we can find the number of female Scottish unicorns by multiplying the number of Scottish unicorns by 2/3.\n\nNumber of female Scottish unicorns = (2/3) * 9 = 6",
+        "success": true,
+        "error": null,
+        "seconds": 2.1332065999740735
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:697",
+      "target": "27",
+      "prediction": null,
+      "trajectory": {
+        "actions": [
+          "Predict",
+          "word_problem -> solution",
+          "stop"
+        ],
+        "log_probs": [
+          -0.015267999842762947,
+          -2.1191277503967285,
+          0.0
+        ],
+        "module": "Predict",
+        "signature": "word_problem -> solution"
+      },
+      "execution": {
+        "output": "[3^3^3]",
+        "success": true,
+        "error": null,
+        "seconds": 1.9189250000054017
+      },
+      "reward": 0.0,
+      "numeric_exact_match": false,
+      "semantic_used": true,
+      "judge_score": 0.0,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:1043",
+      "target": "130000",
+      "prediction": "130000",
+      "trajectory": {
+        "actions": [
+          "Predict",
+          "problem_description -> explanation",
+          "stop"
+        ],
+        "log_probs": [
+          -0.026603693142533302,
+          -2.346161127090454,
+          0.0
+        ],
+        "module": "Predict",
+        "signature": "problem_description -> explanation"
+      },
+      "execution": {
+        "output": "To find the total population of South America, we need to calculate the population of each city and then multiply it by the number of cities in each country. Since there are 5 cities with 1000 people living in each city, the population of each city is 5 * 1000 = 5000. \n\nSince there are 26 countries in South America, and each country has 5 cities with a population of 5000, we can multiply the population of one city by the number of countries to get the total population: 5000 * 26 = 130000. \n\nTherefore, the total population of South America is 130000.",
+        "success": true,
+        "error": null,
+        "seconds": 2.0487283000256866
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:1311",
+      "target": "594",
+      "prediction": "594",
+      "trajectory": {
+        "actions": [
+          "Predict",
+          "problem_description -> explanation",
+          "stop"
+        ],
+        "log_probs": [
+          -0.07896730303764343,
+          -1.713059425354004,
+          0.0
+        ],
+        "module": "Predict",
+        "signature": "problem_description -> explanation"
+      },
+      "execution": {
+        "output": "The caretaker needs 3 feet of line for every foot of dock. Since there are 200 feet of dock, he needs 3 x 200 = 600 feet of line. However, he already has 6 feet of line. To find the total amount of line he needs to buy, we subtract the amount he already has from the total amount needed: 600 - 6 = 594 feet.",
+        "success": true,
+        "error": null,
+        "seconds": 1.4848543999250978
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:519",
+      "target": "280",
+      "prediction": "120",
+      "trajectory": {
+        "actions": [
+          "Predict",
+          "question -> answer",
+          "stop"
+        ],
+        "log_probs": [
+          -0.04216550663113594,
+          -1.33700430393219,
+          0.0
+        ],
+        "module": "Predict",
+        "signature": "question -> answer"
+      },
+      "execution": {
+        "output": "[120]",
+        "success": true,
+        "error": null,
+        "seconds": 0.37192190007772297
+      },
+      "reward": 0.0,
+      "numeric_exact_match": false,
+      "semantic_used": true,
+      "judge_score": 0.0,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:716",
+      "target": "770",
+      "prediction": "770",
+      "trajectory": {
+        "actions": [
+          "Predict",
+          "question -> answer",
+          "stop"
+        ],
+        "log_probs": [
+          -0.002530826721340418,
+          -1.4079663753509521,
+          0.0
+        ],
+        "module": "Predict",
+        "signature": "question -> answer"
+      },
+      "execution": {
+        "output": "To find the total calories of the omelet, we need to calculate the calories from the eggs, cheese, and ham. \nThe eggs contribute 6 * 75 = 450 calories. \nThe cheese contributes 2 * 120 = 240 calories. \nThe ham contributes 2 * 40 = 80 calories. \nAdding these together, we get 450 + 240 + 80 = 770 calories. \nTherefore, the omelet has 770 calories.",
+        "success": true,
+        "error": null,
+        "seconds": 1.6356765000382438
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:51",
+      "target": "5",
+      "prediction": "5",
+      "trajectory": {
+        "actions": [
+          "Predict",
+          "question -> reasoning",
+          "stop"
+        ],
+        "log_probs": [
+          -0.007087446749210358,
+          -1.4610522985458374,
+          0.0
+        ],
+        "module": "Predict",
+        "signature": "question -> reasoning"
+      },
+      "execution": {
+        "output": "To find the time it takes Tom to get back, we need to calculate the distance he traveled from 1 to 4 PM and then divide it by his speed of 6 mph.\n\nSince Tom is sailing from 1 to 4 PM, the distance he traveled is 3 hours multiplied by his speed of 10 mph, which is 3 x 10 = 30 miles.\n\nNow, we can divide the distance by his speed of 6 mph to find the time it takes him to get back: 30 miles / 6 mph = 5 hours.",
+        "success": true,
+        "error": null,
+        "seconds": 1.9584104000823572
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:878",
+      "target": "5",
+      "prediction": "5",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "query -> response",
+          "stop"
+        ],
+        "log_probs": [
+          -2.1462392807006836,
+          -0.7966331839561462,
+          0.0
+        ],
+        "module": "CoT",
+        "signature": "query -> response"
+      },
+      "execution": {
+        "output": "[5]",
+        "success": true,
+        "error": null,
+        "seconds": 1.7853577999630943
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:757",
+      "target": "75",
+      "prediction": "75",
+      "trajectory": {
+        "actions": [
+          "Predict",
+          "question -> answer",
+          "stop"
+        ],
+        "log_probs": [
+          -0.003178308717906475,
+          -1.7605323791503906,
+          0.0
+        ],
+        "module": "Predict",
+        "signature": "question -> answer"
+      },
+      "execution": {
+        "output": "To find the total number of shirts, we need to calculate the number of shirts for each size and add them together. \n\nLet's start with the size extra-small: 11 students. \nSize small: 2 * 11 = 22 students. \nSize medium: 22 - 4 = 18 students. \nSize large: 18 / 2 = 9 students. \nSize extra-large: 9 + 6 = 15 students. \n\nNow, let's add them together: 11 + 22 + 18 + 9 + 15 = 75. \n\nSo, Krissa ordered 75 shirts.",
+        "success": true,
+        "error": null,
+        "seconds": 2.141579999937676
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:1123",
+      "target": "105",
+      "prediction": "105",
+      "trajectory": {
+        "actions": [
+          "Predict",
+          "question -> reasoning",
+          "stop"
+        ],
+        "log_probs": [
+          -0.012160684913396835,
+          -1.2336316108703613,
+          0.0
+        ],
+        "module": "Predict",
+        "signature": "question -> reasoning"
+      },
+      "execution": {
+        "output": "To find the total weight of Elijah's and Kory's dogs, we need to calculate the weight of each dog separately and then add them together. We know that Kory's dog weighs 60 pounds. Elijah's first dog is one-fourth the weight of Kory's dog, so it weighs 60 / 4 = 15 pounds. Elijah's second dog is half the weight of Kory's dog, so it weighs 60 / 2 = 30 pounds. Now, we add the weights of both dogs together: 15 + 30 + 60 = 105 pounds.",
+        "success": true,
+        "error": null,
+        "seconds": 2.043468999909237
+      },
+      "reward": 1.0,
+      "numeric_exact_match": true,
+      "semantic_used": false,
+      "judge_score": null,
+      "judge_error": null
+    },
+    {
+      "question_id": "gsm8k:test:63",
+      "target": "1596",
+      "prediction": "266",
+      "trajectory": {
+        "actions": [
+          "Predict",
+          "question -> hypothesis",
+          "stop"
+        ],
+        "log_probs": [
+          -0.040303632616996765,
+          -2.0769295692443848,
+          0.0
+        ],
+        "module": "Predict",
+        "signature": "question -> hypothesis"
+      },
+      "execution": {
+        "output": "Aleena paid $140 for the first half of the year. For the second half, she paid 10% less, which is $140 - (10% of $140) = $140 - $14 = $126. So, the total amount she paid is $140 + $126 = $266.",
+        "success": true,
+        "error": null,
+        "seconds": 1.2246987998951226
+      },
+      "reward": 0.0,
+      "numeric_exact_match": false,
+      "semantic_used": true,
+      "judge_score": 0.0,
+      "judge_error": null
+    }
+  ],
+  "execution_llm_calls": 38,
+  "physical_http_requests": null,
+  "prompt_tokens": 9233,
+  "generated_tokens": 3925,
+  "llm_seconds": 56.775609800126404,
+  "llm_failed_calls": 0,
+  "call_count_definition": "DSPy LM.forward attempts, including semantic judge and adapter retries",
+  "checkpoint_selection_rule": "maximum validation numeric EM; earliest episode on ties"
+}

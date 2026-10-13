@@ -964,5 +964,95 @@
     "seen": 1791853416.2875786,
     "ast_hash": "76b272b63ef3d0705e60ca08584ff53c",
     "semantic_hash": ""
+  },
+  "results/gsm8k/k5/seed42/pilot/20261013T030331-484147ec/best.json": {
+    "mtime": 1791860649.0519373,
+    "seen": 1791862446.3101492,
+    "ast_hash": "699f92d3336e87a33192a0e3261fceb5",
+    "semantic_hash": ""
+  },
+  "results/gsm8k/k5/seed42/pilot/20261013T030331-484147ec/config.json": {
+    "mtime": 1791860611.4192922,
+    "seen": 1791862446.3101523,
+    "ast_hash": "ef2ecfbeeafb6534703c6b266408ad56",
+    "semantic_hash": ""
+  },
+  "results/gsm8k/k5/seed42/pilot/20261013T030331-484147ec/latest.json": {
+    "mtime": 1791860836.1004145,
+    "seen": 1791862446.310154,
+    "ast_hash": "45feae5daf222195e40a6fd9ab2722e0",
+    "semantic_hash": ""
+  },
+  "results/gsm8k/k5/seed42/pilot/20261013T030331-484147ec/summary.json": {
+    "mtime": 1791860912.9774957,
+    "seen": 1791862446.3101556,
+    "ast_hash": "b3ed2c83bbc1e176f137c8a3902f948d",
+    "semantic_hash": ""
+  },
+  "results/gsm8k/k5/seed42/pilot/20261013T030331-484147ec/test_cfc0def4.json": {
+    "mtime": 1791860912.9310446,
+    "seen": 1791862446.3101578,
+    "ast_hash": "b8aa18d20f197895eaeca13726a005c5",
+    "semantic_hash": ""
+  },
+  "results/gsm8k/k5/seed42/pilot/20261013T032749-85f3db7c/best.json": {
+    "mtime": 1791862101.4813125,
+    "seen": 1791862446.3101594,
+    "ast_hash": "74b4b5696728ac94cb56dbc4659541fb",
+    "semantic_hash": ""
+  },
+  "results/gsm8k/k5/seed42/pilot/20261013T032749-85f3db7c/config.json": {
+    "mtime": 1791862069.8446648,
+    "seen": 1791862446.3101609,
+    "ast_hash": "28b6590e9d2ad206d549b54e1f658b9d",
+    "semantic_hash": ""
+  },
+  "results/gsm8k/k5/seed42/pilot/20261013T032749-85f3db7c/latest.json": {
+    "mtime": 1791862304.9806805,
+    "seen": 1791862446.310162,
+    "ast_hash": "e70c4cc2a25a2c05f4ff75975998a215",
+    "semantic_hash": ""
+  },
+  "results/gsm8k/k5/seed42/pilot/20261013T032749-85f3db7c/stability-comparison.json": {
+    "mtime": 1791862305.112983,
+    "seen": 1791862446.310164,
+    "ast_hash": "d0fecae2503f27eeddcb7391740062ae",
+    "semantic_hash": ""
+  },
+  "results/gsm8k/k5/seed42/pilot/20261013T032749-85f3db7c/stability-investigation.json": {
+    "mtime": 1791862069.8467379,
+    "seen": 1791862446.3101656,
+    "ast_hash": "ab4a9178a6415d345559f67d6653feee",
+    "semantic_hash": ""
+  },
+  "results/gsm8k/k5/seed42/pilot/20261013T032749-85f3db7c/summary.json": {
+    "mtime": 1791862305.0890296,
+    "seen": 1791862446.3101707,
+    "ast_hash": "f9dfba7926272899ca1b269910debfca",
+    "semantic_hash": ""
+  },
+  "tmp/stability-instrumentation-checks.json": {
+    "mtime": 1791861966.5826068,
+    "seen": 1791862446.3101795,
+    "ast_hash": "679ff8766f0c037aa1258be22463ac7e",
+    "semantic_hash": ""
+  },
+  "tmp/stability-latest-run.json": {
+    "mtime": 1791862309.8187792,
+    "seen": 1791862446.3101814,
+    "ast_hash": "76678c7aa0057c9502acc42e3e0cf94f",
+    "semantic_hash": ""
+  },
+  "tmp/stability-preservation.json": {
+    "mtime": 1791861491.8392663,
+    "seen": 1791862446.3101826,
+    "ast_hash": "d25f43096b74361de012d0c4bff6f11f",
+    "semantic_hash": ""
+  },
+  "docs/STABILITY_PILOT_REPORT.md": {
+    "mtime": 1791862440.7812002,
+    "seen": 1791862446.3104198,
+    "ast_hash": "f7fe3307bbdc192537ca488ced401a10",
+    "semantic_hash": ""
   }
 }
