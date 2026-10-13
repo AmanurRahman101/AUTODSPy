@@ -1,0 +1,1592 @@
+[
+  {
+    "episode": 1,
+    "rewards": [
+      0.5,
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    "unique_pipelines": 5,
+    "zero_reward_variance": false,
+    "identical_action_sequences": false,
+    "loss_scientific": "1.247991890e+00",
+    "gradient_norm_scientific": "2.173724654e+02",
+    "reward_variance": 0.15999999999999998,
+    "advantages": [
+      0.2,
+      -0.3,
+      0.7,
+      -0.3,
+      -0.3
+    ],
+    "question_id": "gsm8k:train:4423",
+    "candidate_log_probabilities": [
+      [
+        -0.34653428196907043,
+        -1.8436166048049927,
+        0.0
+      ],
+      [
+        -0.34653428196907043,
+        -1.6956292390823364,
+        0.0
+      ],
+      [
+        -1.2280421257019043,
+        -3.4075851440429688,
+        0.0
+      ],
+      [
+        -0.34653428196907043,
+        -2.2695655822753906,
+        0.0
+      ],
+      [
+        -1.2280421257019043,
+        -2.23028564453125,
+        0.0
+      ]
+    ],
+    "identical_log_probabilities": false,
+    "unique_execution_outputs": 5
+  },
+  {
+    "episode": 2,
+    "rewards": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "unique_pipelines": 1,
+    "zero_reward_variance": true,
+    "identical_action_sequences": true,
+    "loss_scientific": "0.000000000e+00",
+    "gradient_norm_scientific": "0.000000000e+00",
+    "reward_variance": 0.0,
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "question_id": "gsm8k:train:3812",
+    "candidate_log_probabilities": [
+      [
+        -0.003189597511664033,
+        -0.015368843451142311,
+        0.0
+      ],
+      [
+        -0.003189597511664033,
+        -0.015368843451142311,
+        0.0
+      ],
+      [
+        -0.003189597511664033,
+        -0.015368843451142311,
+        0.0
+      ],
+      [
+        -0.003189597511664033,
+        -0.015368843451142311,
+        0.0
+      ],
+      [
+        -0.003189597511664033,
+        -0.015368843451142311,
+        0.0
+      ]
+    ],
+    "identical_log_probabilities": true,
+    "unique_execution_outputs": 1
+  },
+  {
+    "episode": 3,
+    "rewards": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "unique_pipelines": 1,
+    "zero_reward_variance": true,
+    "identical_action_sequences": true,
+    "loss_scientific": "0.000000000e+00",
+    "gradient_norm_scientific": "0.000000000e+00",
+    "reward_variance": 0.0,
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "question_id": "gsm8k:train:7079",
+    "candidate_log_probabilities": [
+      [
+        -0.000311802898067981,
+        -0.0003734129713848233,
+        0.0
+      ],
+      [
+        -0.000311802898067981,
+        -0.0003734129713848233,
+        0.0
+      ],
+      [
+        -0.000311802898067981,
+        -0.0003734129713848233,
+        0.0
+      ],
+      [
+        -0.000311802898067981,
+        -0.0003734129713848233,
+        0.0
+      ],
+      [
+        -0.000311802898067981,
+        -0.0003734129713848233,
+        0.0
+      ]
+    ],
+    "identical_log_probabilities": true,
+    "unique_execution_outputs": 1
+  },
+  {
+    "episode": 4,
+    "rewards": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "unique_pipelines": 1,
+    "zero_reward_variance": true,
+    "identical_action_sequences": true,
+    "loss_scientific": "0.000000000e+00",
+    "gradient_norm_scientific": "0.000000000e+00",
+    "reward_variance": 0.0,
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "question_id": "gsm8k:train:2663",
+    "candidate_log_probabilities": [
+      [
+        -2.4676019165781327e-05,
+        -0.00012182447244413197,
+        0.0
+      ],
+      [
+        -2.4676019165781327e-05,
+        -0.00012182447244413197,
+        0.0
+      ],
+      [
+        -2.4676019165781327e-05,
+        -0.00012182447244413197,
+        0.0
+      ],
+      [
+        -2.4676019165781327e-05,
+        -0.00012182447244413197,
+        0.0
+      ],
+      [
+        -2.4676019165781327e-05,
+        -0.00012182447244413197,
+        0.0
+      ]
+    ],
+    "identical_log_probabilities": true,
+    "unique_execution_outputs": 1
+  },
+  {
+    "episode": 5,
+    "rewards": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "unique_pipelines": 1,
+    "zero_reward_variance": true,
+    "identical_action_sequences": true,
+    "loss_scientific": "0.000000000e+00",
+    "gradient_norm_scientific": "0.000000000e+00",
+    "reward_variance": 0.0,
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "question_id": "gsm8k:train:4423",
+    "candidate_log_probabilities": [
+      [
+        -1.1920922133867862e-06,
+        -2.3841574147809297e-05,
+        0.0
+      ],
+      [
+        -1.1920922133867862e-06,
+        -2.3841574147809297e-05,
+        0.0
+      ],
+      [
+        -1.1920922133867862e-06,
+        -2.3841574147809297e-05,
+        0.0
+      ],
+      [
+        -1.1920922133867862e-06,
+        -2.3841574147809297e-05,
+        0.0
+      ],
+      [
+        -1.1920922133867862e-06,
+        -2.3841574147809297e-05,
+        0.0
+      ]
+    ],
+    "identical_log_probabilities": true,
+    "unique_execution_outputs": 2
+  },
+  {
+    "episode": 6,
+    "rewards": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "unique_pipelines": 1,
+    "zero_reward_variance": true,
+    "identical_action_sequences": true,
+    "loss_scientific": "0.000000000e+00",
+    "gradient_norm_scientific": "0.000000000e+00",
+    "reward_variance": 0.0,
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "question_id": "gsm8k:train:56",
+    "candidate_log_probabilities": [
+      [
+        -3.3854863431770355e-05,
+        -8.856858039507642e-05,
+        0.0
+      ],
+      [
+        -3.3854863431770355e-05,
+        -8.856858039507642e-05,
+        0.0
+      ],
+      [
+        -3.3854863431770355e-05,
+        -8.856858039507642e-05,
+        0.0
+      ],
+      [
+        -3.3854863431770355e-05,
+        -8.856858039507642e-05,
+        0.0
+      ],
+      [
+        -3.3854863431770355e-05,
+        -8.856858039507642e-05,
+        0.0
+      ]
+    ],
+    "identical_log_probabilities": true,
+    "unique_execution_outputs": 2
+  },
+  {
+    "episode": 7,
+    "rewards": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "unique_pipelines": 1,
+    "zero_reward_variance": true,
+    "identical_action_sequences": true,
+    "loss_scientific": "0.000000000e+00",
+    "gradient_norm_scientific": "0.000000000e+00",
+    "reward_variance": 0.0,
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "question_id": "gsm8k:train:6330",
+    "candidate_log_probabilities": [
+      [
+        -4.768360213347478e-06,
+        -4.708655978902243e-05,
+        0.0
+      ],
+      [
+        -4.768360213347478e-06,
+        -4.708655978902243e-05,
+        0.0
+      ],
+      [
+        -4.768360213347478e-06,
+        -4.708655978902243e-05,
+        0.0
+      ],
+      [
+        -4.768360213347478e-06,
+        -4.708655978902243e-05,
+        0.0
+      ],
+      [
+        -4.768360213347478e-06,
+        -4.708655978902243e-05,
+        0.0
+      ]
+    ],
+    "identical_log_probabilities": true,
+    "unique_execution_outputs": 2
+  },
+  {
+    "episode": 8,
+    "rewards": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "unique_pipelines": 1,
+    "zero_reward_variance": true,
+    "identical_action_sequences": true,
+    "loss_scientific": "0.000000000e+00",
+    "gradient_norm_scientific": "0.000000000e+00",
+    "reward_variance": 0.0,
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "question_id": "gsm8k:train:2477",
+    "candidate_log_probabilities": [
+      [
+        -2.50339189733495e-06,
+        -3.4450891689630225e-05,
+        0.0
+      ],
+      [
+        -2.50339189733495e-06,
+        -3.4450891689630225e-05,
+        0.0
+      ],
+      [
+        -2.50339189733495e-06,
+        -3.4450891689630225e-05,
+        0.0
+      ],
+      [
+        -2.50339189733495e-06,
+        -3.4450891689630225e-05,
+        0.0
+      ],
+      [
+        -2.50339189733495e-06,
+        -3.4450891689630225e-05,
+        0.0
+      ]
+    ],
+    "identical_log_probabilities": true,
+    "unique_execution_outputs": 1
+  },
+  {
+    "episode": 9,
+    "rewards": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "unique_pipelines": 1,
+    "zero_reward_variance": true,
+    "identical_action_sequences": true,
+    "loss_scientific": "0.000000000e+00",
+    "gradient_norm_scientific": "0.000000000e+00",
+    "reward_variance": 0.0,
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "question_id": "gsm8k:train:2271",
+    "candidate_log_probabilities": [
+      [
+        -5.960462772236497e-07,
+        -8.4638240878121e-06,
+        0.0
+      ],
+      [
+        -5.960462772236497e-07,
+        -8.4638240878121e-06,
+        0.0
+      ],
+      [
+        -5.960462772236497e-07,
+        -8.4638240878121e-06,
+        0.0
+      ],
+      [
+        -5.960462772236497e-07,
+        -8.4638240878121e-06,
+        0.0
+      ],
+      [
+        -5.960462772236497e-07,
+        -8.4638240878121e-06,
+        0.0
+      ]
+    ],
+    "identical_log_probabilities": true,
+    "unique_execution_outputs": 1
+  },
+  {
+    "episode": 10,
+    "rewards": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "unique_pipelines": 1,
+    "zero_reward_variance": true,
+    "identical_action_sequences": true,
+    "loss_scientific": "0.000000000e+00",
+    "gradient_norm_scientific": "0.000000000e+00",
+    "reward_variance": 0.0,
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "question_id": "gsm8k:train:5302",
+    "candidate_log_probabilities": [
+      [
+        -7.152555099310121e-07,
+        -1.3470558769768104e-05,
+        0.0
+      ],
+      [
+        -7.152555099310121e-07,
+        -1.3470558769768104e-05,
+        0.0
+      ],
+      [
+        -7.152555099310121e-07,
+        -1.3470558769768104e-05,
+        0.0
+      ],
+      [
+        -7.152555099310121e-07,
+        -1.3470558769768104e-05,
+        0.0
+      ],
+      [
+        -7.152555099310121e-07,
+        -1.3470558769768104e-05,
+        0.0
+      ]
+    ],
+    "identical_log_probabilities": true,
+    "unique_execution_outputs": 1
+  },
+  {
+    "episode": 11,
+    "rewards": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "unique_pipelines": 1,
+    "zero_reward_variance": false,
+    "identical_action_sequences": true,
+    "loss_scientific": "0.000000000e+00",
+    "gradient_norm_scientific": "7.549559953e-11",
+    "reward_variance": 0.16000000000000006,
+    "advantages": [
+      0.8,
+      -0.2,
+      -0.2,
+      -0.2,
+      -0.2
+    ],
+    "question_id": "gsm8k:train:2428",
+    "candidate_log_probabilities": [
+      [
+        -8.344646857949556e-07,
+        -1.585470999998506e-05,
+        0.0
+      ],
+      [
+        -8.344646857949556e-07,
+        -1.585470999998506e-05,
+        0.0
+      ],
+      [
+        -8.344646857949556e-07,
+        -1.585470999998506e-05,
+        0.0
+      ],
+      [
+        -8.344646857949556e-07,
+        -1.585470999998506e-05,
+        0.0
+      ],
+      [
+        -8.344646857949556e-07,
+        -1.585470999998506e-05,
+        0.0
+      ]
+    ],
+    "identical_log_probabilities": true,
+    "unique_execution_outputs": 2
+  },
+  {
+    "episode": 12,
+    "rewards": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "unique_pipelines": 1,
+    "zero_reward_variance": true,
+    "identical_action_sequences": true,
+    "loss_scientific": "0.000000000e+00",
+    "gradient_norm_scientific": "0.000000000e+00",
+    "reward_variance": 0.0,
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "question_id": "gsm8k:train:3418",
+    "candidate_log_probabilities": [
+      [
+        -3.576278118089249e-07,
+        -1.0371154530730564e-05,
+        0.0
+      ],
+      [
+        -3.576278118089249e-07,
+        -1.0371154530730564e-05,
+        0.0
+      ],
+      [
+        -3.576278118089249e-07,
+        -1.0371154530730564e-05,
+        0.0
+      ],
+      [
+        -3.576278118089249e-07,
+        -1.0371154530730564e-05,
+        0.0
+      ],
+      [
+        -3.576278118089249e-07,
+        -1.0371154530730564e-05,
+        0.0
+      ]
+    ],
+    "identical_log_probabilities": true,
+    "unique_execution_outputs": 1
+  },
+  {
+    "episode": 13,
+    "rewards": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "unique_pipelines": 1,
+    "zero_reward_variance": true,
+    "identical_action_sequences": true,
+    "loss_scientific": "0.000000000e+00",
+    "gradient_norm_scientific": "0.000000000e+00",
+    "reward_variance": 0.0,
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "question_id": "gsm8k:train:3082",
+    "candidate_log_probabilities": [
+      [
+        -2.0265558760002023e-06,
+        -3.576272320060525e-06,
+        0.0
+      ],
+      [
+        -2.0265558760002023e-06,
+        -3.576272320060525e-06,
+        0.0
+      ],
+      [
+        -2.0265558760002023e-06,
+        -3.576272320060525e-06,
+        0.0
+      ],
+      [
+        -2.0265558760002023e-06,
+        -3.576272320060525e-06,
+        0.0
+      ],
+      [
+        -2.0265558760002023e-06,
+        -3.576272320060525e-06,
+        0.0
+      ]
+    ],
+    "identical_log_probabilities": true,
+    "unique_execution_outputs": 1
+  },
+  {
+    "episode": 14,
+    "rewards": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "unique_pipelines": 1,
+    "zero_reward_variance": true,
+    "identical_action_sequences": true,
+    "loss_scientific": "0.000000000e+00",
+    "gradient_norm_scientific": "0.000000000e+00",
+    "reward_variance": 0.0,
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "question_id": "gsm8k:train:5302",
+    "candidate_log_probabilities": [
+      [
+        -3.576278118089249e-07,
+        -7.390948667307384e-06,
+        0.0
+      ],
+      [
+        -3.576278118089249e-07,
+        -7.390948667307384e-06,
+        0.0
+      ],
+      [
+        -3.576278118089249e-07,
+        -7.390948667307384e-06,
+        0.0
+      ],
+      [
+        -3.576278118089249e-07,
+        -7.390948667307384e-06,
+        0.0
+      ],
+      [
+        -3.576278118089249e-07,
+        -7.390948667307384e-06,
+        0.0
+      ]
+    ],
+    "identical_log_probabilities": true,
+    "unique_execution_outputs": 1
+  },
+  {
+    "episode": 15,
+    "rewards": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "unique_pipelines": 1,
+    "zero_reward_variance": false,
+    "identical_action_sequences": true,
+    "loss_scientific": "0.000000000e+00",
+    "gradient_norm_scientific": "1.044456479e-11",
+    "reward_variance": 0.16000000000000006,
+    "advantages": [
+      0.8,
+      -0.2,
+      -0.2,
+      -0.2,
+      -0.2
+    ],
+    "question_id": "gsm8k:train:819",
+    "candidate_log_probabilities": [
+      [
+        -5.960462772236497e-07,
+        -2.0265558760002023e-06,
+        0.0
+      ],
+      [
+        -5.960462772236497e-07,
+        -2.0265558760002023e-06,
+        0.0
+      ],
+      [
+        -5.960462772236497e-07,
+        -2.0265558760002023e-06,
+        0.0
+      ],
+      [
+        -5.960462772236497e-07,
+        -2.0265558760002023e-06,
+        0.0
+      ],
+      [
+        -5.960462772236497e-07,
+        -2.0265558760002023e-06,
+        0.0
+      ]
+    ],
+    "identical_log_probabilities": true,
+    "unique_execution_outputs": 2
+  },
+  {
+    "episode": 16,
+    "rewards": [
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "unique_pipelines": 1,
+    "zero_reward_variance": false,
+    "identical_action_sequences": true,
+    "loss_scientific": "0.000000000e+00",
+    "gradient_norm_scientific": "1.862183305e-11",
+    "reward_variance": 0.16000000000000006,
+    "advantages": [
+      -0.8,
+      0.19999999999999996,
+      0.19999999999999996,
+      0.19999999999999996,
+      0.19999999999999996
+    ],
+    "question_id": "gsm8k:train:1601",
+    "candidate_log_probabilities": [
+      [
+        -9.536738616588991e-07,
+        -4.529942543740617e-06,
+        0.0
+      ],
+      [
+        -9.536738616588991e-07,
+        -4.529942543740617e-06,
+        0.0
+      ],
+      [
+        -9.536738616588991e-07,
+        -4.529942543740617e-06,
+        0.0
+      ],
+      [
+        -9.536738616588991e-07,
+        -4.529942543740617e-06,
+        0.0
+      ],
+      [
+        -9.536738616588991e-07,
+        -4.529942543740617e-06,
+        0.0
+      ]
+    ],
+    "identical_log_probabilities": true,
+    "unique_execution_outputs": 1
+  },
+  {
+    "episode": 17,
+    "rewards": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "unique_pipelines": 1,
+    "zero_reward_variance": true,
+    "identical_action_sequences": true,
+    "loss_scientific": "0.000000000e+00",
+    "gradient_norm_scientific": "0.000000000e+00",
+    "reward_variance": 0.0,
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "question_id": "gsm8k:train:56",
+    "candidate_log_probabilities": [
+      [
+        -1.4305104514278355e-06,
+        -6.6756979322235566e-06,
+        0.0
+      ],
+      [
+        -1.4305104514278355e-06,
+        -6.6756979322235566e-06,
+        0.0
+      ],
+      [
+        -1.4305104514278355e-06,
+        -6.6756979322235566e-06,
+        0.0
+      ],
+      [
+        -1.4305104514278355e-06,
+        -6.6756979322235566e-06,
+        0.0
+      ],
+      [
+        -1.4305104514278355e-06,
+        -6.6756979322235566e-06,
+        0.0
+      ]
+    ],
+    "identical_log_probabilities": true,
+    "unique_execution_outputs": 2
+  },
+  {
+    "episode": 18,
+    "rewards": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "unique_pipelines": 1,
+    "zero_reward_variance": true,
+    "identical_action_sequences": true,
+    "loss_scientific": "0.000000000e+00",
+    "gradient_norm_scientific": "0.000000000e+00",
+    "reward_variance": 0.0,
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "question_id": "gsm8k:train:4423",
+    "candidate_log_probabilities": [
+      [
+        0.0,
+        -3.933898824470816e-06,
+        0.0
+      ],
+      [
+        0.0,
+        -3.933898824470816e-06,
+        0.0
+      ],
+      [
+        0.0,
+        -3.933898824470816e-06,
+        0.0
+      ],
+      [
+        0.0,
+        -3.933898824470816e-06,
+        0.0
+      ],
+      [
+        0.0,
+        -3.933898824470816e-06,
+        0.0
+      ]
+    ],
+    "identical_log_probabilities": true,
+    "unique_execution_outputs": 2
+  },
+  {
+    "episode": 19,
+    "rewards": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "unique_pipelines": 1,
+    "zero_reward_variance": true,
+    "identical_action_sequences": true,
+    "loss_scientific": "0.000000000e+00",
+    "gradient_norm_scientific": "0.000000000e+00",
+    "reward_variance": 0.0,
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "question_id": "gsm8k:train:4389",
+    "candidate_log_probabilities": [
+      [
+        -2.3841855067985307e-07,
+        -3.933898824470816e-06,
+        0.0
+      ],
+      [
+        -2.3841855067985307e-07,
+        -3.933898824470816e-06,
+        0.0
+      ],
+      [
+        -2.3841855067985307e-07,
+        -3.933898824470816e-06,
+        0.0
+      ],
+      [
+        -2.3841855067985307e-07,
+        -3.933898824470816e-06,
+        0.0
+      ],
+      [
+        -2.3841855067985307e-07,
+        -3.933898824470816e-06,
+        0.0
+      ]
+    ],
+    "identical_log_probabilities": true,
+    "unique_execution_outputs": 1
+  },
+  {
+    "episode": 20,
+    "rewards": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "unique_pipelines": 1,
+    "zero_reward_variance": true,
+    "identical_action_sequences": true,
+    "loss_scientific": "0.000000000e+00",
+    "gradient_norm_scientific": "0.000000000e+00",
+    "reward_variance": 0.0,
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "question_id": "gsm8k:train:4306",
+    "candidate_log_probabilities": [
+      [
+        -8.344646857949556e-07,
+        -8.583032467868179e-06,
+        0.0
+      ],
+      [
+        -8.344646857949556e-07,
+        -8.583032467868179e-06,
+        0.0
+      ],
+      [
+        -8.344646857949556e-07,
+        -8.583032467868179e-06,
+        0.0
+      ],
+      [
+        -8.344646857949556e-07,
+        -8.583032467868179e-06,
+        0.0
+      ],
+      [
+        -8.344646857949556e-07,
+        -8.583032467868179e-06,
+        0.0
+      ]
+    ],
+    "identical_log_probabilities": true,
+    "unique_execution_outputs": 1
+  },
+  {
+    "episode": 21,
+    "rewards": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "unique_pipelines": 1,
+    "zero_reward_variance": true,
+    "identical_action_sequences": true,
+    "loss_scientific": "0.000000000e+00",
+    "gradient_norm_scientific": "0.000000000e+00",
+    "reward_variance": 0.0,
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "question_id": "gsm8k:train:3115",
+    "candidate_log_probabilities": [
+      [
+        -2.3841855067985307e-07,
+        -1.4066597032069694e-05,
+        0.0
+      ],
+      [
+        -2.3841855067985307e-07,
+        -1.4066597032069694e-05,
+        0.0
+      ],
+      [
+        -2.3841855067985307e-07,
+        -1.4066597032069694e-05,
+        0.0
+      ],
+      [
+        -2.3841855067985307e-07,
+        -1.4066597032069694e-05,
+        0.0
+      ],
+      [
+        -2.3841855067985307e-07,
+        -1.4066597032069694e-05,
+        0.0
+      ]
+    ],
+    "identical_log_probabilities": true,
+    "unique_execution_outputs": 2
+  },
+  {
+    "episode": 22,
+    "rewards": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "unique_pipelines": 1,
+    "zero_reward_variance": true,
+    "identical_action_sequences": true,
+    "loss_scientific": "0.000000000e+00",
+    "gradient_norm_scientific": "0.000000000e+00",
+    "reward_variance": 0.0,
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "question_id": "gsm8k:train:7114",
+    "candidate_log_probabilities": [
+      [
+        -2.3841855067985307e-07,
+        -2.861018856492592e-06,
+        0.0
+      ],
+      [
+        -2.3841855067985307e-07,
+        -2.861018856492592e-06,
+        0.0
+      ],
+      [
+        -2.3841855067985307e-07,
+        -2.861018856492592e-06,
+        0.0
+      ],
+      [
+        -2.3841855067985307e-07,
+        -2.861018856492592e-06,
+        0.0
+      ],
+      [
+        -2.3841855067985307e-07,
+        -2.861018856492592e-06,
+        0.0
+      ]
+    ],
+    "identical_log_probabilities": true,
+    "unique_execution_outputs": 1
+  },
+  {
+    "episode": 23,
+    "rewards": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "unique_pipelines": 1,
+    "zero_reward_variance": true,
+    "identical_action_sequences": true,
+    "loss_scientific": "0.000000000e+00",
+    "gradient_norm_scientific": "0.000000000e+00",
+    "reward_variance": 0.0,
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "question_id": "gsm8k:train:6009",
+    "candidate_log_probabilities": [
+      [
+        -5.960462772236497e-07,
+        -5.960446742392378e-06,
+        0.0
+      ],
+      [
+        -5.960462772236497e-07,
+        -5.960446742392378e-06,
+        0.0
+      ],
+      [
+        -5.960462772236497e-07,
+        -5.960446742392378e-06,
+        0.0
+      ],
+      [
+        -5.960462772236497e-07,
+        -5.960446742392378e-06,
+        0.0
+      ],
+      [
+        -5.960462772236497e-07,
+        -5.960446742392378e-06,
+        0.0
+      ]
+    ],
+    "identical_log_probabilities": true,
+    "unique_execution_outputs": 1
+  },
+  {
+    "episode": 24,
+    "rewards": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "unique_pipelines": 1,
+    "zero_reward_variance": true,
+    "identical_action_sequences": true,
+    "loss_scientific": "0.000000000e+00",
+    "gradient_norm_scientific": "0.000000000e+00",
+    "reward_variance": 0.0,
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "question_id": "gsm8k:train:56",
+    "candidate_log_probabilities": [
+      [
+        -8.344646857949556e-07,
+        -4.291525328881107e-06,
+        0.0
+      ],
+      [
+        -8.344646857949556e-07,
+        -4.291525328881107e-06,
+        0.0
+      ],
+      [
+        -8.344646857949556e-07,
+        -4.291525328881107e-06,
+        0.0
+      ],
+      [
+        -8.344646857949556e-07,
+        -4.291525328881107e-06,
+        0.0
+      ],
+      [
+        -8.344646857949556e-07,
+        -4.291525328881107e-06,
+        0.0
+      ]
+    ],
+    "identical_log_probabilities": true,
+    "unique_execution_outputs": 1
+  },
+  {
+    "episode": 25,
+    "rewards": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "unique_pipelines": 1,
+    "zero_reward_variance": true,
+    "identical_action_sequences": true,
+    "loss_scientific": "0.000000000e+00",
+    "gradient_norm_scientific": "0.000000000e+00",
+    "reward_variance": 0.0,
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "question_id": "gsm8k:train:56",
+    "candidate_log_probabilities": [
+      [
+        -8.344646857949556e-07,
+        -4.172316494077677e-06,
+        0.0
+      ],
+      [
+        -8.344646857949556e-07,
+        -4.172316494077677e-06,
+        0.0
+      ],
+      [
+        -8.344646857949556e-07,
+        -4.172316494077677e-06,
+        0.0
+      ],
+      [
+        -8.344646857949556e-07,
+        -4.172316494077677e-06,
+        0.0
+      ],
+      [
+        -8.344646857949556e-07,
+        -4.172316494077677e-06,
+        0.0
+      ]
+    ],
+    "identical_log_probabilities": true,
+    "unique_execution_outputs": 1
+  },
+  {
+    "episode": 26,
+    "rewards": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "unique_pipelines": 1,
+    "zero_reward_variance": true,
+    "identical_action_sequences": true,
+    "loss_scientific": "0.000000000e+00",
+    "gradient_norm_scientific": "0.000000000e+00",
+    "reward_variance": 0.0,
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "question_id": "gsm8k:train:2068",
+    "candidate_log_probabilities": [
+      [
+        -1.1920928244535389e-07,
+        -2.622600959512056e-06,
+        0.0
+      ],
+      [
+        -1.1920928244535389e-07,
+        -2.622600959512056e-06,
+        0.0
+      ],
+      [
+        -1.1920928244535389e-07,
+        -2.622600959512056e-06,
+        0.0
+      ],
+      [
+        -1.1920928244535389e-07,
+        -2.622600959512056e-06,
+        0.0
+      ],
+      [
+        -1.1920928244535389e-07,
+        -2.622600959512056e-06,
+        0.0
+      ]
+    ],
+    "identical_log_probabilities": true,
+    "unique_execution_outputs": 1
+  },
+  {
+    "episode": 27,
+    "rewards": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "unique_pipelines": 1,
+    "zero_reward_variance": false,
+    "identical_action_sequences": true,
+    "loss_scientific": "0.000000000e+00",
+    "gradient_norm_scientific": "1.917879949e-11",
+    "reward_variance": 0.16000000000000006,
+    "advantages": [
+      0.8,
+      -0.2,
+      -0.2,
+      -0.2,
+      -0.2
+    ],
+    "question_id": "gsm8k:train:2428",
+    "candidate_log_probabilities": [
+      [
+        -2.3841855067985307e-07,
+        -3.4570634852570947e-06,
+        0.0
+      ],
+      [
+        -2.3841855067985307e-07,
+        -3.4570634852570947e-06,
+        0.0
+      ],
+      [
+        -2.3841855067985307e-07,
+        -3.4570634852570947e-06,
+        0.0
+      ],
+      [
+        -2.3841855067985307e-07,
+        -3.4570634852570947e-06,
+        0.0
+      ],
+      [
+        -2.3841855067985307e-07,
+        -3.4570634852570947e-06,
+        0.0
+      ]
+    ],
+    "identical_log_probabilities": true,
+    "unique_execution_outputs": 2
+  },
+  {
+    "episode": 28,
+    "rewards": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "unique_pipelines": 1,
+    "zero_reward_variance": true,
+    "identical_action_sequences": true,
+    "loss_scientific": "0.000000000e+00",
+    "gradient_norm_scientific": "0.000000000e+00",
+    "reward_variance": 0.0,
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "question_id": "gsm8k:train:2068",
+    "candidate_log_probabilities": [
+      [
+        -1.1920928244535389e-07,
+        -2.622600959512056e-06,
+        0.0
+      ],
+      [
+        -1.1920928244535389e-07,
+        -2.622600959512056e-06,
+        0.0
+      ],
+      [
+        -1.1920928244535389e-07,
+        -2.622600959512056e-06,
+        0.0
+      ],
+      [
+        -1.1920928244535389e-07,
+        -2.622600959512056e-06,
+        0.0
+      ],
+      [
+        -1.1920928244535389e-07,
+        -2.622600959512056e-06,
+        0.0
+      ]
+    ],
+    "identical_log_probabilities": true,
+    "unique_execution_outputs": 1
+  },
+  {
+    "episode": 29,
+    "rewards": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "unique_pipelines": 1,
+    "zero_reward_variance": true,
+    "identical_action_sequences": true,
+    "loss_scientific": "0.000000000e+00",
+    "gradient_norm_scientific": "0.000000000e+00",
+    "reward_variance": 0.0,
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "question_id": "gsm8k:train:3703",
+    "candidate_log_probabilities": [
+      [
+        -2.3841855067985307e-07,
+        -2.145764938177308e-06,
+        0.0
+      ],
+      [
+        -2.3841855067985307e-07,
+        -2.145764938177308e-06,
+        0.0
+      ],
+      [
+        -2.3841855067985307e-07,
+        -2.145764938177308e-06,
+        0.0
+      ],
+      [
+        -2.3841855067985307e-07,
+        -2.145764938177308e-06,
+        0.0
+      ],
+      [
+        -2.3841855067985307e-07,
+        -2.145764938177308e-06,
+        0.0
+      ]
+    ],
+    "identical_log_probabilities": true,
+    "unique_execution_outputs": 1
+  },
+  {
+    "episode": 30,
+    "rewards": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "unique_pipelines": 1,
+    "zero_reward_variance": true,
+    "identical_action_sequences": true,
+    "loss_scientific": "0.000000000e+00",
+    "gradient_norm_scientific": "0.000000000e+00",
+    "reward_variance": 0.0,
+    "advantages": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "question_id": "gsm8k:train:6195",
+    "candidate_log_probabilities": [
+      [
+        -1.1920928244535389e-07,
+        -2.622600959512056e-06,
+        0.0
+      ],
+      [
+        -1.1920928244535389e-07,
+        -2.622600959512056e-06,
+        0.0
+      ],
+      [
+        -1.1920928244535389e-07,
+        -2.622600959512056e-06,
+        0.0
+      ],
+      [
+        -1.1920928244535389e-07,
+        -2.622600959512056e-06,
+        0.0
+      ],
+      [
+        -1.1920928244535389e-07,
+        -2.622600959512056e-06,
+        0.0
+      ]
+    ],
+    "identical_log_probabilities": true,
+    "unique_execution_outputs": 1
+  }
+]

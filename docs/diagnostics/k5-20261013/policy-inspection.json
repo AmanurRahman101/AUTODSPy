@@ -1,0 +1,318 @@
+{
+  "checkpoint_evaluations": [
+    {
+      "checkpoint_episode": 0,
+      "prompt_episode": 1,
+      "question_id": "gsm8k:train:4423",
+      "partial": [],
+      "probabilities": {
+        "CoT": 0.7071330174130661,
+        "Predict": 0.29286698144716095
+      },
+      "entropy_nats": 0.6046988113204707
+    },
+    {
+      "checkpoint_episode": 0,
+      "prompt_episode": 1,
+      "question_id": "gsm8k:train:4423",
+      "partial": [
+        "Predict"
+      ],
+      "probabilities": {
+        "question -> answer": 0.10750012880975972,
+        "text -> summary": 0.09554404856935181,
+        "question -> reasoning": 0.10750012880975972,
+        "question -> hypothesis": 0.10750012880975972,
+        "problem -> solution": 0.04960013277492318,
+        "problem_description -> explanation": 0.04960013277492318,
+        "context -> summary": 0.006908842441253001,
+        "context -> briefing": 0.006908842441253001,
+        "word_problem -> solution": 0.05142038917728838,
+        "math_problem -> answer": 0.03312031266756881,
+        "prompt -> response": 0.13776568383534651,
+        "query -> response": 0.006660714672699092,
+        "text -> response": 0.09554404856935181,
+        "prompt -> generated_text": 0.13776568383534651,
+        "query -> generated_text": 0.006660714672699092
+      },
+      "entropy_nats": 2.4130656625177904
+    },
+    {
+      "checkpoint_episode": 0,
+      "prompt_episode": 2,
+      "question_id": "gsm8k:train:3812",
+      "partial": [],
+      "probabilities": {
+        "CoT": 0.3837540524999249,
+        "Predict": 0.6162459084455032
+      },
+      "entropy_nats": 0.6658720656536012
+    },
+    {
+      "checkpoint_episode": 0,
+      "prompt_episode": 2,
+      "question_id": "gsm8k:train:3812",
+      "partial": [
+        "Predict"
+      ],
+      "probabilities": {
+        "question -> answer": 0.14640069385732712,
+        "text -> summary": 0.1135932626020086,
+        "question -> reasoning": 0.14640069385732712,
+        "question -> hypothesis": 0.14640069385732712,
+        "problem -> solution": 0.030293658659033818,
+        "problem_description -> explanation": 0.030293658659033818,
+        "context -> summary": 0.004707982944377341,
+        "context -> briefing": 0.004707982944377341,
+        "word_problem -> solution": 0.05721597718634314,
+        "math_problem -> answer": 0.08737650546500486,
+        "prompt -> response": 0.05075865799509782,
+        "query -> response": 0.008749155115707697,
+        "text -> response": 0.1135932626020086,
+        "prompt -> generated_text": 0.05075865799509782,
+        "query -> generated_text": 0.008749155115707697
+      },
+      "entropy_nats": 2.36254910144619
+    },
+    {
+      "checkpoint_episode": 25,
+      "prompt_episode": 1,
+      "question_id": "gsm8k:train:4423",
+      "partial": [],
+      "probabilities": {
+        "CoT": 3.9992246836274826e-08,
+        "Predict": 1.0
+      },
+      "entropy_nats": 6.812511373389973e-07
+    },
+    {
+      "checkpoint_episode": 25,
+      "prompt_episode": 1,
+      "question_id": "gsm8k:train:4423",
+      "partial": [
+        "Predict"
+      ],
+      "probabilities": {
+        "question -> answer": 7.100143882863793e-12,
+        "text -> summary": 9.326753700669206e-08,
+        "question -> reasoning": 7.100143882863793e-12,
+        "question -> hypothesis": 7.100143882863793e-12,
+        "problem -> solution": 4.11049285162366e-09,
+        "problem_description -> explanation": 4.11049285162366e-09,
+        "context -> summary": 1.6227503641985926e-09,
+        "context -> briefing": 1.6227503641985926e-09,
+        "word_problem -> solution": 2.2913581740275926e-07,
+        "math_problem -> answer": 0.9999966621509202,
+        "prompt -> response": 4.057781068141206e-12,
+        "query -> response": 1.4164123680645675e-06,
+        "text -> response": 9.326753700669206e-08,
+        "prompt -> generated_text": 4.057781068141206e-12,
+        "query -> generated_text": 1.4164123680645675e-06
+      },
+      "entropy_nats": 4.8236608646637624e-05
+    },
+    {
+      "checkpoint_episode": 25,
+      "prompt_episode": 2,
+      "question_id": "gsm8k:train:3812",
+      "partial": [],
+      "probabilities": {
+        "CoT": 8.268907126028945e-07,
+        "Predict": 0.9999991655356624
+      },
+      "entropy_nats": 1.2415559013616225e-05
+    },
+    {
+      "checkpoint_episode": 25,
+      "prompt_episode": 2,
+      "question_id": "gsm8k:train:3812",
+      "partial": [
+        "Predict"
+      ],
+      "probabilities": {
+        "question -> answer": 9.935082017033742e-11,
+        "text -> summary": 2.407330260073781e-07,
+        "question -> reasoning": 9.935082017033742e-11,
+        "question -> hypothesis": 9.935082017033742e-11,
+        "problem -> solution": 6.420330542938786e-09,
+        "problem_description -> explanation": 6.420330542938786e-09,
+        "context -> summary": 2.944637759437893e-09,
+        "context -> briefing": 2.944637759437893e-09,
+        "word_problem -> solution": 6.992971226341577e-07,
+        "math_problem -> answer": 0.9999966621509202,
+        "prompt -> response": 4.2534936473307053e-11,
+        "query -> response": 1.058773908195434e-06,
+        "text -> response": 2.407330260073781e-07,
+        "prompt -> generated_text": 4.2534936473307053e-11,
+        "query -> generated_text": 1.058773908195434e-06
+      },
+      "entropy_nats": 5.008732615321108e-05
+    },
+    {
+      "checkpoint_episode": 30,
+      "prompt_episode": 1,
+      "question_id": "gsm8k:train:4423",
+      "partial": [],
+      "probabilities": {
+        "CoT": 3.7505517892445216e-08,
+        "Predict": 1.0
+      },
+      "entropy_nats": 6.412985156290386e-07
+    },
+    {
+      "checkpoint_episode": 30,
+      "prompt_episode": 1,
+      "question_id": "gsm8k:train:4423",
+      "partial": [
+        "Predict"
+      ],
+      "probabilities": {
+        "question -> answer": 5.727171094148438e-12,
+        "text -> summary": 8.078779200157969e-08,
+        "question -> reasoning": 5.727171094148438e-12,
+        "question -> hypothesis": 5.727171094148438e-12,
+        "problem -> solution": 3.404573857604081e-09,
+        "problem_description -> explanation": 3.404573857604081e-09,
+        "context -> summary": 1.4178360108574206e-09,
+        "context -> briefing": 1.4178360108574206e-09,
+        "word_problem -> solution": 2.0651164167427413e-07,
+        "math_problem -> answer": 0.9999969005680498,
+        "prompt -> response": 3.315011686223376e-12,
+        "query -> response": 1.3286891398786383e-06,
+        "text -> response": 8.078779200157969e-08,
+        "prompt -> generated_text": 3.315011686223376e-12,
+        "query -> generated_text": 1.3286891398786383e-06
+      },
+      "entropy_nats": 4.506599392179338e-05
+    },
+    {
+      "checkpoint_episode": 30,
+      "prompt_episode": 2,
+      "question_id": "gsm8k:train:3812",
+      "partial": [],
+      "probabilities": {
+        "CoT": 7.545918621616465e-07,
+        "Predict": 0.9999992847447459
+      },
+      "entropy_nats": 1.1352803497390427e-05
+    },
+    {
+      "checkpoint_episode": 30,
+      "prompt_episode": 2,
+      "question_id": "gsm8k:train:3812",
+      "partial": [
+        "Predict"
+      ],
+      "probabilities": {
+        "question -> answer": 7.345061749029503e-11,
+        "text -> summary": 1.9879737864549376e-07,
+        "question -> reasoning": 7.345061749029503e-11,
+        "question -> hypothesis": 7.345061749029503e-11,
+        "problem -> solution": 5.0750647971463765e-09,
+        "problem_description -> explanation": 5.0750647971463765e-09,
+        "context -> summary": 2.3937909089563483e-09,
+        "context -> briefing": 2.3937909089563483e-09,
+        "word_problem -> solution": 5.941902717690154e-07,
+        "math_problem -> answer": 0.9999970197767496,
+        "prompt -> response": 3.1336985318007806e-11,
+        "query -> response": 9.417361159168079e-07,
+        "text -> response": 1.9879737864549376e-07,
+        "prompt -> generated_text": 3.1336985318007806e-11,
+        "query -> generated_text": 9.417361159168079e-07
+      },
+      "entropy_nats": 4.406359178201055e-05
+    }
+  ],
+  "limitations": [
+    "No episode-1 checkpoint exists. Episode-2 rollout probabilities are after exactly one Adam step, on a different training question. No optimizer updates or external inference executed."
+  ],
+  "optimizer": [
+    {
+      "episode": 25,
+      "step_values": [
+        25.0
+      ],
+      "first_moment_norm": 1.7339026867116325
+    },
+    {
+      "episode": 30,
+      "step_values": [
+        30.0
+      ],
+      "first_moment_norm": 1.023852152675181
+    }
+  ],
+  "checks": {
+    "episode1_checkpoint0_replay_max_errors": [
+      1.2874603271484375e-05,
+      1.2874603271484375e-05,
+      2.3365020751953125e-05,
+      1.7642974853515625e-05,
+      2.2411346435546875e-05
+    ]
+  },
+  "action_token_collisions": {
+    "25652": [
+      "question -> answer",
+      "question -> reasoning",
+      "question -> hypothesis"
+    ],
+    "5239": [
+      "text -> summary",
+      "text -> response"
+    ],
+    "45573": [
+      "problem -> solution",
+      "problem_description -> explanation"
+    ],
+    "22866": [
+      "context -> summary",
+      "context -> briefing"
+    ],
+    "16963": [
+      "prompt -> response",
+      "prompt -> generated_text"
+    ],
+    "22766": [
+      "query -> response",
+      "query -> generated_text"
+    ]
+  },
+  "episode2_after_one_step_selected_probabilities": [
+    0.9968154838505434,
+    0.984748654517279,
+    1.0
+  ],
+  "episode2_entropy_module_nats": 0.02148867222030756,
+  "episode2_entropy_signature_bounds_nats": [
+    0.07893216134156328,
+    0.1191813364242327
+  ],
+  "episode1_saved_selected_probabilities": [
+    [
+      0.7071345769060413,
+      0.15824408364203757,
+      1.0
+    ],
+    [
+      0.7071345769060413,
+      0.18348373755701097,
+      1.0
+    ],
+    [
+      0.2928654103904592,
+      0.03312108653340226,
+      1.0
+    ],
+    [
+      0.7071345769060413,
+      0.10335707047518136,
+      1.0
+    ],
+    [
+      0.2928654103904592,
+      0.10749771961412787,
+      1.0
+    ]
+  ]
+}
