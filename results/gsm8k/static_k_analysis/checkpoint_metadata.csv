@@ -1,0 +1,13 @@
+k,checkpoint,episode,saved_at,optimizer_parameter_states,training_rows,validation_rows,file_bytes,metadata_verified
+5,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\checkpoints\episode_0000_7629e18a.pt,0,2026-10-13T17:49:56.859488+00:00,0,0,1,497842374,True
+5,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\checkpoints\episode_0025_f85afbe9.pt,25,2026-10-13T17:59:35.089156+00:00,148,25,1,1493558670,True
+5,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\checkpoints\episode_0030_689ac93f.pt,30,2026-10-13T18:02:46.888250+00:00,148,30,2,1493578254,True
+8,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\checkpoints\episode_0000_694f9169.pt,0,2026-10-13T18:11:33.877189+00:00,0,0,1,497842374,True
+8,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\checkpoints\episode_0025_c1c342e3.pt,25,2026-10-13T18:25:34.939281+00:00,148,25,1,1493633294,True
+8,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\checkpoints\episode_0030_a2d9cc0b.pt,30,2026-10-13T18:29:07.210628+00:00,148,30,2,1493675278,True
+10,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\checkpoints\episode_0000_b751824d.pt,0,2026-10-13T18:38:30.734024+00:00,0,0,1,497842374,True
+10,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\checkpoints\episode_0025_9a4e214d.pt,25,2026-10-13T18:52:40.375947+00:00,148,25,1,1493675342,True
+10,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\checkpoints\episode_0030_ebdecd4f.pt,30,2026-10-13T18:55:56.158060+00:00,148,30,2,1493720014,True
+15,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\checkpoints\episode_0000_29cb2d83.pt,0,2026-10-13T19:01:00.754048+00:00,0,0,1,497842374,True
+15,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\checkpoints\episode_0025_52e3f31f.pt,25,2026-10-13T19:25:00.802315+00:00,148,25,1,1493759310,True
+15,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\checkpoints\episode_0030_cec4cc1d.pt,30,2026-10-13T19:30:19.011348+00:00,148,30,2,1493823054,True

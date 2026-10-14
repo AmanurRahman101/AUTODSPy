@@ -1,0 +1,7 @@
+k_a,k_b,questions,both_correct,a_only_correct,b_only_correct,same_sampled_pipeline_count,same_output_count
+5,8,30,19,4,1,12,13
+5,10,30,20,3,3,0,1
+5,15,30,20,3,1,12,15
+8,10,30,16,4,7,0,0
+8,15,30,20,0,1,30,25
+10,15,30,17,6,4,0,0

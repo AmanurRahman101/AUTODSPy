@@ -1,0 +1,57 @@
+{
+  "checks": [
+    {
+      "check": "missing resource stays unavailable",
+      "status": "passed"
+    },
+    {
+      "check": "recorded zero remains zero",
+      "status": "passed"
+    },
+    {
+      "check": "absent history stays unavailable",
+      "status": "passed"
+    },
+    {
+      "check": "reject incompatible learning rate",
+      "status": "passed"
+    },
+    {
+      "check": "reject incorrectly centered advantages",
+      "status": "passed"
+    },
+    {
+      "check": "reject wrong held-out checkpoint",
+      "status": "passed"
+    },
+    {
+      "check": "reject wrong episode schedule",
+      "status": "passed"
+    },
+    {
+      "check": "unavailable training_input_tokens",
+      "status": "passed"
+    },
+    {
+      "check": "unavailable total_input_tokens",
+      "status": "passed"
+    },
+    {
+      "check": "unavailable average_gradient_norm",
+      "status": "passed"
+    },
+    {
+      "check": "unavailable meaningful_nonzero_gradient_rate_pct",
+      "status": "passed"
+    },
+    {
+      "check": "unavailable average_policy_joint_entropy_nats",
+      "status": "passed"
+    },
+    {
+      "check": "original run logs remain intact",
+      "status": "passed"
+    }
+  ],
+  "scope": "Integrity rejection and missing-data checks; no synthetic experimental results"
+}

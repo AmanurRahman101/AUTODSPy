@@ -1,0 +1,21 @@
+k,metric,status,reason
+5,average_policy_module_entropy_nats,unavailable,full action distributions/entropy diagnostics were not logged
+5,average_policy_signature_entropy_nats,unavailable,full action distributions/entropy diagnostics were not logged
+5,average_policy_joint_entropy_nats,unavailable,full action distributions/entropy diagnostics were not logged
+5,total_wall_seconds,unavailable,measurement absent or repeated tests disagree
+5,physical_http_requests,unavailable,measurement absent or repeated tests disagree
+8,average_policy_module_entropy_nats,unavailable,full action distributions/entropy diagnostics were not logged
+8,average_policy_signature_entropy_nats,unavailable,full action distributions/entropy diagnostics were not logged
+8,average_policy_joint_entropy_nats,unavailable,full action distributions/entropy diagnostics were not logged
+8,total_wall_seconds,unavailable,measurement absent or repeated tests disagree
+8,physical_http_requests,unavailable,measurement absent or repeated tests disagree
+10,average_policy_module_entropy_nats,unavailable,full action distributions/entropy diagnostics were not logged
+10,average_policy_signature_entropy_nats,unavailable,full action distributions/entropy diagnostics were not logged
+10,average_policy_joint_entropy_nats,unavailable,full action distributions/entropy diagnostics were not logged
+10,total_wall_seconds,unavailable,measurement absent or repeated tests disagree
+10,physical_http_requests,unavailable,measurement absent or repeated tests disagree
+15,average_policy_module_entropy_nats,unavailable,full action distributions/entropy diagnostics were not logged
+15,average_policy_signature_entropy_nats,unavailable,full action distributions/entropy diagnostics were not logged
+15,average_policy_joint_entropy_nats,unavailable,full action distributions/entropy diagnostics were not logged
+15,total_wall_seconds,unavailable,measurement absent or repeated tests disagree
+15,physical_http_requests,unavailable,measurement absent or repeated tests disagree

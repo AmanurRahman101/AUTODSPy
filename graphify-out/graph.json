@@ -99,106 +99,6 @@
       "source_location": "L1"
     },
     {
-      "id": "agents_skills_code_review_skill",
-      "label": "code-review/SKILL.md",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "run_grpo_baseline.py",
-      "file_type": "document",
-      "frontmatter": {
-        "name": "code-review",
-        "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code follow this repo&#x27;s documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \\&quot;review since X\\&quot;."
-      },
-      "node_kind": "page",
-      "norm_label": "code-review/skill.md",
-      "source_file": ".agents/skills/code-review/SKILL.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "agents_skills_code_review_skill_1_pin_the_fixed_point",
-      "label": "1. Pin the fixed point",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "run_grpo_baseline.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "1. pin the fixed point",
-      "source_file": ".agents/skills/code-review/SKILL.md",
-      "source_location": "L17"
-    },
-    {
-      "id": "agents_skills_code_review_skill_2_identify_the_spec_source",
-      "label": "2. Identify the spec source",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "run_grpo_baseline.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "2. identify the spec source",
-      "source_file": ".agents/skills/code-review/SKILL.md",
-      "source_location": "L25"
-    },
-    {
-      "id": "agents_skills_code_review_skill_3_identify_the_standards_sources",
-      "label": "3. Identify the standards sources",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "run_grpo_baseline.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "3. identify the standards sources",
-      "source_file": ".agents/skills/code-review/SKILL.md",
-      "source_location": "L34"
-    },
-    {
-      "id": "agents_skills_code_review_skill_4_spawn_both_sub_agents_in_parallel",
-      "label": "4. Spawn both sub-agents in parallel",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "run_grpo_baseline.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "4. spawn both sub-agents in parallel",
-      "source_file": ".agents/skills/code-review/SKILL.md",
-      "source_location": "L58"
-    },
-    {
-      "id": "agents_skills_code_review_skill_5_aggregate",
-      "label": "5. Aggregate",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "run_grpo_baseline.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "5. aggregate",
-      "source_file": ".agents/skills/code-review/SKILL.md",
-      "source_location": "L76"
-    },
-    {
-      "id": "agents_skills_code_review_skill_process",
-      "label": "Process",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "run_grpo_baseline.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "process",
-      "source_file": ".agents/skills/code-review/SKILL.md",
-      "source_location": "L15"
-    },
-    {
-      "id": "agents_skills_code_review_skill_why_two_axes",
-      "label": "Why two axes",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "run_grpo_baseline.py",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "why two axes",
-      "source_file": ".agents/skills/code-review/SKILL.md",
-      "source_location": "L82"
-    },
-    {
       "id": "docs_master_spec_6_preserve_the_original_dspy_action_space",
       "label": "6. Preserve the Original DSPy Action Space",
       "_origin": "ast",
@@ -461,6 +361,18 @@
       "norm_label": "which settings come from which source",
       "source_file": "docs/PHASE_1_AUDIT.md",
       "source_location": "L47"
+    },
+    {
+      "id": "docs_static_k_results_analysis_1_experimental_configuration_and_comparability_audit",
+      "label": "1. Experimental configuration and comparability audit",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "run_grpo_baseline.py",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1. experimental configuration and comparability audit",
+      "source_file": "docs/STATIC_K_RESULTS_ANALYSIS.md",
+      "source_location": "L7"
     },
     {
       "id": "readme_core_functions",
@@ -8480,6 +8392,250 @@
       "norm_label": "verification and preservation",
       "source_file": "docs/STABILITY_PILOT_REPORT.md",
       "source_location": "L49"
+    },
+    {
+      "id": "docs_static_k_results_analysis",
+      "label": "STATIC_K_RESULTS_ANALYSIS.md",
+      "_origin": "ast",
+      "community": 66,
+      "community_name": "Static-K GRPO on GSM8K: saved experimental results",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "static_k_results_analysis.md",
+      "source_file": "docs/STATIC_K_RESULTS_ANALYSIS.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "docs_static_k_results_analysis_10_recommended_next_research_experiment",
+      "label": "10. Recommended next research experiment",
+      "_origin": "ast",
+      "community": 66,
+      "community_name": "Static-K GRPO on GSM8K: saved experimental results",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "10. recommended next research experiment",
+      "source_file": "docs/STATIC_K_RESULTS_ANALYSIS.md",
+      "source_location": "L261"
+    },
+    {
+      "id": "docs_static_k_results_analysis_2_summary_comparing_all_four_k_values",
+      "label": "2. Summary comparing all four K values",
+      "_origin": "ast",
+      "community": 66,
+      "community_name": "Static-K GRPO on GSM8K: saved experimental results",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2. summary comparing all four k values",
+      "source_file": "docs/STATIC_K_RESULTS_ANALYSIS.md",
+      "source_location": "L53"
+    },
+    {
+      "id": "docs_static_k_results_analysis_3_model_performance_analysis",
+      "label": "3. Model performance analysis",
+      "_origin": "ast",
+      "community": 66,
+      "community_name": "Static-K GRPO on GSM8K: saved experimental results",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3. model performance analysis",
+      "source_file": "docs/STATIC_K_RESULTS_ANALYSIS.md",
+      "source_location": "L86"
+    },
+    {
+      "id": "docs_static_k_results_analysis_4_grpo_learning_behavior_and_group_effectiveness",
+      "label": "4. GRPO learning behavior and group effectiveness",
+      "_origin": "ast",
+      "community": 66,
+      "community_name": "Static-K GRPO on GSM8K: saved experimental results",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4. grpo learning behavior and group effectiveness",
+      "source_file": "docs/STATIC_K_RESULTS_ANALYSIS.md",
+      "source_location": "L102"
+    },
+    {
+      "id": "docs_static_k_results_analysis_5_pipeline_diversity_analysis",
+      "label": "5. Pipeline diversity analysis",
+      "_origin": "ast",
+      "community": 66,
+      "community_name": "Static-K GRPO on GSM8K: saved experimental results",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5. pipeline diversity analysis",
+      "source_file": "docs/STATIC_K_RESULTS_ANALYSIS.md",
+      "source_location": "L136"
+    },
+    {
+      "id": "docs_static_k_results_analysis_6_training_stability_and_reward_integrity",
+      "label": "6. Training stability and reward integrity",
+      "_origin": "ast",
+      "community": 66,
+      "community_name": "Static-K GRPO on GSM8K: saved experimental results",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "6. training stability and reward integrity",
+      "source_file": "docs/STATIC_K_RESULTS_ANALYSIS.md",
+      "source_location": "L163"
+    },
+    {
+      "id": "docs_static_k_results_analysis_7_computational_efficiency_comparison",
+      "label": "7. Computational efficiency comparison",
+      "_origin": "ast",
+      "community": 66,
+      "community_name": "Static-K GRPO on GSM8K: saved experimental results",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "7. computational efficiency comparison",
+      "source_file": "docs/STATIC_K_RESULTS_ANALYSIS.md",
+      "source_location": "L185"
+    },
+    {
+      "id": "docs_static_k_results_analysis_8_limitations_and_potential_confounding_factors",
+      "label": "8. Limitations and potential confounding factors",
+      "_origin": "ast",
+      "community": 66,
+      "community_name": "Static-K GRPO on GSM8K: saved experimental results",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "8. limitations and potential confounding factors",
+      "source_file": "docs/STATIC_K_RESULTS_ANALYSIS.md",
+      "source_location": "L214"
+    },
+    {
+      "id": "docs_static_k_results_analysis_9_insights_relevant_to_adaptive_k_research",
+      "label": "9. Insights relevant to Adaptive-K research",
+      "_origin": "ast",
+      "community": 66,
+      "community_name": "Static-K GRPO on GSM8K: saved experimental results",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "9. insights relevant to adaptive-k research",
+      "source_file": "docs/STATIC_K_RESULTS_ANALYSIS.md",
+      "source_location": "L227"
+    },
+    {
+      "id": "docs_static_k_results_analysis_artifacts_reproduction_and_verification",
+      "label": "Artifacts, reproduction, and verification",
+      "_origin": "ast",
+      "community": 66,
+      "community_name": "Static-K GRPO on GSM8K: saved experimental results",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "artifacts, reproduction, and verification",
+      "source_file": "docs/STATIC_K_RESULTS_ANALYSIS.md",
+      "source_location": "L271"
+    },
+    {
+      "id": "docs_static_k_results_analysis_static_k_grpo_on_gsm8k_saved_experimental_results",
+      "label": "Static-K GRPO on GSM8K: saved experimental results",
+      "_origin": "ast",
+      "community": 66,
+      "community_name": "Static-K GRPO on GSM8K: saved experimental results",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "static-k grpo on gsm8k: saved experimental results",
+      "source_file": "docs/STATIC_K_RESULTS_ANALYSIS.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "agents_skills_code_review_skill",
+      "label": "code-review/SKILL.md",
+      "_origin": "ast",
+      "community": 67,
+      "community_name": "Process",
+      "file_type": "document",
+      "frontmatter": {
+        "name": "code-review",
+        "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code follow this repo&#x27;s documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \\&quot;review since X\\&quot;."
+      },
+      "node_kind": "page",
+      "norm_label": "code-review/skill.md",
+      "source_file": ".agents/skills/code-review/SKILL.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "agents_skills_code_review_skill_1_pin_the_fixed_point",
+      "label": "1. Pin the fixed point",
+      "_origin": "ast",
+      "community": 67,
+      "community_name": "Process",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1. pin the fixed point",
+      "source_file": ".agents/skills/code-review/SKILL.md",
+      "source_location": "L17"
+    },
+    {
+      "id": "agents_skills_code_review_skill_2_identify_the_spec_source",
+      "label": "2. Identify the spec source",
+      "_origin": "ast",
+      "community": 67,
+      "community_name": "Process",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2. identify the spec source",
+      "source_file": ".agents/skills/code-review/SKILL.md",
+      "source_location": "L25"
+    },
+    {
+      "id": "agents_skills_code_review_skill_3_identify_the_standards_sources",
+      "label": "3. Identify the standards sources",
+      "_origin": "ast",
+      "community": 67,
+      "community_name": "Process",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3. identify the standards sources",
+      "source_file": ".agents/skills/code-review/SKILL.md",
+      "source_location": "L34"
+    },
+    {
+      "id": "agents_skills_code_review_skill_4_spawn_both_sub_agents_in_parallel",
+      "label": "4. Spawn both sub-agents in parallel",
+      "_origin": "ast",
+      "community": 67,
+      "community_name": "Process",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4. spawn both sub-agents in parallel",
+      "source_file": ".agents/skills/code-review/SKILL.md",
+      "source_location": "L58"
+    },
+    {
+      "id": "agents_skills_code_review_skill_5_aggregate",
+      "label": "5. Aggregate",
+      "_origin": "ast",
+      "community": 67,
+      "community_name": "Process",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5. aggregate",
+      "source_file": ".agents/skills/code-review/SKILL.md",
+      "source_location": "L76"
+    },
+    {
+      "id": "agents_skills_code_review_skill_process",
+      "label": "Process",
+      "_origin": "ast",
+      "community": 67,
+      "community_name": "Process",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "process",
+      "source_file": ".agents/skills/code-review/SKILL.md",
+      "source_location": "L15"
+    },
+    {
+      "id": "agents_skills_code_review_skill_why_two_axes",
+      "label": "Why two axes",
+      "_origin": "ast",
+      "community": 67,
+      "community_name": "Process",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "why two axes",
+      "source_file": ".agents/skills/code-review/SKILL.md",
+      "source_location": "L82"
     },
     {
       "id": "agents_skills_prototype_skill",
@@ -16630,6 +16786,138 @@
       "weight": 1.0
     },
     {
+      "source": "docs_static_k_results_analysis",
+      "target": "docs_static_k_results_analysis_static_k_grpo_on_gsm8k_saved_experimental_results",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/STATIC_K_RESULTS_ANALYSIS.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_static_k_results_analysis_10_recommended_next_research_experiment",
+      "target": "docs_static_k_results_analysis_artifacts_reproduction_and_verification",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/STATIC_K_RESULTS_ANALYSIS.md",
+      "source_location": "L271",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_static_k_results_analysis_static_k_grpo_on_gsm8k_saved_experimental_results",
+      "target": "docs_static_k_results_analysis_4_grpo_learning_behavior_and_group_effectiveness",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/STATIC_K_RESULTS_ANALYSIS.md",
+      "source_location": "L102",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_static_k_results_analysis_static_k_grpo_on_gsm8k_saved_experimental_results",
+      "target": "docs_static_k_results_analysis_5_pipeline_diversity_analysis",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/STATIC_K_RESULTS_ANALYSIS.md",
+      "source_location": "L136",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_static_k_results_analysis_static_k_grpo_on_gsm8k_saved_experimental_results",
+      "target": "docs_static_k_results_analysis_6_training_stability_and_reward_integrity",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/STATIC_K_RESULTS_ANALYSIS.md",
+      "source_location": "L163",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_static_k_results_analysis_static_k_grpo_on_gsm8k_saved_experimental_results",
+      "target": "docs_static_k_results_analysis_7_computational_efficiency_comparison",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/STATIC_K_RESULTS_ANALYSIS.md",
+      "source_location": "L185",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_static_k_results_analysis_static_k_grpo_on_gsm8k_saved_experimental_results",
+      "target": "docs_static_k_results_analysis_8_limitations_and_potential_confounding_factors",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/STATIC_K_RESULTS_ANALYSIS.md",
+      "source_location": "L214",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_static_k_results_analysis_static_k_grpo_on_gsm8k_saved_experimental_results",
+      "target": "docs_static_k_results_analysis_9_insights_relevant_to_adaptive_k_research",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/STATIC_K_RESULTS_ANALYSIS.md",
+      "source_location": "L227",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_static_k_results_analysis_static_k_grpo_on_gsm8k_saved_experimental_results",
+      "target": "docs_static_k_results_analysis_10_recommended_next_research_experiment",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/STATIC_K_RESULTS_ANALYSIS.md",
+      "source_location": "L261",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_static_k_results_analysis_static_k_grpo_on_gsm8k_saved_experimental_results",
+      "target": "docs_static_k_results_analysis_2_summary_comparing_all_four_k_values",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/STATIC_K_RESULTS_ANALYSIS.md",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_static_k_results_analysis_static_k_grpo_on_gsm8k_saved_experimental_results",
+      "target": "docs_static_k_results_analysis_1_experimental_configuration_and_comparability_audit",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/STATIC_K_RESULTS_ANALYSIS.md",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_static_k_results_analysis_static_k_grpo_on_gsm8k_saved_experimental_results",
+      "target": "docs_static_k_results_analysis_3_model_performance_analysis",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/STATIC_K_RESULTS_ANALYSIS.md",
+      "source_location": "L86",
+      "weight": 1.0
+    },
+    {
       "source": "readme",
       "target": "readme_autodspy",
       "relation": "contains",
@@ -17860,6 +18148,17 @@
       "weight": 1.0
     },
     {
+      "source": "docs_static_k_results_analysis",
+      "target": "static_k_experiment_guide",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/STATIC_K_RESULTS_ANALYSIS.md",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
       "source": "static_k_experiment_guide",
       "target": "docs_phase_3_report",
       "relation": "references",
@@ -18082,8 +18381,20 @@
       "source_file": "docs/PHASE_1_AUDIT.md",
       "source_location": "L166",
       "weight": 1.0
+    },
+    {
+      "source": "docs_static_k_results_analysis_1_experimental_configuration_and_comparability_audit",
+      "target": "run_grpo_baseline_main",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "main",
+      "source_file": "docs/STATIC_K_RESULTS_ANALYSIS.md",
+      "source_location": "L22",
+      "weight": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "4432567cc0bd7970cd748b1904295f915152ed9c"
+  "built_at_commit": "fc0693035de4cc8ce38ec5d5664a9b95f0ffda1f"
 }

@@ -1,0 +1,347 @@
+k,artifact,question_id,numeric_exact_match,prediction,target,pipeline,output,reward,judge_score
+5,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\test_3e769531.json,gsm8k:test:416,False,304,56,CoT | query -> generated_text,"To solve for C and D, we can first solve the second equation for C: C = 304 - D
+
+Substituting this expression for C into the first equation gives us: 2(304 - D) + D = 180
+
+Expanding and simplifying the equation gives us: 608 - 2D + D = 180
+
+Combine like terms: 608 - D = 180
+
+Subtract 608 from both sides: -D = -428
+
+Multiply both sides by -1: D = 428
+
+Now that we have the value of D, we can substitute it back into one of the original equations to solve for C. Using the second equation: C + 428 = 304
+
+Subtract 428 from both sides: C = -124
+
+However, the number of camels cannot be negative, so this solution is not valid. Let's re-examine our steps.
+
+Upon re-examination, we realize that we made an error in our previous steps. The correct solution is as follows:
+
+We can solve the second equation for C: C = 304 - D
+
+Substituting this expression for C into the first equation gives us: 2(304 - D) + D = 180
+
+Expanding and simplifying the equation gives us: 608 - 2D + D = 180
+
+Combine like terms: 608 - D = 180
+
+Subtract 608 from both sides: -D = -428
+
+Multiply both sides by -1: D = 428
+
+However, this solution is also incorrect. Let's try again.
+
+The correct solution is as follows:
+
+We can solve the second equation for C: C = 304 - D
+
+Substituting this expression for C into the first equation gives",0.0,0.0
+5,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\test_3e769531.json,gsm8k:test:573,True,600,600,CoT | problem -> solution,[$600],1.0,unavailable
+5,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\test_3e769531.json,gsm8k:test:459,True,2,2,CoT | query -> response,[2],1.0,unavailable
+5,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\test_3e769531.json,gsm8k:test:925,True,2000,2000,CoT | problem -> solution,[2000],1.0,unavailable
+5,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\test_3e769531.json,gsm8k:test:55,True,14,14,CoT | query -> generated_text,Jean can fill 28 / 2 = 14 bags with the remaining lollipops.,1.0,unavailable
+5,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\test_3e769531.json,gsm8k:test:551,True,17,17,CoT | query -> generated_text,Carly gets $17 back as change.,1.0,unavailable
+5,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\test_3e769531.json,gsm8k:test:1271,True,43,43,CoT | word_problem -> solution,"To find the number of pink candies, we need to subtract the total number of red, orange, and yellow candies from the total number of candies in the bag. The total number of red, orange, and yellow candies is 54 + 108 + 27 = 189. Therefore, the number of pink candies is 232 - 189 = 43.",1.0,unavailable
+5,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\test_3e769531.json,gsm8k:test:641,False,372000,262500,CoT | problem -> solution,$31000 x 12 = $372000,0.0,0.0
+5,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\test_3e769531.json,gsm8k:test:286,True,90,90,CoT | math_problem -> answer,[90],1.0,unavailable
+5,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\test_3e769531.json,gsm8k:test:256,True,45,45,CoT | problem_description -> explanation,"First, let's calculate the value of the pennies. There are 100 pennies, and each penny is worth $0.01. So, the total value of the pennies is 100 x $0.01 = $1.
+Next, let's calculate the value of the nickels. There are 40 nickels, and each nickel is worth $0.05. So, the total value of the nickels is 40 x $0.05 = $2.
+Then, let's calculate the value of the dimes. There are 20 dimes, and each dime is worth $0.10. So, the total value of the dimes is 20 x $0.10 = $2.
+Finally, let's calculate the value of the dollar bills. There are 40 dollar bills, and each dollar bill is worth $1. So, the total value of the dollar bills is 40 x $1 = $40.
+Now, let's add up the values of all the currencies: $1 + $2 + $2 + $40 = $45.",1.0,unavailable
+5,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\test_3e769531.json,gsm8k:test:689,False,14.8,7,CoT | text -> summary,The total cost of 10 lollipops and 10 candies is $14.80.,0.0,0.0
+5,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\test_3e769531.json,gsm8k:test:156,False,800,1400,CoT | query -> response,[800],0.0,0.0
+5,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\test_3e769531.json,gsm8k:test:915,True,23,23,CoT | problem_description -> explanation,"First, we know Bruce works 5 hours on Tuesday. On Wednesday, he works twice the time he works on Tuesday, so he works 2 * 5 = 10 hours. On Thursday, he works 2 hours less than the time he works on Wednesday, so he works 10 - 2 = 8 hours. Now, we add the hours he works each day: 5 (Tuesday) + 10 (Wednesday) + 8 (Thursday) = 23 hours.",1.0,unavailable
+5,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\test_3e769531.json,gsm8k:test:676,True,240,240,CoT | word_problem -> solution,[240],1.0,unavailable
+5,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\test_3e769531.json,gsm8k:test:501,True,273,273,CoT | question -> hypothesis,"Mariah used 1/4 of a skein, which is (1/4) * 364 = 91 yards. Her grandma used 2/4 of a skein, which is (2/4) * 364 = 182 yards. The total yards used is 91 + 182 = 273 yards.",1.0,unavailable
+5,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\test_3e769531.json,gsm8k:test:1216,True,20,20,Predict | problem_description -> explanation,"To solve this problem, we need to calculate the total number of people on the bus after each stop and then determine how many more people are needed to fill the remaining spaces.
+
+Initially, the bus had 20 people. At the first stop, 40 people entered, making the total 20 + 40 = 60 people.
+
+At the second station, 3/4 of the 40 people who entered at the first stop entered the bus. This means 3/4 * 40 = 30 people entered at the second station. The total number of people on the bus now is 60 + 30 = 90 people.
+
+At the third station, the number of passengers doubled, meaning the number of people on the bus became 2 * 90 = 180 people.
+
+Since the bus has a capacity of 200 people, the remaining spaces can be calculated by subtracting the current number of people from the capacity: 200 - 180 = 20 people.
+
+Therefore, 20 more people are required to fill the remaining spaces on the bus.",1.0,unavailable
+5,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\test_3e769531.json,gsm8k:test:1034,True,66,66,CoT | query -> generated_text,[66],1.0,unavailable
+5,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\test_3e769531.json,gsm8k:test:325,True,224000,224000,CoT | problem_description -> explanation,"To solve this problem, we need to find the number of Junior programmers and their total monthly payment, and then add the monthly payment of Senior programmers. First, we find the number of Junior programmers: 2/5 of 100 is (2/5) * 100 = 40. Then, we find the total monthly payment of Junior programmers: 40 * $2000 = $80,000. Since Senior programmers are paid $400 more than Junior programmers, their monthly payment is $2000 + $400 = $2400. The total monthly payment of Senior programmers is 60 * $2400 = $144,000. Therefore, the total amount of money the company pays to all the programmers per month is $80,000 + $144,000 = $224,000.",1.0,unavailable
+5,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\test_3e769531.json,gsm8k:test:1265,False,27,36,CoT | math_problem -> answer,[27],0.0,0.0
+5,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\test_3e769531.json,gsm8k:test:136,True,6,6,CoT | word_problem -> solution,[6],1.0,unavailable
+5,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\test_3e769531.json,gsm8k:test:697,True,27,27,CoT | word_problem -> solution,[27],1.0,unavailable
+5,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\test_3e769531.json,gsm8k:test:1043,True,130000,130000,CoT | problem_description -> explanation,"Since there are 26 countries in South America and each country has 5 cities with a population of 1000 people, we can calculate the total population as follows: 
+Total population = Number of countries * Number of cities per country * Population per city 
+Total population = 26 * 5 * 1000 
+Total population = 130000 
+
+Therefore, the total population of South America is 130000 people.",1.0,unavailable
+5,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\test_3e769531.json,gsm8k:test:1311,False,6,594,CoT | problem_description -> explanation,"This calculation is based on the ratio of line to dock length, which is 3:1. The caretaker needs 3 times the length of the dock in line, so for 200 feet of dock, he needs 600 feet of line. Since he already has 6 feet of line, we subtract this from the total amount needed to find the amount he needs to buy.",0.0,0.0
+5,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\test_3e769531.json,gsm8k:test:519,True,280,280,CoT | problem -> solution,240 + 40 = 280 minutes,1.0,unavailable
+5,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\test_3e769531.json,gsm8k:test:716,True,770,770,CoT | question -> answer,[770],1.0,unavailable
+5,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\test_3e769531.json,gsm8k:test:51,True,5,5,CoT | math_problem -> answer,[5],1.0,unavailable
+5,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\test_3e769531.json,gsm8k:test:878,True,5,5,CoT | math_problem -> answer,[5],1.0,unavailable
+5,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\test_3e769531.json,gsm8k:test:757,True,75,75,CoT | problem -> solution,[75],1.0,unavailable
+5,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\test_3e769531.json,gsm8k:test:1123,True,105,105,CoT | problem -> solution,"Elijah's first dog weighs (1/4) * 60 = 15 pounds. Elijah's second dog weighs (1/2) * 60 = 30 pounds. To find the total weight of both dogs, we add the weights of Elijah's dogs and Kory's dog: 15 + 30 + 60 = 105 pounds.",1.0,unavailable
+5,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\test_3e769531.json,gsm8k:test:63,False,unavailable,1596,CoT | problem_description -> explanation,"This problem requires the calculation of the total amount Aleena paid for the streaming service by the end of the year, taking into account the initial amount charged for the first half of the year and the reduced amount charged for the second half of the year.",0.0,0.0
+8,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\test_174249a3.json,gsm8k:test:416,False,28,56,Predict | query -> generated_text,"To find the number of dromedaries, let's first find the number of camels. We know that camels have two humps each and there are 304 bumps in total. So, the number of camels can be calculated as 304 / 2 = 152. Now, we know that the total number of heads is 180 and the number of camels is 152. Therefore, the number of dromedaries can be calculated as 180 - 152 = 28.",0.0,0.0
+8,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\test_174249a3.json,gsm8k:test:573,True,600,600,CoT | text -> summary,The amount of money remaining in Katina's savings account after 2 years is $600.,1.0,unavailable
+8,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\test_174249a3.json,gsm8k:test:459,True,2,2,CoT | prompt -> generated_text,"To find the total number of trips, we need to divide the total weight of the feed by the weight that the truck can carry at a time. The total weight of the feed is 2 + 48 + 3150 + 1300 = 4400 pounds. The weight that the truck can carry at a time is 2250 pounds. 
+
+The total number of trips is 4400 / 2250 = 1.96. Since we can't have a fraction of a trip, we round up to the nearest whole number. Therefore, the farmer needs to make 2 trips to transport all the feed.",1.0,unavailable
+8,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\test_174249a3.json,gsm8k:test:925,False,2500,2000,CoT | problem -> solution,[2500],0.0,0.0
+8,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\test_174249a3.json,gsm8k:test:55,True,14,14,CoT | query -> generated_text,Jean can fill 28 / 2 = 14 bags with the remaining lollipops.,1.0,unavailable
+8,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\test_174249a3.json,gsm8k:test:551,True,17,17,CoT | query -> generated_text,Carly gets $17 back as change.,1.0,unavailable
+8,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\test_174249a3.json,gsm8k:test:1271,True,43,43,CoT | word_problem -> solution,"To find the number of pink candies, we need to subtract the total number of red, orange, and yellow candies from the total number of candies in the bag. The total number of red, orange, and yellow candies is 54 + 108 + 27 = 189. Therefore, the number of pink candies is 232 - 189 = 43.",1.0,unavailable
+8,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\test_174249a3.json,gsm8k:test:641,False,378000,262500,CoT | word_problem -> solution,[378000],0.0,0.0
+8,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\test_174249a3.json,gsm8k:test:286,True,90,90,CoT | prompt -> response,[90],1.0,unavailable
+8,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\test_174249a3.json,gsm8k:test:256,False,42,45,CoT | text -> summary,"The total value of the coins is (100 + 200 + 200) cents, which is equivalent to $2. The total value of the dollar bills is $40. Therefore, the total amount of money Brady has in his piggy bank is $40 + $2 = $42.",0.0,0.0
+8,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\test_174249a3.json,gsm8k:test:689,False,14.8,7,CoT | text -> summary,The total cost of 10 lollipops and 10 candies is $14.80.,0.0,0.0
+8,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\test_174249a3.json,gsm8k:test:156,False,800,1400,CoT | query -> response,[800],0.0,0.0
+8,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\test_174249a3.json,gsm8k:test:915,True,23,23,CoT | query -> response,The total hours Bruce works in the three days is 5 + 10 + 8 = 23 hours.,1.0,unavailable
+8,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\test_174249a3.json,gsm8k:test:676,True,240,240,CoT | prompt -> generated_text,$240,1.0,unavailable
+8,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\test_174249a3.json,gsm8k:test:501,True,273,273,CoT | question -> hypothesis,"Mariah used 1/4 of a skein, which is (1/4) * 364 = 91 yards. Her grandma used 2/4 of a skein, which is (2/4) * 364 = 182 yards. The total yards used is 91 + 182 = 273 yards.",1.0,unavailable
+8,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\test_174249a3.json,gsm8k:test:1216,True,20,20,Predict | prompt -> generated_text,"To find the total number of people required to fill the remaining spaces on the bus, we need to calculate the number of people who entered the bus at the first and second stations. 
+
+At the first station, 40 people entered the bus. At the second station, 3/4 of the total number of people who entered the bus at the first station entered the bus. So, 3/4 * 40 = 30 people entered the bus at the second station.
+
+The total number of people who entered the bus at the first and second stations is 40 + 30 = 70.
+
+Initially, the bus had 20 people. After the first and second stations, the total number of people on the bus is 20 + 70 = 90.
+
+Since the number of passengers on the bus doubled at the third station, the number of people on the bus became 90 * 2 = 180.
+
+The bus has a capacity of 200 people. So, the remaining spaces on the bus are 200 - 180 = 20.
+
+Therefore, the total number of people required to fill the remaining spaces on the bus is 20.",1.0,unavailable
+8,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\test_174249a3.json,gsm8k:test:1034,True,66,66,CoT | query -> generated_text,[66],1.0,unavailable
+8,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\test_174249a3.json,gsm8k:test:325,False,184000,224000,Predict | text -> response,"To find the total amount of money the company pays to all the programmers per month, we first need to find the number of senior programmers. Since the number of Junior programmers is 2/5 of the total number of employees, and there are 100 employees, we can calculate the number of Junior programmers as follows: 2/5 * 100 = 40. 
+
+Since senior programmers are paid $400 more than junior programmers, and junior programmers are paid $2000 per month, we can calculate the monthly salary of a senior programmer as $2000 + $400 = $2400. 
+
+Now, we can find the total amount of money the company pays to all the programmers per month by adding the total monthly salary of the junior programmers and the senior programmers. The total monthly salary of the junior programmers is 40 * $2000 = $80000. The total monthly salary of the senior programmers is 60 * $2400 = $144000. 
+
+Therefore, the total amount of money the company pays to all the programmers per month is $80000 + $144000 = $184000.",0.0,0.0
+8,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\test_174249a3.json,gsm8k:test:1265,False,27,36,CoT | prompt -> response,[27],0.0,0.0
+8,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\test_174249a3.json,gsm8k:test:136,False,3,6,Predict | word_problem -> solution,{27 * 2 / 3},1.0,1.0
+8,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\test_174249a3.json,gsm8k:test:697,True,27,27,CoT | word_problem -> solution,[27],1.0,unavailable
+8,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\test_174249a3.json,gsm8k:test:1043,True,130000,130000,CoT | problem_description -> explanation,"Since there are 26 countries in South America and each country has 5 cities with a population of 1000 people, we can calculate the total population as follows: 
+Total population = Number of countries * Number of cities per country * Population per city 
+Total population = 26 * 5 * 1000 
+Total population = 130000 
+
+Therefore, the total population of South America is 130000 people.",1.0,unavailable
+8,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\test_174249a3.json,gsm8k:test:1311,False,6,594,CoT | problem_description -> explanation,"This calculation is based on the ratio of line to dock length, which is 3:1. The caretaker needs 3 times the length of the dock in line, so for 200 feet of dock, he needs 600 feet of line. Since he already has 6 feet of line, we subtract this from the total amount needed to find the amount he needs to buy.",0.0,0.0
+8,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\test_174249a3.json,gsm8k:test:519,True,280,280,CoT | prompt -> generated_text,[280],1.0,unavailable
+8,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\test_174249a3.json,gsm8k:test:716,True,770,770,CoT | question -> answer,[770],1.0,unavailable
+8,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\test_174249a3.json,gsm8k:test:51,True,5,5,CoT | context -> briefing,"Since Tom traveled from 1 to 4 PM at a speed of 10 mph, the distance he covered is 3 hours * 10 mph = 30 miles.  To find the time it takes him to get back, we divide the distance by his return speed of 6 mph: 30 miles / 6 mph = 5 hours.",1.0,unavailable
+8,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\test_174249a3.json,gsm8k:test:878,True,5,5,CoT | prompt -> generated_text,"To find the difference, we need to divide 18 by 2 to get the number of glasses Micah sold, which is 9. Then, we subtract 9 from 14 to get 5.",1.0,unavailable
+8,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\test_174249a3.json,gsm8k:test:757,True,75,75,Predict | text -> response,"To find the total number of shirts, we need to calculate the number of shirts for each size and add them together. 
+The number of extra-small shirts is 11. 
+The number of small shirts is twice the number of extra-small shirts, so it's 2 x 11 = 22. 
+The number of medium shirts is four less than the number of small shirts, so it's 22 - 4 = 18. 
+The number of large shirts is half the number of medium shirts, so it's 18 / 2 = 9. 
+The number of extra-large shirts is six more than the number of large shirts, so it's 9 + 6 = 15. 
+Now, we add the number of shirts for each size together: 11 + 22 + 18 + 9 + 15 = 75. 
+So, Krissa ordered 75 shirts in total.",1.0,unavailable
+8,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\test_174249a3.json,gsm8k:test:1123,True,105,105,CoT | text -> summary,The total weight of Elijah and Kory's dogs is 45 + 60 = 105 pounds.,1.0,unavailable
+8,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\test_174249a3.json,gsm8k:test:63,True,1596,1596,CoT | prompt -> response,The total amount Aleena paid for the streaming service by the end of the year is $840 + $756 = $1596.,1.0,unavailable
+10,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\test_52cdf561.json,gsm8k:test:416,True,56,56,Predict | question -> hypothesis,"Let's denote the number of camels as C and the number of dromedaries as D. We are given that camels have 2 humps each and dromedaries have 1 hump each. We can set up the following equations based on the given information:
+
+2C + D = 304 (equation 1, total bumps)
+C + D = 180 (equation 2, total heads)
+
+We can solve equation 2 for C: C = 180 - D
+
+Substituting this expression for C into equation 1, we get:
+2(180 - D) + D = 304
+360 - 2D + D = 304
+360 - D = 304
+D = 56
+
+Therefore, there are 56 dromedaries.",1.0,unavailable
+10,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\test_52cdf561.json,gsm8k:test:573,True,600,600,Predict | question -> answer,"To calculate the remaining balance, we need to subtract the total amount withdrawn from the initial balance. Since Katina removes $100 every month, the total amount withdrawn in a year is $100 * 12 = $1200. In 2 years, the total amount withdrawn is $1200 * 2 = $2400. 
+
+Now, subtract the total amount withdrawn from the initial balance: $3000 - $2400 = $600. 
+
+So, the remaining balance after 2 years will be $600.",1.0,unavailable
+10,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\test_52cdf561.json,gsm8k:test:459,True,2,2,Predict | question -> reasoning,"To find the total weight of the feed, we need to calculate the weight of each type of feed and add them together. The weight of the sugar cubes is 2 * 1 = 2 pounds. The weight of the carrots is 4 * 12 = 48 pounds. The weight of the hay is 42 * 75 = 3150 pounds. The weight of the oats is 20 * 65 = 1300 pounds.
+
+The total weight of the feed is 2 + 48 + 3150 + 1300 = 4400 pounds.
+
+Since the farmer's truck can carry 2250 pounds at a time, we need to divide the total weight of the feed by the truck's capacity to find the number of trips. 4400 / 2250 = 1.96.
+
+Since we can't have a fraction of a trip, we round up to the nearest whole number. Therefore, the farmer needs to make 2 trips to transport all the feed.",1.0,unavailable
+10,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\test_52cdf561.json,gsm8k:test:925,True,2000,2000,Predict | question -> reasoning,"To solve this problem, we need to calculate the amount of water in the tank after 6 days. We know that the tank is emptied at a rate of 500 gallons of water per day. So, after 6 days, the tank will be emptied by 500 * 6 = 3000 gallons of water.
+
+We also know that the tank was filled with half the amount of water in the pool, which is 10000 / 2 = 5000 gallons. Since the tank was filled with 5000 gallons, and 3000 gallons will be emptied, the amount of water remaining in the tank will be 5000 - 3000 = 2000 gallons.
+
+Therefore, the amount of water remaining in the tank after 6 days is 2000 gallons.",1.0,unavailable
+10,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\test_52cdf561.json,gsm8k:test:55,False,2,14,Predict | question -> reasoning,"To find the number of bags Jean can fill, we need to divide the remaining lollipops by the number of lollipops per bag. Jean has 30 - 2 = 28 lollipops left. Since Jean wants to package 2 lollipops in one bag, we can divide 28 by 2 to get the number of bags.",0.0,0.0
+10,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\test_52cdf561.json,gsm8k:test:551,True,17,17,Predict | question -> answer,"Carly's total cost is (5 x $4) + (10 x $0.30) + (5 x $2) = $20 + $3 + $10 = $33.
+She pays with a $50 bill, so her change is $50 - $33 = $17.",1.0,unavailable
+10,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\test_52cdf561.json,gsm8k:test:1271,True,43,43,Predict | question -> hypothesis,"The number of pink candies can be found by subtracting the total number of red, orange, and yellow candies from the total number of candies in the bag. We know there are 54 red candies, twice that amount (108 orange candies), and half as many yellow candies as red candies (27 yellow candies). So, the total number of non-pink candies is 54 + 108 + 27 = 189. Subtracting this from the total number of candies (232) gives us 232 - 189 = 43 pink candies.",1.0,unavailable
+10,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\test_52cdf561.json,gsm8k:test:641,False,372000,262500,Predict | word_problem -> solution,"First, calculate the monthly salary with the 5% raise: $20000 * 1.05 = $21000
+Then, add the bonus worth half a month's salary: $21000 + ($20000 / 2) = $21000 + $10000 = $31000
+Multiply the monthly salary by 12 to get the yearly salary: $31000 * 12 = $372000
+{completed}",0.0,0.0
+10,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\test_52cdf561.json,gsm8k:test:286,True,90,90,Predict | question -> reasoning,"To solve this problem, we need to calculate the total amount of money Kelly has initially and then subtract the cost of the can of pop. Kelly has 5 quarters, which is 5 x 25 = 125 cents, and 2 dimes, which is 2 x 10 = 20 cents. So, the total amount of money Kelly has is 125 + 20 = 145 cents. The can of pop costs 55 cents. To find out how many cents Kelly will have left, we subtract 55 from 145, which gives us 145 - 55 = 90 cents.",1.0,unavailable
+10,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\test_52cdf561.json,gsm8k:test:256,True,45,45,Predict | question -> reasoning,"To find the total amount of money in Brady's piggy bank, we need to calculate the value of each type of currency and add them together. We have 100 pennies, 40 nickels, 20 dimes, and 40 pieces of dollar bills.
+
+The value of the pennies is 100 x $0.01 = $1.
+The value of the nickels is 40 x $0.05 = $2.
+The value of the dimes is 20 x $0.10 = $2.
+The value of the dollar bills is 40 x $1 = $40.
+
+Now, let's add up the values: $1 + $2 + $2 + $40 = $45.
+
+Therefore, Brady has a total of $45 in his piggy bank.",1.0,unavailable
+10,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\test_52cdf561.json,gsm8k:test:689,False,36,7,Predict | question -> reasoning,"To find the total cost of 10 lollipops and 10 candies, we need to calculate the cost of each separately and then add them together. The cost of 10 lollipops at $0.40 each is 10 x $0.40 = $4.00. The cost of 10 candies at $3.20 each is 10 x $3.20 = $32.00. Adding these two amounts together gives us $4.00 + $32.00 = $36.00.",0.0,0.0
+10,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\test_52cdf561.json,gsm8k:test:156,False,2,1400,Predict | question -> hypothesis,The zookeeper needs to order a total of (200 + 400 + 100) * 1.5 = 600 * 1.5 = 900 bananas to last for 2 months.,0.0,0.0
+10,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\test_52cdf561.json,gsm8k:test:915,True,23,23,Predict | problem_description -> explanation,"To find the total hours Bruce works in the three days, we need to calculate the hours he works each day and then add them together. 
+On Tuesday, Bruce works 5 hours. 
+On Wednesday, he works twice the time he works on Tuesday, so he works 2 * 5 = 10 hours. 
+On Thursday, he works 2 hours less than the time he works on Wednesday, so he works 10 - 2 = 8 hours. 
+Now, we add the hours he works each day: 5 + 10 + 8 = 23 hours. 
+Therefore, Bruce works a total of 23 hours in the three days.",1.0,unavailable
+10,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\test_52cdf561.json,gsm8k:test:676,True,240,240,Predict | word_problem -> solution,"To find the amount Skyler invested, we first need to find the amount Dylan invested, which is 2/5 of the total amount. 
+2/5 of $1200 is (2/5) * 1200 = 480. 
+The remaining amount is $1200 - $480 = $720. 
+Frances invested 2/3 of this amount, which is (2/3) * 720 = 480. 
+So, the amount Skyler invested is $720 - $480 = $240. 
+[240]",1.0,unavailable
+10,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\test_52cdf561.json,gsm8k:test:501,True,273,273,Predict | question -> hypothesis,"To find the total yards of yarn used, we need to add the yards used by Mariah and her grandma. Mariah used 1/4 of a skein, which is (1/4) * 364 = 91 yards. Her grandma used 1/2 of a skein, which is (1/2) * 364 = 182 yards. So, the total yards used is 91 + 182 = 273 yards.",1.0,unavailable
+10,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\test_52cdf561.json,gsm8k:test:1216,True,20,20,Predict | question -> reasoning,"To find the total number of people required to fill the remaining spaces on the bus, we need to calculate the number of people on the bus after each stop and then find the difference between the bus's capacity and the number of people on the bus.
+
+1. Initially, the bus had 20 people.
+2. At the first stop, 40 people entered the bus, making the total number of people 20 + 40 = 60.
+3. At the second station, 3/4 of the 40 people who entered at the first stop entered the bus. This is (3/4) * 40 = 30 people. Now, the total number of people on the bus is 60 + 30 = 90.
+4. At the third station, the number of passengers doubled, making the total number of people 90 * 2 = 180.
+
+Now, we need to find the number of people required to fill the remaining spaces on the bus. The bus has a capacity of 200 people, and there are 180 people on the bus. So, the number of people required to fill the remaining spaces is 200 - 180 = 20.",1.0,unavailable
+10,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\test_52cdf561.json,gsm8k:test:1034,True,66,66,Predict | question -> reasoning,"Ted starts with $200. He buys 3 books for 16 dollars each, so the total cost of the books is 3 x 16 = 48 dollars. He also buys 3 pencils for 6 dollars each, so the total cost of the pencils is 3 x 6 = 18 dollars. To find the total amount spent, we need to add the cost of the books and the cost of the pencils: 48 + 18 = 66 dollars.",1.0,unavailable
+10,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\test_52cdf561.json,gsm8k:test:325,True,224000,224000,Predict | word_problem -> solution,"To find the total amount of money the company pays to all the programmers per month, we need to calculate the number of senior programmers and their total monthly payment, and then add it to the total monthly payment of the junior programmers.
+
+First, let's find the number of junior programmers:
+2/5 of 100 employees = (2/5) * 100 = 40 junior programmers
+
+Since senior programmers are paid $400 more than junior programmers, the monthly payment for a senior programmer is:
+$2000 + $400 = $2400
+
+Now, let's find the number of senior programmers:
+Total employees = 100
+Junior programmers = 40
+Senior programmers = Total employees - Junior programmers = 100 - 40 = 60 senior programmers
+
+The total monthly payment for the senior programmers is:
+60 senior programmers * $2400 = $144,000
+
+The total monthly payment for the junior programmers is:
+40 junior programmers * $2000 = $80,000
+
+The total amount of money the company pays to all the programmers per month is:
+$144,000 + $80,000 = $224,000",1.0,unavailable
+10,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\test_52cdf561.json,gsm8k:test:1265,True,36,36,Predict | question -> hypothesis,"To find the total number of lemons needed, we first need to calculate the number of lemons required for 4 gallons of lemonade. Since 6 lemons yield 1 cup of juice, we can calculate the number of cups needed for 4 gallons as 4 * 1 cup = 4 cups. Since 6 lemons yield 1 cup, we can calculate the number of lemons needed for 4 cups as 4 * 6 = 24 lemons. For the extra gallon that is twice as tart, we need half the amount of lemons, which is 24 / 2 = 12 lemons. Therefore, the total number of lemons needed is 24 + 12 = 36 lemons.",1.0,unavailable
+10,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\test_52cdf561.json,gsm8k:test:136,True,6,6,Predict | question -> reasoning,"To find the number of female Scottish unicorns, we need to calculate two thirds of the total number of Scottish unicorns. Since one third of the unicorns are in the Scottish Highlands, we can first find the total number of Scottish unicorns by dividing the total number of unicorns by 3. 
+
+Total unicorns = 27
+Scottish unicorns = Total unicorns / 3 = 27 / 3 = 9
+
+Now, we can find the number of female Scottish unicorns by multiplying the number of Scottish unicorns by 2/3.
+
+Number of female Scottish unicorns = (2/3) * 9 = 6",1.0,unavailable
+10,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\test_52cdf561.json,gsm8k:test:697,False,unavailable,27,Predict | word_problem -> solution,[3^3^3],0.0,0.0
+10,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\test_52cdf561.json,gsm8k:test:1043,True,130000,130000,Predict | problem_description -> explanation,"To find the total population of South America, we need to calculate the population of each city and then multiply it by the number of cities in each country. Since there are 5 cities with 1000 people living in each city, the population of each city is 5 * 1000 = 5000. 
+
+Since there are 26 countries in South America, and each country has 5 cities with a population of 5000, we can multiply the population of one city by the number of countries to get the total population: 5000 * 26 = 130000. 
+
+Therefore, the total population of South America is 130000.",1.0,unavailable
+10,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\test_52cdf561.json,gsm8k:test:1311,True,594,594,Predict | problem_description -> explanation,"The caretaker needs 3 feet of line for every foot of dock. Since there are 200 feet of dock, he needs 3 x 200 = 600 feet of line. However, he already has 6 feet of line. To find the total amount of line he needs to buy, we subtract the amount he already has from the total amount needed: 600 - 6 = 594 feet.",1.0,unavailable
+10,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\test_52cdf561.json,gsm8k:test:519,False,120,280,Predict | question -> answer,[120],0.0,0.0
+10,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\test_52cdf561.json,gsm8k:test:716,True,770,770,Predict | question -> answer,"To find the total calories of the omelet, we need to calculate the calories from the eggs, cheese, and ham. 
+The eggs contribute 6 * 75 = 450 calories. 
+The cheese contributes 2 * 120 = 240 calories. 
+The ham contributes 2 * 40 = 80 calories. 
+Adding these together, we get 450 + 240 + 80 = 770 calories. 
+Therefore, the omelet has 770 calories.",1.0,unavailable
+10,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\test_52cdf561.json,gsm8k:test:51,True,5,5,Predict | question -> reasoning,"To find the time it takes Tom to get back, we need to calculate the distance he traveled from 1 to 4 PM and then divide it by his speed of 6 mph.
+
+Since Tom is sailing from 1 to 4 PM, the distance he traveled is 3 hours multiplied by his speed of 10 mph, which is 3 x 10 = 30 miles.
+
+Now, we can divide the distance by his speed of 6 mph to find the time it takes him to get back: 30 miles / 6 mph = 5 hours.",1.0,unavailable
+10,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\test_52cdf561.json,gsm8k:test:878,True,5,5,CoT | query -> response,[5],1.0,unavailable
+10,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\test_52cdf561.json,gsm8k:test:757,True,75,75,Predict | question -> answer,"To find the total number of shirts, we need to calculate the number of shirts for each size and add them together. 
+
+Let's start with the size extra-small: 11 students. 
+Size small: 2 * 11 = 22 students. 
+Size medium: 22 - 4 = 18 students. 
+Size large: 18 / 2 = 9 students. 
+Size extra-large: 9 + 6 = 15 students. 
+
+Now, let's add them together: 11 + 22 + 18 + 9 + 15 = 75. 
+
+So, Krissa ordered 75 shirts.",1.0,unavailable
+10,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\test_52cdf561.json,gsm8k:test:1123,True,105,105,Predict | question -> reasoning,"To find the total weight of Elijah's and Kory's dogs, we need to calculate the weight of each dog separately and then add them together. We know that Kory's dog weighs 60 pounds. Elijah's first dog is one-fourth the weight of Kory's dog, so it weighs 60 / 4 = 15 pounds. Elijah's second dog is half the weight of Kory's dog, so it weighs 60 / 2 = 30 pounds. Now, we add the weights of both dogs together: 15 + 30 + 60 = 105 pounds.",1.0,unavailable
+10,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\test_52cdf561.json,gsm8k:test:63,False,266,1596,Predict | question -> hypothesis,"Aleena paid $140 for the first half of the year. For the second half, she paid 10% less, which is $140 - (10% of $140) = $140 - $14 = $126. So, the total amount she paid is $140 + $126 = $266.",0.0,0.0
+15,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\test_d91652f1.json,gsm8k:test:416,False,28,56,Predict | query -> generated_text,"To find the number of dromedaries, let's first find the number of camels. We know that camels have two humps each and there are 304 bumps in total. So, the number of camels can be calculated as 304 / 2 = 152. Now, we know that the total number of heads is 180 and the number of camels is 152. Therefore, the number of dromedaries can be calculated as 180 - 152 = 28.",0.0,0.0
+15,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\test_d91652f1.json,gsm8k:test:573,True,600,600,CoT | text -> summary,The amount of money remaining in Katina's savings account after 2 years is $600.,1.0,unavailable
+15,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\test_d91652f1.json,gsm8k:test:459,True,2,2,CoT | prompt -> generated_text,[2],1.0,unavailable
+15,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\test_d91652f1.json,gsm8k:test:925,False,0,2000,CoT | problem -> solution,[0],0.0,0.0
+15,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\test_d91652f1.json,gsm8k:test:55,True,14,14,CoT | query -> generated_text,Jean can fill 28 / 2 = 14 bags with the remaining lollipops.,1.0,unavailable
+15,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\test_d91652f1.json,gsm8k:test:551,True,17,17,CoT | query -> generated_text,Carly gets $17 back as change.,1.0,unavailable
+15,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\test_d91652f1.json,gsm8k:test:1271,True,43,43,CoT | word_problem -> solution,"To find the number of pink candies, we need to subtract the total number of red, orange, and yellow candies from the total number of candies in the bag. The total number of red, orange, and yellow candies is 54 + 108 + 27 = 189. Therefore, the number of pink candies is 232 - 189 = 43.",1.0,unavailable
+15,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\test_d91652f1.json,gsm8k:test:641,False,378000,262500,CoT | word_problem -> solution,[378000],0.0,0.0
+15,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\test_d91652f1.json,gsm8k:test:286,True,90,90,CoT | prompt -> response,[90],1.0,unavailable
+15,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\test_d91652f1.json,gsm8k:test:256,False,42,45,CoT | text -> summary,"The total value of the coins is (100 + 200 + 200) cents, which is equivalent to $2. The total value of the dollar bills is $40. Therefore, the total amount of money Brady has in his piggy bank is $40 + $2 = $42.",0.0,0.0
+15,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\test_d91652f1.json,gsm8k:test:689,False,14.8,7,CoT | text -> summary,The total cost of 10 lollipops and 10 candies is $14.80.,0.0,0.0
+15,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\test_d91652f1.json,gsm8k:test:156,False,800,1400,CoT | query -> response,[800],0.0,0.0
+15,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\test_d91652f1.json,gsm8k:test:915,True,23,23,CoT | query -> response,The total hours Bruce works in the three days is 5 + 10 + 8 = 23 hours.,1.0,unavailable
+15,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\test_d91652f1.json,gsm8k:test:676,True,240,240,CoT | prompt -> generated_text,[240],1.0,unavailable
+15,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\test_d91652f1.json,gsm8k:test:501,True,273,273,CoT | question -> hypothesis,"Mariah used 1/4 of a skein, which is (1/4) * 364 = 91 yards. Her grandma used 2/4 of a skein, which is (2/4) * 364 = 182 yards. The total yards used is 91 + 182 = 273 yards.",1.0,unavailable
+15,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\test_d91652f1.json,gsm8k:test:1216,True,20,20,Predict | prompt -> generated_text,"To find the total number of people required to fill the remaining spaces on the bus, we need to calculate the number of people who entered the bus at the first and second stations. 
+
+At the first station, 40 people entered the bus. At the second station, 3/4 of the total number of people who entered the bus at the first station entered the bus. So, 3/4 * 40 = 30 people entered the bus at the second station.
+
+The total number of people who entered the bus at the first and second stations is 40 + 30 = 70.
+
+Initially, the bus had 20 people. After the first and second stations, the total number of people on the bus is 20 + 70 = 90.
+
+Since the number of passengers on the bus doubled at the third station, the number of people on the bus became 90 * 2 = 180.
+
+The bus has a capacity of 200 people. So, the remaining spaces on the bus are 200 - 180 = 20.
+
+Therefore, the total number of people required to fill the remaining spaces on the bus is 20.",1.0,unavailable
+15,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\test_d91652f1.json,gsm8k:test:1034,True,66,66,CoT | query -> generated_text,[66],1.0,unavailable
+15,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\test_d91652f1.json,gsm8k:test:325,False,184000,224000,Predict | text -> response,"To find the total amount of money the company pays to all the programmers per month, we first need to find the number of senior programmers. Since the number of Junior programmers is 2/5 of the total number of employees, and there are 100 employees, we can calculate the number of Junior programmers as follows: 2/5 * 100 = 40. 
+
+Since senior programmers are paid $400 more than junior programmers, and junior programmers are paid $2000 per month, we can calculate the monthly salary of a senior programmer as $2000 + $400 = $2400. 
+
+Now, we can find the total amount of money the company pays to all the programmers per month by adding the total monthly salary of the junior programmers and the senior programmers. The total monthly salary of the junior programmers is 40 * $2000 = $80000. The total monthly salary of the senior programmers is 60 * $2400 = $144000. 
+
+Therefore, the total amount of money the company pays to all the programmers per month is $80000 + $144000 = $184000.",0.0,0.0
+15,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\test_d91652f1.json,gsm8k:test:1265,False,27,36,CoT | prompt -> response,[27],0.0,0.0
+15,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\test_d91652f1.json,gsm8k:test:136,True,6,6,Predict | word_problem -> solution,"To find the number of female Scottish unicorns, we need to calculate two thirds of the total number of Scottish unicorns. One third of the total unicorns is 27 / 3 = 9. Two thirds of 9 is 9 * 2 / 3 = 6. Therefore, there are 6 female Scottish unicorns.",1.0,unavailable
+15,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\test_d91652f1.json,gsm8k:test:697,True,27,27,CoT | word_problem -> solution,[27],1.0,unavailable
+15,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\test_d91652f1.json,gsm8k:test:1043,True,130000,130000,CoT | problem_description -> explanation,"Since there are 26 countries in South America and each country has 5 cities with a population of 1000 people, we can calculate the total population as follows: 
+Total population = Number of countries * Number of cities per country * Population per city 
+Total population = 26 * 5 * 1000 
+Total population = 130000 
+
+Therefore, the total population of South America is 130000 people.",1.0,unavailable
+15,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\test_d91652f1.json,gsm8k:test:1311,False,6,594,CoT | problem_description -> explanation,"This calculation is based on the ratio of line to dock length, which is 3:1. The caretaker needs 3 times the length of the dock in line, so for 200 feet of dock, he needs 600 feet of line. Since he already has 6 feet of line, we subtract this from the total amount needed to find the amount he needs to buy.",0.0,0.0
+15,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\test_d91652f1.json,gsm8k:test:519,True,280,280,CoT | prompt -> generated_text,[280],1.0,unavailable
+15,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\test_d91652f1.json,gsm8k:test:716,True,770,770,CoT | question -> answer,[770],1.0,unavailable
+15,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\test_d91652f1.json,gsm8k:test:51,True,5,5,CoT | context -> briefing,"Since Tom traveled from 1 to 4 PM at a speed of 10 mph, the distance he covered is 3 hours * 10 mph = 30 miles.  To find the time it takes him to get back, we divide the distance by his return speed of 6 mph: 30 miles / 6 mph = 5 hours.",1.0,unavailable
+15,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\test_d91652f1.json,gsm8k:test:878,True,5,5,CoT | prompt -> generated_text,"To find the difference, we need to first find out how many glasses Micah sold. Since the boys sold an equal number of glasses, Micah also sold 18 / 2 = 9 glasses. Now, we can subtract the number of glasses Micah sold from the number of glasses Julie sold: 14 - 9 = 5.",1.0,unavailable
+15,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\test_d91652f1.json,gsm8k:test:757,True,75,75,Predict | text -> response,"To find the total number of shirts, we need to calculate the number of shirts for each size and add them together. 
+The number of extra-small shirts is 11. 
+The number of small shirts is twice the number of extra-small shirts, so it's 2 x 11 = 22. 
+The number of medium shirts is four less than the number of small shirts, so it's 22 - 4 = 18. 
+The number of large shirts is half the number of medium shirts, so it's 18 / 2 = 9. 
+The number of extra-large shirts is six more than the number of large shirts, so it's 9 + 6 = 15. 
+Now, we add the number of shirts for each size together: 11 + 22 + 18 + 9 + 15 = 75. 
+So, Krissa ordered 75 shirts in total.",1.0,unavailable
+15,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\test_d91652f1.json,gsm8k:test:1123,True,105,105,CoT | text -> summary,The total weight of Elijah and Kory's dogs is 45 + 60 = 105 pounds.,1.0,unavailable
+15,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\test_d91652f1.json,gsm8k:test:63,True,1596,1596,CoT | prompt -> response,The total amount Aleena paid for the streaming service by the end of the year is $840 + $756 = $1596.,1.0,unavailable

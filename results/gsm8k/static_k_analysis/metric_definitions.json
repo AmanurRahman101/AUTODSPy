@@ -1,0 +1,17 @@
+{
+  "version": "saved-static-k-v1",
+  "gradient_threshold": 1e-08,
+  "missing_values": "unavailable, never imputed as zero",
+  "accuracy": "strict numeric EM; checkpoints selected by validation only, earliest tie",
+  "reward_variance": "average_within_group_reward_variance is mean population variance within groups; pooled is across all candidates",
+  "mixed_numeric_em_group": "at least one strict correct answer and at least one strict incorrect answer; execution success is separate",
+  "mixed_positive_zero_reward_group": "at least one positive reward and at least one zero reward",
+  "empirical_entropy": "plug-in entropy of sampled actions, natural logarithm; affected by K and finite sample size; not policy entropy",
+  "policy_entropy": "only saved full-distribution diagnostics; unavailable when absent",
+  "training_time": "sum of saved episode_seconds, excludes validation/checkpoint I/O; includes candidate execution, judge, policy sampling/replay/update",
+  "calls": "measured DSPy LM.forward attempts including semantic judges/adapter retries, not physical HTTP requests",
+  "gpu": "PyTorch allocated/reserved peaks only; does not include Ollama",
+  "nonzero_gradient": "global L2 norm > threshold; operational indicator, not proof of meaningful parameter improvement",
+  "full_wall_time": "unavailable unless explicitly saved",
+  "source_period": "2026-10-13 UTC (2026-10-13/14 Asia/Dhaka)"
+}

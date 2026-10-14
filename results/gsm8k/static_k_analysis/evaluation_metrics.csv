@@ -1,0 +1,13 @@
+k,split,episode,questions,accuracy,cumulative_training_pipeline_evaluations,measured_llm_calls,seconds,semantic_fallback_count,semantic_full_credit_count,selected_checkpoint,artifact
+5,validation,0,10,0.5,0,15,34.987219300004654,5,1,unavailable,unavailable
+5,validation,30,10,0.7,150,13,34.15527230000589,3,0,unavailable,unavailable
+5,test,30,30,0.7666666666666667,150,37,83.23383879999164,7,0,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\checkpoints\episode_0030_689ac93f.pt,results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988\test_3e769531.json
+8,validation,0,10,0.5,0,15,29.78051129996311,5,1,unavailable,unavailable
+8,validation,30,10,0.4,240,16,31.245612500002608,6,1,unavailable,unavailable
+8,test,0,30,0.6666666666666666,0,40,69.13132829999086,10,1,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\checkpoints\episode_0000_694f9169.pt,results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3\test_174249a3.json
+10,validation,0,10,0.5,0,15,31.55891350004822,5,1,unavailable,unavailable
+10,validation,30,10,0.6,300,14,24.067897000000812,4,1,unavailable,unavailable
+10,test,30,30,0.7666666666666667,300,38,61.20164320000913,7,0,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\checkpoints\episode_0030_ebdecd4f.pt,results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57\test_52cdf561.json
+15,validation,0,10,0.5,0,15,28.854854599921964,5,1,unavailable,unavailable
+15,validation,30,10,0.4,450,16,33.4234236999182,6,1,unavailable,unavailable
+15,test,0,30,0.7,0,39,74.37916410004254,9,0,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\checkpoints\episode_0000_29cb2d83.pt,results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec\test_d91652f1.json

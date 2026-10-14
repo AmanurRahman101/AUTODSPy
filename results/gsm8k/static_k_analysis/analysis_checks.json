@@ -1,0 +1,40 @@
+{
+  "version": "saved-static-k-v1",
+  "generated_at_utc": "2026-10-14T06:20:43.745227+00:00",
+  "runs": [
+    {
+      "k": 5,
+      "status": "passed",
+      "episodes": 30,
+      "candidate_rows": 150,
+      "checkpoint_metadata_checked": true
+    },
+    {
+      "k": 8,
+      "status": "passed",
+      "episodes": 30,
+      "candidate_rows": 240,
+      "checkpoint_metadata_checked": true
+    },
+    {
+      "k": 10,
+      "status": "passed",
+      "episodes": 30,
+      "candidate_rows": 300,
+      "checkpoint_metadata_checked": true
+    },
+    {
+      "k": 15,
+      "status": "passed",
+      "episodes": 30,
+      "candidate_rows": 450,
+      "checkpoint_metadata_checked": true
+    }
+  ],
+  "source_artifacts_unchanged": true,
+  "training_or_inference_executed": false,
+  "figure_count": 15,
+  "unavailable_figures": [
+    "10_policy_entropy"
+  ]
+}

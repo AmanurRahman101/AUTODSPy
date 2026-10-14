@@ -1,0 +1,5 @@
+run_dir,k,seed,completed,episodes,preset
+results\gsm8k\k10\seed42\baseline\20261013T183759-77b8ce57,10,42,True,30,baseline
+results\gsm8k\k15\seed42\baseline\20261013T190031-8d8e40ec,15,42,True,30,baseline
+results\gsm8k\k5\seed42\baseline\20261013T174921-b1ad8988,5,42,True,30,baseline
+results\gsm8k\k8\seed42\baseline\20261013T181104-322720b3,8,42,True,30,baseline

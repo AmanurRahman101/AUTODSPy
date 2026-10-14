@@ -1,0 +1,17 @@
+figure,status,title,source
+01_best_validation_accuracy,generated,Best validation-selected accuracy (10 questions),Saved GSM8K runs; seed 42; 30 episodes
+02_held_out_test_accuracy,generated,Held-out test: validation-selected checkpoint (30 questions),Saved GSM8K runs; seed 42; 30 episodes
+03_training_pipeline_evaluations,generated,Attempted training pipeline evaluations,Saved GSM8K runs; seed 42; 30 episodes
+04_training_time,generated,Measured training time (validation and checkpoint I/O excluded),Saved GSM8K runs; seed 42; 30 episodes
+05_mean_training_reward,generated,Mean candidate reward: trailing 5-episode mean; faint raw groups,Saved GSM8K runs; seed 42; 30 episodes
+06_zero_advantage_rate,generated,Groups with all centered advantages equal to zero,Saved GSM8K runs; seed 42; 30 episodes
+07_nonzero_gradient_rate,generated,Recorded gradient norm > 1e-8 (before Adam step),Saved GSM8K runs; seed 42; 30 episodes
+08_unique_pipeline_count,generated,"Mean distinct (module, signature) pipelines per group",Saved GSM8K runs; seed 42; 30 episodes
+09_normalized_diversity,generated,Mean unique pipeline count divided by K,Saved GSM8K runs; seed 42; 30 episodes
+10_policy_entropy,unavailable,Policy entropy across training episodes,Full policy distributions were not saved
+10b_empirical_selection_entropy,generated,Empirical selection entropy; not true policy entropy,Saved GSM8K runs; seed 42; 30 episodes
+11_gradient_norms,generated,Global policy gradient L2 norm before optimizer step,Saved GSM8K runs; seed 42; 30 episodes
+12_validation_vs_evaluations,generated,Validation accuracy versus cumulative evaluations,Saved validation at episodes 0 and 30 only; lines join observations
+13_unique_pipelines_over_training,generated,Distinct pipelines per group: trailing 5-episode mean,Saved GSM8K runs; seed 42; 30 episodes
+14_pipeline_selection_distribution,generated,Pipeline selection distribution,Saved GSM8K runs; seed 42; 30 episodes
+15_observed_candidate_prefixes,generated,Marginal variation/diversity in observed ordered prefixes,Recorded candidates in saved order; policies differ across K; no counterfactual training or stopping rule

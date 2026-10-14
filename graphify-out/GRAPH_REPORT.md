@@ -1,17 +1,17 @@
-# Graph Report - AUTODSPy  (2026-10-13)
+# Graph Report - AUTODSPy  (2026-10-14)
 
 ## Corpus Check
-- 131 files · ~178,862 words
+- 140 files · ~342,043 words
 - Verdict: corpus is large enough that graph structure adds value.
-- Unclassified: 22 file(s) not represented in the graph (top: .jsonl 9, .ipynb 6, (none) 4)
+- Unclassified: 41 file(s) not represented in the graph (top: .csv 18, .jsonl 12, .ipynb 6)
 
 ## Summary
-- 773 nodes · 772 edges · 66 communities (50 shown, 16 thin omitted)
-- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 15 edges (avg confidence: 0.94)
+- 786 nodes · 786 edges · 68 communities (52 shown, 16 thin omitted)
+- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 16 edges (avg confidence: 0.94)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `4432567c`
+- Built from commit: `fc069303`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -73,6 +73,8 @@
 - Completed K=5 GSM8K run diagnosis
 - Project progress and session handoff
 - K=5 controlled stability pilot
+- Static-K GRPO on GSM8K: saved experimental results
+- Process
 
 ## God Nodes (most connected - your core abstractions)
 1. `Decisions, assumptions, and open research questions` - 31 edges
@@ -81,31 +83,31 @@
 4. `run_wizard()` - 12 edges
 5. `What You Must Do When Invoked` - 12 edges
 6. `Static-K experiment guide` - 11 edges
-7. `/graphify` - 10 edges
-8. `AutoDSPy Research — Agent Instructions` - 10 edges
-9. `📊 CSE 498R Thesis: Baseline Execution & Empirical Analysis Report` - 10 edges
-10. `DSPy Pipeline Optimization with Reinforcement Learning` - 10 edges
+7. `Static-K GRPO on GSM8K: saved experimental results` - 11 edges
+8. `/graphify` - 10 edges
+9. `AutoDSPy Research — Agent Instructions` - 10 edges
+10. `📊 CSE 498R Thesis: Baseline Execution & Empirical Analysis Report` - 10 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `1. Pin the fixed point` --references--> `main()`  [INFERRED]
+  .agents/skills/code-review/SKILL.md → run_grpo_baseline.py
 - `Reward semantics and failure handling` --references--> `compute_reward()`  [INFERRED]
   docs/PHASE_1_AUDIT.md → run_grpo_baseline.py
 - `Evaluation can fail or use the wrong policy` --references--> `generate_pipeline()`  [INFERRED]
   docs/PHASE_1_AUDIT.md → run_grpo_baseline.py
 - `Initialization and gradient ownership` --references--> `generate_pipeline()`  [INFERRED]
   docs/PHASE_1_AUDIT.md → run_grpo_baseline.py
-- `1. Pin the fixed point` --references--> `main()`  [INFERRED]
-  .agents/skills/code-review/SKILL.md → run_grpo_baseline.py
 - `7. Notebook A — GSM8K` --references--> `main()`  [INFERRED]
   docs/MASTER_SPEC.md → run_grpo_baseline.py
 
 ## Import Cycles
 - None detected.
 
-## Communities (66 total, 16 thin omitted)
+## Communities (68 total, 16 thin omitted)
 
 ### Community 0 - "run_grpo_baseline.py"
-Cohesion: 0.05
-Nodes (36): 1. Pin the fixed point, 2. Identify the spec source, 3. Identify the standards sources, 4. Spawn both sub-agents in parallel, 5. Aggregate, Process, Why two axes, 6. Preserve the Original DSPy Action Space (+28 more)
+Cohesion: 0.06
+Nodes (30): 6. Preserve the Original DSPy Action Space, 1. Scope and evidence conventions, 2. Published methodology, released code, and project protocol, 3. GPT-2 and policy action audit, 4. Verified correctness and operational issues, 5. Dataset and HotpotQA task audit, 6. Environment and hardware observations, 7. Actual checks and outcomes (+22 more)
 
 ### Community 1 - "AutoDSPy Static-K Research — Master Specification"
 Cohesion: 0.05
@@ -303,9 +305,17 @@ Nodes (13): Completed Phase 1 work, Completed Phase 2 work and verification, Com
 Cohesion: 0.33
 Nodes (5): Controls, K=5 controlled stability pilot, Measured stability, Rewards and outcomes, Verification and preservation
 
+### Community 66 - "Static-K GRPO on GSM8K: saved experimental results"
+Cohesion: 0.17
+Nodes (11): 10. Recommended next research experiment, 2. Summary comparing all four K values, 3. Model performance analysis, 4. GRPO learning behavior and group effectiveness, 5. Pipeline diversity analysis, 6. Training stability and reward integrity, 7. Computational efficiency comparison, 8. Limitations and potential confounding factors (+3 more)
+
+### Community 67 - "Process"
+Cohesion: 0.25
+Nodes (7): 1. Pin the fixed point, 2. Identify the spec source, 3. Identify the standards sources, 4. Spawn both sub-agents in parallel, 5. Aggregate, Process, Why two axes
+
 ## Knowledge Gaps
-- **513 isolated node(s):** `block-dangerous-git.sh script`, `The five options`, `The tree`, `Primary and secondary sources`, `These are judgement calls` (+508 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 562 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **522 isolated node(s):** `block-dangerous-git.sh script`, `The five options`, `The tree`, `Primary and secondary sources`, `These are judgement calls` (+517 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 571 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **16 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
@@ -318,9 +328,9 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `6. Preserve the Original DSPy Action Space` connect `run_grpo_baseline.py` to `AutoDSPy Static-K Research — Master Specification`?**
   _High betweenness centrality (0.021) - this node is a cross-community bridge._
 - **What connects `block-dangerous-git.sh script`, `The five options`, `The tree` to the rest of the system?**
-  _513 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _522 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `run_grpo_baseline.py` be split into smaller, more focused modules?**
-  _Cohesion score 0.05272108843537415 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06387921022067364 - nodes in this community are weakly interconnected._
 - **Should `AutoDSPy Static-K Research — Master Specification` be split into smaller, more focused modules?**
   _Cohesion score 0.045454545454545456 - nodes in this community are weakly interconnected._
 - **Should `Issue tracker: GitHub` be split into smaller, more focused modules?**
