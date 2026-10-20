@@ -1,0 +1,3287 @@
+{
+  "new": {
+    "unique_runs": 0,
+    "runs": [],
+    "totals": {
+      "gross_attempts": 0,
+      "committed_attempts": 0,
+      "discarded_or_uncommitted_attempts": 0,
+      "interrupted_attempts": 0,
+      "repeated_attempts": 0,
+      "logical_model_calls": {
+        "observed": 0,
+        "total": 0,
+        "unknown_attempts": 0
+      },
+      "prompt_tokens": {
+        "observed": 0,
+        "total": 0,
+        "unknown_attempts": 0
+      },
+      "generated_tokens": {
+        "observed": 0,
+        "total": 0,
+        "unknown_attempts": 0
+      },
+      "physical_http_requests": null
+    }
+  },
+  "historical_reused": {
+    "unique_runs": 17,
+    "runs": [
+      {
+        "root": "C:\\Users\\rahma\\OneDrive\\Documents\\Projects\\University Projects\\CSE498R\\AUTODSPy\\results\\adagrpo\\gsm8k\\adaptive\\seed42\\pilot\\20261020T113252-73f1340a",
+        "categories": {
+          "training": {
+            "gross_attempts": 80,
+            "committed_attempts": 80,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 90,
+              "total": 90,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 22324,
+              "total": 22324,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 11001,
+              "total": 11001,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 1295.3291286999938,
+            "total_execution_seconds": 1295.3291286999938,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "validation": {
+            "gross_attempts": 77,
+            "committed_attempts": 60,
+            "discarded_or_uncommitted_attempts": 17,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 17,
+            "repeat_identity_complete": false,
+            "repeat_scope": "Legacy episode/split proxy; policy weight identity unavailable",
+            "logical_model_calls": {
+              "observed": 79,
+              "total": 79,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 19213,
+              "total": 19213,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 10714,
+              "total": 10714,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 1171.976669199994,
+            "total_execution_seconds": 1171.976669199994,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "confirmation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "full_test": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "other_evaluation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          }
+        },
+        "totals": {
+          "gross_attempts": 157,
+          "committed_attempts": 140,
+          "discarded_or_uncommitted_attempts": 17,
+          "interrupted_attempts": 0,
+          "repeated_attempts": 17
+        },
+        "controller_seconds": 0.010106600000653998,
+        "equal_reward_policy_changes": [
+          {
+            "episode": 2,
+            "total_variation": null,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 8,
+            "total_variation": null,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 11,
+            "total_variation": null,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 12,
+            "total_variation": null,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 13,
+            "total_variation": null,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 14,
+            "total_variation": null,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 17,
+            "total_variation": null,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 18,
+            "total_variation": null,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 19,
+            "total_variation": null,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          }
+        ],
+        "memory_snapshots": {
+          "peak_allocated_gpu_bytes": 3096927232,
+          "peak_reserved_gpu_bytes": 3881828352,
+          "process_rss_bytes": 1682878464
+        },
+        "wall_segments": [
+          {
+            "kind": "training_segment_finished",
+            "seconds": 1153.0046729999995
+          },
+          {
+            "kind": "training_segment_finished",
+            "seconds": 1398.9802849000007
+          }
+        ],
+        "authoritative_cost": "All started journal attempts; observations are lower bounds when work is incomplete"
+      },
+      {
+        "root": "C:\\Users\\rahma\\OneDrive\\Documents\\Projects\\University Projects\\CSE498R\\AUTODSPy\\results\\adagrpo\\gsm8k\\adaptive\\seed42\\smoke\\20261020T104739-49b448c1",
+        "categories": {
+          "training": {
+            "gross_attempts": 8,
+            "committed_attempts": 8,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 9,
+              "total": 9,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 2203,
+              "total": 2203,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 1189,
+              "total": 1189,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 128.6273058000006,
+            "total_execution_seconds": 128.6273058000006,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "validation": {
+            "gross_attempts": 4,
+            "committed_attempts": 4,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": false,
+            "repeat_scope": "Legacy episode/split proxy; policy weight identity unavailable",
+            "logical_model_calls": {
+              "observed": 4,
+              "total": 4,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 896,
+              "total": 896,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 498,
+              "total": 498,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 52.896691300000384,
+            "total_execution_seconds": 52.896691300000384,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "confirmation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "full_test": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "other_evaluation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          }
+        },
+        "totals": {
+          "gross_attempts": 12,
+          "committed_attempts": 12,
+          "discarded_or_uncommitted_attempts": 0,
+          "interrupted_attempts": 0,
+          "repeated_attempts": 0
+        },
+        "controller_seconds": 0.0006591999990632758,
+        "equal_reward_policy_changes": [
+          {
+            "episode": 1,
+            "total_variation": null,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          }
+        ],
+        "memory_snapshots": {
+          "peak_allocated_gpu_bytes": 2937659392,
+          "peak_reserved_gpu_bytes": 3762290688,
+          "process_rss_bytes": 1515405312
+        },
+        "wall_segments": [],
+        "authoritative_cost": "All started journal attempts; observations are lower bounds when work is incomplete"
+      },
+      {
+        "root": "C:\\Users\\rahma\\OneDrive\\Documents\\Projects\\University Projects\\CSE498R\\AUTODSPy\\results\\adagrpo\\gsm8k\\static_k4\\seed42\\pilot\\20261020T134004-f1126598",
+        "categories": {
+          "training": {
+            "gross_attempts": 80,
+            "committed_attempts": 80,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 94,
+              "total": 94,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 23321,
+              "total": 23321,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 10872,
+              "total": 10872,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 1286.4783136999977,
+            "total_execution_seconds": 1286.4783136999977,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "validation": {
+            "gross_attempts": 60,
+            "committed_attempts": 60,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": false,
+            "repeat_scope": "Legacy episode/split proxy; policy weight identity unavailable",
+            "logical_model_calls": {
+              "observed": 62,
+              "total": 62,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 15140,
+              "total": 15140,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 8834,
+              "total": 8834,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 930.6291797000049,
+            "total_execution_seconds": 930.6291797000049,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "confirmation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "full_test": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "other_evaluation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          }
+        },
+        "totals": {
+          "gross_attempts": 140,
+          "committed_attempts": 140,
+          "discarded_or_uncommitted_attempts": 0,
+          "interrupted_attempts": 0,
+          "repeated_attempts": 0
+        },
+        "controller_seconds": 0.007408699981169775,
+        "equal_reward_policy_changes": [
+          {
+            "episode": 2,
+            "total_variation": null,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 6,
+            "total_variation": null,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 8,
+            "total_variation": null,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 10,
+            "total_variation": null,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 11,
+            "total_variation": null,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 14,
+            "total_variation": null,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 17,
+            "total_variation": null,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 18,
+            "total_variation": null,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          }
+        ],
+        "memory_snapshots": {
+          "peak_allocated_gpu_bytes": 3074385920,
+          "peak_reserved_gpu_bytes": 3829399552,
+          "process_rss_bytes": 1740546048
+        },
+        "wall_segments": [
+          {
+            "kind": "training_segment_finished",
+            "seconds": 2310.9829150000005
+          }
+        ],
+        "authoritative_cost": "All started journal attempts; observations are lower bounds when work is incomplete"
+      },
+      {
+        "root": "C:\\Users\\rahma\\OneDrive\\Documents\\Projects\\University Projects\\CSE498R\\AUTODSPy\\results\\adagrpo\\gsm8k\\static_k5\\seed42\\pilot\\20261020T105201-bb79e00d",
+        "categories": {
+          "training": {
+            "gross_attempts": 100,
+            "committed_attempts": 100,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 107,
+              "total": 107,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 26427,
+              "total": 26427,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 14512,
+              "total": 14512,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 1490.482213700012,
+            "total_execution_seconds": 1490.482213700012,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "validation": {
+            "gross_attempts": 60,
+            "committed_attempts": 60,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": false,
+            "repeat_scope": "Legacy episode/split proxy; policy weight identity unavailable",
+            "logical_model_calls": {
+              "observed": 60,
+              "total": 60,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 14618,
+              "total": 14618,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 9137,
+              "total": 9137,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 896.8511441999981,
+            "total_execution_seconds": 896.8511441999981,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "confirmation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "full_test": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "other_evaluation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          }
+        },
+        "totals": {
+          "gross_attempts": 160,
+          "committed_attempts": 160,
+          "discarded_or_uncommitted_attempts": 0,
+          "interrupted_attempts": 0,
+          "repeated_attempts": 0
+        },
+        "controller_seconds": 0.008200699992812588,
+        "equal_reward_policy_changes": [
+          {
+            "episode": 2,
+            "total_variation": null,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 5,
+            "total_variation": null,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 6,
+            "total_variation": null,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 8,
+            "total_variation": null,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 10,
+            "total_variation": null,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 11,
+            "total_variation": null,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 12,
+            "total_variation": null,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 13,
+            "total_variation": null,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 14,
+            "total_variation": null,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 16,
+            "total_variation": null,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 17,
+            "total_variation": null,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 19,
+            "total_variation": null,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 20,
+            "total_variation": null,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          }
+        ],
+        "memory_snapshots": {
+          "peak_allocated_gpu_bytes": 3076616192,
+          "peak_reserved_gpu_bytes": 3829399552,
+          "process_rss_bytes": 1668481024
+        },
+        "wall_segments": [
+          {
+            "kind": "training_segment_finished",
+            "seconds": 2437.8411613000007
+          }
+        ],
+        "authoritative_cost": "All started journal attempts; observations are lower bounds when work is incomplete"
+      },
+      {
+        "root": "C:\\Users\\rahma\\OneDrive\\Documents\\Projects\\University Projects\\CSE498R\\AUTODSPy\\results\\adagrpo\\gsm8k\\static_k5\\seed42\\smoke\\20261020T104314-eba4c922",
+        "categories": {
+          "training": {
+            "gross_attempts": 10,
+            "committed_attempts": 10,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 11,
+              "total": 11,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 2730,
+              "total": 2730,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 1585,
+              "total": 1585,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 170.58063870000024,
+            "total_execution_seconds": 170.58063870000024,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "validation": {
+            "gross_attempts": 4,
+            "committed_attempts": 4,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": false,
+            "repeat_scope": "Legacy episode/split proxy; policy weight identity unavailable",
+            "logical_model_calls": {
+              "observed": 4,
+              "total": 4,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 896,
+              "total": 896,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 498,
+              "total": 498,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 69.23366110000097,
+            "total_execution_seconds": 69.23366110000097,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "confirmation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "full_test": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "other_evaluation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          }
+        },
+        "totals": {
+          "gross_attempts": 14,
+          "committed_attempts": 14,
+          "discarded_or_uncommitted_attempts": 0,
+          "interrupted_attempts": 0,
+          "repeated_attempts": 0
+        },
+        "controller_seconds": 0.0025372999989485834,
+        "equal_reward_policy_changes": [
+          {
+            "episode": 1,
+            "total_variation": null,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          }
+        ],
+        "memory_snapshots": {
+          "peak_allocated_gpu_bytes": 2938173440,
+          "peak_reserved_gpu_bytes": 3762290688,
+          "process_rss_bytes": 1585860608
+        },
+        "wall_segments": [],
+        "authoritative_cost": "All started journal attempts; observations are lower bounds when work is incomplete"
+      },
+      {
+        "root": "C:\\Users\\rahma\\OneDrive\\Documents\\Projects\\University Projects\\CSE498R\\AUTODSPy\\results\\adagrpo\\recovery_check\\gsm8k\\adaptive\\seed42\\smoke\\20261020T120722-2e609f23",
+        "categories": {
+          "training": {
+            "gross_attempts": 8,
+            "committed_attempts": 8,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 9,
+              "total": 9,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 2203,
+              "total": 2203,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 1189,
+              "total": 1189,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 138.086784799998,
+            "total_execution_seconds": 138.086784799998,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "validation": {
+            "gross_attempts": 4,
+            "committed_attempts": 4,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": false,
+            "repeat_scope": "Legacy episode/split proxy; policy weight identity unavailable",
+            "logical_model_calls": {
+              "observed": 4,
+              "total": 4,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 896,
+              "total": 896,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 498,
+              "total": 498,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 69.63672070000212,
+            "total_execution_seconds": 69.63672070000212,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "confirmation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "full_test": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "other_evaluation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          }
+        },
+        "totals": {
+          "gross_attempts": 12,
+          "committed_attempts": 12,
+          "discarded_or_uncommitted_attempts": 0,
+          "interrupted_attempts": 0,
+          "repeated_attempts": 0
+        },
+        "controller_seconds": 0.0021044999975856626,
+        "equal_reward_policy_changes": [
+          {
+            "episode": 1,
+            "total_variation": null,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          }
+        ],
+        "memory_snapshots": {
+          "peak_allocated_gpu_bytes": 2939521024,
+          "peak_reserved_gpu_bytes": 3816816640,
+          "process_rss_bytes": 2769829888
+        },
+        "wall_segments": [
+          {
+            "kind": "training_segment_finished",
+            "seconds": 120.02660829999877
+          },
+          {
+            "kind": "training_segment_finished",
+            "seconds": 125.08549330000096
+          }
+        ],
+        "authoritative_cost": "All started journal attempts; observations are lower bounds when work is incomplete"
+      },
+      {
+        "root": "C:\\Users\\rahma\\OneDrive\\Documents\\Projects\\University Projects\\CSE498R\\AUTODSPy\\results\\adagrpo_v1_v2\\confirmation\\v1\\seed43",
+        "categories": {
+          "training": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "validation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "confirmation": {
+            "gross_attempts": 20,
+            "committed_attempts": 20,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 23,
+              "total": 23,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 5843,
+              "total": 5843,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 2797,
+              "total": 2797,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 310.95770480000647,
+            "total_execution_seconds": 310.95770480000647,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "full_test": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "other_evaluation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          }
+        },
+        "totals": {
+          "gross_attempts": 20,
+          "committed_attempts": 20,
+          "discarded_or_uncommitted_attempts": 0,
+          "interrupted_attempts": 0,
+          "repeated_attempts": 0
+        },
+        "controller_seconds": 0,
+        "equal_reward_policy_changes": [],
+        "memory_snapshots": {
+          "peak_allocated_gpu_bytes": null,
+          "peak_reserved_gpu_bytes": null,
+          "process_rss_bytes": null
+        },
+        "wall_segments": [],
+        "authoritative_cost": "All started journal attempts; observations are lower bounds when work is incomplete"
+      },
+      {
+        "root": "C:\\Users\\rahma\\OneDrive\\Documents\\Projects\\University Projects\\CSE498R\\AUTODSPy\\results\\adagrpo_v1_v2\\confirmation\\v1\\seed44",
+        "categories": {
+          "training": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "validation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "confirmation": {
+            "gross_attempts": 20,
+            "committed_attempts": 20,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 23,
+              "total": 23,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 5780,
+              "total": 5780,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 2706,
+              "total": 2706,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 307.4452403999894,
+            "total_execution_seconds": 307.4452403999894,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "full_test": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "other_evaluation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          }
+        },
+        "totals": {
+          "gross_attempts": 20,
+          "committed_attempts": 20,
+          "discarded_or_uncommitted_attempts": 0,
+          "interrupted_attempts": 0,
+          "repeated_attempts": 0
+        },
+        "controller_seconds": 0,
+        "equal_reward_policy_changes": [],
+        "memory_snapshots": {
+          "peak_allocated_gpu_bytes": null,
+          "peak_reserved_gpu_bytes": null,
+          "process_rss_bytes": null
+        },
+        "wall_segments": [],
+        "authoritative_cost": "All started journal attempts; observations are lower bounds when work is incomplete"
+      },
+      {
+        "root": "C:\\Users\\rahma\\OneDrive\\Documents\\Projects\\University Projects\\CSE498R\\AUTODSPy\\results\\adagrpo_v1_v2\\confirmation\\v2\\seed43",
+        "categories": {
+          "training": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "validation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "confirmation": {
+            "gross_attempts": 20,
+            "committed_attempts": 20,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 20,
+              "total": 20,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 5226,
+              "total": 5226,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 2630,
+              "total": 2630,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 283.4775489000094,
+            "total_execution_seconds": 283.4775489000094,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "full_test": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "other_evaluation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          }
+        },
+        "totals": {
+          "gross_attempts": 20,
+          "committed_attempts": 20,
+          "discarded_or_uncommitted_attempts": 0,
+          "interrupted_attempts": 0,
+          "repeated_attempts": 0
+        },
+        "controller_seconds": 0,
+        "equal_reward_policy_changes": [],
+        "memory_snapshots": {
+          "peak_allocated_gpu_bytes": null,
+          "peak_reserved_gpu_bytes": null,
+          "process_rss_bytes": null
+        },
+        "wall_segments": [],
+        "authoritative_cost": "All started journal attempts; observations are lower bounds when work is incomplete"
+      },
+      {
+        "root": "C:\\Users\\rahma\\OneDrive\\Documents\\Projects\\University Projects\\CSE498R\\AUTODSPy\\results\\adagrpo_v1_v2\\confirmation\\v2\\seed44",
+        "categories": {
+          "training": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "validation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "confirmation": {
+            "gross_attempts": 20,
+            "committed_attempts": 20,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 21,
+              "total": 21,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 5406,
+              "total": 5406,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 3070,
+              "total": 3070,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 320.3148813000007,
+            "total_execution_seconds": 320.3148813000007,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "full_test": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "other_evaluation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          }
+        },
+        "totals": {
+          "gross_attempts": 20,
+          "committed_attempts": 20,
+          "discarded_or_uncommitted_attempts": 0,
+          "interrupted_attempts": 0,
+          "repeated_attempts": 0
+        },
+        "controller_seconds": 0,
+        "equal_reward_policy_changes": [],
+        "memory_snapshots": {
+          "peak_allocated_gpu_bytes": null,
+          "peak_reserved_gpu_bytes": null,
+          "process_rss_bytes": null
+        },
+        "wall_segments": [],
+        "authoritative_cost": "All started journal attempts; observations are lower bounds when work is incomplete"
+      },
+      {
+        "root": "C:\\Users\\rahma\\OneDrive\\Documents\\Projects\\University Projects\\CSE498R\\AUTODSPy\\results\\adagrpo_v1_v2\\gsm8k\\v1\\seed43\\screen\\20261020T174123-603c2724",
+        "categories": {
+          "training": {
+            "gross_attempts": 40,
+            "committed_attempts": 40,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 40,
+              "total": 40,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 10552,
+              "total": 10552,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 4949,
+              "total": 4949,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 525.69543599998,
+            "total_execution_seconds": 525.69543599998,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "validation": {
+            "gross_attempts": 40,
+            "committed_attempts": 40,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 42,
+              "total": 42,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 11145,
+              "total": 11145,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 5770,
+              "total": 5770,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 597.2274585000268,
+            "total_execution_seconds": 597.2274585000268,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "confirmation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "full_test": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "other_evaluation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          }
+        },
+        "totals": {
+          "gross_attempts": 80,
+          "committed_attempts": 80,
+          "discarded_or_uncommitted_attempts": 0,
+          "interrupted_attempts": 0,
+          "repeated_attempts": 0
+        },
+        "controller_seconds": 0.0032631000140099786,
+        "equal_reward_policy_changes": [
+          {
+            "episode": 4,
+            "total_variation": 0.09504594741439236,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 5,
+            "total_variation": 0.050728476949204855,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 7,
+            "total_variation": 0.23318381418105966,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 9,
+            "total_variation": 0.1261808798247997,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 10,
+            "total_variation": 0.048041125989214055,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 11,
+            "total_variation": 0.017577022537682643,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          }
+        ],
+        "memory_snapshots": {
+          "peak_allocated_gpu_bytes": 2965299200,
+          "peak_reserved_gpu_bytes": 3833593856,
+          "process_rss_bytes": 1671385088
+        },
+        "wall_segments": [
+          {
+            "kind": "training_segment_finished",
+            "seconds": 1188.4242548999973
+          }
+        ],
+        "authoritative_cost": "All started journal attempts; observations are lower bounds when work is incomplete"
+      },
+      {
+        "root": "C:\\Users\\rahma\\OneDrive\\Documents\\Projects\\University Projects\\CSE498R\\AUTODSPy\\results\\adagrpo_v1_v2\\gsm8k\\v1\\seed44\\screen\\20261020T181208-d2a32819",
+        "categories": {
+          "training": {
+            "gross_attempts": 42,
+            "committed_attempts": 42,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 43,
+              "total": 43,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 11426,
+              "total": 11426,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 6126,
+              "total": 6126,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 638.5219899000076,
+            "total_execution_seconds": 638.5219899000076,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "validation": {
+            "gross_attempts": 40,
+            "committed_attempts": 40,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 40,
+              "total": 40,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 10714,
+              "total": 10714,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 6080,
+              "total": 6080,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 594.8438881999609,
+            "total_execution_seconds": 594.8438881999609,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "confirmation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "full_test": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "other_evaluation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          }
+        },
+        "totals": {
+          "gross_attempts": 82,
+          "committed_attempts": 82,
+          "discarded_or_uncommitted_attempts": 0,
+          "interrupted_attempts": 0,
+          "repeated_attempts": 0
+        },
+        "controller_seconds": 0.006709699999191798,
+        "equal_reward_policy_changes": [
+          {
+            "episode": 1,
+            "total_variation": 0.0,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 4,
+            "total_variation": 0.06759888492715595,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 7,
+            "total_variation": 0.13670477360363562,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 8,
+            "total_variation": 0.08910114022650813,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 11,
+            "total_variation": 0.08469483139419245,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          }
+        ],
+        "memory_snapshots": {
+          "peak_allocated_gpu_bytes": 3050582016,
+          "peak_reserved_gpu_bytes": 3823108096,
+          "process_rss_bytes": 620257280
+        },
+        "wall_segments": [
+          {
+            "kind": "training_segment_finished",
+            "seconds": 1298.2458729999998
+          }
+        ],
+        "authoritative_cost": "All started journal attempts; observations are lower bounds when work is incomplete"
+      },
+      {
+        "root": "C:\\Users\\rahma\\OneDrive\\Documents\\Projects\\University Projects\\CSE498R\\AUTODSPy\\results\\adagrpo_v1_v2\\gsm8k\\v2\\seed44\\screen\\20261020T183931-f25fa190",
+        "categories": {
+          "training": {
+            "gross_attempts": 38,
+            "committed_attempts": 38,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 39,
+              "total": 39,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 10497,
+              "total": 10497,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 6067,
+              "total": 6067,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 623.6853927999764,
+            "total_execution_seconds": 623.6853927999764,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "validation": {
+            "gross_attempts": 40,
+            "committed_attempts": 40,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 40,
+              "total": 40,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 10656,
+              "total": 10656,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 5826,
+              "total": 5826,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 606.8103264000019,
+            "total_execution_seconds": 606.8103264000019,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "confirmation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "full_test": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "other_evaluation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          }
+        },
+        "totals": {
+          "gross_attempts": 78,
+          "committed_attempts": 78,
+          "discarded_or_uncommitted_attempts": 0,
+          "interrupted_attempts": 0,
+          "repeated_attempts": 0
+        },
+        "controller_seconds": 0.003229900023143273,
+        "equal_reward_policy_changes": [
+          {
+            "episode": 1,
+            "total_variation": 0.0,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 3,
+            "total_variation": 0.06993679567075783,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 4,
+            "total_variation": 0.04830998997768865,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 6,
+            "total_variation": 0.09218594359802118,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 7,
+            "total_variation": 0.07913479378646622,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 8,
+            "total_variation": 0.0769896822585805,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 9,
+            "total_variation": 0.050509291967859374,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 11,
+            "total_variation": 0.03206138176880872,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 12,
+            "total_variation": 0.026275522705253813,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          }
+        ],
+        "memory_snapshots": {
+          "peak_allocated_gpu_bytes": 3052152832,
+          "peak_reserved_gpu_bytes": 3823108096,
+          "process_rss_bytes": 621895680
+        },
+        "wall_segments": [
+          {
+            "kind": "training_segment_finished",
+            "seconds": 1296.0198533000002
+          }
+        ],
+        "authoritative_cost": "All started journal attempts; observations are lower bounds when work is incomplete"
+      },
+      {
+        "root": "C:\\Users\\rahma\\OneDrive\\Documents\\Projects\\University Projects\\CSE498R\\AUTODSPy\\results\\adagrpo_v2\\gsm8k\\adaptive\\seed42\\smoke\\20261020T150926-5cd901bb",
+        "categories": {
+          "training": {
+            "gross_attempts": 6,
+            "committed_attempts": 6,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 9,
+              "total": 9,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 2155,
+              "total": 2155,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 1918,
+              "total": 1918,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 176.91141870000138,
+            "total_execution_seconds": 176.91141870000138,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "validation": {
+            "gross_attempts": 4,
+            "committed_attempts": 4,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 4,
+              "total": 4,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 962,
+              "total": 962,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 590,
+              "total": 590,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 77.78346379999493,
+            "total_execution_seconds": 77.78346379999493,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "confirmation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "full_test": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "other_evaluation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          }
+        },
+        "totals": {
+          "gross_attempts": 10,
+          "committed_attempts": 10,
+          "discarded_or_uncommitted_attempts": 0,
+          "interrupted_attempts": 0,
+          "repeated_attempts": 0
+        },
+        "controller_seconds": 0.00040860000081011094,
+        "equal_reward_policy_changes": [
+          {
+            "episode": 1,
+            "total_variation": 0.0,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 2,
+            "total_variation": 0.0,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          }
+        ],
+        "memory_snapshots": {
+          "peak_allocated_gpu_bytes": 2938173440,
+          "peak_reserved_gpu_bytes": 3762290688,
+          "process_rss_bytes": 1597030400
+        },
+        "wall_segments": [
+          {
+            "kind": "training_segment_finished",
+            "seconds": 29.072355200001766
+          },
+          {
+            "kind": "training_segment_finished",
+            "seconds": 250.19225709999955
+          }
+        ],
+        "authoritative_cost": "All started journal attempts; observations are lower bounds when work is incomplete"
+      },
+      {
+        "root": "C:\\Users\\rahma\\OneDrive\\Documents\\Projects\\University Projects\\CSE498R\\AUTODSPy\\results\\adagrpo_v2\\gsm8k\\adaptive\\seed43\\screen\\20261020T154041-268c0802",
+        "categories": {
+          "training": {
+            "gross_attempts": 42,
+            "committed_attempts": 42,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 46,
+              "total": 46,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 11991,
+              "total": 11991,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 5927,
+              "total": 5927,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 703.058810699993,
+            "total_execution_seconds": 703.058810699993,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "validation": {
+            "gross_attempts": 40,
+            "committed_attempts": 40,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 43,
+              "total": 43,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 11284,
+              "total": 11284,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 5632,
+              "total": 5632,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 617.1730401999994,
+            "total_execution_seconds": 617.1730401999994,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "confirmation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "full_test": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "other_evaluation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          }
+        },
+        "totals": {
+          "gross_attempts": 82,
+          "committed_attempts": 82,
+          "discarded_or_uncommitted_attempts": 0,
+          "interrupted_attempts": 0,
+          "repeated_attempts": 0
+        },
+        "controller_seconds": 0.00361850001354469,
+        "equal_reward_policy_changes": [
+          {
+            "episode": 3,
+            "total_variation": 0.07886869039122904,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 4,
+            "total_variation": 0.07159122165686158,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 5,
+            "total_variation": 0.05642285787399205,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 7,
+            "total_variation": 0.07506068762864226,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 8,
+            "total_variation": 0.05648102668423584,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 9,
+            "total_variation": 0.04394178022546674,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 10,
+            "total_variation": 0.04024994630676608,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          }
+        ],
+        "memory_snapshots": {
+          "peak_allocated_gpu_bytes": 2966781952,
+          "peak_reserved_gpu_bytes": 3976200192,
+          "process_rss_bytes": 1526906880
+        },
+        "wall_segments": [
+          {
+            "kind": "training_segment_finished",
+            "seconds": 1383.5115380999996
+          }
+        ],
+        "authoritative_cost": "All started journal attempts; observations are lower bounds when work is incomplete"
+      },
+      {
+        "root": "C:\\Users\\rahma\\OneDrive\\Documents\\Projects\\University Projects\\CSE498R\\AUTODSPy\\results\\adagrpo_v2\\gsm8k\\static_k4\\seed43\\screen\\20261020T160405-56ec5e3e",
+        "categories": {
+          "training": {
+            "gross_attempts": 48,
+            "committed_attempts": 48,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 50,
+              "total": 50,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 13069,
+              "total": 13069,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 6511,
+              "total": 6511,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 738.0239654999932,
+            "total_execution_seconds": 738.0239654999932,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "validation": {
+            "gross_attempts": 40,
+            "committed_attempts": 40,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 42,
+              "total": 42,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 11121,
+              "total": 11121,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 5733,
+              "total": 5733,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 615.7691335999916,
+            "total_execution_seconds": 615.7691335999916,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "confirmation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "full_test": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "other_evaluation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          }
+        },
+        "totals": {
+          "gross_attempts": 88,
+          "committed_attempts": 88,
+          "discarded_or_uncommitted_attempts": 0,
+          "interrupted_attempts": 0,
+          "repeated_attempts": 0
+        },
+        "controller_seconds": 0.0023024999973131344,
+        "equal_reward_policy_changes": [
+          {
+            "episode": 3,
+            "total_variation": 0.07886869039122904,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 4,
+            "total_variation": 0.07159122165686158,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 5,
+            "total_variation": 0.05642285787399205,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 7,
+            "total_variation": 0.06974790874131873,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 9,
+            "total_variation": 0.0453588704812453,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 10,
+            "total_variation": 0.03643574843510003,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          }
+        ],
+        "memory_snapshots": {
+          "peak_allocated_gpu_bytes": 2966781952,
+          "peak_reserved_gpu_bytes": 3976200192,
+          "process_rss_bytes": 638095360
+        },
+        "wall_segments": [
+          {
+            "kind": "training_segment_finished",
+            "seconds": 1417.089991500001
+          }
+        ],
+        "authoritative_cost": "All started journal attempts; observations are lower bounds when work is incomplete"
+      },
+      {
+        "root": "C:\\Users\\rahma\\OneDrive\\Documents\\Projects\\University Projects\\CSE498R\\AUTODSPy\\results\\adagrpo_v2\\gsm8k\\static_k5\\seed43\\screen\\20261020T151438-80082ce9",
+        "categories": {
+          "training": {
+            "gross_attempts": 60,
+            "committed_attempts": 60,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 60,
+              "total": 60,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 15807,
+              "total": 15807,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 8331,
+              "total": 8331,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 856.3128083000083,
+            "total_execution_seconds": 856.3128083000083,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "validation": {
+            "gross_attempts": 40,
+            "committed_attempts": 40,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 42,
+              "total": 42,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 11120,
+              "total": 11120,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 5936,
+              "total": 5936,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 626.1241386000074,
+            "total_execution_seconds": 626.1241386000074,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "confirmation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "full_test": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          },
+          "other_evaluation": {
+            "gross_attempts": 0,
+            "committed_attempts": 0,
+            "discarded_or_uncommitted_attempts": 0,
+            "interrupted_attempts": 0,
+            "repeated_attempts": 0,
+            "repeat_identity_complete": true,
+            "repeat_scope": "Exact policy/evaluation identity",
+            "logical_model_calls": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "prompt_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "generated_tokens": {
+              "observed": 0,
+              "total": 0,
+              "unknown_attempts": 0
+            },
+            "observed_execution_seconds": 0,
+            "total_execution_seconds": 0,
+            "physical_http_requests": null,
+            "physical_requests_scope": "Not measured; logical calls are not physical HTTP requests"
+          }
+        },
+        "totals": {
+          "gross_attempts": 100,
+          "committed_attempts": 100,
+          "discarded_or_uncommitted_attempts": 0,
+          "interrupted_attempts": 0,
+          "repeated_attempts": 0
+        },
+        "controller_seconds": 0.001656800010096049,
+        "equal_reward_policy_changes": [
+          {
+            "episode": 4,
+            "total_variation": 0.11510139664090255,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 5,
+            "total_variation": 0.0589615537393775,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 6,
+            "total_variation": 0.04154452415525591,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 7,
+            "total_variation": 0.031467541441621664,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 8,
+            "total_variation": 0.03345183281225701,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 9,
+            "total_variation": 0.021755468219002292,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 10,
+            "total_variation": 0.02358397903072313,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 11,
+            "total_variation": 0.019838937098739167,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          },
+          {
+            "episode": 12,
+            "total_variation": 0.0061485400501585874,
+            "note": "Observed equal-reward Adam step; not classified as a defect"
+          }
+        ],
+        "memory_snapshots": {
+          "peak_allocated_gpu_bytes": 2966781952,
+          "peak_reserved_gpu_bytes": 3976200192,
+          "process_rss_bytes": 1525207040
+        },
+        "wall_segments": [
+          {
+            "kind": "training_segment_finished",
+            "seconds": 1542.468950399998
+          }
+        ],
+        "authoritative_cost": "All started journal attempts; observations are lower bounds when work is incomplete"
+      }
+    ],
+    "totals": {
+      "gross_attempts": 1095,
+      "committed_attempts": 1078,
+      "discarded_or_uncommitted_attempts": 17,
+      "interrupted_attempts": 0,
+      "repeated_attempts": 17,
+      "logical_model_calls": {
+        "observed": 1160,
+        "total": 1160,
+        "unknown_attempts": 0
+      },
+      "prompt_tokens": {
+        "observed": 295621,
+        "total": 295621,
+        "unknown_attempts": 0
+      },
+      "generated_tokens": {
+        "observed": 157126,
+        "total": 157126,
+        "unknown_attempts": 0
+      },
+      "physical_http_requests": null
+    }
+  },
+  "unsupported_historical_journal_schemas": [
+    {
+      "root": "results\\gsm8k\\k10\\seed42\\baseline\\20261013T183759-77b8ce57",
+      "reason": "Unsupported historical journal schema; cost cannot be reconciled by this protocol"
+    },
+    {
+      "root": "results\\gsm8k\\k15\\seed42\\baseline\\20261013T190031-8d8e40ec",
+      "reason": "Unsupported historical journal schema; cost cannot be reconciled by this protocol"
+    },
+    {
+      "root": "results\\gsm8k\\k5\\seed42\\baseline\\20261013T002408-4024eb86",
+      "reason": "Unsupported historical journal schema; cost cannot be reconciled by this protocol"
+    },
+    {
+      "root": "results\\gsm8k\\k5\\seed42\\baseline\\20261013T174921-b1ad8988",
+      "reason": "Unsupported historical journal schema; cost cannot be reconciled by this protocol"
+    },
+    {
+      "root": "results\\gsm8k\\k5\\seed42\\pilot\\20261013T030331-484147ec",
+      "reason": "Unsupported historical journal schema; cost cannot be reconciled by this protocol"
+    },
+    {
+      "root": "results\\gsm8k\\k8\\seed42\\baseline\\20261013T181104-322720b3",
+      "reason": "Unsupported historical journal schema; cost cannot be reconciled by this protocol"
+    }
+  ],
+  "unsupported_historical_schemas": [],
+  "scope": "All existing supported journal roots; no model work in this implementation; unsupported schemas not counted as zero"
+}

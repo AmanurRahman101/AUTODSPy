@@ -1,0 +1,5 @@
+{
+  "checkpoint": "checkpoints\\best_f1e3f5cc794e4d57bf18ddc7d295087e.pt",
+  "sha256": "ad441f4102ae4a94bfcd14f8c8d09d317afc0916d6594b5cfbd25d2566b81822",
+  "episode": 10
+}

@@ -1,0 +1,12 @@
+static_k5 episode=1/2 K=5 stop=static_k reward=0.400 grad=1.789e+00
+static_k5 episode=2/2 K=5 stop=static_k reward=0.800 grad=1.356e+00
+adaptive episode=1/2 K=4 stop=allowance_reached reward=0.500 grad=1.581e+00
+adaptive episode=2/2 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+static_k2 episode=1/3 K=2 stop=static_k reward=0.500 grad=1.000e+00
+wall_limit synthetic pause Resume latest durable checkpoint; partial group is discarded.
+static_k2 episode=2/3 K=2 stop=static_k reward=1.000 grad=0.000e+00
+static_k2 episode=3/3 K=2 stop=static_k reward=0.500 grad=7.071e-01
+static_k2 episode=1/3 K=2 stop=static_k reward=0.500 grad=1.000e+00
+static_k2 episode=2/3 K=2 stop=static_k reward=1.000 grad=0.000e+00
+static_k2 episode=3/3 K=2 stop=static_k reward=0.500 grad=7.071e-01
+infrastructure_failure synthetic offline service Resume latest durable checkpoint; partial group is discarded.

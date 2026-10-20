@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "frozen_code_sha256": "fb09196f20c9da09ecd099134d4ac9faae21c0a377e38f9a8032362c252b93b2",
+  "notebook_sha256": "6876cc380774304248ba74e596ed928e7e2e2b3911fc9938369fe6232a8802c8",
+  "notebook_valid": true,
+  "definition_cells": 20,
+  "source_unchanged_after_freeze": true,
+  "diff_check_exit": 0,
+  "graphify_ast_update_exit": 0,
+  "graphify_limitation": "AST update does not parse notebook cells or semantically index new Markdown; notebook code is verified directly",
+  "original_notebooks_preserved": true,
+  "original_results_preserved": true,
+  "model_worker_exit": 0,
+  "official_test_access": false,
+  "completed_local_minutes": 86.04073473215104
+}

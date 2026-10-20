@@ -1,0 +1,249 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "controller": "v1",
+      "seed": 43,
+      "training_artifacts": true,
+      "confirmation": true,
+      "archived": false
+    },
+    {
+      "controller": "v2",
+      "seed": 43,
+      "training_artifacts": true,
+      "confirmation": true,
+      "archived": true
+    },
+    {
+      "controller": "v1",
+      "seed": 44,
+      "training_artifacts": true,
+      "confirmation": true,
+      "archived": false
+    },
+    {
+      "controller": "v2",
+      "seed": 44,
+      "training_artifacts": true,
+      "confirmation": true,
+      "archived": false
+    }
+  ],
+  "matching": [
+    {
+      "seed": 43,
+      "check": "entire selection and schedule",
+      "passed": true
+    },
+    {
+      "seed": 43,
+      "check": "identical initial GPT2 weights",
+      "passed": true
+    },
+    {
+      "seed": 43,
+      "check": "runtime and model digest",
+      "passed": true
+    },
+    {
+      "seed": 43,
+      "check": "all initial validation pipelines and rewards",
+      "passed": true
+    },
+    {
+      "seed": 43,
+      "check": "paired confirmation questions",
+      "passed": true
+    },
+    {
+      "seed": 43,
+      "check": "paired confirmation sampling streams",
+      "passed": true
+    },
+    {
+      "seed": 43,
+      "check": "only declared controller/infrastructure config differences",
+      "passed": true
+    },
+    {
+      "seed": 43,
+      "check": "common candidates identical until allocation divergence",
+      "passed": true,
+      "prefix": [
+        {
+          "episode": 1,
+          "common_candidates": 2
+        }
+      ]
+    },
+    {
+      "seed": 44,
+      "check": "entire selection and schedule",
+      "passed": true
+    },
+    {
+      "seed": 44,
+      "check": "identical initial GPT2 weights",
+      "passed": true
+    },
+    {
+      "seed": 44,
+      "check": "runtime and model digest",
+      "passed": true
+    },
+    {
+      "seed": 44,
+      "check": "all initial validation pipelines and rewards",
+      "passed": true
+    },
+    {
+      "seed": 44,
+      "check": "paired confirmation questions",
+      "passed": true
+    },
+    {
+      "seed": 44,
+      "check": "paired confirmation sampling streams",
+      "passed": true
+    },
+    {
+      "seed": 44,
+      "check": "only declared controller/infrastructure config differences",
+      "passed": true
+    },
+    {
+      "seed": 44,
+      "check": "common candidates identical until allocation divergence",
+      "passed": true,
+      "prefix": [
+        {
+          "episode": 1,
+          "common_candidates": 2
+        }
+      ]
+    }
+  ],
+  "new_work": {
+    "training_attempts": 120,
+    "evaluation_attempts": 200,
+    "logical_calls": 331,
+    "prompt_tokens": 87245,
+    "generated_tokens": 46021
+  },
+  "paired_outcomes": {
+    "v1_seed43": [
+      false,
+      true,
+      true,
+      false,
+      false,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      true,
+      false,
+      true,
+      true,
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    "v1_seed44": [
+      false,
+      true,
+      true,
+      false,
+      false,
+      false,
+      true,
+      true,
+      false,
+      true,
+      false,
+      false,
+      true,
+      true,
+      true,
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "v2_seed43": [
+      true,
+      true,
+      true,
+      false,
+      false,
+      true,
+      false,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "v2_seed44": [
+      false,
+      true,
+      true,
+      false,
+      false,
+      false,
+      true,
+      true,
+      false,
+      true,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+    ]
+  },
+  "confirmation_ids": [
+    "gsm8k:train:5004",
+    "gsm8k:train:6152",
+    "gsm8k:train:2709",
+    "gsm8k:train:317",
+    "gsm8k:train:504",
+    "gsm8k:train:1170",
+    "gsm8k:train:1750",
+    "gsm8k:train:870",
+    "gsm8k:train:2105",
+    "gsm8k:train:699",
+    "gsm8k:train:1632",
+    "gsm8k:train:1961",
+    "gsm8k:train:5603",
+    "gsm8k:train:556",
+    "gsm8k:train:3011",
+    "gsm8k:train:1453",
+    "gsm8k:train:7155",
+    "gsm8k:train:5267",
+    "gsm8k:train:96",
+    "gsm8k:train:2226"
+  ],
+  "clock_minutes": 86.04073473215104,
+  "deadline_met": true,
+  "official_test_access": false
+}

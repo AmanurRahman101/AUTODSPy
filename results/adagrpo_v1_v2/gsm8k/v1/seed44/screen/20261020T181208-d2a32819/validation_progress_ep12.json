@@ -1,0 +1,1946 @@
+{
+  "identity": {
+    "protocol": "adagrpo-gsm8k-controller-ab-v1",
+    "policy_sha256": "7955035ac129b8c743a87d02975d3e76a0a6c96cc38c3be9c88e6d1aa6248c7e",
+    "episode": 12,
+    "selection_id": "f45386cdd9b950f19fca6f1974f87cc9d9347946e92a8b10ef4603bdbaaa7ca6",
+    "sampling_version": "candidate-stream-v2",
+    "seed": 44,
+    "execution_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+    "runtime": {
+      "packages": {
+        "torch": "2.6.0+cu124",
+        "transformers": "5.17.0",
+        "dspy": "3.3.1",
+        "datasets": "5.0.1",
+        "numpy": "2.4.6",
+        "matplotlib": "3.11.2"
+      },
+      "ollama_version": {
+        "version": "0.22.1"
+      },
+      "execution_model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+      "hardware": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+      "cuda": "12.4",
+      "python": "3.11.9"
+    },
+    "execution_configuration": {
+      "reward_mode": "numeric_exact",
+      "ollama_model": "llama3.2:3b",
+      "ollama_num_gpu": 0,
+      "ollama_num_ctx": 2048,
+      "execution_max_tokens": 512,
+      "execution_temperature": 0.0
+    },
+    "split": "validation",
+    "questions": "703ad4180f65884308e9acefcc0db78548f169d9fb61144267ef0c4d2ead4fd1"
+  },
+  "identity_id": "107faaa627adf8239b184bc09a2bd9cc688a0a43ae65c23019f35764545b911c",
+  "records": [
+    {
+      "question_id": "gsm8k:train:1593",
+      "attempt_id": "1eded25b95864868b811f860f73f2d8e",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "prompt -> response",
+          "stop"
+        ],
+        "log_probs": [
+          -0.013597368262708187,
+          -1.0762481689453125,
+          0.0
+        ],
+        "action_diagnostics": [
+          {
+            "state_actions": [],
+            "selected_action": "CoT",
+            "selected_probability": 0.9864946583702544,
+            "probabilities": {
+              "CoT": 0.9864946583702544,
+              "Predict": 0.013505388579182055
+            },
+            "entropy_nats": 0.07154992520417375
+          },
+          {
+            "state_actions": [
+              "CoT"
+            ],
+            "selected_action": "prompt -> response",
+            "selected_probability": 0.3408720237894195,
+            "probabilities": {
+              "question -> answer": 0.01174463397498273,
+              "text -> summary": 0.09390507135080847,
+              "question -> reasoning": 0.01174463397498273,
+              "question -> hypothesis": 0.01174463397498273,
+              "problem -> solution": 0.006974995586851467,
+              "problem_description -> explanation": 0.006974995586851467,
+              "context -> summary": 0.003464007997656964,
+              "context -> briefing": 0.003464007997656964,
+              "word_problem -> solution": 0.0024922156873834417,
+              "math_problem -> answer": 0.012421758031517221,
+              "prompt -> response": 0.3408720237894195,
+              "query -> response": 0.029709943282846058,
+              "text -> response": 0.09390507135080847,
+              "prompt -> generated_text": 0.3408720237894195,
+              "query -> generated_text": 0.029709943282846058
+            },
+            "entropy_nats": 1.7214812531977328
+          },
+          {
+            "state_actions": [
+              "CoT",
+              "prompt -> response"
+            ],
+            "selected_action": "stop",
+            "selected_probability": 1.0,
+            "probabilities": {
+              "stop": 1.0
+            },
+            "entropy_nats": -0.0
+          }
+        ],
+        "module": "CoT",
+        "signature": "prompt -> response",
+        "sampling_seed": 2662577573221190339,
+        "sampling_version": "candidate-stream-v2"
+      },
+      "execution": {
+        "output": "[9]",
+        "success": true,
+        "error": null,
+        "seconds": 21.42329829999653
+      },
+      "reward": {
+        "reward": 1.0,
+        "numeric_exact_match": true,
+        "semantic_used": false,
+        "judge_score": null,
+        "judge_error": null,
+        "prediction": "9",
+        "extraction_source": "brackets",
+        "parse_valid": true
+      },
+      "_resources": {
+        "execution_llm_calls": 1,
+        "physical_http_requests": null,
+        "prompt_tokens": 249,
+        "generated_tokens": 256,
+        "llm_seconds": 21.287371500002337,
+        "llm_failed_calls": 0,
+        "call_count_definition": "logical LM.forward attempts, including adapter retries; no judges"
+      },
+      "_seconds": 21.782922700003837
+    },
+    {
+      "question_id": "gsm8k:train:5312",
+      "attempt_id": "7d37060dcf704b299c717ee737985bdd",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "prompt -> response",
+          "stop"
+        ],
+        "log_probs": [
+          -0.014826231636106968,
+          -0.7923398613929749,
+          0.0
+        ],
+        "action_diagnostics": [
+          {
+            "state_actions": [],
+            "selected_action": "CoT",
+            "selected_probability": 0.9852831357668669,
+            "probabilities": {
+              "CoT": 0.9852831357668669,
+              "Predict": 0.014716825788875823
+            },
+            "entropy_nats": 0.0766948483032015
+          },
+          {
+            "state_actions": [
+              "CoT"
+            ],
+            "selected_action": "prompt -> response",
+            "selected_probability": 0.4527841027881172,
+            "probabilities": {
+              "question -> answer": 0.0038791627125588667,
+              "text -> summary": 0.03219217660949758,
+              "question -> reasoning": 0.0038791627125588667,
+              "question -> hypothesis": 0.0038791627125588667,
+              "problem -> solution": 0.000324141822439041,
+              "problem_description -> explanation": 0.000324141822439041,
+              "context -> summary": 0.0008699608067846969,
+              "context -> briefing": 0.0008699608067846969,
+              "word_problem -> solution": 0.002275697297666146,
+              "math_problem -> answer": 0.0015070847187845108,
+              "prompt -> response": 0.4527841027881172,
+              "query -> response": 0.006119517706261235,
+              "text -> response": 0.03219217660949758,
+              "prompt -> generated_text": 0.4527841027881172,
+              "query -> generated_text": 0.006119517706261235
+            },
+            "entropy_nats": 1.1068417884215078
+          },
+          {
+            "state_actions": [
+              "CoT",
+              "prompt -> response"
+            ],
+            "selected_action": "stop",
+            "selected_probability": 1.0,
+            "probabilities": {
+              "stop": 1.0
+            },
+            "entropy_nats": -0.0
+          }
+        ],
+        "module": "CoT",
+        "signature": "prompt -> response",
+        "sampling_seed": 8619986794929456208,
+        "sampling_version": "candidate-stream-v2"
+      },
+      "execution": {
+        "output": "[$10]",
+        "success": true,
+        "error": null,
+        "seconds": 9.237955399999919
+      },
+      "reward": {
+        "reward": 1.0,
+        "numeric_exact_match": true,
+        "semantic_used": false,
+        "judge_score": null,
+        "judge_error": null,
+        "prediction": "10",
+        "extraction_source": "brackets",
+        "parse_valid": true
+      },
+      "_resources": {
+        "execution_llm_calls": 1,
+        "physical_http_requests": null,
+        "prompt_tokens": 278,
+        "generated_tokens": 88,
+        "llm_seconds": 9.098686400000588,
+        "llm_failed_calls": 0,
+        "call_count_definition": "logical LM.forward attempts, including adapter retries; no judges"
+      },
+      "_seconds": 9.457685900000797
+    },
+    {
+      "question_id": "gsm8k:train:4905",
+      "attempt_id": "056b9ae9e3dd4fc79414f119974dbcc4",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "prompt -> generated_text",
+          "stop"
+        ],
+        "log_probs": [
+          -0.019740547984838486,
+          -1.0813441276550293,
+          0.0
+        ],
+        "action_diagnostics": [
+          {
+            "state_actions": [],
+            "selected_action": "CoT",
+            "selected_probability": 0.9804530208218643,
+            "probabilities": {
+              "CoT": 0.9804530208218643,
+              "Predict": 0.019547023947204187
+            },
+            "entropy_nats": 0.09627089447204891
+          },
+          {
+            "state_actions": [
+              "CoT"
+            ],
+            "selected_action": "prompt -> generated_text",
+            "selected_probability": 0.33913937254007404,
+            "probabilities": {
+              "question -> answer": 0.023691903856075947,
+              "text -> summary": 0.057308526682364774,
+              "question -> reasoning": 0.023691903856075947,
+              "question -> hypothesis": 0.023691903856075947,
+              "problem -> solution": 0.009122481860021302,
+              "problem_description -> explanation": 0.009122481860021302,
+              "context -> summary": 0.0015089672773926995,
+              "context -> briefing": 0.0015089672773926995,
+              "word_problem -> solution": 0.0044716259679796885,
+              "math_problem -> answer": 0.009295950506618873,
+              "prompt -> response": 0.33913937254007404,
+              "query -> response": 0.05049902650879533,
+              "text -> response": 0.057308526682364774,
+              "prompt -> generated_text": 0.33913937254007404,
+              "query -> generated_text": 0.05049902650879533
+            },
+            "entropy_nats": 1.8017295184236717
+          },
+          {
+            "state_actions": [
+              "CoT",
+              "prompt -> generated_text"
+            ],
+            "selected_action": "stop",
+            "selected_probability": 1.0,
+            "probabilities": {
+              "stop": 1.0
+            },
+            "entropy_nats": -0.0
+          }
+        ],
+        "module": "CoT",
+        "signature": "prompt -> generated_text",
+        "sampling_seed": 212838765150082383,
+        "sampling_version": "candidate-stream-v2"
+      },
+      "execution": {
+        "output": "[40]",
+        "success": true,
+        "error": null,
+        "seconds": 15.468137899995781
+      },
+      "reward": {
+        "reward": 0.0,
+        "numeric_exact_match": false,
+        "semantic_used": false,
+        "judge_score": null,
+        "judge_error": null,
+        "prediction": "40",
+        "extraction_source": "brackets",
+        "parse_valid": true
+      },
+      "_resources": {
+        "execution_llm_calls": 1,
+        "physical_http_requests": null,
+        "prompt_tokens": 291,
+        "generated_tokens": 155,
+        "llm_seconds": 15.339187100005802,
+        "llm_failed_calls": 0,
+        "call_count_definition": "logical LM.forward attempts, including adapter retries; no judges"
+      },
+      "_seconds": 15.824173300003167
+    },
+    {
+      "question_id": "gsm8k:train:7016",
+      "attempt_id": "52d24736000c490b88328a504cd65339",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "prompt -> response",
+          "stop"
+        ],
+        "log_probs": [
+          -0.009959527291357517,
+          -0.8637989163398743,
+          0.0
+        ],
+        "action_diagnostics": [
+          {
+            "state_actions": [],
+            "selected_action": "CoT",
+            "selected_probability": 0.9900899045585125,
+            "probabilities": {
+              "CoT": 0.9900899045585125,
+              "Predict": 0.009910107181554162
+            },
+            "entropy_nats": 0.05558804512415785
+          },
+          {
+            "state_actions": [
+              "CoT"
+            ],
+            "selected_action": "prompt -> response",
+            "selected_probability": 0.42155757459377785,
+            "probabilities": {
+              "question -> answer": 0.009418745554112967,
+              "text -> summary": 0.04301490804283975,
+              "question -> reasoning": 0.009418745554112967,
+              "question -> hypothesis": 0.009418745554112967,
+              "problem -> solution": 0.007916990256393037,
+              "problem_description -> explanation": 0.007916990256393037,
+              "context -> summary": 0.00046999908595228486,
+              "context -> briefing": 0.00046999908595228486,
+              "word_problem -> solution": 0.0029168119386786253,
+              "math_problem -> answer": 0.007090304004275049,
+              "prompt -> response": 0.42155757459377785,
+              "query -> response": 0.007908840205567945,
+              "text -> response": 0.04301490804283975,
+              "prompt -> generated_text": 0.42155757459377785,
+              "query -> generated_text": 0.007908840205567945
+            },
+            "entropy_nats": 1.3432564331377994
+          },
+          {
+            "state_actions": [
+              "CoT",
+              "prompt -> response"
+            ],
+            "selected_action": "stop",
+            "selected_probability": 1.0,
+            "probabilities": {
+              "stop": 1.0
+            },
+            "entropy_nats": -0.0
+          }
+        ],
+        "module": "CoT",
+        "signature": "prompt -> response",
+        "sampling_seed": 4468370049150395022,
+        "sampling_version": "candidate-stream-v2"
+      },
+      "execution": {
+        "output": "[20]",
+        "success": true,
+        "error": null,
+        "seconds": 9.844649099999515
+      },
+      "reward": {
+        "reward": 0.0,
+        "numeric_exact_match": false,
+        "semantic_used": false,
+        "judge_score": null,
+        "judge_error": null,
+        "prediction": "20",
+        "extraction_source": "brackets",
+        "parse_valid": true
+      },
+      "_resources": {
+        "execution_llm_calls": 1,
+        "physical_http_requests": null,
+        "prompt_tokens": 254,
+        "generated_tokens": 62,
+        "llm_seconds": 9.720020300002943,
+        "llm_failed_calls": 0,
+        "call_count_definition": "logical LM.forward attempts, including adapter retries; no judges"
+      },
+      "_seconds": 10.164436500002921
+    },
+    {
+      "question_id": "gsm8k:train:2517",
+      "attempt_id": "db1bc7fb4825409fab21b081b6e1878e",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "prompt -> generated_text",
+          "stop"
+        ],
+        "log_probs": [
+          -0.008948107250034809,
+          -0.777521014213562,
+          0.0
+        ],
+        "action_diagnostics": [
+          {
+            "state_actions": [],
+            "selected_action": "CoT",
+            "selected_probability": 0.9910918079178531,
+            "probabilities": {
+              "CoT": 0.9910918079178531,
+              "Predict": 0.008908241092189587
+            },
+            "entropy_nats": 0.05092222850333063
+          },
+          {
+            "state_actions": [
+              "CoT"
+            ],
+            "selected_action": "prompt -> generated_text",
+            "selected_probability": 0.4595438029936995,
+            "probabilities": {
+              "question -> answer": 0.004989589248073684,
+              "text -> summary": 0.013520440499643828,
+              "question -> reasoning": 0.004989589248073684,
+              "question -> hypothesis": 0.004989589248073684,
+              "problem -> solution": 0.0015332527102256707,
+              "problem_description -> explanation": 0.0015332527102256707,
+              "context -> summary": 0.0009208359557343697,
+              "context -> briefing": 0.0009208359557343697,
+              "word_problem -> solution": 0.0019398403319224285,
+              "math_problem -> answer": 0.001114432618035572,
+              "prompt -> response": 0.4595438029936995,
+              "query -> response": 0.015470188829085758,
+              "text -> response": 0.013520440499643828,
+              "prompt -> generated_text": 0.4595438029936995,
+              "query -> generated_text": 0.015470188829085758
+            },
+            "entropy_nats": 1.0917456163379913
+          },
+          {
+            "state_actions": [
+              "CoT",
+              "prompt -> generated_text"
+            ],
+            "selected_action": "stop",
+            "selected_probability": 1.0,
+            "probabilities": {
+              "stop": 1.0
+            },
+            "entropy_nats": -0.0
+          }
+        ],
+        "module": "CoT",
+        "signature": "prompt -> generated_text",
+        "sampling_seed": 6878638523487022060,
+        "sampling_version": "candidate-stream-v2"
+      },
+      "execution": {
+        "output": "[100000]",
+        "success": true,
+        "error": null,
+        "seconds": 15.895629699996789
+      },
+      "reward": {
+        "reward": 1.0,
+        "numeric_exact_match": true,
+        "semantic_used": false,
+        "judge_score": null,
+        "judge_error": null,
+        "prediction": "100000",
+        "extraction_source": "brackets",
+        "parse_valid": true
+      },
+      "_resources": {
+        "execution_llm_calls": 1,
+        "physical_http_requests": null,
+        "prompt_tokens": 259,
+        "generated_tokens": 184,
+        "llm_seconds": 15.77029250000487,
+        "llm_failed_calls": 0,
+        "call_count_definition": "logical LM.forward attempts, including adapter retries; no judges"
+      },
+      "_seconds": 16.227961500000674
+    },
+    {
+      "question_id": "gsm8k:train:5374",
+      "attempt_id": "38bcec3de17c41329abbeeb4a3a4f47c",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "query -> response",
+          "stop"
+        ],
+        "log_probs": [
+          -0.009692984633147717,
+          -2.421398401260376,
+          0.0
+        ],
+        "action_diagnostics": [
+          {
+            "state_actions": [],
+            "selected_action": "CoT",
+            "selected_probability": 0.9903538409271283,
+            "probabilities": {
+              "CoT": 0.9903538409271283,
+              "Predict": 0.009646179103215784
+            },
+            "entropy_nats": 0.05436926725305049
+          },
+          {
+            "state_actions": [
+              "CoT"
+            ],
+            "selected_action": "query -> response",
+            "selected_probability": 0.0887973562612142,
+            "probabilities": {
+              "question -> answer": 0.06437592650924275,
+              "text -> summary": 0.12589106082125565,
+              "question -> reasoning": 0.06437592650924275,
+              "question -> hypothesis": 0.06437592650924275,
+              "problem -> solution": 0.011741990941260409,
+              "problem_description -> explanation": 0.011741990941260409,
+              "context -> summary": 0.003473336505895177,
+              "context -> briefing": 0.003473336505895177,
+              "word_problem -> solution": 0.0030561018456191818,
+              "math_problem -> answer": 0.006905552126599529,
+              "prompt -> response": 0.1685514892226463,
+              "query -> response": 0.0887973562612142,
+              "text -> response": 0.12589106082125565,
+              "prompt -> generated_text": 0.1685514892226463,
+              "query -> generated_text": 0.0887973562612142
+            },
+            "entropy_nats": 2.277542199785383
+          },
+          {
+            "state_actions": [
+              "CoT",
+              "query -> response"
+            ],
+            "selected_action": "stop",
+            "selected_probability": 1.0,
+            "probabilities": {
+              "stop": 1.0
+            },
+            "entropy_nats": -0.0
+          }
+        ],
+        "module": "CoT",
+        "signature": "query -> response",
+        "sampling_seed": 5025391040057686038,
+        "sampling_version": "candidate-stream-v2"
+      },
+      "execution": {
+        "output": "[164]",
+        "success": true,
+        "error": null,
+        "seconds": 26.08617079999385
+      },
+      "reward": {
+        "reward": 1.0,
+        "numeric_exact_match": true,
+        "semantic_used": false,
+        "judge_score": null,
+        "judge_error": null,
+        "prediction": "164",
+        "extraction_source": "brackets",
+        "parse_valid": true
+      },
+      "_resources": {
+        "execution_llm_calls": 1,
+        "physical_http_requests": null,
+        "prompt_tokens": 259,
+        "generated_tokens": 371,
+        "llm_seconds": 25.967698499996914,
+        "llm_failed_calls": 0,
+        "call_count_definition": "logical LM.forward attempts, including adapter retries; no judges"
+      },
+      "_seconds": 26.38914410000143
+    },
+    {
+      "question_id": "gsm8k:train:2547",
+      "attempt_id": "91b43eba1c584236871861739821c25d",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "prompt -> generated_text",
+          "stop"
+        ],
+        "log_probs": [
+          -0.014625011011958122,
+          -0.974489688873291,
+          0.0
+        ],
+        "action_diagnostics": [
+          {
+            "state_actions": [],
+            "selected_action": "CoT",
+            "selected_probability": 0.9854814150026759,
+            "probabilities": {
+              "CoT": 0.9854814150026759,
+              "Predict": 0.01451863596164281
+            },
+            "entropy_nats": 0.0758602220734643
+          },
+          {
+            "state_actions": [
+              "CoT"
+            ],
+            "selected_action": "prompt -> generated_text",
+            "selected_probability": 0.3773848881401799,
+            "probabilities": {
+              "question -> answer": 0.01806316941355553,
+              "text -> summary": 0.04924860328838791,
+              "question -> reasoning": 0.01806316941355553,
+              "question -> hypothesis": 0.01806316941355553,
+              "problem -> solution": 0.012090085884096092,
+              "problem_description -> explanation": 0.012090085884096092,
+              "context -> summary": 0.0027917814280392804,
+              "context -> briefing": 0.0027917814280392804,
+              "word_problem -> solution": 0.002325424241751511,
+              "math_problem -> answer": 0.004554453547645421,
+              "prompt -> response": 0.3773848881401799,
+              "query -> response": 0.027949902813322155,
+              "text -> response": 0.04924860328838791,
+              "prompt -> generated_text": 0.3773848881401799,
+              "query -> generated_text": 0.027949902813322155
+            },
+            "entropy_nats": 1.627819759977688
+          },
+          {
+            "state_actions": [
+              "CoT",
+              "prompt -> generated_text"
+            ],
+            "selected_action": "stop",
+            "selected_probability": 1.0,
+            "probabilities": {
+              "stop": 1.0
+            },
+            "entropy_nats": -0.0
+          }
+        ],
+        "module": "CoT",
+        "signature": "prompt -> generated_text",
+        "sampling_seed": 4958531544074705519,
+        "sampling_version": "candidate-stream-v2"
+      },
+      "execution": {
+        "output": "He gets a total of (3 x 100m) / 10m = 30 sections.",
+        "success": true,
+        "error": null,
+        "seconds": 11.082068499999878
+      },
+      "reward": {
+        "reward": 1.0,
+        "numeric_exact_match": true,
+        "semantic_used": false,
+        "judge_score": null,
+        "judge_error": null,
+        "prediction": "30",
+        "extraction_source": "last_number",
+        "parse_valid": true
+      },
+      "_resources": {
+        "execution_llm_calls": 1,
+        "physical_http_requests": null,
+        "prompt_tokens": 243,
+        "generated_tokens": 77,
+        "llm_seconds": 10.948741000000155,
+        "llm_failed_calls": 0,
+        "call_count_definition": "logical LM.forward attempts, including adapter retries; no judges"
+      },
+      "_seconds": 11.38832459999685
+    },
+    {
+      "question_id": "gsm8k:train:5241",
+      "attempt_id": "a44ca6ee963b4888a50236a1ecd05ec8",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "prompt -> generated_text",
+          "stop"
+        ],
+        "log_probs": [
+          -0.005170070566236973,
+          -0.7815865278244019,
+          0.0
+        ],
+        "action_diagnostics": [
+          {
+            "state_actions": [],
+            "selected_action": "CoT",
+            "selected_probability": 0.9948432712459867,
+            "probabilities": {
+              "CoT": 0.9948432712459867,
+              "Predict": 0.005156766391351793
+            },
+            "entropy_nats": 0.0323063961687905
+          },
+          {
+            "state_actions": [
+              "CoT"
+            ],
+            "selected_action": "prompt -> generated_text",
+            "selected_probability": 0.45767931402856843,
+            "probabilities": {
+              "question -> answer": 0.004731266491921978,
+              "text -> summary": 0.022905381409907156,
+              "question -> reasoning": 0.004731266491921978,
+              "question -> hypothesis": 0.004731266491921978,
+              "problem -> solution": 0.0013347797382947137,
+              "problem_description -> explanation": 0.0013347797382947137,
+              "context -> summary": 0.0007219739778450574,
+              "context -> briefing": 0.0007219739778450574,
+              "word_problem -> solution": 0.002544763171959517,
+              "math_problem -> answer": 0.002470122370208038,
+              "prompt -> response": 0.45767931402856843,
+              "query -> response": 0.007754197943249914,
+              "text -> response": 0.022905381409907156,
+              "prompt -> generated_text": 0.45767931402856843,
+              "query -> generated_text": 0.007754197943249914
+            },
+            "entropy_nats": 1.097927399819178
+          },
+          {
+            "state_actions": [
+              "CoT",
+              "prompt -> generated_text"
+            ],
+            "selected_action": "stop",
+            "selected_probability": 1.0,
+            "probabilities": {
+              "stop": 1.0
+            },
+            "entropy_nats": -0.0
+          }
+        ],
+        "module": "CoT",
+        "signature": "prompt -> generated_text",
+        "sampling_seed": 3069657847656754493,
+        "sampling_version": "candidate-stream-v2"
+      },
+      "execution": {
+        "output": "Chloe's profit from selling 50 dozens of chocolate-dipped strawberries is -$1000.",
+        "success": true,
+        "error": null,
+        "seconds": 13.63737989999936
+      },
+      "reward": {
+        "reward": 0.0,
+        "numeric_exact_match": false,
+        "semantic_used": false,
+        "judge_score": null,
+        "judge_error": null,
+        "prediction": "1000",
+        "extraction_source": "last_number",
+        "parse_valid": true
+      },
+      "_resources": {
+        "execution_llm_calls": 1,
+        "physical_http_requests": null,
+        "prompt_tokens": 256,
+        "generated_tokens": 190,
+        "llm_seconds": 13.514741200000572,
+        "llm_failed_calls": 0,
+        "call_count_definition": "logical LM.forward attempts, including adapter retries; no judges"
+      },
+      "_seconds": 13.952415400002792
+    },
+    {
+      "question_id": "gsm8k:train:7013",
+      "attempt_id": "8a8fee020bc1447ab098c3ecc71eb5da",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "prompt -> generated_text",
+          "stop"
+        ],
+        "log_probs": [
+          -0.007571215741336346,
+          -1.04930579662323,
+          0.0
+        ],
+        "action_diagnostics": [
+          {
+            "state_actions": [],
+            "selected_action": "CoT",
+            "selected_probability": 0.9924573737147508,
+            "probabilities": {
+              "CoT": 0.9924573737147508,
+              "Predict": 0.007542667537652479
+            },
+            "entropy_nats": 0.044376478110669845
+          },
+          {
+            "state_actions": [
+              "CoT"
+            ],
+            "selected_action": "prompt -> generated_text",
+            "selected_probability": 0.35018076141847043,
+            "probabilities": {
+              "question -> answer": 0.028393881089228044,
+              "text -> summary": 0.05984033631991901,
+              "question -> reasoning": 0.028393881089228044,
+              "question -> hypothesis": 0.028393881089228044,
+              "problem -> solution": 0.01673002244021412,
+              "problem_description -> explanation": 0.01673002244021412,
+              "context -> summary": 0.0013986290614161636,
+              "context -> briefing": 0.0013986290614161636,
+              "word_problem -> solution": 0.0009082809646996218,
+              "math_problem -> answer": 0.005366199315039758,
+              "prompt -> response": 0.35018076141847043,
+              "query -> response": 0.02612217015839872,
+              "text -> response": 0.05984033631991901,
+              "prompt -> generated_text": 0.35018076141847043,
+              "query -> generated_text": 0.02612217015839872
+            },
+            "entropy_nats": 1.7554020790602018
+          },
+          {
+            "state_actions": [
+              "CoT",
+              "prompt -> generated_text"
+            ],
+            "selected_action": "stop",
+            "selected_probability": 1.0,
+            "probabilities": {
+              "stop": 1.0
+            },
+            "entropy_nats": -0.0
+          }
+        ],
+        "module": "CoT",
+        "signature": "prompt -> generated_text",
+        "sampling_seed": 1780388637891511904,
+        "sampling_version": "candidate-stream-v2"
+      },
+      "execution": {
+        "output": "[36]",
+        "success": true,
+        "error": null,
+        "seconds": 10.674636700001429
+      },
+      "reward": {
+        "reward": 1.0,
+        "numeric_exact_match": true,
+        "semantic_used": false,
+        "judge_score": null,
+        "judge_error": null,
+        "prediction": "36",
+        "extraction_source": "brackets",
+        "parse_valid": true
+      },
+      "_resources": {
+        "execution_llm_calls": 1,
+        "physical_http_requests": null,
+        "prompt_tokens": 318,
+        "generated_tokens": 103,
+        "llm_seconds": 10.555373100003635,
+        "llm_failed_calls": 0,
+        "call_count_definition": "logical LM.forward attempts, including adapter retries; no judges"
+      },
+      "_seconds": 11.018282800003362
+    },
+    {
+      "question_id": "gsm8k:train:1794",
+      "attempt_id": "e7f03d1a2f8d4f27a36cbb1edb28ac93",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "prompt -> generated_text",
+          "stop"
+        ],
+        "log_probs": [
+          -0.016712069511413574,
+          -0.798002302646637,
+          0.0
+        ],
+        "action_diagnostics": [
+          {
+            "state_actions": [],
+            "selected_action": "CoT",
+            "selected_probability": 0.9834268024335443,
+            "probabilities": {
+              "CoT": 0.9834268024335443,
+              "Predict": 0.01657320645608174
+            },
+            "entropy_nats": 0.08438471248876277
+          },
+          {
+            "state_actions": [
+              "CoT"
+            ],
+            "selected_action": "prompt -> generated_text",
+            "selected_probability": 0.4502274845867924,
+            "probabilities": {
+              "question -> answer": 0.004454538963629103,
+              "text -> summary": 0.022421494277882023,
+              "question -> reasoning": 0.004454538963629103,
+              "question -> hypothesis": 0.004454538963629103,
+              "problem -> solution": 0.002507937438146064,
+              "problem_description -> explanation": 0.002507937438146064,
+              "context -> summary": 0.004039197629647604,
+              "context -> briefing": 0.004039197629647604,
+              "word_problem -> solution": 0.0008718931519712308,
+              "math_problem -> answer": 0.007495491308893664,
+              "prompt -> response": 0.4502274845867924,
+              "query -> response": 0.009938401304214787,
+              "text -> response": 0.022421494277882023,
+              "prompt -> generated_text": 0.4502274845867924,
+              "query -> generated_text": 0.009938401304214787
+            },
+            "entropy_nats": 1.1702576763025843
+          },
+          {
+            "state_actions": [
+              "CoT",
+              "prompt -> generated_text"
+            ],
+            "selected_action": "stop",
+            "selected_probability": 1.0,
+            "probabilities": {
+              "stop": 1.0
+            },
+            "entropy_nats": -0.0
+          }
+        ],
+        "module": "CoT",
+        "signature": "prompt -> generated_text",
+        "sampling_seed": 6740971535016560501,
+        "sampling_version": "candidate-stream-v2"
+      },
+      "execution": {
+        "output": "[30]",
+        "success": true,
+        "error": null,
+        "seconds": 11.92007569999987
+      },
+      "reward": {
+        "reward": 1.0,
+        "numeric_exact_match": true,
+        "semantic_used": false,
+        "judge_score": null,
+        "judge_error": null,
+        "prediction": "30",
+        "extraction_source": "brackets",
+        "parse_valid": true
+      },
+      "_resources": {
+        "execution_llm_calls": 1,
+        "physical_http_requests": null,
+        "prompt_tokens": 239,
+        "generated_tokens": 163,
+        "llm_seconds": 11.803067400003783,
+        "llm_failed_calls": 0,
+        "call_count_definition": "logical LM.forward attempts, including adapter retries; no judges"
+      },
+      "_seconds": 12.23363590000372
+    },
+    {
+      "question_id": "gsm8k:train:4939",
+      "attempt_id": "2e5154a299524276969856175c6fea24",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "prompt -> response",
+          "stop"
+        ],
+        "log_probs": [
+          -0.015083776786923409,
+          -0.7641676068305969,
+          0.0
+        ],
+        "action_diagnostics": [
+          {
+            "state_actions": [],
+            "selected_action": "CoT",
+            "selected_probability": 0.985029413546935,
+            "probabilities": {
+              "CoT": 0.985029413546935,
+              "Predict": 0.014970638226114235
+            },
+            "entropy_nats": 0.0777595621978027
+          },
+          {
+            "state_actions": [
+              "CoT"
+            ],
+            "selected_action": "prompt -> response",
+            "selected_probability": 0.46572143301459934,
+            "probabilities": {
+              "question -> answer": 0.001708161998342665,
+              "text -> summary": 0.018713400891116585,
+              "question -> reasoning": 0.001708161998342665,
+              "question -> hypothesis": 0.001708161998342665,
+              "problem -> solution": 0.0013270740169136657,
+              "problem_description -> explanation": 0.0013270740169136657,
+              "context -> summary": 0.0025792255145287474,
+              "context -> briefing": 0.0025792255145287474,
+              "word_problem -> solution": 0.00263330870657051,
+              "math_problem -> answer": 0.002774482724930493,
+              "prompt -> response": 0.46572143301459934,
+              "query -> response": 0.0063927097087661325,
+              "text -> response": 0.018713400891116585,
+              "prompt -> generated_text": 0.46572143301459934,
+              "query -> generated_text": 0.0063927097087661325
+            },
+            "entropy_nats": 1.038239744188612
+          },
+          {
+            "state_actions": [
+              "CoT",
+              "prompt -> response"
+            ],
+            "selected_action": "stop",
+            "selected_probability": 1.0,
+            "probabilities": {
+              "stop": 1.0
+            },
+            "entropy_nats": -0.0
+          }
+        ],
+        "module": "CoT",
+        "signature": "prompt -> response",
+        "sampling_seed": 798856050444528342,
+        "sampling_version": "candidate-stream-v2"
+      },
+      "execution": {
+        "output": "[225]",
+        "success": true,
+        "error": null,
+        "seconds": 12.57266990000062
+      },
+      "reward": {
+        "reward": 0.0,
+        "numeric_exact_match": false,
+        "semantic_used": false,
+        "judge_score": null,
+        "judge_error": null,
+        "prediction": "225",
+        "extraction_source": "brackets",
+        "parse_valid": true
+      },
+      "_resources": {
+        "execution_llm_calls": 1,
+        "physical_http_requests": null,
+        "prompt_tokens": 243,
+        "generated_tokens": 112,
+        "llm_seconds": 12.452925499994308,
+        "llm_failed_calls": 0,
+        "call_count_definition": "logical LM.forward attempts, including adapter retries; no judges"
+      },
+      "_seconds": 12.826809599995613
+    },
+    {
+      "question_id": "gsm8k:train:1250",
+      "attempt_id": "604bac1bd9e54b92bd531f88ad6d97e2",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "prompt -> response",
+          "stop"
+        ],
+        "log_probs": [
+          -0.01793851889669895,
+          -0.8510608673095703,
+          0.0
+        ],
+        "action_diagnostics": [
+          {
+            "state_actions": [],
+            "selected_action": "CoT",
+            "selected_probability": 0.9822214185584754,
+            "probabilities": {
+              "CoT": 0.9822214185584754,
+              "Predict": 0.017778589891735464
+            },
+            "entropy_nats": 0.08926305429272693
+          },
+          {
+            "state_actions": [
+              "CoT"
+            ],
+            "selected_action": "prompt -> response",
+            "selected_probability": 0.4269617418495838,
+            "probabilities": {
+              "question -> answer": 0.007865792301679365,
+              "text -> summary": 0.04340940141404486,
+              "question -> reasoning": 0.007865792301679365,
+              "question -> hypothesis": 0.007865792301679365,
+              "problem -> solution": 0.0019248031141272518,
+              "problem_description -> explanation": 0.0019248031141272518,
+              "context -> summary": 0.0034729456609326657,
+              "context -> briefing": 0.0034729456609326657,
+              "word_problem -> solution": 0.0008789628196879182,
+              "math_problem -> answer": 0.010521779440689055,
+              "prompt -> response": 0.4269617418495838,
+              "query -> response": 0.006732076370451854,
+              "text -> response": 0.04340940141404486,
+              "prompt -> generated_text": 0.4269617418495838,
+              "query -> generated_text": 0.006732076370451854
+            },
+            "entropy_nats": 1.2982742567966452
+          },
+          {
+            "state_actions": [
+              "CoT",
+              "prompt -> response"
+            ],
+            "selected_action": "stop",
+            "selected_probability": 1.0,
+            "probabilities": {
+              "stop": 1.0
+            },
+            "entropy_nats": -0.0
+          }
+        ],
+        "module": "CoT",
+        "signature": "prompt -> response",
+        "sampling_seed": 8053056822363904025,
+        "sampling_version": "candidate-stream-v2"
+      },
+      "execution": {
+        "output": "[52]",
+        "success": true,
+        "error": null,
+        "seconds": 14.081998300003761
+      },
+      "reward": {
+        "reward": 1.0,
+        "numeric_exact_match": true,
+        "semantic_used": false,
+        "judge_score": null,
+        "judge_error": null,
+        "prediction": "52",
+        "extraction_source": "brackets",
+        "parse_valid": true
+      },
+      "_resources": {
+        "execution_llm_calls": 1,
+        "physical_http_requests": null,
+        "prompt_tokens": 275,
+        "generated_tokens": 176,
+        "llm_seconds": 13.957713399999193,
+        "llm_failed_calls": 0,
+        "call_count_definition": "logical LM.forward attempts, including adapter retries; no judges"
+      },
+      "_seconds": 14.322576599995955
+    },
+    {
+      "question_id": "gsm8k:train:3958",
+      "attempt_id": "fcc30ded9fcc41bcb887368604c7ad51",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "prompt -> generated_text",
+          "stop"
+        ],
+        "log_probs": [
+          -0.008490418083965778,
+          -0.8409502506256104,
+          0.0
+        ],
+        "action_diagnostics": [
+          {
+            "state_actions": [],
+            "selected_action": "CoT",
+            "selected_probability": 0.9915455237234009,
+            "probabilities": {
+              "CoT": 0.9915455237234009,
+              "Predict": 0.008454479233147568
+            },
+            "entropy_nats": 0.04877236332075214
+          },
+          {
+            "state_actions": [
+              "CoT"
+            ],
+            "selected_action": "prompt -> generated_text",
+            "selected_probability": 0.4313004850845599,
+            "probabilities": {
+              "question -> answer": 0.005856576128802285,
+              "text -> summary": 0.04100373842678091,
+              "question -> reasoning": 0.005856576128802285,
+              "question -> hypothesis": 0.005856576128802285,
+              "problem -> solution": 0.001143730045386221,
+              "problem_description -> explanation": 0.001143730045386221,
+              "context -> summary": 0.0005268596545821864,
+              "context -> briefing": 0.0005268596545821864,
+              "word_problem -> solution": 0.0021370787989632143,
+              "math_problem -> answer": 0.0014319126632414254,
+              "prompt -> response": 0.4313004850845599,
+              "query -> response": 0.015455825570790855,
+              "text -> response": 0.04100373842678091,
+              "prompt -> generated_text": 0.4313004850845599,
+              "query -> generated_text": 0.015455825570790855
+            },
+            "entropy_nats": 1.2525148938734207
+          },
+          {
+            "state_actions": [
+              "CoT",
+              "prompt -> generated_text"
+            ],
+            "selected_action": "stop",
+            "selected_probability": 1.0,
+            "probabilities": {
+              "stop": 1.0
+            },
+            "entropy_nats": -0.0
+          }
+        ],
+        "module": "CoT",
+        "signature": "prompt -> generated_text",
+        "sampling_seed": 2773776208441474545,
+        "sampling_version": "candidate-stream-v2"
+      },
+      "execution": {
+        "output": "$108",
+        "success": true,
+        "error": null,
+        "seconds": 14.422580799997377
+      },
+      "reward": {
+        "reward": 1.0,
+        "numeric_exact_match": true,
+        "semantic_used": false,
+        "judge_score": null,
+        "judge_error": null,
+        "prediction": "108",
+        "extraction_source": "last_number",
+        "parse_valid": true
+      },
+      "_resources": {
+        "execution_llm_calls": 1,
+        "physical_http_requests": null,
+        "prompt_tokens": 279,
+        "generated_tokens": 124,
+        "llm_seconds": 14.354579499995452,
+        "llm_failed_calls": 0,
+        "call_count_definition": "logical LM.forward attempts, including adapter retries; no judges"
+      },
+      "_seconds": 14.67662929999642
+    },
+    {
+      "question_id": "gsm8k:train:1702",
+      "attempt_id": "9b465c01265a4f64a1b9ad663d6161b4",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "prompt -> generated_text",
+          "stop"
+        ],
+        "log_probs": [
+          -0.012370172888040543,
+          -0.7175284028053284,
+          0.0
+        ],
+        "action_diagnostics": [
+          {
+            "state_actions": [],
+            "selected_action": "CoT",
+            "selected_probability": 0.987706023190766,
+            "probabilities": {
+              "CoT": 0.987706023190766,
+              "Predict": 0.012293923422446305
+            },
+            "entropy_nats": 0.06629476261382547
+          },
+          {
+            "state_actions": [
+              "CoT"
+            ],
+            "selected_action": "prompt -> generated_text",
+            "selected_probability": 0.4879567994302413,
+            "probabilities": {
+              "question -> answer": 0.000644302326358736,
+              "text -> summary": 0.007042967555495293,
+              "question -> reasoning": 0.000644302326358736,
+              "question -> hypothesis": 0.000644302326358736,
+              "problem -> solution": 0.00023022786964928217,
+              "problem_description -> explanation": 0.00023022786964928217,
+              "context -> summary": 0.00026829434841643966,
+              "context -> briefing": 0.00026829434841643966,
+              "word_problem -> solution": 0.0011479885909023034,
+              "math_problem -> answer": 0.0006457885601667551,
+              "prompt -> response": 0.4879567994302413,
+              "query -> response": 0.0026383789116139664,
+              "text -> response": 0.007042967555495293,
+              "prompt -> generated_text": 0.4879567994302413,
+              "query -> generated_text": 0.0026383789116139664
+            },
+            "entropy_nats": 0.8363692215706434
+          },
+          {
+            "state_actions": [
+              "CoT",
+              "prompt -> generated_text"
+            ],
+            "selected_action": "stop",
+            "selected_probability": 1.0,
+            "probabilities": {
+              "stop": 1.0
+            },
+            "entropy_nats": -0.0
+          }
+        ],
+        "module": "CoT",
+        "signature": "prompt -> generated_text",
+        "sampling_seed": 1902854804109009781,
+        "sampling_version": "candidate-stream-v2"
+      },
+      "execution": {
+        "output": "The number of female guests is 60 - (60 * 2/3), which simplifies to 60 - 40 = 20.",
+        "success": true,
+        "error": null,
+        "seconds": 9.9232325999983
+      },
+      "reward": {
+        "reward": 1.0,
+        "numeric_exact_match": true,
+        "semantic_used": false,
+        "judge_score": null,
+        "judge_error": null,
+        "prediction": "20",
+        "extraction_source": "last_number",
+        "parse_valid": true
+      },
+      "_resources": {
+        "execution_llm_calls": 1,
+        "physical_http_requests": null,
+        "prompt_tokens": 258,
+        "generated_tokens": 109,
+        "llm_seconds": 9.796449100002064,
+        "llm_failed_calls": 0,
+        "call_count_definition": "logical LM.forward attempts, including adapter retries; no judges"
+      },
+      "_seconds": 10.27543329999753
+    },
+    {
+      "question_id": "gsm8k:train:1460",
+      "attempt_id": "983f610016dd4f079aa3d36617cf15b9",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "prompt -> response",
+          "stop"
+        ],
+        "log_probs": [
+          -0.024841096252202988,
+          -1.017823338508606,
+          0.0
+        ],
+        "action_diagnostics": [
+          {
+            "state_actions": [],
+            "selected_action": "CoT",
+            "selected_probability": 0.975464904742753,
+            "probabilities": {
+              "CoT": 0.975464904742753,
+              "Predict": 0.02453504421712854
+            },
+            "entropy_nats": 0.11519904315664985
+          },
+          {
+            "state_actions": [
+              "CoT"
+            ],
+            "selected_action": "prompt -> response",
+            "selected_probability": 0.36138068813678187,
+            "probabilities": {
+              "question -> answer": 0.02182164431147432,
+              "text -> summary": 0.0631675951494875,
+              "question -> reasoning": 0.02182164431147432,
+              "question -> hypothesis": 0.02182164431147432,
+              "problem -> solution": 0.015131680315966102,
+              "problem_description -> explanation": 0.015131680315966102,
+              "context -> summary": 0.0020081339834494712,
+              "context -> briefing": 0.0020081339834494712,
+              "word_problem -> solution": 0.002218481446732394,
+              "math_problem -> answer": 0.0034882445395919646,
+              "prompt -> response": 0.36138068813678187,
+              "query -> response": 0.022726089975951765,
+              "text -> response": 0.0631675951494875,
+              "prompt -> generated_text": 0.36138068813678187,
+              "query -> generated_text": 0.022726089975951765
+            },
+            "entropy_nats": 1.6920430281824277
+          },
+          {
+            "state_actions": [
+              "CoT",
+              "prompt -> response"
+            ],
+            "selected_action": "stop",
+            "selected_probability": 1.0,
+            "probabilities": {
+              "stop": 1.0
+            },
+            "entropy_nats": -0.0
+          }
+        ],
+        "module": "CoT",
+        "signature": "prompt -> response",
+        "sampling_seed": 2640072584099949155,
+        "sampling_version": "candidate-stream-v2"
+      },
+      "execution": {
+        "output": "[2]",
+        "success": true,
+        "error": null,
+        "seconds": 16.963112500001444
+      },
+      "reward": {
+        "reward": 1.0,
+        "numeric_exact_match": true,
+        "semantic_used": false,
+        "judge_score": null,
+        "judge_error": null,
+        "prediction": "2",
+        "extraction_source": "brackets",
+        "parse_valid": true
+      },
+      "_resources": {
+        "execution_llm_calls": 1,
+        "physical_http_requests": null,
+        "prompt_tokens": 261,
+        "generated_tokens": 195,
+        "llm_seconds": 16.83065099999658,
+        "llm_failed_calls": 0,
+        "call_count_definition": "logical LM.forward attempts, including adapter retries; no judges"
+      },
+      "_seconds": 17.22895040000003
+    },
+    {
+      "question_id": "gsm8k:train:4142",
+      "attempt_id": "c9881026c78843f193d209716a26a54b",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "question -> answer",
+          "stop"
+        ],
+        "log_probs": [
+          -0.015970293432474136,
+          -3.2628369331359863,
+          0.0
+        ],
+        "action_diagnostics": [
+          {
+            "state_actions": [],
+            "selected_action": "CoT",
+            "selected_probability": 0.9841565555342131,
+            "probabilities": {
+              "CoT": 0.9841565555342131,
+              "Predict": 0.01584345891774424
+            },
+            "entropy_nats": 0.08138838322298451
+          },
+          {
+            "state_actions": [
+              "CoT"
+            ],
+            "selected_action": "question -> answer",
+            "selected_probability": 0.0382796470317536,
+            "probabilities": {
+              "question -> answer": 0.0382796470317536,
+              "text -> summary": 0.08228466536863688,
+              "question -> reasoning": 0.0382796470317536,
+              "question -> hypothesis": 0.0382796470317536,
+              "problem -> solution": 0.008686182384292297,
+              "problem_description -> explanation": 0.008686182384292297,
+              "context -> summary": 0.002469040166748578,
+              "context -> briefing": 0.002469040166748578,
+              "word_problem -> solution": 0.007819760132661826,
+              "math_problem -> answer": 0.033250322423765896,
+              "prompt -> response": 0.2723427246352536,
+              "query -> response": 0.05626287608093559,
+              "text -> response": 0.08228466536863688,
+              "prompt -> generated_text": 0.2723427246352536,
+              "query -> generated_text": 0.05626287608093559
+            },
+            "entropy_nats": 2.0812167389207126
+          },
+          {
+            "state_actions": [
+              "CoT",
+              "question -> answer"
+            ],
+            "selected_action": "stop",
+            "selected_probability": 1.0,
+            "probabilities": {
+              "stop": 1.0
+            },
+            "entropy_nats": -0.0
+          }
+        ],
+        "module": "CoT",
+        "signature": "question -> answer",
+        "sampling_seed": 102120361377279347,
+        "sampling_version": "candidate-stream-v2"
+      },
+      "execution": {
+        "output": "First, let's calculate the combined height of the left and middle buildings: 80 + 100 = 180 feet. Then, subtracting 20 feet gives us a height of 160 feet for the right building. To find the total estimated height, we add up the heights of all three buildings: 80 (left) + 100 (middle) + 160 (right) = 340 feet.",
+        "success": true,
+        "error": null,
+        "seconds": 18.670620299999428
+      },
+      "reward": {
+        "reward": 1.0,
+        "numeric_exact_match": true,
+        "semantic_used": false,
+        "judge_score": null,
+        "judge_error": null,
+        "prediction": "340",
+        "extraction_source": "last_number",
+        "parse_valid": true
+      },
+      "_resources": {
+        "execution_llm_calls": 1,
+        "physical_http_requests": null,
+        "prompt_tokens": 300,
+        "generated_tokens": 186,
+        "llm_seconds": 18.547506499999145,
+        "llm_failed_calls": 0,
+        "call_count_definition": "logical LM.forward attempts, including adapter retries; no judges"
+      },
+      "_seconds": 18.91789670000435
+    },
+    {
+      "question_id": "gsm8k:train:4829",
+      "attempt_id": "3c4de29df0b945f992cca5747619aa71",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "query -> response",
+          "stop"
+        ],
+        "log_probs": [
+          -0.02650095708668232,
+          -1.8314939737319946,
+          0.0
+        ],
+        "action_diagnostics": [
+          {
+            "state_actions": [],
+            "selected_action": "CoT",
+            "selected_probability": 0.9738471117789878,
+            "probabilities": {
+              "CoT": 0.9738471117789878,
+              "Predict": 0.026152898538370054
+            },
+            "entropy_nats": 0.12110368803437566
+          },
+          {
+            "state_actions": [
+              "CoT"
+            ],
+            "selected_action": "query -> response",
+            "selected_probability": 0.16017409304767874,
+            "probabilities": {
+              "question -> answer": 0.007957642784383349,
+              "text -> summary": 0.17310890622438288,
+              "question -> reasoning": 0.007957642784383349,
+              "question -> hypothesis": 0.007957642784383349,
+              "problem -> solution": 0.016899882200332592,
+              "problem_description -> explanation": 0.016899882200332592,
+              "context -> summary": 0.015372146467020243,
+              "context -> briefing": 0.015372146467020243,
+              "word_problem -> solution": 0.008805149685339644,
+              "math_problem -> answer": 0.15492658642130422,
+              "prompt -> response": 0.04064259775283886,
+              "query -> response": 0.16017409304767874,
+              "text -> response": 0.17310890622438288,
+              "prompt -> generated_text": 0.04064259775283886,
+              "query -> generated_text": 0.16017409304767874
+            },
+            "entropy_nats": 2.1665277523245527
+          },
+          {
+            "state_actions": [
+              "CoT",
+              "query -> response"
+            ],
+            "selected_action": "stop",
+            "selected_probability": 1.0,
+            "probabilities": {
+              "stop": 1.0
+            },
+            "entropy_nats": -0.0
+          }
+        ],
+        "module": "CoT",
+        "signature": "query -> response",
+        "sampling_seed": 7961901849479767156,
+        "sampling_version": "candidate-stream-v2"
+      },
+      "execution": {
+        "output": "[88]",
+        "success": true,
+        "error": null,
+        "seconds": 16.58995110000251
+      },
+      "reward": {
+        "reward": 1.0,
+        "numeric_exact_match": true,
+        "semantic_used": false,
+        "judge_score": null,
+        "judge_error": null,
+        "prediction": "88",
+        "extraction_source": "brackets",
+        "parse_valid": true
+      },
+      "_resources": {
+        "execution_llm_calls": 1,
+        "physical_http_requests": null,
+        "prompt_tokens": 258,
+        "generated_tokens": 152,
+        "llm_seconds": 16.46307629999501,
+        "llm_failed_calls": 0,
+        "call_count_definition": "logical LM.forward attempts, including adapter retries; no judges"
+      },
+      "_seconds": 16.93517740000243
+    },
+    {
+      "question_id": "gsm8k:train:5065",
+      "attempt_id": "d49dca4aec164752aaecb569f993d057",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "query -> response",
+          "stop"
+        ],
+        "log_probs": [
+          -0.033717233687639236,
+          -3.0384507179260254,
+          0.0
+        ],
+        "action_diagnostics": [
+          {
+            "state_actions": [],
+            "selected_action": "CoT",
+            "selected_probability": 0.9668448571431246,
+            "probabilities": {
+              "CoT": 0.9668448571431246,
+              "Predict": 0.03315512291765273
+            },
+            "entropy_nats": 0.1455441844243479
+          },
+          {
+            "state_actions": [
+              "CoT"
+            ],
+            "selected_action": "query -> response",
+            "selected_probability": 0.04790905666910444,
+            "probabilities": {
+              "question -> answer": 0.03912640434480733,
+              "text -> summary": 0.11859505350798386,
+              "question -> reasoning": 0.03912640434480733,
+              "question -> hypothesis": 0.03912640434480733,
+              "problem -> solution": 0.020316638506041557,
+              "problem_description -> explanation": 0.020316638506041557,
+              "context -> summary": 0.004585361809621988,
+              "context -> briefing": 0.004585361809621988,
+              "word_problem -> solution": 0.00655166151958471,
+              "math_problem -> answer": 0.045372189381170956,
+              "prompt -> response": 0.2239422980096611,
+              "query -> response": 0.04790905666910444,
+              "text -> response": 0.11859505350798386,
+              "prompt -> generated_text": 0.2239422980096611,
+              "query -> generated_text": 0.04790905666910444
+            },
+            "entropy_nats": 2.2284332575487515
+          },
+          {
+            "state_actions": [
+              "CoT",
+              "query -> response"
+            ],
+            "selected_action": "stop",
+            "selected_probability": 1.0,
+            "probabilities": {
+              "stop": 1.0
+            },
+            "entropy_nats": -0.0
+          }
+        ],
+        "module": "CoT",
+        "signature": "query -> response",
+        "sampling_seed": 7968939114850780094,
+        "sampling_version": "candidate-stream-v2"
+      },
+      "execution": {
+        "output": "The total number of problems finished by Martha, Jenna, and Mark is 2 + 6 + 3 = 11. Since there are 20 problems in total, Angela must have finished 20 - 11 = 9 problems on her own.",
+        "success": true,
+        "error": null,
+        "seconds": 13.016863699995156
+      },
+      "reward": {
+        "reward": 1.0,
+        "numeric_exact_match": true,
+        "semantic_used": false,
+        "judge_score": null,
+        "judge_error": null,
+        "prediction": "9",
+        "extraction_source": "last_number",
+        "parse_valid": true
+      },
+      "_resources": {
+        "execution_llm_calls": 1,
+        "physical_http_requests": null,
+        "prompt_tokens": 287,
+        "generated_tokens": 146,
+        "llm_seconds": 12.882144000002882,
+        "llm_failed_calls": 0,
+        "call_count_definition": "logical LM.forward attempts, including adapter retries; no judges"
+      },
+      "_seconds": 13.363410199999635
+    },
+    {
+      "question_id": "gsm8k:train:6221",
+      "attempt_id": "76483c1da0f04509bc8c0eb62227fad0",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "prompt -> response",
+          "stop"
+        ],
+        "log_probs": [
+          -0.011039843782782555,
+          -0.7601196765899658,
+          0.0
+        ],
+        "action_diagnostics": [
+          {
+            "state_actions": [],
+            "selected_action": "CoT",
+            "selected_probability": 0.9890208716575318,
+            "probabilities": {
+              "CoT": 0.9890208716575318,
+              "Predict": 0.010979112096816823
+            },
+            "entropy_nats": 0.0604537625284487
+          },
+          {
+            "state_actions": [
+              "CoT"
+            ],
+            "selected_action": "prompt -> response",
+            "selected_probability": 0.4676104616356226,
+            "probabilities": {
+              "question -> answer": 0.0029724693637191916,
+              "text -> summary": 0.016749722490795458,
+              "question -> reasoning": 0.0029724693637191916,
+              "question -> hypothesis": 0.0029724693637191916,
+              "problem -> solution": 0.0009677327254983537,
+              "problem_description -> explanation": 0.0009677327254983537,
+              "context -> summary": 0.0005333859040171932,
+              "context -> briefing": 0.0005333859040171932,
+              "word_problem -> solution": 0.00256669415780427,
+              "math_problem -> answer": 0.004124409880111427,
+              "prompt -> response": 0.4676104616356226,
+              "query -> response": 0.0063344800080822996,
+              "text -> response": 0.016749722490795458,
+              "prompt -> generated_text": 0.4676104616356226,
+              "query -> generated_text": 0.0063344800080822996
+            },
+            "entropy_nats": 1.023313162389619
+          },
+          {
+            "state_actions": [
+              "CoT",
+              "prompt -> response"
+            ],
+            "selected_action": "stop",
+            "selected_probability": 1.0,
+            "probabilities": {
+              "stop": 1.0
+            },
+            "entropy_nats": -0.0
+          }
+        ],
+        "module": "CoT",
+        "signature": "prompt -> response",
+        "sampling_seed": 8646805073540521183,
+        "sampling_version": "candidate-stream-v2"
+      },
+      "execution": {
+        "output": "[160 + 30 + 50]",
+        "success": true,
+        "error": null,
+        "seconds": 16.784859999999753
+      },
+      "reward": {
+        "reward": 0.0,
+        "numeric_exact_match": false,
+        "semantic_used": false,
+        "judge_score": null,
+        "judge_error": null,
+        "prediction": null,
+        "extraction_source": "brackets",
+        "parse_valid": false
+      },
+      "_resources": {
+        "execution_llm_calls": 1,
+        "physical_http_requests": null,
+        "prompt_tokens": 308,
+        "generated_tokens": 155,
+        "llm_seconds": 16.65771269999823,
+        "llm_failed_calls": 0,
+        "call_count_definition": "logical LM.forward attempts, including adapter retries; no judges"
+      },
+      "_seconds": 17.013363899997785
+    },
+    {
+      "question_id": "gsm8k:train:4864",
+      "attempt_id": "a4bd2057869a4698b913039619a76b90",
+      "trajectory": {
+        "actions": [
+          "CoT",
+          "prompt -> response",
+          "stop"
+        ],
+        "log_probs": [
+          -0.015353113412857056,
+          -1.157231092453003,
+          0.0
+        ],
+        "action_diagnostics": [
+          {
+            "state_actions": [],
+            "selected_action": "CoT",
+            "selected_probability": 0.9847641447731468,
+            "probabilities": {
+              "CoT": 0.9847641447731468,
+              "Predict": 0.015235851672266681
+            },
+            "entropy_nats": 0.07886758300326845
+          },
+          {
+            "state_actions": [
+              "CoT"
+            ],
+            "selected_action": "prompt -> response",
+            "selected_probability": 0.31435539797026113,
+            "probabilities": {
+              "question -> answer": 0.0053239111576327824,
+              "text -> summary": 0.1569634181767778,
+              "question -> reasoning": 0.0053239111576327824,
+              "question -> hypothesis": 0.0053239111576327824,
+              "problem -> solution": 0.0011835737633512711,
+              "problem_description -> explanation": 0.0011835737633512711,
+              "context -> summary": 0.000984561597505756,
+              "context -> briefing": 0.000984561597505756,
+              "word_problem -> solution": 0.004583759406509815,
+              "math_problem -> answer": 0.014965492211463675,
+              "prompt -> response": 0.31435539797026113,
+              "query -> response": 0.008752501637215146,
+              "text -> response": 0.1569634181767778,
+              "prompt -> generated_text": 0.31435539797026113,
+              "query -> generated_text": 0.008752501637215146
+            },
+            "entropy_nats": 1.5925974185126615
+          },
+          {
+            "state_actions": [
+              "CoT",
+              "prompt -> response"
+            ],
+            "selected_action": "stop",
+            "selected_probability": 1.0,
+            "probabilities": {
+              "stop": 1.0
+            },
+            "entropy_nats": -0.0
+          }
+        ],
+        "module": "CoT",
+        "signature": "prompt -> response",
+        "sampling_seed": 5883636606757849863,
+        "sampling_version": "candidate-stream-v2"
+      },
+      "execution": {
+        "output": "[16]",
+        "success": true,
+        "error": null,
+        "seconds": 17.16073069999402
+      },
+      "reward": {
+        "reward": 0.0,
+        "numeric_exact_match": false,
+        "semantic_used": false,
+        "judge_score": null,
+        "judge_error": null,
+        "prediction": "16",
+        "extraction_source": "brackets",
+        "parse_valid": true
+      },
+      "_resources": {
+        "execution_llm_calls": 1,
+        "physical_http_requests": null,
+        "prompt_tokens": 320,
+        "generated_tokens": 203,
+        "llm_seconds": 17.03422500000306,
+        "llm_failed_calls": 0,
+        "call_count_definition": "logical LM.forward attempts, including adapter retries; no judges"
+      },
+      "_seconds": 17.364280299996608
+    }
+  ],
+  "evaluated_checkpoint": {
+    "checkpoint": "checkpoints\\latest_744d2279c3f646ef8bbb7c331ced7fa1.pt",
+    "sha256": "b7ec9b72008d1a94eec8a1aad4096101c12c9e7cc307ef8929ffae8db8154ba7",
+    "episode": 12
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "preset": "pilot",
+  "run_dirs": [
+    "results\\adagrpo\\gsm8k\\static_k5\\seed42\\pilot\\20261020T105201-bb79e00d",
+    "results\\adagrpo\\gsm8k\\adaptive\\seed42\\pilot\\20261020T113252-73f1340a"
+  ],
+  "gate": {
+    "promising": false,
+    "status": "incomplete",
+    "reason": "Both bounded runs must complete; no accuracy conclusion"
+  }
+}

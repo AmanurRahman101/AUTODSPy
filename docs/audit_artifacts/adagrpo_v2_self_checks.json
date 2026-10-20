@@ -1,0 +1,697 @@
+{
+  "passed": 163,
+  "base_checks": 93,
+  "new_checks": 70,
+  "checks": [
+    "numeric [5]",
+    "numeric [50]",
+    "numeric [-1,250.50]",
+    "numeric work 99 #### 4",
+    "numeric the result is 8",
+    "numeric [1 2]",
+    "numeric [nan]",
+    "numeric ",
+    "numeric None",
+    "numeric [0.50]",
+    "numeric reward no judge",
+    "bracket provenance",
+    "hash provenance",
+    "fallback provenance",
+    "nonfinite reward",
+    "nonbinary controller",
+    "mixed distinguishable refines",
+    "two successes stop",
+    "four cancelled credits stop",
+    "all failures expand",
+    "bounded failure regardless concentration",
+    "bounded failure with diverse policy",
+    "budget stop",
+    "odd final allowance",
+    "collision contrast cancelled",
+    "class credit cancellation stops",
+    "noncancelled contrast refines",
+    "infrastructure classification",
+    "static config 2",
+    "static config 4",
+    "static config 5",
+    "static config 8",
+    "static config 10",
+    "static config 15",
+    "invalid bounds",
+    "invalid budget",
+    "semantic protocol rejected",
+    "same cross-arm selection/schedule",
+    "same cross-seed membership",
+    "independent training schedules",
+    "no train validation leakage",
+    "effective class probabilities normalized",
+    "collision classes aggregated",
+    "neff bounds",
+    "probe consumes no torch RNG",
+    "evaluation RNG isolation",
+    "sum loss equivalence",
+    "gradient norm equivalence",
+    "Adam parameter equivalence",
+    "equal rewards zero current gradient",
+    "Adam momentum preserved",
+    "rollout replay mismatch",
+    "future minimum reservation",
+    "lost attempts exhaust reserved budget",
+    "unfinished resource totals unavailable",
+    "truncated journal tail preserved",
+    "tail repair retains gross cost",
+    "JSONL Unicode separator preserved",
+    "valid last record newline restored",
+    "committed journal corruption rejected",
+    "completed audit static",
+    "gross bound static",
+    "completed audit adaptive",
+    "gross bound adaptive",
+    "cross-method comparison",
+    "variable-K diagnostic plots",
+    "tampered group rejected",
+    "partial group not committed",
+    "recover staged best/latest transaction",
+    "resume completed",
+    "discarded attempt charged",
+    "resumed artifacts valid",
+    "resume policy matches uninterrupted",
+    "only latest and best retained",
+    "checkpoint checksum rejection",
+    "infrastructure failure no policy update",
+    "infrastructure failure still charged",
+    "failure memory recorded",
+    "bootstrap identical predictions",
+    "bootstrap paired constant difference",
+    "bootstrap repeatability",
+    "collector no K15 drain",
+    "collector cap charges every attempt",
+    "collector all-correct exit",
+    "collector bounded-failure exit",
+    "formal training explicit opt-in",
+    "cloud smoke explicit opt-in",
+    "operation guards full training",
+    "formal workload exact",
+    "formal report requires all seeds",
+    "paired formal acceptance numerical target",
+    "cheaper fixed control limitation reported",
+    "budget cap alone insufficient",
+    "v2 initial no borrowed six",
+    "v2 savings permit six",
+    "v2 lost attempt reduces bank",
+    "v2 spending savings restores four",
+    "v2 contrast at four expands with bank",
+    "v2 six informative terminal",
+    "v2 four failures terminal",
+    "v2 cancellation at four terminal",
+    "v2 odd allowance terminal",
+    "v2 allowance two terminal",
+    "v2 collector refinements 2 4 6",
+    "v2 collector retains all six",
+    "v2 matched candidate streams",
+    "v2 streams leave global RNG untouched",
+    "v2 next episode not shifted",
+    "v2 candidates distinct stream IDs",
+    "v2 evaluation does not use training count",
+    "v2 training/evaluation separated",
+    "v2 partial validation interruption",
+    "v2 validation resumes only unfinished",
+    "v2 validation recovery exactly matches",
+    "v2 complete validation no repeated calls",
+    "v2 evaluation order independent",
+    "v2 different evaluation identity archived",
+    "v2 changed policy rejects reuse",
+    "v2 rejected work stays journaled",
+    "v2 model identity in validation",
+    "v2 persistent deadline enforced",
+    "v2 deadline unchanged",
+    "v2 frozen split membership",
+    "v2 frozen content tamper rejected",
+    "v2 v1 checkpoint forbidden",
+    "v2 unchanged policy diagnostic",
+    "v2 changed policy diagnostic",
+    "v2 scheduled arm budget",
+    "v2 invalid shuffled schedule",
+    "v2 frozen controller thresholds",
+    "v2 exhaustive budget reservation and pacing",
+    "v2 code freeze ignores outputs",
+    "v2 code freeze detects source changes",
+    "v2 policy-only change invalidates evaluation",
+    "v2 execution options invalidate evaluation",
+    "toy finite probability (1.0, 0.0, 1.0)fixed2",
+    "toy original sum K-minus-one (1.0, 0.0, 1.0)2",
+    "toy finite probability (1.0, 0.0, 1.0)fixed4",
+    "toy original sum K-minus-one (1.0, 0.0, 1.0)4",
+    "toy finite probability (1.0, 0.0, 1.0)fixed5",
+    "toy original sum K-minus-one (1.0, 0.0, 1.0)5",
+    "toy finite probability (1.0, 0.0, 1.0)v115",
+    "toy finite probability (1.0, 0.0, 1.0)v24",
+    "toy finite probability (1.0, 0.0, 1.0)v26",
+    "toy finite probability (0.8, 0.5, 0.2)fixed2",
+    "toy original sum K-minus-one (0.8, 0.5, 0.2)2",
+    "toy finite probability (0.8, 0.5, 0.2)fixed4",
+    "toy original sum K-minus-one (0.8, 0.5, 0.2)4",
+    "toy finite probability (0.8, 0.5, 0.2)fixed5",
+    "toy original sum K-minus-one (0.8, 0.5, 0.2)5",
+    "toy finite probability (0.8, 0.5, 0.2)v115",
+    "toy finite probability (0.8, 0.5, 0.2)v24",
+    "toy finite probability (0.8, 0.5, 0.2)v26",
+    "toy finite probability (0.2, 0.5, 0.8)fixed2",
+    "toy original sum K-minus-one (0.2, 0.5, 0.8)2",
+    "toy finite probability (0.2, 0.5, 0.8)fixed4",
+    "toy original sum K-minus-one (0.2, 0.5, 0.8)4",
+    "toy finite probability (0.2, 0.5, 0.8)fixed5",
+    "toy original sum K-minus-one (0.2, 0.5, 0.8)5",
+    "toy finite probability (0.2, 0.5, 0.8)v115",
+    "toy finite probability (0.2, 0.5, 0.8)v24",
+    "toy finite probability (0.2, 0.5, 0.8)v26",
+    "v2 all-fail toy bounded at four"
+  ],
+  "theory": [
+    {
+      "kind": "fixed",
+      "allowance": 2,
+      "probabilities": [
+        0.5,
+        0.3,
+        0.2
+      ],
+      "reward_probabilities": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "probability_mass": 1.0,
+      "expected_attempts": 2.0,
+      "expected_gradient": [
+        0.15,
+        -0.21,
+        0.06
+      ],
+      "true_reward_gradient": [
+        0.15000000000000002,
+        -0.21,
+        0.06000000000000001
+      ],
+      "gradient_variance": 0.13979999999999998,
+      "cosine": 1.0000000000000002,
+      "scope": "exact fixed-policy categorical fixture, not GPT-2 accuracy"
+    },
+    {
+      "kind": "fixed",
+      "allowance": 4,
+      "probabilities": [
+        0.5,
+        0.3,
+        0.2
+      ],
+      "reward_probabilities": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "probability_mass": 1.0,
+      "expected_attempts": 4.0,
+      "expected_gradient": [
+        0.45,
+        -0.63,
+        0.18000000000000002
+      ],
+      "true_reward_gradient": [
+        0.15000000000000002,
+        -0.21,
+        0.06000000000000001
+      ],
+      "gradient_variance": 0.3284999999999999,
+      "cosine": 1.0000000000000002,
+      "scope": "exact fixed-policy categorical fixture, not GPT-2 accuracy"
+    },
+    {
+      "kind": "fixed",
+      "allowance": 5,
+      "probabilities": [
+        0.5,
+        0.3,
+        0.2
+      ],
+      "reward_probabilities": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "probability_mass": 1.0,
+      "expected_attempts": 4.999999999999998,
+      "expected_gradient": [
+        0.6,
+        -0.84,
+        0.24
+      ],
+      "true_reward_gradient": [
+        0.15000000000000002,
+        -0.21,
+        0.06000000000000001
+      ],
+      "gradient_variance": 0.41376000000000035,
+      "cosine": 1.0000000000000002,
+      "scope": "exact fixed-policy categorical fixture, not GPT-2 accuracy"
+    },
+    {
+      "kind": "v1",
+      "allowance": 15,
+      "probabilities": [
+        0.5,
+        0.3,
+        0.2
+      ],
+      "reward_probabilities": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "probability_mass": 1.0000000000000002,
+      "expected_attempts": 3.177802140511691,
+      "expected_gradient": [
+        0.3499391014019006,
+        -0.4899147419626606,
+        0.13997564056076023
+      ],
+      "true_reward_gradient": [
+        0.15000000000000002,
+        -0.21,
+        0.06000000000000001
+      ],
+      "gradient_variance": 0.24840511603713383,
+      "cosine": 1.0000000000000002,
+      "scope": "exact fixed-policy categorical fixture, not GPT-2 accuracy"
+    },
+    {
+      "kind": "v2",
+      "allowance": 4,
+      "probabilities": [
+        0.5,
+        0.3,
+        0.2
+      ],
+      "reward_probabilities": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "probability_mass": 1.0,
+      "expected_attempts": 3.02,
+      "expected_gradient": [
+        0.30824999999999997,
+        -0.43155000000000004,
+        0.1233
+      ],
+      "true_reward_gradient": [
+        0.15000000000000002,
+        -0.21,
+        0.06000000000000001
+      ],
+      "gradient_variance": 0.3846186449999999,
+      "cosine": 1.0000000000000002,
+      "scope": "exact fixed-policy categorical fixture, not GPT-2 accuracy"
+    },
+    {
+      "kind": "v2",
+      "allowance": 6,
+      "probabilities": [
+        0.5,
+        0.3,
+        0.2
+      ],
+      "reward_probabilities": [
+        1.0,
+        0.0,
+        1.0
+      ],
+      "probability_mass": 0.9999999999999999,
+      "expected_attempts": 4.0238000000000005,
+      "expected_gradient": [
+        0.4571950000000001,
+        -0.6400729999999999,
+        0.182878
+      ],
+      "true_reward_gradient": [
+        0.15000000000000002,
+        -0.21,
+        0.06000000000000001
+      ],
+      "gradient_variance": 0.8009325904286663,
+      "cosine": 1.0000000000000002,
+      "scope": "exact fixed-policy categorical fixture, not GPT-2 accuracy"
+    },
+    {
+      "kind": "fixed",
+      "allowance": 2,
+      "probabilities": [
+        0.5,
+        0.3,
+        0.2
+      ],
+      "reward_probabilities": [
+        0.8,
+        0.5,
+        0.2
+      ],
+      "probability_mass": 1.0,
+      "expected_attempts": 2.0,
+      "expected_gradient": [
+        0.10500000000000001,
+        -0.026999999999999993,
+        -0.07800000000000001
+      ],
+      "true_reward_gradient": [
+        0.10499999999999998,
+        -0.027000000000000024,
+        -0.07800000000000001
+      ],
+      "gradient_variance": 0.15516200000000002,
+      "cosine": 0.9999999999999998,
+      "scope": "exact fixed-policy categorical fixture, not GPT-2 accuracy"
+    },
+    {
+      "kind": "fixed",
+      "allowance": 4,
+      "probabilities": [
+        0.5,
+        0.3,
+        0.2
+      ],
+      "reward_probabilities": [
+        0.8,
+        0.5,
+        0.2
+      ],
+      "probability_mass": 1.0,
+      "expected_attempts": 4.0,
+      "expected_gradient": [
+        0.31500000000000017,
+        -0.08100000000000003,
+        -0.23400000000000012
+      ],
+      "true_reward_gradient": [
+        0.10499999999999998,
+        -0.027000000000000024,
+        -0.07800000000000001
+      ],
+      "gradient_variance": 0.4465049999999998,
+      "cosine": 0.9999999999999998,
+      "scope": "exact fixed-policy categorical fixture, not GPT-2 accuracy"
+    },
+    {
+      "kind": "fixed",
+      "allowance": 5,
+      "probabilities": [
+        0.5,
+        0.3,
+        0.2
+      ],
+      "reward_probabilities": [
+        0.8,
+        0.5,
+        0.2
+      ],
+      "probability_mass": 0.9999999999999997,
+      "expected_attempts": 4.999999999999999,
+      "expected_gradient": [
+        0.42000000000000004,
+        -0.10799999999999994,
+        -0.31199999999999983
+      ],
+      "true_reward_gradient": [
+        0.10499999999999998,
+        -0.027000000000000024,
+        -0.07800000000000001
+      ],
+      "gradient_variance": 0.5902784000000006,
+      "cosine": 0.9999999999999998,
+      "scope": "exact fixed-policy categorical fixture, not GPT-2 accuracy"
+    },
+    {
+      "kind": "v1",
+      "allowance": 15,
+      "probabilities": [
+        0.5,
+        0.3,
+        0.2
+      ],
+      "reward_probabilities": [
+        0.8,
+        0.5,
+        0.2
+      ],
+      "probability_mass": 0.9999999999999992,
+      "expected_attempts": 3.5488547649512556,
+      "expected_gradient": [
+        0.2899291161734583,
+        -0.07681280573265392,
+        -0.21311631044080462
+      ],
+      "true_reward_gradient": [
+        0.10499999999999998,
+        -0.027000000000000024,
+        -0.07800000000000001
+      ],
+      "gradient_variance": 0.3922766804447767,
+      "cosine": 0.9999650337451467,
+      "scope": "exact fixed-policy categorical fixture, not GPT-2 accuracy"
+    },
+    {
+      "kind": "v2",
+      "allowance": 4,
+      "probabilities": [
+        0.5,
+        0.3,
+        0.2
+      ],
+      "reward_probabilities": [
+        0.8,
+        0.5,
+        0.2
+      ],
+      "probability_mass": 1.0000000000000002,
+      "expected_attempts": 3.3038,
+      "expected_gradient": [
+        0.23477475000000003,
+        -0.060370649999999984,
+        -0.17440410000000003
+      ],
+      "true_reward_gradient": [
+        0.10499999999999998,
+        -0.027000000000000024,
+        -0.07800000000000001
+      ],
+      "gradient_variance": 0.3613544862842052,
+      "cosine": 1.0,
+      "scope": "exact fixed-policy categorical fixture, not GPT-2 accuracy"
+    },
+    {
+      "kind": "v2",
+      "allowance": 6,
+      "probabilities": [
+        0.5,
+        0.3,
+        0.2
+      ],
+      "reward_probabilities": [
+        0.8,
+        0.5,
+        0.2
+      ],
+      "probability_mass": 0.999999999999999,
+      "expected_attempts": 4.441386000000001,
+      "expected_gradient": [
+        0.34770540699999997,
+        -0.08851966900000008,
+        -0.25918573800000017
+      ],
+      "true_reward_gradient": [
+        0.10499999999999998,
+        -0.027000000000000024,
+        -0.07800000000000001
+      ],
+      "gradient_variance": 0.5947395855160451,
+      "cosine": 0.9999962491548706,
+      "scope": "exact fixed-policy categorical fixture, not GPT-2 accuracy"
+    },
+    {
+      "kind": "fixed",
+      "allowance": 2,
+      "probabilities": [
+        0.5,
+        0.3,
+        0.2
+      ],
+      "reward_probabilities": [
+        0.2,
+        0.5,
+        0.8
+      ],
+      "probability_mass": 1.0000000000000002,
+      "expected_attempts": 2.0000000000000004,
+      "expected_gradient": [
+        -0.10500000000000001,
+        0.026999999999999993,
+        0.07800000000000001
+      ],
+      "true_reward_gradient": [
+        -0.10500000000000001,
+        0.02699999999999999,
+        0.07800000000000001
+      ],
+      "gradient_variance": 0.15516200000000002,
+      "cosine": 1.0,
+      "scope": "exact fixed-policy categorical fixture, not GPT-2 accuracy"
+    },
+    {
+      "kind": "fixed",
+      "allowance": 4,
+      "probabilities": [
+        0.5,
+        0.3,
+        0.2
+      ],
+      "reward_probabilities": [
+        0.2,
+        0.5,
+        0.8
+      ],
+      "probability_mass": 1.0000000000000004,
+      "expected_attempts": 4.000000000000002,
+      "expected_gradient": [
+        -0.3150000000000001,
+        0.08099999999999997,
+        0.23400000000000015
+      ],
+      "true_reward_gradient": [
+        -0.10500000000000001,
+        0.02699999999999999,
+        0.07800000000000001
+      ],
+      "gradient_variance": 0.446505,
+      "cosine": 1.0000000000000002,
+      "scope": "exact fixed-policy categorical fixture, not GPT-2 accuracy"
+    },
+    {
+      "kind": "fixed",
+      "allowance": 5,
+      "probabilities": [
+        0.5,
+        0.3,
+        0.2
+      ],
+      "reward_probabilities": [
+        0.2,
+        0.5,
+        0.8
+      ],
+      "probability_mass": 0.9999999999999991,
+      "expected_attempts": 5.000000000000005,
+      "expected_gradient": [
+        -0.42000000000000043,
+        0.10799999999999996,
+        0.3119999999999999
+      ],
+      "true_reward_gradient": [
+        -0.10500000000000001,
+        0.02699999999999999,
+        0.07800000000000001
+      ],
+      "gradient_variance": 0.5902784000000001,
+      "cosine": 1.0,
+      "scope": "exact fixed-policy categorical fixture, not GPT-2 accuracy"
+    },
+    {
+      "kind": "v1",
+      "allowance": 15,
+      "probabilities": [
+        0.5,
+        0.3,
+        0.2
+      ],
+      "reward_probabilities": [
+        0.2,
+        0.5,
+        0.8
+      ],
+      "probability_mass": 0.9999999999999988,
+      "expected_attempts": 3.8600224897279394,
+      "expected_gradient": [
+        -0.3304871426030772,
+        0.08741480942950765,
+        0.2430723331735695
+      ],
+      "true_reward_gradient": [
+        -0.10500000000000001,
+        0.02699999999999999,
+        0.07800000000000001
+      ],
+      "gradient_variance": 0.44159626912924266,
+      "cosine": 0.9999688241412128,
+      "scope": "exact fixed-policy categorical fixture, not GPT-2 accuracy"
+    },
+    {
+      "kind": "v2",
+      "allowance": 4,
+      "probabilities": [
+        0.5,
+        0.3,
+        0.2
+      ],
+      "reward_probabilities": [
+        0.2,
+        0.5,
+        0.8
+      ],
+      "probability_mass": 1.0000000000000002,
+      "expected_attempts": 3.6638000000000015,
+      "expected_gradient": [
+        -0.26312475,
+        0.06766064999999999,
+        0.19546410000000017
+      ],
+      "true_reward_gradient": [
+        -0.10500000000000001,
+        0.02699999999999999,
+        0.07800000000000001
+      ],
+      "gradient_variance": 0.39878431299020506,
+      "cosine": 0.9999999999999999,
+      "scope": "exact fixed-policy categorical fixture, not GPT-2 accuracy"
+    },
+    {
+      "kind": "v2",
+      "allowance": 6,
+      "probabilities": [
+        0.5,
+        0.3,
+        0.2
+      ],
+      "reward_probabilities": [
+        0.2,
+        0.5,
+        0.8
+      ],
+      "probability_mass": 1.0,
+      "expected_attempts": 4.952168400000004,
+      "expected_gradient": [
+        -0.3851702790000002,
+        0.09794338580000003,
+        0.28722689320000017
+      ],
+      "true_reward_gradient": [
+        -0.10500000000000001,
+        0.02699999999999999,
+        0.07800000000000001
+      ],
+      "gradient_variance": 0.638297528011325,
+      "cosine": 0.9999953312107069,
+      "scope": "exact fixed-policy categorical fixture, not GPT-2 accuracy"
+    }
+  ],
+  "scope": "synthetic engineering only; no external model work, downloads, or accuracy claims",
+  "notebook_code_sha256": "313420046f0ac3fc08bf2069420495555f91569465767d1a2d01fe6d25e26a49",
+  "notebook_sha256": "5fd062295bdb8007f24681088311b47670a707910aabc9fa889b16d304fad10a"
+}

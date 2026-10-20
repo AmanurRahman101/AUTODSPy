@@ -1,0 +1,70 @@
+{
+  "resume": "completed",
+  "approved_by_user": true,
+  "checked_at": "2026-10-20T12:14:49.057675+00:00",
+  "notebook_sha256": "bcbb65ec4d2ee057eb5d2eae0744f0395c3875ebdad6c442a2a079aa1550ef5a",
+  "python_version": "3.11.9",
+  "run_dir": "results\\adagrpo\\gsm8k\\adaptive\\seed42\\pilot\\20261020T113252-73f1340a",
+  "resumed_from": {
+    "episode": 10,
+    "status": "wall_limit",
+    "gross_training_attempts": 36
+  },
+  "result": {
+    "status": "completed",
+    "completed": true,
+    "episode": 20,
+    "durable_episode": 20,
+    "gross_training_attempts": 80,
+    "discarded_training_attempts": 0,
+    "budget_ceiling": 80,
+    "actual_k": [
+      4,
+      4,
+      2,
+      4,
+      4,
+      4,
+      2,
+      4,
+      4,
+      4,
+      15,
+      4,
+      4,
+      4,
+      4,
+      5,
+      2,
+      2,
+      2,
+      2
+    ],
+    "stop_reasons": {
+      "useful_contrast": 11,
+      "all_correct": 5,
+      "allowance_reached": 4
+    },
+    "best": {
+      "episode": 0,
+      "score": 0.8,
+      "pointer": {
+        "checkpoint": "checkpoints\\best_b431a4f2b07345809603aae456ce5913.pt",
+        "sha256": "79783af901f001602cb2d83afbf0cdc403fe7e4cb25ab5dfdd5f5e4151db5e74",
+        "episode": 0
+      }
+    },
+    "zero_advantage_groups": 9,
+    "informative_gradient_episodes": 11,
+    "training_seconds": 1320.5,
+    "validation_seconds": 924.0,
+    "wall_seconds": 2552.0,
+    "peak_allocated_gpu_bytes": 3096927232,
+    "test_count": 0,
+    "journal_resources_complete": true
+  },
+  "optimizer_updates_steps": [
+    20
+  ],
+  "scope": "Resumed segment of the wall-limited pilot arm per explicit user approval; validation-only screening, no final-test access; not the originally agreed single-shot protocol."
+}

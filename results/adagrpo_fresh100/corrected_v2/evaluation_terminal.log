@@ -1,0 +1,571 @@
+FRESH100 RUNNER: notebook code syntax passed; executing frozen notebook definitions.
+NOTEBOOK CELL 1
+Python: 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)] 
+Packages: {'torch': '2.6.0+cu124', 'transformers': '5.17.0', 'dspy': '3.3.1', 'datasets': '5.0.1', 'numpy': '2.4.6', 'matplotlib': '3.11.2'} 
+CUDA: True
+NOTEBOOK CELL 3
+Definitions only. Configuration: {'protocol': 'adagrpo-gsm8k-numeric-figure2-v2', 'dataset': 'gsm8k', 'dataset_name': 'openai/gsm8k', 'dataset_config': 'main', 'dataset_revision': None, 'data_seed': 42, 'seed': 42, 'preset': 'smoke', 'num_episodes': 2, 'train_pool_size': 10, 'validation_size': 2, 'validation_interval': 2, 'schedule_episodes': 200, 'test_scope': 'full_official', 'allocation_mode': 'adaptive', 'static_k': 5, 'k_min': 2, 'k_max': 6, 'probe_size': 2, 'expansion_size': 2, 'all_correct_min': 2, 'concentration_min': 4, 'concentration_neff': 1.25, 'contrast_epsilon': 1e-12, 'adaptive_budget_per_episode': 4, 'training_budget': 8, 'controller_version': 'credit-refine-v2', 'sampling_version': 'candidate-stream-v2', 'membership_manifest': None, 'suite_ledger': None, 'allocation_schedule': None, 'policy_model': 'gpt2', 'policy_revision': '607a30d783dfa663caf39e06633721c8d4cfcd7e', 'policy_device': 'cuda', 'policy_dropout': False, 'max_policy_tokens': 1024, 'max_pipeline_steps': 3, 'policy_sampling': 'restricted-first-token-multinomial', 'learning_rate': 1e-05, 'optimizer': 'Adam', 'loss': 'negative-sum-logprob-times-centered-reward', 'reward_mode': 'numeric_exact', 'semantic_fallback': False, 'cache': False, 'ollama_model': 'llama3.2:3b', 'ollama_host': 'http://localhost:11434', 'ollama_num_gpu': 0, 'ollama_num_ctx': 2048, 'execution_max_tokens': 512, 'execution_temperature': 0.0, 'request_timeout': 180, 'results_root': 'results/adagrpo_v2', 'checkpoint_interval': 5, 'evaluation_seed_offset': 100000, 'wall_limit_seconds': 900}
+NOTEBOOK CELL 5
+NOTEBOOK CELL 7
+NOTEBOOK CELL 8
+NOTEBOOK CELL 9
+NOTEBOOK CELL 10
+NOTEBOOK CELL 11
+NOTEBOOK CELL 12
+NOTEBOOK CELL 14
+NOTEBOOK CELL 15
+NOTEBOOK CELL 17
+NOTEBOOK CELL 19
+NOTEBOOK CELL 21
+NOTEBOOK CELL 23
+NOTEBOOK CELL 25
+NOTEBOOK CELL 27
+NOTEBOOK CELL 30
+NOTEBOOK CELL 32
+AdaGRPO definitions ready. No model initialization, training, or testing launched.
+NOTEBOOK CELL 34
+Fresh100 definitions ready. No inference runs unless ADAGRP0_RUN_FRESH100=1.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+FROZEN 100 fresh GSM8K train questions; excluded prior/reserved IDs: 1070
+FROZEN CHECKPOINT adaptive: episode=12 val=0.850 sha256=b33893a26d7290bc62c4176878715f7d2e7a5d63b25ae46c3961f29e104431b9
+FROZEN CHECKPOINT static_k4: episode=0 val=0.800 sha256=27b15b48baf2f2d654c992db09717290bf143b032f1489ef0849eeb0b555e3f9
+FROZEN CHECKPOINT static_k5: episode=0 val=0.800 sha256=2f7fb174f9805ffa2fa8d53fbaaddb687f259678f070f33048488bdcff305251
+MANIFEST results\adagrpo_fresh100\corrected_v2\membership\fresh100.json; SHA256 a05933abad79ff2cffc8562e6b1e954dc73e7f2a6a03c1e711c1c295d40e80ed
+FROZEN CORRECTED MEMBERSHIP 100 fresh IDs; prior exclusions 1070 legacy overlap 0; superseded-set overlap 0
+READ-ONLY PREFLIGHT {"hardware": {"python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]", "packages": {"torch": "2.6.0+cu124", "transformers": "5.17.0", "dspy": "3.3.1", "datasets": "5.0.1", "numpy": "2.4.6", "matplotlib": "3.11.2"}, "cuda_available": true, "cuda_version": "12.4", "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU", "gpu_total_bytes": 6441926656, "cpu": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel", "system_ram_bytes": 16961822720, "process_rss_bytes": 1192939520}, "ollama": {"version": "0.22.1"}, "execution_model": {"name": "llama3.2:3b", "model": "llama3.2:3b", "modified_at": "2026-10-20T16:34:36.7976296+06:00", "size": 2019393189, "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72", "details": {"parent_model": "", "format": "gguf", "family": "llama", "families": ["llama"], "parameter_size": "3.2B", "quantization_level": "Q4_K_M"}}, "free_disk_bytes": 66883936256}
+STARTING CORRECTED EVALUATION UNDER INHERITED DEADLINE
+INITIALIZE adaptive from validation-selected episode 12; source training attempts=42
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:   8%|8         | 12/148 [00:00<00:01, 97.25it/s]Loading weights:  15%|#4        | 22/148 [00:00<00:02, 61.73it/s]Loading weights: 100%|##########| 148/148 [00:00<00:00, 436.47it/s]
+BEGIN adaptive: 100 questions, one pipeline each
+02:36:46 START evaluation ep=12 candidate=None q=gsm8k:train:4701
+02:37:05 START evaluation ep=12 candidate=None q=gsm8k:train:3230
+02:37:20 START evaluation ep=12 candidate=None q=gsm8k:train:6521
+02:37:40 START evaluation ep=12 candidate=None q=gsm8k:train:570
+02:37:53 START evaluation ep=12 candidate=None q=gsm8k:train:698
+02:38:05 START evaluation ep=12 candidate=None q=gsm8k:train:325
+02:38:17 START evaluation ep=12 candidate=None q=gsm8k:train:2590
+02:38:32 START evaluation ep=12 candidate=None q=gsm8k:train:1717
+02:38:50 START evaluation ep=12 candidate=None q=gsm8k:train:1198
+Traceback (most recent call last):
+  File "C:\Users\rahma\AppData\Local\Temp\adagrpo_fresh100_runner.py", line 39, in <module>
+    result=ns['run_fresh100'](ledger_path=ns['FRESH100_LEDGER'], resume=ns['FRESH100_LEDGER'].exists(), allow_inference=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "AdaGRPO_GSM8K_Fresh100_v2.ipynb cell 34", line 255, in run_fresh100
+  File "AdaGRPO_GSM8K_Fresh100_v2.ipynb cell 23", line 35, in evaluate_module
+  File "AdaGRPO_GSM8K_Fresh100_v2.ipynb cell 17", line 141, in recorded_attempt
+  File "AdaGRPO_GSM8K_Fresh100_v2.ipynb cell 15", line 11, in execute_pipeline
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\dspy\predict\predict.py", line 134, in __call__
+    return super().__call__(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\dspy\utils\callback.py", line 377, in sync_wrapper
+    return fn(instance, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\dspy\primitives\module.py", line 110, in __call__
+    return self.forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\dspy\predict\predict.py", line 261, in forward
+    completions = adapter(lm, lm_kwargs=config, signature=signature, demos=demos, inputs=kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\dspy\adapters\chat_adapter.py", line 95, in __call__
+    return self._make_json_adapter_fallback()(lm, lm_kwargs, signature, demos, inputs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\dspy\adapters\json_adapter.py", line 76, in __call__
+    result = self._json_adapter_call_common(lm, lm_kwargs, signature, demos, inputs, super().__call__)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\dspy\adapters\json_adapter.py", line 66, in _json_adapter_call_common
+    return call_fn(lm, lm_kwargs, signature, demos, inputs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\dspy\adapters\chat_adapter.py", line 86, in __call__
+    return super().__call__(lm, lm_kwargs, signature, demos, inputs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\dspy\adapters\base.py", line 342, in __call__
+    response = self._call_lm(lm, request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\dspy\adapters\base.py", line 237, in _call_lm
+    outputs = lm(messages=data.pop("messages"), **data)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\dspy\utils\callback.py", line 377, in sync_wrapper
+    return fn(instance, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\dspy\clients\base_lm.py", line 364, in __call__
+    return self._legacy_call_direct(*items, prompt=prompt, messages=messages, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\dspy\clients\base_lm.py", line 441, in _legacy_call_direct
+    response = self.forward(prompt=prompt, messages=messages, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "AdaGRPO_GSM8K_Fresh100_v2.ipynb cell 5", line 34, in forward
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\dspy\clients\lm.py", line 253, in forward
+    results = completion(
+              ^^^^^^^^^^^
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\dspy\clients\lm.py", line 502, in litellm_completion
+    return _get_litellm().completion(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\litellm\chat_completions\dispatch.py", line 91, in completion
+    return _DISPATCH.run(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\litellm\rust_bridge\dispatch.py", line 81, in run
+    return python(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\litellm\utils.py", line 1840, in wrapper
+    result = original_function(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\litellm\main.py", line 6060, in completion
+    response = _complete_ollama_chat(_dispatch_ctx)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\litellm\main.py", line 4532, in _complete_ollama_chat
+    return base_llm_http_handler.completion(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\litellm\llms\custom_httpx\llm_http_handler.py", line 919, in completion
+    response: Final = self._make_common_sync_call(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\litellm\llms\custom_httpx\llm_http_handler.py", line 577, in _make_common_sync_call
+    response = sync_httpx_client.post(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\litellm\llms\custom_httpx\http_handler.py", line 1536, in post
+    response: Final = self.client.send(req, stream=stream)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\httpcore\_sync\http11.py", line 136, in handle_request
+    raise exc
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\httpcore\_sync\http11.py", line 106, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\httpcore\_sync\http11.py", line 177, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\httpcore\_sync\http11.py", line 217, in _receive_event
+    data = self._network_stream.read(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\venv_adagrpo\Lib\site-packages\httpcore\_backends\sync.py", line 128, in read
+    return self._sock.recv(max_bytes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+FRESH100 RUNNER: notebook code syntax passed; executing frozen notebook definitions.
+NOTEBOOK CELL 1
+Python: 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)] 
+Packages: {'torch': '2.6.0+cu124', 'transformers': '5.17.0', 'dspy': '3.3.1', 'datasets': '5.0.1', 'numpy': '2.4.6', 'matplotlib': '3.11.2'} 
+CUDA: True
+NOTEBOOK CELL 3
+Definitions only. Configuration: {'protocol': 'adagrpo-gsm8k-numeric-figure2-v2', 'dataset': 'gsm8k', 'dataset_name': 'openai/gsm8k', 'dataset_config': 'main', 'dataset_revision': None, 'data_seed': 42, 'seed': 42, 'preset': 'smoke', 'num_episodes': 2, 'train_pool_size': 10, 'validation_size': 2, 'validation_interval': 2, 'schedule_episodes': 200, 'test_scope': 'full_official', 'allocation_mode': 'adaptive', 'static_k': 5, 'k_min': 2, 'k_max': 6, 'probe_size': 2, 'expansion_size': 2, 'all_correct_min': 2, 'concentration_min': 4, 'concentration_neff': 1.25, 'contrast_epsilon': 1e-12, 'adaptive_budget_per_episode': 4, 'training_budget': 8, 'controller_version': 'credit-refine-v2', 'sampling_version': 'candidate-stream-v2', 'membership_manifest': None, 'suite_ledger': None, 'allocation_schedule': None, 'policy_model': 'gpt2', 'policy_revision': '607a30d783dfa663caf39e06633721c8d4cfcd7e', 'policy_device': 'cuda', 'policy_dropout': False, 'max_policy_tokens': 1024, 'max_pipeline_steps': 3, 'policy_sampling': 'restricted-first-token-multinomial', 'learning_rate': 1e-05, 'optimizer': 'Adam', 'loss': 'negative-sum-logprob-times-centered-reward', 'reward_mode': 'numeric_exact', 'semantic_fallback': False, 'cache': False, 'ollama_model': 'llama3.2:3b', 'ollama_host': 'http://localhost:11434', 'ollama_num_gpu': 0, 'ollama_num_ctx': 2048, 'execution_max_tokens': 512, 'execution_temperature': 0.0, 'request_timeout': 180, 'results_root': 'results/adagrpo_v2', 'checkpoint_interval': 5, 'evaluation_seed_offset': 100000, 'wall_limit_seconds': 900}
+NOTEBOOK CELL 5
+NOTEBOOK CELL 7
+NOTEBOOK CELL 8
+NOTEBOOK CELL 9
+NOTEBOOK CELL 10
+NOTEBOOK CELL 11
+NOTEBOOK CELL 12
+NOTEBOOK CELL 14
+NOTEBOOK CELL 15
+NOTEBOOK CELL 17
+NOTEBOOK CELL 19
+NOTEBOOK CELL 21
+NOTEBOOK CELL 23
+NOTEBOOK CELL 25
+NOTEBOOK CELL 27
+NOTEBOOK CELL 30
+NOTEBOOK CELL 32
+AdaGRPO definitions ready. No model initialization, training, or testing launched.
+NOTEBOOK CELL 34
+Fresh100 definitions ready. No inference runs unless ADAGRP0_RUN_FRESH100=1.
+FROZEN CORRECTED MEMBERSHIP 100 fresh IDs; prior exclusions 1070 legacy overlap 0; superseded-set overlap 0
+READ-ONLY PREFLIGHT {"hardware": {"python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]", "packages": {"torch": "2.6.0+cu124", "transformers": "5.17.0", "dspy": "3.3.1", "datasets": "5.0.1", "numpy": "2.4.6", "matplotlib": "3.11.2"}, "cuda_available": true, "cuda_version": "12.4", "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU", "gpu_total_bytes": 6441926656, "cpu": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel", "system_ram_bytes": 16961822720, "process_rss_bytes": 662474752}, "ollama": {"version": "0.22.1"}, "execution_model": {"name": "llama3.2:3b", "model": "llama3.2:3b", "modified_at": "2026-10-20T16:34:36.7976296+06:00", "size": 2019393189, "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72", "details": {"parent_model": "", "format": "gguf", "family": "llama", "families": ["llama"], "parameter_size": "3.2B", "quantization_level": "Q4_K_M"}}, "free_disk_bytes": 66879381504}
+STARTING CORRECTED EVALUATION UNDER INHERITED DEADLINE
+INITIALIZE adaptive from validation-selected episode 12; source training attempts=42
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:   4%|4         | 6/148 [00:00<00:03, 43.54it/s]Loading weights:   9%|9         | 14/148 [00:00<00:04, 32.60it/s]Loading weights: 100%|##########| 148/148 [00:00<00:00, 352.15it/s]
+BEGIN adaptive: 100 questions, one pipeline each
+02:40:00 START evaluation ep=12 candidate=None q=gsm8k:train:1198
+02:40:24 START evaluation ep=12 candidate=None q=gsm8k:train:1722
+02:40:47 START evaluation ep=12 candidate=None q=gsm8k:train:4149
+02:41:00 START evaluation ep=12 candidate=None q=gsm8k:train:4325
+02:41:08 START evaluation ep=12 candidate=None q=gsm8k:train:6198
+02:41:23 START evaluation ep=12 candidate=None q=gsm8k:train:2048
+02:41:38 START evaluation ep=12 candidate=None q=gsm8k:train:5362
+02:41:50 START evaluation ep=12 candidate=None q=gsm8k:train:4994
+02:42:04 START evaluation ep=12 candidate=None q=gsm8k:train:2940
+02:42:22 START evaluation ep=12 candidate=None q=gsm8k:train:6693
+02:42:35 START evaluation ep=12 candidate=None q=gsm8k:train:1118
+02:42:49 START evaluation ep=12 candidate=None q=gsm8k:train:3091
+02:42:57 START evaluation ep=12 candidate=None q=gsm8k:train:6444
+02:43:04 START evaluation ep=12 candidate=None q=gsm8k:train:4741
+02:43:10 START evaluation ep=12 candidate=None q=gsm8k:train:7097
+02:43:18 START evaluation ep=12 candidate=None q=gsm8k:train:1519
+02:43:36 START evaluation ep=12 candidate=None q=gsm8k:train:6039
+02:43:52 START evaluation ep=12 candidate=None q=gsm8k:train:6320
+02:44:02 START evaluation ep=12 candidate=None q=gsm8k:train:5944
+02:44:16 START evaluation ep=12 candidate=None q=gsm8k:train:2223
+02:44:27 START evaluation ep=12 candidate=None q=gsm8k:train:2716
+02:44:38 START evaluation ep=12 candidate=None q=gsm8k:train:397
+02:44:56 START evaluation ep=12 candidate=None q=gsm8k:train:4196
+02:45:10 START evaluation ep=12 candidate=None q=gsm8k:train:7010
+02:45:25 START evaluation ep=12 candidate=None q=gsm8k:train:7045
+02:45:36 START evaluation ep=12 candidate=None q=gsm8k:train:7060
+02:45:48 START evaluation ep=12 candidate=None q=gsm8k:train:1046
+02:46:08 START evaluation ep=12 candidate=None q=gsm8k:train:3651
+02:46:21 START evaluation ep=12 candidate=None q=gsm8k:train:2971
+02:46:36 START evaluation ep=12 candidate=None q=gsm8k:train:6642
+02:46:52 START evaluation ep=12 candidate=None q=gsm8k:train:635
+02:47:02 START evaluation ep=12 candidate=None q=gsm8k:train:3282
+02:47:11 START evaluation ep=12 candidate=None q=gsm8k:train:2112
+02:47:21 START evaluation ep=12 candidate=None q=gsm8k:train:6756
+02:47:31 START evaluation ep=12 candidate=None q=gsm8k:train:5328
+02:47:45 START evaluation ep=12 candidate=None q=gsm8k:train:5375
+02:47:53 START evaluation ep=12 candidate=None q=gsm8k:train:7108
+02:48:11 START evaluation ep=12 candidate=None q=gsm8k:train:5171
+Traceback (most recent call last):
+  File "C:\Users\rahma\AppData\Local\Temp\adagrpo_fresh100_runner.py", line 39, in <module>
+    result=ns['run_fresh100'](ledger_path=ns['FRESH100_LEDGER'], resume=ns['FRESH100_LEDGER'].exists(), allow_inference=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "AdaGRPO_GSM8K_Fresh100_v2.ipynb cell 34", line 263, in run_fresh100
+  File "AdaGRPO_GSM8K_Fresh100_v2.ipynb cell 23", line 37, in evaluate_module
+  File "AdaGRPO_GSM8K_Fresh100_v2.ipynb cell 23", line 27, in publish
+  File "AdaGRPO_GSM8K_Fresh100_v2.ipynb cell 7", line 41, in write_json
+PermissionError: [WinError 5] Access is denied: 'results\\adagrpo_fresh100\\corrected_v2\\arms\\adaptive\\confirmation_progress_ep12.json.032495d0f0c9428b99ba5d233c421062.tmp' -> 'results\\adagrpo_fresh100\\corrected_v2\\arms\\adaptive\\confirmation_progress_ep12.json'
+FRESH100 RUNNER: notebook code syntax passed; executing frozen notebook definitions.
+NOTEBOOK CELL 1
+Python: 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)] 
+Packages: {'torch': '2.6.0+cu124', 'transformers': '5.17.0', 'dspy': '3.3.1', 'datasets': '5.0.1', 'numpy': '2.4.6', 'matplotlib': '3.11.2'} 
+CUDA: True
+NOTEBOOK CELL 3
+Definitions only. Configuration: {'protocol': 'adagrpo-gsm8k-numeric-figure2-v2', 'dataset': 'gsm8k', 'dataset_name': 'openai/gsm8k', 'dataset_config': 'main', 'dataset_revision': None, 'data_seed': 42, 'seed': 42, 'preset': 'smoke', 'num_episodes': 2, 'train_pool_size': 10, 'validation_size': 2, 'validation_interval': 2, 'schedule_episodes': 200, 'test_scope': 'full_official', 'allocation_mode': 'adaptive', 'static_k': 5, 'k_min': 2, 'k_max': 6, 'probe_size': 2, 'expansion_size': 2, 'all_correct_min': 2, 'concentration_min': 4, 'concentration_neff': 1.25, 'contrast_epsilon': 1e-12, 'adaptive_budget_per_episode': 4, 'training_budget': 8, 'controller_version': 'credit-refine-v2', 'sampling_version': 'candidate-stream-v2', 'membership_manifest': None, 'suite_ledger': None, 'allocation_schedule': None, 'policy_model': 'gpt2', 'policy_revision': '607a30d783dfa663caf39e06633721c8d4cfcd7e', 'policy_device': 'cuda', 'policy_dropout': False, 'max_policy_tokens': 1024, 'max_pipeline_steps': 3, 'policy_sampling': 'restricted-first-token-multinomial', 'learning_rate': 1e-05, 'optimizer': 'Adam', 'loss': 'negative-sum-logprob-times-centered-reward', 'reward_mode': 'numeric_exact', 'semantic_fallback': False, 'cache': False, 'ollama_model': 'llama3.2:3b', 'ollama_host': 'http://localhost:11434', 'ollama_num_gpu': 0, 'ollama_num_ctx': 2048, 'execution_max_tokens': 512, 'execution_temperature': 0.0, 'request_timeout': 180, 'results_root': 'results/adagrpo_v2', 'checkpoint_interval': 5, 'evaluation_seed_offset': 100000, 'wall_limit_seconds': 900}
+NOTEBOOK CELL 5
+NOTEBOOK CELL 7
+NOTEBOOK CELL 8
+NOTEBOOK CELL 9
+NOTEBOOK CELL 10
+NOTEBOOK CELL 11
+NOTEBOOK CELL 12
+NOTEBOOK CELL 14
+NOTEBOOK CELL 15
+NOTEBOOK CELL 17
+NOTEBOOK CELL 19
+NOTEBOOK CELL 21
+NOTEBOOK CELL 23
+NOTEBOOK CELL 25
+NOTEBOOK CELL 27
+NOTEBOOK CELL 30
+NOTEBOOK CELL 32
+AdaGRPO definitions ready. No model initialization, training, or testing launched.
+NOTEBOOK CELL 34
+Fresh100 definitions ready. No inference runs unless ADAGRP0_RUN_FRESH100=1.
+FROZEN CORRECTED MEMBERSHIP 100 fresh IDs; prior exclusions 1070 legacy overlap 0; superseded-set overlap 0
+READ-ONLY PREFLIGHT {"hardware": {"python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]", "packages": {"torch": "2.6.0+cu124", "transformers": "5.17.0", "dspy": "3.3.1", "datasets": "5.0.1", "numpy": "2.4.6", "matplotlib": "3.11.2"}, "cuda_available": true, "cuda_version": "12.4", "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU", "gpu_total_bytes": 6441926656, "cpu": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel", "system_ram_bytes": 16961822720, "process_rss_bytes": 662487040}, "ollama": {"version": "0.22.1"}, "execution_model": {"name": "llama3.2:3b", "model": "llama3.2:3b", "modified_at": "2026-10-20T16:34:36.7976296+06:00", "size": 2019393189, "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72", "details": {"parent_model": "", "format": "gguf", "family": "llama", "families": ["llama"], "parameter_size": "3.2B", "quantization_level": "Q4_K_M"}}, "free_disk_bytes": 66880253952}
+STARTING CORRECTED EVALUATION UNDER INHERITED DEADLINE
+INITIALIZE adaptive from validation-selected episode 12; source training attempts=42
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:   5%|4         | 7/148 [00:00<00:02, 60.69it/s]Loading weights:   9%|9         | 14/148 [00:00<00:03, 35.36it/s]Loading weights: 100%|##########| 148/148 [00:00<00:00, 394.39it/s]
+BEGIN adaptive: 100 questions, one pipeline each
+02:49:18 START evaluation ep=12 candidate=None q=gsm8k:train:1917
+02:49:39 START evaluation ep=12 candidate=None q=gsm8k:train:2697
+02:49:51 START evaluation ep=12 candidate=None q=gsm8k:train:250
+02:50:07 START evaluation ep=12 candidate=None q=gsm8k:train:4259
+02:50:24 START evaluation ep=12 candidate=None q=gsm8k:train:5981
+02:50:38 START evaluation ep=12 candidate=None q=gsm8k:train:190
+02:50:56 START evaluation ep=12 candidate=None q=gsm8k:train:4709
+02:51:09 START evaluation ep=12 candidate=None q=gsm8k:train:5999
+02:51:19 START evaluation ep=12 candidate=None q=gsm8k:train:5799
+02:51:33 START evaluation ep=12 candidate=None q=gsm8k:train:3508
+02:51:50 START evaluation ep=12 candidate=None q=gsm8k:train:5556
+02:52:05 START evaluation ep=12 candidate=None q=gsm8k:train:3200
+02:52:20 START evaluation ep=12 candidate=None q=gsm8k:train:6391
+02:52:33 START evaluation ep=12 candidate=None q=gsm8k:train:6006
+02:52:48 START evaluation ep=12 candidate=None q=gsm8k:train:2983
+02:53:04 START evaluation ep=12 candidate=None q=gsm8k:train:1030
+02:53:22 START evaluation ep=12 candidate=None q=gsm8k:train:3218
+02:53:36 START evaluation ep=12 candidate=None q=gsm8k:train:419
+02:53:44 START evaluation ep=12 candidate=None q=gsm8k:train:2748
+02:54:01 START evaluation ep=12 candidate=None q=gsm8k:train:2669
+02:54:13 START evaluation ep=12 candidate=None q=gsm8k:train:3802
+02:54:36 START evaluation ep=12 candidate=None q=gsm8k:train:2492
+02:54:51 START evaluation ep=12 candidate=None q=gsm8k:train:5154
+02:55:10 START evaluation ep=12 candidate=None q=gsm8k:train:3816
+02:55:18 START evaluation ep=12 candidate=None q=gsm8k:train:3342
+02:55:29 START evaluation ep=12 candidate=None q=gsm8k:train:7260
+02:55:37 START evaluation ep=12 candidate=None q=gsm8k:train:931
+02:55:50 START evaluation ep=12 candidate=None q=gsm8k:train:1571
+02:56:07 START evaluation ep=12 candidate=None q=gsm8k:train:6030
+02:56:19 START evaluation ep=12 candidate=None q=gsm8k:train:61
+02:56:34 START evaluation ep=12 candidate=None q=gsm8k:train:6973
+02:56:47 START evaluation ep=12 candidate=None q=gsm8k:train:7284
+02:56:59 START evaluation ep=12 candidate=None q=gsm8k:train:6447
+02:57:09 START evaluation ep=12 candidate=None q=gsm8k:train:6798
+02:57:22 START evaluation ep=12 candidate=None q=gsm8k:train:719
+02:57:38 START evaluation ep=12 candidate=None q=gsm8k:train:5430
+02:57:53 START evaluation ep=12 candidate=None q=gsm8k:train:3912
+02:58:08 START evaluation ep=12 candidate=None q=gsm8k:train:696
+02:58:24 START evaluation ep=12 candidate=None q=gsm8k:train:3313
+02:58:36 START evaluation ep=12 candidate=None q=gsm8k:train:6474
+02:58:52 START evaluation ep=12 candidate=None q=gsm8k:train:6857
+02:59:10 START evaluation ep=12 candidate=None q=gsm8k:train:4637
+02:59:22 START evaluation ep=12 candidate=None q=gsm8k:train:695
+02:59:33 START evaluation ep=12 candidate=None q=gsm8k:train:4180
+02:59:42 START evaluation ep=12 candidate=None q=gsm8k:train:7162
+02:59:58 START evaluation ep=12 candidate=None q=gsm8k:train:5858
+03:00:10 START evaluation ep=12 candidate=None q=gsm8k:train:5043
+03:00:21 START evaluation ep=12 candidate=None q=gsm8k:train:3112
+03:00:36 START evaluation ep=12 candidate=None q=gsm8k:train:3728
+03:00:51 START evaluation ep=12 candidate=None q=gsm8k:train:1109
+03:01:02 START evaluation ep=12 candidate=None q=gsm8k:train:3592
+03:01:19 START evaluation ep=12 candidate=None q=gsm8k:train:3072
+03:01:31 START evaluation ep=12 candidate=None q=gsm8k:train:493
+03:01:45 START evaluation ep=12 candidate=None q=gsm8k:train:4623
+COMPLETE adaptive: accuracy=0.680 attempts=100 elapsed_min=23.1
+INITIALIZE static_k4 from validation-selected episode 0; source training attempts=48
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:   3%|3         | 5/148 [00:00<00:04, 31.44it/s]Loading weights:   6%|6         | 9/148 [00:00<00:04, 29.79it/s]Loading weights:   8%|8         | 12/148 [00:00<00:06, 19.92it/s]Loading weights: 100%|##########| 148/148 [00:00<00:00, 273.30it/s]
+BEGIN static_k4: 100 questions, one pipeline each
+03:02:09 START evaluation ep=0 candidate=None q=gsm8k:train:4701
+03:02:26 START evaluation ep=0 candidate=None q=gsm8k:train:3230
+03:02:42 START evaluation ep=0 candidate=None q=gsm8k:train:6521
+03:03:01 START evaluation ep=0 candidate=None q=gsm8k:train:570
+03:03:21 START evaluation ep=0 candidate=None q=gsm8k:train:698
+03:03:34 START evaluation ep=0 candidate=None q=gsm8k:train:325
+03:03:46 START evaluation ep=0 candidate=None q=gsm8k:train:2590
+03:04:02 START evaluation ep=0 candidate=None q=gsm8k:train:1717
+03:04:23 START evaluation ep=0 candidate=None q=gsm8k:train:1198
+03:04:39 START evaluation ep=0 candidate=None q=gsm8k:train:1722
+03:05:03 START evaluation ep=0 candidate=None q=gsm8k:train:4149
+03:05:19 START evaluation ep=0 candidate=None q=gsm8k:train:4325
+03:05:31 START evaluation ep=0 candidate=None q=gsm8k:train:6198
+03:05:47 START evaluation ep=0 candidate=None q=gsm8k:train:2048
+03:06:02 START evaluation ep=0 candidate=None q=gsm8k:train:5362
+03:06:20 START evaluation ep=0 candidate=None q=gsm8k:train:4994
+03:06:37 START evaluation ep=0 candidate=None q=gsm8k:train:2940
+03:06:55 START evaluation ep=0 candidate=None q=gsm8k:train:6693
+03:07:12 START evaluation ep=0 candidate=None q=gsm8k:train:1118
+03:07:31 START evaluation ep=0 candidate=None q=gsm8k:train:3091
+03:07:46 START evaluation ep=0 candidate=None q=gsm8k:train:6444
+03:07:56 START evaluation ep=0 candidate=None q=gsm8k:train:4741
+03:08:08 START evaluation ep=0 candidate=None q=gsm8k:train:7097
+03:08:17 START evaluation ep=0 candidate=None q=gsm8k:train:1519
+03:08:33 START evaluation ep=0 candidate=None q=gsm8k:train:6039
+03:08:44 START evaluation ep=0 candidate=None q=gsm8k:train:6320
+03:08:57 START evaluation ep=0 candidate=None q=gsm8k:train:5944
+03:09:12 START evaluation ep=0 candidate=None q=gsm8k:train:2223
+03:09:27 START evaluation ep=0 candidate=None q=gsm8k:train:2716
+03:09:41 START evaluation ep=0 candidate=None q=gsm8k:train:397
+03:10:00 START evaluation ep=0 candidate=None q=gsm8k:train:4196
+03:10:17 START evaluation ep=0 candidate=None q=gsm8k:train:7010
+03:10:39 START evaluation ep=0 candidate=None q=gsm8k:train:7045
+03:10:54 START evaluation ep=0 candidate=None q=gsm8k:train:7060
+03:11:04 START evaluation ep=0 candidate=None q=gsm8k:train:1046
+03:11:23 START evaluation ep=0 candidate=None q=gsm8k:train:3651
+03:11:36 START evaluation ep=0 candidate=None q=gsm8k:train:2971
+03:11:51 START evaluation ep=0 candidate=None q=gsm8k:train:6642
+03:12:07 START evaluation ep=0 candidate=None q=gsm8k:train:635
+03:12:17 START evaluation ep=0 candidate=None q=gsm8k:train:3282
+03:12:28 START evaluation ep=0 candidate=None q=gsm8k:train:2112
+03:12:38 START evaluation ep=0 candidate=None q=gsm8k:train:6756
+03:12:51 START evaluation ep=0 candidate=None q=gsm8k:train:5328
+2026/10/21 03:13:26 WARNING dspy.clients.lm: LM response was truncated due to exceeding max_tokens=512. You can inspect the latest LM interactions with `dspy.inspect_history()`. To avoid truncation, consider passing a larger max_tokens when setting up dspy.LM. You may also consider increasing the temperature (currently 0.0)  if the reason for truncation is repetition.
+03:13:41 START evaluation ep=0 candidate=None q=gsm8k:train:5375
+03:13:48 START evaluation ep=0 candidate=None q=gsm8k:train:7108
+03:14:05 START evaluation ep=0 candidate=None q=gsm8k:train:5171
+03:14:21 START evaluation ep=0 candidate=None q=gsm8k:train:1917
+03:14:36 START evaluation ep=0 candidate=None q=gsm8k:train:2697
+03:14:47 START evaluation ep=0 candidate=None q=gsm8k:train:250
+03:15:04 START evaluation ep=0 candidate=None q=gsm8k:train:4259
+03:15:21 START evaluation ep=0 candidate=None q=gsm8k:train:5981
+03:15:35 START evaluation ep=0 candidate=None q=gsm8k:train:190
+03:15:52 START evaluation ep=0 candidate=None q=gsm8k:train:4709
+03:16:05 START evaluation ep=0 candidate=None q=gsm8k:train:5999
+03:16:21 START evaluation ep=0 candidate=None q=gsm8k:train:5799
+03:16:31 START evaluation ep=0 candidate=None q=gsm8k:train:3508
+03:16:51 START evaluation ep=0 candidate=None q=gsm8k:train:5556
+03:17:11 START evaluation ep=0 candidate=None q=gsm8k:train:3200
+03:17:26 START evaluation ep=0 candidate=None q=gsm8k:train:6391
+03:17:42 START evaluation ep=0 candidate=None q=gsm8k:train:6006
+03:17:59 START evaluation ep=0 candidate=None q=gsm8k:train:2983
+03:18:19 START evaluation ep=0 candidate=None q=gsm8k:train:1030
+03:18:35 START evaluation ep=0 candidate=None q=gsm8k:train:3218
+03:18:49 START evaluation ep=0 candidate=None q=gsm8k:train:419
+03:19:04 START evaluation ep=0 candidate=None q=gsm8k:train:2748
+03:19:19 START evaluation ep=0 candidate=None q=gsm8k:train:2669
+03:19:33 START evaluation ep=0 candidate=None q=gsm8k:train:3802
+03:19:52 START evaluation ep=0 candidate=None q=gsm8k:train:2492
+03:20:07 START evaluation ep=0 candidate=None q=gsm8k:train:5154
+03:20:31 START evaluation ep=0 candidate=None q=gsm8k:train:3816
+03:20:43 START evaluation ep=0 candidate=None q=gsm8k:train:3342
+03:20:50 START evaluation ep=0 candidate=None q=gsm8k:train:7260
+03:21:06 START evaluation ep=0 candidate=None q=gsm8k:train:931
+03:21:20 START evaluation ep=0 candidate=None q=gsm8k:train:1571
+03:21:37 START evaluation ep=0 candidate=None q=gsm8k:train:6030
+03:21:49 START evaluation ep=0 candidate=None q=gsm8k:train:61
+03:22:05 START evaluation ep=0 candidate=None q=gsm8k:train:6973
+03:22:18 START evaluation ep=0 candidate=None q=gsm8k:train:7284
+03:22:33 START evaluation ep=0 candidate=None q=gsm8k:train:6447
+03:22:46 START evaluation ep=0 candidate=None q=gsm8k:train:6798
+03:23:00 START evaluation ep=0 candidate=None q=gsm8k:train:719
+03:23:11 START evaluation ep=0 candidate=None q=gsm8k:train:5430
+03:23:26 START evaluation ep=0 candidate=None q=gsm8k:train:3912
+03:23:43 START evaluation ep=0 candidate=None q=gsm8k:train:696
+03:24:00 START evaluation ep=0 candidate=None q=gsm8k:train:3313
+03:24:12 START evaluation ep=0 candidate=None q=gsm8k:train:6474
+03:24:28 START evaluation ep=0 candidate=None q=gsm8k:train:6857
+03:24:42 START evaluation ep=0 candidate=None q=gsm8k:train:4637
+03:24:56 START evaluation ep=0 candidate=None q=gsm8k:train:695
+03:25:09 START evaluation ep=0 candidate=None q=gsm8k:train:4180
+03:25:24 START evaluation ep=0 candidate=None q=gsm8k:train:7162
+03:25:43 START evaluation ep=0 candidate=None q=gsm8k:train:5858
+03:25:55 START evaluation ep=0 candidate=None q=gsm8k:train:5043
+03:26:06 START evaluation ep=0 candidate=None q=gsm8k:train:3112
+03:26:23 START evaluation ep=0 candidate=None q=gsm8k:train:3728
+03:26:39 START evaluation ep=0 candidate=None q=gsm8k:train:1109
+03:26:54 START evaluation ep=0 candidate=None q=gsm8k:train:3592
+03:27:12 START evaluation ep=0 candidate=None q=gsm8k:train:3072
+03:27:24 START evaluation ep=0 candidate=None q=gsm8k:train:493
+03:27:38 START evaluation ep=0 candidate=None q=gsm8k:train:4623
+COMPLETE static_k4: accuracy=0.660 attempts=100 elapsed_min=25.7
+INITIALIZE static_k5 from validation-selected episode 0; source training attempts=60
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:   3%|3         | 5/148 [00:00<00:03, 44.80it/s]Loading weights:   7%|6         | 10/148 [00:00<00:04, 28.84it/s]Loading weights: 100%|##########| 148/148 [00:00<00:00, 444.74it/s]
+BEGIN static_k5: 100 questions, one pipeline each
+03:28:04 START evaluation ep=0 candidate=None q=gsm8k:train:4701
+03:28:21 START evaluation ep=0 candidate=None q=gsm8k:train:3230
+03:28:37 START evaluation ep=0 candidate=None q=gsm8k:train:6521
+03:28:55 START evaluation ep=0 candidate=None q=gsm8k:train:570
+03:29:16 START evaluation ep=0 candidate=None q=gsm8k:train:698
+03:29:28 START evaluation ep=0 candidate=None q=gsm8k:train:325
+03:29:40 START evaluation ep=0 candidate=None q=gsm8k:train:2590
+03:29:56 START evaluation ep=0 candidate=None q=gsm8k:train:1717
+03:30:17 START evaluation ep=0 candidate=None q=gsm8k:train:1198
+03:30:33 START evaluation ep=0 candidate=None q=gsm8k:train:1722
+03:30:57 START evaluation ep=0 candidate=None q=gsm8k:train:4149
+03:31:13 START evaluation ep=0 candidate=None q=gsm8k:train:4325
+03:31:26 START evaluation ep=0 candidate=None q=gsm8k:train:6198
+03:31:42 START evaluation ep=0 candidate=None q=gsm8k:train:2048
+03:31:57 START evaluation ep=0 candidate=None q=gsm8k:train:5362
+03:32:14 START evaluation ep=0 candidate=None q=gsm8k:train:4994
+03:32:32 START evaluation ep=0 candidate=None q=gsm8k:train:2940
+03:32:49 START evaluation ep=0 candidate=None q=gsm8k:train:6693
+03:33:06 START evaluation ep=0 candidate=None q=gsm8k:train:1118
+03:33:25 START evaluation ep=0 candidate=None q=gsm8k:train:3091
+03:33:41 START evaluation ep=0 candidate=None q=gsm8k:train:6444
+03:33:51 START evaluation ep=0 candidate=None q=gsm8k:train:4741
+03:34:02 START evaluation ep=0 candidate=None q=gsm8k:train:7097
+03:34:11 START evaluation ep=0 candidate=None q=gsm8k:train:1519
+03:34:28 START evaluation ep=0 candidate=None q=gsm8k:train:6039
+03:34:38 START evaluation ep=0 candidate=None q=gsm8k:train:6320
+03:34:52 START evaluation ep=0 candidate=None q=gsm8k:train:5944
+03:35:06 START evaluation ep=0 candidate=None q=gsm8k:train:2223
+03:35:22 START evaluation ep=0 candidate=None q=gsm8k:train:2716
+03:35:36 START evaluation ep=0 candidate=None q=gsm8k:train:397
+03:35:55 START evaluation ep=0 candidate=None q=gsm8k:train:4196
+03:36:13 START evaluation ep=0 candidate=None q=gsm8k:train:7010
+03:36:35 START evaluation ep=0 candidate=None q=gsm8k:train:7045
+03:36:50 START evaluation ep=0 candidate=None q=gsm8k:train:7060
+03:36:59 START evaluation ep=0 candidate=None q=gsm8k:train:1046
+03:37:19 START evaluation ep=0 candidate=None q=gsm8k:train:3651
+03:37:32 START evaluation ep=0 candidate=None q=gsm8k:train:2971
+03:37:47 START evaluation ep=0 candidate=None q=gsm8k:train:6642
+03:38:02 START evaluation ep=0 candidate=None q=gsm8k:train:635
+03:38:12 START evaluation ep=0 candidate=None q=gsm8k:train:3282
+03:38:23 START evaluation ep=0 candidate=None q=gsm8k:train:2112
+03:38:33 START evaluation ep=0 candidate=None q=gsm8k:train:6756
+03:38:46 START evaluation ep=0 candidate=None q=gsm8k:train:5328
+2026/10/21 03:39:21 WARNING dspy.clients.lm: LM response was truncated due to exceeding max_tokens=512. You can inspect the latest LM interactions with `dspy.inspect_history()`. To avoid truncation, consider passing a larger max_tokens when setting up dspy.LM. You may also consider increasing the temperature (currently 0.0)  if the reason for truncation is repetition.
+03:39:36 START evaluation ep=0 candidate=None q=gsm8k:train:5375
+03:39:44 START evaluation ep=0 candidate=None q=gsm8k:train:7108
+03:40:01 START evaluation ep=0 candidate=None q=gsm8k:train:5171
+03:40:18 START evaluation ep=0 candidate=None q=gsm8k:train:1917
+03:40:33 START evaluation ep=0 candidate=None q=gsm8k:train:2697
+03:40:45 START evaluation ep=0 candidate=None q=gsm8k:train:250
+03:41:00 START evaluation ep=0 candidate=None q=gsm8k:train:4259
+03:41:18 START evaluation ep=0 candidate=None q=gsm8k:train:5981
+03:41:32 START evaluation ep=0 candidate=None q=gsm8k:train:190
+03:41:50 START evaluation ep=0 candidate=None q=gsm8k:train:4709
+03:42:03 START evaluation ep=0 candidate=None q=gsm8k:train:5999
+03:42:19 START evaluation ep=0 candidate=None q=gsm8k:train:5799
+03:42:29 START evaluation ep=0 candidate=None q=gsm8k:train:3508
+03:42:48 START evaluation ep=0 candidate=None q=gsm8k:train:5556
+03:43:10 START evaluation ep=0 candidate=None q=gsm8k:train:3200
+03:43:25 START evaluation ep=0 candidate=None q=gsm8k:train:6391
+03:43:41 START evaluation ep=0 candidate=None q=gsm8k:train:6006
+03:43:58 START evaluation ep=0 candidate=None q=gsm8k:train:2983
+03:44:18 START evaluation ep=0 candidate=None q=gsm8k:train:1030
+03:44:34 START evaluation ep=0 candidate=None q=gsm8k:train:3218
+03:44:48 START evaluation ep=0 candidate=None q=gsm8k:train:419
+03:45:02 START evaluation ep=0 candidate=None q=gsm8k:train:2748
+03:45:17 START evaluation ep=0 candidate=None q=gsm8k:train:2669
+03:45:29 START evaluation ep=0 candidate=None q=gsm8k:train:3802
+03:45:48 START evaluation ep=0 candidate=None q=gsm8k:train:2492
+03:46:02 START evaluation ep=0 candidate=None q=gsm8k:train:5154
+03:46:24 START evaluation ep=0 candidate=None q=gsm8k:train:3816
+03:46:36 START evaluation ep=0 candidate=None q=gsm8k:train:3342
+03:46:42 START evaluation ep=0 candidate=None q=gsm8k:train:7260
+03:46:58 START evaluation ep=0 candidate=None q=gsm8k:train:931
+03:47:12 START evaluation ep=0 candidate=None q=gsm8k:train:1571
+03:47:28 START evaluation ep=0 candidate=None q=gsm8k:train:6030
+03:47:38 START evaluation ep=0 candidate=None q=gsm8k:train:61
+03:47:54 START evaluation ep=0 candidate=None q=gsm8k:train:6973
+03:48:06 START evaluation ep=0 candidate=None q=gsm8k:train:7284
+03:48:20 START evaluation ep=0 candidate=None q=gsm8k:train:6447
+03:48:33 START evaluation ep=0 candidate=None q=gsm8k:train:6798
+03:48:46 START evaluation ep=0 candidate=None q=gsm8k:train:719
+03:48:57 START evaluation ep=0 candidate=None q=gsm8k:train:5430
+03:49:12 START evaluation ep=0 candidate=None q=gsm8k:train:3912
+03:49:28 START evaluation ep=0 candidate=None q=gsm8k:train:696
+03:49:45 START evaluation ep=0 candidate=None q=gsm8k:train:3313
+03:49:57 START evaluation ep=0 candidate=None q=gsm8k:train:6474
+03:50:14 START evaluation ep=0 candidate=None q=gsm8k:train:6857
+03:50:30 START evaluation ep=0 candidate=None q=gsm8k:train:4637
+03:50:44 START evaluation ep=0 candidate=None q=gsm8k:train:695
+03:50:57 START evaluation ep=0 candidate=None q=gsm8k:train:4180
+03:51:13 START evaluation ep=0 candidate=None q=gsm8k:train:7162
+03:51:34 START evaluation ep=0 candidate=None q=gsm8k:train:5858
+03:51:47 START evaluation ep=0 candidate=None q=gsm8k:train:5043
+03:51:58 START evaluation ep=0 candidate=None q=gsm8k:train:3112
+03:52:17 START evaluation ep=0 candidate=None q=gsm8k:train:3728
+03:52:32 START evaluation ep=0 candidate=None q=gsm8k:train:1109
+03:52:48 START evaluation ep=0 candidate=None q=gsm8k:train:3592
+03:53:05 START evaluation ep=0 candidate=None q=gsm8k:train:3072
+03:53:17 START evaluation ep=0 candidate=None q=gsm8k:train:493
+03:53:31 START evaluation ep=0 candidate=None q=gsm8k:train:4623
+COMPLETE static_k5: accuracy=0.660 attempts=100 elapsed_min=25.6
+FRESH100 AUDIT {
+  "status": "completed",
+  "arms": {
+    "adaptive": {
+      "gross_evaluation_attempts": 101,
+      "finished": 101,
+      "completed": true,
+      "repeated_or_interrupted_gross_work": 1
+    },
+    "static_k4": {
+      "gross_evaluation_attempts": 100,
+      "finished": 100,
+      "completed": true,
+      "repeated_or_interrupted_gross_work": 0
+    },
+    "static_k5": {
+      "gross_evaluation_attempts": 100,
+      "finished": 100,
+      "completed": true,
+      "repeated_or_interrupted_gross_work": 0
+    }
+  },
+  "deadline_unix": 1792534497.779681,
+  "official_test_split_loaded": false,
+  "all_complete": true
+}
+FRESH100 RUNNER: notebook finished.

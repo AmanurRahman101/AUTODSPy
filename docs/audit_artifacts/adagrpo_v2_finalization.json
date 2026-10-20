@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "graphify_exit": 0,
+  "diff_check_exit": 0,
+  "diff_output": "warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/DECISIONS.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'graphify-out/.graphify_labels.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'graphify-out/GRAPH_REPORT.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'graphify-out/graph.html', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'graphify-out/manifest.json', LF will be replaced by CRLF the next time Git touches it\n",
+  "suite_status": "completed",
+  "preservation_files": 183,
+  "audited_runs": 4
+}

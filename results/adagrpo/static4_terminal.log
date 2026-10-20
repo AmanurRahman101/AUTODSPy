@@ -1,0 +1,352 @@
+AdaGRPO matched Static-K=4 local pilot | seed 42 | 20 episodes | 80 training attempts
+Validation only: 20 questions at episodes 0, 10, 20. Final test split is NOT loaded.
+Log: C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\results\adagrpo\static4_terminal.log
+Python: 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)] 
+Packages: {'torch': '2.6.0+cu124', 'transformers': '5.17.0', 'dspy': '3.3.1', 'datasets': '5.0.1', 'numpy': '2.4.6', 'matplotlib': '3.11.2'} 
+CUDA: True
+Definitions only. Configuration: {'protocol': 'adagrpo-gsm8k-numeric-figure2-v1', 'dataset': 'gsm8k', 'dataset_name': 'openai/gsm8k', 'dataset_config': 'main', 'dataset_revision': None, 'data_seed': 42, 'seed': 42, 'preset': 'smoke', 'num_episodes': 2, 'train_pool_size': 10, 'validation_size': 2, 'validation_interval': 2, 'schedule_episodes': 200, 'test_scope': 'full_official', 'allocation_mode': 'adaptive', 'static_k': 5, 'k_min': 2, 'k_max': 15, 'probe_size': 2, 'expansion_size': 2, 'all_correct_min': 4, 'concentration_min': 4, 'concentration_neff': 1.25, 'contrast_epsilon': 1e-12, 'adaptive_budget_per_episode': 4, 'training_budget': 8, 'controller_version': 'sequential-credit-v1', 'policy_model': 'gpt2', 'policy_revision': '607a30d783dfa663caf39e06633721c8d4cfcd7e', 'policy_device': 'cuda', 'policy_dropout': False, 'max_policy_tokens': 1024, 'max_pipeline_steps': 3, 'policy_sampling': 'restricted-first-token-multinomial', 'learning_rate': 1e-05, 'optimizer': 'Adam', 'loss': 'negative-sum-logprob-times-centered-reward', 'reward_mode': 'numeric_exact', 'semantic_fallback': False, 'cache': False, 'ollama_model': 'llama3.2:3b', 'ollama_host': 'http://localhost:11434', 'ollama_num_gpu': 0, 'ollama_num_ctx': 2048, 'execution_max_tokens': 512, 'execution_temperature': 0.0, 'request_timeout': 180, 'results_root': 'results/adagrpo', 'checkpoint_interval': 5, 'evaluation_seed_offset': 100000, 'wall_limit_seconds': 900}
+AdaGRPO definitions ready. No model initialization, training, or testing launched.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:   5%|4         | 7/148 [00:00<00:02, 57.59it/s]Loading weights:   9%|8         | 13/148 [00:00<00:02, 48.92it/s]Loading weights:  12%|#2        | 18/148 [00:00<00:04, 28.36it/s]Loading weights: 100%|##########| 148/148 [00:00<00:00, 259.48it/s]
+RUN DIRECTORY: results\adagrpo\gsm8k\static_k4\seed42\pilot\20261020T134004-f1126598
+19:40:05 START evaluation episode=0 candidate=None question=gsm8k:train:5514
+19:40:31 DONE evaluation episode=0 candidate=None question=gsm8k:train:5514 reward= 1.0 seconds= 26.6
+19:40:31 START evaluation episode=0 candidate=None question=gsm8k:train:5809
+19:40:50 DONE evaluation episode=0 candidate=None question=gsm8k:train:5809 reward= 0.0 seconds= 18.9
+19:40:50 START evaluation episode=0 candidate=None question=gsm8k:train:5517
+19:41:05 DONE evaluation episode=0 candidate=None question=gsm8k:train:5517 reward= 1.0 seconds= 15.1
+19:41:05 START evaluation episode=0 candidate=None question=gsm8k:train:5941
+19:41:22 DONE evaluation episode=0 candidate=None question=gsm8k:train:5941 reward= 1.0 seconds= 17.2
+19:41:22 START evaluation episode=0 candidate=None question=gsm8k:train:623
+19:41:47 DONE evaluation episode=0 candidate=None question=gsm8k:train:623 reward= 1.0 seconds= 24.8
+19:41:47 START evaluation episode=0 candidate=None question=gsm8k:train:1332
+19:42:02 DONE evaluation episode=0 candidate=None question=gsm8k:train:1332 reward= 1.0 seconds= 14.9
+19:42:02 START evaluation episode=0 candidate=None question=gsm8k:train:4943
+19:42:18 DONE evaluation episode=0 candidate=None question=gsm8k:train:4943 reward= 0.0 seconds= 16.0
+19:42:18 START evaluation episode=0 candidate=None question=gsm8k:train:6118
+19:42:33 DONE evaluation episode=0 candidate=None question=gsm8k:train:6118 reward= 1.0 seconds= 14.5
+19:42:33 START evaluation episode=0 candidate=None question=gsm8k:train:2126
+19:42:49 DONE evaluation episode=0 candidate=None question=gsm8k:train:2126 reward= 0.0 seconds= 16.6
+19:42:49 START evaluation episode=0 candidate=None question=gsm8k:train:5560
+19:43:06 DONE evaluation episode=0 candidate=None question=gsm8k:train:5560 reward= 1.0 seconds= 16.6
+19:43:06 START evaluation episode=0 candidate=None question=gsm8k:train:1890
+19:43:23 DONE evaluation episode=0 candidate=None question=gsm8k:train:1890 reward= 1.0 seconds= 17.0
+19:43:23 START evaluation episode=0 candidate=None question=gsm8k:train:2857
+19:43:42 DONE evaluation episode=0 candidate=None question=gsm8k:train:2857 reward= 1.0 seconds= 19.2
+19:43:42 START evaluation episode=0 candidate=None question=gsm8k:train:2691
+19:43:58 DONE evaluation episode=0 candidate=None question=gsm8k:train:2691 reward= 1.0 seconds= 15.4
+19:43:58 START evaluation episode=0 candidate=None question=gsm8k:train:907
+19:44:16 DONE evaluation episode=0 candidate=None question=gsm8k:train:907 reward= 1.0 seconds= 18.9
+19:44:16 START evaluation episode=0 candidate=None question=gsm8k:train:5429
+19:44:25 DONE evaluation episode=0 candidate=None question=gsm8k:train:5429 reward= 0.0 seconds= 8.8
+19:44:25 START evaluation episode=0 candidate=None question=gsm8k:train:5196
+19:44:40 DONE evaluation episode=0 candidate=None question=gsm8k:train:5196 reward= 1.0 seconds= 14.5
+19:44:40 START evaluation episode=0 candidate=None question=gsm8k:train:130
+19:44:55 DONE evaluation episode=0 candidate=None question=gsm8k:train:130 reward= 1.0 seconds= 14.9
+19:44:55 START evaluation episode=0 candidate=None question=gsm8k:train:6675
+19:45:09 DONE evaluation episode=0 candidate=None question=gsm8k:train:6675 reward= 1.0 seconds= 14.5
+19:45:09 START evaluation episode=0 candidate=None question=gsm8k:train:1938
+19:45:30 DONE evaluation episode=0 candidate=None question=gsm8k:train:1938 reward= 1.0 seconds= 21.0
+19:45:30 START evaluation episode=0 candidate=None question=gsm8k:train:6588
+19:45:42 DONE evaluation episode=0 candidate=None question=gsm8k:train:6588 reward= 1.0 seconds= 11.6
+19:45:44 START training episode=1 candidate=0 question=gsm8k:train:4423
+19:46:03 DONE training episode=1 candidate=0 question=gsm8k:train:4423 reward= 0.0 seconds= 19.2
+19:46:03 START training episode=1 candidate=1 question=gsm8k:train:4423
+19:46:25 DONE training episode=1 candidate=1 question=gsm8k:train:4423 reward= 0.0 seconds= 22.1
+19:46:25 START training episode=1 candidate=2 question=gsm8k:train:4423
+19:46:42 DONE training episode=1 candidate=2 question=gsm8k:train:4423 reward= 1.0 seconds= 16.4
+19:46:42 START training episode=1 candidate=3 question=gsm8k:train:4423
+19:47:01 DONE training episode=1 candidate=3 question=gsm8k:train:4423 reward= 0.0 seconds= 19.1
+static_k4 episode=1/20 K=4 stop=static_k reward=0.250 grad=2.296e+02
+19:47:04 START training episode=2 candidate=0 question=gsm8k:train:3812
+19:47:22 DONE training episode=2 candidate=0 question=gsm8k:train:3812 reward= 1.0 seconds= 18.2
+19:47:22 START training episode=2 candidate=1 question=gsm8k:train:3812
+19:47:40 DONE training episode=2 candidate=1 question=gsm8k:train:3812 reward= 1.0 seconds= 18.0
+19:47:40 START training episode=2 candidate=2 question=gsm8k:train:3812
+19:47:51 DONE training episode=2 candidate=2 question=gsm8k:train:3812 reward= 1.0 seconds= 11.1
+19:47:51 START training episode=2 candidate=3 question=gsm8k:train:3812
+19:48:09 DONE training episode=2 candidate=3 question=gsm8k:train:3812 reward= 1.0 seconds= 17.4
+static_k4 episode=2/20 K=4 stop=static_k reward=1.000 grad=0.000e+00
+19:48:12 START training episode=3 candidate=0 question=gsm8k:train:7079
+19:48:21 DONE training episode=3 candidate=0 question=gsm8k:train:7079 reward= 0.0 seconds= 9.8
+19:48:21 START training episode=3 candidate=1 question=gsm8k:train:7079
+19:48:35 DONE training episode=3 candidate=1 question=gsm8k:train:7079 reward= 1.0 seconds= 13.8
+19:48:35 START training episode=3 candidate=2 question=gsm8k:train:7079
+19:48:46 DONE training episode=3 candidate=2 question=gsm8k:train:7079 reward= 0.0 seconds= 10.7
+19:48:46 START training episode=3 candidate=3 question=gsm8k:train:7079
+19:49:05 DONE training episode=3 candidate=3 question=gsm8k:train:7079 reward= 0.0 seconds= 18.6
+static_k4 episode=3/20 K=4 stop=static_k reward=0.250 grad=2.043e+02
+19:49:07 START training episode=4 candidate=0 question=gsm8k:train:2663
+19:49:25 DONE training episode=4 candidate=0 question=gsm8k:train:2663 reward= 0.0 seconds= 17.1
+19:49:25 START training episode=4 candidate=1 question=gsm8k:train:2663
+19:49:40 DONE training episode=4 candidate=1 question=gsm8k:train:2663 reward= 0.0 seconds= 15.2
+19:49:40 START training episode=4 candidate=2 question=gsm8k:train:2663
+19:49:51 DONE training episode=4 candidate=2 question=gsm8k:train:2663 reward= 1.0 seconds= 11.0
+19:49:51 START training episode=4 candidate=3 question=gsm8k:train:2663
+19:50:06 DONE training episode=4 candidate=3 question=gsm8k:train:2663 reward= 0.0 seconds= 15.3
+static_k4 episode=4/20 K=4 stop=static_k reward=0.250 grad=2.200e+02
+19:50:09 START training episode=5 candidate=0 question=gsm8k:train:4423
+19:50:31 DONE training episode=5 candidate=0 question=gsm8k:train:4423 reward= 0.0 seconds= 21.4
+19:50:31 START training episode=5 candidate=1 question=gsm8k:train:4423
+19:50:42 DONE training episode=5 candidate=1 question=gsm8k:train:4423 reward= 0.0 seconds= 11.9
+19:50:42 START training episode=5 candidate=2 question=gsm8k:train:4423
+19:50:59 DONE training episode=5 candidate=2 question=gsm8k:train:4423 reward= 1.0 seconds= 16.3
+19:50:59 START training episode=5 candidate=3 question=gsm8k:train:4423
+19:51:16 DONE training episode=5 candidate=3 question=gsm8k:train:4423 reward= 1.0 seconds= 17.2
+static_k4 episode=5/20 K=4 stop=static_k reward=0.500 grad=3.282e+02
+19:51:22 START training episode=6 candidate=0 question=gsm8k:train:56
+19:51:44 DONE training episode=6 candidate=0 question=gsm8k:train:56 reward= 0.0 seconds= 21.8
+19:51:44 START training episode=6 candidate=1 question=gsm8k:train:56
+19:52:03 DONE training episode=6 candidate=1 question=gsm8k:train:56 reward= 0.0 seconds= 18.5
+19:52:03 START training episode=6 candidate=2 question=gsm8k:train:56
+19:52:21 DONE training episode=6 candidate=2 question=gsm8k:train:56 reward= 0.0 seconds= 18.7
+19:52:21 START training episode=6 candidate=3 question=gsm8k:train:56
+19:52:39 DONE training episode=6 candidate=3 question=gsm8k:train:56 reward= 0.0 seconds= 17.5
+static_k4 episode=6/20 K=4 stop=static_k reward=0.000 grad=0.000e+00
+19:52:42 START training episode=7 candidate=0 question=gsm8k:train:6330
+19:53:05 DONE training episode=7 candidate=0 question=gsm8k:train:6330 reward= 0.0 seconds= 23.4
+19:53:05 START training episode=7 candidate=1 question=gsm8k:train:6330
+19:53:20 DONE training episode=7 candidate=1 question=gsm8k:train:6330 reward= 1.0 seconds= 14.4
+19:53:20 START training episode=7 candidate=2 question=gsm8k:train:6330
+19:53:34 DONE training episode=7 candidate=2 question=gsm8k:train:6330 reward= 0.0 seconds= 14.4
+19:53:34 START training episode=7 candidate=3 question=gsm8k:train:6330
+19:53:49 DONE training episode=7 candidate=3 question=gsm8k:train:6330 reward= 1.0 seconds= 15.0
+static_k4 episode=7/20 K=4 stop=static_k reward=0.500 grad=2.808e+02
+19:53:52 START training episode=8 candidate=0 question=gsm8k:train:2477
+19:54:09 DONE training episode=8 candidate=0 question=gsm8k:train:2477 reward= 1.0 seconds= 16.1
+19:54:09 START training episode=8 candidate=1 question=gsm8k:train:2477
+19:54:24 DONE training episode=8 candidate=1 question=gsm8k:train:2477 reward= 1.0 seconds= 15.0
+19:54:24 START training episode=8 candidate=2 question=gsm8k:train:2477
+19:54:40 DONE training episode=8 candidate=2 question=gsm8k:train:2477 reward= 1.0 seconds= 16.2
+19:54:40 START training episode=8 candidate=3 question=gsm8k:train:2477
+19:54:53 DONE training episode=8 candidate=3 question=gsm8k:train:2477 reward= 1.0 seconds= 13.0
+static_k4 episode=8/20 K=4 stop=static_k reward=1.000 grad=0.000e+00
+19:54:56 START training episode=9 candidate=0 question=gsm8k:train:2271
+19:55:13 DONE training episode=9 candidate=0 question=gsm8k:train:2271 reward= 1.0 seconds= 16.6
+19:55:13 START training episode=9 candidate=1 question=gsm8k:train:2271
+19:55:26 DONE training episode=9 candidate=1 question=gsm8k:train:2271 reward= 1.0 seconds= 13.8
+19:55:26 START training episode=9 candidate=2 question=gsm8k:train:2271
+19:55:35 DONE training episode=9 candidate=2 question=gsm8k:train:2271 reward= 0.0 seconds= 9.0
+19:55:35 START training episode=9 candidate=3 question=gsm8k:train:2271
+19:55:50 DONE training episode=9 candidate=3 question=gsm8k:train:2271 reward= 1.0 seconds= 14.3
+static_k4 episode=9/20 K=4 stop=static_k reward=0.750 grad=1.593e+02
+19:55:53 START training episode=10 candidate=0 question=gsm8k:train:5302
+19:56:10 DONE training episode=10 candidate=0 question=gsm8k:train:5302 reward= 1.0 seconds= 17.4
+19:56:10 START training episode=10 candidate=1 question=gsm8k:train:5302
+19:56:26 DONE training episode=10 candidate=1 question=gsm8k:train:5302 reward= 1.0 seconds= 15.9
+19:56:26 START training episode=10 candidate=2 question=gsm8k:train:5302
+19:56:42 DONE training episode=10 candidate=2 question=gsm8k:train:5302 reward= 1.0 seconds= 15.8
+19:56:42 START training episode=10 candidate=3 question=gsm8k:train:5302
+19:56:57 DONE training episode=10 candidate=3 question=gsm8k:train:5302 reward= 1.0 seconds= 14.9
+static_k4 episode=10/20 K=4 stop=static_k reward=1.000 grad=0.000e+00
+19:57:04 START evaluation episode=10 candidate=None question=gsm8k:train:5514
+19:57:20 DONE evaluation episode=10 candidate=None question=gsm8k:train:5514 reward= 1.0 seconds= 15.9
+19:57:20 START evaluation episode=10 candidate=None question=gsm8k:train:5809
+19:57:35 DONE evaluation episode=10 candidate=None question=gsm8k:train:5809 reward= 0.0 seconds= 15.4
+19:57:35 START evaluation episode=10 candidate=None question=gsm8k:train:5517
+19:57:49 DONE evaluation episode=10 candidate=None question=gsm8k:train:5517 reward= 1.0 seconds= 14.5
+19:57:49 START evaluation episode=10 candidate=None question=gsm8k:train:5941
+19:58:06 DONE evaluation episode=10 candidate=None question=gsm8k:train:5941 reward= 1.0 seconds= 16.6
+19:58:06 START evaluation episode=10 candidate=None question=gsm8k:train:623
+19:58:25 DONE evaluation episode=10 candidate=None question=gsm8k:train:623 reward= 1.0 seconds= 18.8
+19:58:25 START evaluation episode=10 candidate=None question=gsm8k:train:1332
+19:58:40 DONE evaluation episode=10 candidate=None question=gsm8k:train:1332 reward= 1.0 seconds= 15.3
+19:58:40 START evaluation episode=10 candidate=None question=gsm8k:train:4943
+19:58:56 DONE evaluation episode=10 candidate=None question=gsm8k:train:4943 reward= 0.0 seconds= 16.3
+19:58:56 START evaluation episode=10 candidate=None question=gsm8k:train:6118
+19:59:17 DONE evaluation episode=10 candidate=None question=gsm8k:train:6118 reward= 0.0 seconds= 20.9
+19:59:17 START evaluation episode=10 candidate=None question=gsm8k:train:2126
+19:59:32 DONE evaluation episode=10 candidate=None question=gsm8k:train:2126 reward= 0.0 seconds= 14.2
+19:59:32 START evaluation episode=10 candidate=None question=gsm8k:train:5560
+19:59:43 DONE evaluation episode=10 candidate=None question=gsm8k:train:5560 reward= 1.0 seconds= 11.1
+19:59:43 START evaluation episode=10 candidate=None question=gsm8k:train:1890
+20:00:03 DONE evaluation episode=10 candidate=None question=gsm8k:train:1890 reward= 1.0 seconds= 19.9
+20:00:03 START evaluation episode=10 candidate=None question=gsm8k:train:2857
+20:00:15 DONE evaluation episode=10 candidate=None question=gsm8k:train:2857 reward= 1.0 seconds= 12.9
+20:00:15 START evaluation episode=10 candidate=None question=gsm8k:train:2691
+20:00:30 DONE evaluation episode=10 candidate=None question=gsm8k:train:2691 reward= 1.0 seconds= 15.1
+20:00:30 START evaluation episode=10 candidate=None question=gsm8k:train:907
+20:00:48 DONE evaluation episode=10 candidate=None question=gsm8k:train:907 reward= 1.0 seconds= 17.8
+20:00:48 START evaluation episode=10 candidate=None question=gsm8k:train:5429
+20:01:01 DONE evaluation episode=10 candidate=None question=gsm8k:train:5429 reward= 1.0 seconds= 12.9
+20:01:01 START evaluation episode=10 candidate=None question=gsm8k:train:5196
+20:01:19 DONE evaluation episode=10 candidate=None question=gsm8k:train:5196 reward= 0.0 seconds= 17.6
+20:01:19 START evaluation episode=10 candidate=None question=gsm8k:train:130
+20:01:34 DONE evaluation episode=10 candidate=None question=gsm8k:train:130 reward= 1.0 seconds= 15.1
+20:01:34 START evaluation episode=10 candidate=None question=gsm8k:train:6675
+20:01:54 DONE evaluation episode=10 candidate=None question=gsm8k:train:6675 reward= 1.0 seconds= 20.3
+20:01:54 START evaluation episode=10 candidate=None question=gsm8k:train:1938
+20:02:15 DONE evaluation episode=10 candidate=None question=gsm8k:train:1938 reward= 1.0 seconds= 21.2
+20:02:15 START evaluation episode=10 candidate=None question=gsm8k:train:6588
+20:02:27 DONE evaluation episode=10 candidate=None question=gsm8k:train:6588 reward= 1.0 seconds= 11.7
+20:02:31 START training episode=11 candidate=0 question=gsm8k:train:2428
+20:02:45 DONE training episode=11 candidate=0 question=gsm8k:train:2428 reward= 0.0 seconds= 13.3
+20:02:45 START training episode=11 candidate=1 question=gsm8k:train:2428
+20:02:58 DONE training episode=11 candidate=1 question=gsm8k:train:2428 reward= 0.0 seconds= 13.7
+20:02:58 START training episode=11 candidate=2 question=gsm8k:train:2428
+20:03:11 DONE training episode=11 candidate=2 question=gsm8k:train:2428 reward= 0.0 seconds= 12.3
+20:03:11 START training episode=11 candidate=3 question=gsm8k:train:2428
+20:03:23 DONE training episode=11 candidate=3 question=gsm8k:train:2428 reward= 0.0 seconds= 12.3
+static_k4 episode=11/20 K=4 stop=static_k reward=0.000 grad=0.000e+00
+20:03:26 START training episode=12 candidate=0 question=gsm8k:train:3418
+20:03:48 DONE training episode=12 candidate=0 question=gsm8k:train:3418 reward= 1.0 seconds= 21.3
+20:03:48 START training episode=12 candidate=1 question=gsm8k:train:3418
+20:04:03 DONE training episode=12 candidate=1 question=gsm8k:train:3418 reward= 1.0 seconds= 15.4
+20:04:03 START training episode=12 candidate=2 question=gsm8k:train:3418
+20:04:19 DONE training episode=12 candidate=2 question=gsm8k:train:3418 reward= 0.0 seconds= 15.9
+20:04:19 START training episode=12 candidate=3 question=gsm8k:train:3418
+20:04:35 DONE training episode=12 candidate=3 question=gsm8k:train:3418 reward= 0.0 seconds= 16.4
+static_k4 episode=12/20 K=4 stop=static_k reward=0.500 grad=1.817e+02
+20:04:38 START training episode=13 candidate=0 question=gsm8k:train:3082
+20:04:54 DONE training episode=13 candidate=0 question=gsm8k:train:3082 reward= 1.0 seconds= 16.0
+20:04:54 START training episode=13 candidate=1 question=gsm8k:train:3082
+20:05:10 DONE training episode=13 candidate=1 question=gsm8k:train:3082 reward= 0.0 seconds= 15.7
+20:05:10 START training episode=13 candidate=2 question=gsm8k:train:3082
+20:05:24 DONE training episode=13 candidate=2 question=gsm8k:train:3082 reward= 0.0 seconds= 14.0
+20:05:24 START training episode=13 candidate=3 question=gsm8k:train:3082
+20:05:38 DONE training episode=13 candidate=3 question=gsm8k:train:3082 reward= 1.0 seconds= 14.3
+static_k4 episode=13/20 K=4 stop=static_k reward=0.500 grad=2.622e+02
+20:05:42 START training episode=14 candidate=0 question=gsm8k:train:5302
+20:05:56 DONE training episode=14 candidate=0 question=gsm8k:train:5302 reward= 1.0 seconds= 14.8
+20:05:56 START training episode=14 candidate=1 question=gsm8k:train:5302
+20:06:12 DONE training episode=14 candidate=1 question=gsm8k:train:5302 reward= 1.0 seconds= 15.3
+20:06:12 START training episode=14 candidate=2 question=gsm8k:train:5302
+20:06:25 DONE training episode=14 candidate=2 question=gsm8k:train:5302 reward= 1.0 seconds= 13.2
+20:06:25 START training episode=14 candidate=3 question=gsm8k:train:5302
+20:06:34 DONE training episode=14 candidate=3 question=gsm8k:train:5302 reward= 1.0 seconds= 8.8
+static_k4 episode=14/20 K=4 stop=static_k reward=1.000 grad=0.000e+00
+20:06:37 START training episode=15 candidate=0 question=gsm8k:train:819
+20:07:00 DONE training episode=15 candidate=0 question=gsm8k:train:819 reward= 1.0 seconds= 23.4
+20:07:00 START training episode=15 candidate=1 question=gsm8k:train:819
+20:07:23 DONE training episode=15 candidate=1 question=gsm8k:train:819 reward= 1.0 seconds= 23.1
+20:07:23 START training episode=15 candidate=2 question=gsm8k:train:819
+20:07:44 DONE training episode=15 candidate=2 question=gsm8k:train:819 reward= 0.0 seconds= 20.6
+20:07:44 START training episode=15 candidate=3 question=gsm8k:train:819
+20:08:02 DONE training episode=15 candidate=3 question=gsm8k:train:819 reward= 1.0 seconds= 18.4
+static_k4 episode=15/20 K=4 stop=static_k reward=0.750 grad=1.932e+02
+20:08:10 START training episode=16 candidate=0 question=gsm8k:train:1601
+20:08:30 DONE training episode=16 candidate=0 question=gsm8k:train:1601 reward= 0.0 seconds= 20.9
+20:08:30 START training episode=16 candidate=1 question=gsm8k:train:1601
+20:08:44 DONE training episode=16 candidate=1 question=gsm8k:train:1601 reward= 0.0 seconds= 14.0
+20:08:44 START training episode=16 candidate=2 question=gsm8k:train:1601
+20:08:57 DONE training episode=16 candidate=2 question=gsm8k:train:1601 reward= 1.0 seconds= 12.8
+20:08:57 START training episode=16 candidate=3 question=gsm8k:train:1601
+20:09:17 DONE training episode=16 candidate=3 question=gsm8k:train:1601 reward= 0.0 seconds= 20.0
+static_k4 episode=16/20 K=4 stop=static_k reward=0.250 grad=1.840e+02
+20:09:20 START training episode=17 candidate=0 question=gsm8k:train:56
+20:09:34 DONE training episode=17 candidate=0 question=gsm8k:train:56 reward= 1.0 seconds= 13.9
+20:09:34 START training episode=17 candidate=1 question=gsm8k:train:56
+20:09:52 DONE training episode=17 candidate=1 question=gsm8k:train:56 reward= 1.0 seconds= 17.6
+20:09:52 START training episode=17 candidate=2 question=gsm8k:train:56
+20:10:04 DONE training episode=17 candidate=2 question=gsm8k:train:56 reward= 1.0 seconds= 12.1
+20:10:04 START training episode=17 candidate=3 question=gsm8k:train:56
+20:10:19 DONE training episode=17 candidate=3 question=gsm8k:train:56 reward= 1.0 seconds= 15.5
+static_k4 episode=17/20 K=4 stop=static_k reward=1.000 grad=0.000e+00
+20:10:22 START training episode=18 candidate=0 question=gsm8k:train:4423
+20:10:38 DONE training episode=18 candidate=0 question=gsm8k:train:4423 reward= 1.0 seconds= 15.5
+20:10:38 START training episode=18 candidate=1 question=gsm8k:train:4423
+20:10:54 DONE training episode=18 candidate=1 question=gsm8k:train:4423 reward= 1.0 seconds= 16.1
+20:10:54 START training episode=18 candidate=2 question=gsm8k:train:4423
+20:11:06 DONE training episode=18 candidate=2 question=gsm8k:train:4423 reward= 1.0 seconds= 11.6
+20:11:06 START training episode=18 candidate=3 question=gsm8k:train:4423
+20:11:17 DONE training episode=18 candidate=3 question=gsm8k:train:4423 reward= 1.0 seconds= 11.5
+static_k4 episode=18/20 K=4 stop=static_k reward=1.000 grad=0.000e+00
+20:11:20 START training episode=19 candidate=0 question=gsm8k:train:4389
+20:11:47 DONE training episode=19 candidate=0 question=gsm8k:train:4389 reward= 0.0 seconds= 26.9
+20:11:47 START training episode=19 candidate=1 question=gsm8k:train:4389
+20:12:08 DONE training episode=19 candidate=1 question=gsm8k:train:4389 reward= 0.0 seconds= 20.8
+20:12:08 START training episode=19 candidate=2 question=gsm8k:train:4389
+20:12:40 DONE training episode=19 candidate=2 question=gsm8k:train:4389 reward= 0.0 seconds= 31.4
+20:12:40 START training episode=19 candidate=3 question=gsm8k:train:4389
+20:12:57 DONE training episode=19 candidate=3 question=gsm8k:train:4389 reward= 1.0 seconds= 17.6
+static_k4 episode=19/20 K=4 stop=static_k reward=0.250 grad=4.992e+01
+20:13:00 START training episode=20 candidate=0 question=gsm8k:train:4306
+20:13:17 DONE training episode=20 candidate=0 question=gsm8k:train:4306 reward= 1.0 seconds= 16.3
+20:13:17 START training episode=20 candidate=1 question=gsm8k:train:4306
+20:13:29 DONE training episode=20 candidate=1 question=gsm8k:train:4306 reward= 0.0 seconds= 12.1
+20:13:29 START training episode=20 candidate=2 question=gsm8k:train:4306
+20:13:36 DONE training episode=20 candidate=2 question=gsm8k:train:4306 reward= 0.0 seconds= 7.2
+20:13:36 START training episode=20 candidate=3 question=gsm8k:train:4306
+20:13:49 DONE training episode=20 candidate=3 question=gsm8k:train:4306 reward= 1.0 seconds= 13.2
+static_k4 episode=20/20 K=4 stop=static_k reward=0.500 grad=2.415e+02
+20:13:56 START evaluation episode=20 candidate=None question=gsm8k:train:5514
+20:14:12 DONE evaluation episode=20 candidate=None question=gsm8k:train:5514 reward= 1.0 seconds= 15.1
+20:14:12 START evaluation episode=20 candidate=None question=gsm8k:train:5809
+20:14:29 DONE evaluation episode=20 candidate=None question=gsm8k:train:5809 reward= 1.0 seconds= 17.4
+20:14:29 START evaluation episode=20 candidate=None question=gsm8k:train:5517
+20:14:42 DONE evaluation episode=20 candidate=None question=gsm8k:train:5517 reward= 1.0 seconds= 12.9
+20:14:42 START evaluation episode=20 candidate=None question=gsm8k:train:5941
+20:14:57 DONE evaluation episode=20 candidate=None question=gsm8k:train:5941 reward= 1.0 seconds= 15.1
+20:14:57 START evaluation episode=20 candidate=None question=gsm8k:train:623
+20:15:15 DONE evaluation episode=20 candidate=None question=gsm8k:train:623 reward= 1.0 seconds= 17.8
+20:15:15 START evaluation episode=20 candidate=None question=gsm8k:train:1332
+20:15:24 DONE evaluation episode=20 candidate=None question=gsm8k:train:1332 reward= 1.0 seconds= 9.6
+20:15:24 START evaluation episode=20 candidate=None question=gsm8k:train:4943
+20:15:40 DONE evaluation episode=20 candidate=None question=gsm8k:train:4943 reward= 0.0 seconds= 15.1
+20:15:40 START evaluation episode=20 candidate=None question=gsm8k:train:6118
+20:15:50 DONE evaluation episode=20 candidate=None question=gsm8k:train:6118 reward= 1.0 seconds= 10.1
+20:15:50 START evaluation episode=20 candidate=None question=gsm8k:train:2126
+20:16:03 DONE evaluation episode=20 candidate=None question=gsm8k:train:2126 reward= 0.0 seconds= 13.3
+20:16:03 START evaluation episode=20 candidate=None question=gsm8k:train:5560
+20:16:12 DONE evaluation episode=20 candidate=None question=gsm8k:train:5560 reward= 0.0 seconds= 9.5
+20:16:12 START evaluation episode=20 candidate=None question=gsm8k:train:1890
+20:16:30 DONE evaluation episode=20 candidate=None question=gsm8k:train:1890 reward= 1.0 seconds= 17.1
+20:16:30 START evaluation episode=20 candidate=None question=gsm8k:train:2857
+20:16:41 DONE evaluation episode=20 candidate=None question=gsm8k:train:2857 reward= 1.0 seconds= 11.9
+20:16:41 START evaluation episode=20 candidate=None question=gsm8k:train:2691
+20:16:52 DONE evaluation episode=20 candidate=None question=gsm8k:train:2691 reward= 1.0 seconds= 10.1
+20:16:52 START evaluation episode=20 candidate=None question=gsm8k:train:907
+20:17:07 DONE evaluation episode=20 candidate=None question=gsm8k:train:907 reward= 1.0 seconds= 15.4
+20:17:07 START evaluation episode=20 candidate=None question=gsm8k:train:5429
+20:17:16 DONE evaluation episode=20 candidate=None question=gsm8k:train:5429 reward= 1.0 seconds= 9.5
+20:17:16 START evaluation episode=20 candidate=None question=gsm8k:train:5196
+20:17:33 DONE evaluation episode=20 candidate=None question=gsm8k:train:5196 reward= 0.0 seconds= 16.6
+20:17:33 START evaluation episode=20 candidate=None question=gsm8k:train:130
+20:17:46 DONE evaluation episode=20 candidate=None question=gsm8k:train:130 reward= 1.0 seconds= 12.9
+20:17:46 START evaluation episode=20 candidate=None question=gsm8k:train:6675
+20:17:56 DONE evaluation episode=20 candidate=None question=gsm8k:train:6675 reward= 1.0 seconds= 10.0
+20:17:56 START evaluation episode=20 candidate=None question=gsm8k:train:1938
+20:18:16 DONE evaluation episode=20 candidate=None question=gsm8k:train:1938 reward= 1.0 seconds= 19.8
+20:18:16 START evaluation episode=20 candidate=None question=gsm8k:train:6588
+20:18:27 DONE evaluation episode=20 candidate=None question=gsm8k:train:6588 reward= 1.0 seconds= 11.0
+FINAL RESULT {
+  "status": "completed",
+  "completed": true,
+  "run_dir": "results\\adagrpo\\gsm8k\\static_k4\\seed42\\pilot\\20261020T134004-f1126598",
+  "test_count": 0,
+  "gross_training_attempts": 80,
+  "best": {
+    "episode": 0,
+    "score": 0.8,
+    "pointer": {
+      "checkpoint": "checkpoints\\best_aaddcd81a3a54ce3a8e357e4d2da198a.pt",
+      "sha256": "9abb0035835036dadf94368faf44d707bcd289dd7e0f3c44400df721d89ec0eb",
+      "episode": 0
+    }
+  },
+  "comparison": [
+    {
+      "method": "adaptive",
+      "gross_training_attempts": 80,
+      "best_validation": 0.8,
+      "best_episode": 0,
+      "test_count": 0
+    },
+    {
+      "method": "static_k4",
+      "gross_training_attempts": 80,
+      "best_validation": 0.8,
+      "best_episode": 0,
+      "test_count": 0
+    },
+    {
+      "method": "static_k5",
+      "gross_training_attempts": 100,
+      "best_validation": 0.95,
+      "best_episode": 10,
+      "test_count": 0
+    }
+  ],
+  "scope": "Single-seed validation screening; no final research acceptance claim"
+}
+Pilot terminal finished. Full log: C:\Users\rahma\OneDrive\Documents\Projects\University Projects\CSE498R\AUTODSPy\results\adagrpo\static4_terminal.log

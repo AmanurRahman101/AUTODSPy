@@ -1,0 +1,77 @@
+{
+  "config": {
+    "dataset": "gsm8k",
+    "dataset_name": "openai/gsm8k",
+    "dataset_config": "main",
+    "dataset_revision": "740312add88f781978c0658806c59bc2815b9866",
+    "policy_model": "gpt2",
+    "policy_revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+    "k": 5,
+    "seed": 42,
+    "preset": "baseline",
+    "num_episodes": 200,
+    "train_pool_size": 200,
+    "validation_size": 50,
+    "test_size": 200,
+    "schedule_episodes": 200,
+    "learning_rate": 1e-05,
+    "checkpoint_interval": 10,
+    "validation_interval": 50,
+    "policy_device": "cuda",
+    "ollama_model": "llama3.1:8b",
+    "ollama_host": "http://localhost:11434",
+    "ollama_num_gpu": null,
+    "ollama_num_ctx": 4096,
+    "execution_max_tokens": 512,
+    "execution_temperature": 0.0,
+    "request_timeout": 180,
+    "results_root": "results",
+    "protocol": "gsm8k-static-figure2-v1",
+    "policy_dropout": false,
+    "policy_sampling": "restricted-first-token-multinomial",
+    "loss": "negative-sum-logprob-times-centered-reward",
+    "optimizer": "Adam",
+    "cache": false,
+    "semantic_fallback": true,
+    "max_policy_tokens": 1024,
+    "max_pipeline_steps": 3,
+    "evaluation_sampling": "multinomial-with-fixed-split-seed",
+    "evaluation_seed_offset": 100000
+  },
+  "runs": [
+    {
+      "path": "results/gsm8k/k5/seed42/baseline/20261018T142836-9c70ee33",
+      "k": 5,
+      "checkpoints": {
+        "best_checkpoint": "results/gsm8k/k5/seed42/baseline/20261018T142836-9c70ee33/checkpoints/episode_0050_be404329.pt",
+        "episode_200": "results/gsm8k/k5/seed42/baseline/20261018T142836-9c70ee33/checkpoints/episode_0200_ca5d13fe.pt"
+      }
+    },
+    {
+      "path": "results/gsm8k/k8/seed42/baseline/20261018T163030-42d8d53a",
+      "k": 8,
+      "checkpoints": {
+        "best_checkpoint": "results/gsm8k/k8/seed42/baseline/20261018T163030-42d8d53a/checkpoints/episode_0050_f8a6b252.pt",
+        "episode_200": "results/gsm8k/k8/seed42/baseline/20261018T163030-42d8d53a/checkpoints/episode_0200_a487290b.pt"
+      }
+    },
+    {
+      "path": "results/gsm8k/k10/seed42/baseline/20261019T072118-7d27e283",
+      "k": 10,
+      "checkpoints": {
+        "best_checkpoint": "results/gsm8k/k10/seed42/baseline/20261019T072118-7d27e283/checkpoints/episode_0200_3b449a94.pt",
+        "episode_200": "results/gsm8k/k10/seed42/baseline/20261019T072118-7d27e283/checkpoints/episode_0200_3b449a94.pt"
+      }
+    },
+    {
+      "path": "results/gsm8k/k15/seed42/baseline/20261019T102318-34635b05",
+      "k": 15,
+      "checkpoints": {
+        "best_checkpoint": "results/gsm8k/k15/seed42/baseline/20261019T102318-34635b05/checkpoints/episode_0150_7abc389d.pt",
+        "episode_200": "results/gsm8k/k15/seed42/baseline/20261019T102318-34635b05/checkpoints/episode_0200_34b896e4.pt"
+      }
+    }
+  ],
+  "history_scope": "Complete 200-episode training history in both collections",
+  "entropy": "Per-group empirical sampled-selection entropy, not policy entropy"
+}

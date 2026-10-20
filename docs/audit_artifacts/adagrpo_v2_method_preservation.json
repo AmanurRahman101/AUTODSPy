@@ -1,0 +1,21 @@
+{
+  "unchanged_cells": {
+    "7": true,
+    "9": true,
+    "10": true,
+    "14": true,
+    "15": true,
+    "19": true
+  },
+  "unchanged_functions": {
+    "action_log_probs": true,
+    "replay_log_probs": true,
+    "group_advantages": true,
+    "figure2_loss": true,
+    "update_policy": true,
+    "compute_reward": true,
+    "execute_pipeline": true,
+    "initialize_policy": true
+  },
+  "scope": "Structural/source identity; controller/sampling/evaluation intentionally differ"
+}

@@ -1,0 +1,163 @@
+{
+  "protocol": "adagrpo-gsm8k-numeric-figure2-v2",
+  "notebook_sha256": "5fd062295bdb8007f24681088311b47670a707910aabc9fa889b16d304fad10a",
+  "notebook_code_sha256": "313420046f0ac3fc08bf2069420495555f91569465767d1a2d01fe6d25e26a49",
+  "created_unix": 1792508948.98683,
+  "deadline_unix": 1792516148.98683,
+  "membership_manifest": "results\\adagrpo_v2\\membership\\screen_v2.json",
+  "membership_sha256": "f19fd8efc435f9c2cbe2bf9fe7b8c013c489c22a6552f0fc96ac7b7882ff112f",
+  "dataset_revision": "740312add88f781978c0658806c59bc2815b9866",
+  "steps": [
+    {
+      "stage": 0,
+      "preset": "smoke",
+      "method": "adaptive",
+      "run_dir": "results\\adagrpo_v2\\gsm8k\\adaptive\\seed42\\smoke\\20261020T150926-5cd901bb",
+      "completed": true,
+      "recovery_pause_done": true,
+      "live_validation_recovery": {
+        "passed": true,
+        "gross_evaluation_attempts": 4,
+        "repeated_evaluation_attempts": 0,
+        "optimizer_updates": 2
+      },
+      "status": "completed",
+      "gross_training_attempts": 6
+    },
+    {
+      "stage": 1,
+      "preset": "screen",
+      "method": "static_k5",
+      "run_dir": "results\\adagrpo_v2\\gsm8k\\static_k5\\seed43\\screen\\20261020T151438-80082ce9",
+      "completed": true,
+      "status": "completed",
+      "gross_training_attempts": 60
+    },
+    {
+      "stage": 2,
+      "preset": "screen",
+      "method": "adaptive",
+      "run_dir": "results\\adagrpo_v2\\gsm8k\\adaptive\\seed43\\screen\\20261020T154041-268c0802",
+      "completed": true,
+      "status": "completed",
+      "gross_training_attempts": 42
+    },
+    {
+      "stage": 3,
+      "preset": "screen",
+      "method": "static_k4",
+      "run_dir": "results\\adagrpo_v2\\gsm8k\\static_k4\\seed43\\screen\\20261020T160405-56ec5e3e",
+      "completed": true,
+      "status": "completed",
+      "gross_training_attempts": 48
+    }
+  ],
+  "status": "completed",
+  "budget_scope": "All new local model work: setup, smoke, training, validation, failures and resume; pauses do not reset deadline",
+  "gate": {
+    "promising": true,
+    "status": "screening_only",
+    "conditions": {
+      "compute": true,
+      "accuracy": true,
+      "improves_initial": true,
+      "beats_static4": true,
+      "finite_updates": true,
+      "nonzero_gradient": true,
+      "varied_k": true
+    },
+    "pipeline_saving": 0.30000000000000004,
+    "accuracy": {
+      "adaptive": 0.85,
+      "static_k4": 0.8,
+      "static_k5": 0.8
+    },
+    "initial_accuracy": 0.8,
+    "no_final_test_access": true,
+    "caveat": "One fresh seed and twenty validation questions; not formal acceptance"
+  },
+  "finished_unix": 1792513677.722343,
+  "comparison": [
+    {
+      "method": "adaptive",
+      "best": {
+        "episode": 12,
+        "score": 0.85,
+        "pointer": {
+          "checkpoint": "checkpoints\\best_627d3190a85d4d5ba721a8367713b130.pt",
+          "sha256": "b33893a26d7290bc62c4176878715f7d2e7a5d63b25ae46c3961f29e104431b9",
+          "episode": 12
+        }
+      },
+      "gross_training_attempts": 42,
+      "actual_k": [
+        4,
+        4,
+        4,
+        2,
+        2,
+        6,
+        2,
+        2,
+        2,
+        2,
+        6,
+        6
+      ]
+    },
+    {
+      "method": "static_k4",
+      "best": {
+        "episode": 0,
+        "score": 0.8,
+        "pointer": {
+          "checkpoint": "checkpoints\\best_c23f2f6aa0b647ef8f35dc55681d63e2.pt",
+          "sha256": "27b15b48baf2f2d654c992db09717290bf143b032f1489ef0849eeb0b555e3f9",
+          "episode": 0
+        }
+      },
+      "gross_training_attempts": 48,
+      "actual_k": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "method": "static_k5",
+      "best": {
+        "episode": 0,
+        "score": 0.8,
+        "pointer": {
+          "checkpoint": "checkpoints\\best_f875fab3e46949e9a4004791ea1e2999.pt",
+          "sha256": "2f7fb174f9805ffa2fa8d53fbaaddb687f259678f070f33048488bdcff305251",
+          "episode": 0
+        }
+      },
+      "gross_training_attempts": 60,
+      "actual_k": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
+    }
+  ]
+}

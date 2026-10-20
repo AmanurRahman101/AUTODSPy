@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "concurrent_child_rejected": true,
+  "released_lock_reusable": true,
+  "process_crash_releases_lock": true,
+  "platform": "nt"
+}

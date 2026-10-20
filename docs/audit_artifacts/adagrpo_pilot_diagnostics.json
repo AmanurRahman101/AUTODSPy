@@ -1,0 +1,450 @@
+{
+  "regenerated_at": "2026-10-20T12:40:28.063830+00:00",
+  "notebook_sha256": "bcbb65ec4d2ee057eb5d2eae0744f0395c3875ebdad6c442a2a079aa1550ef5a",
+  "python_version": "3.11.9",
+  "adaptive_pilot_verifier": "valid",
+  "adaptive": {
+    "status": "completed",
+    "completed": true,
+    "episodes": 20,
+    "gross_training_attempts": 80,
+    "budget_ceiling": 80,
+    "discarded": 0,
+    "test_count": 0,
+    "journal_resources_complete": true,
+    "actual_k": [
+      4,
+      4,
+      2,
+      4,
+      4,
+      4,
+      2,
+      4,
+      4,
+      4,
+      15,
+      4,
+      4,
+      4,
+      4,
+      5,
+      2,
+      2,
+      2,
+      2
+    ],
+    "stop_reasons": {
+      "useful_contrast": 11,
+      "all_correct": 5,
+      "allowance_reached": 4
+    },
+    "best": {
+      "episode": 0,
+      "score": 0.8,
+      "pointer": {
+        "checkpoint": "checkpoints\\best_b431a4f2b07345809603aae456ce5913.pt",
+        "sha256": "79783af901f001602cb2d83afbf0cdc403fe7e4cb25ab5dfdd5f5e4151db5e74",
+        "episode": 0
+      }
+    },
+    "validation_checks": [
+      {
+        "episode": 0,
+        "questions": 20,
+        "accuracy": 0.8,
+        "seconds": 316.68
+      },
+      {
+        "episode": 10,
+        "questions": 20,
+        "accuracy": 0.8,
+        "seconds": 311.87
+      },
+      {
+        "episode": 20,
+        "questions": 20,
+        "accuracy": 0.8,
+        "seconds": 295.44
+      }
+    ],
+    "zero_advantage_groups": 9,
+    "informative_gradient_episodes": 11,
+    "training_seconds": 1320.5,
+    "validation_seconds": 924.0,
+    "wall_seconds": 2552.0,
+    "peak_gpu_bytes": 3096927232,
+    "k_ceiling_episodes": [
+      11
+    ],
+    "allowance_reached_episodes": [
+      11,
+      17,
+      18,
+      19
+    ],
+    "per_episode": [
+      {
+        "episode": 1,
+        "k": 4,
+        "stop": "useful_contrast",
+        "reward_mean": 0.25,
+        "rewards": [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "zero_adv": false,
+        "grad": 229.5739,
+        "neff_initial": 6.2476,
+        "credit_contrast": 1.5,
+        "class_count": 4,
+        "secs": 79.1
+      },
+      {
+        "episode": 2,
+        "k": 4,
+        "stop": "all_correct",
+        "reward_mean": 1.0,
+        "rewards": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "zero_adv": true,
+        "grad": 0.0,
+        "neff_initial": 6.4853,
+        "credit_contrast": 0.0,
+        "class_count": 3,
+        "secs": 63.9
+      },
+      {
+        "episode": 3,
+        "k": 2,
+        "stop": "useful_contrast",
+        "reward_mean": 0.5,
+        "rewards": [
+          0.0,
+          1.0
+        ],
+        "zero_adv": false,
+        "grad": 121.7295,
+        "neff_initial": 7.5651,
+        "credit_contrast": 1.0,
+        "class_count": 2,
+        "secs": 22.9
+      },
+      {
+        "episode": 4,
+        "k": 4,
+        "stop": "useful_contrast",
+        "reward_mean": 0.5,
+        "rewards": [
+          1.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "zero_adv": false,
+        "grad": 253.509,
+        "neff_initial": 6.3268,
+        "credit_contrast": 2.0,
+        "class_count": 3,
+        "secs": 55.0
+      },
+      {
+        "episode": 5,
+        "k": 4,
+        "stop": "useful_contrast",
+        "reward_mean": 0.5,
+        "rewards": [
+          1.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "zero_adv": false,
+        "grad": 264.6836,
+        "neff_initial": 4.7379,
+        "credit_contrast": 2.0,
+        "class_count": 2,
+        "secs": 57.9
+      },
+      {
+        "episode": 6,
+        "k": 4,
+        "stop": "useful_contrast",
+        "reward_mean": 0.5,
+        "rewards": [
+          1.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "zero_adv": false,
+        "grad": 240.4604,
+        "neff_initial": 8.0133,
+        "credit_contrast": 2.0,
+        "class_count": 4,
+        "secs": 70.1
+      },
+      {
+        "episode": 7,
+        "k": 2,
+        "stop": "useful_contrast",
+        "reward_mean": 0.5,
+        "rewards": [
+          0.0,
+          1.0
+        ],
+        "zero_adv": false,
+        "grad": 129.3234,
+        "neff_initial": 5.5985,
+        "credit_contrast": 1.0,
+        "class_count": 2,
+        "secs": 39.1
+      },
+      {
+        "episode": 8,
+        "k": 4,
+        "stop": "all_correct",
+        "reward_mean": 1.0,
+        "rewards": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "zero_adv": true,
+        "grad": 0.0,
+        "neff_initial": 3.8511,
+        "credit_contrast": 0.0,
+        "class_count": 3,
+        "secs": 60.0
+      },
+      {
+        "episode": 9,
+        "k": 4,
+        "stop": "useful_contrast",
+        "reward_mean": 0.75,
+        "rewards": [
+          1.0,
+          1.0,
+          0.0,
+          1.0
+        ],
+        "zero_adv": false,
+        "grad": 180.8783,
+        "neff_initial": 5.4613,
+        "credit_contrast": 1.5,
+        "class_count": 4,
+        "secs": 55.3
+      },
+      {
+        "episode": 10,
+        "k": 4,
+        "stop": "useful_contrast",
+        "reward_mean": 0.75,
+        "rewards": [
+          1.0,
+          1.0,
+          1.0,
+          0.0
+        ],
+        "zero_adv": false,
+        "grad": 278.944,
+        "neff_initial": 3.0222,
+        "credit_contrast": 1.5,
+        "class_count": 3,
+        "secs": 72.3
+      },
+      {
+        "episode": 11,
+        "k": 15,
+        "stop": "allowance_reached",
+        "reward_mean": 0.0,
+        "rewards": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "zero_adv": true,
+        "grad": 0.0,
+        "neff_initial": 2.6886,
+        "credit_contrast": 0.0,
+        "class_count": 5,
+        "secs": 221.4
+      },
+      {
+        "episode": 12,
+        "k": 4,
+        "stop": "all_correct",
+        "reward_mean": 1.0,
+        "rewards": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "zero_adv": true,
+        "grad": 0.0,
+        "neff_initial": 2.2942,
+        "credit_contrast": 0.0,
+        "class_count": 1,
+        "secs": 70.4
+      },
+      {
+        "episode": 13,
+        "k": 4,
+        "stop": "all_correct",
+        "reward_mean": 1.0,
+        "rewards": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "zero_adv": true,
+        "grad": 0.0,
+        "neff_initial": 2.2585,
+        "credit_contrast": 0.0,
+        "class_count": 3,
+        "secs": 59.7
+      },
+      {
+        "episode": 14,
+        "k": 4,
+        "stop": "all_correct",
+        "reward_mean": 1.0,
+        "rewards": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "zero_adv": true,
+        "grad": 0.0,
+        "neff_initial": 2.2546,
+        "credit_contrast": 0.0,
+        "class_count": 2,
+        "secs": 62.1
+      },
+      {
+        "episode": 15,
+        "k": 4,
+        "stop": "useful_contrast",
+        "reward_mean": 0.25,
+        "rewards": [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "zero_adv": false,
+        "grad": 67.2639,
+        "neff_initial": 2.7552,
+        "credit_contrast": 0.5,
+        "class_count": 2,
+        "secs": 89.9
+      },
+      {
+        "episode": 16,
+        "k": 5,
+        "stop": "useful_contrast",
+        "reward_mean": 0.2,
+        "rewards": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "zero_adv": false,
+        "grad": 209.7192,
+        "neff_initial": 5.19,
+        "credit_contrast": 1.6,
+        "class_count": 4,
+        "secs": 104.6
+      },
+      {
+        "episode": 17,
+        "k": 2,
+        "stop": "allowance_reached",
+        "reward_mean": 1.0,
+        "rewards": [
+          1.0,
+          1.0
+        ],
+        "zero_adv": true,
+        "grad": 0.0,
+        "neff_initial": 2.8521,
+        "credit_contrast": 0.0,
+        "class_count": 2,
+        "secs": 29.3
+      },
+      {
+        "episode": 18,
+        "k": 2,
+        "stop": "allowance_reached",
+        "reward_mean": 1.0,
+        "rewards": [
+          1.0,
+          1.0
+        ],
+        "zero_adv": true,
+        "grad": 0.0,
+        "neff_initial": 2.2153,
+        "credit_contrast": 0.0,
+        "class_count": 1,
+        "secs": 35.9
+      },
+      {
+        "episode": 19,
+        "k": 2,
+        "stop": "allowance_reached",
+        "reward_mean": 1.0,
+        "rewards": [
+          1.0,
+          1.0
+        ],
+        "zero_adv": true,
+        "grad": 0.0,
+        "neff_initial": 2.1569,
+        "credit_contrast": 0.0,
+        "class_count": 2,
+        "secs": 35.3
+      },
+      {
+        "episode": 20,
+        "k": 2,
+        "stop": "useful_contrast",
+        "reward_mean": 0.5,
+        "rewards": [
+          0.0,
+          1.0
+        ],
+        "zero_adv": false,
+        "grad": 137.2558,
+        "neff_initial": 2.3997,
+        "credit_contrast": 1.0,
+        "class_count": 2,
+        "secs": 36.1
+      }
+    ]
+  },
+  "note": "Regenerated after the user-approved resumed segment completed; supersedes the interim wall-limited snapshot. The launcher process exited 1 after the success record with no traceback for the second time; all evidence is confirmed by fresh-process verifier runs."
+}

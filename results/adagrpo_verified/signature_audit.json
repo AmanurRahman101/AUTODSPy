@@ -1,0 +1,39 @@
+{
+  "signature_actions": 15,
+  "distinct_first_token_ids": 8,
+  "groups": {
+    "25652": [
+      "question -> answer",
+      "question -> reasoning",
+      "question -> hypothesis"
+    ],
+    "5239": [
+      "text -> summary",
+      "text -> response"
+    ],
+    "45573": [
+      "problem -> solution",
+      "problem_description -> explanation"
+    ],
+    "22866": [
+      "context -> summary",
+      "context -> briefing"
+    ],
+    "4775": [
+      "word_problem -> solution"
+    ],
+    "11018": [
+      "math_problem -> answer"
+    ],
+    "16963": [
+      "prompt -> response",
+      "prompt -> generated_text"
+    ],
+    "22766": [
+      "query -> response",
+      "query -> generated_text"
+    ]
+  },
+  "source_run": "results\\adagrpo_v2\\gsm8k\\adaptive\\seed43\\screen\\20261020T154041-268c0802",
+  "source_config_sha256": "ec7c2c97940008129e8e485bfc857521e2ea3efa675726a7e5ef6990b3ca64ab"
+}

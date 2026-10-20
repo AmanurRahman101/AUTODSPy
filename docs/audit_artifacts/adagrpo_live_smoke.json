@@ -1,0 +1,16 @@
+{
+  "preset": "smoke",
+  "run_dirs": [
+    "results\\adagrpo\\gsm8k\\static_k5\\seed42\\smoke\\20261020T104314-eba4c922",
+    "results\\adagrpo\\gsm8k\\adaptive\\seed42\\smoke\\20261020T104739-49b448c1"
+  ],
+  "gate": {
+    "promising": true,
+    "status": "screening_only",
+    "validation_difference": 0.0,
+    "pipeline_saving": 0.19999999999999996,
+    "measurable_learning_both_arms": true,
+    "no_final_test_access": true,
+    "caveat": "Small validation pilot; not proof of final noninferiority"
+  }
+}

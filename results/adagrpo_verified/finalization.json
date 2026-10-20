@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "notebook_sha256": "88af114af5813c9a365b4dda91557e35c041481485c5c04fc4d4d6ed738aeeae",
+  "code_sha256": "c922a4681cae531eca13df081ae0483d9a53fb55b6e859a12c7b10a2d14728bc",
+  "verified_checks": 227,
+  "comparison_checks": 192,
+  "preserved_files": 364,
+  "unchanged_experimental_functions": 32,
+  "preparation_status": "prepared",
+  "started_arms": 0,
+  "no_model_work": true,
+  "official_test_loaded": false,
+  "graphify_exit": 0,
+  "diff_check_exit": 0,
+  "graphify_limitation": "AST update does not parse notebook cells or semantically index documents; notebook source is checked directly",
+  "finalization_note": "A transient OneDrive write error while normalizing the generated graph manifest was resolved with atomic replacement; notebook and experiment artifacts were unaffected"
+}

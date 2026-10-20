@@ -1,0 +1,6 @@
+{
+  "generated_at": "2026-10-20T12:40:28.063830+00:00",
+  "notebook_sha256": "bcbb65ec4d2ee057eb5d2eae0744f0395c3875ebdad6c442a2a079aa1550ef5a",
+  "all_runs_whitebox_verified": "verify_run_artifacts passed for all 5 recorded runs",
+  "scope": "Smoke, static pilot, completed adaptive pilot (including resumed segment), and live recovery run"
+}

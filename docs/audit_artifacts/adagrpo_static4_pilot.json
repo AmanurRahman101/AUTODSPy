@@ -1,0 +1,40 @@
+{
+  "status": "completed",
+  "completed": true,
+  "run_dir": "results\\adagrpo\\gsm8k\\static_k4\\seed42\\pilot\\20261020T134004-f1126598",
+  "test_count": 0,
+  "gross_training_attempts": 80,
+  "best": {
+    "episode": 0,
+    "score": 0.8,
+    "pointer": {
+      "checkpoint": "checkpoints\\best_aaddcd81a3a54ce3a8e357e4d2da198a.pt",
+      "sha256": "9abb0035835036dadf94368faf44d707bcd289dd7e0f3c44400df721d89ec0eb",
+      "episode": 0
+    }
+  },
+  "comparison": [
+    {
+      "method": "adaptive",
+      "gross_training_attempts": 80,
+      "best_validation": 0.8,
+      "best_episode": 0,
+      "test_count": 0
+    },
+    {
+      "method": "static_k4",
+      "gross_training_attempts": 80,
+      "best_validation": 0.8,
+      "best_episode": 0,
+      "test_count": 0
+    },
+    {
+      "method": "static_k5",
+      "gross_training_attempts": 100,
+      "best_validation": 0.95,
+      "best_episode": 10,
+      "test_count": 0
+    }
+  ],
+  "scope": "Single-seed validation screening; no final research acceptance claim"
+}

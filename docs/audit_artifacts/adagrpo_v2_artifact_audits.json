@@ -1,0 +1,30 @@
+[
+  {
+    "run_dir": "results\\adagrpo_v2\\gsm8k\\adaptive\\seed42\\smoke\\20261020T150926-5cd901bb",
+    "status": "passed",
+    "method": "adaptive",
+    "preset": "smoke",
+    "test_count": 0
+  },
+  {
+    "run_dir": "results\\adagrpo_v2\\gsm8k\\static_k5\\seed43\\screen\\20261020T151438-80082ce9",
+    "status": "passed",
+    "method": "static_k5",
+    "preset": "screen",
+    "test_count": 0
+  },
+  {
+    "run_dir": "results\\adagrpo_v2\\gsm8k\\adaptive\\seed43\\screen\\20261020T154041-268c0802",
+    "status": "passed",
+    "method": "adaptive",
+    "preset": "screen",
+    "test_count": 0
+  },
+  {
+    "run_dir": "results\\adagrpo_v2\\gsm8k\\static_k4\\seed43\\screen\\20261020T160405-56ec5e3e",
+    "status": "passed",
+    "method": "static_k4",
+    "preset": "screen",
+    "test_count": 0
+  }
+]

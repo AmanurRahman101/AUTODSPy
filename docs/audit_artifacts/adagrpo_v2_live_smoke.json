@@ -1,0 +1,16 @@
+{
+  "stage": 0,
+  "preset": "smoke",
+  "method": "adaptive",
+  "run_dir": "results\\adagrpo_v2\\gsm8k\\adaptive\\seed42\\smoke\\20261020T150926-5cd901bb",
+  "completed": true,
+  "recovery_pause_done": true,
+  "live_validation_recovery": {
+    "passed": true,
+    "gross_evaluation_attempts": 4,
+    "repeated_evaluation_attempts": 0,
+    "optimizer_updates": 2
+  },
+  "status": "completed",
+  "gross_training_attempts": 6
+}

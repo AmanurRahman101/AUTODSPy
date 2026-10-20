@@ -326,3 +326,29 @@ RuntimeError: Error(s) in loading state_dict
 }
 
 ```
+
+
+## AdaGRPO research fork
+
+The new [AdaGRPO GSM8K notebook](AdaGRPO_GSM8K.ipynb) implements automatic bounded K selection and matched static controls. See the [implementation and verification report](docs/ADAGRPO_IMPLEMENTATION_REPORT.md) for local setup, measured checks, pilot status, and Colab launch instructions. Historical Static-K notebooks and experiments remain separate.
+
+
+### AdaGRPO version 2
+
+[AdaGRPO_GSM8K_v2.ipynb](AdaGRPO_GSM8K_v2.ipynb) implements the bounded 2/4/6 controller, candidate-specific random streams, validation recovery and one two-hour local study. Definitions are inert. Use the existing `AdaGRPO GPU` kernel and `run_improvement_suite()` explicitly; `resume=True` never resets the shared deadline. [Implementation and experiment evidence](docs/ADAGRPO_V2_REPORT.md). Version 1 and historical results remain unchanged.
+
+
+### Matched V1 versus V2 comparison
+
+[Comparison notebook](AdaGRPO_V1_V2_Comparison.ipynb) and [audited report](docs/ADAGRPO_V1_V2_COMPARISON.md): paired seeds 43/44 under common infrastructure, with twenty fresh confirmation questions. V2 had higher observed accuracy on both seeds; the small study remains inconclusive about general superiority. All previous notebooks/results are preserved. The completed frozen comparison will not automatically rerun.
+
+
+### Verified V2 infrastructure
+
+[Verified notebook](AdaGRPO_GSM8K_v2_verified.ipynb) adds resumable study orchestration and reconciled cost reporting around frozen V2 learning behavior. [Verification report](results/adagrpo_verified/VERIFICATION_REPORT.md). The fifteen-arm formal study is prepared but unlaunched; this implementation used no GPT-2 training or Ollama inference.
+
+### Fresh 100-question checkpoint evaluation
+
+[AdaGRPO_GSM8K_Fresh100_v2.ipynb](AdaGRPO_GSM8K_Fresh100_v2.ipynb) and [recorded results](results/adagrpo_fresh100/corrected_v2/report.json) evaluate saved seed-43 policies without retraining. Adaptive V2 scored 68/100 versus 66/100 for each static checkpoint. Both static arms selected the same episode-0 policy, and the uncertainty interval is wide; these results do not establish superiority over trained static policies. See the [historical context and interpretation](docs/ADAGRPO_AHNAF_STATIC_K_CONTEXT.md). The earlier Fresh100 notebook and artifacts are preserved as superseded work after an overlap was discovered.
+
+Model checkpoint files (`*.pt`) and the local Python environment are excluded from Git. Published run manifests and logs reference local checkpoint files; continuing an existing run on another machine requires copying its complete run directory, including checkpoints. Notebook definitions do not start training automatically.

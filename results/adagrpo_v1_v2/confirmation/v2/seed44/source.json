@@ -1,0 +1,30 @@
+{
+  "source_run": "results\\adagrpo_v1_v2\\gsm8k\\v2\\seed44\\screen\\20261020T183931-f25fa190",
+  "source_best": {
+    "checkpoint": "checkpoints\\best_142af6ad275d4ffab637618c212c87dd.pt",
+    "sha256": "1f18663bc51c91041ce4fad76da43024974806b24dca7d3a38d86f287c1e0c27",
+    "episode": 12
+  },
+  "archived": false,
+  "controller": "v2",
+  "seed": 44,
+  "policy_sha256": "eadfaac7c521dff4a9aa9a993dd1bd843c884b4bb4ba1df3ee035a00e65db294",
+  "runtime": {
+    "packages": {
+      "torch": "2.6.0+cu124",
+      "transformers": "5.17.0",
+      "dspy": "3.3.1",
+      "datasets": "5.0.1",
+      "numpy": "2.4.6",
+      "matplotlib": "3.11.2"
+    },
+    "ollama_version": {
+      "version": "0.22.1"
+    },
+    "execution_model_digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+    "hardware": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+    "cuda": "12.4",
+    "python": "3.11.9"
+  },
+  "selection_id": "f45386cdd9b950f19fca6f1974f87cc9d9347946e92a8b10ef4603bdbaaa7ca6"
+}

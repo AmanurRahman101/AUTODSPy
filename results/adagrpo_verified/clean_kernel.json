@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "definition_code_cells": 22,
+  "guards": "Pretrained model/tokenizer initialization and HTTP blocked",
+  "seconds": 21.3259117603302,
+  "no_external_inference": true
+}

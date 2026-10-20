@@ -1,0 +1,6 @@
+{
+  "initial_validation_identical_across_methods": true,
+  "adaptive_static4_exact_training_prefix_episodes": 3,
+  "training_schedule_identical": true,
+  "no_final_test_access": true
+}

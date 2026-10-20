@@ -1,0 +1,194 @@
+{
+  "protocol": "adagrpo-gsm8k-controller-ab-v1",
+  "code_sha256": "fb09196f20c9da09ecd099134d4ac9faae21c0a377e38f9a8032362c252b93b2",
+  "created_unix": 1792518066.204869,
+  "deadline_unix": 1792525266.204869,
+  "status": "completed",
+  "steps": [
+    {
+      "controller": "v1",
+      "seed": 43,
+      "training_completed": true,
+      "confirmation_completed": true,
+      "archived": false,
+      "run_dir": "results\\adagrpo_v1_v2\\gsm8k\\v1\\seed43\\screen\\20261020T174123-603c2724",
+      "status": "completed",
+      "confirmation_dir": "results\\adagrpo_v1_v2\\confirmation\\v1\\seed43",
+      "confirmation_accuracy": 0.55,
+      "best_validation": {
+        "episode": 0,
+        "score": 0.8,
+        "pointer": {
+          "checkpoint": "checkpoints\\best_26e886bbbf1346a19e2ddc08eda07985.pt",
+          "sha256": "c11697348c0995840dff6f381b18d5b5fc3ca7eff9611a9ac37d567071299db7",
+          "episode": 0
+        }
+      },
+      "gross_training_attempts": 40,
+      "actual_k": [
+        2,
+        2,
+        2,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        2
+      ]
+    },
+    {
+      "controller": "v2",
+      "seed": 43,
+      "training_completed": true,
+      "confirmation_completed": true,
+      "archived": true,
+      "run_dir": "results/adagrpo_v2/gsm8k/adaptive/seed43/screen/20261020T154041-268c0802",
+      "confirmation_dir": "results\\adagrpo_v1_v2\\confirmation\\v2\\seed43",
+      "confirmation_accuracy": 0.7,
+      "best_validation": {
+        "episode": 12,
+        "score": 0.85,
+        "pointer": {
+          "checkpoint": "checkpoints\\best_627d3190a85d4d5ba721a8367713b130.pt",
+          "sha256": "b33893a26d7290bc62c4176878715f7d2e7a5d63b25ae46c3961f29e104431b9",
+          "episode": 12
+        }
+      },
+      "gross_training_attempts": 42,
+      "actual_k": [
+        4,
+        4,
+        4,
+        2,
+        2,
+        6,
+        2,
+        2,
+        2,
+        2,
+        6,
+        6
+      ]
+    },
+    {
+      "controller": "v1",
+      "seed": 44,
+      "training_completed": true,
+      "confirmation_completed": true,
+      "archived": false,
+      "run_dir": "results\\adagrpo_v1_v2\\gsm8k\\v1\\seed44\\screen\\20261020T181208-d2a32819",
+      "status": "completed",
+      "confirmation_dir": "results\\adagrpo_v1_v2\\confirmation\\v1\\seed44",
+      "confirmation_accuracy": 0.55,
+      "best_validation": {
+        "episode": 0,
+        "score": 0.7,
+        "pointer": {
+          "checkpoint": "checkpoints\\best_281994b1c0b34f2d81b267203484b204.pt",
+          "sha256": "cade624b691782e665735887e3149be9a7a08d3480d4bc869785d18a674b4ed3",
+          "episode": 0
+        }
+      },
+      "gross_training_attempts": 42,
+      "actual_k": [
+        4,
+        2,
+        4,
+        4,
+        2,
+        6,
+        4,
+        4,
+        2,
+        2,
+        4,
+        4
+      ]
+    },
+    {
+      "controller": "v2",
+      "seed": 44,
+      "training_completed": true,
+      "confirmation_completed": true,
+      "archived": false,
+      "run_dir": "results\\adagrpo_v1_v2\\gsm8k\\v2\\seed44\\screen\\20261020T183931-f25fa190",
+      "status": "completed",
+      "confirmation_dir": "results\\adagrpo_v1_v2\\confirmation\\v2\\seed44",
+      "confirmation_accuracy": 0.6,
+      "best_validation": {
+        "episode": 12,
+        "score": 0.8,
+        "pointer": {
+          "checkpoint": "checkpoints\\best_142af6ad275d4ffab637618c212c87dd.pt",
+          "sha256": "1f18663bc51c91041ce4fad76da43024974806b24dca7d3a38d86f287c1e0c27",
+          "episode": 12
+        }
+      },
+      "gross_training_attempts": 38,
+      "actual_k": [
+        2,
+        6,
+        2,
+        2,
+        6,
+        4,
+        2,
+        2,
+        2,
+        6,
+        2,
+        2
+      ]
+    }
+  ],
+  "seeds": [
+    43,
+    44
+  ],
+  "controllers": [
+    "v1",
+    "v2"
+  ],
+  "confirmation_manifest": "results\\adagrpo_v1_v2\\membership\\confirmation.json",
+  "confirmation_sha256": "746efadad9a129af6ded0d65fdcbac9d7c36188dc456d6c0a92c588806f545f7",
+  "selection_manifest": "results\\adagrpo_v2\\membership\\screen_v2.json",
+  "selection_manifest_sha256": "f19fd8efc435f9c2cbe2bf9fe7b8c013c489c22a6552f0fc96ac7b7882ff112f",
+  "archived_v2_seed43": "results/adagrpo_v2/gsm8k/adaptive/seed43/screen/20261020T154041-268c0802",
+  "max_new_pipeline_executions": 344,
+  "budget_scope": "All new local model work; one persisted 120-minute deadline; old V2 seed43 archive reused read-only",
+  "controller_only_comparison": true,
+  "finished_unix": 1792523228.648953,
+  "pairs": [
+    {
+      "seed": 43,
+      "v1": 0.55,
+      "v2": 0.7,
+      "v2_only_correct": 5,
+      "v1_only_correct": 2,
+      "v1_attempts": 40,
+      "v2_attempts": 42
+    },
+    {
+      "seed": 44,
+      "v1": 0.55,
+      "v2": 0.6,
+      "v2_only_correct": 2,
+      "v1_only_correct": 1,
+      "v1_attempts": 42,
+      "v2_attempts": 38
+    }
+  ],
+  "mean_accuracy_difference": 0.1,
+  "paired_descriptive_95_interval": [
+    -0.1,
+    0.3
+  ],
+  "bootstrap_resamples": 10000,
+  "preserved_historical_files": 235,
+  "official_test_access": false,
+  "interpretation": "Small two-seed twenty-question controller comparison; not general superiority or formal success"
+}

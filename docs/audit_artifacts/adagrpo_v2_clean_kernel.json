@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "executed_code_cells": 19,
+  "seconds": 22.3,
+  "notebook_sha256": "5fd062295bdb8007f24681088311b47670a707910aabc9fa889b16d304fad10a",
+  "notebook_code_sha256": "313420046f0ac3fc08bf2069420495555f91569465767d1a2d01fe6d25e26a49",
+  "scope": "Fresh definitions only; no external model calls"
+}

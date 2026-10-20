@@ -1,0 +1,26 @@
+{
+  "ledger_path": "results\\adagrpo_verified\\studies\\formal-v1\\study.json",
+  "status": "prepared",
+  "workload": {
+    "training_max": 11400,
+    "validation": 3750,
+    "full_test": 19785,
+    "total_pipeline_executions_max": 34935,
+    "estimated_seconds": null,
+    "note": "Five arms incl shuffled K; excludes failures/setup. Not the old 27,828 estimate.",
+    "observations": 322,
+    "median_seconds": 14.824339599999803,
+    "p90_seconds": 19.91182255999884,
+    "estimated_pipeline_hours_at_mean": 147.8835541168242,
+    "timing_scope": "Recorded local candidate execution only; not a prediction of cloud speed",
+    "setup_seconds": null,
+    "failure_overhead_seconds": null,
+    "setup_and_failures_included": false
+  },
+  "dataset_splits_requested": [
+    "train"
+  ],
+  "no_model_initialization": true,
+  "no_training": true,
+  "no_external_inference": true
+}
