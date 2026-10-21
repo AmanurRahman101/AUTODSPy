@@ -1,0 +1,222 @@
+{
+  "audit_protocol": "adagrpo-local-closeout-v1",
+  "created_utc": "2026-10-21T06:56:48.480884+00:00",
+  "model_inference_calls_in_this_audit": 0,
+  "training_steps_in_this_audit": 0,
+  "checks": [
+    {
+      "name": "all arms completed",
+      "passed": true
+    },
+    {
+      "name": "manifest hash frozen",
+      "passed": true
+    },
+    {
+      "name": "notebook experimental code frozen",
+      "passed": true
+    },
+    {
+      "name": "100 unique train-split questions",
+      "passed": true
+    },
+    {
+      "name": "prior question exclusions",
+      "passed": true
+    },
+    {
+      "name": "superseded membership excluded",
+      "passed": true
+    },
+    {
+      "name": "Ahnaf reconstructed membership excluded",
+      "passed": true
+    },
+    {
+      "name": "original deadline retained",
+      "passed": true
+    },
+    {
+      "name": "completed before deadline",
+      "passed": true
+    },
+    {
+      "name": "adaptive source checkpoint hash",
+      "passed": true
+    },
+    {
+      "name": "adaptive source configuration hash",
+      "passed": true
+    },
+    {
+      "name": "adaptive exact membership",
+      "passed": true
+    },
+    {
+      "name": "adaptive identity hash",
+      "passed": true
+    },
+    {
+      "name": "adaptive no policy updates or official tests",
+      "passed": true
+    },
+    {
+      "name": "adaptive journal coverage",
+      "passed": true
+    },
+    {
+      "name": "adaptive journal content agrees",
+      "passed": true
+    },
+    {
+      "name": "adaptive numeric scores replay exactly",
+      "passed": true
+    },
+    {
+      "name": "adaptive per-question random stream",
+      "passed": true
+    },
+    {
+      "name": "adaptive report accuracy agrees",
+      "passed": true
+    },
+    {
+      "name": "adaptive report gross attempt count agrees",
+      "passed": true
+    },
+    {
+      "name": "static_k4 source checkpoint hash",
+      "passed": true
+    },
+    {
+      "name": "static_k4 source configuration hash",
+      "passed": true
+    },
+    {
+      "name": "static_k4 exact membership",
+      "passed": true
+    },
+    {
+      "name": "static_k4 identity hash",
+      "passed": true
+    },
+    {
+      "name": "static_k4 no policy updates or official tests",
+      "passed": true
+    },
+    {
+      "name": "static_k4 journal coverage",
+      "passed": true
+    },
+    {
+      "name": "static_k4 journal content agrees",
+      "passed": true
+    },
+    {
+      "name": "static_k4 numeric scores replay exactly",
+      "passed": true
+    },
+    {
+      "name": "static_k4 per-question random stream",
+      "passed": true
+    },
+    {
+      "name": "static_k4 report accuracy agrees",
+      "passed": true
+    },
+    {
+      "name": "static_k4 report gross attempt count agrees",
+      "passed": true
+    },
+    {
+      "name": "static_k5 source checkpoint hash",
+      "passed": true
+    },
+    {
+      "name": "static_k5 source configuration hash",
+      "passed": true
+    },
+    {
+      "name": "static_k5 exact membership",
+      "passed": true
+    },
+    {
+      "name": "static_k5 identity hash",
+      "passed": true
+    },
+    {
+      "name": "static_k5 no policy updates or official tests",
+      "passed": true
+    },
+    {
+      "name": "static_k5 journal coverage",
+      "passed": true
+    },
+    {
+      "name": "static_k5 journal content agrees",
+      "passed": true
+    },
+    {
+      "name": "static_k5 numeric scores replay exactly",
+      "passed": true
+    },
+    {
+      "name": "static_k5 per-question random stream",
+      "passed": true
+    },
+    {
+      "name": "static_k5 report accuracy agrees",
+      "passed": true
+    },
+    {
+      "name": "static_k5 report gross attempt count agrees",
+      "passed": true
+    },
+    {
+      "name": "static policy identity limitation verified",
+      "passed": true
+    },
+    {
+      "name": "superseded costs recorded",
+      "passed": true
+    },
+    {
+      "name": "121 original files preserved",
+      "passed": true
+    },
+    {
+      "name": "formal study remains unlaunched",
+      "passed": true
+    }
+  ],
+  "passed": 46,
+  "total": 46,
+  "arms": {
+    "adaptive": {
+      "gross_evaluation_attempts": 101,
+      "successful_attempts": 100,
+      "failed_or_interrupted": 1,
+      "unique_scored": 100,
+      "source_checkpoint_episode": 12
+    },
+    "static_k4": {
+      "gross_evaluation_attempts": 100,
+      "successful_attempts": 100,
+      "failed_or_interrupted": 0,
+      "unique_scored": 100,
+      "source_checkpoint_episode": 0
+    },
+    "static_k5": {
+      "gross_evaluation_attempts": 100,
+      "successful_attempts": 100,
+      "failed_or_interrupted": 0,
+      "unique_scored": 100,
+      "source_checkpoint_episode": 0
+    }
+  },
+  "superseded_gross_evaluation_attempts": 71,
+  "total_fresh100_gross_evaluation_attempts": 372,
+  "unique_comparison_answers": 300,
+  "static_checkpoints_are_identical_initial_policy": true,
+  "remaining_work": "Statistical confirmation across more training seeds and episodes; prepared formal workflow is unlaunched. No existing local run requires continuation."
+}
