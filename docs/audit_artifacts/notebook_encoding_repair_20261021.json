@@ -1,0 +1,25 @@
+{
+  "notebooks_scanned": 15,
+  "changes": [
+    {
+      "path": "AdaGRPO_GSM8K_v2.ipynb",
+      "before_sha256": "5fd062295bdb8007f24681088311b47670a707910aabc9fa889b16d304fad10a",
+      "after_sha256": "091cc8cecf9bcb6184432c95addaee68a094a8a7b147bdd0bef613c6415b4e28",
+      "all_code_cells_outputs_metadata_unchanged": true
+    },
+    {
+      "path": "AdaGRPO_GSM8K_Fresh100_v2.ipynb",
+      "before_sha256": "25ebe18d7e9c7949dd2fcaed9fd558d63f205178de65fa11bad180dc61c261dc",
+      "after_sha256": "99c467738d49307a23af7c29a681b857b7bfaca3312cf1faebb8627802dbee6c",
+      "all_code_cells_outputs_metadata_unchanged": true
+    },
+    {
+      "path": "AdaGRPO_GSM8K_Fresh100.ipynb",
+      "before_sha256": "b894fbf2cc2c6878269c86618243c77572d5b5d6228502fc4b115aafcba70207",
+      "after_sha256": "65cb2f53ca6275ce65ae8b9a36b3827313185f56903b9af4146fc3ab014561c4",
+      "all_code_cells_outputs_metadata_unchanged": true
+    }
+  ],
+  "training_or_inference_run": false,
+  "remaining_corrupted_cells": 0
+}

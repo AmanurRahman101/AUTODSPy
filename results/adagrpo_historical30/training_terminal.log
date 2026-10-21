@@ -1,0 +1,370 @@
+Python: 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)] 
+Packages: {'torch': '2.6.0+cu124', 'transformers': '5.17.0', 'dspy': '3.3.1', 'datasets': '5.0.1', 'numpy': '2.4.6', 'matplotlib': '3.11.2'} 
+CUDA: True
+Definitions only. Configuration: {'protocol': 'adagrpo-gsm8k-numeric-figure2-v2', 'dataset': 'gsm8k', 'dataset_name': 'openai/gsm8k', 'dataset_config': 'main', 'dataset_revision': None, 'data_seed': 42, 'seed': 42, 'preset': 'smoke', 'num_episodes': 2, 'train_pool_size': 10, 'validation_size': 2, 'validation_interval': 2, 'schedule_episodes': 200, 'test_scope': 'full_official', 'allocation_mode': 'adaptive', 'static_k': 5, 'k_min': 2, 'k_max': 6, 'probe_size': 2, 'expansion_size': 2, 'all_correct_min': 2, 'concentration_min': 4, 'concentration_neff': 1.25, 'contrast_epsilon': 1e-12, 'adaptive_budget_per_episode': 4, 'training_budget': 8, 'controller_version': 'credit-refine-v2', 'sampling_version': 'candidate-stream-v2', 'membership_manifest': None, 'suite_ledger': None, 'allocation_schedule': None, 'policy_model': 'gpt2', 'policy_revision': '607a30d783dfa663caf39e06633721c8d4cfcd7e', 'policy_device': 'cuda', 'policy_dropout': False, 'max_policy_tokens': 1024, 'max_pipeline_steps': 3, 'policy_sampling': 'restricted-first-token-multinomial', 'learning_rate': 1e-05, 'optimizer': 'Adam', 'loss': 'negative-sum-logprob-times-centered-reward', 'reward_mode': 'numeric_exact', 'semantic_fallback': False, 'cache': False, 'ollama_model': 'llama3.2:3b', 'ollama_host': 'http://localhost:11434', 'ollama_num_gpu': 0, 'ollama_num_ctx': 2048, 'execution_max_tokens': 512, 'execution_temperature': 0.0, 'request_timeout': 180, 'results_root': 'results/adagrpo_v2', 'checkpoint_interval': 5, 'evaluation_seed_offset': 100000, 'wall_limit_seconds': 900}
+AdaGRPO definitions ready. No model initialization, training, or testing launched.
+Historical30 definitions ready; call prepare_historical30(), then run_historical30(allow_training=True).
+HISTORICAL30 LIVE: adaptive only; archived static baseline reused; 30 episodes / max120 training attempts / 20 validation / 30 archived evaluation.
+Model: GPT2 CUDA; llama3.2:3b CPU-offloaded; context4096; output512; fixed original schedule; numeric rewards.
+Pre-run checks: 204 Original deadline: None
+Traceback (most recent call last):
+  File "C:\Users\rahma\AppData\Local\Python\pythoncore-3.11-64\Lib\urllib\request.py", line 1348, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "C:\Users\rahma\AppData\Local\Python\pythoncore-3.11-64\Lib\http\client.py", line 1303, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\rahma\AppData\Local\Python\pythoncore-3.11-64\Lib\http\client.py", line 1349, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\rahma\AppData\Local\Python\pythoncore-3.11-64\Lib\http\client.py", line 1298, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\rahma\AppData\Local\Python\pythoncore-3.11-64\Lib\http\client.py", line 1058, in _send_output
+    self.send(msg)
+  File "C:\Users\rahma\AppData\Local\Python\pythoncore-3.11-64\Lib\http\client.py", line 996, in send
+    self.connect()
+  File "C:\Users\rahma\AppData\Local\Python\pythoncore-3.11-64\Lib\http\client.py", line 962, in connect
+    self.sock = self._create_connection(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\AppData\Local\Python\pythoncore-3.11-64\Lib\socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "C:\Users\rahma\AppData\Local\Python\pythoncore-3.11-64\Lib\socket.py", line 836, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\rahma\AppData\Local\Temp\adagrpo_historical30_runner.py", line 21, in <module>
+    result=ns['run_historical30'](allow_training=True,resume=ledger['started_unix'] is not None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Historical30 cell 34", line 232, in run_historical30
+  File "Historical30 cell 27", line 7, in preflight
+  File "Historical30 cell 5", line 4, in json_request
+  File "C:\Users\rahma\AppData\Local\Python\pythoncore-3.11-64\Lib\urllib\request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\AppData\Local\Python\pythoncore-3.11-64\Lib\urllib\request.py", line 519, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\AppData\Local\Python\pythoncore-3.11-64\Lib\urllib\request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\AppData\Local\Python\pythoncore-3.11-64\Lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "C:\Users\rahma\AppData\Local\Python\pythoncore-3.11-64\Lib\urllib\request.py", line 1377, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rahma\AppData\Local\Python\pythoncore-3.11-64\Lib\urllib\request.py", line 1351, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>
+Python: 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)] 
+Packages: {'torch': '2.6.0+cu124', 'transformers': '5.17.0', 'dspy': '3.3.1', 'datasets': '5.0.1', 'numpy': '2.4.6', 'matplotlib': '3.11.2'} 
+CUDA: True
+Definitions only. Configuration: {'protocol': 'adagrpo-gsm8k-numeric-figure2-v2', 'dataset': 'gsm8k', 'dataset_name': 'openai/gsm8k', 'dataset_config': 'main', 'dataset_revision': None, 'data_seed': 42, 'seed': 42, 'preset': 'smoke', 'num_episodes': 2, 'train_pool_size': 10, 'validation_size': 2, 'validation_interval': 2, 'schedule_episodes': 200, 'test_scope': 'full_official', 'allocation_mode': 'adaptive', 'static_k': 5, 'k_min': 2, 'k_max': 6, 'probe_size': 2, 'expansion_size': 2, 'all_correct_min': 2, 'concentration_min': 4, 'concentration_neff': 1.25, 'contrast_epsilon': 1e-12, 'adaptive_budget_per_episode': 4, 'training_budget': 8, 'controller_version': 'credit-refine-v2', 'sampling_version': 'candidate-stream-v2', 'membership_manifest': None, 'suite_ledger': None, 'allocation_schedule': None, 'policy_model': 'gpt2', 'policy_revision': '607a30d783dfa663caf39e06633721c8d4cfcd7e', 'policy_device': 'cuda', 'policy_dropout': False, 'max_policy_tokens': 1024, 'max_pipeline_steps': 3, 'policy_sampling': 'restricted-first-token-multinomial', 'learning_rate': 1e-05, 'optimizer': 'Adam', 'loss': 'negative-sum-logprob-times-centered-reward', 'reward_mode': 'numeric_exact', 'semantic_fallback': False, 'cache': False, 'ollama_model': 'llama3.2:3b', 'ollama_host': 'http://localhost:11434', 'ollama_num_gpu': 0, 'ollama_num_ctx': 2048, 'execution_max_tokens': 512, 'execution_temperature': 0.0, 'request_timeout': 180, 'results_root': 'results/adagrpo_v2', 'checkpoint_interval': 5, 'evaluation_seed_offset': 100000, 'wall_limit_seconds': 900}
+AdaGRPO definitions ready. No model initialization, training, or testing launched.
+Historical30 definitions ready; call prepare_historical30(), then run_historical30(allow_training=True).
+HISTORICAL30 LIVE: adaptive only; archived static baseline reused; 30 episodes / max120 training attempts / 20 validation / 30 archived evaluation.
+Model: GPT2 CUDA; llama3.2:3b CPU-offloaded; context4096; output512; fixed original schedule; numeric rewards.
+Pre-run checks: 204 Original deadline: 1792577244.751058
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:   2%|2         | 3/148 [00:00<00:05, 24.40it/s]Loading weights:   7%|6         | 10/148 [00:00<00:02, 47.63it/s]Loading weights:  10%|#         | 15/148 [00:00<00:05, 23.96it/s]Loading weights: 100%|##########| 148/148 [00:00<00:00, 258.73it/s]
+14:09:13 START evaluation ep=0 candidate=None q=gsm8k:train:5514
+14:09:41 START evaluation ep=0 candidate=None q=gsm8k:train:5809
+14:10:00 START evaluation ep=0 candidate=None q=gsm8k:train:5517
+14:10:15 START evaluation ep=0 candidate=None q=gsm8k:train:5941
+14:10:33 START evaluation ep=0 candidate=None q=gsm8k:train:623
+14:11:07 START evaluation ep=0 candidate=None q=gsm8k:train:1332
+14:11:20 START evaluation ep=0 candidate=None q=gsm8k:train:4943
+14:11:41 START evaluation ep=0 candidate=None q=gsm8k:train:6118
+14:11:59 START evaluation ep=0 candidate=None q=gsm8k:train:2126
+14:12:13 START evaluation ep=0 candidate=None q=gsm8k:train:5560
+14:12:32 START training ep=1 candidate=0 q=gsm8k:train:4423
+14:12:50 START training ep=1 candidate=1 q=gsm8k:train:4423
+adaptive episode=1/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+14:13:11 START training ep=2 candidate=0 q=gsm8k:train:3812
+14:13:35 START training ep=2 candidate=1 q=gsm8k:train:3812
+adaptive episode=2/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+14:13:47 START training ep=3 candidate=0 q=gsm8k:train:7079
+14:14:03 START training ep=3 candidate=1 q=gsm8k:train:7079
+14:14:23 START training ep=3 candidate=2 q=gsm8k:train:7079
+14:14:37 START training ep=3 candidate=3 q=gsm8k:train:7079
+14:14:49 START training ep=3 candidate=4 q=gsm8k:train:7079
+14:15:02 START training ep=3 candidate=5 q=gsm8k:train:7079
+adaptive episode=3/30 K=6 stop=informative_refinement reward=0.667 grad=2.282e+02
+14:15:19 START training ep=4 candidate=0 q=gsm8k:train:2663
+14:15:32 START training ep=4 candidate=1 q=gsm8k:train:2663
+adaptive episode=4/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+14:15:49 START training ep=5 candidate=0 q=gsm8k:train:4423
+14:16:09 START training ep=5 candidate=1 q=gsm8k:train:4423
+14:16:29 START training ep=5 candidate=2 q=gsm8k:train:4423
+14:16:46 START training ep=5 candidate=3 q=gsm8k:train:4423
+14:16:58 START training ep=5 candidate=4 q=gsm8k:train:4423
+14:17:17 START training ep=5 candidate=5 q=gsm8k:train:4423
+adaptive episode=5/30 K=6 stop=informative_refinement reward=0.667 grad=3.690e+02
+14:17:44 START training ep=6 candidate=0 q=gsm8k:train:56
+14:18:05 START training ep=6 candidate=1 q=gsm8k:train:56
+adaptive episode=6/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+14:18:22 START training ep=7 candidate=0 q=gsm8k:train:6330
+14:18:39 START training ep=7 candidate=1 q=gsm8k:train:6330
+14:19:02 START training ep=7 candidate=2 q=gsm8k:train:6330
+14:19:19 START training ep=7 candidate=3 q=gsm8k:train:6330
+14:19:33 START training ep=7 candidate=4 q=gsm8k:train:6330
+14:19:49 START training ep=7 candidate=5 q=gsm8k:train:6330
+adaptive episode=7/30 K=6 stop=informative_refinement reward=0.500 grad=2.679e+02
+14:20:15 START training ep=8 candidate=0 q=gsm8k:train:2477
+14:20:33 START training ep=8 candidate=1 q=gsm8k:train:2477
+14:20:48 START training ep=8 candidate=2 q=gsm8k:train:2477
+14:21:03 START training ep=8 candidate=3 q=gsm8k:train:2477
+14:21:18 START training ep=8 candidate=4 q=gsm8k:train:2477
+14:21:33 START training ep=8 candidate=5 q=gsm8k:train:2477
+adaptive episode=8/30 K=6 stop=informative_refinement reward=0.833 grad=2.340e+02
+14:21:53 START training ep=9 candidate=0 q=gsm8k:train:2271
+14:22:04 START training ep=9 candidate=1 q=gsm8k:train:2271
+adaptive episode=9/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+14:22:14 START training ep=10 candidate=0 q=gsm8k:train:5302
+14:22:33 START training ep=10 candidate=1 q=gsm8k:train:5302
+14:22:42 START training ep=10 candidate=2 q=gsm8k:train:5302
+14:23:05 START training ep=10 candidate=3 q=gsm8k:train:5302
+14:23:24 START training ep=10 candidate=4 q=gsm8k:train:5302
+14:23:47 START training ep=10 candidate=5 q=gsm8k:train:5302
+adaptive episode=10/30 K=6 stop=informative_refinement reward=0.167 grad=2.555e+02
+14:24:12 START training ep=11 candidate=0 q=gsm8k:train:2428
+14:24:27 START training ep=11 candidate=1 q=gsm8k:train:2428
+14:24:46 START training ep=11 candidate=2 q=gsm8k:train:2428
+14:24:59 START training ep=11 candidate=3 q=gsm8k:train:2428
+adaptive episode=11/30 K=4 stop=bounded_failure reward=0.000 grad=0.000e+00
+14:25:21 START training ep=12 candidate=0 q=gsm8k:train:3418
+14:25:41 START training ep=12 candidate=1 q=gsm8k:train:3418
+14:25:56 START training ep=12 candidate=2 q=gsm8k:train:3418
+14:26:12 START training ep=12 candidate=3 q=gsm8k:train:3418
+adaptive episode=12/30 K=4 stop=allowance_reached reward=0.750 grad=2.411e+02
+14:26:33 START training ep=13 candidate=0 q=gsm8k:train:3082
+14:26:51 START training ep=13 candidate=1 q=gsm8k:train:3082
+adaptive episode=13/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+14:27:09 START training ep=14 candidate=0 q=gsm8k:train:5302
+14:27:25 START training ep=14 candidate=1 q=gsm8k:train:5302
+14:27:48 START training ep=14 candidate=2 q=gsm8k:train:5302
+14:28:02 START training ep=14 candidate=3 q=gsm8k:train:5302
+14:28:21 START training ep=14 candidate=4 q=gsm8k:train:5302
+14:28:43 START training ep=14 candidate=5 q=gsm8k:train:5302
+adaptive episode=14/30 K=6 stop=informative_refinement reward=0.333 grad=2.635e+02
+14:29:05 START training ep=15 candidate=0 q=gsm8k:train:819
+14:29:27 START training ep=15 candidate=1 q=gsm8k:train:819
+adaptive episode=15/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+14:29:56 START training ep=16 candidate=0 q=gsm8k:train:1601
+14:30:14 START training ep=16 candidate=1 q=gsm8k:train:1601
+adaptive episode=16/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+14:30:27 START training ep=17 candidate=0 q=gsm8k:train:56
+14:30:47 START training ep=17 candidate=1 q=gsm8k:train:56
+adaptive episode=17/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+14:31:04 START training ep=18 candidate=0 q=gsm8k:train:4423
+14:31:25 START training ep=18 candidate=1 q=gsm8k:train:4423
+14:31:42 START training ep=18 candidate=2 q=gsm8k:train:4423
+14:31:54 START training ep=18 candidate=3 q=gsm8k:train:4423
+adaptive episode=18/30 K=4 stop=credit_cancelled reward=0.750 grad=2.602e-05
+14:32:09 START training ep=19 candidate=0 q=gsm8k:train:4389
+14:32:26 START training ep=19 candidate=1 q=gsm8k:train:4389
+14:32:59 START training ep=19 candidate=2 q=gsm8k:train:4389
+14:33:25 START training ep=19 candidate=3 q=gsm8k:train:4389
+14:33:46 START training ep=19 candidate=4 q=gsm8k:train:4389
+14:34:18 START training ep=19 candidate=5 q=gsm8k:train:4389
+adaptive episode=19/30 K=6 stop=informative_refinement reward=0.167 grad=2.124e+02
+14:34:50 START training ep=20 candidate=0 q=gsm8k:train:4306
+14:35:08 START training ep=20 candidate=1 q=gsm8k:train:4306
+adaptive episode=20/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+14:35:31 START training ep=21 candidate=0 q=gsm8k:train:3115
+14:35:49 START training ep=21 candidate=1 q=gsm8k:train:3115
+14:36:04 START training ep=21 candidate=2 q=gsm8k:train:3115
+14:36:18 START training ep=21 candidate=3 q=gsm8k:train:3115
+14:36:33 START training ep=21 candidate=4 q=gsm8k:train:3115
+14:36:48 START training ep=21 candidate=5 q=gsm8k:train:3115
+adaptive episode=21/30 K=6 stop=credit_cancelled reward=0.500 grad=1.650e-06
+14:37:06 START training ep=22 candidate=0 q=gsm8k:train:7114
+14:37:19 START training ep=22 candidate=1 q=gsm8k:train:7114
+14:37:30 START training ep=22 candidate=2 q=gsm8k:train:7114
+14:37:41 START training ep=22 candidate=3 q=gsm8k:train:7114
+14:37:51 START training ep=22 candidate=4 q=gsm8k:train:7114
+14:38:04 START training ep=22 candidate=5 q=gsm8k:train:7114
+adaptive episode=22/30 K=6 stop=informative_refinement reward=0.167 grad=1.796e+02
+14:38:18 START training ep=23 candidate=0 q=gsm8k:train:6009
+14:38:35 START training ep=23 candidate=1 q=gsm8k:train:6009
+adaptive episode=23/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+14:38:55 START training ep=24 candidate=0 q=gsm8k:train:56
+14:39:15 START training ep=24 candidate=1 q=gsm8k:train:56
+adaptive episode=24/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+14:39:32 START training ep=25 candidate=0 q=gsm8k:train:56
+14:39:53 START training ep=25 candidate=1 q=gsm8k:train:56
+adaptive episode=25/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+14:40:13 START training ep=26 candidate=0 q=gsm8k:train:2068
+14:40:32 START training ep=26 candidate=1 q=gsm8k:train:2068
+adaptive episode=26/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+14:40:52 START training ep=27 candidate=0 q=gsm8k:train:2428
+14:41:13 START training ep=27 candidate=1 q=gsm8k:train:2428
+14:41:28 START training ep=27 candidate=2 q=gsm8k:train:2428
+14:41:47 START training ep=27 candidate=3 q=gsm8k:train:2428
+14:42:06 START training ep=27 candidate=4 q=gsm8k:train:2428
+14:42:18 START training ep=27 candidate=5 q=gsm8k:train:2428
+adaptive episode=27/30 K=6 stop=informative_refinement reward=0.167 grad=1.368e+02
+14:42:38 START training ep=28 candidate=0 q=gsm8k:train:2068
+14:42:55 START training ep=28 candidate=1 q=gsm8k:train:2068
+adaptive episode=28/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+14:43:08 START training ep=29 candidate=0 q=gsm8k:train:3703
+14:43:29 START training ep=29 candidate=1 q=gsm8k:train:3703
+14:43:53 START training ep=29 candidate=2 q=gsm8k:train:3703
+14:44:15 START training ep=29 candidate=3 q=gsm8k:train:3703
+adaptive episode=29/30 K=4 stop=bounded_failure reward=0.000 grad=0.000e+00
+14:44:42 START training ep=30 candidate=0 q=gsm8k:train:6195
+14:45:00 START training ep=30 candidate=1 q=gsm8k:train:6195
+adaptive episode=30/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+14:45:26 START evaluation ep=30 candidate=None q=gsm8k:train:5514
+14:45:42 START evaluation ep=30 candidate=None q=gsm8k:train:5809
+14:46:02 START evaluation ep=30 candidate=None q=gsm8k:train:5517
+14:46:15 START evaluation ep=30 candidate=None q=gsm8k:train:5941
+14:46:33 START evaluation ep=30 candidate=None q=gsm8k:train:623
+14:47:03 START evaluation ep=30 candidate=None q=gsm8k:train:1332
+14:47:13 START evaluation ep=30 candidate=None q=gsm8k:train:4943
+14:47:33 START evaluation ep=30 candidate=None q=gsm8k:train:6118
+14:47:48 START evaluation ep=30 candidate=None q=gsm8k:train:2126
+14:48:05 START evaluation ep=30 candidate=None q=gsm8k:train:5560
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:  16%|#6        | 24/148 [00:00<00:00, 200.19it/s]Loading weights:  58%|#####8    | 86/148 [00:00<00:00, 373.55it/s]Loading weights:  84%|########3 | 124/148 [00:00<00:00, 357.41it/s]Loading weights: 100%|##########| 148/148 [00:00<00:00, 276.46it/s]
+Loading dataset shards:   0%|          | 0/30 [00:00<?, ?it/s]Loading dataset shards: 100%|##########| 30/30 [00:00<00:00, 1410.13it/s]
+Traceback (most recent call last):
+  File "C:\Users\rahma\AppData\Local\Temp\adagrpo_historical30_runner.py", line 21, in <module>
+    result=ns['run_historical30'](allow_training=True,resume=ledger['started_unix'] is not None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "Historical30 cell 34", line 258, in run_historical30
+  File "Historical30 cell 23", line 2, in evaluate_module
+ValueError: Unsupported evaluation split
+Python: 3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)] 
+Packages: {'torch': '2.6.0+cu124', 'transformers': '5.17.0', 'dspy': '3.3.1', 'datasets': '5.0.1', 'numpy': '2.4.6', 'matplotlib': '3.11.2'} 
+CUDA: True
+Definitions only. Configuration: {'protocol': 'adagrpo-gsm8k-numeric-figure2-v2', 'dataset': 'gsm8k', 'dataset_name': 'openai/gsm8k', 'dataset_config': 'main', 'dataset_revision': None, 'data_seed': 42, 'seed': 42, 'preset': 'smoke', 'num_episodes': 2, 'train_pool_size': 10, 'validation_size': 2, 'validation_interval': 2, 'schedule_episodes': 200, 'test_scope': 'full_official', 'allocation_mode': 'adaptive', 'static_k': 5, 'k_min': 2, 'k_max': 6, 'probe_size': 2, 'expansion_size': 2, 'all_correct_min': 2, 'concentration_min': 4, 'concentration_neff': 1.25, 'contrast_epsilon': 1e-12, 'adaptive_budget_per_episode': 4, 'training_budget': 8, 'controller_version': 'credit-refine-v2', 'sampling_version': 'candidate-stream-v2', 'membership_manifest': None, 'suite_ledger': None, 'allocation_schedule': None, 'policy_model': 'gpt2', 'policy_revision': '607a30d783dfa663caf39e06633721c8d4cfcd7e', 'policy_device': 'cuda', 'policy_dropout': False, 'max_policy_tokens': 1024, 'max_pipeline_steps': 3, 'policy_sampling': 'restricted-first-token-multinomial', 'learning_rate': 1e-05, 'optimizer': 'Adam', 'loss': 'negative-sum-logprob-times-centered-reward', 'reward_mode': 'numeric_exact', 'semantic_fallback': False, 'cache': False, 'ollama_model': 'llama3.2:3b', 'ollama_host': 'http://localhost:11434', 'ollama_num_gpu': 0, 'ollama_num_ctx': 2048, 'execution_max_tokens': 512, 'execution_temperature': 0.0, 'request_timeout': 180, 'results_root': 'results/adagrpo_v2', 'checkpoint_interval': 5, 'evaluation_seed_offset': 100000, 'wall_limit_seconds': 900}
+AdaGRPO definitions ready. No model initialization, training, or testing launched.
+Historical30 definitions ready; call prepare_historical30(), then run_historical30(allow_training=True).
+HISTORICAL30 LIVE: adaptive only; archived static baseline reused; 30 episodes / max120 training attempts / 20 validation / 30 archived evaluation.
+Model: GPT2 CUDA; llama3.2:3b CPU-offloaded; context4096; output512; fixed original schedule; numeric rewards.
+Pre-run checks: 204 Original deadline: 1792577244.751058
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights:  21%|##        | 31/148 [00:00<00:00, 294.17it/s]Loading weights:  41%|####1     | 61/148 [00:00<00:00, 103.86it/s]Loading weights: 100%|##########| 148/148 [00:00<00:00, 278.48it/s]
+Loading dataset shards:   0%|          | 0/30 [00:00<?, ?it/s]Loading dataset shards: 100%|##########| 30/30 [00:00<00:00, 2509.41it/s]
+14:52:00 START evaluation ep=30 candidate=None q=gsm8k:test:416
+14:52:34 START evaluation ep=30 candidate=None q=gsm8k:test:573
+14:52:52 START evaluation ep=30 candidate=None q=gsm8k:test:459
+14:53:14 START evaluation ep=30 candidate=None q=gsm8k:test:925
+14:53:28 START evaluation ep=30 candidate=None q=gsm8k:test:55
+14:53:37 START evaluation ep=30 candidate=None q=gsm8k:test:551
+14:53:52 START evaluation ep=30 candidate=None q=gsm8k:test:1271
+14:54:06 START evaluation ep=30 candidate=None q=gsm8k:test:641
+14:54:20 START evaluation ep=30 candidate=None q=gsm8k:test:286
+14:54:36 START evaluation ep=30 candidate=None q=gsm8k:test:256
+14:54:48 START evaluation ep=30 candidate=None q=gsm8k:test:689
+14:55:03 START evaluation ep=30 candidate=None q=gsm8k:test:156
+14:55:18 START evaluation ep=30 candidate=None q=gsm8k:test:915
+14:55:29 START evaluation ep=30 candidate=None q=gsm8k:test:676
+14:55:46 START evaluation ep=30 candidate=None q=gsm8k:test:501
+14:56:01 START evaluation ep=30 candidate=None q=gsm8k:test:1216
+2026/10/21 14:56:35 WARNING dspy.clients.lm: LM response was truncated due to exceeding max_tokens=512. You can inspect the latest LM interactions with `dspy.inspect_history()`. To avoid truncation, consider passing a larger max_tokens when setting up dspy.LM. You may also consider increasing the temperature (currently 0.0)  if the reason for truncation is repetition.
+14:56:35 START evaluation ep=30 candidate=None q=gsm8k:test:1034
+14:56:46 START evaluation ep=30 candidate=None q=gsm8k:test:325
+14:57:06 START evaluation ep=30 candidate=None q=gsm8k:test:1265
+14:57:31 START evaluation ep=30 candidate=None q=gsm8k:test:136
+14:57:42 START evaluation ep=30 candidate=None q=gsm8k:test:697
+14:57:56 START evaluation ep=30 candidate=None q=gsm8k:test:1043
+14:58:12 START evaluation ep=30 candidate=None q=gsm8k:test:1311
+14:58:25 START evaluation ep=30 candidate=None q=gsm8k:test:519
+14:58:37 START evaluation ep=30 candidate=None q=gsm8k:test:716
+14:58:51 START evaluation ep=30 candidate=None q=gsm8k:test:51
+14:59:07 START evaluation ep=30 candidate=None q=gsm8k:test:878
+14:59:21 START evaluation ep=30 candidate=None q=gsm8k:test:757
+14:59:37 START evaluation ep=30 candidate=None q=gsm8k:test:1123
+14:59:47 START evaluation ep=30 candidate=None q=gsm8k:test:63
+HISTORICAL30 COMPLETE {
+  "artifact_protocol": "adagrpo-historical30-v1",
+  "old_correct": 23,
+  "new_correct": 16,
+  "questions": 30,
+  "old_accuracy": 0.7666666666666667,
+  "new_accuracy": 0.5333333333333333,
+  "accuracy_difference": -0.23333333333333334,
+  "new_only_correct": 2,
+  "old_only_correct": 9,
+  "ties": 19,
+  "paired_descriptive_95_interval": [
+    -0.43333333333333335,
+    -0.03333333333333333
+  ],
+  "bootstrap_resamples": 10000,
+  "old_training_attempts": 150,
+  "new_gross_training_attempts": 108,
+  "new_committed_training_attempts": 108,
+  "training_attempt_saving": 0.28,
+  "actual_k": [
+    2,
+    2,
+    6,
+    2,
+    6,
+    2,
+    6,
+    6,
+    2,
+    6,
+    4,
+    4,
+    2,
+    6,
+    2,
+    2,
+    2,
+    4,
+    6,
+    2,
+    6,
+    6,
+    2,
+    2,
+    2,
+    2,
+    6,
+    2,
+    4,
+    2
+  ],
+  "selected_checkpoint": {
+    "role": "best",
+    "sha256": "0490b2de44df45f9b5b3e35d2feb87d0f20f7a75c4125584edf9bd4db23fa25a",
+    "episode": 30
+  },
+  "outcome": "observed_accuracy_target_failed",
+  "formal_success_demonstrated": false,
+  "caveats": [
+    "numeric-only instead of semantic fallback",
+    "candidate-specific instead of global sampling streams",
+    "current software/runtime",
+    "RTX3050 and CPU-offloaded execution instead of historical runtime",
+    "Retrospective workflow benchmark, not K-only causal evidence or formal research confirmation",
+    "One seed and previously examined evaluation questions"
+  ],
+  "evaluation_logical_calls": 32,
+  "evaluation_seconds": 481.8136471000016,
+  "old_training_seconds": 668.5716827000724,
+  "new_training_seconds": 1883.7929527000006,
+  "wall_time_speedup_claim_allowed": false
+}
+HISTORICAL30 FINAL AUDIT {
+  "status": "completed",
+  "counts": {
+    "gross_training_attempts": 108,
+    "gross_validation_attempts": 20,
+    "gross_archived_evaluation_attempts": 30
+  },
+  "original_deadline_unix": 1792577244.751058,
+  "all_complete": true,
+  "model_inference_in_audit": false,
+  "formal_success_demonstrated": false,
+  "training_status": "completed",
+  "episode": 30,
+  "training_artifact_audit_passed": true,
+  "outcome": "observed_accuracy_target_failed",
+  "correct": 16,
+  "training_saving": 0.28
+}

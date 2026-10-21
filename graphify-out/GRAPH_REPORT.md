@@ -1,17 +1,17 @@
-# Graph Report - AUTODSPy  (2026-10-14)
+# Graph Report - AUTODSPy  (2026-10-21)
 
 ## Corpus Check
-- 140 files · ~342,043 words
+- 390 files · ~841,619 words
 - Verdict: corpus is large enough that graph structure adds value.
-- Unclassified: 41 file(s) not represented in the graph (top: .csv 18, .jsonl 12, .ipynb 6)
+- Unclassified: 130 file(s) not represented in the graph (top: .jsonl 80, .csv 18, .ipynb 15)
 
 ## Summary
-- 786 nodes · 786 edges · 68 communities (52 shown, 16 thin omitted)
-- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 16 edges (avg confidence: 0.94)
+- 904 nodes · 969 edges · 76 communities (63 shown, 13 thin omitted)
+- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 19 edges (avg confidence: 0.94)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `fc069303`
+- Built from commit: `595cc96a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -19,12 +19,12 @@
 - run_grpo_baseline.py
 - AutoDSPy Static-K Research — Master Specification
 - Issue tracker: GitHub
-- IMPLEMENTATION_PLAN.md
+- docs/README.md
 - Triage
 - teach/SKILL.md
 - DSPy Pipeline Optimization with Reinforcement Learning
 - Process
-- What You Must Do When Invoked
+- AdaGRPO GSM8K implementation and verification
 - Codebase Design
 - During the session
 - 📊 CSE 498R Thesis: Baseline Execution & Empirical Analysis Report
@@ -44,13 +44,13 @@
 - Steps
 - Scaffold Exercises
 - to-spec/SKILL.md
-- graphify reference: extra exports and benchmark
+- Additional Papers for Adaptive-K in AutoDSPy
 - <Questionnaire title>
 - writing-shape/SKILL.md
 - Process
 - Sections
 - writing-beats/SKILL.md
-- graphify reference: query, path, explain
+- Adaptive-K for AutoDSPy: evidence, current status, and research objective
 - loop-me/SKILL.md
 - Reference
 - Domain docs
@@ -59,55 +59,63 @@
 - hitl-loop.template.sh
 - GLOSSARY.md Format
 - writing-fragments/SKILL.md
-- graphify reference: add a URL and watch a folder
-- graphify reference: commit hook and native CLAUDE.md integration
-- graphify reference: incremental update and cluster-only
-- graphify reference: GitHub clone and cross-repo merge
-- graphify reference: transcribe video and audio
+- Project progress and session handoff
+- Static-K experiment guide
+- AdaGRPO V3 implementation verification
+- Research status
+- AdaGRPO
 - block-dangerous-git.sh
 - implement-spec/SKILL.md
 - CREDITS.md
-- extraction-spec.md
+- AdaGRPO: matched V1 versus V2 comparison
 - agents/triage-labels.md
-- Static-K experiment guide
+- Phased implementation plan
 - Completed K=5 GSM8K run diagnosis
-- Project progress and session handoff
+- Ahnaf's GSM8K Static-K Results: How AdaGRPO Should Use Them
 - K=5 controlled stability pilot
 - Static-K GRPO on GSM8K: saved experimental results
 - Process
+- Notebook catalog
+- Project map
+- Results catalog
+- Local environment and operation
+- Phase 2 — GSM8K implementation and verification
+- Phase 3 — Independent HotpotQA notebook
+- Documentation
+- AdaGRPO V2 verified implementation
 
 ## God Nodes (most connected - your core abstractions)
-1. `Decisions, assumptions, and open research questions` - 31 edges
+1. `Decisions, assumptions, and open research questions` - 45 edges
 2. `AutoDSPy Static-K Research — Master Specification` - 31 edges
 3. `Project progress and session handoff` - 13 edges
 4. `run_wizard()` - 12 edges
-5. `What You Must Do When Invoked` - 12 edges
+5. `Additional Papers for Adaptive-K in AutoDSPy` - 12 edges
 6. `Static-K experiment guide` - 11 edges
-7. `Static-K GRPO on GSM8K: saved experimental results` - 11 edges
-8. `/graphify` - 10 edges
-9. `AutoDSPy Research — Agent Instructions` - 10 edges
-10. `📊 CSE 498R Thesis: Baseline Execution & Empirical Analysis Report` - 10 edges
+7. `Adaptive-K for AutoDSPy: evidence, current status, and research objective` - 11 edges
+8. `Static-K GRPO on GSM8K: saved experimental results` - 11 edges
+9. `DSPy Pipeline Optimization with Reinforcement Learning` - 11 edges
+10. `main()` - 10 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `5. Reward consistency: what exists and what remains` --references--> `compute_reward()`  [INFERRED]
+  docs/ADAPTIVE_K_RESEARCH_UNDERSTANDING.md → run_grpo_baseline.py
 - `1. Pin the fixed point` --references--> `main()`  [INFERRED]
   .agents/skills/code-review/SKILL.md → run_grpo_baseline.py
+- `1. Experimental configuration and comparability audit` --references--> `main()`  [INFERRED]
+  docs/STATIC_K_RESULTS_ANALYSIS.md → run_grpo_baseline.py
+- `Answer matching produces false negatives and false positives` --references--> `compare_answers()`  [INFERRED]
+  docs/PHASE_1_AUDIT.md → run_grpo_baseline.py
 - `Reward semantics and failure handling` --references--> `compute_reward()`  [INFERRED]
   docs/PHASE_1_AUDIT.md → run_grpo_baseline.py
-- `Evaluation can fail or use the wrong policy` --references--> `generate_pipeline()`  [INFERRED]
-  docs/PHASE_1_AUDIT.md → run_grpo_baseline.py
-- `Initialization and gradient ownership` --references--> `generate_pipeline()`  [INFERRED]
-  docs/PHASE_1_AUDIT.md → run_grpo_baseline.py
-- `7. Notebook A — GSM8K` --references--> `main()`  [INFERRED]
-  docs/MASTER_SPEC.md → run_grpo_baseline.py
 
 ## Import Cycles
 - None detected.
 
-## Communities (68 total, 16 thin omitted)
+## Communities (76 total, 13 thin omitted)
 
 ### Community 0 - "run_grpo_baseline.py"
 Cohesion: 0.06
-Nodes (30): 6. Preserve the Original DSPy Action Space, 1. Scope and evidence conventions, 2. Published methodology, released code, and project protocol, 3. GPT-2 and policy action audit, 4. Verified correctness and operational issues, 5. Dataset and HotpotQA task audit, 6. Environment and hardware observations, 7. Actual checks and outcomes (+22 more)
+Nodes (37): 6. Preserve the Original DSPy Action Space, Checked-in reference notebook: actual behavior and caveats, Implication for the current project, Original AutoDSPy paper and checked-in reference notebook, Paper ambiguities to preserve in any reproduction claim, Published experiment setup and results, Source identity and citation correction, The original paper already studies fixed K and proposes Adaptive-K (+29 more)
 
 ### Community 1 - "AutoDSPy Static-K Research — Master Specification"
 Cohesion: 0.05
@@ -117,9 +125,9 @@ Nodes (44): 10. Independent K Experiments, 11. Training Correctness, 12. Checkpo
 Cohesion: 0.06
 Nodes (30): Before exploring, read these, Domain Docs, File structure, Flag ADR conflicts, Use the glossary's vocabulary, Conventions, Issue tracker: GitHub, Pull requests as a triage surface (+22 more)
 
-### Community 3 - "IMPLEMENTATION_PLAN.md"
-Cohesion: 0.07
-Nodes (29): Phase 1 audit artifacts, Phase 2 verification additions, Phase 3 verification additions, Execution rules and session handoff, Phase 1 — Audit original notebook and research paper, Phase 2 — Implement and validate the complete GSM8K notebook, Phase 3 — Implement and validate the independent HotpotQA notebook, Phase 4 — Finalize management, statistics, plots, and reproducibility (+21 more)
+### Community 3 - "docs/README.md"
+Cohesion: 0.08
+Nodes (21): AdaGRPO v2 implementation and controlled local study, Final local study outcome, Implementation, Verification and results, Watching and recovery, Phase 1 audit artifacts, Phase 2 verification additions, Phase 3 verification additions (+13 more)
 
 ### Community 4 - "Triage"
 Cohesion: 0.06
@@ -130,16 +138,16 @@ Cohesion: 0.07
 Nodes (25): Learning Record Format, Numbering, Optional sections, Supersession, Template, What does _not_ qualify, When to write a learning record, MISSION.md Format (+17 more)
 
 ### Community 6 - "DSPy Pipeline Optimization with Reinforcement Learning"
-Cohesion: 0.07
-Nodes (28): 1. PPO (Proximal Policy Optimization), 2. GRPO (Group Relative Policy Optimization), 3. REINFORCE with Baseline, Action Space, AUTODSPy, Citations, Common Components, Common Issues (+20 more)
+Cohesion: 0.06
+Nodes (35): 1. PPO (Proximal Policy Optimization), 2. GRPO (Group Relative Policy Optimization), 3. REINFORCE with Baseline, Action Space, AdaGRPO research fork, AdaGRPO V3: early exploration, AdaGRPO version 2, AUTODSPy (+27 more)
 
 ### Community 7 - "Process"
 Cohesion: 0.07
 Nodes (25): 1. State the question, 2. Isolate the logic in a portable module, 3. Build the shareable HTML file, 4. Hand it over, 5. Capture the answer and the prototype, Anti-patterns, Logic Prototype, Process (+17 more)
 
-### Community 8 - "What You Must Do When Invoked"
-Cohesion: 0.08
-Nodes (24): For /graphify add and --watch, For /graphify query, For the commit hook and native CLAUDE.md integration, For --update and --cluster-only, /graphify, Honesty Rules, Interpreter guard for subcommands, Part A - Structural extraction for code files (+16 more)
+### Community 8 - "AdaGRPO GSM8K implementation and verification"
+Cohesion: 0.25
+Nodes (8): AdaGRPO GSM8K implementation and verification, How to use, Implemented behavior, Knowledge graph, Local environment, Local pilot, Research limitations, Verification evidence
 
 ### Community 9 - "Codebase Design"
 Cohesion: 0.09
@@ -162,8 +170,8 @@ Cohesion: 0.22
 Nodes (18): ask(), ask_secret(), banner(), _clear(), _existing(), finish(), note(), open_url() (+10 more)
 
 ### Community 14 - "Decisions, assumptions, and open research questions"
-Cohesion: 0.06
-Nodes (31): D001 — Prepare documents, then request Phase 1 permission, D002 — Store persistent context in docs/, D003 — Preserve the original and existing working-tree changes, D004 — Figure 2 objective and episode protocol are fixed, D005 — Independent notebooks and model initialization, D006 — Configurable defaults and reduced engineering tests, D007 — Benchmark splits and unresolved HotpotQA formulation, D008 — Reward, benchmark metrics, and model failures stay distinct (+23 more)
+Cohesion: 0.04
+Nodes (45): D001 — Prepare documents, then request Phase 1 permission, D002 — Store persistent context in docs/, D003 — Preserve the original and existing working-tree changes, D004 — Figure 2 objective and episode protocol are fixed, D005 — Independent notebooks and model initialization, D006 — Configurable defaults and reduced engineering tests, D007 — Benchmark splits and unresolved HotpotQA formulation, D008 — Reward, benchmark metrics, and model failures stay distinct (+37 more)
 
 ### Community 15 - "Ask Matt"
 Cohesion: 0.12
@@ -217,9 +225,9 @@ Nodes (8): Directory naming, Example: stubbing from a plan, Exercise variants, L
 Cohesion: 0.22
 Nodes (8): Further Notes, Implementation Decisions, Out of Scope, Problem Statement, Process, Solution, Testing Decisions, User Stories
 
-### Community 28 - "graphify reference: extra exports and benchmark"
-Cohesion: 0.22
-Nodes (8): graphify reference: extra exports and benchmark, Step 6b - Wiki (only if --wiki flag), Step 7 - Neo4j export (only if --neo4j or --neo4j-push flag), Step 7a - FalkorDB export (only if --falkordb or --falkordb-push flag), Step 7b - SVG export (only if --svg flag), Step 7c - GraphML export (only if --graphml flag), Step 7d - MCP server (only if --mcp flag), Step 8 - Token reduction benchmark (only if total_words > 5000)
+### Community 28 - "Additional Papers for Adaptive-K in AutoDSPy"
+Cohesion: 0.13
+Nodes (15): 1. AERO: probe first, then give bounded extra attempts, 1. Reinforce-Ada, 2. GVM, 2. Reinforce-Ada: make the stopping condition explicit, 3. VIGOR, 4. DPPO, Added reference: GRPO-LEAD, Additional Papers for Adaptive-K in AutoDSPy (+7 more)
 
 ### Community 29 - "<Questionnaire title>"
 Cohesion: 0.25
@@ -241,9 +249,9 @@ Nodes (5): Evidence, Guidance, Merge Danger, Sections, Summary
 Cohesion: 0.33
 Nodes (5): Ending the journey, Grounding, Pulling from the pile, What is a beat, Writing rhythm
 
-### Community 34 - "graphify reference: query, path, explain"
-Cohesion: 0.33
-Nodes (5): For /graphify explain, For /graphify path, graphify reference: query, path, explain, Step 0 — Constrained query expansion (REQUIRED before traversal), Step 1 — Traversal
+### Community 34 - "Adaptive-K for AutoDSPy: evidence, current status, and research objective"
+Cohesion: 0.13
+Nodes (15): 10. Evidence boundaries and housekeeping, 1. The central objective, 2. What the original system actually learns, 3. Original paper versus our experiments, 4. What the team has completed, 5. Reward consistency: what exists and what remains, 6. Important earlier work on other branches, 7. What Adaptive-K needs to decide (+7 more)
 
 ### Community 35 - "loop-me/SKILL.md"
 Cohesion: 0.40
@@ -277,29 +285,41 @@ Nodes (3): GLOSSARY.md Format, Rules, Structure
 Cohesion: 0.50
 Nodes (3): File format, What is a fragment, Writing rhythm
 
-### Community 43 - "graphify reference: add a URL and watch a folder"
-Cohesion: 0.50
-Nodes (3): For /graphify add, For --watch, graphify reference: add a URL and watch a folder
+### Community 43 - "Project progress and session handoff"
+Cohesion: 0.15
+Nodes (13): Completed Phase 1 work, Completed Phase 2 work and verification, Completed Phase 3 (2026-10-12), Completed Phase 4 (2026-10-12), Completed preparation, Current milestone, Pending work and unresolved questions, Phase status (+5 more)
 
-### Community 44 - "graphify reference: commit hook and native CLAUDE.md integration"
-Cohesion: 0.50
-Nodes (3): For git commit hook, For native CLAUDE.md integration, graphify reference: commit hook and native CLAUDE.md integration
-
-### Community 45 - "graphify reference: incremental update and cluster-only"
-Cohesion: 0.50
-Nodes (3): For --cluster-only, For --update (incremental re-extraction), graphify reference: incremental update and cluster-only
-
-### Community 62 - "Static-K experiment guide"
+### Community 44 - "Static-K experiment guide"
 Cohesion: 0.18
 Nodes (11): A K=5 smoke run, Changing K, budgets and presets, Comparisons, plots and resource accounting, Environment and initialization, HotpotQA configuration and use, Monitoring GPU memory and interpreting evidence, Other K values and presets, Questions, episodes and results (+3 more)
+
+### Community 45 - "AdaGRPO V3 implementation verification"
+Cohesion: 0.40
+Nodes (5): AdaGRPO V3 implementation verification, Authorized live study, Before live execution, Completed local screen, Evidence
+
+### Community 46 - "Research status"
+Cohesion: 0.20
+Nodes (10): Evidence by study, Latest V2/V3 screen, Main conclusion, Matched 30-episode diagnosis, Next step, Research status, V2 development and V1/V2 comparison, What has not been established or authorized automatically (+2 more)
+
+### Community 47 - "AdaGRPO"
+Cohesion: 0.20
+Nodes (10): AdaGRPO, Automatic candidate allocation for AutoDSPy, Checkpoints and sharing, Latest completed screen, Main notebooks, Method and evidence, Original research, Repository layout (+2 more)
+
+### Community 52 - "AdaGRPO: matched V1 versus V2 comparison"
+Cohesion: 0.25
+Nodes (8): AdaGRPO: matched V1 versus V2 comparison, Design, Evidence, Interpretation limits, Results, Seed 43, Seed 44, Verification and cost
+
+### Community 62 - "Phased implementation plan"
+Cohesion: 0.25
+Nodes (8): Execution rules and session handoff, Phase 1 — Audit original notebook and research paper, Phase 2 — Implement and validate the complete GSM8K notebook, Phase 3 — Implement and validate the independent HotpotQA notebook, Phase 4 — Finalize management, statistics, plots, and reproducibility, Phased implementation plan, Preparation — documentation and approval gate, Requirement coverage and verification approach
 
 ### Community 63 - "Completed K=5 GSM8K run diagnosis"
 Cohesion: 0.20
 Nodes (9): All episodes, Completed K=5 GSM8K run diagnosis, Finding, Fractional-mean groups, Gradient and optimizer checks, Other observed issues and limits, Probability and entropy evidence, Reproduction and preservation (+1 more)
 
-### Community 64 - "Project progress and session handoff"
-Cohesion: 0.15
-Nodes (13): Completed Phase 1 work, Completed Phase 2 work and verification, Completed Phase 3 (2026-10-12), Completed Phase 4 (2026-10-12), Completed preparation, Current milestone, Pending work and unresolved questions, Phase status (+5 more)
+### Community 64 - "Ahnaf's GSM8K Static-K Results: How AdaGRPO Should Use Them"
+Cohesion: 0.29
+Nodes (7): 200-episode GSM8K study, 30-episode GSM8K study, Ahnaf's GSM8K Static-K Results: How AdaGRPO Should Use Them, Completed checkpoint evaluation (fresh 100), Purpose, Supplied sources, What this contributes to AdaGRPO
 
 ### Community 65 - "K=5 controlled stability pilot"
 Cohesion: 0.33
@@ -307,31 +327,61 @@ Nodes (5): Controls, K=5 controlled stability pilot, Measured stability, Rewards
 
 ### Community 66 - "Static-K GRPO on GSM8K: saved experimental results"
 Cohesion: 0.17
-Nodes (11): 10. Recommended next research experiment, 2. Summary comparing all four K values, 3. Model performance analysis, 4. GRPO learning behavior and group effectiveness, 5. Pipeline diversity analysis, 6. Training stability and reward integrity, 7. Computational efficiency comparison, 8. Limitations and potential confounding factors (+3 more)
+Nodes (12): 10. Recommended next research experiment, 1. Experimental configuration and comparability audit, 2. Summary comparing all four K values, 3. Model performance analysis, 4. GRPO learning behavior and group effectiveness, 5. Pipeline diversity analysis, 6. Training stability and reward integrity, 7. Computational efficiency comparison (+4 more)
 
 ### Community 67 - "Process"
 Cohesion: 0.25
 Nodes (7): 1. Pin the fixed point, 2. Identify the spec source, 3. Identify the standards sources, 4. Spawn both sub-agents in parallel, 5. Aggregate, Process, Why two axes
 
+### Community 68 - "Notebook catalog"
+Cohesion: 0.29
+Nodes (7): Adaptive controller implementations, Choosing an entry point, Comparisons and checkpoint evaluation, Diagnostic notebook, Historical Static-K baselines, Notebook catalog, Original AutoDSPy references
+
+### Community 69 - "Project map"
+Cohesion: 0.29
+Nodes (7): Documentation layout, Experimental artifacts, Papers and figures, Preservation policy, Project map, Source entry points, Tooling and local-only directories
+
+### Community 70 - "Results catalog"
+Cohesion: 0.29
+Nodes (7): Adaptive development and controls, Ahnaf's original Static-K evidence, Audit evidence, Checkpoint evaluations and 30-episode diagnosis, Cost and recovery rules, Latest completed experiment, Results catalog
+
+### Community 71 - "Local environment and operation"
+Cohesion: 0.29
+Nodes (7): Existing environment, Inspecting the completed V3 study, Local environment and operation, Model-work boundary, Ollama, Recorded research setup, Recovery and sharing
+
+### Community 72 - "Phase 2 — GSM8K implementation and verification"
+Cohesion: 0.29
+Nodes (7): Corrections and remaining limitations, Deliverables, Phase 2 — GSM8K implementation and verification, Phase boundary, Starting, saving and evaluating, Verification actually performed, Workflow and research protocol
+
+### Community 73 - "Phase 3 — Independent HotpotQA notebook"
+Cohesion: 0.33
+Nodes (6): Deliverable and organization, Phase 3 — Independent HotpotQA notebook, Resource and reproducibility limits, Scientific choices, Unrun workloads and remaining issues, Verification
+
+### Community 74 - "Documentation"
+Cohesion: 0.33
+Nodes (6): Documentation, Experiment reports, Historical handoffs and provenance, Literature and earlier investigation, Protocol and decisions, Read first
+
+### Community 75 - "AdaGRPO V2 verified implementation"
+Cohesion: 0.33
+Nodes (6): AdaGRPO V2 verified implementation, Changes, Evidence, Prepared evaluation — not launched, Use, Verification
+
 ## Knowledge Gaps
-- **522 isolated node(s):** `block-dangerous-git.sh script`, `The five options`, `The tree`, `Primary and secondary sources`, `These are judgement calls` (+517 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 571 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **16 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **13 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `AutoDSPy Static-K Research — Master Specification` connect `AutoDSPy Static-K Research — Master Specification` to `run_grpo_baseline.py`, `IMPLEMENTATION_PLAN.md`?**
-  _High betweenness centrality (0.046) - this node is a cross-community bridge._
-- **Why does `Decisions, assumptions, and open research questions` connect `Decisions, assumptions, and open research questions` to `IMPLEMENTATION_PLAN.md`?**
-  _High betweenness centrality (0.022) - this node is a cross-community bridge._
-- **Why does `6. Preserve the Original DSPy Action Space` connect `run_grpo_baseline.py` to `AutoDSPy Static-K Research — Master Specification`?**
-  _High betweenness centrality (0.021) - this node is a cross-community bridge._
-- **What connects `block-dangerous-git.sh script`, `The five options`, `The tree` to the rest of the system?**
-  _522 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Why does `AutoDSPy Static-K Research — Master Specification` connect `AutoDSPy Static-K Research — Master Specification` to `run_grpo_baseline.py`, `docs/README.md`?**
+  _High betweenness centrality (0.051) - this node is a cross-community bridge._
 - **Should `run_grpo_baseline.py` be split into smaller, more focused modules?**
-  _Cohesion score 0.06387921022067364 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06462585034013606 - nodes in this community are weakly interconnected._
+- **Why does `Decisions, assumptions, and open research questions` connect `Decisions, assumptions, and open research questions` to `docs/README.md`?**
+  _High betweenness centrality (0.044) - this node is a cross-community bridge._
 - **Should `AutoDSPy Static-K Research — Master Specification` be split into smaller, more focused modules?**
   _Cohesion score 0.045454545454545456 - nodes in this community are weakly interconnected._
 - **Should `Issue tracker: GitHub` be split into smaller, more focused modules?**
   _Cohesion score 0.05555555555555555 - nodes in this community are weakly interconnected._
+- **Should `docs/README.md` be split into smaller, more focused modules?**
+  _Cohesion score 0.08408163265306122 - nodes in this community are weakly interconnected._
+- **Should `Triage` be split into smaller, more focused modules?**
+  _Cohesion score 0.0625 - nodes in this community are weakly interconnected._

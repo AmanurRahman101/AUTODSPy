@@ -1,0 +1,80 @@
+{
+  "artifact_protocol": "adagrpo-matched30-diagnosis-v1",
+  "seed": 42,
+  "episodes": 30,
+  "questions": 30,
+  "accuracy": {
+    "initial": 0.6666666666666666,
+    "adaptive": 0.5333333333333333,
+    "static_k5": 0.7
+  },
+  "correct": {
+    "initial": 20,
+    "adaptive": 16,
+    "static_k5": 21
+  },
+  "adaptive_minus_static5": {
+    "accuracy_difference": -0.16666666666666666,
+    "a_only": 2,
+    "b_only": 7,
+    "ties": 21,
+    "descriptive_paired_95_interval": [
+      -0.36666666666666664,
+      0.03333333333333333
+    ],
+    "resamples": 10000
+  },
+  "adaptive_minus_initial": {
+    "accuracy_difference": -0.13333333333333333,
+    "a_only": 0,
+    "b_only": 4,
+    "ties": 26,
+    "descriptive_paired_95_interval": [
+      -0.26666666666666666,
+      -0.03333333333333333
+    ],
+    "resamples": 10000
+  },
+  "static5_minus_initial": {
+    "accuracy_difference": 0.03333333333333333,
+    "a_only": 5,
+    "b_only": 4,
+    "ties": 21,
+    "descriptive_paired_95_interval": [
+      -0.16666666666666666,
+      0.23333333333333334
+    ],
+    "resamples": 10000
+  },
+  "training_gross_attempts": {
+    "adaptive": 108,
+    "static_k5": 150
+  },
+  "training_attempt_saving": 0.28,
+  "selected_checkpoints": {
+    "adaptive": {
+      "role": "best",
+      "sha256": "0490b2de44df45f9b5b3e35d2feb87d0f20f7a75c4125584edf9bd4db23fa25a",
+      "episode": 30
+    },
+    "static_k5": {
+      "role": "best",
+      "sha256": "279ea85df3d7ce7ac54e8fd8030f83868e7bb82dc35617bb2bafe647cb531838",
+      "episode": 30
+    }
+  },
+  "new_cost": {
+    "training_started": 150,
+    "training_committed": 150,
+    "training_discarded": 0,
+    "evaluation_started": 80,
+    "validation_started": 20,
+    "archived_diagnostic_started": 60,
+    "unique_scored_archived_attempts": 60,
+    "final_reused_initial_attempts": 0
+  },
+  "archived_adaptive_reused": true,
+  "controller_revision_launched": false,
+  "formal_success_demonstrated": false,
+  "limitation": "One-seed matched retrospective diagnosis; previously exposed evaluation questions; no formal success claim"
+}

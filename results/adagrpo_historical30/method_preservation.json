@@ -1,0 +1,7 @@
+{
+  "base_notebook": "AdaGRPO_GSM8K_v2.ipynb",
+  "identical_base_code_cells": 19,
+  "all_base_code_cells_identical": true,
+  "extensions": "Historical orchestration and operational atomic-write retries only",
+  "model_inference_calls": 0
+}

@@ -1,0 +1,41 @@
+{
+  "hardware": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "packages": {
+      "torch": "2.6.0+cu124",
+      "transformers": "5.17.0",
+      "dspy": "3.3.1",
+      "datasets": "5.0.1",
+      "numpy": "2.4.6",
+      "matplotlib": "3.11.2"
+    },
+    "cuda_available": true,
+    "cuda_version": "12.4",
+    "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+    "gpu_total_bytes": 6441926656,
+    "cpu": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "system_ram_bytes": 16961822720,
+    "process_rss_bytes": 662622208
+  },
+  "ollama": {
+    "version": "0.22.1"
+  },
+  "execution_model": {
+    "name": "llama3.2:3b",
+    "model": "llama3.2:3b",
+    "modified_at": "2026-10-20T16:34:36.7976296+06:00",
+    "size": 2019393189,
+    "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "llama",
+      "families": [
+        "llama"
+      ],
+      "parameter_size": "3.2B",
+      "quantization_level": "Q4_K_M"
+    }
+  },
+  "free_disk_bytes": 74061766656
+}

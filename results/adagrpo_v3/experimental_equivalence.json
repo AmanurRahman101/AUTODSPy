@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "unchanged_functions": [
+    "acceptance_report",
+    "paired_hierarchical_bootstrap",
+    "load_gsm8k",
+    "dataset_example",
+    "initialize_policy",
+    "initialize_ollama",
+    "canonical_number",
+    "canonical_target",
+    "extraction_details",
+    "compare_answers",
+    "execute_pipeline",
+    "recorded_attempt",
+    "evaluate_module",
+    "train_grpo",
+    "action_log_probs",
+    "sample_actions",
+    "replay_log_probs",
+    "generate_pipeline",
+    "probe_policy",
+    "compute_reward",
+    "candidate_seed",
+    "candidate_generator",
+    "group_advantages",
+    "figure2_loss",
+    "update_policy",
+    "policy_class",
+    "effective_policy_distribution",
+    "contrast_statistics"
+  ],
+  "intentional_changes": [
+    "test_model",
+    "controller_decision",
+    "budget_snapshot",
+    "collect_group"
+  ],
+  "rationale": "Controller/budget/collector revision plus explicit official-test block; policy, reward, summed loss, optimizer and training implementation preserved"
+}

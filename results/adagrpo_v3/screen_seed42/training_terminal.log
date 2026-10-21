@@ -1,0 +1,388 @@
+AUTHORIZED V3 SCREEN: 233 checks passed; V2 then V3; fresh membership; two-hour persisted deadline.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|                                 | 0/148 [00:00<?, ?it/s]Loading weights:   5%|█▏                       | 7/148 [00:00<00:02, 59.69it/s]Loading weights:   9%|██                      | 13/148 [00:00<00:04, 29.91it/s]Loading weights: 100%|██████████████████████| 148/148 [00:00<00:00, 358.19it/s]
+18:32:33 START evaluation ep=0 candidate=None q=gsm8k:train:5308
+18:33:00 START evaluation ep=0 candidate=None q=gsm8k:train:1534
+18:33:17 START training ep=1 candidate=0 q=gsm8k:train:3812
+18:33:34 START training ep=1 candidate=1 q=gsm8k:train:3812
+18:33:49 START training ep=1 candidate=2 q=gsm8k:train:3812
+18:34:01 START training ep=1 candidate=3 q=gsm8k:train:3812
+18:34:08 START training ep=1 candidate=4 q=gsm8k:train:3812
+wall_limit Intentional bounded smoke pause after committed warm-up episode Resume latest durable checkpoint; partial group is discarded.
+Loading weights:   0%|                                 | 0/148 [00:00<?, ?it/s]Loading weights:   6%|█▌                       | 9/148 [00:00<00:01, 74.55it/s]Loading weights:  14%|███▏                    | 20/148 [00:00<00:02, 63.40it/s]Loading weights:  18%|████▍                   | 27/148 [00:00<00:02, 60.47it/s]Loading weights:  23%|█████▌                  | 34/148 [00:00<00:02, 40.17it/s]Loading weights: 100%|██████████████████████| 148/148 [00:00<00:00, 203.70it/s]
+18:34:42 START training ep=2 candidate=0 q=gsm8k:train:2184
+18:35:42 START training ep=2 candidate=1 q=gsm8k:train:2184
+2026/10/21 18:36:15 WARNING dspy.clients.lm: LM response was truncated due to exceeding max_tokens=512. You can inspect the latest LM interactions with `dspy.inspect_history()`. To avoid truncation, consider passing a larger max_tokens when setting up dspy.LM. You may also consider increasing the temperature (currently 0.0)  if the reason for truncation is repetition.
+18:36:15 START training ep=2 candidate=2 q=gsm8k:train:2184
+18:36:34 START training ep=2 candidate=3 q=gsm8k:train:2184
+18:36:59 START training ep=2 candidate=4 q=gsm8k:train:2184
+wall_limit Intentional bounded smoke pause after committed warm-up episode Resume latest durable checkpoint; partial group is discarded.
+Loading weights:   0%|                                 | 0/148 [00:00<?, ?it/s]Loading weights:   8%|█▉                      | 12/148 [00:00<00:01, 87.63it/s]Loading weights:  14%|███▍                    | 21/148 [00:00<00:03, 35.97it/s]Loading weights: 100%|██████████████████████| 148/148 [00:00<00:00, 280.41it/s]
+18:37:48 START evaluation ep=2 candidate=None q=gsm8k:train:5308
+18:38:04 START evaluation ep=2 candidate=None q=gsm8k:train:1534
+ARM v2 state pending
+Loading weights:   0%|                                 | 0/148 [00:00<?, ?it/s]Loading weights:   4%|█                        | 6/148 [00:00<00:02, 51.30it/s]Loading weights:   8%|█▉                      | 12/148 [00:00<00:03, 41.53it/s]Loading weights: 100%|██████████████████████| 148/148 [00:00<00:00, 520.69it/s]
+18:38:37 START evaluation ep=0 candidate=None q=gsm8k:train:6133
+18:38:55 START evaluation ep=0 candidate=None q=gsm8k:train:3065
+18:39:10 START evaluation ep=0 candidate=None q=gsm8k:train:2312
+18:39:27 START evaluation ep=0 candidate=None q=gsm8k:train:1865
+18:39:43 START evaluation ep=0 candidate=None q=gsm8k:train:881
+18:39:55 START evaluation ep=0 candidate=None q=gsm8k:train:3594
+18:40:09 START evaluation ep=0 candidate=None q=gsm8k:train:6876
+18:40:23 START evaluation ep=0 candidate=None q=gsm8k:train:3042
+18:40:38 START evaluation ep=0 candidate=None q=gsm8k:train:4907
+18:40:56 START evaluation ep=0 candidate=None q=gsm8k:train:1557
+18:41:15 START training ep=1 candidate=0 q=gsm8k:train:2236
+18:41:26 START training ep=1 candidate=1 q=gsm8k:train:2236
+18:41:44 START training ep=1 candidate=2 q=gsm8k:train:2236
+18:41:57 START training ep=1 candidate=3 q=gsm8k:train:2236
+adaptive episode=1/30 K=4 stop=allowance_reached reward=0.750 grad=2.516e+02
+18:42:15 START training ep=2 candidate=0 q=gsm8k:train:1436
+18:42:33 START training ep=2 candidate=1 q=gsm8k:train:1436
+18:42:49 START training ep=2 candidate=2 q=gsm8k:train:1436
+18:43:07 START training ep=2 candidate=3 q=gsm8k:train:1436
+adaptive episode=2/30 K=4 stop=allowance_reached reward=0.250 grad=1.972e+02
+18:43:29 START training ep=3 candidate=0 q=gsm8k:train:6007
+18:43:46 START training ep=3 candidate=1 q=gsm8k:train:6007
+18:44:05 START training ep=3 candidate=2 q=gsm8k:train:6007
+18:44:20 START training ep=3 candidate=3 q=gsm8k:train:6007
+adaptive episode=3/30 K=4 stop=allowance_reached reward=0.750 grad=2.071e+02
+18:44:39 START training ep=4 candidate=0 q=gsm8k:train:2708
+18:44:54 START training ep=4 candidate=1 q=gsm8k:train:2708
+18:45:12 START training ep=4 candidate=2 q=gsm8k:train:2708
+18:45:27 START training ep=4 candidate=3 q=gsm8k:train:2708
+adaptive episode=4/30 K=4 stop=allowance_reached reward=0.750 grad=2.022e+02
+18:45:48 START training ep=5 candidate=0 q=gsm8k:train:2236
+18:46:05 START training ep=5 candidate=1 q=gsm8k:train:2236
+adaptive episode=5/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+18:46:25 START training ep=6 candidate=0 q=gsm8k:train:5923
+18:46:44 START training ep=6 candidate=1 q=gsm8k:train:5923
+adaptive episode=6/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+18:47:04 START training ep=7 candidate=0 q=gsm8k:train:4749
+18:47:21 START training ep=7 candidate=1 q=gsm8k:train:4749
+adaptive episode=7/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+18:47:42 START training ep=8 candidate=0 q=gsm8k:train:3522
+18:47:59 START training ep=8 candidate=1 q=gsm8k:train:3522
+adaptive episode=8/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+18:48:17 START training ep=9 candidate=0 q=gsm8k:train:329
+18:48:32 START training ep=9 candidate=1 q=gsm8k:train:329
+adaptive episode=9/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+18:48:52 START training ep=10 candidate=0 q=gsm8k:train:1714
+18:49:08 START training ep=10 candidate=1 q=gsm8k:train:1714
+adaptive episode=10/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+18:49:32 START training ep=11 candidate=0 q=gsm8k:train:3474
+18:49:57 START training ep=11 candidate=1 q=gsm8k:train:3474
+18:50:21 START training ep=11 candidate=2 q=gsm8k:train:3474
+18:50:39 START training ep=11 candidate=3 q=gsm8k:train:3474
+18:51:03 START training ep=11 candidate=4 q=gsm8k:train:3474
+18:51:26 START training ep=11 candidate=5 q=gsm8k:train:3474
+adaptive episode=11/30 K=6 stop=informative_refinement reward=0.333 grad=2.218e+02
+18:51:50 START training ep=12 candidate=0 q=gsm8k:train:5811
+18:52:06 START training ep=12 candidate=1 q=gsm8k:train:5811
+18:52:22 START training ep=12 candidate=2 q=gsm8k:train:5811
+18:52:37 START training ep=12 candidate=3 q=gsm8k:train:5811
+18:52:54 START training ep=12 candidate=4 q=gsm8k:train:5811
+18:53:09 START training ep=12 candidate=5 q=gsm8k:train:5811
+adaptive episode=12/30 K=6 stop=informative_refinement reward=0.333 grad=3.935e+02
+18:53:24 START training ep=13 candidate=0 q=gsm8k:train:5692
+18:53:43 START training ep=13 candidate=1 q=gsm8k:train:5692
+18:54:03 START training ep=13 candidate=2 q=gsm8k:train:5692
+18:54:24 START training ep=13 candidate=3 q=gsm8k:train:5692
+18:54:47 START training ep=13 candidate=4 q=gsm8k:train:5692
+18:55:14 START training ep=13 candidate=5 q=gsm8k:train:5692
+adaptive episode=13/30 K=6 stop=informative_refinement reward=0.333 grad=2.925e+02
+18:55:41 START training ep=14 candidate=0 q=gsm8k:train:1714
+18:55:56 START training ep=14 candidate=1 q=gsm8k:train:1714
+adaptive episode=14/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+18:56:19 START training ep=15 candidate=0 q=gsm8k:train:6587
+18:56:40 START training ep=15 candidate=1 q=gsm8k:train:6587
+adaptive episode=15/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+18:57:04 START training ep=16 candidate=0 q=gsm8k:train:1681
+18:57:21 START training ep=16 candidate=1 q=gsm8k:train:1681
+adaptive episode=16/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+18:57:43 START training ep=17 candidate=0 q=gsm8k:train:5923
+18:58:02 START training ep=17 candidate=1 q=gsm8k:train:5923
+18:58:17 START training ep=17 candidate=2 q=gsm8k:train:5923
+18:58:34 START training ep=17 candidate=3 q=gsm8k:train:5923
+18:58:50 START training ep=17 candidate=4 q=gsm8k:train:5923
+18:59:06 START training ep=17 candidate=5 q=gsm8k:train:5923
+adaptive episode=17/30 K=6 stop=informative_refinement reward=0.833 grad=2.449e+02
+18:59:23 START training ep=18 candidate=0 q=gsm8k:train:2236
+18:59:36 START training ep=18 candidate=1 q=gsm8k:train:2236
+18:59:49 START training ep=18 candidate=2 q=gsm8k:train:2236
+19:00:02 START training ep=18 candidate=3 q=gsm8k:train:2236
+adaptive episode=18/30 K=4 stop=credit_cancelled reward=0.250 grad=2.046e-05
+19:00:16 START training ep=19 candidate=0 q=gsm8k:train:7084
+19:00:31 START training ep=19 candidate=1 q=gsm8k:train:7084
+19:00:46 START training ep=19 candidate=2 q=gsm8k:train:7084
+19:00:55 START training ep=19 candidate=3 q=gsm8k:train:7084
+adaptive episode=19/30 K=4 stop=credit_cancelled reward=0.500 grad=0.000e+00
+19:01:14 START training ep=20 candidate=0 q=gsm8k:train:5486
+19:01:33 START training ep=20 candidate=1 q=gsm8k:train:5486
+adaptive episode=20/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+19:01:50 START training ep=21 candidate=0 q=gsm8k:train:5465
+19:02:04 START training ep=21 candidate=1 q=gsm8k:train:5465
+adaptive episode=21/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+19:02:23 START training ep=22 candidate=0 q=gsm8k:train:4616
+19:02:40 START training ep=22 candidate=1 q=gsm8k:train:4616
+19:02:57 START training ep=22 candidate=2 q=gsm8k:train:4616
+19:03:11 START training ep=22 candidate=3 q=gsm8k:train:4616
+adaptive episode=22/30 K=4 stop=credit_cancelled reward=0.500 grad=0.000e+00
+19:03:33 START training ep=23 candidate=0 q=gsm8k:train:4733
+19:03:45 START training ep=23 candidate=1 q=gsm8k:train:4733
+adaptive episode=23/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+19:04:06 START training ep=24 candidate=0 q=gsm8k:train:5923
+19:04:21 START training ep=24 candidate=1 q=gsm8k:train:5923
+adaptive episode=24/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+19:04:43 START training ep=25 candidate=0 q=gsm8k:train:5923
+19:04:57 START training ep=25 candidate=1 q=gsm8k:train:5923
+adaptive episode=25/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+19:05:17 START training ep=26 candidate=0 q=gsm8k:train:1778
+19:05:32 START training ep=26 candidate=1 q=gsm8k:train:1778
+adaptive episode=26/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+19:05:53 START training ep=27 candidate=0 q=gsm8k:train:3474
+19:06:08 START training ep=27 candidate=1 q=gsm8k:train:3474
+19:06:26 START training ep=27 candidate=2 q=gsm8k:train:3474
+19:06:38 START training ep=27 candidate=3 q=gsm8k:train:3474
+adaptive episode=27/30 K=4 stop=bounded_failure reward=0.000 grad=0.000e+00
+19:07:01 START training ep=28 candidate=0 q=gsm8k:train:1778
+19:07:15 START training ep=28 candidate=1 q=gsm8k:train:1778
+adaptive episode=28/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+19:07:30 START training ep=29 candidate=0 q=gsm8k:train:4024
+19:07:49 START training ep=29 candidate=1 q=gsm8k:train:4024
+adaptive episode=29/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+19:08:06 START training ep=30 candidate=0 q=gsm8k:train:3059
+19:08:26 START training ep=30 candidate=1 q=gsm8k:train:3059
+adaptive episode=30/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+19:08:44 START evaluation ep=30 candidate=None q=gsm8k:train:6133
+19:09:03 START evaluation ep=30 candidate=None q=gsm8k:train:3065
+19:09:15 START evaluation ep=30 candidate=None q=gsm8k:train:2312
+19:09:29 START evaluation ep=30 candidate=None q=gsm8k:train:1865
+19:09:45 START evaluation ep=30 candidate=None q=gsm8k:train:881
+19:09:54 START evaluation ep=30 candidate=None q=gsm8k:train:3594
+19:10:08 START evaluation ep=30 candidate=None q=gsm8k:train:6876
+19:10:20 START evaluation ep=30 candidate=None q=gsm8k:train:3042
+19:10:36 START evaluation ep=30 candidate=None q=gsm8k:train:4907
+19:10:47 START evaluation ep=30 candidate=None q=gsm8k:train:1557
+ARM v3 state pending
+Loading weights:   0%|                                 | 0/148 [00:00<?, ?it/s]Loading weights:   3%|▋                        | 4/148 [00:00<00:04, 32.49it/s]Loading weights:   5%|█▎                       | 8/148 [00:00<00:04, 30.17it/s]Loading weights:   8%|█▉                      | 12/148 [00:00<00:04, 28.29it/s]Loading weights: 100%|██████████████████████| 148/148 [00:00<00:00, 353.66it/s]
+19:11:26 START evaluation ep=0 candidate=None q=gsm8k:train:6133
+19:11:44 START evaluation ep=0 candidate=None q=gsm8k:train:3065
+19:11:59 START evaluation ep=0 candidate=None q=gsm8k:train:2312
+19:12:16 START evaluation ep=0 candidate=None q=gsm8k:train:1865
+19:12:32 START evaluation ep=0 candidate=None q=gsm8k:train:881
+19:12:45 START evaluation ep=0 candidate=None q=gsm8k:train:3594
+19:12:59 START evaluation ep=0 candidate=None q=gsm8k:train:6876
+19:13:13 START evaluation ep=0 candidate=None q=gsm8k:train:3042
+19:13:29 START evaluation ep=0 candidate=None q=gsm8k:train:4907
+19:13:46 START evaluation ep=0 candidate=None q=gsm8k:train:1557
+19:14:06 START training ep=1 candidate=0 q=gsm8k:train:2236
+19:14:16 START training ep=1 candidate=1 q=gsm8k:train:2236
+19:14:34 START training ep=1 candidate=2 q=gsm8k:train:2236
+19:14:46 START training ep=1 candidate=3 q=gsm8k:train:2236
+19:14:59 START training ep=1 candidate=4 q=gsm8k:train:2236
+adaptive episode=1/30 K=5 stop=warmup_five reward=0.800 grad=2.356e+02
+19:15:16 START training ep=2 candidate=0 q=gsm8k:train:1436
+19:15:34 START training ep=2 candidate=1 q=gsm8k:train:1436
+19:15:49 START training ep=2 candidate=2 q=gsm8k:train:1436
+19:16:08 START training ep=2 candidate=3 q=gsm8k:train:1436
+19:16:24 START training ep=2 candidate=4 q=gsm8k:train:1436
+adaptive episode=2/30 K=5 stop=warmup_five reward=0.400 grad=2.449e+02
+19:16:45 START training ep=3 candidate=0 q=gsm8k:train:6007
+19:17:05 START training ep=3 candidate=1 q=gsm8k:train:6007
+19:17:25 START training ep=3 candidate=2 q=gsm8k:train:6007
+19:17:40 START training ep=3 candidate=3 q=gsm8k:train:6007
+19:17:53 START training ep=3 candidate=4 q=gsm8k:train:6007
+adaptive episode=3/30 K=5 stop=warmup_five reward=0.800 grad=2.499e+02
+19:18:17 START training ep=4 candidate=0 q=gsm8k:train:2708
+19:18:31 START training ep=4 candidate=1 q=gsm8k:train:2708
+19:18:41 START training ep=4 candidate=2 q=gsm8k:train:2708
+19:18:57 START training ep=4 candidate=3 q=gsm8k:train:2708
+19:19:12 START training ep=4 candidate=4 q=gsm8k:train:2708
+adaptive episode=4/30 K=5 stop=warmup_five reward=0.400 grad=3.933e+02
+19:19:34 START training ep=5 candidate=0 q=gsm8k:train:2236
+19:19:51 START training ep=5 candidate=1 q=gsm8k:train:2236
+19:20:05 START training ep=5 candidate=2 q=gsm8k:train:2236
+19:20:13 START training ep=5 candidate=3 q=gsm8k:train:2236
+19:20:26 START training ep=5 candidate=4 q=gsm8k:train:2236
+adaptive episode=5/30 K=5 stop=warmup_five reward=0.800 grad=6.227e+01
+19:20:45 START training ep=6 candidate=0 q=gsm8k:train:5923
+19:21:04 START training ep=6 candidate=1 q=gsm8k:train:5923
+adaptive episode=6/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+19:21:24 START training ep=7 candidate=0 q=gsm8k:train:4749
+19:21:42 START training ep=7 candidate=1 q=gsm8k:train:4749
+adaptive episode=7/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+19:22:03 START training ep=8 candidate=0 q=gsm8k:train:3522
+19:22:20 START training ep=8 candidate=1 q=gsm8k:train:3522
+adaptive episode=8/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+19:22:39 START training ep=9 candidate=0 q=gsm8k:train:329
+19:22:53 START training ep=9 candidate=1 q=gsm8k:train:329
+adaptive episode=9/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+19:23:14 START training ep=10 candidate=0 q=gsm8k:train:1714
+19:23:31 START training ep=10 candidate=1 q=gsm8k:train:1714
+adaptive episode=10/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+19:23:54 START training ep=11 candidate=0 q=gsm8k:train:3474
+19:24:15 START training ep=11 candidate=1 q=gsm8k:train:3474
+19:24:31 START training ep=11 candidate=2 q=gsm8k:train:3474
+19:24:49 START training ep=11 candidate=3 q=gsm8k:train:3474
+adaptive episode=11/30 K=4 stop=bounded_failure reward=0.000 grad=0.000e+00
+19:25:14 START training ep=12 candidate=0 q=gsm8k:train:5811
+19:25:34 START training ep=12 candidate=1 q=gsm8k:train:5811
+19:25:50 START training ep=12 candidate=2 q=gsm8k:train:5811
+19:26:08 START training ep=12 candidate=3 q=gsm8k:train:5811
+19:26:19 START training ep=12 candidate=4 q=gsm8k:train:5811
+19:26:38 START training ep=12 candidate=5 q=gsm8k:train:5811
+adaptive episode=12/30 K=6 stop=informative_refinement reward=0.667 grad=3.476e+02
+19:27:02 START training ep=13 candidate=0 q=gsm8k:train:5692
+19:27:32 START training ep=13 candidate=1 q=gsm8k:train:5692
+19:27:51 START training ep=13 candidate=2 q=gsm8k:train:5692
+19:28:13 START training ep=13 candidate=3 q=gsm8k:train:5692
+19:28:39 START training ep=13 candidate=4 q=gsm8k:train:5692
+19:29:01 START training ep=13 candidate=5 q=gsm8k:train:5692
+adaptive episode=13/30 K=6 stop=informative_refinement reward=0.500 grad=1.499e+02
+19:29:27 START training ep=14 candidate=0 q=gsm8k:train:1714
+19:29:42 START training ep=14 candidate=1 q=gsm8k:train:1714
+adaptive episode=14/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+19:30:05 START training ep=15 candidate=0 q=gsm8k:train:6587
+19:30:25 START training ep=15 candidate=1 q=gsm8k:train:6587
+adaptive episode=15/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+19:30:49 START training ep=16 candidate=0 q=gsm8k:train:1681
+19:31:07 START training ep=16 candidate=1 q=gsm8k:train:1681
+adaptive episode=16/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+19:31:22 START training ep=17 candidate=0 q=gsm8k:train:5923
+19:31:37 START training ep=17 candidate=1 q=gsm8k:train:5923
+19:31:53 START training ep=17 candidate=2 q=gsm8k:train:5923
+19:32:10 START training ep=17 candidate=3 q=gsm8k:train:5923
+19:32:25 START training ep=17 candidate=4 q=gsm8k:train:5923
+19:32:42 START training ep=17 candidate=5 q=gsm8k:train:5923
+adaptive episode=17/30 K=6 stop=informative_refinement reward=0.833 grad=2.493e+02
+19:33:01 START training ep=18 candidate=0 q=gsm8k:train:2236
+19:33:13 START training ep=18 candidate=1 q=gsm8k:train:2236
+19:33:26 START training ep=18 candidate=2 q=gsm8k:train:2236
+19:33:39 START training ep=18 candidate=3 q=gsm8k:train:2236
+adaptive episode=18/30 K=4 stop=credit_cancelled reward=0.250 grad=2.909e-05
+19:33:53 START training ep=19 candidate=0 q=gsm8k:train:7084
+19:34:08 START training ep=19 candidate=1 q=gsm8k:train:7084
+19:34:23 START training ep=19 candidate=2 q=gsm8k:train:7084
+19:34:32 START training ep=19 candidate=3 q=gsm8k:train:7084
+adaptive episode=19/30 K=4 stop=credit_cancelled reward=0.500 grad=0.000e+00
+19:34:51 START training ep=20 candidate=0 q=gsm8k:train:5486
+19:35:11 START training ep=20 candidate=1 q=gsm8k:train:5486
+adaptive episode=20/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+19:35:28 START training ep=21 candidate=0 q=gsm8k:train:5465
+19:35:42 START training ep=21 candidate=1 q=gsm8k:train:5465
+adaptive episode=21/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+19:36:01 START training ep=22 candidate=0 q=gsm8k:train:4616
+19:36:17 START training ep=22 candidate=1 q=gsm8k:train:4616
+19:36:34 START training ep=22 candidate=2 q=gsm8k:train:4616
+19:36:48 START training ep=22 candidate=3 q=gsm8k:train:4616
+adaptive episode=22/30 K=4 stop=credit_cancelled reward=0.500 grad=0.000e+00
+19:37:11 START training ep=23 candidate=0 q=gsm8k:train:4733
+19:37:23 START training ep=23 candidate=1 q=gsm8k:train:4733
+adaptive episode=23/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+19:37:44 START training ep=24 candidate=0 q=gsm8k:train:5923
+19:37:59 START training ep=24 candidate=1 q=gsm8k:train:5923
+adaptive episode=24/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+19:38:21 START training ep=25 candidate=0 q=gsm8k:train:5923
+19:38:34 START training ep=25 candidate=1 q=gsm8k:train:5923
+adaptive episode=25/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+19:38:56 START training ep=26 candidate=0 q=gsm8k:train:1778
+19:39:11 START training ep=26 candidate=1 q=gsm8k:train:1778
+adaptive episode=26/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+19:39:31 START training ep=27 candidate=0 q=gsm8k:train:3474
+19:39:46 START training ep=27 candidate=1 q=gsm8k:train:3474
+19:40:05 START training ep=27 candidate=2 q=gsm8k:train:3474
+19:40:17 START training ep=27 candidate=3 q=gsm8k:train:3474
+adaptive episode=27/30 K=4 stop=bounded_failure reward=0.000 grad=0.000e+00
+19:40:39 START training ep=28 candidate=0 q=gsm8k:train:1778
+19:40:53 START training ep=28 candidate=1 q=gsm8k:train:1778
+adaptive episode=28/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+19:41:08 START training ep=29 candidate=0 q=gsm8k:train:4024
+19:41:28 START training ep=29 candidate=1 q=gsm8k:train:4024
+adaptive episode=29/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+19:41:44 START training ep=30 candidate=0 q=gsm8k:train:3059
+19:42:05 START training ep=30 candidate=1 q=gsm8k:train:3059
+adaptive episode=30/30 K=2 stop=easy_probe reward=1.000 grad=0.000e+00
+19:42:23 START evaluation ep=30 candidate=None q=gsm8k:train:6133
+19:42:41 START evaluation ep=30 candidate=None q=gsm8k:train:3065
+19:42:53 START evaluation ep=30 candidate=None q=gsm8k:train:2312
+19:43:09 START evaluation ep=30 candidate=None q=gsm8k:train:1865
+19:43:25 START evaluation ep=30 candidate=None q=gsm8k:train:881
+19:43:36 START evaluation ep=30 candidate=None q=gsm8k:train:3594
+19:43:53 START evaluation ep=30 candidate=None q=gsm8k:train:6876
+19:44:07 START evaluation ep=30 candidate=None q=gsm8k:train:3042
+19:44:24 START evaluation ep=30 candidate=None q=gsm8k:train:4907
+19:44:36 START evaluation ep=30 candidate=None q=gsm8k:train:1557
+Loading weights:   0%|                                 | 0/148 [00:00<?, ?it/s]Loading weights:   3%|▊                        | 5/148 [00:00<00:03, 42.92it/s]Loading weights:   7%|█▌                      | 10/148 [00:00<00:03, 40.63it/s]Loading weights:  10%|██▍                     | 15/148 [00:00<00:03, 34.35it/s]Loading weights:  13%|███                     | 19/148 [00:00<00:05, 22.88it/s]Loading weights: 100%|██████████████████████| 148/148 [00:00<00:00, 203.05it/s]
+19:45:20 START evaluation ep=0 candidate=None q=gsm8k:train:600
+19:45:35 START evaluation ep=0 candidate=None q=gsm8k:train:6493
+19:46:02 START evaluation ep=0 candidate=None q=gsm8k:train:5814
+19:46:15 START evaluation ep=0 candidate=None q=gsm8k:train:2551
+19:46:37 START evaluation ep=0 candidate=None q=gsm8k:train:546
+19:46:49 START evaluation ep=0 candidate=None q=gsm8k:train:2510
+19:47:07 START evaluation ep=0 candidate=None q=gsm8k:train:4107
+19:47:25 START evaluation ep=0 candidate=None q=gsm8k:train:812
+19:47:52 START evaluation ep=0 candidate=None q=gsm8k:train:3620
+19:48:10 START evaluation ep=0 candidate=None q=gsm8k:train:4417
+19:48:27 START evaluation ep=0 candidate=None q=gsm8k:train:2296
+19:48:46 START evaluation ep=0 candidate=None q=gsm8k:train:3025
+19:48:56 START evaluation ep=0 candidate=None q=gsm8k:train:4511
+19:49:11 START evaluation ep=0 candidate=None q=gsm8k:train:2359
+19:49:29 START evaluation ep=0 candidate=None q=gsm8k:train:5485
+19:49:46 START evaluation ep=0 candidate=None q=gsm8k:train:4538
+19:49:59 START evaluation ep=0 candidate=None q=gsm8k:train:4461
+19:50:17 START evaluation ep=0 candidate=None q=gsm8k:train:3852
+19:50:34 START evaluation ep=0 candidate=None q=gsm8k:train:2252
+19:50:50 START evaluation ep=0 candidate=None q=gsm8k:train:4537
+Loading weights:   0%|                                 | 0/148 [00:00<?, ?it/s]Loading weights:   2%|▌                        | 3/148 [00:00<00:11, 13.02it/s]Loading weights:   3%|▊                        | 5/148 [00:00<00:09, 14.45it/s]Loading weights:   5%|█▎                       | 8/148 [00:00<00:07, 19.59it/s]Loading weights:   7%|█▊                      | 11/148 [00:00<00:08, 15.56it/s]Loading weights: 100%|██████████████████████| 148/148 [00:00<00:00, 209.74it/s]
+Loading weights:   0%|                                 | 0/148 [00:00<?, ?it/s]Loading weights:   3%|▋                        | 4/148 [00:00<00:03, 38.58it/s]Loading weights:   5%|█▎                       | 8/148 [00:00<00:05, 24.72it/s]Loading weights:   7%|█▊                      | 11/148 [00:00<00:07, 18.40it/s]Loading weights: 100%|██████████████████████| 148/148 [00:00<00:00, 265.13it/s]
+19:51:42 START evaluation ep=0 candidate=None q=gsm8k:train:600
+19:51:55 START evaluation ep=0 candidate=None q=gsm8k:train:6493
+19:52:18 START evaluation ep=0 candidate=None q=gsm8k:train:5814
+19:52:30 START evaluation ep=0 candidate=None q=gsm8k:train:2551
+19:52:51 START evaluation ep=0 candidate=None q=gsm8k:train:546
+19:53:02 START evaluation ep=0 candidate=None q=gsm8k:train:2510
+19:53:18 START evaluation ep=0 candidate=None q=gsm8k:train:4107
+19:53:34 START evaluation ep=0 candidate=None q=gsm8k:train:812
+19:54:01 START evaluation ep=0 candidate=None q=gsm8k:train:3620
+19:54:18 START evaluation ep=0 candidate=None q=gsm8k:train:4417
+19:54:34 START evaluation ep=0 candidate=None q=gsm8k:train:2296
+19:54:54 START evaluation ep=0 candidate=None q=gsm8k:train:3025
+19:55:05 START evaluation ep=0 candidate=None q=gsm8k:train:4511
+19:55:20 START evaluation ep=0 candidate=None q=gsm8k:train:2359
+19:55:38 START evaluation ep=0 candidate=None q=gsm8k:train:5485
+19:55:55 START evaluation ep=0 candidate=None q=gsm8k:train:4538
+19:56:08 START evaluation ep=0 candidate=None q=gsm8k:train:4461
+19:56:24 START evaluation ep=0 candidate=None q=gsm8k:train:3852
+19:56:41 START evaluation ep=0 candidate=None q=gsm8k:train:2252
+19:56:56 START evaluation ep=0 candidate=None q=gsm8k:train:4537
+V3 SCREEN COMPLETE {
+  "accuracies": {
+    "v2": 0.6,
+    "v3": 0.6,
+    "initial": 0.6
+  },
+  "training_attempts": {
+    "v2": 92,
+    "v3": 97
+  },
+  "screening": {
+    "promising": false,
+    "criteria": {
+      "both_completed": true,
+      "beats_v2": false,
+      "beats_initial": false,
+      "budget": true,
+      "finite_updates": true,
+      "post_warmup_k_varies": true
+    },
+    "correct": {
+      "v2": 12,
+      "v3": 12,
+      "initial": 12
+    },
+    "scope": "One-seed exploratory screen; no matched static or formal success claim"
+  },
+  "total_new_attempts": 283
+}
+RUNNER FINISHED {"status": "completed", "complete": true}

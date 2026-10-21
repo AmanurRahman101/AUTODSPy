@@ -1,0 +1,23 @@
+{
+  "3": "docs/README.md",
+  "6": "DSPy Pipeline Optimization with Reinforcement Learning",
+  "8": "AdaGRPO GSM8K implementation and verification",
+  "28": "Additional Papers for Adaptive-K in AutoDSPy",
+  "34": "Adaptive-K for AutoDSPy: evidence, current status, and research objective",
+  "43": "Project progress and session handoff",
+  "44": "Static-K experiment guide",
+  "45": "AdaGRPO V3 implementation verification",
+  "46": "Research status",
+  "47": "AdaGRPO",
+  "52": "AdaGRPO: matched V1 versus V2 comparison",
+  "62": "Phased implementation plan",
+  "64": "Ahnaf's GSM8K Static-K Results: How AdaGRPO Should Use Them",
+  "68": "Notebook catalog",
+  "69": "Project map",
+  "70": "Results catalog",
+  "71": "Local environment and operation",
+  "72": "Phase 2 — GSM8K implementation and verification",
+  "73": "Phase 3 — Independent HotpotQA notebook",
+  "74": "Documentation",
+  "75": "AdaGRPO V2 verified implementation"
+}

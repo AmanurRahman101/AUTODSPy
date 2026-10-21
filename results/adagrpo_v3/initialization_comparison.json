@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": {
+    "same_policy": true,
+    "same_evaluation_identity": true,
+    "same_questions": true,
+    "same_trajectories": true,
+    "same_rewards": true
+  },
+  "accuracy": [
+    0.7,
+    0.7
+  ]
+}

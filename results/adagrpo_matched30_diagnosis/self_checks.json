@@ -1,0 +1,21 @@
+{
+  "passed": 218,
+  "retained_checks": 204,
+  "new_checks": [
+    "All 204 retained checks",
+    "Every source code cell preserved",
+    "Only allocation and artifact configuration differs",
+    "Static baseline has150 attempts",
+    "Same seed, LR, rewards, model, context",
+    "All pre-divergence candidate streams match",
+    "Per-question evaluation streams match",
+    "Workload ceiling230",
+    "Archive evaluator explicit examples interface",
+    "Training requires opt-in",
+    "Static full future budget reservation",
+    "Interrupted work remains charged",
+    "Exact source runtime accepted",
+    "Runtime drift rejected before inference"
+  ],
+  "external_model_calls": 0
+}

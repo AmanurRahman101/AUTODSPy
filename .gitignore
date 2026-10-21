@@ -6,3 +6,8 @@ __pycache__/
 baseline_metrics.json
 
 venv_adagrpo/
+
+# Transient graph writes and runtime locks
+graphify-out/cache/*.tmp
+results/**/runner.lock
+results/**/study.lock

@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this work, please cite the following paper."
+message: "For the foundational AutoDSPy research, cite the paper below. AdaGRPO fork findings are documented separately in docs/research/STATUS.md."
 title: "AutoDSPy: Automating Modular Prompt Design with Reinforcement Learning for Small and Large Language Models"
 authors:
   - family-names: Azim
@@ -8,10 +8,10 @@ authors:
     given-names: Abrar Ur
   - family-names: Omar
     given-names: Hasan Bin
-  - family-names: Adnan Jami
-    given-names: Abdullah Mohammad Muntasir
-  - family-names: Ibn Ahad
-    given-names: Jawad
+  - family-names: Jami
+    given-names: Abdullah Mohammad Muntasir Adnan
+  - family-names: Ahad
+    given-names: Jawad Ibn
   - family-names: Kabir
     given-names: Muhammad Rafsan
   - family-names: Hossain
@@ -24,13 +24,11 @@ authors:
     given-names: Shafin
   - family-names: Mohammed
     given-names: Nabeel
-date-released: 2025-10-07
-version: 1.0.0
-doi: 10.18653/v1/2024.emnlp-main.597
-repository-code: "https://github.com/YourUsername/AutoDSPy"
+doi: 10.18653/v1/2025.emnlp-industry.192
+repository-code: "https://github.com/AmanurRahman101/AUTODSPy"
 license: MIT
 preferred-citation:
-  type: article
+  type: conference-paper
   title: "AutoDSPy: Automating Modular Prompt Design with Reinforcement Learning for Small and Large Language Models"
   authors:
     - family-names: Azim
@@ -39,10 +37,10 @@ preferred-citation:
       given-names: Abrar Ur
     - family-names: Omar
       given-names: Hasan Bin
-    - family-names: Adnan Jami
-      given-names: Abdullah Mohammad Muntasir
-    - family-names: Ibn Ahad
-      given-names: Jawad
+    - family-names: Jami
+      given-names: Abdullah Mohammad Muntasir Adnan
+    - family-names: Ahad
+      given-names: Jawad Ibn
     - family-names: Kabir
       given-names: Muhammad Rafsan
     - family-names: Hossain
@@ -55,7 +53,10 @@ preferred-citation:
       given-names: Shafin
     - family-names: Mohammed
       given-names: Nabeel
-  journal: "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing (EMNLP)"
+  collection-title: "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing: Industry Track"
   year: 2025
-  publisher: "Association for Computational Linguistics"
-  doi: "10.18653/v1/2024.emnlp-main.597"
+  publisher:
+    name: "Association for Computational Linguistics"
+  doi: "10.18653/v1/2025.emnlp-industry.192"
+
+# Publication metadata: https://aclanthology.org/2025.emnlp-industry.192/

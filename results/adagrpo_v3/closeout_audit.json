@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "source_preservation": {
+    "preserved_files": 389,
+    "all_hashes_preserved": true
+  },
+  "complete": true,
+  "wall_seconds": 5134.310512065887,
+  "original_deadline_preserved": true,
+  "engineering_checks": 233,
+  "exact_live_initialization": true,
+  "exact_live_prefix": true,
+  "confirmation_role_records": 60,
+  "unique_confirmation_attempts": 40,
+  "reused_role_records": 20,
+  "reused_historical_external_attempts": 0,
+  "total_new_attempts": 283,
+  "smoke_final_validation": {
+    "completed_records": 2,
+    "included_in_gross_cost": true,
+    "scope": "Durable standalone smoke_validation.json; not appended to the deliberately partial training validation history"
+  },
+  "training_attempts": {
+    "v2": 92,
+    "v3": 97
+  },
+  "accuracies": {
+    "v2": 0.6,
+    "v3": 0.6,
+    "initial": 0.6
+  },
+  "screening": {
+    "promising": false,
+    "criteria": {
+      "both_completed": true,
+      "beats_v2": false,
+      "beats_initial": false,
+      "budget": true,
+      "finite_updates": true,
+      "post_warmup_k_varies": true
+    },
+    "correct": {
+      "v2": 12,
+      "v3": 12,
+      "initial": 12
+    },
+    "scope": "One-seed exploratory screen; no matched static or formal success claim"
+  },
+  "zero_advantage_groups": {
+    "v2": 19,
+    "v3": 19
+  },
+  "gradients_over_1e_minus3": {
+    "v2": 8,
+    "v3": 8
+  },
+  "gradient_threshold_scope": "Descriptive threshold 1e-3 only; no effect on optimization or screening",
+  "official_test_access": false,
+  "audit_scope": "Fresh-process read-only closeout. Zero model initializations and external inference below refer to this audit only; the authorized live study trained both policies.",
+  "model_initializations": 0,
+  "external_inference": 0,
+  "blocked_calls": []
+}

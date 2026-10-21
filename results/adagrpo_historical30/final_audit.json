@@ -1,0 +1,18 @@
+{
+  "status": "completed",
+  "counts": {
+    "gross_training_attempts": 108,
+    "gross_validation_attempts": 20,
+    "gross_archived_evaluation_attempts": 30
+  },
+  "original_deadline_unix": 1792577244.751058,
+  "all_complete": true,
+  "model_inference_in_audit": false,
+  "formal_success_demonstrated": false,
+  "training_status": "completed",
+  "episode": 30,
+  "training_artifact_audit_passed": true,
+  "outcome": "observed_accuracy_target_failed",
+  "correct": 16,
+  "training_saving": 0.28
+}

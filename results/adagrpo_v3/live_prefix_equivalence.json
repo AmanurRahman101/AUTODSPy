@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "compared_candidates": 4,
+  "checks": {
+    "same_question": true,
+    "same_trajectories": true,
+    "same_rewards": true,
+    "same_outputs": true
+  },
+  "scope": "Only the first episode before policy divergence; later policies are allowed to differ"
+}
