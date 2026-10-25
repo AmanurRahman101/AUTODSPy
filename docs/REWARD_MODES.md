@@ -1,6 +1,6 @@
 # GSM8K reward modes and reproducibility
 
-The implementation is self-contained in `Static_K_GRPO_GSM8K.ipynb`: configuration in section 3, reward/cache functions in section 12, and mock tests in section 25. HotpotQA and the original `DSPy_GRPO.ipynb` are unchanged. No training or inference starts when defining these functions.
+The GSM8K implementation is self-contained in `Static_K_GRPO_GSM8K.ipynb`: configuration in section 3, reward/cache functions in section 12, and mock tests in section 25. Its source and the original `DSPy_GRPO.ipynb` remain unchanged by the HotpotQA adaptation described below. No training or inference starts when defining these functions.
 
 ## Three modes
 
@@ -122,3 +122,22 @@ Prompt, parser or grading changes require version changes. Even an unchanged rub
 Run `reward_protocol_self_checks()` after loading notebook definitions. Tests use mocks, saved disagreement fixtures and a tiny CPU policy fixture, not GPT-2 retraining or Ollama inference. Outcomes are saved in `docs/audit_artifacts/reward_protocol_tests.json`; prior regression outcomes are in `reward_legacy_regression_checks.json`. See the [investigation report](REWARD_JUDGE_INVESTIGATION.md) for the actual verification counts and remaining uncertainty.
 
 For Adaptive-K under the improved cached/default, binary, or numeric protocol, **new Static-K baselines under that same protocol are necessary**. Prefer the four K values and multiple seeds with identical schedules/selections and prespecified budgets. The existing runs remain evidence about the legacy protocol, not evidence about policies that a new reward method would train. Reusing them is defensible only for an Adaptive-K experiment that exactly retains their legacy reward protocol and other controls, with the existing small-sample limitations stated.
+
+## HotpotQA adaptation
+
+`Static_K_GRPO_HotpotQA.ipynb` now carries the same judge controls, private immutable
+cache/snapshot machinery, logging, checkpoint receipts, protocol checks and saved-data
+analysis. It uses full provided-context inputs and normalized textual answers.
+Its modes are `original_semantic`, `binary_semantic`, and `answer_exact`; the latter
+never calls a judge. EM selects checkpoints and answer F1/precision/recall remain
+separate metrics. Original semantic retains bracket-or-text extraction; the other
+modes use versioned explicit-final-text extraction. Historical snapshots without
+reward fields retain the uncached legacy HotpotQA interpretation.
+
+HotpotQA reward/cache versions use a `hotpotqa-` prefix and record
+`answer_extraction_version`; they must not be pooled with GSM8K protocols or
+their numeric extractor. Cache keys include the complete context/question,
+response and ground truth. The [verification record](audit_artifacts/hotpotqa_parity_verification.json)
+reports 135 notebook assertions and 167 reward/integration/analysis assertions,
+all using mocks and tiny CPU policies. These checks overlap in subject matter;
+they do not establish benchmark accuracy or live HotpotQA feasibility.

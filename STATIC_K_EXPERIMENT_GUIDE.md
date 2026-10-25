@@ -125,8 +125,10 @@ Actual checks and unresolved limitations are reported in [PHASE_2_REPORT.md](doc
 
 Use the same K, preset, mode and checkpoint commands inside the HotpotQA notebook;
 it never imports GSM8K. Results are under `results/hotpotqa/k<K>/seed<seed>/<preset>/<run>/`.
-The default official `distractor` allocation is 200 training examples, 50 additional
-training-split validation examples and 200 labeled development examples for final
+The current local defaults mirror the tested GSM8K notebook: K=15, seed 42,
+Llama 3.2 3B, learning rate 1e-5, and smoke/pilot/baseline lengths of 5/10/30
+episodes. The official `distractor` allocation is 50 training examples, 10 additional
+training-split validation examples and 30 labeled development examples for final
 testing. `TEST_SOURCE_SPLIT="train"` explicitly selects a third disjoint training
 slice after both training and validation. This alternative creates a different
 manifest and cannot be compared as the same protocol. Full evaluation explicitly
@@ -138,11 +140,24 @@ paper's exact task configuration was not verifiable; consistent provided-context
 distractor QA is a documented project choice. There is no search or retrieval.
 
 Answer EM uses official HotpotQA normalization; token F1 follows its answer
-evaluator, including the yes/no/noanswer rule. Training reward remains exact-match
-one followed by the original fractional Llama semantic judge on mismatches.
+evaluator, including the yes/no/noanswer rule. `original_semantic` (default) gives
+normalized exact-match one followed by the original fractional semantic judge on
+mismatches. `binary_semantic` uses strict 0/1 semantic equivalence; `answer_exact`
+uses normalized textual EM with no judge. The latter two use explicit final-text
+extraction rather than GSM8K numeric extraction. Private persistent judge caches,
+optional frozen snapshots, versioned judge controls, and request traces mirror
+the GSM8K workflow with separate HotpotQA protocol identities.
 F1 never enters the reward or checkpoint selection. Highest validation answer EM
 selects the checkpoint, with the earliest episode winning ties. Testing reports
 both EM and F1, and the notebook displays twelve figures, including their comparison.
+Its standalone saved-data analysis exports additional research tables and figures
+under protocol/run-set namespaces. Set `RUN_DIRS` to completed HotpotQA runs;
+no historical GSM8K paths or results are used. Run `notebook_self_checks()` and
+`reward_protocol_self_checks()` for offline verification. The adaptation passed
+302 assertions using mocks/tiny CPU policies; see
+[the verification record](docs/audit_artifacts/hotpotqa_parity_verification.json).
+Live HotpotQA training and default joint-model memory feasibility were not tested
+during this adaptation.
 
 GPT-2 left-truncates long inputs to `MAX_POLICY_TOKENS=1024`, retaining the question
 and action suffix while potentially losing earlier context. Trajectories record

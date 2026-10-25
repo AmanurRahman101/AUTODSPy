@@ -99,6 +99,18 @@
       "source_location": "L1"
     },
     {
+      "id": "agents_skills_code_review_skill_1_pin_the_fixed_point",
+      "label": "1. Pin the fixed point",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "run_grpo_baseline.py",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1. pin the fixed point",
+      "source_file": ".agents/skills/code-review/SKILL.md",
+      "source_location": "L17"
+    },
+    {
       "id": "docs_master_spec_6_preserve_the_original_dspy_action_space",
       "label": "6. Preserve the Original DSPy Action Space",
       "_origin": "ast",
@@ -5472,7 +5484,7 @@
       "node_kind": "heading",
       "norm_label": "changing k, budgets and presets",
       "source_file": "STATIC_K_EXPERIMENT_GUIDE.md",
-      "source_location": "L167"
+      "source_location": "L182"
     },
     {
       "id": "static_k_experiment_guide_comparisons_plots_and_resource_accounting",
@@ -5520,7 +5532,7 @@
       "node_kind": "heading",
       "norm_label": "monitoring gpu memory and interpreting evidence",
       "source_file": "STATIC_K_EXPERIMENT_GUIDE.md",
-      "source_location": "L197"
+      "source_location": "L212"
     },
     {
       "id": "static_k_experiment_guide_other_k_values_and_presets",
@@ -8662,18 +8674,6 @@
       "source_location": "L1"
     },
     {
-      "id": "agents_skills_code_review_skill_1_pin_the_fixed_point",
-      "label": "1. Pin the fixed point",
-      "_origin": "ast",
-      "community": 67,
-      "community_name": "Process",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "1. pin the fixed point",
-      "source_file": ".agents/skills/code-review/SKILL.md",
-      "source_location": "L17"
-    },
-    {
       "id": "agents_skills_code_review_skill_2_identify_the_spec_source",
       "label": "2. Identify the spec source",
       "_origin": "ast",
@@ -8768,6 +8768,18 @@
       "norm_label": "gsm8k reward modes and reproducibility",
       "source_file": "docs/REWARD_MODES.md",
       "source_location": "L1"
+    },
+    {
+      "id": "docs_reward_modes_hotpotqa_adaptation",
+      "label": "HotpotQA adaptation",
+      "_origin": "ast",
+      "community": 68,
+      "community_name": "GSM8K reward modes and reproducibility",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "hotpotqa adaptation",
+      "source_file": "docs/REWARD_MODES.md",
+      "source_location": "L126"
     },
     {
       "id": "docs_reward_modes_logging_and_scientific_grouping",
@@ -17046,6 +17058,17 @@
     },
     {
       "source": "docs_reward_modes_gsm8k_reward_modes_and_reproducibility",
+      "target": "docs_reward_modes_hotpotqa_adaptation",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/REWARD_MODES.md",
+      "source_location": "L126",
+      "weight": 1.0
+    },
+    {
+      "source": "docs_reward_modes_gsm8k_reward_modes_and_reproducibility",
       "target": "docs_reward_modes_switching_modes",
       "relation": "contains",
       "_origin": "ast",
@@ -17701,7 +17724,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "STATIC_K_EXPERIMENT_GUIDE.md",
-      "source_location": "L167",
+      "source_location": "L182",
       "weight": 1.0
     },
     {
@@ -17712,7 +17735,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "STATIC_K_EXPERIMENT_GUIDE.md",
-      "source_location": "L197",
+      "source_location": "L212",
       "weight": 1.0
     },
     {
@@ -18546,7 +18569,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "STATIC_K_EXPERIMENT_GUIDE.md",
-      "source_location": "L164",
+      "source_location": "L179",
       "weight": 1.0
     },
     {
@@ -18810,5 +18833,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "54948cf19e35e505719a910635a3354cf6e919e2"
+  "built_at_commit": "13d05141934e43db51d1914493d21a24a9c5b86e"
 }

@@ -1,17 +1,17 @@
-# Graph Report - AUTODSPy  (2026-10-14)
+# Graph Report - AUTODSPy  (2026-10-25)
 
 ## Corpus Check
-- 149 files · ~358,792 words
+- 148 files · ~348,462 words
 - Verdict: corpus is large enough that graph structure adds value.
-- Unclassified: 44 file(s) not represented in the graph (top: .csv 18, .jsonl 12, .ipynb 9)
+- Unclassified: 43 file(s) not represented in the graph (top: .csv 18, .jsonl 12, .ipynb 8)
 
 ## Summary
-- 803 nodes · 805 edges · 69 communities (53 shown, 16 thin omitted)
+- 804 nodes · 806 edges · 69 communities (53 shown, 16 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 17 edges (avg confidence: 0.94)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `54948cf1`
+- Built from commit: `13d05141`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -90,8 +90,6 @@
 10. `📊 CSE 498R Thesis: Baseline Execution & Empirical Analysis Report` - 10 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `1. Pin the fixed point` --references--> `main()`  [INFERRED]
-  .agents/skills/code-review/SKILL.md → run_grpo_baseline.py
 - `Reward semantics and failure handling` --references--> `compute_reward()`  [INFERRED]
   docs/PHASE_1_AUDIT.md → run_grpo_baseline.py
 - `Reproduction and ranked explanations` --references--> `compute_reward()`  [INFERRED]
@@ -100,6 +98,8 @@
   docs/PHASE_1_AUDIT.md → run_grpo_baseline.py
 - `Initialization and gradient ownership` --references--> `generate_pipeline()`  [INFERRED]
   docs/PHASE_1_AUDIT.md → run_grpo_baseline.py
+- `1. Pin the fixed point` --references--> `main()`  [INFERRED]
+  .agents/skills/code-review/SKILL.md → run_grpo_baseline.py
 
 ## Import Cycles
 - None detected.
@@ -108,7 +108,7 @@
 
 ### Community 0 - "run_grpo_baseline.py"
 Cohesion: 0.05
-Nodes (37): 6. Preserve the Original DSPy Action Space, 1. Scope and evidence conventions, 2. Published methodology, released code, and project protocol, 3. GPT-2 and policy action audit, 4. Verified correctness and operational issues, 5. Dataset and HotpotQA task audit, 6. Environment and hardware observations, 7. Actual checks and outcomes (+29 more)
+Nodes (38): 1. Pin the fixed point, 6. Preserve the Original DSPy Action Space, 1. Scope and evidence conventions, 2. Published methodology, released code, and project protocol, 3. GPT-2 and policy action audit, 4. Verified correctness and operational issues, 5. Dataset and HotpotQA task audit, 6. Environment and hardware observations (+30 more)
 
 ### Community 1 - "AutoDSPy Static-K Research — Master Specification"
 Cohesion: 0.05
@@ -311,16 +311,16 @@ Cohesion: 0.17
 Nodes (11): 10. Recommended next research experiment, 2. Summary comparing all four K values, 3. Model performance analysis, 4. GRPO learning behavior and group effectiveness, 5. Pipeline diversity analysis, 6. Training stability and reward integrity, 7. Computational efficiency comparison, 8. Limitations and potential confounding factors (+3 more)
 
 ### Community 67 - "Process"
-Cohesion: 0.25
-Nodes (7): 1. Pin the fixed point, 2. Identify the spec source, 3. Identify the standards sources, 4. Spawn both sub-agents in parallel, 5. Aggregate, Process, Why two axes
+Cohesion: 0.29
+Nodes (6): 2. Identify the spec source, 3. Identify the standards sources, 4. Spawn both sub-agents in parallel, 5. Aggregate, Process, Why two axes
 
 ### Community 68 - "GSM8K reward modes and reproducibility"
-Cohesion: 0.25
-Nodes (8): Explicit legacy option and old checkpoints, GSM8K reward modes and reproducibility, Logging and scientific grouping, Persistent cache and common snapshots, Standardized semantic judge, Switching modes, Tests and next experiments, Three modes
+Cohesion: 0.22
+Nodes (9): Explicit legacy option and old checkpoints, GSM8K reward modes and reproducibility, HotpotQA adaptation, Logging and scientific grouping, Persistent cache and common snapshots, Standardized semantic judge, Switching modes, Tests and next experiments (+1 more)
 
 ## Knowledge Gaps
-- **534 isolated node(s):** `block-dangerous-git.sh script`, `The five options`, `The tree`, `Primary and secondary sources`, `These are judgement calls` (+529 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 583 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **535 isolated node(s):** `block-dangerous-git.sh script`, `The five options`, `The tree`, `Primary and secondary sources`, `These are judgement calls` (+530 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 584 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **16 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
@@ -333,9 +333,9 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `Core Functions` connect `run_grpo_baseline.py` to `DSPy Pipeline Optimization with Reinforcement Learning`?**
   _High betweenness centrality (0.021) - this node is a cross-community bridge._
 - **What connects `block-dangerous-git.sh script`, `The five options`, `The tree` to the rest of the system?**
-  _534 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _535 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `run_grpo_baseline.py` be split into smaller, more focused modules?**
-  _Cohesion score 0.05272108843537415 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05142857142857143 - nodes in this community are weakly interconnected._
 - **Should `AutoDSPy Static-K Research — Master Specification` be split into smaller, more focused modules?**
   _Cohesion score 0.045454545454545456 - nodes in this community are weakly interconnected._
 - **Should `Issue tracker: GitHub` be split into smaller, more focused modules?**
