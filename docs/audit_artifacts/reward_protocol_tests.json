@@ -1,0 +1,1129 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "default remains original_semantic",
+      "status": "passed"
+    },
+    {
+      "name": "new semantic cache/logging enabled",
+      "status": "passed"
+    },
+    {
+      "name": "reject unsupported reward mode 'binary'",
+      "status": "passed"
+    },
+    {
+      "name": "reject unsupported reward mode 'fractional'",
+      "status": "passed"
+    },
+    {
+      "name": "reject unsupported reward mode ''",
+      "status": "passed"
+    },
+    {
+      "name": "reject unsupported reward mode None",
+      "status": "passed"
+    },
+    {
+      "name": "invalid reward configuration {'judge_cache_enabled': 'yes'}",
+      "status": "passed"
+    },
+    {
+      "name": "invalid reward configuration {'judge_temperature': 0.1}",
+      "status": "passed"
+    },
+    {
+      "name": "invalid reward configuration {'judge_max_attempts': 0}",
+      "status": "passed"
+    },
+    {
+      "name": "invalid reward configuration {'judge_seed': '42'}",
+      "status": "passed"
+    },
+    {
+      "name": "invalid reward configuration {'judge_model_digest': 'unpinned'}",
+      "status": "passed"
+    },
+    {
+      "name": "invalid reward configuration {'judge_parser_version': 'unknown'}",
+      "status": "passed"
+    },
+    {
+      "name": "invalid reward configuration {'judge_cache_policy': 'shared_mutable'}",
+      "status": "passed"
+    },
+    {
+      "name": "invalid reward configuration {'judge_cache_policy': 'frozen'}",
+      "status": "passed"
+    },
+    {
+      "name": "numeric exact '[1,234]'",
+      "status": "passed"
+    },
+    {
+      "name": "numeric exact '[-5.50]'",
+      "status": "passed"
+    },
+    {
+      "name": "numeric exact '[.5]'",
+      "status": "passed"
+    },
+    {
+      "name": "numeric exact '#### 1,234.50'",
+      "status": "passed"
+    },
+    {
+      "name": "numeric exact 'Final answer: -2.75 dollars.'",
+      "status": "passed"
+    },
+    {
+      "name": "numeric exact '$6'",
+      "status": "passed"
+    },
+    {
+      "name": "numeric exact '**6**'",
+      "status": "passed"
+    },
+    {
+      "name": "numeric exact 'The answer is [6].'",
+      "status": "passed"
+    },
+    {
+      "name": "numeric exact '6 apples.'",
+      "status": "passed"
+    },
+    {
+      "name": "numeric exact '[-0.0]'",
+      "status": "passed"
+    },
+    {
+      "name": "numeric exact '[+5]'",
+      "status": "passed"
+    },
+    {
+      "name": "numeric exact '[50]'",
+      "status": "passed"
+    },
+    {
+      "name": "numeric exact '[1,23]'",
+      "status": "passed"
+    },
+    {
+      "name": "numeric exact '[1.2.3]'",
+      "status": "passed"
+    },
+    {
+      "name": "numeric exact '[2+3=5]'",
+      "status": "passed"
+    },
+    {
+      "name": "numeric exact 'We start with 3 and add 4'",
+      "status": "passed"
+    },
+    {
+      "name": "numeric exact 'x + 108 = 160'",
+      "status": "passed"
+    },
+    {
+      "name": "numeric exact '[5] [6]'",
+      "status": "passed"
+    },
+    {
+      "name": "numeric exact 'The intermediate result is 6.'",
+      "status": "passed"
+    },
+    {
+      "name": "numeric exact 'The intermediate answer is 6.'",
+      "status": "passed"
+    },
+    {
+      "name": "numeric exact 'Partial sum is [6]'",
+      "status": "passed"
+    },
+    {
+      "name": "numeric exact 'Final result: 6'",
+      "status": "passed"
+    },
+    {
+      "name": "numeric exact 'Answer: **[6]**.'",
+      "status": "passed"
+    },
+    {
+      "name": "numeric exact '[nan]'",
+      "status": "passed"
+    },
+    {
+      "name": "numeric exact '[inf]'",
+      "status": "passed"
+    },
+    {
+      "name": "numeric exact ''",
+      "status": "passed"
+    },
+    {
+      "name": "numeric exact None",
+      "status": "passed"
+    },
+    {
+      "name": "numeric mode disables judge cache",
+      "status": "passed"
+    },
+    {
+      "name": "original extractor unchanged on reasoning",
+      "status": "passed"
+    },
+    {
+      "name": "strict extractor rejects arbitrary final reasoning number",
+      "status": "passed"
+    },
+    {
+      "name": "original parser semantics [0.5]",
+      "status": "passed"
+    },
+    {
+      "name": "original parser semantics 0.125",
+      "status": "passed"
+    },
+    {
+      "name": "original parser semantics [1]",
+      "status": "passed"
+    },
+    {
+      "name": "original parser semantics [-1]",
+      "status": "passed"
+    },
+    {
+      "name": "original parser semantics [2]",
+      "status": "passed"
+    },
+    {
+      "name": "binary parser [0]",
+      "status": "passed"
+    },
+    {
+      "name": "binary parser [1]",
+      "status": "passed"
+    },
+    {
+      "name": "binary parser 0.0",
+      "status": "passed"
+    },
+    {
+      "name": "binary parser [1.000]",
+      "status": "passed"
+    },
+    {
+      "name": "binary rejects '[0.5]'",
+      "status": "passed"
+    },
+    {
+      "name": "binary rejects '[nan]'",
+      "status": "passed"
+    },
+    {
+      "name": "binary rejects '[inf]'",
+      "status": "passed"
+    },
+    {
+      "name": "binary rejects 'Correct: [1]'",
+      "status": "passed"
+    },
+    {
+      "name": "binary rejects '[1] [0]'",
+      "status": "passed"
+    },
+    {
+      "name": "binary rejects '-1'",
+      "status": "passed"
+    },
+    {
+      "name": "binary rejects '2'",
+      "status": "passed"
+    },
+    {
+      "name": "binary rejects 'True'",
+      "status": "passed"
+    },
+    {
+      "name": "binary rejects ''",
+      "status": "passed"
+    },
+    {
+      "name": "binary rejects None",
+      "status": "passed"
+    },
+    {
+      "name": "original malformed parser [nan]",
+      "status": "passed"
+    },
+    {
+      "name": "original malformed parser [inf]",
+      "status": "passed"
+    },
+    {
+      "name": "original malformed parser correct 1",
+      "status": "passed"
+    },
+    {
+      "name": "original malformed parser [1] [0]",
+      "status": "passed"
+    },
+    {
+      "name": "original malformed parser 0.1 extra",
+      "status": "passed"
+    },
+    {
+      "name": "identical cached inputs keep identical reward",
+      "status": "passed"
+    },
+    {
+      "name": "cache hit reports zero new LM calls",
+      "status": "passed"
+    },
+    {
+      "name": "persistent cache survives context recreation",
+      "status": "passed"
+    },
+    {
+      "name": "K/episode/candidate identifiers excluded from key",
+      "status": "passed"
+    },
+    {
+      "name": "uncached mode can expose judge-response drift",
+      "status": "passed"
+    },
+    {
+      "name": "explicit legacy retains fractional uncached score",
+      "status": "passed"
+    },
+    {
+      "name": "binary semantic equivalence earns one",
+      "status": "passed"
+    },
+    {
+      "name": "cache separation between reward modes",
+      "status": "passed"
+    },
+    {
+      "name": "original_semantic accepts fractional reward",
+      "status": "passed"
+    },
+    {
+      "name": "fractional binary judgment fails deterministically",
+      "status": "passed"
+    },
+    {
+      "name": "cached failure stays distinct from incorrectness",
+      "status": "passed"
+    },
+    {
+      "name": "malformed original judgment is recorded zero",
+      "status": "passed"
+    },
+    {
+      "name": "explicit attempts recorded with eventual valid score",
+      "status": "passed"
+    },
+    {
+      "name": "retry failures classify transport and parsing",
+      "status": "passed"
+    },
+    {
+      "name": "detailed logging includes full request/response/identifiers",
+      "status": "passed"
+    },
+    {
+      "name": "model/digest and generation settings logged",
+      "status": "passed"
+    },
+    {
+      "name": "authentication keys absent from logs/cache trace",
+      "status": "passed"
+    },
+    {
+      "name": "cache invalidation reward_mode",
+      "status": "passed"
+    },
+    {
+      "name": "cache invalidation prompt",
+      "status": "passed"
+    },
+    {
+      "name": "cache invalidation question",
+      "status": "passed"
+    },
+    {
+      "name": "cache invalidation ground_truth",
+      "status": "passed"
+    },
+    {
+      "name": "cache invalidation candidate_answer",
+      "status": "passed"
+    },
+    {
+      "name": "cache invalidation judge_model_digest",
+      "status": "passed"
+    },
+    {
+      "name": "cache invalidation prompt_version",
+      "status": "passed"
+    },
+    {
+      "name": "cache invalidation parser_version",
+      "status": "passed"
+    },
+    {
+      "name": "cache invalidation cache_version",
+      "status": "passed"
+    },
+    {
+      "name": "cache generation invalidation seed",
+      "status": "passed"
+    },
+    {
+      "name": "cache generation invalidation max_tokens",
+      "status": "passed"
+    },
+    {
+      "name": "cache generation invalidation num_ctx",
+      "status": "passed"
+    },
+    {
+      "name": "cache generation invalidation temperature",
+      "status": "passed"
+    },
+    {
+      "name": "cache generation invalidation top_p",
+      "status": "passed"
+    },
+    {
+      "name": "changed settings actually trigger new judge call",
+      "status": "passed"
+    },
+    {
+      "name": "reject active generation drift",
+      "status": "passed"
+    },
+    {
+      "name": "generation drift rejected before inference",
+      "status": "passed"
+    },
+    {
+      "name": "reject unresolved judge digest",
+      "status": "passed"
+    },
+    {
+      "name": "reject unversioned provider context before inference",
+      "status": "passed"
+    },
+    {
+      "name": "unversioned context triggers no judge call",
+      "status": "passed"
+    },
+    {
+      "name": "actual forwarded request drift aborts before caching",
+      "status": "passed"
+    },
+    {
+      "name": "forwarded drift is never cached",
+      "status": "passed"
+    },
+    {
+      "name": "safe publication retains first recorded decision",
+      "status": "passed"
+    },
+    {
+      "name": "safe publication never overwrites entry bytes",
+      "status": "passed"
+    },
+    {
+      "name": "provider ValueError is not misclassified as parsing",
+      "status": "passed"
+    },
+    {
+      "name": "frozen common snapshot serves identical recorded request",
+      "status": "passed"
+    },
+    {
+      "name": "frozen miss fails without grading",
+      "status": "passed"
+    },
+    {
+      "name": "frozen missing request makes no LM call",
+      "status": "passed"
+    },
+    {
+      "name": "checkpoint cache receipt verifies used entries",
+      "status": "passed"
+    },
+    {
+      "name": "corrupt cache fails integrity check",
+      "status": "passed"
+    },
+    {
+      "name": "missing checkpoint cache entry rejected",
+      "status": "passed"
+    },
+    {
+      "name": "historical checkpoint config remains valid",
+      "status": "passed"
+    },
+    {
+      "name": "reject historical resume into original_semantic",
+      "status": "passed"
+    },
+    {
+      "name": "reject historical resume into binary_semantic",
+      "status": "passed"
+    },
+    {
+      "name": "reject historical resume into numeric_exact",
+      "status": "passed"
+    },
+    {
+      "name": "checkpoint rejects changed judge_seed",
+      "status": "passed"
+    },
+    {
+      "name": "checkpoint rejects changed judge_cache_enabled",
+      "status": "passed"
+    },
+    {
+      "name": "checkpoint rejects changed judge_model_digest",
+      "status": "passed"
+    },
+    {
+      "name": "checkpoint rejects changed judge_cache_snapshot_id",
+      "status": "passed"
+    },
+    {
+      "name": "observational logging toggle does not change reward identity",
+      "status": "passed"
+    },
+    {
+      "name": "judge initialization pins digest/context/runtime",
+      "status": "passed"
+    },
+    {
+      "name": "execution and judge share measured-call ledger",
+      "status": "passed"
+    },
+    {
+      "name": "numeric initialization does not create a judge",
+      "status": "passed"
+    },
+    {
+      "name": "judge controls explicit and provider retries disabled",
+      "status": "passed"
+    },
+    {
+      "name": "saved fixture verifies dataset selection content",
+      "status": "passed"
+    },
+    {
+      "name": "saved disagreement pattern cached K=8",
+      "status": "passed"
+    },
+    {
+      "name": "saved disagreement pattern cached K=10",
+      "status": "passed"
+    },
+    {
+      "name": "saved disagreement pattern cached K=15",
+      "status": "passed"
+    },
+    {
+      "name": "production training mode propagated original_semantic",
+      "status": "passed"
+    },
+    {
+      "name": "production validation mode propagated original_semantic",
+      "status": "passed"
+    },
+    {
+      "name": "production test mode propagated original_semantic",
+      "status": "passed"
+    },
+    {
+      "name": "summary and config protocol recorded original_semantic",
+      "status": "passed"
+    },
+    {
+      "name": "new protocol artifact verification original_semantic",
+      "status": "passed"
+    },
+    {
+      "name": "standalone analysis labels new protocol original_semantic",
+      "status": "passed"
+    },
+    {
+      "name": "main and standalone protocol identities agree original_semantic",
+      "status": "passed"
+    },
+    {
+      "name": "production cache reduces repeated grading original_semantic",
+      "status": "passed"
+    },
+    {
+      "name": "production calls include execution and grading original_semantic",
+      "status": "passed"
+    },
+    {
+      "name": "production training mode propagated binary_semantic",
+      "status": "passed"
+    },
+    {
+      "name": "production validation mode propagated binary_semantic",
+      "status": "passed"
+    },
+    {
+      "name": "production test mode propagated binary_semantic",
+      "status": "passed"
+    },
+    {
+      "name": "summary and config protocol recorded binary_semantic",
+      "status": "passed"
+    },
+    {
+      "name": "new protocol artifact verification binary_semantic",
+      "status": "passed"
+    },
+    {
+      "name": "standalone analysis labels new protocol binary_semantic",
+      "status": "passed"
+    },
+    {
+      "name": "main and standalone protocol identities agree binary_semantic",
+      "status": "passed"
+    },
+    {
+      "name": "production cache reduces repeated grading binary_semantic",
+      "status": "passed"
+    },
+    {
+      "name": "production calls include execution and grading binary_semantic",
+      "status": "passed"
+    },
+    {
+      "name": "production training mode propagated numeric_exact",
+      "status": "passed"
+    },
+    {
+      "name": "production validation mode propagated numeric_exact",
+      "status": "passed"
+    },
+    {
+      "name": "production test mode propagated numeric_exact",
+      "status": "passed"
+    },
+    {
+      "name": "summary and config protocol recorded numeric_exact",
+      "status": "passed"
+    },
+    {
+      "name": "new protocol artifact verification numeric_exact",
+      "status": "passed"
+    },
+    {
+      "name": "standalone analysis labels new protocol numeric_exact",
+      "status": "passed"
+    },
+    {
+      "name": "main and standalone protocol identities agree numeric_exact",
+      "status": "passed"
+    },
+    {
+      "name": "production numeric mode makes no semantic calls",
+      "status": "passed"
+    },
+    {
+      "name": "checkpoint rejects changed judge metadata before loading state",
+      "status": "passed"
+    },
+    {
+      "name": "rejected reward checkpoint leaves policy unchanged",
+      "status": "passed"
+    },
+    {
+      "name": "original summed GRPO loss and gradient",
+      "status": "passed"
+    },
+    {
+      "name": "centered advantages unchanged",
+      "status": "passed"
+    },
+    {
+      "name": "Figure 2 implementation source unchanged",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\selections\\8dc2eb472df4dd7f45b685d9cb01ac1c3eea5371035a340aa90fcf715237ee55.json",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_analysis\\all_in_one_analysis.pdf",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_analysis\\analysis_checks.json",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_analysis\\candidate_metrics.csv",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_analysis\\checkpoint_metadata.csv",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_analysis\\configuration_audit.csv",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_analysis\\data_processing_checks.json",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_analysis\\episode_metrics.csv",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_analysis\\evaluation_metrics.csv",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_analysis\\figure_manifest.csv",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_analysis\\held_out_records.csv",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_analysis\\metric_definitions.json",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_analysis\\missing_metrics.csv",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_analysis\\observed_candidate_prefixes.csv",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_analysis\\paired_test_comparison.csv",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_analysis\\phase_summary.csv",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_analysis\\pipeline_distribution.csv",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_analysis\\repeated_pipeline_rewards.csv",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_analysis\\reward_disagreements.csv",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_analysis\\run_inventory.csv",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_analysis\\source_manifest.csv",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_analysis\\summary.csv",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\01_best_validation_accuracy.pdf",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\01_best_validation_accuracy.png",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\01_best_validation_accuracy.svg",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\02_held_out_test_accuracy.pdf",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\02_held_out_test_accuracy.png",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\02_held_out_test_accuracy.svg",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\03_training_pipeline_evaluations.pdf",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\03_training_pipeline_evaluations.png",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\03_training_pipeline_evaluations.svg",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\04_training_time.pdf",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\04_training_time.png",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\04_training_time.svg",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\05_mean_training_reward.pdf",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\05_mean_training_reward.png",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\05_mean_training_reward.svg",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\06_zero_advantage_rate.pdf",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\06_zero_advantage_rate.png",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\06_zero_advantage_rate.svg",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\07_nonzero_gradient_rate.pdf",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\07_nonzero_gradient_rate.png",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\07_nonzero_gradient_rate.svg",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\08_unique_pipeline_count.pdf",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\08_unique_pipeline_count.png",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\08_unique_pipeline_count.svg",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\09_normalized_diversity.pdf",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\09_normalized_diversity.png",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\09_normalized_diversity.svg",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\10b_empirical_selection_entropy.pdf",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\10b_empirical_selection_entropy.png",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\10b_empirical_selection_entropy.svg",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\11_gradient_norms.pdf",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\11_gradient_norms.png",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\11_gradient_norms.svg",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\12_validation_vs_evaluations.pdf",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\12_validation_vs_evaluations.png",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\12_validation_vs_evaluations.svg",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\13_unique_pipelines_over_training.pdf",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\13_unique_pipelines_over_training.png",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\13_unique_pipelines_over_training.svg",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\14_pipeline_selection_distribution.pdf",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\14_pipeline_selection_distribution.png",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\14_pipeline_selection_distribution.svg",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\15_observed_candidate_prefixes.pdf",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\15_observed_candidate_prefixes.png",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\15_observed_candidate_prefixes.svg",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\all_in_one_figures.pdf",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\static_k_comparison.pdf",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\static_k_comparison\\static_k_comparison.png",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k8\\seed42\\baseline\\20261013T181104-322720b3\\attempts.jsonl",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k8\\seed42\\baseline\\20261013T181104-322720b3\\best.json",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k8\\seed42\\baseline\\20261013T181104-322720b3\\config.json",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k8\\seed42\\baseline\\20261013T181104-322720b3\\latest.json",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k8\\seed42\\baseline\\20261013T181104-322720b3\\summary.json",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k8\\seed42\\baseline\\20261013T181104-322720b3\\test_174249a3.json",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k8\\seed42\\baseline\\20261013T181104-322720b3\\training.jsonl",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k8\\seed42\\baseline\\20261013T181104-322720b3\\validation.jsonl",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k8\\seed42\\baseline\\20261013T181104-322720b3\\checkpoints\\episode_0000_694f9169.pt",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k8\\seed42\\baseline\\20261013T181104-322720b3\\checkpoints\\episode_0025_c1c342e3.pt",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k8\\seed42\\baseline\\20261013T181104-322720b3\\checkpoints\\episode_0030_a2d9cc0b.pt",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k5\\seed42\\baseline\\20261013T174921-b1ad8988\\attempts.jsonl",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k5\\seed42\\baseline\\20261013T174921-b1ad8988\\best.json",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k5\\seed42\\baseline\\20261013T174921-b1ad8988\\config.json",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k5\\seed42\\baseline\\20261013T174921-b1ad8988\\latest.json",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k5\\seed42\\baseline\\20261013T174921-b1ad8988\\summary.json",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k5\\seed42\\baseline\\20261013T174921-b1ad8988\\test_3e769531.json",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k5\\seed42\\baseline\\20261013T174921-b1ad8988\\training.jsonl",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k5\\seed42\\baseline\\20261013T174921-b1ad8988\\validation.jsonl",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k5\\seed42\\baseline\\20261013T174921-b1ad8988\\checkpoints\\episode_0000_7629e18a.pt",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k5\\seed42\\baseline\\20261013T174921-b1ad8988\\checkpoints\\episode_0025_f85afbe9.pt",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k5\\seed42\\baseline\\20261013T174921-b1ad8988\\checkpoints\\episode_0030_689ac93f.pt",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k15\\seed42\\baseline\\20261013T190031-8d8e40ec\\attempts.jsonl",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k15\\seed42\\baseline\\20261013T190031-8d8e40ec\\best.json",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k15\\seed42\\baseline\\20261013T190031-8d8e40ec\\config.json",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k15\\seed42\\baseline\\20261013T190031-8d8e40ec\\latest.json",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k15\\seed42\\baseline\\20261013T190031-8d8e40ec\\summary.json",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k15\\seed42\\baseline\\20261013T190031-8d8e40ec\\test_d91652f1.json",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k15\\seed42\\baseline\\20261013T190031-8d8e40ec\\training.jsonl",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k15\\seed42\\baseline\\20261013T190031-8d8e40ec\\validation.jsonl",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k15\\seed42\\baseline\\20261013T190031-8d8e40ec\\checkpoints\\episode_0000_29cb2d83.pt",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k15\\seed42\\baseline\\20261013T190031-8d8e40ec\\checkpoints\\episode_0025_52e3f31f.pt",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k15\\seed42\\baseline\\20261013T190031-8d8e40ec\\checkpoints\\episode_0030_cec4cc1d.pt",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k10\\seed42\\baseline\\20261013T183759-77b8ce57\\attempts.jsonl",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k10\\seed42\\baseline\\20261013T183759-77b8ce57\\best.json",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k10\\seed42\\baseline\\20261013T183759-77b8ce57\\config.json",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k10\\seed42\\baseline\\20261013T183759-77b8ce57\\latest.json",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k10\\seed42\\baseline\\20261013T183759-77b8ce57\\summary.json",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k10\\seed42\\baseline\\20261013T183759-77b8ce57\\test_52cdf561.json",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k10\\seed42\\baseline\\20261013T183759-77b8ce57\\training.jsonl",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k10\\seed42\\baseline\\20261013T183759-77b8ce57\\validation.jsonl",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k10\\seed42\\baseline\\20261013T183759-77b8ce57\\checkpoints\\episode_0000_b751824d.pt",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k10\\seed42\\baseline\\20261013T183759-77b8ce57\\checkpoints\\episode_0025_9a4e214d.pt",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation results\\gsm8k\\k10\\seed42\\baseline\\20261013T183759-77b8ce57\\checkpoints\\episode_0030_ebdecd4f.pt",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation DSPy_GRPO.ipynb",
+      "status": "passed"
+    },
+    {
+      "name": "historical preservation AutoDSPy.pdf",
+      "status": "passed"
+    }
+  ],
+  "count": 280,
+  "inference": "mock responses only",
+  "source_artifacts_preserved": true,
+  "real_training_or_checkpoint_evaluation": false
+}

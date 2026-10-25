@@ -2,7 +2,7 @@
   "0": "run_grpo_baseline.py",
   "1": "AutoDSPy Static-K Research — Master Specification",
   "2": "Issue tracker: GitHub",
-  "3": "IMPLEMENTATION_PLAN.md",
+  "3": "Static-K experiment guide",
   "4": "Triage",
   "5": "teach/SKILL.md",
   "6": "DSPy Pipeline Optimization with Reinforcement Learning",
@@ -61,8 +61,11 @@
   "59": "implement/SKILL.md",
   "60": "research/SKILL.md",
   "61": "wait-what/SKILL.md",
-  "62": "Static-K experiment guide",
+  "62": "Phased implementation plan",
   "63": "Completed K=5 GSM8K run diagnosis",
   "64": "Project progress and session handoff",
-  "65": "K=5 controlled stability pilot"
+  "65": "K=5 controlled stability pilot",
+  "66": "Static-K GRPO on GSM8K: saved experimental results",
+  "67": "Process",
+  "68": "GSM8K reward modes and reproducibility"
 }

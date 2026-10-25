@@ -1,0 +1,6 @@
+[
+  "full-distribution entropy probes preserve parameters and RNG",
+  "rollout diagnostics preserve actions, log probabilities and RNG draws",
+  "judge raw prompt/outputs/provider response/settings saved without secrets or request changes",
+  "judge parse/transport failures retain traces; numeric EM still bypasses judge"
+]

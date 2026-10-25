@@ -87,7 +87,9 @@ TEST = test_model(SESSION)  # requires the best checkpoint and completed trainin
 
 Alternatively use `run_operation(CONFIG, "test", checkpoint=...)`. Final testing is never called by training. `test_model(SESSION, full_official=True)` explicitly evaluates the full official test split later. Do not tune using held-out scores.
 
-Strict numeric EM and fractional semantic fallback are separate. Exact comparison fixes comma/decimal/negative-number bugs. The original last-number extraction convention can still confuse reasoning with the answer. Reward preserves the same Llama judge, not an embedding evaluator or extra shaping.
+GSM8K now supports `REWARD_MODE="original_semantic"` (default), `"binary_semantic"`, and `"numeric_exact"`. The default keeps the existing fractional rubric and original numeric extractor, with new runs using versioned judge controls, private persistent caching, and detailed logging. This improved cached protocol differs from the completed uncached experiments. Set `LEGACY_REWARD_PROTOCOL=True` to preserve the uncached historical reward behavior; old snapshots without reward fields are recognized as legacy automatically. Merely disabling the cache on an improved configuration does not select the legacy protocol.
+
+Binary-semantic mode accepts only correct/equivalent final answers as 1, with no partial credit. Numeric-only mode uses a conservative final-answer extractor and makes no judge calls. Both return only 0/1. Strict numeric EM and semantic fallback are reported separately; the extractor version is recorded. Full settings, snapshot procedures, error policy and checkpoint compatibility are in [REWARD_MODES.md](docs/REWARD_MODES.md). The evidence and limits of the disagreement investigation are in [REWARD_JUDGE_INVESTIGATION.md](docs/REWARD_JUDGE_INVESTIGATION.md). No reward method is retrospectively applied to old results.
 
 ## Comparisons, plots and resource accounting
 
@@ -106,6 +108,8 @@ plotting. Each run path may appear once; independent repeats at the same K are a
 Keep recorded paths and checkpoint files available: automatic artifact relocation is
 not supported. GSM8K and HotpotQA, different seeds, presets, subsets, decoding budgets,
 model digests or runtime versions cannot be combined as one controlled K comparison.
+
+Reward modes/protocols, judge controls and cache policies/snapshot identities must also match. GSM8K section 24's standalone saved-data analysis labels its tables and places new exports under protocol/hash subdirectories of `results/gsm8k/static_k_analysis/` and `results/gsm8k/static_k_comparison/`. It leaves the existing root exports unchanged. Section 25 provides `reward_protocol_self_checks()` using mocks and saved fixtures only.
 
 The compact `summary.json` distinguishes effective training/evaluation costs from
 observed journal costs including rollback. It also reports recorded GPU peaks,

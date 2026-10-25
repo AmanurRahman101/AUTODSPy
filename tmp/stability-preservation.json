@@ -1,0 +1,20 @@
+{
+  "results\\gsm8k\\k5\\seed42\\baseline\\20261013T002408-4024eb86\\attempts.jsonl": "0125be256f6fa454932b71c2804143b91fc4180fef7a6fc0a17685f7a8e81adc",
+  "results\\gsm8k\\k5\\seed42\\baseline\\20261013T002408-4024eb86\\best.json": "aeff037a5e8f068116c58fc8e1e37aee7eaedf1bdc26188ca8a177c8225bb06c",
+  "results\\gsm8k\\k5\\seed42\\baseline\\20261013T002408-4024eb86\\config.json": "0d91e63d5ee3482a58c1617ef523620a21588c41fc1765fab97e231448ae9bee",
+  "results\\gsm8k\\k5\\seed42\\baseline\\20261013T002408-4024eb86\\latest.json": "ff72bca9e8b0ed8c245179855510ba13fe3d342c63fd90f6e1a662c9cdddcdd7",
+  "results\\gsm8k\\k5\\seed42\\baseline\\20261013T002408-4024eb86\\summary.json": "ac6f2be77a7e85a1b6c9c0c2264f035fac045a8e9bb072f6866fd9bc65f9548d",
+  "results\\gsm8k\\k5\\seed42\\baseline\\20261013T002408-4024eb86\\test_ddbf091e.json": "3d83e24e51bc5084d2181aa99c455bf613196d81bad7208c0b4267ba0b7311d1",
+  "results\\gsm8k\\k5\\seed42\\baseline\\20261013T002408-4024eb86\\training.jsonl": "358e4fcbc84589058bbe823933e68d1ab8e1daa3abbde519fdd80b967bad94c4",
+  "results\\gsm8k\\k5\\seed42\\baseline\\20261013T002408-4024eb86\\validation.jsonl": "236ab470332a34d4de26449467d75e57a06261137bca8fef3a22a165d2940029",
+  "results\\gsm8k\\k5\\seed42\\baseline\\20261013T002408-4024eb86\\checkpoints\\episode_0000_f481d536.pt": "828bbdf3c7defcbae37791a007bf943740a9f6ec7f0e5b132a000cb93ac2a8ab",
+  "results\\gsm8k\\k5\\seed42\\baseline\\20261013T002408-4024eb86\\checkpoints\\episode_0025_11c9622a.pt": "b6472bedfa1c7b615bb159a93970ebf6774ded207029abca551ecfe0e728c1ae",
+  "results\\gsm8k\\k5\\seed42\\baseline\\20261013T002408-4024eb86\\checkpoints\\episode_0030_86bbf1ae.pt": "42f8e22881c062ffe6116a8a0e9d8a679c1d0c9766559c25975868a8f23aa832",
+  "docs\\diagnostics\\k5-20261013\\checkpoint-movement.json": "fa17699d235d42cede735b10170058cb08213a3265032af2b84611ca28b92d73",
+  "docs\\diagnostics\\k5-20261013\\Diagnosis.ipynb": "6d3146c8ccf4cc1e19311ba4cdc47877c500c073334f8e1cb2afdea09968d50a",
+  "docs\\diagnostics\\k5-20261013\\episodes.csv": "2a4522d8799f5816324905a865579f1866c6138bffdc1adc74c4565b71564d8b",
+  "docs\\diagnostics\\k5-20261013\\episodes.json": "b0b5f1ca444c88509c69fcade68b8a5307ec1deb8470bd66caaa9124532912fd",
+  "docs\\diagnostics\\k5-20261013\\gradient-checks.json": "e9d178e51626cebeb3ae8b7ee1ef83e347216bfe8c3e25f0132ac9327f71c373",
+  "docs\\diagnostics\\k5-20261013\\policy-inspection.json": "d2026617855553ef5b5af62d1000350420ba00e1cd81a25b4e0586d3f6a6ad82",
+  "docs\\diagnostics\\k5-20261013\\REPORT.md": "4b861ad7548a851c8cf6f871f25c4d87c147e1f89151232533188fe9050c1f1e"
+}

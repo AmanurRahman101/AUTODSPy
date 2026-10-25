@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "reward_checks": 280,
+  "legacy_notebook_checks": 111,
+  "saved_analysis_checks": 13,
+  "total_checks": 404,
+  "stability_checks": null,
+  "stability_scope": "Prior diagnostic sampler not restored; current sampler preserved unchanged",
+  "historical_artifacts_verified": 116,
+  "unchanged_code_cells": [
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    24
+  ],
+  "notebook_schema_valid": true,
+  "real_llm_inference": false,
+  "gpt2_retraining": false,
+  "historical_checkpoint_evaluation": false,
+  "scope": "Restored notebook verified from disk; mocks/saved fixtures only; tiny CPU fixture only, no experimental results"
+}

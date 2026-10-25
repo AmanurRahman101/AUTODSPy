@@ -1,0 +1,126 @@
+{
+  "dataset_content_hash_verified": true,
+  "train_content_hash": "99aa5f2f4c9c016ccbba241fca6d5abd81d59078c82a4cde3ed9d52bffacafd2",
+  "cases": [
+    {
+      "k": 8,
+      "question_id": "gsm8k:train:4423",
+      "question": "Monica and Michelle are combining their money to throw a party. Monica brings $15. Michelle brings $12. The cake costs 15 dollars, and soda is $3 a bottle. Each bottle of soda has 12 servings and they buy as many bottles of soda as they can afford. If there are 8 total guests, how many servings of soda does each get?",
+      "target": "6",
+      "pipeline": [
+        "Predict",
+        "question -> reasoning",
+        "stop"
+      ],
+      "output": "To find out how many servings of soda each guest gets, we first need to calculate the total amount of money Monica and Michelle have together. Monica brings $15 and Michelle brings $12, so together they have $15 + $12 = $27.\n\nNext, we need to find out how many bottles of soda they can afford. Each bottle of soda costs $3, so we divide the total amount of money they have ($27) by the cost of each bottle ($3). $27 Ã· $3 = 9 bottles of soda.\n\nSince each bottle of soda has 12 servings, we multiply the number of bottles they can afford (9) by the number of servings per bottle (12). 9 Ã— 12 = 108 servings of soda.\n\nFinally, we divide the total number of servings (108) by the number of guests (8) to find out how many servings each guest gets. 108 Ã· 8 = 13.5 servings of soda per guest.",
+      "observations": [
+        {
+          "episode": 1,
+          "candidate": 4,
+          "reward": 0.0,
+          "numeric_exact_match": false,
+          "semantic_used": true,
+          "judge_score": 0.0,
+          "judge_error": null
+        },
+        {
+          "episode": 18,
+          "candidate": 3,
+          "reward": 0.5,
+          "numeric_exact_match": false,
+          "semantic_used": true,
+          "judge_score": 0.5,
+          "judge_error": null
+        }
+      ],
+      "raw_judge_responses_available": false,
+      "source_run": "results/gsm8k/k8/seed42/baseline/20261013T181104-322720b3"
+    },
+    {
+      "k": 10,
+      "question_id": "gsm8k:train:4423",
+      "question": "Monica and Michelle are combining their money to throw a party. Monica brings $15. Michelle brings $12. The cake costs 15 dollars, and soda is $3 a bottle. Each bottle of soda has 12 servings and they buy as many bottles of soda as they can afford. If there are 8 total guests, how many servings of soda does each get?",
+      "target": "6",
+      "pipeline": [
+        "Predict",
+        "question -> reasoning",
+        "stop"
+      ],
+      "output": "To find out how many servings of soda each guest gets, we first need to calculate the total amount of money Monica and Michelle have together. Monica brings $15 and Michelle brings $12, so together they have $15 + $12 = $27.\n\nNext, we need to find out how many bottles of soda they can afford. Each bottle of soda costs $3, so we divide the total amount of money they have ($27) by the cost of each bottle ($3). $27 Ã· $3 = 9 bottles of soda.\n\nSince each bottle of soda has 12 servings, we multiply the number of bottles they can afford (9) by the number of servings per bottle (12). 9 Ã— 12 = 108 servings of soda.\n\nFinally, we divide the total number of servings (108) by the number of guests (8) to find out how many servings each guest gets. 108 Ã· 8 = 13.5 servings of soda per guest.",
+      "observations": [
+        {
+          "episode": 1,
+          "candidate": 4,
+          "reward": 0.0,
+          "numeric_exact_match": false,
+          "semantic_used": true,
+          "judge_score": 0.0,
+          "judge_error": null
+        },
+        {
+          "episode": 5,
+          "candidate": 4,
+          "reward": 0.5,
+          "numeric_exact_match": false,
+          "semantic_used": true,
+          "judge_score": 0.5,
+          "judge_error": null
+        },
+        {
+          "episode": 18,
+          "candidate": 4,
+          "reward": 0.5,
+          "numeric_exact_match": false,
+          "semantic_used": true,
+          "judge_score": 0.5,
+          "judge_error": null
+        }
+      ],
+      "raw_judge_responses_available": false,
+      "source_run": "results/gsm8k/k10/seed42/baseline/20261013T183759-77b8ce57"
+    },
+    {
+      "k": 15,
+      "question_id": "gsm8k:train:2477",
+      "question": "Mike has earned a total of $160 in wages this week. He received the wages for his first job, then later received the wages from his second job where he works 12 hours a week. If his second job pays $9 per hour then how much money, in dollars, did Mike receive from his first job?",
+      "target": "52",
+      "pipeline": [
+        "Predict",
+        "question -> hypothesis",
+        "stop"
+      ],
+      "output": "Let's denote the amount Mike received from his first job as x dollars. We know that Mike worked 12 hours at his second job, which pays $9 per hour, so he earned 12 * 9 = 108 dollars from his second job. Since Mike earned a total of 160 dollars, we can set up the equation x + 108 = 160 to solve for x.",
+      "observations": [
+        {
+          "episode": 8,
+          "candidate": 2,
+          "reward": 0.5,
+          "numeric_exact_match": false,
+          "semantic_used": true,
+          "judge_score": 0.5,
+          "judge_error": null
+        },
+        {
+          "episode": 8,
+          "candidate": 10,
+          "reward": 0.0,
+          "numeric_exact_match": false,
+          "semantic_used": true,
+          "judge_score": 0.0,
+          "judge_error": null
+        },
+        {
+          "episode": 8,
+          "candidate": 14,
+          "reward": 0.0,
+          "numeric_exact_match": false,
+          "semantic_used": true,
+          "judge_score": 0.0,
+          "judge_error": null
+        }
+      ],
+      "raw_judge_responses_available": false,
+      "source_run": "results/gsm8k/k15/seed42/baseline/20261013T190031-8d8e40ec"
+    }
+  ]
+}

@@ -726,9 +726,9 @@
     "semantic_hash": ""
   },
   "STATIC_K_EXPERIMENT_GUIDE.md": {
-    "mtime": 1791745370.5560336,
-    "seen": 1791745676.9097786,
-    "ast_hash": "7c6ab816934691186ec4f1774d2c0e6a",
+    "mtime": 1791982590.3011959,
+    "seen": 1791984931.5934532,
+    "ast_hash": "9a070eed16fd2372d252a141e5b1e424",
     "semantic_hash": ""
   },
   "docs/DECISIONS.md": {
@@ -1097,16 +1097,10 @@
     "ast_hash": "6e350c629dad05c94b6074ffd806874e",
     "semantic_hash": ""
   },
-  "tmp/static_k_analysis_notebook_cells_20261014.json": {
-    "mtime": 1791958553.6630282,
-    "seen": 1791959247.8485937,
-    "ast_hash": "ce027bcbb0908bf2f72d89b71bff204d",
-    "semantic_hash": ""
-  },
   "docs/STATIC_K_RESULTS_ANALYSIS.md": {
-    "mtime": 1791959142.2330527,
-    "seen": 1791959247.8488133,
-    "ast_hash": "72d6bb8cc102e8f32c3e305ecf0919c2",
+    "mtime": 1791959379.5998373,
+    "seen": 1791984931.5934741,
+    "ast_hash": "cfbad62441eecb0e1560e4a0639aff14",
     "semantic_hash": ""
   },
   "results/gsm8k/static_k_comparison/01_best_validation_accuracy.pdf": {
@@ -1389,6 +1383,234 @@
     "mtime": 1791920241.6298609,
     "seen": 1791959247.8489008,
     "ast_hash": "02665fce2525b3a7c7161b984e1ec990",
+    "semantic_hash": ""
+  },
+  "docs/audit_artifacts/reward_artifact_preservation.json": {
+    "mtime": 1791980573.5400643,
+    "seen": 1791984931.5931802,
+    "ast_hash": "90596c045910876afca895c7d3a40c44",
+    "semantic_hash": ""
+  },
+  "docs/audit_artifacts/reward_disagreement_fixture.json": {
+    "mtime": 1791979640.4254718,
+    "seen": 1791984931.593183,
+    "ast_hash": "543ce10da95c0ff42c30da42e991f568",
+    "semantic_hash": ""
+  },
+  "docs/audit_artifacts/reward_legacy_regression_checks.json": {
+    "mtime": 1791987618.9185321,
+    "seen": 1791987737.0748708,
+    "ast_hash": "f4b561f6c646a7f4035487b83aa7b00e",
+    "semantic_hash": ""
+  },
+  "docs/audit_artifacts/reward_protocol_tests.json": {
+    "mtime": 1791987481.0196526,
+    "seen": 1791987737.074877,
+    "ast_hash": "7b99988319d5757393eaa8a6fbab4137",
+    "semantic_hash": ""
+  },
+  "docs/audit_artifacts/reward_validation_summary.json": {
+    "mtime": 1791987681.5808787,
+    "seen": 1791987737.074879,
+    "ast_hash": "226f3bfcd4c3f318b960a984240997ab",
+    "semantic_hash": ""
+  },
+  "docs/REWARD_JUDGE_INVESTIGATION.md": {
+    "mtime": 1791987681.5818865,
+    "seen": 1791987737.075184,
+    "ast_hash": "6dd7f7a1bcb7cb2d5ada7b7287d32d88",
+    "semantic_hash": ""
+  },
+  "docs/REWARD_MODES.md": {
+    "mtime": 1791987732.3248694,
+    "seen": 1791987737.075186,
+    "ast_hash": "e42a7fcf820a0ff87b96ff8616fecb6e",
+    "semantic_hash": ""
+  },
+  "results/gsm8k/static_k_analysis/all_in_one_analysis.pdf": {
+    "mtime": 1791960724.1334994,
+    "seen": 1791984931.593494,
+    "ast_hash": "86728052e2153e2859a66940ffdbef34",
+    "semantic_hash": ""
+  },
+  "results/gsm8k/static_k_comparison/all_in_one_figures.pdf": {
+    "mtime": 1791960724.0348718,
+    "seen": 1791984931.5935228,
+    "ast_hash": "088b84b0c78c24dc89d76001d2e11b09",
+    "semantic_hash": ""
+  },
+  "docs/audit_artifacts/reward_notebook_recovery.json": {
+    "mtime": 1791987732.3525546,
+    "seen": 1791987737.0748742,
+    "ast_hash": "62fc5e42a7284180334302df17fcac6d",
+    "semantic_hash": ""
+  },
+  "tmp/reward_recovery_20261014/docs/audit_artifacts/reward_artifact_preservation.json": {
+    "mtime": 1791987220.186936,
+    "seen": 1791987737.0749445,
+    "ast_hash": "90596c045910876afca895c7d3a40c44",
+    "semantic_hash": ""
+  },
+  "tmp/reward_recovery_20261014/tmp/reward_protocol_preservation_20261014.json": {
+    "mtime": 1791987220.0326624,
+    "seen": 1791987737.0749464,
+    "ast_hash": "90596c045910876afca895c7d3a40c44",
+    "semantic_hash": ""
+  },
+  "tmp/merge_reward_recovery.txt": {
+    "mtime": 1791987392.612209,
+    "seen": 1791987737.0752017,
+    "ast_hash": "1f0cbf0c903199c6045cf405f9fcbeee",
+    "semantic_hash": ""
+  },
+  "tmp/recover_reward_notebook.txt": {
+    "mtime": 1791987156.4573188,
+    "seen": 1791987737.0752041,
+    "ast_hash": "28fe3a51c216228182ebd976db143349",
+    "semantic_hash": ""
+  },
+  "tmp/replay_reward_recovery.txt": {
+    "mtime": 1791987216.8952522,
+    "seen": 1791987737.0752058,
+    "ast_hash": "92d990e9d019eadd54714c9b7f47ffe4",
+    "semantic_hash": ""
+  },
+  "tmp/reward_recovery_20261014/attach_479_0.txt": {
+    "mtime": 1791987159.6816638,
+    "seen": 1791987737.0752072,
+    "ast_hash": "6e9bad29afa2376c004e26fb375f76a6",
+    "semantic_hash": ""
+  },
+  "tmp/reward_recovery_20261014/attach_528_0.txt": {
+    "mtime": 1791987159.682665,
+    "seen": 1791987737.0752087,
+    "ast_hash": "e923f3cb858c9b65238234d15ab8bbb4",
+    "semantic_hash": ""
+  },
+  "tmp/reward_recovery_20261014/edit_472.txt": {
+    "mtime": 1791987159.6776624,
+    "seen": 1791987737.0752103,
+    "ast_hash": "9b2e64c8dd627a6ed443f2fc9875c3b5",
+    "semantic_hash": ""
+  },
+  "tmp/reward_recovery_20261014/edit_500.txt": {
+    "mtime": 1791987159.6786582,
+    "seen": 1791987737.075212,
+    "ast_hash": "5daeb879ec8e3275d5f60f4058be1fe2",
+    "semantic_hash": ""
+  },
+  "tmp/reward_recovery_20261014/edit_520.txt": {
+    "mtime": 1791987159.6786582,
+    "seen": 1791987737.0752132,
+    "ast_hash": "742fcaaee5ef8302788e8b2296343bfe",
+    "semantic_hash": ""
+  },
+  "tmp/reward_recovery_20261014/edit_542.txt": {
+    "mtime": 1791987159.6786582,
+    "seen": 1791987737.0752149,
+    "ast_hash": "64a7f9f232922136a0938728b26f722f",
+    "semantic_hash": ""
+  },
+  "tmp/reward_recovery_20261014/edit_564.txt": {
+    "mtime": 1791987159.6796653,
+    "seen": 1791987737.0752158,
+    "ast_hash": "af5420ec1b287c1b792e5e028b394b4b",
+    "semantic_hash": ""
+  },
+  "tmp/reward_recovery_20261014/edit_593.txt": {
+    "mtime": 1791987159.6796653,
+    "seen": 1791987737.0752175,
+    "ast_hash": "8fbcf8336d86961bf9edac2d191ae842",
+    "semantic_hash": ""
+  },
+  "tmp/reward_recovery_20261014/edit_621.txt": {
+    "mtime": 1791987159.6796653,
+    "seen": 1791987737.0752187,
+    "ast_hash": "c2cd1b7a71cd42eec4edeb3b2bd88fc8",
+    "semantic_hash": ""
+  },
+  "tmp/reward_recovery_20261014/edit_640.txt": {
+    "mtime": 1791987159.6806633,
+    "seen": 1791987737.0752199,
+    "ast_hash": "4c005460bdd3c1c4ca59225a35b55786",
+    "semantic_hash": ""
+  },
+  "tmp/reward_recovery_20261014/edit_663.txt": {
+    "mtime": 1791987159.6806633,
+    "seen": 1791987737.0752213,
+    "ast_hash": "dc09f26fe4e6686f47db8f4d734257fe",
+    "semantic_hash": ""
+  },
+  "tmp/reward_recovery_20261014/reward_checks_runner_20261014.txt": {
+    "mtime": 1791987159.675663,
+    "seen": 1791987737.0752225,
+    "ast_hash": "58167d3666963ad93af1ecbb82a03e62",
+    "semantic_hash": ""
+  },
+  "tmp/reward_recovery_20261014/reward_config_helpers_20261014.txt": {
+    "mtime": 1791987159.672652,
+    "seen": 1791987737.0752242,
+    "ast_hash": "532c12a9a292eef903aeea8a6681714b",
+    "semantic_hash": ""
+  },
+  "tmp/reward_recovery_20261014/reward_core_source_20261014.txt": {
+    "mtime": 1791987159.673659,
+    "seen": 1791987737.0752256,
+    "ast_hash": "54373aa5d70ab532128fb6cd93fd96e8",
+    "semantic_hash": ""
+  },
+  "tmp/reward_recovery_20261014/reward_integration_checks_20261014.txt": {
+    "mtime": 1791987159.6766653,
+    "seen": 1791987737.0752268,
+    "ast_hash": "ac4d7ee658b25b03a1d32bf07ded4ab1",
+    "semantic_hash": ""
+  },
+  "tmp/reward_recovery_20261014/reward_notebook_edit_20261014.txt": {
+    "mtime": 1791987159.6746607,
+    "seen": 1791987737.0752282,
+    "ast_hash": "95e7216bb7ecdffb7538626dd9e620f2",
+    "semantic_hash": ""
+  },
+  "tmp/reward_recovery_20261014/reward_tests_source_20261014.txt": {
+    "mtime": 1791987159.675663,
+    "seen": 1791987737.0752296,
+    "ast_hash": "bbfc0242f594499d1e3bb6dc27631f52",
+    "semantic_hash": ""
+  },
+  "tmp/reward_recovery_20261014/tmp/reward_checks_runner_20261014.txt": {
+    "mtime": 1791987220.2813709,
+    "seen": 1791987737.0752313,
+    "ast_hash": "90d29aa4ceab85f4f2d4b856b8245014",
+    "semantic_hash": ""
+  },
+  "tmp/reward_recovery_20261014/tmp/reward_config_helpers_20261014.txt": {
+    "mtime": 1791987159.757966,
+    "seen": 1791987737.0752325,
+    "ast_hash": "532c12a9a292eef903aeea8a6681714b",
+    "semantic_hash": ""
+  },
+  "tmp/reward_recovery_20261014/tmp/reward_core_source_20261014.txt": {
+    "mtime": 1791987159.7739697,
+    "seen": 1791987737.075234,
+    "ast_hash": "54373aa5d70ab532128fb6cd93fd96e8",
+    "semantic_hash": ""
+  },
+  "tmp/reward_recovery_20261014/tmp/reward_integration_checks_20261014.txt": {
+    "mtime": 1791987159.8379736,
+    "seen": 1791987737.0752356,
+    "ast_hash": "ac4d7ee658b25b03a1d32bf07ded4ab1",
+    "semantic_hash": ""
+  },
+  "tmp/reward_recovery_20261014/tmp/reward_notebook_edit_20261014.txt": {
+    "mtime": 1791987159.7969673,
+    "seen": 1791987737.075237,
+    "ast_hash": "95e7216bb7ecdffb7538626dd9e620f2",
+    "semantic_hash": ""
+  },
+  "tmp/reward_recovery_20261014/tmp/reward_tests_source_20261014.txt": {
+    "mtime": 1791987159.812966,
+    "seen": 1791987737.0752385,
+    "ast_hash": "bbfc0242f594499d1e3bb6dc27631f52",
     "semantic_hash": ""
   }
 }
