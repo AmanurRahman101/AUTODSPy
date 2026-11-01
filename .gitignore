@@ -4,3 +4,4 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 baseline_metrics.json
+/results/
